@@ -1,0 +1,14 @@
+{
+  "brief_id": "F02",
+  "source_group_id": "reddit:1lr9g4t",
+  "id": "1lr9g4t",
+  "split": "final",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "1751602180",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/",
+  "source_title": "Need help with reverse keyword search using vector DB",
+  "source_text": "I have a use case where the user will enter a sentence or a paragraph. A DB will contain some sentences which will be used for semantic match and 1-2 word keywords e.g. \"hugging face\", \"meta\". I need to find out the keywords that matched from the DB and the semantically closest sentence.\n\nI have tried Weaviate and Milvus DBs, and I know vector DBs are not meant for this reverse-keyword search, but for 2 word keywords i am stuck with the following \"hugging face\" keyword edge case:\n\n1. the input \"i like hugging face\" - should hit the keyword\n2. the input \"i like face hugging aliens\" - should not\n3. the input \"i like hugging people\" - should not\n\nUsing \"AND\" based phrase match causes 2 to hit, and using OR causes 3 to hit. How do i perform reverse keyword search, with order preservation.",
+  "collected_at": "2026-10-04T10:03:39.091222+00:00",
+  "historical_split": "train",
+  "source_hash": "3b950e64e0e0ae913721a324b387977651f7c4ffea78c5c6490240b6b1531cc4"
+}

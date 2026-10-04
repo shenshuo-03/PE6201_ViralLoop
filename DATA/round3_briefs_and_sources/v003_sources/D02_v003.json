@@ -1,0 +1,13 @@
+{
+  "id": "1lmbt6g",
+  "brief_id": "D02",
+  "phase": "dev",
+  "source_group_id": "1185",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "2025-06-28",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lmbt6g/nvidia_m40_vs_m60_for_llm_inference/",
+  "source_hash": "37b019370436bea0f710f274ebe50250082ff6c344a35f217be32680d73dc6c1",
+  "historical_split": "train",
+  "source_title": "Nvidia M40 vs M60 for LLM inference?",
+  "source_text": "I wanted to have a short discussion about the M60 in comparison to the M40.\n\nThe M40 is the go-to recommendation for desperately low budget rigs (particularly when someone brings up the K80, someone will inevitably mention that the M40 is better).\n\nAll the while, the M60 does not get mentioned, and if it does get mentioned, it is little more than an off-hand comment saying that it is unusable due to it being 8x2GB spread across two GPUs.\n\nMy question is, does that really matter? Most LLM tools today (think kobold or ollamma) support multi-GPU inference.\n\nWith the M60 being the same price (or some times less) while offering theoretically almost twice the performance, it seems like a good choice. Even if most of that extra performance gets lost in PCIE transfers or whatever, it still seems like good value.\n\nAm I wrong in considering the M60 as a choice? With 16GB I could probably finally run some actually half-decent models at okay speeds, right? I'm currently seeing one for about \\~$100"
+}

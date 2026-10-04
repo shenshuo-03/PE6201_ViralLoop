@@ -1,0 +1,245 @@
+{
+  "at": "2026-10-04T13:49:20.669191+00:00",
+  "scope": "Dev generation and process audit, not preference result",
+  "checks": {
+    "complete_8": true,
+    "empty_inflight": true,
+    "no_final_access": true,
+    "all_raw_responses_recorded": true,
+    "manifest_contract_matches_freeze": true,
+    "old_evidence_unchanged": true
+  },
+  "process_verdict": "PASS_WITH_DOCUMENTED_BRIEF_REPAIR",
+  "cases": [
+    {
+      "id": "E01",
+      "archetype": "A",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": true,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 148,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": true,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 145,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "archetype": "A",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": true,
+          "fact_id_leak": true,
+          "relative_time_without_source_year": false,
+          "body_words": 162,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": true,
+          "fact_id_leak": true,
+          "relative_time_without_source_year": false,
+          "body_words": 159,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "archetype": "B",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 175,
+          "primary_guard_unverified": [
+            "The system is claimed to generate text at 1,100 tokens per second using the 123 billion parameter Mistral Large 2 model.",
+            "This speed reportedly represents a roughly 10x improvement over contemporaneous AI assistants like ChatGPT 4o (115 tokens/s) and Claude Sonnet 3.5 (71 tokens/s).",
+            "The performance gain is attributed to Cerebras's Wafer Scale Engine 3 technology, which employs an SRAM-based inference architecture, combined with speculative decoding methods developed jointly with Mistral researchers.",
+            "The new feature, called \"Flash Answers,\" currently focuses on text-based queries and is visually indicated by a lightning bolt icon in the chat interface."
+          ],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 157,
+          "primary_guard_unverified": [
+            "This integration reportedly achieves an AI inference speed of 1,100 tokens per second using the 123 billion parameter Mistral Large 2 model.",
+            "The breakthrough is attributed to Cerebras's Wafer Scale Engine 3, which employs an SRAM-based inference architecture, combined with speculative decoding techniques developed alongside Mistral researchers."
+          ],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "archetype": "B",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": true,
+          "body_words": 175,
+          "primary_guard_unverified": [
+            "Gemma3:latest was identified as a consistent and numerically stable scorer, these assessments are subjective and based on this specific hardware and quantized setup."
+          ],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": true,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": true,
+          "body_words": 134,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "archetype": "C",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": true,
+          "body_words": 166,
+          "primary_guard_unverified": [
+            "Reinforcement learning could address these management issues, enabling models to develop more sophisticated strategies for handling context.",
+            "This might lead to emergent behaviors or tokens dedicated to higher-order context processing, similar to how previous models introduced tokens like <think>.",
+            "integrating reinforcement learning to optimize memory use could be a promising direction for achieving more human-like agent performance."
+          ],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 174,
+          "primary_guard_unverified": [
+            "The author hypothesizes that reinforcement learning could play a pivotal role in optimizing memory and context management, potentially leading to emergent behaviors such as new tokens like '<recontextualize>' that signal higher-order context handling.",
+            "it remains speculative and unverified.",
+            "it seems prudent to consider reinforcement learning as a promising but unproven avenue rather than a definitive solution."
+          ],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "archetype": "C",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": false,
+          "fact_id_leak": true,
+          "relative_time_without_source_year": false,
+          "body_words": 194,
+          "primary_guard_unverified": [
+            "The \"collapse\" point they identified (e.g., N=8 disks) happens exactly when the text for the full solution exceeds the model's maximum output token limit (e.g., 64k tokens).",
+            "For the River Crossing puzzle, the original study tested models on instances with 6 or more \"actors\" and a boat that could only hold 3. It is a well-established mathematical fact that this version of the puzzle is unsolvable for more than 5 actors.",
+            "IMO these are most important, as it really shows that the research was poorly thought out:",
+            "I tried to search discussion about this, but I personally didn't find any, I could be mistaken. But considering how the original Apple paper was discussed, and I didn't saw anyone pointing out this flaws I just wanted to add to the discussion.",
+            "There was also going around a rebuttal in form of Sean Goedecke blog post, but he criticized the paper in diffrent way, but he didn't touch on technical issues with it."
+          ],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": false,
+          "fact_id_leak": true,
+          "relative_time_without_source_year": false,
+          "body_words": 198,
+          "primary_guard_unverified": [
+            "The commenter suggests that the reported collapse at 8 disks in Hanoi coincides with the model’s output exceeding its maximum token limit (e.g., 64k tokens), implying the failure might stem from output constraints rather than reasoning breakdown (F1).",
+            "Additionally, the study reportedly tested River Crossing puzzles with configurations mathematically unsolvable—specifically, 6 or more actors with a boat capacity of 3—casting doubt on the validity of those results (F2)."
+          ],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "archetype": "D",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": true,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 139,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": true,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 169,
+          "primary_guard_unverified": [],
+          "secondary_guard_unverified": []
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "archetype": "D",
+      "drafts": [
+        {
+          "variant": "G0",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 148,
+          "primary_guard_unverified": [
+            "This setup allows you to serve a local language model through an OpenAI-compatible server like Llama.cpp or LmStudio, enabling a coding copilot experience entirely on your machine."
+          ],
+          "secondary_guard_unverified": []
+        },
+        {
+          "variant": "G1",
+          "automatic_hard_pass": false,
+          "fact_id_leak": false,
+          "relative_time_without_source_year": false,
+          "body_words": 151,
+          "primary_guard_unverified": [
+            "This setup allows you to run an AI coding assistant without relying on remote APIs, enhancing privacy and control over your coding workflow."
+          ],
+          "secondary_guard_unverified": []
+        }
+      ]
+    }
+  ],
+  "cost_usd": 0.0975549,
+  "requests": 64,
+  "automatic_hard_pass_count": 7,
+  "content_findings": "Archetype diversity restored in task and outputs, but source-summary tone remains; metadata leaks and time phrasing need separate hard-gate review. No human preference conclusions.",
+  "selector_status": "NOT_ADMITTED: new human labels absent; hard-failed pairs cannot be silently dropped",
+  "raw_brief_failure_count": 8,
+  "brief_repair": "All source-checked before G0/G1, raw preserved, same repaired brief supplied to both."
+}

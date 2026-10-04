@@ -1,0 +1,297 @@
+{
+  "brief_id": "E07",
+  "brief": {
+    "topic": "GraphRAG for multi-hop question answering",
+    "audience": "Developers and AI practitioners interested in advanced RAG techniques",
+    "content_archetype": "D",
+    "speaker_role": "community analyst or resource curator; not original author",
+    "source_relationship": "third_party_archive",
+    "source_date": "2025-06-05",
+    "posting_intent": "share_resource",
+    "current_context": "Share a practical linked resource for exploring vector-based multi-hop retrieval; focus on what the resource teaches and its limitations.",
+    "core_value": "A practical resource to explore multi-hop retrieval using vector storage; not proof that all conventional RAG approaches fail.",
+    "core_hook": {
+      "text": "A GraphRAG tutorial describes graph-style multi-hop reasoning using vector storage without a separate graph database.",
+      "fact_refs": [
+        "f1",
+        "f2"
+      ]
+    },
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The resource description says its approach combines vector search with graph reasoning.",
+        "evidence_quote": "It combines vector search with graph reasoning.",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "GraphRAG utilizes only vector databases, eliminating the need for separate graph databases.",
+        "evidence_quote": "It uses only vector databases - no need for separate graph databases.",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The process involves finding entities and relationships, expanding connections using mathematical operations, and employing AI to select the correct answers.",
+        "evidence_quote": "It finds entities and relationships, expands connections using math, and uses AI to pick the right answers.",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "A tutorial covers turning text into entities, relationships, and passages for vector storage.",
+        "evidence_quote": "Turn text into entities, relationships and passages for vector storage",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The tutorial teaches building two types of search: entity search and relationship search.",
+        "evidence_quote": "Build two types of search (entity search and relationship search)",
+        "status": "author_report"
+      },
+      {
+        "id": "f6",
+        "text": "Mathematical matrices are used to identify connections between data points.",
+        "evidence_quote": "Use math matrices to find connections between data points",
+        "status": "author_report"
+      },
+      {
+        "id": "f7",
+        "text": "AI prompting is employed to select the most appropriate relationships.",
+        "evidence_quote": "Use AI prompting to choose the best relationships",
+        "status": "author_report"
+      },
+      {
+        "id": "f8",
+        "text": "The archived post links the complete GraphRAG notebook in RAG_TECHNIQUES.",
+        "evidence_quote": "https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graphrag_with_milvus_vectordb.ipynb",
+        "status": "author_report"
+      }
+    ],
+    "limitations": [
+      "The source text describes a tutorial and its content, not a live implementation or personal experience.",
+      "The effectiveness and specific performance metrics of GraphRAG are presented as claims within the tutorial's description.",
+      "Tutorial claims are not independent proof of correctness or universal superiority; links and code refer to the historical source date."
+    ],
+    "allowed_claims": [
+      "GraphRAG can handle multi-hop questions.",
+      "GraphRAG uses vector search and graph reasoning.",
+      "GraphRAG does not require separate graph databases.",
+      "The tutorial covers specific steps for implementing GraphRAG."
+    ],
+    "forbidden_claims": [
+      "Personal experience with implementing GraphRAG.",
+      "Independent verification of the tutorial's effectiveness.",
+      "Claims about the speaker's ownership or direct development of the RAG_Techniques repo.",
+      "Invented use cases or results not explicitly mentioned in the source."
+    ],
+    "decision": null,
+    "desired_help": null,
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l4c4hh/stepbystep_graphrag_tutorial_for_multihop_qa_from/",
+    "scenario_id": "E07-scenario-v004",
+    "scenario_version": "v004",
+    "source_facts": [
+      {
+        "id": "f1",
+        "text": "The resource description says its approach combines vector search with graph reasoning.",
+        "evidence_quote": "It combines vector search with graph reasoning.",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "GraphRAG utilizes only vector databases, eliminating the need for separate graph databases.",
+        "evidence_quote": "It uses only vector databases - no need for separate graph databases.",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The process involves finding entities and relationships, expanding connections using mathematical operations, and employing AI to select the correct answers.",
+        "evidence_quote": "It finds entities and relationships, expands connections using math, and uses AI to pick the right answers.",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "A tutorial covers turning text into entities, relationships, and passages for vector storage.",
+        "evidence_quote": "Turn text into entities, relationships and passages for vector storage",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The tutorial teaches building two types of search: entity search and relationship search.",
+        "evidence_quote": "Build two types of search (entity search and relationship search)",
+        "status": "author_report"
+      },
+      {
+        "id": "f6",
+        "text": "Mathematical matrices are used to identify connections between data points.",
+        "evidence_quote": "Use math matrices to find connections between data points",
+        "status": "author_report"
+      },
+      {
+        "id": "f7",
+        "text": "AI prompting is employed to select the most appropriate relationships.",
+        "evidence_quote": "Use AI prompting to choose the best relationships",
+        "status": "author_report"
+      },
+      {
+        "id": "f8",
+        "text": "The archived post links the complete GraphRAG notebook in RAG_TECHNIQUES.",
+        "evidence_quote": "https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graphrag_with_milvus_vectordb.ipynb",
+        "status": "author_report"
+      }
+    ],
+    "pre_generation_repair": "source-grounded assistant correction; not a human evaluation label"
+  },
+  "drafts": [
+    {
+      "title": "GraphRAG Tutorial: Multi-Hop Question Answering Using Vector Search and Graph Reasoning Without Separate Graph DBs",
+      "body": "A recently archived tutorial introduces GraphRAG, a method combining vector search with graph-style reasoning for multi-hop question answering. Unlike traditional approaches requiring separate graph databases, GraphRAG relies solely on vector databases. The tutorial guides users through converting text into entities, relationships, and passages stored in vectors. It covers building two search types—entity search and relationship search—and using mathematical matrices to identify connections between data points. AI prompting helps select the most relevant relationships to answer complex queries. This resource is particularly useful for developers and AI practitioners exploring advanced retrieval-augmented generation (RAG) techniques focused on multi-hop retrieval. Note that the tutorial outlines the methodology and provides a linked notebook but does not offer independent performance validation or real-world implementation results. For those interested, the complete GraphRAG notebook is available in the RAG_TECHNIQUES GitHub repository, archived as of June 2025.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ]
+    },
+    {
+      "title": "GraphRAG Tutorial: Multi-Hop QA Using Vector Search with Integrated Graph Reasoning (No Separate Graph DB Needed)",
+      "body": "A recently archived tutorial offers a detailed guide to GraphRAG, a technique combining vector search with graph reasoning for multi-hop question answering. Unlike conventional approaches that require separate graph databases, GraphRAG operates solely within vector databases, simplifying infrastructure needs. The tutorial walks through transforming text into entities, relationships, and passages suitable for vector storage, then building two types of searches: entity search and relationship search. It leverages mathematical matrices to uncover connections between data points and uses AI prompting to select the most relevant relationships when answering queries. This resource provides a practical, step-by-step notebook implementation available in the RAG_TECHNIQUES repository as of mid-2025. While it serves as a valuable learning tool for developers and AI practitioners exploring advanced retrieval-augmented generation methods, it is important to note that the tutorial’s claims are based on its own descriptions without independent validation or real-world performance metrics. For those interested in multi-hop retrieval using vector storage, this tutorial offers accessible code and conceptual insights into integrating graph-style reasoning without additional graph databases.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ]
+    }
+  ],
+  "variants": [
+    "G0",
+    "G1"
+  ],
+  "quality": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 0 accurately reflects the source content and adheres to the brief's requirements. It correctly identifies the speaker role as a curator of resources and avoids making claims of personal experience or independent verification. The factual claims are directly supported by the source text, and the limitations mentioned in the brief are appropriately addressed. The title and body are in agreement, and no unsupported or unverified claims are present.",
+        "body_words": 139,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true,
+        "independent_audit": {
+          "index": 0,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "All claims in the draft are directly supported by the source text and align with the brief's instructions. The speaker identity is maintained as a resource curator, and essential context regarding the tutorial's nature and limitations is included. The title accurately reflects the body content."
+        }
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 1 also accurately reflects the source content and adheres to the brief. It correctly positions the speaker as a curator and avoids personal claims. All factual assertions are grounded in the source text, and the limitations are acknowledged. The title and body are consistent, and there are no unsupported or unverified claims.",
+        "body_words": 169,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true,
+        "independent_audit": {
+          "index": 1,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "The draft accurately reflects the source material and adheres to the brief's requirements. The speaker role is appropriate, and the context of the tutorial as a resource is well-maintained. The title is consistent with the body, and no unsupported or unverified claims are made."
+        }
+      }
+    ]
+  },
+  "translation": {
+    "task_zh": {
+      "content_archetype": "D",
+      "posting_intent": "分享资源",
+      "current_context": "分享一个实用的链接资源，用于探索基于向量的多跳检索；重点介绍该资源的教学内容及其局限性。",
+      "core_value": "一个实用资源，用于探索使用向量存储的多跳检索；并非证明所有传统RAG方法都失败。",
+      "source_date": "2025-06-05",
+      "scenario_note": "受控产品输入，来源为第三方存档证据。"
+    },
+    "drafts": [
+      {
+        "title": "GraphRAG教程：使用向量搜索和图推理进行多跳问答，无需单独图数据库",
+        "body": "一份近期存档的教程介绍了GraphRAG，这是一种结合向量搜索与图式推理的多跳问答方法。与传统需要单独图数据库的方法不同，GraphRAG仅依赖向量数据库。该教程指导用户将文本转换为实体、关系和存储于向量中的段落。内容涵盖构建两种搜索类型——实体搜索和关系搜索，并使用数学矩阵识别数据点之间的连接。AI提示帮助选择最相关的关系以回答复杂查询。该资源对探索先进检索增强生成（RAG）技术、专注于多跳检索的开发者和AI从业者特别有用。请注意，教程概述了方法论并提供了链接的笔记本，但未提供独立的性能验证或实际应用结果。感兴趣者可在2025年6月存档的RAG_TECHNIQUES GitHub仓库中获取完整GraphRAG笔记本。"
+      },
+      {
+        "title": "GraphRAG教程：使用向量搜索结合图推理的多跳问答（无需单独图数据库）",
+        "body": "一份近期存档的教程详细介绍了GraphRAG，这是一种结合向量搜索与图推理的多跳问答技术。与传统需要单独图数据库的方法不同，GraphRAG完全在向量数据库中运行，简化了基础设施需求。教程讲解了如何将文本转换为适合向量存储的实体、关系和段落，然后构建两种搜索：实体搜索和关系搜索。它利用数学矩阵发现数据点之间的连接，并使用AI提示选择回答查询时最相关的关系。该资源提供了一个实用的逐步笔记本实现，存档于2025年中期的RAG_TECHNIQUES仓库。虽然它是开发者和AI从业者探索先进检索增强生成方法的宝贵学习工具，但需注意教程中的声明基于自身描述，缺乏独立验证或实际性能指标。对于有兴趣使用向量存储进行多跳检索的人士，该教程提供了易于访问的代码和将图式推理集成而无需额外图数据库的概念见解。"
+      }
+    ]
+  },
+  "numeric_translation_checks": [
+    {
+      "english": [
+        "2025"
+      ],
+      "chinese": [
+        "2025",
+        "6"
+      ],
+      "same": false
+    },
+    {
+      "english": [
+        "2025"
+      ],
+      "chinese": [
+        "2025"
+      ],
+      "same": true
+    }
+  ],
+  "plan": {
+    "content_archetype": "D",
+    "primary_value": "resource",
+    "strongest_grounded_hook": "A GraphRAG tutorial describes graph-style multi-hop reasoning using vector storage without a separate graph database.",
+    "why_readers_should_care": "This resource offers a practical, step-by-step guide to implementing multi-hop question answering by combining vector search with graph reasoning, all within vector databases—eliminating the complexity of managing separate graph databases.",
+    "recommended_angle": "Present the tutorial as a comprehensive resource that teaches how to transform text into entities, relationships, and passages for vector storage, build entity and relationship searches, use mathematical matrices to find connections, and apply AI prompting to select relevant answers, while noting it is a tutorial and not an independent validation of effectiveness.",
+    "essential_context": "The tutorial is archived as of 2025-06-05 and provides a complete notebook for GraphRAG implementation using vector databases. It is authored as a third-party resource and does not represent a live implementation or personal experience.",
+    "facts_to_emphasize": [
+      "f1",
+      "f2",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8"
+    ],
+    "facts_optional": [
+      "f3"
+    ],
+    "natural_opening_strategy": "Introduce the resource by highlighting its unique approach to multi-hop question answering that integrates graph reasoning directly within vector search frameworks.",
+    "natural_ending_strategy": "Conclude by emphasizing the tutorial’s role as a practical learning tool with accessible code, while acknowledging that its claims are based on the tutorial’s description and not independent performance verification.",
+    "engagement_risk": "Readers might expect proven performance or live deployment insights, which the tutorial does not provide; also, the technical depth may limit accessibility to only developers familiar with vector databases and multi-hop retrieval concepts.",
+    "safety_constraints": "Avoid making claims about the tutorial’s effectiveness beyond what is described; do not imply personal endorsement or ownership; do not invent results or use cases not explicitly stated."
+  },
+  "source_hash": "96a93df2c03470f6f401c3f1de38e412c193f5c4a864351892b80ea260e541a2"
+}

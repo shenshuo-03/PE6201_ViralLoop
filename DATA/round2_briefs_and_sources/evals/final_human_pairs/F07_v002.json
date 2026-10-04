@@ -1,0 +1,53 @@
+{
+  "task_zh": "讨论FamilyBench基准测试在处理具有复杂、树状关系和海量上下文的LLM能力方面的有效性，并理解初始基准测试结果的意义。",
+  "A": {
+    "title": "FamilyBench：探索LLM处理复杂家谱推理的能力",
+    "body": "FamilyBench是一个开源基准测试，旨在测试大型语言模型在海量上下文中理解复杂、树状的家庭关系的能力。它使用一个Python程序生成家谱，然后根据该结构提出问题。初步测试涉及七个模型，包括六个开放权重模型和一个封闭模型，它们处理一个包含400人、跨越10代、约18,000个token的家谱。模型各回答200个问题，测试通过OpenRouter进行，参数包括8k最大token和0.3的温度。报告结果显示准确率在64%到81%之间，其中Gemini 2.5 Pro以81.48%的准确率和零无响应率领先。然而，这些早期结果带有警示：该基准测试是新的，测试参数可能不是所有模型的最佳选择，无响应率反映了token限制而非完全失败。对于那些对本地LLM开发感兴趣的人来说，这引发了关于如何改进对大型结构化上下文的推理，以及微调或不同的提示策略是否能提高性能的问题。什么方法可以帮助模型更好地处理这种错综复杂的关系数据？FamilyBench如何发展以提供对LLM推理更深入的见解？",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F7"
+    ]
+  },
+  "B": {
+    "title": "FamilyBench在多大程度上衡量了LLM对复杂家谱关系的掌握程度？",
+    "body": "FamilyBench是一个开源基准测试，旨在测试语言模型在大型上下文中理解复杂、树状家庭关系的能力。它生成合成家谱，然后根据这些结构设计问题。目标是衡量模型在多代联系中导航和推理的能力，这对许多LLM来说是一个不小的挑战。\n\n考虑到该基准测试使用生成数据和脚本化问题集，您认为这种方法在捕捉现实世界家庭关系复杂性方面有多有效？依赖合成树来测试关系理解是否存在陷阱？我想知道是否有人能提供关于FamilyBench的方法是否能推广到其生成场景之外，或者它是否会过度简化真实家谱数据中存在的细微差别。",
+    "fact_refs": [
+      "F1",
+      "F2"
+    ]
+  },
+  "pair_id": "F07",
+  "english_A": {
+    "title": "FamilyBench: Exploring LLMs' Ability to Handle Complex Family Tree Reasoning",
+    "body": "FamilyBench is an open-source benchmark designed to test large language models on understanding complex, tree-like family relationships within a massive context. It uses a Python program to generate a family tree and then formulates questions based on that structure. Initial tests involved seven models, including six open-weight and one closed, tackling a 400-person tree spanning 10 generations and about 18,000 tokens. Models answered 200 questions each, with testing done via OpenRouter under parameters like 8k max tokens and a temperature of 0.3. Reported results show accuracy ranging from around 64% to over 81%, with Gemini 2.5 Pro leading at 81.48% accuracy and zero no-response rate. However, these early results come with caveats: the benchmark is new, testing parameters may not be optimal for all models, and the no-response rate reflects token limits rather than outright failures. For those interested in local LLM development, it raises questions about how to improve reasoning over large, structured contexts and whether fine-tuning or different prompting strategies could boost performance. What approaches might help models better navigate such intricate relational data? And how might FamilyBench evolve to provide deeper insights into LLM reasoning?",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F7"
+    ]
+  },
+  "english_B": {
+    "title": "How well does FamilyBench gauge LLMs’ grasp of complex family tree relationships?",
+    "body": "FamilyBench is an open-source benchmark designed to test how well language models understand complex, tree-like family relationships within a large context. It generates synthetic family trees and then crafts questions based on those structures. The goal is to measure a model’s ability to navigate and reason about multi-generational connections, which is a nontrivial challenge for many LLMs.\n\nGiven that the benchmark uses generated data and scripted question sets, how effective do you think this approach is at capturing real-world family relationship complexities? Are there pitfalls in relying on synthetic trees for testing relational understanding? I’m curious if anyone has insights on whether FamilyBench’s method can generalize beyond its generated scenarios or if it risks oversimplifying the nuances found in actual genealogical data.",
+    "fact_refs": [
+      "F1",
+      "F2"
+    ]
+  },
+  "translation_numeric_checks": {
+    "A": true,
+    "B": true
+  },
+  "raw_numeric_translation_checks": {
+    "A": true,
+    "B": true
+  },
+  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+}

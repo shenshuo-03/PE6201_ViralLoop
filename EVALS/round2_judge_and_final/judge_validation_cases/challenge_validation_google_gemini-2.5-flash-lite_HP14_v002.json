@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "B",
+    "usefulness": "B",
+    "credibility": "B",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "B",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it directly asks for user experiences with the remote server API setup for local LLM inference engines, which aligns perfectly with the brief's desired response and audience interest. It also specifically asks about setup complexity, latency, and reliability, and mentions the graphical results, making it more specific and actionable. Post A asks a more general question about the practicality of configuration, which is less targeted. Both posts accurately reflect the provided facts, but B's framing encourages a more detailed and relevant discussion within the community."
+    },
+    "usage": {
+      "run_id": "v002-r0162",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:29:33.786502+00:00",
+      "tag": "judge_validation:HP14:AB",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "63232ba0ec566f72036f512f5cb03d1fcdd89195b2654f6a92c6f46924b19730",
+      "actual_cost_usd": 0.0003112,
+      "budget_charge_usd": 0.0003112,
+      "reserved_upper_usd": 0.0013371,
+      "input_tokens": 2400,
+      "output_tokens": 178,
+      "latency_seconds": 1.2890501999936532,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109772-afPHvzztTkiaqtLvSSRs",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is superior because it directly asks for user experiences with specific local LLM inference engines (LM Studio, Ollama, vLLM) and the \"Remote server (API)\" configuration, aligning perfectly with the brief's desired response. It also specifically inquires about the practicalities of graphical results, a detail mentioned in the facts but not elaborated upon. Post B is more generic, asking a broader question about configuring remote AI servers without mentioning the specific tools or the graphical results feature, making it less targeted and less useful for the intended audience. Both posts accurately reflect the provided facts and maintain credibility by not making unsupported claims. Post A's direct questions foster better community engagement and provide a clearer path for users to contribute their knowledge, thus enhancing community fit and usefulness."
+    },
+    "usage": {
+      "run_id": "v002-r0163",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:29:35.458691+00:00",
+      "tag": "judge_validation:HP14:BA",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "4375a738c26a391f8b1be0de8e42230f9c9c0eff5caffffcaeb6563031ca910d",
+      "actual_cost_usd": 0.0003316,
+      "budget_charge_usd": 0.0003316,
+      "reserved_upper_usd": 0.0013371,
+      "input_tokens": 2400,
+      "output_tokens": 229,
+      "latency_seconds": 1.6441951000015251,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109773-li2kcYQF5qQCqiPK2hM9",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

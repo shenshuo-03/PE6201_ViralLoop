@@ -1,0 +1,86 @@
+{
+  "topic": "Reverse Keyword Search with Vector Databases",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "To find a method for performing a reverse keyword search that identifies specific keywords within a larger text input, while also considering semantic similarity and order preservation.",
+  "context": "The source author is exploring the use of vector databases (Weaviate, Milvus) for a use case involving user input of sentences or paragraphs. The goal is to identify matching 1-2 word keywords (e.g., 'hugging face', 'meta') and the semantically closest sentence from a database. The author notes that vector DBs are not typically designed for this type of reverse keyword search.",
+  "motivation": "This question is worth discussing because it highlights a potential limitation or advanced use case for vector databases, prompting exploration of alternative or hybrid approaches to keyword extraction and semantic matching.",
+  "desired_response": "Guidance on how to implement a reverse keyword search that accurately identifies specific keywords within user input, considering semantic matches and order, and addressing the limitations of standard vector database queries.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The user's use case involves matching 1-2 word keywords and semantically closest sentences from a database based on user input.",
+      "evidence_quote": "A DB will contain some sentences which will be used for semantic match and 1-2 word keywords e.g. \"hugging face\", \"meta\".",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    },
+    {
+      "id": "F2",
+      "text": "The source author attempted to use Weaviate and Milvus for this task.",
+      "evidence_quote": "I have tried Weaviate and Milvus DBs",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    },
+    {
+      "id": "F3",
+      "text": "The source author acknowledges that vector databases are not inherently designed for reverse keyword search.",
+      "evidence_quote": "I know vector DBs are not meant for this reverse-keyword search",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    },
+    {
+      "id": "F4",
+      "text": "A specific challenge is handling multi-word keywords like 'hugging face' to avoid false positives or negatives.",
+      "evidence_quote": "for 2 word keywords i am stuck with the following \"hugging face\" keyword edge case:",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    },
+    {
+      "id": "F5",
+      "text": "Using 'AND' for phrase matching incorrectly includes inputs like 'i like face hugging aliens'.",
+      "evidence_quote": "Using \"AND\" based phrase match causes 2 to hit",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    },
+    {
+      "id": "F6",
+      "text": "Using 'OR' for phrase matching incorrectly includes inputs like 'i like hugging people'.",
+      "evidence_quote": "and using OR causes 3 to hit.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/"
+    }
+  ],
+  "allowed_claims": [
+    "Vector databases may not be ideal for reverse keyword search.",
+    "Standard 'AND' or 'OR' logic can lead to incorrect matches for multi-word keywords.",
+    "Order preservation is a consideration in this type of search."
+  ],
+  "forbidden_claims": [
+    "The source author found a successful solution.",
+    "Weaviate or Milvus are definitively unsuitable for this task.",
+    "The user's specific hardware configuration.",
+    "The exact performance metrics of any attempted solution."
+  ],
+  "essential_limitations": [
+    "The specific configuration settings for Weaviate or Milvus were not detailed.",
+    "The size and nature of the database content are unknown.",
+    "The exact implementation details of the 'AND' and 'OR' logic used are not specified."
+  ],
+  "missing_information": [
+    "Alternative database solutions or techniques for reverse keyword search.",
+    "Methods for preserving order in keyword matching.",
+    "Strategies to handle the edge cases described for multi-word keywords."
+  ],
+  "id": "F02",
+  "brief_id": "F02",
+  "split": "final",
+  "source_group_id": "reddit:1lr9g4t",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "2025-07-04",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lr9g4t/need_help_with_reverse_keyword_search_using/",
+  "source_hash": "3b950e64e0e0ae913721a324b387977651f7c4ffea78c5c6490240b6b1531cc4",
+  "language": "English",
+  "persona": "community reader of a dated public account",
+  "quotes_checked": true,
+  "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+}

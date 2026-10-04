@@ -1,0 +1,100 @@
+{
+  "outcome": "Uncertain",
+  "dimensions": {
+    "community_fit": "Uncertain",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "Uncertain",
+      "specificity": "A",
+      "information_value": "Uncertain",
+      "usefulness": "Uncertain",
+      "credibility": "Uncertain",
+      "overall": "Uncertain"
+    },
+    "swap_consistent": {
+      "community_fit": false,
+      "specificity": true,
+      "information_value": false,
+      "usefulness": false,
+      "credibility": false,
+      "overall": false
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "A",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "A",
+          "overall": "B"
+        },
+        "evidence": "Draft A preserves all five facts and explicitly acknowledges missing context (Open WebUI version, server specs, config details), grounding uncertainty appropriately. It invites both problem confirmation and debugging help. Draft B omits F1 (the 8.0 gguf quant detail) and F5 (cross-frontend success), reducing specificity and losing the key diagnostic signal that the model works elsewhere. However, B is more concise and directly frames the core actionable question—'thinking' stall with no workarounds found—making it more immediately relevant to community troubleshooting. A's longer framing risks feeling report-like despite its thoroughness. B's tighter focus on the specific stuck state and direct call for workarounds better matches the brief's goal of 'guidance or suggestions to resolve.' A's credibility is stronger due to full fact citation, but B's community fit is sharper: it avoids speculation about root cause and centers the practical problem. On balance, B's directness and audience-focused framing outweigh A's completeness, though A's methodical approach is defensible."
+      },
+      "usage": {
+        "run_id": "v002-r0476",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:23:02.339468+00:00",
+        "tag": "judge_final:F12:V1_vs_V0:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "6f2b605e8d52b4cbdcea466b109b4093d918ac23011dac2e95041edf163be331",
+        "actual_cost_usd": 0.003697,
+        "budget_charge_usd": 0.003697,
+        "reserved_upper_usd": 0.011685000000000001,
+        "input_tokens": 2097,
+        "output_tokens": 320,
+        "latency_seconds": 5.55784510000376,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112976-Hl2jKmmem36bkTh8f9Zh",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "B",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts accurately ground claims in provided facts and avoid forbidden claims. A is more concise and directly frames the core problem (stall with thinking enabled) as a focused question for community troubleshooting. B includes all five facts, providing fuller context: the 8.0 gguf quant detail (F1), the docker setup, and crucially the cross-frontend success (F5), which strengthens the diagnostic framing by narrowing the issue to Open WebUI specifically rather than the model itself. B also explicitly acknowledges missing information (Open WebUI version, server specs, config), which increases credibility and guides potential responders. A omits F1, F4, and F5, losing the comparative evidence that the model works elsewhere—a key diagnostic signal for the local LLM community. B's longer form better serves the audience's need to understand scope and constraints before offering solutions. A's brevity sacrifices diagnostic power; B's completeness and transparent limitation-flagging make it more actionable for troubleshooting-focused readers."
+      },
+      "usage": {
+        "run_id": "v002-r0477",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:23:07.206813+00:00",
+        "tag": "judge_final:F12:V1_vs_V0:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "b86f38b2d03412ac31d7479d5bf41ccf33afdc1a0140b13c48ec26614d591f23",
+        "actual_cost_usd": 0.003617,
+        "budget_charge_usd": 0.003617,
+        "reserved_upper_usd": 0.011685000000000001,
+        "input_tokens": 2097,
+        "output_tokens": 304,
+        "latency_seconds": 4.838288999977522,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112982-VL9MBU9wS692GLrpv30k",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F12",
+  "comparison": "V1_vs_V0",
+  "older": "V0",
+  "newer": "V1",
+  "at": "2026-10-04T11:23:07.227135+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "brief_id": "H03",
+  "source_group_id": "reddit:1jagtpd",
+  "id": "1jagtpd",
+  "split": "validation_source",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "1741885216",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jagtpd/any_experiments_on_json_output_enforcement_using/",
+  "source_title": "Any experiments on JSON output enforcement using grammar?",
+  "source_text": "I've been messing around with different frameworks for working with LLMs just to see what's out there - and I really like the idea of output schema enforcement. However, most things I have looked at so far - langchain, pydantic\\_ai, instructor, etc. all seem to use prompting to tell the model to produce JSON, then parse that out. If the model spits out invalid JSON, they usually implement retry mechanisms.\n\nHas anyone tried or seen any info about using some kind of grammar enforcement to force the model to output a schema like JSON?\n\nFor instance, when sampling - I feel like you would be able to just ignore the logits for all tokens that are not valid JSON. So when sampling the first character of the response, you would be picking between the \"{\" and \"\\[\" tokens (curly brace and bracket). Then you'd pick from a newline, space, or quotation mark, and so on.",
+  "collected_at": "2026-10-04T10:03:39.096220+00:00",
+  "historical_split": "train",
+  "source_hash": "6ff878598790189074cf6e205cfb0bf5397088c36d397c1f1e63398ba80a3257"
+}

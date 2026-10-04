@@ -1,0 +1,34 @@
+# Environments
+venv/
+.venv/
+env/
+submission_venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Bundled third-party libraries (reinstall from requirements.txt)
+vendor/
+vendor_runtime/
+
+# Large regenerable corpora and caches
+data/raw/
+data/embeddings/
+data/recovery_cache/
+candidate_pool.parquet
+**/api_cache/
+**/*.parquet.tmp
+
+# Credentials - never commit
+.env
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

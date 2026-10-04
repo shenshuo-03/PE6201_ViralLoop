@@ -1,0 +1,632 @@
+[
+  {
+    "task_zh": "讨论LocalLLaMA社区迁移到像Fediverse这样的去中心化平台的潜在可能性。",
+    "A": {
+      "title": "考虑迁移到Fediverse以避免LocalLLaMA社区的中心化控制？",
+      "body": "一篇2025年的帖子最近引发了对中心化平台可能集中控制LocalLLaMA社区内通信的担忧。作者担心少数版主可能会决定成千上万用户如何互动，这可能会限制讨论的开放性和多样性。\n\n鉴于这些担忧，将社区转移到像Fediverse这样的去中心化平台是否能切实减少中心化控制，还是会带来新的挑战，例如版面管理的一致性或可发现性？是否有类似技术社区的例子可以说明在脱离成熟的中心化平台时存在的明显权衡？\n\n我想了解其他人如何权衡去中心化带来的好处与潜在的缺点，以促进一个包容且易于管理的LocalLLaMA讨论空间。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "r/LocalLLaMA是否应考虑迁移到像Fediverse这样的去中心化平台？",
+      "body": "一位社区成员最近对我们当前平台的中心化提出了担忧，认为它可能正走向他们所说的“粪化”[F1]。他们认为，中心化控制只允许少数人决定成千上万人的沟通方式，这对我们这样的社区来说似乎有问题[F2]。他们提出的解决方案是迁移到去中心化平台，特别是Fediverse，那里的友好志愿者可以帮助承担托管费用[F3][F4][F6]。作者甚至提出要参与托管，但不坚持自己运行服务器[F5]。\n\n鉴于以上几点，您认为r/LocalLLaMA迁移到Fediverse或类似的去中心化平台的可行性有多大？我们在版面管理、托管费用或社区参与方面可能会面临哪些挑战？是否有其他值得考虑的去中心化平台？很高兴听到有去中心化社区或托管设置经验的人的看法。如果我们脱离中心化平台，我们如何确保民主的版面管理并保持社区凝聚力？",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "pair_id": "F01",
+    "english_A": {
+      "title": "Considering a Move to Fediverse to Avoid Centralized Control in LocalLLaMA Community?",
+      "body": "A recent 2025 post raised concerns about centralized platforms potentially concentrating control over communication within the LocalLLaMA community. The author worries that a handful of moderators might dictate how tens or hundreds of thousands of users interact, which could limit openness and diversity of discussion.\n\nGiven these concerns, would shifting the community to a decentralized platform like the Fediverse realistically reduce centralized control, or might it introduce new challenges such as moderation consistency or discoverability? Are there examples from similar tech communities that highlight clear tradeoffs when moving away from established centralized platforms?\n\nI’m curious how others weigh the balance between decentralization benefits and potential downsides in fostering an inclusive yet manageable LocalLLaMA discussion space.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "Should r/LocalLLaMA Consider Moving to a Decentralized Platform Like the Fediverse?",
+      "body": "A community member recently raised concerns about the centralization of our current platform, suggesting it might be heading towards what they call 'enshittification' [F1]. They argue that centralized control allows only a few people to dictate how tens or hundreds of thousands communicate, which seems problematic for a community like ours [F2]. Their proposed solution is to migrate to decentralized platforms, specifically the Fediverse, where friendly volunteers could help cover hosting costs [F3][F4][F6]. The author even offers to participate in hosting but doesn’t insist on running their own server [F5].\n\nGiven these points, how feasible do you think a migration to the Fediverse or a similar decentralized platform is for r/LocalLLaMA? What challenges might we face regarding moderation, hosting costs, or community engagement? Are there alternative decentralized platforms worth considering? It would be great to hear from those who have experience with decentralized communities or hosting setups. How might we ensure democratic moderation and maintain community cohesion if we move away from centralized platforms?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "寻找一种执行反向关键词搜索的方法，该方法能够识别较大文本输入中的特定关键词，同时考虑语义相似性和顺序保留。",
+    "A": {
+      "title": "使用 Weaviate 或 Milvus 查找带有顺序保留的特定 1-2 词关键词？",
+      "body": "我正在研究一个用例，目标是匹配非常短的关键词——例如“hugging face”或“meta”——并根据用户输入从数据库中查找语义上相近的句子。挑战在于，像 Weaviate 和 Milvus 这样的向量数据库最初并非为反向关键词搜索或在这些短语中保留词序而设计。\n\n一位来自 2025 年中期 Reddit 用户报告说尝试了这些数据库来实现此目的，但没有详细说明确切的配置或分享明确的成功指标。考虑到向量相似性更侧重于语义接近性而非精确的标记顺序，我想知道这里是否有人有实际经验或策略，可以在使用 Weaviate 或 Milvus 的情况下可靠地检测这些 1-2 词关键词，同时保持它们的顺序？\n\n是否存在已知的变通方法或混合方法可以提高此上下文中的关键词检测保真度？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "如何处理向量数据库中的多词关键词匹配以进行反向搜索？",
+      "body": "我正在探索一种反向关键词搜索场景，目标是在较大的用户输入中查找特定的 1-2 词关键词（例如“hugging face”或“meta”），同时从数据库中检索语义上最接近的句子。一篇来自 2025 年的 Reddit 帖子讨论了使用 Weaviate 和 Milvus 向量数据库进行的尝试，但强调向量数据库并非为这种反向关键词搜索而设计。作者指出，在使用简单的 AND/OR 逻辑进行多词关键词匹配时，在保留关键词顺序和避免误报方面存在挑战——例如，“hugging face”可能会错误地匹配到短语“face hugging aliens”或“hugging people”。考虑到这些限制以及数据库大小或配置缺乏细节，本地 LLM 爱好者可以考虑哪些实际策略或混合方法来更好地处理此上下文中的顺序保留和准确的多词关键词检测？是否存在将语义相似性与向量数据库中的精确短语匹配相结合的已知技术，还是应该探索替代的索引方法？",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "pair_id": "F02",
+    "english_A": {
+      "title": "Using Weaviate or Milvus to Find Specific 1-2 Word Keywords with Order Preservation?",
+      "body": "I'm looking at a use case where the goal is to match very short keywords—like \"hugging face\" or \"meta\"—and also find semantically close sentences from a database based on user input. The challenge is that vector databases such as Weaviate and Milvus were not originally designed for reverse keyword search or to preserve word order in these short phrases.\n\nA Reddit user from mid-2025 reported trying these databases for this purpose but didn't detail the exact configurations or share clear success metrics. Given that vector similarity focuses more on semantic closeness than exact token order, I'm wondering if anyone here has practical experience or strategies for reliably detecting these 1-2 word keywords while maintaining their order using Weaviate or Milvus?\n\nAre there known workarounds or hybrid approaches that might improve keyword detection fidelity in this context?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "How to handle multi-word keyword matching with vector DBs for reverse search?",
+      "body": "I'm exploring a reverse keyword search scenario where the goal is to find specific 1-2 word keywords (like \"hugging face\" or \"meta\") within larger user inputs, while also retrieving the semantically closest sentence from a database. A Reddit post from 2025 discusses attempts using Weaviate and Milvus vector databases but highlights that vector DBs aren't inherently designed for this kind of reverse keyword search. The author points out challenges in preserving keyword order and avoiding false positives when using simple AND/OR logic for multi-word keywords—for example, \"hugging face\" matching incorrectly on phrases like \"face hugging aliens\" or \"hugging people.\" Given these limitations and the lack of detail on database size or configuration, what practical strategies or hybrid approaches could local LLM enthusiasts consider to better handle order preservation and accurate multi-word keyword detection in this context? Are there known techniques to combine semantic similarity with precise phrase matching in vector DBs, or should alternative indexing methods be explored?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "确定是否可以有效地在特定文档（2018年国际建筑规范）上训练本地LLM，以在目标分析和检索方面优于云模型。",
+    "A": {
+      "title": "在2018年国际建筑规范上训练本地LLM是否适用于目标建筑规范分析？",
+      "body": "我看到一个讨论，其中有人想专门在2018年国际建筑规范（IBC）上训练一个本地LLM，以回答有关建筑规范分析的查询，可能使用诸如平面图之类的输入。核心问题是，将模型仅限于一个详细的技术文档是否能产生专注且准确的响应，特别是与使用经过精心设计的提示的云模型（如ChatGPT）相比。考虑到原始作者是普通人，并且没有提供具体的性能数据，我对这种方法的可行性感到好奇。这里有人尝试过在单个专业文档上训练或微调本地LLM以完成特定领域任务吗？结果通常与云模型相比如何，特别是当考虑提示工程时？此外，在为这类模型表示平面图之类的输入时可能会出现哪些挑战？任何见解或经验都将不胜感激。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "在2018年国际建筑规范上训练本地AI是否适用于平面图分析？",
+      "body": "我看到一篇来自2025年中期的帖子，作者想创建一个专门在2018年国际建筑规范（IBC）上训练的专注AI模型，以分析平面图并提供建筑规范反馈。想法是输入一个平面图，直接从模型中获得基于规范的分析。\n\n考虑到2018年IBC文本的特殊性，仅凭该文档训练本地LLM来完成此类任务是否可行？或者，与依赖经过精心设计的提示的云模型（如ChatGPT）来解释相对于平面图的代码相比，哪种方法更有效？原始帖子没有提供关于可行性或性能的细节，所以我很好奇对于这个用例，在本地专业模型与通用模型上的提示工程之间进行权衡，是否有人能提供见解。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "pair_id": "F03",
+    "english_A": {
+      "title": "Is training a local LLM on the 2018 International Building Code practical for targeted building code analysis?",
+      "body": "I've come across a discussion where someone wants to train a local LLM specifically on the 2018 International Building Code (IBC) to answer queries about building code analysis, potentially using inputs like floor plans. The core question is whether limiting a model to just one detailed technical document can produce focused and accurate responses, especially compared to using cloud-based models like ChatGPT with carefully crafted prompts. Given that the source author is a layperson and hasn't provided concrete performance data, I'm curious about the feasibility of this approach. Has anyone here experimented with training or fine-tuning local LLMs on a single specialized document for domain-specific tasks? How do the results typically compare to cloud models, particularly when prompt engineering is factored in? Also, what challenges might arise in representing inputs like floor plans for such models? Any insights or experiences would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "english_B": {
+      "title": "Is training a local AI on the 2018 International Building Code practical for floor plan analysis?",
+      "body": "I came across a post from mid-2025 where the author wanted to create a focused AI model trained specifically on the 2018 International Building Code (IBC) to analyze floor plans and provide building code feedback. The idea is to input a floor plan and get a code-based analysis directly from the model.\n\nGiven the specificity of the 2018 IBC text, is it practical to train a local LLM just on this document for such a task? Or would it be more efficient to rely on a cloud-based model like ChatGPT with carefully crafted prompts to interpret the code relative to floor plans? The source doesn't provide details on feasibility or performance, so I’m curious if anyone has insight into the tradeoffs between a local specialized model versus prompt engineering on a general model for this use case.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "识别和讨论在浏览器内完全运行小型LLM的工具和技术，用于将JSON数据生成Chart.js配置等任务。",
+    "A": {
+      "title": "用于JSON到Chart.js配置转换的轻量级浏览器内LLM？",
+      "body": "我正在研究在浏览器内完全运行小型语言模型，以将JSON数据转换为有效的Chart.js配置。目标是保持一切轻量级且在客户端进行，但用户的硬件和浏览器环境未知，这使得工具选择变得复杂。\n\n有人找到有效的浏览器内推理框架能够很好地处理这种结构化生成而没有繁重依赖吗？考虑到用户设置的多样性，我对在浏览器内平衡模型大小、速度和可靠性的框架的实际权衡或建议感到好奇。\n\n任何关于可以专门帮助JSON到Chart.js配置生成的轻量级工具的经验或提示将非常有帮助。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "寻求轻量级浏览器内LLM的建议，用于将JSON转换为Chart.js配置",
+      "body": "我正在探索在Web浏览器内完全运行小型语言模型的可行性，目标是将JSON数据转换为有效的Chart.js配置以进行可视化。此外，为数据生成简短的自然语言摘要是次要目标。关键要求包括支持小型量化模型，最好在100MB以下，以及与WebGPU或WASM兼容的运行时，以实现高效的客户端推理。我已经开始关注MLC.ai作为一个有前途的选项，但尚未找到关于其在此特定任务上有效性的详细社区反馈。这里有人尝试过浏览器内LLM推理框架进行结构化数据转换或可视化生成吗？如果有，哪些模型和提示方法效果最好？也对可能更好地支持这些用例的替代运行时或工具感到好奇，特别是那些针对轻量级、浏览器原生部署进行优化的工具。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "pair_id": "F04",
+    "english_A": {
+      "title": "Lightweight In-Browser LLMs for JSON to Chart.js Config Conversion?",
+      "body": "I'm looking into running small language models entirely in the browser to convert JSON data into valid Chart.js configurations. The goal is to keep everything lightweight and client-side, but the hardware and browser environments of users are unknown, which complicates tool selection.\n\nHas anyone found effective in-browser inference frameworks that handle this kind of structured generation well without heavy dependencies? Given the variability in users' setups, I'm curious about practical tradeoffs or recommendations for frameworks that balance model size, speed, and reliability in-browser.\n\nAny experiences or pointers to lightweight tools that can specifically assist with JSON-to-Chart.js config generation would be really helpful.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "Seeking Recommendations for Lightweight In-Browser LLMs to Convert JSON into Chart.js Configs",
+      "body": "I'm exploring the feasibility of running small language models entirely within a web browser, aiming to transform JSON data into valid Chart.js configurations for visualization. Additionally, generating brief natural language summaries of the data is a secondary goal. Key requirements include support for small quantized models ideally under 100MB, and runtimes compatible with WebGPU or WASM for efficient client-side inference. I've started looking into MLC.ai as a promising option but haven't found detailed community feedback on its effectiveness for this specific task. Has anyone here experimented with in-browser LLM inference frameworks for structured data transformation or visualization generation? If so, what models and prompting approaches worked best? Also curious about alternative runtimes or tools that might better support these use cases, especially those optimized for lightweight, browser-native deployments.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "为在多 GPU AMD 设置上运行大型语言模型的最高效 VRAM 后端和最佳配置寻求建议，以最大化输出速度/吞吐量。",
+    "A": {
+      "title": "多 GPU AMD LLM 推理：Gemma3:27b 和 Qwen3 32B 的最佳后端、量化和配置技巧？",
+      "body": "我正在使用一个 AMD 多 GPU 配置（2x RX 7900 XTX + 1x RX 7800 XT，总共 64GB VRAM），探索 Gemma3:27b 和 Qwen3 32B 的推理选项。之前在较旧模型上使用 VLLM 和 llama.cpp 后端进行的实验显示每秒 token 数差异很小，因此我正在寻找关于哪个后端现在表现最佳的更具针对性的建议。有人在类似的 AMD 硬件上测试过 4 位或 8 位量化方法（如 GPTQ、AWQ 或 GGUF）吗？如何有效地处理这些大型模型的多 GPU 利用率？也对任何能提高速度或吞吐量的首选推理框架或配置细节感兴趣。由于现有报告缺乏 ROCm/驱动程序版本和详细设置的信息，分享您的经验可以真正帮助阐明此特定 AMD 多 GPU 环境的最佳方法。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "在多 GPU AMD 设置上，Gemma3:27b 和 Qwen3 32B 的 VLLM 和 llama.cpp 之间如何选择？",
+      "body": "我偶然发现了一篇 2025 年的 Reddit 帖子，其中一位用户拥有两块 RX 7900 XTX 和一块 RX 7800 XT（总共约 64GB VRAM），使用 VLLM 和 llama.cpp 后端测试了 Gemma3:27b 和 Qwen3 32B 的推理速度。他们的数据有点过时，并且特定于他们的设置，但它暗示了这些后端在 AMD 硬件上的显著速度差异。\n\n考虑到性能可能因模型大小、GPU 架构和后端优化而异，最近有人在类似的 AMD 多 GPU 配置上比较过 VLLM 和 llama.cpp 吗？具体来说，哪个后端处理这些大型模型更快或更有效？关于 VRAM 在这些卡之间的分布如何影响选择的任何见解都会有帮助。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "pair_id": "F05",
+    "english_A": {
+      "title": "Multi-GPU AMD LLM Inference: Optimal Backend, Quantization & Config Tips for Gemma3:27b and Qwen3 32B?",
+      "body": "Using an AMD multi-GPU rig (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total), I'm exploring inference options for Gemma3:27b and Qwen3 32B. Previous experiments with VLLM and llama.cpp backends on older models showed small token/s differences, so I’m looking for more targeted advice on what backend performs best now. Has anyone tested quantization methods like GPTQ, AWQ, or GGUF at 4-bit or 8-bit on similar AMD hardware? How do you handle multi-GPU utilization efficiently for these large models? Also interested in any preferred inference frameworks or configuration details that boost speed or throughput. Since available reports lack info on ROCm/driver versions and detailed setups, sharing your experience could really help clarify optimal approaches for this specific AMD multi-GPU environment.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F6"
+      ]
+    },
+    "english_B": {
+      "title": "Choosing Between VLLM and llama.cpp for Gemma3:27b & Qwen3 32B on Multi-GPU AMD Setup?",
+      "body": "I came across a 2025 Reddit post where a user with two RX 7900 XTXs and one RX 7800 XT (about 64GB total VRAM) tested inference speed on Gemma3:27b and Qwen3 32B using VLLM and llama.cpp backends. Their data is a bit dated and specific to their setup, but it hints at notable speed differences between these backends on AMD hardware.\n\nGiven that performance can vary widely with model size, GPU architecture, and backend optimizations, has anyone recently compared VLLM and llama.cpp on similar AMD multi-GPU rigs? Specifically, which backend tends to handle these large models faster or more efficiently? Any insights on how VRAM distribution across these cards influences the choice would be helpful.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "探索 Ollama 的替代方案，用于管理本地 LLM 模型和推理。",
+    "A": {
+      "title": "探索 llama-swap 和 Open WebUI 作为 Ollama 本地 LLM 管理的替代方案",
+      "body": "我偶然发现了一位用户详细介绍了他们在一个月前从 Ollama 迁移出来的经历，但仍然保留了 Open WebUI 作为前端。他们现在依赖 llama.cpp 或 ik_llama.cpp 进行推理，并使用 llama-swap 来处理模型的加载、卸载和自动卸载。作者提到通过一个大型的 config.yaml 文件来管理模型和参数，这似乎是该设置的核心。有趣的是，他们强调了模型文件组织的改进，注意到不再有“奇怪的位置/名称”，并且能够直接通过 wget 从 Hugging Face 下载模型。鉴于这些要点，我很好奇实际的权衡是什么：与 Ollama 相比，llama-swap 的模型管理在易用性和灵活性方面如何？另外，维护那个大的 config.yaml 文件有多复杂，尤其是在 Open WebUI 中同时处理多个模型和系统提示时？任何尝试过类似设置或有模型加载策略经验的人的见解都将是有价值的。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "使用 Open WebUI 的 llama.cpp 是否是本地 LLM 的可行 Ollama 替代品？",
+      "body": "一位 Reddit 用户报告称，他们已从 Ollama 切换到使用 llama.cpp（或 ik_llama.cpp）进行推理的设置，同时仍然保留 Open WebUI 作为前端。他们发现这个过渡比预期的更快更容易，并且在 Linux 和 Windows 上都完成了。这表明对于那些不使用 Ollama 来管理本地 LLM 模型的人来说，可能存在一个实际的替代方案。\n\n然而，该报告来自 2025 年中期，并未详细说明硬件或性能的权衡，因此尚不清楚这种方法是否适合所有用户或工作负载。对于那些考虑放弃 Ollama 的人来说，有人对 llama.cpp 加上 Open WebUI 在稳定性、模型管理易用性或推理速度方面有何见解吗？与 Ollama 相比，您在使用这种组合时遇到的主要痛点或好处是什么？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "pair_id": "F06",
+    "english_A": {
+      "title": "Exploring llama-swap and Open WebUI as an Alternative to Ollama for Local LLM Management",
+      "body": "I came across a detailed account from a user who transitioned away from Ollama about a month ago, yet kept Open WebUI as their frontend. They now rely on llama.cpp or ik_llama.cpp for inference and use llama-swap to handle loading, unloading, and auto-unloading of models. The author mentions managing models and parameters through a large config.yaml file, which seems central to this setup. Interestingly, they highlight an improvement in model file organization, noting no more \"weird location/names\" and the ability to directly download models via wget from Hugging Face. Given these points, I'm curious about the practical trade-offs: How does llama-swap's model management compare to Ollama's in terms of ease and flexibility? Also, how complex is maintaining that big config.yaml, especially when juggling multiple models and system prompts in Open WebUI? Any insights from those who have tried similar setups or who have experience with model loading strategies would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "english_B": {
+      "title": "Is llama.cpp with Open WebUI a viable Ollama replacement for local LLMs?",
+      "body": "A Reddit user reported switching from Ollama to a setup using llama.cpp (or ik_llama.cpp) for inference while still keeping Open WebUI as the frontend. They found the transition quicker and easier than expected, doing this on both Linux and Windows. This suggests a possible practical alternative for managing local LLM models without Ollama.\n\nHowever, the report is from mid-2025 and doesn’t detail hardware or performance tradeoffs, so it’s unclear if this approach suits all users or workloads. For those considering leaving Ollama, does anyone have insights on how llama.cpp plus Open WebUI compares in stability, ease of model management, or inference speed? What are the main pain points or benefits you’ve encountered with this combo versus Ollama?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "讨论FamilyBench基准测试在处理具有复杂、树状关系和海量上下文的LLM能力方面的有效性，并理解初始基准测试结果的意义。",
+    "A": {
+      "title": "FamilyBench：探索LLM处理复杂家谱推理的能力",
+      "body": "FamilyBench是一个开源基准测试，旨在测试大型语言模型在海量上下文中理解复杂、树状的家庭关系的能力。它使用一个Python程序生成家谱，然后根据该结构提出问题。初步测试涉及七个模型，包括六个开放权重模型和一个封闭模型，它们处理一个包含400人、跨越10代、约18,000个token的家谱。模型各回答200个问题，测试通过OpenRouter进行，参数包括8k最大token和0.3的温度。报告结果显示准确率在64%到81%之间，其中Gemini 2.5 Pro以81.48%的准确率和零无响应率领先。然而，这些早期结果带有警示：该基准测试是新的，测试参数可能不是所有模型的最佳选择，无响应率反映了token限制而非完全失败。对于那些对本地LLM开发感兴趣的人来说，这引发了关于如何改进对大型结构化上下文的推理，以及微调或不同的提示策略是否能提高性能的问题。什么方法可以帮助模型更好地处理这种错综复杂的关系数据？FamilyBench如何发展以提供对LLM推理更深入的见解？",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7"
+      ]
+    },
+    "B": {
+      "title": "FamilyBench在多大程度上衡量了LLM对复杂家谱关系的掌握程度？",
+      "body": "FamilyBench是一个开源基准测试，旨在测试语言模型在大型上下文中理解复杂、树状家庭关系的能力。它生成合成家谱，然后根据这些结构设计问题。目标是衡量模型在多代联系中导航和推理的能力，这对许多LLM来说是一个不小的挑战。\n\n考虑到该基准测试使用生成数据和脚本化问题集，您认为这种方法在捕捉现实世界家庭关系复杂性方面有多有效？依赖合成树来测试关系理解是否存在陷阱？我想知道是否有人能提供关于FamilyBench的方法是否能推广到其生成场景之外，或者它是否会过度简化真实家谱数据中存在的细微差别。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "pair_id": "F07",
+    "english_A": {
+      "title": "FamilyBench: Exploring LLMs' Ability to Handle Complex Family Tree Reasoning",
+      "body": "FamilyBench is an open-source benchmark designed to test large language models on understanding complex, tree-like family relationships within a massive context. It uses a Python program to generate a family tree and then formulates questions based on that structure. Initial tests involved seven models, including six open-weight and one closed, tackling a 400-person tree spanning 10 generations and about 18,000 tokens. Models answered 200 questions each, with testing done via OpenRouter under parameters like 8k max tokens and a temperature of 0.3. Reported results show accuracy ranging from around 64% to over 81%, with Gemini 2.5 Pro leading at 81.48% accuracy and zero no-response rate. However, these early results come with caveats: the benchmark is new, testing parameters may not be optimal for all models, and the no-response rate reflects token limits rather than outright failures. For those interested in local LLM development, it raises questions about how to improve reasoning over large, structured contexts and whether fine-tuning or different prompting strategies could boost performance. What approaches might help models better navigate such intricate relational data? And how might FamilyBench evolve to provide deeper insights into LLM reasoning?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7"
+      ]
+    },
+    "english_B": {
+      "title": "How well does FamilyBench gauge LLMs’ grasp of complex family tree relationships?",
+      "body": "FamilyBench is an open-source benchmark designed to test how well language models understand complex, tree-like family relationships within a large context. It generates synthetic family trees and then crafts questions based on those structures. The goal is to measure a model’s ability to navigate and reason about multi-generational connections, which is a nontrivial challenge for many LLMs.\n\nGiven that the benchmark uses generated data and scripted question sets, how effective do you think this approach is at capturing real-world family relationship complexities? Are there pitfalls in relying on synthetic trees for testing relational understanding? I’m curious if anyone has insights on whether FamilyBench’s method can generalize beyond its generated scenarios or if it risks oversimplifying the nuances found in actual genealogical data.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "理解 Qwen3-8B 在特定硬件上表现缓慢的原因，并与其他模型进行比较。",
+    "A": {
+      "title": "为什么 Qwen3-8B Q6_K_L 在 LM Studio 中于拥有 32GB RAM 的 TitanXP 上运行缓慢？",
+      "body": "我看到一份 2025 年 5 月的报告，其中一位用户在 LM Studio 中，于配备 TitanXP GPU（12GB VRAM）和 32GB RAM 的系统上运行了 Qwen3-8B Q6_K_L。但用户遇到了非常缓慢且奇怪的行为。考虑到 12GB VRAM 对于较大的量化模型来说有些受限，我想知道瓶颈是否可能与 VRAM 限制有关，或者 LM Studio 如何处理这种量化类型。\n\n是否有人在类似硬件上尝试运行过 Qwen3-8B Q6_K_L 并注意到性能问题？LM Studio 对 Q6_K_L 量化的支持是否存在已知的怪癖，可能导致像 TitanXP 这样的 GPU 出现性能下降或不稳定？任何关于设置或变通方法的实际建议都将受到赞赏。",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "为什么 Qwen3-8B Q6_K_L 在 LM Studio 的 TitanXP 设置中如此缓慢且奇怪？",
+      "body": "我看到一份 2025 年 5 月的详细用户报告，关于在 LM Studio 中，于配备 TitanXP GPU（12GB VRAM）和 32GB RAM 的系统上运行带有 Q6_K_L 量化的 Qwen3-8B。用户描述该模型运行得极其缓慢，对“Sat Hi”之类的简单提示需要超过 14 秒才能响应。更奇怪的是，当提示“Hello”时，模型开始解决一个与输入无关的勾股定理问题。有趣的是，一个更大的 Mistral Nemo Instruct 12B 模型（Q4_K_S 量化）在同一硬件上运行得快得多。这引出了几个问题：Q6_K_L 量化或 LM Studio 配置是否可能导致这些性能和行为问题？Qwen3-8B 在 TitanXP GPU 上的运行时是否存在已知的怪癖？是否有人在 Qwen3-8B 或可比模型中观察到类似的延迟或意外的数学计算？分享您的设置细节或故障排除技巧可能有助于弄清楚这是否是硬件、软件或模型相关的瓶颈。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "pair_id": "F08",
+    "english_A": {
+      "title": "Why does Qwen3-8B Q6_K_L run slowly on a TitanXP with 32GB RAM in LM Studio?",
+      "body": "I've come across a report from May 2025 where a user ran Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB of RAM, but experienced very slow and odd behavior. Given that 12GB VRAM is somewhat limited for larger quantized models, I wonder if the bottleneck might be related to VRAM constraints or how LM Studio handles this quantization type.\n\nHas anyone else tried running Qwen3-8B Q6_K_L on similar hardware and noticed performance issues? Are there known quirks with LM Studio's support for Q6_K_L quantization that could cause slowdowns or instability on GPUs like the TitanXP? Any practical advice on settings or workarounds would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "Why is Qwen3-8B Q6_K_L so slow and odd in LM Studio on a TitanXP setup?",
+      "body": "I came across a detailed user report from May 2025 about running Qwen3-8B with Q6_K_L quantization in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB RAM. The user describes the model as incredibly slow, taking over 14 seconds to respond to simple prompts like \"Sat Hi\". Even stranger, when prompted with \"Hello,\" the model started solving a Pythagorean theorem problem that wasn’t part of the input. Interestingly, a larger Mistral Nemo Instruct 12B model (Q4_K_S quantization) ran much faster on the same hardware. This raises several questions: Could the Q6_K_L quantization or LM Studio configuration be causing these performance and behavior issues? Are there known quirks with Qwen3-8B’s runtime on TitanXP GPUs? Has anyone else observed similar delays or unexpected math computations in Qwen3-8B or comparable models? Sharing your setup details or troubleshooting tips might help clarify if this is a hardware, software, or model-related bottleneck.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": false,
+      "B": false
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "讨论大型语言模型在解读歌曲歌词等复杂艺术作品方面的能力。",
+    "A": {
+      "title": "Deepseek R1 能在多大程度上理解像《波西米亚狂想曲》这样的歌曲的复杂主题？",
+      "body": "我偶然看到一篇 2025 年的 Reddit 帖子，其中要求 Deepseek R1 解读皇后乐队的《波西米亚狂想曲》。该人工智能指出了存在主义危机、内疚、反抗、虚无主义和身份认同等主题。虽然这些话题与普遍的人类解读产生了共鸣，但模型是真正深入理解还是仅仅围绕这些观点进行语言模式匹配尚不清楚。\n\n鉴于缺乏关于所使用的具体 Deepseek R1 配置的详细信息，我很好奇：本地大型语言模型在多大程度上能够有意义地捕捉到细微的艺术主题，而不是进行表面化的总结？是否有人尝试过提示策略或模型调整来提高歌曲歌词解读的主题深度？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "大型语言模型在多大程度上能解读像《波西米亚狂想曲》这样的复杂歌曲歌词？对 Deepseek R1 的分析有何看法",
+      "body": "我偶然看到一篇 2025 年初的存档 Reddit 帖子，其中 Deepseek R1 模型被要求解释皇后乐队的《波西米亚狂想曲》的含义 (F1)。该人工智能识别出了存在主义危机、内疚、反抗、虚无主义和身份认同等主题 (F2)，甚至提出歌词“妈妈，我杀了人”可能象征性地代表着抛弃旧我 (F3)。它还将歌曲的风格变化与其情感历程联系起来 (F4)。原帖发布者认为该人工智能的推理令人愉快且富有洞察力 (F5, F7)。\n\n鉴于这些观察结果，您认为大型语言模型在处理主观艺术分析方面与人类解读相比如何？这些主题识别对于理解复杂作品是否真正有帮助，还是有过度简化微妙艺术的风险？此外，考虑到缺乏关于具体 Deepseek R1 版本或提示设计的详细信息，我们能在多大程度上信任此类人工智能生成的解读？我很想听听其他人是否看到过类似或对比鲜明的人工智能对层次丰富的艺术内容的解读。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7"
+      ]
+    },
+    "pair_id": "F09",
+    "english_A": {
+      "title": "How well can Deepseek R1 grasp complex themes in songs like 'Bohemian Rhapsody'?",
+      "body": "I came across a 2025 Reddit post where Deepseek R1 was asked to interpret Queen's 'Bohemian Rhapsody.' The AI highlighted themes such as existential crisis, guilt, defiance, nihilism, and identity. While these topics resonate with common human interpretations, it's unclear how deeply the model truly understands or just patterns language around these ideas.\n\nGiven the lack of details on the exact Deepseek R1 configuration used, I'm curious: to what extent can local LLMs meaningfully capture nuanced artistic themes rather than surface-level summaries? Has anyone experimented with prompting strategies or model tweaks to improve thematic depth in song lyric interpretations?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "How well can LLMs interpret complex song lyrics like 'Bohemian Rhapsody'? Thoughts on Deepseek R1's analysis",
+      "body": "I came across an archived Reddit post from early 2025 where the Deepseek R1 model was prompted to explain the meaning of Queen's 'Bohemian Rhapsody' (F1). The AI identified themes such as existential crisis, guilt, defiance, nihilism, and identity (F2), even suggesting that the lyric \"Mama, I just killed a man\" might metaphorically represent shedding an old self (F3). It also linked the song's genre shifts to its emotional journey (F4). The original poster found the AI's reasoning enjoyable and insightful (F5, F7).\n\nGiven these observations, how do you think LLMs handle subjective artistic analysis compared to human interpretation? Are these thematic identifications genuinely helpful for understanding complex works, or do they risk oversimplifying nuanced art? Also, considering the lack of details about the exact Deepseek R1 version or prompt design, how much can we trust such AI-generated interpretations? I'd be interested in hearing if others have seen similar or contrasting AI takes on layered artistic content.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "讨论一个新的、本地的、跨平台的 TTS 引擎的开发和潜力。",
+    "A": {
+      "title": "探索 KokoroSharp：一款新的本地、跨平台 C# TTS 引擎",
+      "body": "我偶然看到一篇 2025 年初的帖子，内容是关于 KokoroSharp，一个用 C# 编写的本地文本转语音引擎，它是跨平台的，并且可以通过 NuGet 获得。作者受到一个名为 Kokoro 的新的高性能音频模型的启发，开发了这个 TTS 引擎，并将其描述为对初学者友好但又灵活。源代码在 GitHub 上是开源的，示例用法包括加载模型和选择一个名为“af_heart”的声音。虽然原帖作者也在开发一个即将发布的离线 AI 语音聊天应用程序，但 KokoroSharp 的详细性能指标或硬件要求并未提供。对于那些对离线语音合成或将 TTS 与本地 LLM 集成感兴趣的人来说，您认为这款引擎有哪些实际的挑战或机遇？有人在 C# 或其他语言中探索过 KokoroSharp 或类似的本地 TTS 解决方案吗？",
+      "fact_refs": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "KokoroSharp TTS 是否已准备好用于完全离线的 AI 语音聊天项目？",
+      "body": "我偶然看到一篇 2025 年初的帖子，其中作者几乎完成了（约 90%）一个完全离线的 AI 语音聊天应用程序。在名为 Kokoro 的新的高性能音频模型发布后，他们转向构建 KokoroSharp，一个本地、跨平台的 TTS 引擎。\n\n由此想到的问题是，考虑到 KokoroSharp 的开发背景和接近完成的状态，它是否足够成熟，可以用于离线 AI 语音聊天项目。源代码没有提供详细的性能指标或稳定性信息，因此不清楚它在实际离线场景中的集成或运行效果如何。\n\n有人在离线语音聊天设置中试验过 KokoroSharp 吗？您遇到了哪些实际的权衡或限制，尤其是在延迟、语音质量或平台兼容性方面？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "pair_id": "F10",
+    "english_A": {
+      "title": "Exploring KokoroSharp: A New Local, Cross-Platform TTS Engine in C#",
+      "body": "I came across a post from early 2025 about KokoroSharp, a local text-to-speech engine written in C# that's cross-platform and available via NuGet. The author was motivated by a new high-performance audio model called Kokoro and developed this TTS engine, describing it as beginner-friendly yet flexible. The source code is open on GitHub, and example usage includes loading a model and selecting a voice named \"af_heart.\" While the original poster was also working on an offline AI voice chat app nearing release, detailed performance metrics or hardware requirements for KokoroSharp weren't provided. For those interested in offline speech synthesis or integrating TTS with local LLMs, what do you think are the practical challenges or opportunities with this engine? Has anyone explored KokoroSharp or similar local TTS solutions in C# or other languages?",
+      "fact_refs": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "english_B": {
+      "title": "Is KokoroSharp TTS Ready for Fully Offline AI Voice Chat Projects?",
+      "body": "I came across a post from early 2025 where the author was nearly finished (about 90%) with a fully offline AI voice chat app. They pivoted to build KokoroSharp, a local, cross-platform TTS engine, after a new high-performance audio model called Kokoro was released. \n\nThe question that comes to mind is whether KokoroSharp, given its development context and near-completion status, is mature enough for offline AI voice chat projects. The source doesn’t provide detailed performance metrics or stability info, so it’s unclear how well it integrates or runs in real-world offline scenarios.\n\nHas anyone experimented with KokoroSharp in offline voice chat setups? What are the practical trade-offs or limitations you encountered, especially regarding latency, voice quality, or platform compatibility?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "根据用户报告的测试，讨论合并后的LLM（FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview）与另一模型（DeepSeek-R1-Distill-Qwen-32B）之间观察到的性能差异。",
+    "A": {
+      "title": "将DeepSeekR1、QwQ和SkyT1合并到FuseO1是否能提高日期计算的准确性，优于DeepSeek-R1-Distill-Qwen-32B？",
+      "body": "一篇2025年的Reddit帖子分享了一个名为FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview的融合模型，该模型合并了DeepSeekR1、QwQ和SkyT1的32B模型。用户使用ollama，在32k上下文和Q8_0 KV缓存下，将这个合并后的模型与DeepSeek-R1-Distill-Qwen-32B进行了测试。\n\n关键问题在于，将这些模型结合起来是否真的能提高日期计算等任务的准确性，或者合并是否会引入可能影响特定能力的权衡。由于测试环境细节有限，结果的可推广性尚不清楚。\n\n是否有人将像这样的合并模型与其基础组件在日期或时间相关的推理方面进行了比较？您在准确性或一致性方面观察到了哪些实际差异？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "来自2025年用户报告的关于合并LLM性能的见解和问题",
+      "body": "一位用户在r/LocalLLaMA上分享了对一个合并LLM FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview与DeepSeek-R1-Distill-Qwen-32B的比较。据报道，合并模型在文件打包问题上表现出色，并正确计算了19,121天的日期差，而另一个模型给出了错误的结果。此外，合并模型以一次穿越解决了过河谜题，但DeepSeek-R1-Distill-Qwen-32B陷入了无限循环。测试环境使用了ollama，带有IQ4_XS量化和32k上下文窗口以及Q8_0 KV缓存。由于来源是2025年初一位用户的报告，这引发了关于合并模型如何影响推理和稳定性的问题。合并通常会提高逻辑一致性，还是可能引入意外行为？除了轶事测试之外，评估此类合并的最佳实践是什么？分享关于合并模型的经验或基准测试有助于阐明它们的实际好处和局限性。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    "pair_id": "F11",
+    "english_A": {
+      "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1 improve date calculation accuracy over DeepSeek-R1-Distill-Qwen-32B?",
+      "body": "A 2025 Reddit post shared a Fusion model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which merges DeepSeekR1, QwQ, and SkyT1 32B models. The user tested this merged model against DeepSeek-R1-Distill-Qwen-32B using ollama with a 32k context and Q8_0 KV Cache.\n\nThe key question is whether combining these models actually yields better accuracy on tasks like date calculations, or if the merge introduces tradeoffs that might impact specific capabilities. Since the test environment details are limited, it’s unclear how generalizable the results are.\n\nHas anyone else compared merged models like this to their base components for date or time-related reasoning? What practical differences have you observed in accuracy or consistency?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "english_B": {
+      "title": "Insights and Questions on Merged LLM Performance from a 2025 User Report",
+      "body": "A user shared a comparison between a merged LLM, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, and DeepSeek-R1-Distill-Qwen-32B on r/LocalLLaMA. The merged model reportedly excelled at a file-packing problem and correctly computed a date difference of 19,121 days, while the other model gave a wrong result. Additionally, the merged model solved a river crossing riddle with a single crossing, but DeepSeek-R1-Distill-Qwen-32B got stuck in an infinite loop. The test environment used ollama with IQ4_XS quantization and a 32k context window with Q8_0 KV Cache. Since the source is a single user’s report from early 2025, it raises questions about how merging models affects reasoning and stability. Does merging generally improve logical consistency, or might it introduce unexpected behaviors? What are the best practices to evaluate such merges beyond anecdotal tests? Sharing experiences or benchmarks on merged models could help clarify their practical benefits and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": true,
+      "B": true
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  },
+  {
+    "task_zh": "排查在启用“思考”功能时 Open WebUI 与 Qwen3 30B A3B 模型集成的问题。",
+    "A": {
+      "title": "在启用“思考”功能时，Qwen3 30B A3B 模型在 Open WebUI 中卡住的问题",
+      "body": "我看到一份 2025 年 5 月的报告，其中一位用户更新了他们的 Open WebUI docker 设置，并加载了 Qwen3 30B A3B 模型的 8.0 gguf 量化版本。他们注意到 Open WebUI 连接正常，可以发送请求，并显示“思考”进度。然而，当“思考”功能激活时，模型最终会在句子中间停止生成并无限期卡住，进度指示器从未完成。有趣的是，在未启用“思考”的情况下发送请求可以正常工作，并且该模型在 SillyTavern 和 VS Code 扩展等其他前端上也能正常工作。由于未提供确切的 Open WebUI 版本、服务器规格和配置详细信息，因此不清楚这是兼容性问题、错误还是资源限制。是否有人在 Open WebUI 中遇到过 Qwen3 30B A3B 的这种卡住生成问题？是否有已知的解决方法或配置调整可以帮助“思考”功能顺利运行？任何关于调试此问题或类似前端集成怪癖的见解都将不胜感激。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "启用 Open WebUI 中的“思考”功能时，Qwen3 30B A3B 会在句子中间停滞，有解决方法吗？",
+      "body": "我看到一份 2025 年 5 月的报告，其中一位用户将 Qwen3 30B A3B 模型连接到 Open WebUI 时没有遇到问题，并且可以发送提示，看到正常的“思考”进度指示器。然而，当启用“思考”功能时，模型经常会在生成过程中冻结，导致进度无限期卡住。在没有“思考”的情况下，模型响应正常。\n\n这表明模型与 Open WebUI 中的“思考”机制之间可能存在交互问题，尽管具体原因尚不清楚。是否有人遇到过这种行为，或者找到了在保持“思考”功能启用状态下避免停滞的方法？是否有特定的 Open WebUI 版本或设置可能有助于缓解此问题？",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    },
+    "pair_id": "F12",
+    "english_A": {
+      "title": "Issues with Qwen3 30B A3B model getting stuck in Open WebUI when ‘thinking’ is enabled",
+      "body": "I came across a report from May 2025 where a user updated their Open WebUI docker setup and loaded the 8.0 gguf quant of the Qwen3 30B A3B model. They noted that Open WebUI connected fine and requests could be sent, with the “thinking” progress showing. However, when the thinking feature was active, the model would eventually stop generating mid-sentence and get stuck indefinitely, with the progress indicator never completing. Interestingly, sending requests without thinking enabled worked normally, and the model also worked fine on other front ends like SillyTavern and VS Code extensions. Since the exact Open WebUI version, server specs, and config details weren’t provided, it’s unclear if this is a compatibility issue, a bug, or a resource limitation. Has anyone else encountered this stuck generation problem with Qwen3 30B A3B in Open WebUI? Are there known workarounds or config tweaks that might help the thinking feature operate smoothly? Any insights on debugging this or similar front-end integration quirks would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "english_B": {
+      "title": "Qwen3 30B A3B stalls mid-sentence with 'thinking' enabled in Open WebUI—any workarounds?",
+      "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send prompts, seeing the usual “thinking” progress indicator. However, when the 'thinking' feature was enabled, the model would often freeze mid-generation, leaving the progress stuck indefinitely. Without 'thinking', the model responded normally.\n\nThis suggests a possible interaction problem between the model and the 'thinking' mechanism in Open WebUI, though the exact cause isn’t clear. Has anyone else experienced this behavior or found a way to avoid the stall while keeping 'thinking' enabled? Are there particular Open WebUI versions or settings that might help mitigate this?",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    },
+    "translation_numeric_checks": {
+      "A": true,
+      "B": true
+    },
+    "raw_numeric_translation_checks": {
+      "A": false,
+      "B": false
+    },
+    "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  }
+]

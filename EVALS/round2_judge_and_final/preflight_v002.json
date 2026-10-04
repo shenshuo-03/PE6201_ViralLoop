@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-04T10:03:39.240162+00:00",
+  "openrouter_key_present": true,
+  "typesafe_key_present": false,
+  "jev_catalog": [
+    {
+      "id": "typesafe/jev-router",
+      "pricing": {
+        "prompt": "-1",
+        "completion": "-1"
+      }
+    }
+  ],
+  "decision": "No paid Jev probe: unknown/negative catalog price and missing direct credential. Predeclared internal candidates Gemini 2.5 Flash Lite and Flash; no further model shopping.",
+  "source_counts": {
+    "final": 12,
+    "calibration_source": 9,
+    "validation_source": 9,
+    "tune": 4,
+    "selection": 2
+  },
+  "independent_final_evaluator": "anthropic/claude-haiku-4.5",
+  "generator": "openai/gpt-4.1-mini",
+  "historical_models_not_retrained": true
+}

@@ -1,0 +1,14 @@
+{
+  "brief_id": "C08",
+  "source_group_id": "reddit:1luy32e",
+  "id": "1luy32e",
+  "split": "calibration_source",
+  "content_type": "Discussion / Opinion",
+  "source_date": "1752003449",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/",
+  "source_title": "SmolLM3 has day-0 support in MistralRS!",
+  "source_text": "It's a **SoTA 3B model** with hybrid **reasoning** and **128k context**.\n\nHits ⚡105 T/s withAFQ4 @ M3 Max.\n\nLink: [https://github.com/EricLBuehler/mistral.rs](https://github.com/EricLBuehler/mistral.rs)  \n  \nUsing MistralRS means that you get\n\n* Builtin MCP client\n* OpenAI HTTP server\n* Python & Rust APIs\n* Full multimodal inference engine (**in**: image, audio, text in, **out:** image, audio, text).\n\nSuper easy to run:\n\n    ./mistralrs_server -i run -m HuggingFaceTB/SmolLM3-3B\n\nWhat's next for MistralRS? Full Gemma 3n support, multi-device backend, and more. Stay tuned!\n\nhttps://reddit.com/link/1luy32e/video/kkojaflgdpbf1/player\n\n",
+  "collected_at": "2026-10-04T10:03:39.127773+00:00",
+  "historical_split": "train",
+  "source_hash": "0e8cf7b37e49fafa62209b9844253850483860491936788b0191896522830452"
+}

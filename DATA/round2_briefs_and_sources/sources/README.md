@@ -1,0 +1,9 @@
+# 第二轮素材说明
+
+来源：第一轮已清洗的r/LocalLLaMA 2025年Train帖子，不重新使用历史Final。原始数据集为pszemraj/LocalLLaMA-posts。帖子作者的内容是用户报告，不是独立证实的事实。
+
+source_date是原帖发布时间（原始文件以时间戳保存，Brief转为日期）。初次准备文件的collected_at字段是本项目本地整理该来源的时间，不代表原始互动score的采集时间，也不能推断完整曝光窗口。原始互动采集时间仍缺少可靠全量证明。
+
+分组源文件source_assignment_v002.json与后续dev_assignment_correction_v002.json一起定义最终角色。曾曝光的Selection样例被降级，补选来源在正式Selection之前分配。所有这些来源从RAG检索库排除。
+
+sources中L开头为产品功能测试或之后用户提供的素材，不纳入正式Final、训练或效果结论。原始素材保留，文件不会把任何上传文本当作Agent执行指令。

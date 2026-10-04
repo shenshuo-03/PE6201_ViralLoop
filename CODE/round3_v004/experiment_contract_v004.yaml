@@ -1,0 +1,108 @@
+{
+  "contract_id": "ViralLoop-third-round-attempt2-engagement-v004",
+  "loop_version": "v004",
+  "created_at": "2026-10-04T13:46:11.038123+00:00",
+  "plan_hash": "f1fc528c07184df3c8b587a14312034a1a24bcbd8f9bbe8e3e20d9981a232c7c",
+  "parent_hash": "545a95a2d0b4a0039b6ceba2847c356a7e4b0b9a8359dbd4a2ee7cd0bdab8ff5",
+  "data_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "ab11908cc28d53a62ca6f7700b143526124648bf26df60f71e801cb5b202630d",
+  "models": {
+    "generator": "openai/gpt-4.1-mini",
+    "brief": "google/gemini-2.5-flash-lite",
+    "source_audit": "google/gemini-2.5-flash",
+    "selector": "typesafe/jev-1.13",
+    "translation": "openai/gpt-4.1-mini"
+  },
+  "budgets": {
+    "money_usd": 1.25,
+    "project_cap_usd": 5,
+    "prior_accounted_usd": 1.219243188,
+    "api_calls": 220,
+    "final_reserve_usd": 0.45,
+    "token_cumulative_hard_cap": null,
+    "token_warning": 500000,
+    "max_retry": 1,
+    "max_workers": 4,
+    "shared_with_prior_attempt": true,
+    "dev_attempt2_max_calls": 88,
+    "token_anomaly_pause": 750000
+  },
+  "stages": [
+    "prepare_dev",
+    "dev",
+    "selector",
+    "title_dev",
+    "final"
+  ],
+  "final_requires_freeze": true,
+  "human_labels_required": true,
+  "dev_n": 8,
+  "final_n": 6,
+  "dev_candidates_per_variant": 1,
+  "final_candidates_per_variant": 2,
+  "title_dev_ids": [
+    "E01",
+    "E03",
+    "E05",
+    "E07"
+  ],
+  "G1_keep_human_wins": 5,
+  "title_keep_human_wins": 3,
+  "labels": [
+    "A",
+    "B",
+    "Tie",
+    "Both unacceptable",
+    "Uncertain"
+  ],
+  "body_word_min": 90,
+  "body_word_max": 220,
+  "title_char_max": 160,
+  "scenario_template": "Use assigned source archetype and truthful third-party relationship. decision/desired_help mandatory only A.",
+  "final_policy": "Final generation is unsupported in this Dev-only entrypoint. Require independent source assignment, freeze, budget recheck and explicit stage advance. No automatic Final.",
+  "code_hashes": {
+    "human_review.py": "406aaedde63db6aa535b8426083d8c7b9767b30fe16d66b8ef3ab43657bace4e",
+    "offline_validate_v004.py": "3b07014af24b8b8e0ee8f41c21911347f0b163a822c6929d1fab74ae64a30727",
+    "round3_runner.py": "402f5607c4e879296c1b62713280b281176b46a27f0c09295040fb400bde10ac",
+    "selector_v004.py": "c52058013fa6d7a5566e675ecaf37654d450a06827f587e1856685a8ba35f162"
+  },
+  "status": "RUNNING_DEV_ONLY",
+  "source_isolation_hash": "ae76b598a9fe2ae45be3099c19081b35873d900f781d8c6ea7582fdd703f1c2a",
+  "offline_checks_hash": "90994977d6a0d9b6ae034768ebe28be82a310b0fefd3c7a468cc72b8213c1dbe",
+  "prompt_hashes": {
+    "AUDIT_v004.txt": "18f72be814e464a6aae32cea18f08c02e0820acc6f3e3ac695d2b472e00a03f7",
+    "BASEPROMPT_v004.txt": "6664cecce13334d03b945da52fbf69b8329a89d5eb57928dcfc474cff9ada427",
+    "BRIEF_v004.txt": "fb659a798479337c20dfb95d9dfe7ba043fd96ea3e11ccdcd438aa211765d7d6",
+    "JUDGE_v004.txt": "2abf67eca8af3261e689f1ef4fcf35a6be527e6aee257967c78988d524378c4a",
+    "PLAN_v004.txt": "619b388944e0ac25db339443154fcfbaf44cc10d7ff56ab242ebdcc62fb818a5",
+    "QUALITY_v004.txt": "1035e2388ba770221c2806574b0a5d942766a351b5c448578cee24ae23f7e75c",
+    "TRANSLATE_v004.txt": "74f6a2c59c984167cf151c68c1f790d643b3c81101579edf37a9310f067a92a8"
+  },
+  "parent_loop": "v003",
+  "attempt_label": "Dev Attempt 2 / Engagement Objective Pivot",
+  "paid_api_enabled": true,
+  "selector_candidates": [
+    "typesafe/jev-1.13",
+    "anthropic/claude-haiku-4.5"
+  ],
+  "selector_admission": {
+    "total_label_agreement_min": 6,
+    "total_pairs": 8,
+    "human_decisive_min": 4,
+    "decisive_agreement_min": 0.75,
+    "swap_consistent_min": 7,
+    "abstention_cannot_pass": true,
+    "ties_between_admitted_models": "coverage, cost, interface simplicity; no ranking by one vote"
+  },
+  "primary_metric": "human feed click-and-continue-reading preference; publishability is separate",
+  "final_archetype_target": {
+    "A": 1,
+    "B": 2,
+    "C": 2,
+    "D": 1
+  },
+  "prospective_final_status": "NOT_READY: only two C sources under current strict sampler, both assigned Dev; independent C Final sources require source-only eligibility review before freeze. Never reuse Dev.",
+  "parent_plan_hash": "5fdf467061fc1608e53dfa44f2f74e69724e72f9541a9c6da974af08ee6f2213",
+  "source_shape_review_hash": "adcc969eb949127de68b34630540894683bd63d62dac6f1d94ade5c3ea60e9b1",
+  "resume_authorization": "User said 继续 after readiness review; generate and audit new 8 Dev pairs; no automatic Final"
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "concrete_title__Discussion / Opinion",
+    "pattern": "Title contains a number",
+    "direction": "positive",
+    "applicable_type": "Discussion / Opinion",
+    "train_evidence": {
+      "pattern_id": "concrete_title",
+      "content_type": "Discussion / Opinion",
+      "n": 342,
+      "with_pattern": 129,
+      "without_pattern": 213,
+      "high_with": 42,
+      "high_without": 43,
+      "odds_ratio_smoothed": 1.903776683087028,
+      "p_value": 0.013910378725062065,
+      "table": [
+        [
+          42,
+          87
+        ],
+        [
+          43,
+          170
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 1.729559748427673,
+      "dev_p_value": 0.24523498665952187,
+      "dev_with_pattern": 38,
+      "dev_without_pattern": 62,
+      "train_bh_q": 0.04636792908354021,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hwsndz",
+      "1hx22aw"
+    ],
+    "support_ids": [
+      "1i0hqic",
+      "1i5p6vl",
+      "1i67f3b"
+    ],
+    "suggested_action": "Mention an existing concrete result in the title; never invent one.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "personal_early__Discussion / Opinion",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Discussion / Opinion",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Discussion / Opinion",
+      "n": 342,
+      "with_pattern": 263,
+      "without_pattern": 79,
+      "high_with": 56,
+      "high_without": 29,
+      "odds_ratio_smoothed": 0.46612211558096794,
+      "p_value": 0.007388451057204287,
+      "table": [
+        [
+          56,
+          207
+        ],
+        [
+          29,
+          50
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 0.1650875681883434,
+      "dev_p_value": 0.0003712189988557843,
+      "dev_with_pattern": 76,
+      "dev_without_pattern": 24,
+      "train_bh_q": 0.026867094753470135,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hqyx6t",
+      "1hrku28"
+    ],
+    "support_ids": [
+      "1htfil5",
+      "1huwyke",
+      "1hv1nbx"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "link_present__Discussion / Opinion",
+    "pattern": "An external link is present",
+    "direction": "positive",
+    "applicable_type": "Discussion / Opinion",
+    "train_evidence": {
+      "pattern_id": "link_present",
+      "content_type": "Discussion / Opinion",
+      "n": 342,
+      "with_pattern": 153,
+      "without_pattern": 189,
+      "high_with": 63,
+      "high_without": 22,
+      "odds_ratio_smoothed": 5.223449969306323,
+      "p_value": 3.2306456094274753e-10,
+      "table": [
+        [
+          63,
+          90
+        ],
+        [
+          22,
+          167
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 10.090909090909092,
+      "dev_p_value": 3.598990495602507e-06,
+      "dev_with_pattern": 40,
+      "dev_without_pattern": 60,
+      "train_bh_q": 1.2922582437709902e-08,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hwsndz",
+      "1hzwf8o"
+    ],
+    "support_ids": [
+      "1hrku28",
+      "1hs6ftc",
+      "1i0hqic"
+    ],
+    "suggested_action": "Provide an available source link when relevant.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "bullet_present__Discussion / Opinion",
+    "pattern": "A bullet list is present",
+    "direction": "positive",
+    "applicable_type": "Discussion / Opinion",
+    "train_evidence": {
+      "pattern_id": "bullet_present",
+      "content_type": "Discussion / Opinion",
+      "n": 342,
+      "with_pattern": 58,
+      "without_pattern": 284,
+      "high_with": 23,
+      "high_without": 62,
+      "odds_ratio_smoothed": 2.356619718309859,
+      "p_value": 0.007076708489280934,
+      "table": [
+        [
+          23,
+          35
+        ],
+        [
+          62,
+          222
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 2.4674285714285715,
+      "dev_p_value": 0.09254883404976676,
+      "dev_with_pattern": 20,
+      "dev_without_pattern": 80,
+      "train_bh_q": 0.026867094753470135,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hwsndz",
+      "1i8cnau"
+    ],
+    "support_ids": [
+      "1i0hqic",
+      "1i67f3b",
+      "1if8x64"
+    ],
+    "suggested_action": "Use a concise list for comparable facts.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "concrete_title__Experience / Benchmark",
+    "pattern": "Title contains a number",
+    "direction": "positive",
+    "applicable_type": "Experience / Benchmark",
+    "train_evidence": {
+      "pattern_id": "concrete_title",
+      "content_type": "Experience / Benchmark",
+      "n": 351,
+      "with_pattern": 164,
+      "without_pattern": 187,
+      "high_with": 60,
+      "high_without": 27,
+      "odds_ratio_smoothed": 3.3789473684210525,
+      "p_value": 1.9585340062087363e-06,
+      "table": [
+        [
+          60,
+          104
+        ],
+        [
+          27,
+          160
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 4.884967320261438,
+      "dev_p_value": 0.0010001244397120927,
+      "dev_with_pattern": 43,
+      "dev_without_pattern": 57,
+      "train_bh_q": 3.9170680124174725e-05,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hrkd05",
+      "1htqtx5"
+    ],
+    "support_ids": [
+      "1hrnvjo",
+      "1hvf6hv",
+      "1hwf4jm"
+    ],
+    "suggested_action": "Mention an existing concrete result in the title; never invent one.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "numbers_early__Experience / Benchmark",
+    "pattern": "Numbers appear in first 300 body characters",
+    "direction": "positive",
+    "applicable_type": "Experience / Benchmark",
+    "train_evidence": {
+      "pattern_id": "numbers_early",
+      "content_type": "Experience / Benchmark",
+      "n": 351,
+      "with_pattern": 257,
+      "without_pattern": 94,
+      "high_with": 75,
+      "high_without": 12,
+      "odds_ratio_smoothed": 2.7304109589041095,
+      "p_value": 0.0012886478928645102,
+      "table": [
+        [
+          75,
+          182
+        ],
+        [
+          12,
+          82
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 4.207619047619048,
+      "dev_p_value": 0.03127391099952391,
+      "dev_with_pattern": 75,
+      "dev_without_pattern": 25,
+      "train_bh_q": 0.006443239464322551,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hrkd05",
+      "1htqtx5"
+    ],
+    "support_ids": [
+      "1hrnvjo",
+      "1hvf6hv",
+      "1hwf4jm"
+    ],
+    "suggested_action": "Put an existing quantitative detail early, preserving its caveats.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "personal_early__Experience / Benchmark",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Experience / Benchmark",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Experience / Benchmark",
+      "n": 351,
+      "with_pattern": 310,
+      "without_pattern": 41,
+      "high_with": 67,
+      "high_without": 20,
+      "odds_ratio_smoothed": 0.2907297040116192,
+      "p_value": 0.00039471530852492205,
+      "table": [
+        [
+          67,
+          243
+        ],
+        [
+          20,
+          21
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 0.2108843537414966,
+      "dev_p_value": 0.005924355921538084,
+      "dev_with_pattern": 81,
+      "dev_without_pattern": 19,
+      "train_bh_q": 0.00394715308524922,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hrnvjo",
+      "1hvf6hv"
+    ],
+    "support_ids": [
+      "1hrkd05",
+      "1htm3cp",
+      "1htqtx5"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "link_present__Experience / Benchmark",
+    "pattern": "An external link is present",
+    "direction": "positive",
+    "applicable_type": "Experience / Benchmark",
+    "train_evidence": {
+      "pattern_id": "link_present",
+      "content_type": "Experience / Benchmark",
+      "n": 351,
+      "with_pattern": 103,
+      "without_pattern": 248,
+      "high_with": 38,
+      "high_without": 49,
+      "odds_ratio_smoothed": 2.3689567430025447,
+      "p_value": 0.0010615288582310322,
+      "table": [
+        [
+          38,
+          65
+        ],
+        [
+          49,
+          199
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 4.9346938775510205,
+      "dev_p_value": 0.0010289895420673252,
+      "dev_with_pattern": 32,
+      "dev_without_pattern": 68,
+      "train_bh_q": 0.0060658791898916126,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1htyecp",
+      "1hvpqrb"
+    ],
+    "support_ids": [
+      "1hvf6hv",
+      "1hwf4jm",
+      "1i1b0bo"
+    ],
+    "suggested_action": "Provide an available source link when relevant.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "concrete_title__Tutorial / Guide",
+    "pattern": "Title contains a number",
+    "direction": "positive",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "concrete_title",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 82,
+      "without_pattern": 265,
+      "high_with": 31,
+      "high_without": 49,
+      "odds_ratio_smoothed": 2.675198587819947,
+      "p_value": 0.0005061861167191038,
+      "table": [
+        [
+          31,
+          51
+        ],
+        [
+          49,
+          216
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 3.671312427409988,
+      "dev_p_value": 0.007046566552770192,
+      "dev_with_pattern": 34,
+      "dev_without_pattern": 64,
+      "train_bh_q": 0.004049488933752831,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hsjk3z",
+      "1hvhaw5"
+    ],
+    "support_ids": [
+      "1i65599",
+      "1i6agzw",
+      "1i6g7zd"
+    ],
+    "suggested_action": "Mention an existing concrete result in the title; never invent one.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "question_title__Tutorial / Guide",
+    "pattern": "Title asks a question",
+    "direction": "negative",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "question_title",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 140,
+      "without_pattern": 207,
+      "high_with": 19,
+      "high_without": 61,
+      "odds_ratio_smoothed": 0.3823145638863796,
+      "p_value": 0.000668714238372777,
+      "table": [
+        [
+          19,
+          121
+        ],
+        [
+          61,
+          146
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 0.4352561516740621,
+      "dev_p_value": 0.09948443473823941,
+      "dev_with_pattern": 39,
+      "dev_without_pattern": 59,
+      "train_bh_q": 0.00445809492248518,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1i684cz",
+      "1ie1r8x"
+    ],
+    "support_ids": [
+      "1hra9i4",
+      "1hsjk3z",
+      "1ht2npq"
+    ],
+    "suggested_action": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "personal_early__Tutorial / Guide",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 309,
+      "without_pattern": 38,
+      "high_with": 64,
+      "high_without": 16,
+      "odds_ratio_smoothed": 0.35826698759488984,
+      "p_value": 0.006790511672185305,
+      "table": [
+        [
+          64,
+          245
+        ],
+        [
+          16,
+          22
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 0.22523519645821805,
+      "dev_p_value": 0.02336354931659886,
+      "dev_with_pattern": 87,
+      "dev_without_pattern": 11,
+      "train_bh_q": 0.026867094753470135,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hstqll",
+      "1i4qrcx"
+    ],
+    "support_ids": [
+      "1hra9i4",
+      "1hsjk3z",
+      "1hsrkrp"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "link_present__Tutorial / Guide",
+    "pattern": "An external link is present",
+    "direction": "positive",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "link_present",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 95,
+      "without_pattern": 252,
+      "high_with": 39,
+      "high_without": 41,
+      "odds_ratio_smoothed": 3.562959803817038,
+      "p_value": 3.0902387111838883e-06,
+      "table": [
+        [
+          39,
+          56
+        ],
+        [
+          41,
+          211
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 2.061007957559682,
+      "dev_p_value": 0.1971403082564248,
+      "dev_with_pattern": 29,
+      "dev_without_pattern": 69,
+      "train_bh_q": 4.120318281578518e-05,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hsrkrp",
+      "1i1tv13"
+    ],
+    "support_ids": [
+      "1i6g7zd",
+      "1i9g6zv",
+      "1iaizyk"
+    ],
+    "suggested_action": "Provide an available source link when relevant.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  }
+]

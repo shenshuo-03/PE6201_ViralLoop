@@ -1,0 +1,25 @@
+{
+  "speaker": "community member seeking help with explicitly hypothetical product decision, not source author",
+  "scenario_origin": "controlled_hypothetical",
+  "current_goal": "To decide on the most user-friendly and efficient UI structure for a new local LLM application.",
+  "central_purpose": "To gather community opinions on the pros and cons of tabbed chat interfaces versus single-chat interfaces with persistent storage for local LLM applications, focusing on ease of use and feature management.",
+  "desired_response": "Community members' opinions on the advantages and disadvantages of implementing a tabbed chat interface (where each tab remembers its own system prompt and sampling settings) versus a single chat interface that saves all conversations persistently in a sidebar, especially regarding intuitiveness for users experimenting with different models or prompts.",
+  "relevant_evidence_ids": [
+    "F1",
+    "F2",
+    "F3",
+    "F6"
+  ],
+  "must_preserve": [
+    "The user goal to evaluate UI design choices for a local LLM application remains unchanged.",
+    "The scenario is explicitly hypothetical and intended for community input on UI design principles.",
+    "No personal experience, ownership claims, or invented technical details are included.",
+    "Reference to features of the Sigil application as examples is allowed and preserved."
+  ],
+  "must_not_invent": [
+    "Any personal history or success stories related to local LLM usage.",
+    "Claims of ownership or authorship of Sigil or any other software.",
+    "Technical specifications or performance benchmarks not present in the source facts.",
+    "Any information outside the provided source context and limitations."
+  ]
+}

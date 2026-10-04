@@ -1,0 +1,73 @@
+{
+  "brief": {
+    "topic": "Performance comparison of EXL2 and llama.cpp for long context tasks with Phi-3-medium",
+    "audience": "r/LocalLLaMA readers",
+    "posting_intent": "Seeking community advice on optimizing llama.cpp for long context performance, given observed differences with EXL2.",
+    "speaker_role": "community member seeking help with explicitly hypothetical product decision, not source author",
+    "current_user_goal": "To understand why llama.cpp might be performing significantly slower than EXL2 for long context tasks and to explore potential configuration options within llama.cpp to improve its performance.",
+    "current_decision": "Evaluating whether to continue troubleshooting llama.cpp or switch to EXL2 for long context processing.",
+    "desired_help": "Guidance on specific llama.cpp settings or techniques that could improve its performance with long contexts, potentially avoiding layer offloading, or confirmation that EXL2 is the superior choice for this specific use case.",
+    "scenario_origin": "controlled_hypothetical",
+    "experimental_user_scenario": "A user is experimenting with running a RAPTOR example using Langchain. They have observed a substantial performance difference between using llama.cpp and ExLlamav2 with the Phi-3-medium-128k-instruct model at a 50k context length. They are trying to determine if llama.cpp can be configured to match or approach the performance of ExLlamav2 for this task.",
+    "context": "The user is working with Langchain and the RAPTOR example, specifically testing the Phi-3-medium-128k-instruct model with a 50k context window. They have encountered significant performance discrepancies between llama.cpp and ExLlamav2, with llama.cpp requiring extensive layer offloading and taking considerably longer to complete the task.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The RAPTOR example from Langchain was modified to use Langchain's LlamaCpp.",
+        "evidence_quote": "I was running this RAPTOR example\n\n[https://github.com/langchain-ai/langchain/blob/master/cookbook/RAPTOR.ipynb](https://github.com/langchain-ai/langchain/blob/master/cookbook/RAPTOR.ipynb)\n\nby modifying it to use langchain's LlamaCpp.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F2",
+        "text": "Running the RAPTOR example with Phi-3-medium-128k-instruct Q4_K_M using llama.cpp required 50k context.",
+        "evidence_quote": "it needs 50k context to run with Phi-3-medium-128k-instruct Q4\\_K\\_M.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F3",
+        "text": "To run the llama.cpp configuration on a 3090, 5 out of 41 layers needed to be offloaded, resulting in a 20-hour runtime.",
+        "evidence_quote": "to run it on my 3090, I need to offload 5 out of 41 layers and got a run time of 20 hours.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F4",
+        "text": "Using Langchain's ExLlamav2 with Phi-3-medium-128k-instruct 4.25bpw completed the same task in 20 minutes.",
+        "evidence_quote": "Then I tried langchain's  ExLlamav2 with Phi-3-medium-128k-instruct 4.25bpw. I find that it can finish in 20 minutes",
+        "status": "historical author report"
+      },
+      {
+        "id": "F5",
+        "text": "The ExLlamav2 run utilized 19GB of VRAM at 50k context.",
+        "evidence_quote": "at 19GB VRAM usage at 50k context.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F6",
+        "text": "The user questioned if llama.cpp settings could be adjusted to prevent layer offloading.",
+        "evidence_quote": "Can I set something in langchain's LlamaCpp to prevent layers offload?",
+        "status": "historical author report"
+      }
+    ],
+    "limitations": [
+      "The source does not provide specific details on the hardware configuration beyond mentioning a '3090'.",
+      "The exact nature of the 'RAPTOR example' and its computational demands are not fully detailed.",
+      "The source does not offer solutions or explanations for the performance difference, only observations."
+    ],
+    "allowed_claims": [
+      "The user is seeking information about optimizing llama.cpp for long context tasks.",
+      "The user is comparing the performance of llama.cpp and ExLlamav2.",
+      "The user is interested in configuration settings for llama.cpp.",
+      "The user is using the Phi-3-medium-128k-instruct model with a 50k context window."
+    ],
+    "forbidden_claims": [
+      "The user owns a 3090 GPU.",
+      "The user has successfully optimized llama.cpp.",
+      "The user has definitively chosen to switch to ExLlamav2.",
+      "The user has a specific runtime target in minutes or hours.",
+      "The user has successfully implemented any specific llama.cpp configuration changes."
+    ]
+  },
+  "corrections": [],
+  "scenario_pass": true,
+  "source_pass": true
+}

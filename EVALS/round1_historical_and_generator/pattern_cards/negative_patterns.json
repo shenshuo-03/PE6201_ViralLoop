@@ -1,0 +1,182 @@
+[
+  {
+    "id": "personal_early__Discussion / Opinion",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Discussion / Opinion",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Discussion / Opinion",
+      "n": 342,
+      "with_pattern": 263,
+      "without_pattern": 79,
+      "high_with": 56,
+      "high_without": 29,
+      "odds_ratio_smoothed": 0.46612211558096794,
+      "p_value": 0.007388451057204287,
+      "table": [
+        [
+          56,
+          207
+        ],
+        [
+          29,
+          50
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 0.1650875681883434,
+      "dev_p_value": 0.0003712189988557843,
+      "dev_with_pattern": 76,
+      "dev_without_pattern": 24,
+      "train_bh_q": 0.026867094753470135,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hqyx6t",
+      "1hrku28"
+    ],
+    "support_ids": [
+      "1htfil5",
+      "1huwyke",
+      "1hv1nbx"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "personal_early__Experience / Benchmark",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Experience / Benchmark",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Experience / Benchmark",
+      "n": 351,
+      "with_pattern": 310,
+      "without_pattern": 41,
+      "high_with": 67,
+      "high_without": 20,
+      "odds_ratio_smoothed": 0.2907297040116192,
+      "p_value": 0.00039471530852492205,
+      "table": [
+        [
+          67,
+          243
+        ],
+        [
+          20,
+          21
+        ]
+      ],
+      "dev_n": 100,
+      "dev_odds_ratio": 0.2108843537414966,
+      "dev_p_value": 0.005924355921538084,
+      "dev_with_pattern": 81,
+      "dev_without_pattern": 19,
+      "train_bh_q": 0.00394715308524922,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hrnvjo",
+      "1hvf6hv"
+    ],
+    "support_ids": [
+      "1hrkd05",
+      "1htm3cp",
+      "1htqtx5"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "question_title__Tutorial / Guide",
+    "pattern": "Title asks a question",
+    "direction": "negative",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "question_title",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 140,
+      "without_pattern": 207,
+      "high_with": 19,
+      "high_without": 61,
+      "odds_ratio_smoothed": 0.3823145638863796,
+      "p_value": 0.000668714238372777,
+      "table": [
+        [
+          19,
+          121
+        ],
+        [
+          61,
+          146
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 0.4352561516740621,
+      "dev_p_value": 0.09948443473823941,
+      "dev_with_pattern": 39,
+      "dev_without_pattern": 59,
+      "train_bh_q": 0.00445809492248518,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1i684cz",
+      "1ie1r8x"
+    ],
+    "support_ids": [
+      "1hra9i4",
+      "1hsjk3z",
+      "1ht2npq"
+    ],
+    "suggested_action": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  },
+  {
+    "id": "personal_early__Tutorial / Guide",
+    "pattern": "First person appears early",
+    "direction": "negative",
+    "applicable_type": "Tutorial / Guide",
+    "train_evidence": {
+      "pattern_id": "personal_early",
+      "content_type": "Tutorial / Guide",
+      "n": 347,
+      "with_pattern": 309,
+      "without_pattern": 38,
+      "high_with": 64,
+      "high_without": 16,
+      "odds_ratio_smoothed": 0.35826698759488984,
+      "p_value": 0.006790511672185305,
+      "table": [
+        [
+          64,
+          245
+        ],
+        [
+          16,
+          22
+        ]
+      ],
+      "dev_n": 98,
+      "dev_odds_ratio": 0.22523519645821805,
+      "dev_p_value": 0.02336354931659886,
+      "dev_with_pattern": 87,
+      "dev_without_pattern": 11,
+      "train_bh_q": 0.026867094753470135,
+      "validated": true
+    },
+    "counterexample_ids": [
+      "1hstqll",
+      "1i4qrcx"
+    ],
+    "support_ids": [
+      "1hra9i4",
+      "1hsjk3z",
+      "1hsrkrp"
+    ],
+    "suggested_action": "Do not force this feature. State the source of experience only when facts establish it.",
+    "limitations": "Observational association; lexical topic and author confounding remain; avoid causal claims."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "brief_id": "D04",
+  "model": "anthropic/claude-haiku-4.5",
+  "raw_AB": {
+    "overall": "A",
+    "naturalness": "A",
+    "motivation": "A",
+    "worth_replying": "A",
+    "publishable_A": "Yes",
+    "publishable_B": "Yes",
+    "evidence": "Draft A is more concise and directly frames the core decision point (troubleshoot vs. switch), making it easier for community members to provide targeted advice. Draft B includes 'on my 3090 GPU setup,' which violates the forbidden_claims constraint against stating hardware ownership as fact rather than hypothetical context."
+  },
+  "raw_BA": {
+    "overall": "A",
+    "naturalness": "A",
+    "motivation": "A",
+    "worth_replying": "A",
+    "publishable_A": "Yes",
+    "publishable_B": "Yes",
+    "evidence": "Draft A flows more naturally as a cohesive narrative without explicit fact citations, making it feel like authentic community advice-seeking. Draft B's inline fact references (F1, F2, etc.) disrupt readability and are inappropriate for Reddit posts, which should cite sources conversationally or not at all. Both convey the core problem and desired help adequately, but A's presentation is more suitable for the r/LocalLLaMA audience."
+  },
+  "swap_consistent": false,
+  "combined": "Uncertain",
+  "admission": "PENDING_HUMAN_LABELS"
+}

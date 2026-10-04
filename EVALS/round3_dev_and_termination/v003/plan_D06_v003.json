@@ -1,0 +1,27 @@
+{
+  "speaker": "community member seeking help with explicitly hypothetical product decision, not source author",
+  "scenario_origin": "controlled_hypothetical",
+  "current_goal": "To understand which Qwen3 model might be most suitable for a hypothetical task involving multilingual text processing and coding, given the benchmark scores.",
+  "central_purpose": "To evaluate trade-offs between Qwen3-32b and Qwen3-235b-a22b models for a hypothetical multilingual application requiring strong NER and SQL generation capabilities, considering observed multilingual limitations.",
+  "desired_response": "Guidance on interpreting benchmark scores for NER and SQL generation in the context of a hypothetical multilingual application, including how to weigh the trade-offs between Qwen3-32b's higher RAG score and Qwen3-235b-a22b's higher SQL generation score, and an assessment of the potential impact of multilingual limitations (notably in Nordic languages for NER and language response issues in RAG) on the hypothetical use case.",
+  "relevant_evidence_ids": [
+    "F1",
+    "F2",
+    "F4",
+    "F5",
+    "F8",
+    "F9"
+  ],
+  "must_preserve": [
+    "The user goal to evaluate Qwen3-32b versus Qwen3-235b-a22b for a hypothetical multilingual NER and SQL generation task.",
+    "The benchmark data indicating Qwen3-32b scores highest in RAG and matches Qwen3-235b-a22b in SQL generation, while Qwen3-235b-a22b scores slightly higher in SQL but lower in NER.",
+    "The noted multilingual limitations affecting NER (especially Nordic languages) and RAG (models responding in English when asked to respond in other languages).",
+    "The hypothetical nature of the user's evaluation and decision context."
+  ],
+  "must_not_invent": [
+    "Any claims about the user's actual hardware, experience, or implementation success.",
+    "Definitive statements that one model is better than the other without considering the hypothetical application's priorities.",
+    "Quantitative impact of multilingual limitations beyond what is reported in the benchmark data.",
+    "Any guarantees that benchmark scores will directly translate to real-world performance."
+  ]
+}

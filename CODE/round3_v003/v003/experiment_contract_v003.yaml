@@ -1,0 +1,75 @@
+{
+  "contract_id": "ViralLoop-v003-v1.2",
+  "loop_version": "v003",
+  "created_at": "2026-10-04T12:54:26.100771+00:00",
+  "plan_hash": "5fdf467061fc1608e53dfa44f2f74e69724e72f9541a9c6da974af08ee6f2213",
+  "parent_hash": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304",
+  "data_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "88f4516aae999d2dd910677a554efab33383b16250a3efa9eae864c2d6eac44e",
+  "models": {
+    "generator": "openai/gpt-4.1-mini",
+    "brief": "google/gemini-2.5-flash-lite",
+    "source_audit": "google/gemini-2.5-flash",
+    "selector": "anthropic/claude-haiku-4.5",
+    "translation": "openai/gpt-4.1-mini"
+  },
+  "budgets": {
+    "money_usd": 1.25,
+    "project_cap_usd": 5,
+    "prior_accounted_usd": 1.05287815,
+    "api_calls": 220,
+    "final_reserve_usd": 0.45,
+    "token_cumulative_hard_cap": null,
+    "token_warning": 500000,
+    "max_retry": 1,
+    "max_workers": 4
+  },
+  "stages": [
+    "prepare_dev",
+    "dev",
+    "selector",
+    "title_dev",
+    "final"
+  ],
+  "final_requires_freeze": true,
+  "human_labels_required": true,
+  "dev_n": 8,
+  "final_n": 6,
+  "dev_candidates_per_variant": 1,
+  "final_candidates_per_variant": 2,
+  "title_dev_ids": [
+    "D01",
+    "D04",
+    "D05",
+    "D07"
+  ],
+  "G1_keep_human_wins": 5,
+  "title_keep_human_wins": 3,
+  "labels": [
+    "A",
+    "B",
+    "Tie",
+    "Both unacceptable",
+    "Uncertain"
+  ],
+  "body_word_min": 90,
+  "body_word_max": 220,
+  "title_char_max": 160,
+  "scenario_template": "A community member is considering a specific practical decision related to this source. Define goal, decision and desired help; no invented ownership, measurements or lived experiences. Keep old results dated and attributed.",
+  "final_policy": "No final source preparation or generation before product freeze. No tuning from final labels.",
+  "code_hashes": {
+    "round3_runner.py": "bc38366730df3c73524d66bf9819042dcf56e798c9ccf4584e5f81f2997b09dd"
+  },
+  "status": "EXECUTION_READY_DEV",
+  "source_isolation_hash": "839748235a8f890c81d2ed55469171704e53219b13e51031c9c44f40eab36608",
+  "offline_checks_hash": "87cdb9397da16ff5d71a5f0564c2fc63fd04ccb33f7706ad22a41b818b3f61c2",
+  "prompt_hashes": {
+    "AUDIT_v003.txt": "e8a7c65eb850017a9e63688e788818db693a23d7ca0f04766440e645accac8af",
+    "BASEPROMPT_v003.txt": "d55fec493adbb4e92a184cec4e191263640064386ae76db4ccf261c9a94e332d",
+    "BRIEF_v003.txt": "8597eb99f725ac1498b5c66e50af1b76f715942b8834dec742f7c7f7eae003b1",
+    "JUDGE_v003.txt": "a9aa4d87cae3cb0569ee67654d04242991e4d1bd3b0f987a68dfbfde9cd75e23",
+    "PLAN_v003.txt": "2540f926c384b662cb5f26800d75c7658f5ee5a7616faa36c6726030cdc7ecba",
+    "QUALITY_v003.txt": "6df8f86342b74d6bef9bde7247705a7e42441830d1c75e0b7562874defcdbcd0",
+    "TRANSLATE_v003.txt": "10c8a019dd5a58a303686b16fb991a32a2a232758634bb28bafbf4ed1720e66c"
+  }
+}

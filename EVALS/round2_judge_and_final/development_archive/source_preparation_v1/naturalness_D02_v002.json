@@ -1,0 +1,122 @@
+{
+  "loop_version": "v002",
+  "brief": {
+    "topic": "AI-assisted long-form story writing tools",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Identify and discuss GUIs that can assist in writing long, coherent stories (over 20,000 words) using local LLMs like Ollama.",
+    "context": "A user is seeking software with a graphical interface that can generate subsequent passages of a story, provide summaries to maintain context, and integrate with local LLMs, drawing a parallel to the functionality of Perchance's story generator.",
+    "motivation": "Exploring the current landscape of tools that bridge AI generation with creative writing workflows for extended narratives is of interest to those experimenting with local LLMs.",
+    "desired_response": "Recommendations for GUIs or workflows that facilitate long-form AI-assisted story writing, discussion of existing tools, and potential integration methods with local LLMs.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The user is looking for a GUI to help write long stories, similar to Perchance's story generator.",
+        "evidence_quote": "I'm looking for a GUI that can assist in writing long stories, similar to Perchance's story generator.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      },
+      {
+        "id": "F2",
+        "text": "The desired tool should generate subsequent passages and provide summaries of previous passages to maintain context.",
+        "evidence_quote": "Perchance allows you to write what happens next, generates the subsequent passage, and provides summaries of previous passages to keep everything within the context window.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      },
+      {
+        "id": "F3",
+        "text": "The user wants to connect such a program to Ollama or another LLM.",
+        "evidence_quote": "I'm wondering if there are any similar programs with a user interface that can be connected to Ollama or another LLM",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      },
+      {
+        "id": "F4",
+        "text": "The goal is to write lengthy stories, ideally over 20,000 words.",
+        "evidence_quote": "The stories don't need to be masterpieces, but they should be lengthy, ideally over 20,000 words.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      },
+      {
+        "id": "F5",
+        "text": "The user found a GitHub 'awesome story generation' list as a potential resource.",
+        "evidence_quote": "The only resource about this topic that I've found is the github awesome story generation.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      },
+      {
+        "id": "F6",
+        "text": "The user has not found a Discord server for writing enthusiasts using AI.",
+        "evidence_quote": "I haven't even been able to find a Discord server for writing enthusiast that try using AI for it.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+      }
+    ],
+    "allowed_claims": [
+      "Discussion of GUIs for AI-assisted story writing.",
+      "Integration possibilities with local LLMs like Ollama.",
+      "Challenges in maintaining context for long narratives.",
+      "Sharing of existing resources or workflows."
+    ],
+    "forbidden_claims": [
+      "Claims of successful implementation of specific tools.",
+      "Performance metrics or benchmarks of any software.",
+      "Personal experience of the reader with the described tools.",
+      "Statements about the quality of AI-generated stories as 'masterpieces'."
+    ],
+    "essential_limitations": [
+      "The source author's experience is limited to what they have found and not extensive testing.",
+      "Specific hardware or software configurations are not detailed.",
+      "The exact capabilities and limitations of Perchance's story generator are described from the user's perspective."
+    ],
+    "missing_information": [
+      "Specific GUI software names beyond the reference to Perchance.",
+      "Details on how to integrate various LLMs with potential GUIs.",
+      "User-defined parameters for story generation (e.g., temperature, top-p).",
+      "Information on the technical requirements for running such tools locally."
+    ],
+    "id": "D02",
+    "brief_id": "D02",
+    "split": "tune",
+    "source_group_id": "reddit:1lnf00q",
+    "content_type": "Question / Troubleshooting",
+    "source_date": "1751204565",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/",
+    "source_hash": "e7c8c3f43e2afe8c7063d450c3647ecb541be91b8f9d7e6de26cb8a78d94d30f",
+    "language": "English",
+    "persona": "community reader of a dated public account",
+    "quotes_checked": true
+  },
+  "draft": {
+    "title": "Looking for GUIs to support long-form story writing with local LLMs like Ollama",
+    "body": "I'm exploring tools that offer a graphical interface to help write extended stories—20,000 words or more—using local LLMs such as Ollama. The goal is to find something akin to Perchance's story generator, which reportedly lets you write what happens next, generates subsequent passages, and provides summaries of earlier parts to keep the story coherent within the model's context window. However, I haven't found concrete examples of GUIs that integrate with local models in this way, nor clear workflows for maintaining long-term narrative context. Has anyone come across software or setups that facilitate this kind of iterative story generation with local LLMs? Additionally, are there recommended methods to connect such GUIs to Ollama or similar models? Any pointers to existing tools, integration strategies, or community resources (Discord servers, GitHub repos beyond the general \"awesome story generation\" list) would be appreciated.",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0004",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:05:54.621587+00:00",
+    "tag": "naturalness:D02",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b42bf819c8c14a71777be91c959551eff9ba4964632a2ff042573ebe6bd5bb28",
+    "actual_cost_usd": 0.000966,
+    "budget_charge_usd": 0.000966,
+    "reserved_upper_usd": 0.0050164,
+    "input_tokens": 1499,
+    "output_tokens": 229,
+    "latency_seconds": 2.1149243999971077,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108352-BLmZQWK5qxEXel2uohQ0",
+    "contract_sha256": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304"
+  },
+  "human_accepted": false
+}

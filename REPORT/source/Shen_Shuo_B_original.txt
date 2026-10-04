@@ -1,0 +1,306 @@
+PAGE 1
+PE6201 · EMERGING AI TECHNOLOGIES       Project · Problem Statement (Wk 3)
+
+END-OF-COURSE PROJECT · MILESTONE 1
+Project Problem Statement
+Submit by the end of Week 3 [23 August 23:59 hrs]· ~1 page · individual · formative (not graded) — you’ll get written feedback.
+This seeds your End-of-Course Project (it maps to Project Rubric criteria 1 & 2).
+This submission is NOT graded. However, on time non-submission counts towards incomplete End of course project.
+Name: _____SHEN SHUO___     Section (A / B / C): __B____     Date: _2026/8/22_________
+
+1 · Working title
+A short, specific name for your project.
+ ExpertFeel — Distilling Human Expert Intuition into an AI Digital Employee
+
+2 · The problem, and why it matters
+Who has this problem, and why is it worth solving? 2–3 sentences. (Rubric 1)
+ Experienced professionals develop a “feel” through repeated practice: they recognize
+ patterns, identify important signals and make judgments that are difficult to express as
+ explicit rules.
+
+ The problem is that this implicit expertise is difficult to transfer and scale. My project asks
+ whether AI can distil these hidden patterns from an expert’s historical work and
+ reproduce the expert’s judgment on unseen cases, rather than merely imitate their
+ writing style.
+
+ This matters because successful distillation could turn individual experience into a
+ reusable AI digital employee. The project will also test the limits of this approach:
+ whether the system merely appears expert-like, or can actually achieve measurable
+ predictive performance.
+
+3 · Who it’s for, and the domain
+Your user / audience and the industry (e.g. banking, healthcare, retail, your employer).
+ Option A — Expert Content Intelligence
+
+ Primary user: Senior content editor / content strategist.
+
+ Persona: An experienced editor deciding which topics or drafts deserve further
+ production effort, relying heavily on personal intuition but unable to systematically
+ compare hundreds of historical examples.
+
+ Domain: Digital Media / Content Strategy.
+
+ Desired change: The editor can submit a topic or draft and receive a high-performance
+ prediction supported by relevant expert cases, and can use the distilled patterns to
+ generate or improve content.
+
+ Option B — Expert Valuation Intelligence
+
+ Primary user: Equity research analyst.
+
+ Persona: A junior or mid-level analyst preparing a company valuation who wants to
+ access the judgment patterns of experienced analysts without manually reviewing large
+ numbers of historical reports.
+
+
+
+
+Nanyang Technological University · MSc Enterprise AI · T1 AY2026–27
+PAGE 2
+PE6201 · EMERGING AI TECHNOLOGIES      Project · Problem Statement (Wk 3)
+
+
+ Domain: Equity Research / Financial Analysis.
+
+ Desired change: The analyst can submit a company case and receive a valuation
+ judgment grounded in similar historical expert cases and reasoning patterns.
+
+4 · Why AI — and which kind? Remember, from class 1 workshops, no one size fits all
+Is AI the right tool here (vs a rule or lookup)? If yes, which type — narrow ML, a foundation model, RAG, an agent? (ILO 1)
+ I will use a hybrid approach rather than assuming that an LLM alone is sufficient.
+
+ For Option A, the non-AI baseline will be a conventional classifier using observable
+ features such as topic, text characteristics, publication time and historical engagement.
+ The AI system will add an LLM + RAG + expert-pattern distillation layer to capture less
+ explicit patterns such as topic selection, framing, narrative structure, timing and
+ contextual signals.
+
+ For Option B, the baseline will be a deterministic valuation model using financial ratios
+ and standard valuation multiples. The AI system will use LLM + RAG to retrieve
+ comparable historical expert cases and distil the reasoning behind assumptions such as
+ growth, margins and valuation multiples.
+
+ I will not use an agent in the first version because the core task does not require a multi-
+ step tool loop.
+
+5 · Proposed approach — build vs buy or both!
+What will you build (low-code and/or code)? Which layers will you own vs rent, and why? (Rubric 2, ILO 3)
+ I will adopt a Buy + Build approach.
+
+ I will rent the foundation model and embedding capability through existing APIs, while
+ building the expert-specific data layer, retrieval strategy, prompting,
+ prediction/generation logic and evaluation pipeline myself.
+
+ The architecture will be:
+
+           Input → Retrieve Relevant Expert Cases → Distil / Apply
+           Expert Patterns → Prediction or Generation →
+           Evaluation
+
+ I will first test a simple prompted LLM baseline, then add RAG, and finally add the expert-
+ distillation layer. This allows me to measure whether each additional layer actually
+ improves performance.
+
+ The first implementation will avoid fine-tuning and complex agents because these add
+ cost and failure modes before the value of expert distillation has been established.
+
+6 · Data – this packs the intelligence !
+What data do you need, where from, and any access / privacy / residency constraints?
+ Option A — Expert Content Intelligence
+
+
+
+
+
+Nanyang Technological University · MSc Enterprise AI · T1 AY2026–27
+PAGE 3
+PE6201 · EMERGING AI TECHNOLOGIES      Project · Problem Statement (Wk 3)
+
+
+ I will collect approximately 300–500 historical text-based posts/articles from selected
+ expert creators, primarily from X/Twitter and publicly accessible WeChat or other long-
+ form content platforms, rather than video.
+
+ For each item, I will collect where available:
+
+          content and topic;
+          publication date/time;
+          surrounding content and public-event context;
+          mentions/social context;
+          engagement metrics such as views, likes, comments and reposts.
+
+ The system will not assume in advance that “emotion”, “hooks” or “suspense” are the
+ complete explanation. Instead, it will use historical expert content to discover recurring
+ patterns associated with high-performing content.
+
+ High-performing content will be defined using a fixed percentile or engagement threshold
+ within the relevant platform/time period. Post-publication information will be excluded
+ from prediction inputs to prevent leakage.
+
+ Option B — Expert Valuation Intelligence
+
+ I will initially focus on one listed company and a defined historical period, rather than
+ attempting to model the entire stock market.
+
+ Financial data will come from SEC EDGAR, including historical 10-K/10-Q filings and
+ structured financial data.
+
+ I will additionally collect historical equity research reports where legally accessible. These
+ reports are the key expert dataset because the objective is to distil expert judgment
+ rather than simply perform financial RAG.
+
+ Historical cases will be frozen at their information date to prevent look-ahead bias.
+
+7 · Success metric & how you’ll evaluate it
+One metric that ties to real value, and one check (an eval) you could actually run. (evals thread)
+ The core metric will be:
+
+ Expert Judgment Agreement
+
+ I will compare four systems:
+
+      1.   Non-AI baseline
+      2.   Generic LLM
+      3.   LLM + RAG
+      4.   Expert-Distilled AI
+
+ The target is ≥80% agreement on a held-out evaluation set, with 90% treated as an
+ ambitious target rather than an assumed result.
+
+
+
+
+Nanyang Technological University · MSc Enterprise AI · T1 AY2026–27
+PAGE 4
+PE6201 · EMERGING AI TECHNOLOGIES      Project · Problem Statement (Wk 3)
+
+ Option A — Time-Machine Evaluation
+
+ I will freeze historical cases at Time T. The model will only receive information available at
+ T and will predict whether a piece of content will become high-performing. The actual
+ engagement outcome after publication becomes the ground truth.
+
+ I will measure metrics such as Precision, Recall, F1 and probability calibration, and
+ compare them against the non-AI baseline.
+
+ I will also test:
+
+           Topic → Expert Pattern Retrieval → Content Generation
+           → High-Performance Evaluation
+
+ to determine whether distilled expertise improves generated content, not only
+ prediction.
+
+ Option B — Time-Machine Valuation Evaluation
+
+ I will freeze a historical company case at Time T and provide only information available at
+ that point. The AI's valuation judgment will then be compared with the historical expert
+ judgment and, where appropriate, subsequent market outcomes.
+
+ I will measure valuation error and expert-judgment agreement, while comparing the
+ result with the deterministic valuation baseline.
+
+ In both options, the system will have an abstain / “insufficient confidence” mechanism,
+ and I will measure both its abstention rate and error rate.
+
+8 · Risks, limitations & responsible use
+What could go wrong (incl. silent failure), and who might it affect?
+ The main risks are:
+
+          Data leakage: future information may accidentally enter historical cases → use strict time-based
+           data freezing.
+          Confidently wrong outputs: the system may produce convincing but incorrect expert reasoning →
+           confidence thresholds and abstention.
+          Correlation mistaken for expertise: the model may learn superficial signals rather than expert
+           intuition → compare against baselines and conduct ablation tests.
+          Expert data limitations: historical expert work may be insufficient or inaccessible → treat data
+           availability as a go/no-go condition.
+          Domain-specific risk: financial outputs could be misused as investment advice → if Option B is
+           selected, the system will be positioned strictly as analyst decision support.
+
+ The key silent failure is a system that sounds like an expert but does not actually predict
+ better than a simpler baseline. The evaluation therefore focuses on unseen cases rather
+ than stylistic similarity alone.
+
+9 · Smallest first version (optional)
+The tiniest end-to-end slice you could build first.
+ Option A
+
+
+Nanyang Technological University · MSc Enterprise AI · T1 AY2026–27
+PAGE 5
+PE6201 · EMERGING AI TECHNOLOGIES       Project · Problem Statement (Wk 3)
+
+
+           One historical/new content item → retrieve three
+           relevant expert cases → one LLM call → high-
+           performance probability + short rationale.
+
+ The first test will use a held-out sample of at least 30 cases and compare the system
+ against the non-AI baseline.
+
+ Option B
+
+           One historical company case → retrieve three
+           comparable expert cases → one LLM call → valuation
+           judgment + rationale.
+
+ The first test will compare the result against a deterministic valuation baseline and
+ historical expert judgment.
+
+ The first working slice will therefore be deliberately small; additional generation,
+ evaluation and interface features will only be added after the core end-to-end path
+ works.
+
+How this is used
+This milestone is not graded — it’s to give you fast, written feedback while there’s still time to change direction. A strong
+problem statement makes criteria 1 (problem & significance) and 2 (business & technical trade-offs) and helps you start on
+a strong footing. Bring questions during class breakouts or email the course account or WA text me
+
+
+
+
+INSTRUCTOR FEEDBACK
+For marker use — formative comments on the problem & significance (criterion 1) and the business/technical trade-offs (criterion 2), plus
+one thing to strengthen before the final project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nanyang Technological University · MSc Enterprise AI · T1 AY2026–27

@@ -1,0 +1,24 @@
+{
+  "phase": "Dev before human",
+  "checks": {
+    "ledger_run_ids_unique": true,
+    "all_runs_have_raw_output": true,
+    "all_runs_have_manifest": true,
+    "no_inflight_reservations": true,
+    "no_final_sources_opened": true,
+    "budget_under_1_25": true,
+    "human_votes_not_fabricated": true,
+    "translations_numeric_checks_pass": true,
+    "review_page_8_groups": true
+  },
+  "verdict": "PASS logged execution with disclosed source repair and supplemental safety audit; generator safety not fully passed",
+  "api_calls": 81,
+  "round_cost_usd": 0.1663487,
+  "project_accounted_usd": 1.2192268499999999,
+  "tokens": 235930,
+  "deviations": [
+    "One blocked D06 brief repaired before generation, original preserved",
+    "8 supplemental source ownership checks added after initial guard missed identity failures",
+    "Machine challenge precomputed without human answers; failed swap criterion, no admission or title work"
+  ]
+}

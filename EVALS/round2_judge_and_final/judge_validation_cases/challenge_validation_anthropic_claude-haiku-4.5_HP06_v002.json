@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "B",
+    "usefulness": "B",
+    "credibility": "Tie",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Draft A strips the post to bare essentials, losing concrete decision points that the community can engage with. Draft B preserves the specific trade-offs the developer is weighing: API friction (login, costs, performance) versus local model friction (app size, deployment prep), and the concrete constraint (content filtering for game context). Both cite all six facts accurately, but B's specificity—naming the three API options, detailing what 'setup complexity' means in context (login/management), and framing fine-tuning as an open question rather than a generic concern—gives the community actionable ground to respond. A's phrasing 'user experience factors' and 'what is involved' are vaguer and less likely to surface targeted advice. B also better signals the developer's actual uncertainty (fine-tuning necessity, deployment steps, filtering methods) rather than summarizing their concerns. Neither makes forbidden claims or invents missing details; both stay within allowed scope. B's length serves community fit by showing the questioner has thought through the problem, inviting experienced responses rather than generic primers."
+    },
+    "usage": {
+      "run_id": "v002-r0174",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:30:24.693951+00:00",
+      "tag": "judge_validation:HP06:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "c1b208f439cca55de23961e71d50ce76d54cb266e8ee387aa0aa9e7e93852fc3",
+      "actual_cost_usd": 0.003742,
+      "budget_charge_usd": 0.003742,
+      "reserved_upper_usd": 0.012561,
+      "input_tokens": 2192,
+      "output_tokens": 310,
+      "latency_seconds": 4.716950899979565,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109819-oFu7KLvTm66o6kkQyUSh",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A preserves the concrete decision framework the source author is actually working through: specific API options named (OpenAI, Claude, Gemini), explicit friction points identified (login/management/costs/performance), and precise concerns articulated (app size ballooning, fine-tuning necessity, content filtering). These details give the community concrete hooks to respond with relevant tradeoffs and experience. Draft B abstracts these into generic phrases ('API-based and local model options,' 'user experience factors,' 'preparing a model') that flatten the specificity without adding clarity. For a local LLM enthusiast community, A's granularity—naming the exact APIs under consideration, the specific content type (character stats, not conversation), and the particular constraints (app size, login friction)—creates actionable discussion space. Both cite all six facts, but A's organization mirrors the decision logic (API pros/cons, then local model pros/cons, then deployment questions, then filtering) while B lists concerns without structural relationship. A's length serves specificity and community fit; B's brevity sacrifices the detail that makes the question answerable rather than generic."
+    },
+    "usage": {
+      "run_id": "v002-r0175",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:30:29.545690+00:00",
+      "tag": "judge_validation:HP06:BA",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "6b480e1218f0463600c31804cc5c25d11d65e3ff049a83db12303a5d2ed50a2f",
+      "actual_cost_usd": 0.003812,
+      "budget_charge_usd": 0.003812,
+      "reserved_upper_usd": 0.012561,
+      "input_tokens": 2192,
+      "output_tokens": 324,
+      "latency_seconds": 4.825512700015679,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109824-9TyXtXC0zQfAmhaP2uUq",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "anthropic/claude-haiku-4.5"
+}

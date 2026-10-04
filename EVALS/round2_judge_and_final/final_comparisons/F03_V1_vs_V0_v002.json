@@ -1,0 +1,100 @@
+{
+  "outcome": "Loss",
+  "dimensions": {
+    "community_fit": "A",
+    "specificity": "Uncertain",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "A",
+    "overall": "A"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "A",
+      "specificity": "Uncertain",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "swap_consistent": {
+      "community_fit": true,
+      "specificity": false,
+      "information_value": true,
+      "usefulness": true,
+      "credibility": true,
+      "overall": true
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "A",
+          "specificity": "A",
+          "information_value": "A",
+          "usefulness": "A",
+          "credibility": "A",
+          "overall": "A"
+        },
+        "evidence": "Draft A directly addresses the community's core concern—whether local LLM training on a single specialized document outperforms cloud models—by framing it as a genuine feasibility question with actionable dimensions (training methods, performance comparison, prompt engineering, input representation challenges). It cites all six facts, including the crucial context that the source author is a layperson without test data, which establishes appropriate epistemic humility and invites experienced contributors. Draft B reduces the scope to only F1 and F2, omitting the comparison framing (F4, F5), the author's self-identified inexperience (F6), and the core uncertainty about accuracy (F3). While B is more concise, it loses the tension that makes the question valuable to the community—the explicit local-vs-cloud tradeoff and prompt engineering angle. A's longer setup directly enables community members to contribute specific experiences; B's brevity sacrifices the structured comparison that would generate useful discussion. Both avoid forbidden claims, but A better preserves the brief's stated goal of exploring 'practical limitations and potential' through concrete tradeoffs."
+      },
+      "usage": {
+        "run_id": "v002-r0440",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:19:56.433592+00:00",
+        "tag": "judge_final:F03:V1_vs_V0:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "f0e34bea8ba5e98f30f08ae52b1a83c2251fa39ec7ba81a86bce7ce2b6f48f8a",
+        "actual_cost_usd": 0.003748,
+        "budget_charge_usd": 0.003748,
+        "reserved_upper_usd": 0.012611999999999998,
+        "input_tokens": 2163,
+        "output_tokens": 317,
+        "latency_seconds": 4.57435009998153,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112791-JKeAkv1Bh1108rejoTBW",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "Tie",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "B",
+          "overall": "B"
+        },
+        "evidence": "Draft A frames the question narrowly around practical feasibility but omits the source author's explicit uncertainty (F3: 'is that reasonable/possible?') and layperson status (F6), which are material to community credibility assessment. Draft B preserves these limitations transparently ('source author is a layperson and hasn't provided concrete performance data'), grounding the invitation in honest epistemic positioning. Both cite F1–F2 accurately; B additionally references F3–F6, acknowledging the author's own doubt and expertise gap rather than presenting the premise as settled. Draft B's closing questions ('Has anyone here experimented...', 'How do results typically compare...', 'What challenges might arise...') are more concrete and actionable for the local LLM community than A's vaguer 'insight into tradeoffs.' Both avoid forbidden claims. A's omission of source uncertainty and layperson framing risks appearing to endorse feasibility; B's explicit acknowledgment of missing performance data and the author's self-identified knowledge gap better serves community trust and attracts informed responses rather than speculation."
+      },
+      "usage": {
+        "run_id": "v002-r0441",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:00.937489+00:00",
+        "tag": "judge_final:F03:V1_vs_V0:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "3cb9c400ea32816882894e456ec7c556d622a3e9576b47ba640bcdbb2d4c7a8e",
+        "actual_cost_usd": 0.003748,
+        "budget_charge_usd": 0.003748,
+        "reserved_upper_usd": 0.012611999999999998,
+        "input_tokens": 2163,
+        "output_tokens": 317,
+        "latency_seconds": 4.472150899993721,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112796-dMDGf6tNlFCPvp7xMAvU",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F03",
+  "comparison": "V1_vs_V0",
+  "older": "V0",
+  "newer": "V1",
+  "at": "2026-10-04T11:20:00.958224+00:00"
+}

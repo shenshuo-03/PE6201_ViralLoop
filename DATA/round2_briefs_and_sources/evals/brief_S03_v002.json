@@ -1,0 +1,85 @@
+{
+  "topic": "Local LLM Prompt Engineering for Classification",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Improving prompt consistency and classification accuracy for a local binary classification task using LLaMA 3.1 8B.",
+  "context": "The user is attempting to build a local-only system to classify prompts into 'related' or 'unrelated' categories using LLaMA 3.1 8B. They are encountering limitations with few-shot examples and cannot use embedding-based filtering due to the local-only constraint.",
+  "motivation": "The source author is seeking practical advice and best practices for prompt engineering and system prompts to enhance the performance of local LLMs in classification tasks, as standard methods like few-shot learning are proving insufficient.",
+  "desired_response": "Seeking advice on prompt engineering techniques, system prompt refinements, or other best practices for improving classification accuracy with local LLMs, specifically LLaMA 3.1 8B, without external API calls or embedding-based filtering.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The user is employing LLaMA 3.1 8B for a local prompt classification task.",
+      "evidence_quote": "I use llama 3.1 8B to validate whether a given prompt falls into a certain semantic category.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    },
+    {
+      "id": "F2",
+      "text": "The classification task is binary: related versus unrelated.",
+      "evidence_quote": "The classification is binary (related vs unrelated), and I'm keeping everything local",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    },
+    {
+      "id": "F3",
+      "text": "The user's project requires a strictly local setup, prohibiting external API calls.",
+      "evidence_quote": "I'm keeping everything local — no APIs or external calls.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    },
+    {
+      "id": "F4",
+      "text": "Few-shot examples have provided limited success in improving classification.",
+      "evidence_quote": "Few-shot examples only get me so far, and embedding-based filtering isn’t viable here",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    },
+    {
+      "id": "F5",
+      "text": "Embedding-based filtering is not a viable option due to the local-only requirement.",
+      "evidence_quote": "embedding-based filtering isn’t viable here due to the local-only requirement.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    },
+    {
+      "id": "F6",
+      "text": "The user is experiencing issues with prompt consistency and classification accuracy.",
+      "evidence_quote": "I’m running into issues with prompt consistency and classification accuracy.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/"
+    }
+  ],
+  "allowed_claims": [
+    "Users are seeking advice on prompt engineering for local LLMs.",
+    "LLaMA 3.1 8B is being used for prompt classification.",
+    "Local-only constraints impact the choice of classification methods."
+  ],
+  "forbidden_claims": [
+    "The user has successfully improved their prompt classification accuracy.",
+    "Specific prompt templates or system prompts were provided and tested.",
+    "The LLM's performance metrics (e.g., accuracy percentage) were shared."
+  ],
+  "essential_limitations": [
+    "The specific hardware configuration used for running the local LLM is not mentioned.",
+    "The exact prompt engineering techniques or system prompts currently in use are not detailed.",
+    "The nature of the 'certain semantic category' is not specified."
+  ],
+  "missing_information": [
+    "Details on the current prompt structure and few-shot examples.",
+    "Information about the specific challenges encountered with prompt consistency.",
+    "Any attempts made at refining system prompts prior to seeking help."
+  ],
+  "id": "S03",
+  "brief_id": "S03",
+  "split": "selection",
+  "source_group_id": "reddit:1khsinw",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "2025-05-08",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/",
+  "source_hash": "f24def43fceeead5a8ca5f8a68450c69c6ed9477e40af43f33453413c2552b97",
+  "language": "English",
+  "persona": "community reader of a dated public account",
+  "quotes_checked": true,
+  "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+}

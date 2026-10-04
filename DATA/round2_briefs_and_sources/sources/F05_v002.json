@@ -1,0 +1,14 @@
+{
+  "brief_id": "F05",
+  "source_group_id": "reddit:1kmhq4s",
+  "id": "1kmhq4s",
+  "split": "final",
+  "content_type": "Experience / Benchmark",
+  "source_date": "1747235656",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmhq4s/seeking_vram_backend_recommendations_performance/",
+  "source_title": "Seeking VRAM Backend Recommendations & Performance Comparisons for Multi-GPU AMD Setup (7900xtx x2 + 7800xt) - Gemma, Qwen Models",
+  "source_text": "Hi everyone,\n\nI'm looking for advice on the best way to maximize output speed/throughput when running large language models on my setup. I'm primarily interested in running Gemma3:27b,  Qwen3 32B models, and I'm trying to determine the most efficient VRAM backend to utilize.\n\n**My hardware is:**\n\n* **GPUs: (64GB)**  2x AMD Radeon RX 7900 XTX + 1x Radeon RX 7800 XT\n* **VRAM:** Effectively 24GB + 24GB + 16GB (total 64GB)\n* **RAM:** 128GB 4200MHz (32x4 configuration)\n* **CPU:** Ryzen 7 7700X\n\nCurrently, I'm considering **VLLM** and **llama.cpp**. I've previously experimented with these backends with older models, and observed performance differences of only around 1-2 tokens per second, which was inconclusive. I'm hoping to get more targeted data with the newer, larger models.\n\nI also got better speed with Vulkan and llama.cpp for Qwen3::30B MOE for 110 token/s and around 14 token/s for Qwen3:235B\\_Q2\\_K form unsloth.\n\nI'm particularly interested in hearing from other users with **similar AMD GPU setups (specifically multi-GPU)** who have experience running LLMs. I would greatly appreciate it if you could share:\n\n* **What backend(s) have you found to be the most performant with AMD GPUs?** (VLLM, llama.cpp, others?)\n* **What quantization methods (e.g., GPTQ, AWQ, GGUF) are you using?** and at what bit depth (e.g., 4-bit, 8-bit)?\n* **Do you use all available GPUs, or only a subset?** What strategies do you find work best for splitting the model across multiple GPUs? (e.g., layer offloading, tensor parallelism)\n* **What inference frameworks (e.g., transformers, ExLlamaV2) are you using in conjunction with the backend?**\n* **Any specific configurations or settings you recommend for optimal performance with AMD GPUs?** (e.g. ROCm version, driver versions)\n\nI’m primarily focused on maximizing output speed/throughput for inference, so any insights related to that would be particularly helpful. I am open to suggestions on any and all optimization strategies.\n\nThanks in advance for your time and expertise!",
+  "collected_at": "2026-10-04T10:03:39.106526+00:00",
+  "historical_split": "train",
+  "source_hash": "2194c3047ff0d4d3e9454ea5248680fce832db3cc3899f469b49f5cac1c86f9c"
+}

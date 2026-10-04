@@ -1,0 +1,100 @@
+{
+  "outcome": "Uncertain",
+  "dimensions": {
+    "community_fit": "Uncertain",
+    "specificity": "Uncertain",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Tie",
+    "overall": "Uncertain"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "Uncertain",
+      "specificity": "Uncertain",
+      "information_value": "Uncertain",
+      "usefulness": "Uncertain",
+      "credibility": "Tie",
+      "overall": "Uncertain"
+    },
+    "swap_consistent": {
+      "community_fit": false,
+      "specificity": false,
+      "information_value": false,
+      "usefulness": false,
+      "credibility": true,
+      "overall": false
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "Tie",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts accurately ground themselves in F1–F2 and acknowledge the core tension: vector DBs prioritize semantics over order/exact matching. Draft B more directly frames the actionable question for the community—'is there a known approach or best practice'—and avoids the softer framing in A ('I'm wondering if anyone has experience'). A introduces 'reverse keyword search' terminology and mentions 'hybrid approaches' without grounding these in the brief's facts, diluting focus. B stays tighter to the stated problem: short phrases + order preservation + vector DB limitations. Both cite the 2025 Reddit source appropriately and avoid forbidden claims. Neither leverages F3–F6 (the specific AND/OR edge cases), which represent the most concrete troubleshooting detail available; this is a missed opportunity in both, but B's sharper question structure makes it more likely to elicit targeted community responses. A's 'fidelity' language and broader 'workarounds' framing are less precise than B's direct 'known approach or best practice' ask."
+      },
+      "usage": {
+        "run_id": "v002-r0438",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:19:46.568912+00:00",
+        "tag": "judge_final:F02:V2_vs_V1:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "4ab2d6b4330c5f9e6a6ba330fbba0759b715bc09fea18275054724caf0126b15",
+        "actual_cost_usd": 0.003665,
+        "budget_charge_usd": 0.003665,
+        "reserved_upper_usd": 0.012212,
+        "input_tokens": 2090,
+        "output_tokens": 315,
+        "latency_seconds": 4.511864300002344,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112781-rZ1AOebGF3UIYQLrK3Xb",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "B",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts correctly ground themselves in F1–F2 and avoid forbidden claims. Draft A frames the question narrowly around \"reliably detect\" and \"best practice,\" which presumes solutions exist without acknowledging the core tension. Draft B explicitly names the design mismatch (\"not originally designed for reverse keyword search\") and directly invokes the order-preservation problem as a stated constraint, then asks for \"workarounds or hybrid approaches\"—a more honest framing that acknowledges vector DBs may be the wrong tool. Draft B also references the Reddit source date (\"mid-2025\") and lack of \"clear success metrics,\" preserving epistemic humility. Draft A's phrasing \"known approach or best practice\" risks inviting generic advice rather than genuine troubleshooting. Draft B's closing question (\"Are there known workarounds or hybrid approaches?\") is more actionable for a local LLM community—it signals openness to alternatives rather than assuming vector DBs are the solution. Neither post exploits F3–F6 (the AND/OR edge cases), which is appropriate given the brief's focus on the core use case, but Draft B's acknowledgment of design mismatch makes it more credible and community-fit for a group likely to explore unconventional solutions."
+      },
+      "usage": {
+        "run_id": "v002-r0439",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:19:51.794897+00:00",
+        "tag": "judge_final:F02:V2_vs_V1:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "8af0ca90d3198c1d702b6f9899399c994c5f836aab6f0b8f096d32dbc4c2eb1e",
+        "actual_cost_usd": 0.00389,
+        "budget_charge_usd": 0.00389,
+        "reserved_upper_usd": 0.012212,
+        "input_tokens": 2090,
+        "output_tokens": 360,
+        "latency_seconds": 5.195774799998617,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112786-K8cNWoAz1H1fSsMmSjew",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F02",
+  "comparison": "V2_vs_V1",
+  "older": "V1",
+  "newer": "V2",
+  "at": "2026-10-04T11:19:51.823269+00:00"
+}

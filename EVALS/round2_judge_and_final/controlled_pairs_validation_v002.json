@@ -1,0 +1,1836 @@
+[
+  {
+    "pair_id": "HP01",
+    "brief_id": "H01",
+    "source_group_id": "reddit:1jv1o8o",
+    "split": "validation",
+    "brief": {
+      "topic": "LLM Personalities and User Preference",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand and discuss the perceived 'personalities' of different large language models and how these characteristics influence user choice and interaction.",
+      "context": "A user's archived account from 2025-04-09 describes observations about the distinct 'personalities' of several LLMs (Gemini, Claude, ChatGPT, Grok) based on their use for studying, learning, and coding. The user notes how these perceived personalities affect their preference and usage patterns.",
+      "motivation": "This question is worth discussing as understanding the subjective 'personalities' of LLMs can shed light on user experience, model design, and the nuances of human-AI interaction, which is relevant to local LLM enthusiasts.",
+      "desired_response": "A discussion comparing and contrasting the perceived 'personalities' of various LLMs, sharing personal preferences for interaction styles, and explaining how these factors influence which LLM is used most frequently.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author observed that LLMs like Gemini, Claude, ChatGPT, and Grok each exhibit a distinct 'personality'.",
+          "evidence_quote": "I've noticed that they all have a very distinct personality",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author found Claude to be the most intuitive, understanding when to be concise, elaborate, or ask follow-up questions.",
+          "evidence_quote": "personally Claude feels the most like it just \"gets\" me, it knows when to stay concise, when to elaborate or when to ask follow up questions.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F3",
+          "text": "Gemini was described by the source author as verbose and, in longer conversations, prone to using excessive capitalization, bolding, or cursive text.",
+          "evidence_quote": "Gemini on the other hand tends to yap a lot and in longer conversations even tends to lose its cool a bit, starting to write progressively more in caps, bolded or cursive text until it just starts all out tweaking.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F4",
+          "text": "ChatGPT was perceived by the source author as having a 'clean' and generally formal, concise personality.",
+          "evidence_quote": "ChatGPT seems like it has the most \"clean\" personality, it's generally quite formal and concise.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F5",
+          "text": "Grok was noted by the source author to be similar to Claude but not as effective, though it was used most frequently due to Claude's rate limits.",
+          "evidence_quote": "And last, but not least Grok seems somewhat similar to Claude, it doesn't *quite* get me as much (I would say its like 90% there), but its the one I actually tend to use the most, since Claude has a very annoying rate limit.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        }
+      ],
+      "allowed_claims": [
+        "Users may perceive differences in LLM 'personalities'.",
+        "User preference for an LLM can be influenced by its perceived interaction style.",
+        "Rate limits can affect LLM usage frequency."
+      ],
+      "forbidden_claims": [
+        "LLM personalities are objectively measurable traits.",
+        "Specific LLMs are definitively 'better' than others.",
+        "The observations are universally applicable to all users.",
+        "The source author's experiences represent definitive model behavior."
+      ],
+      "essential_limitations": [
+        "The observations are subjective and based on the source author's personal experience.",
+        "The specific versions or configurations of the LLMs used are not detailed.",
+        "The exact nature of the 'rate limit' for Claude is not specified."
+      ],
+      "missing_information": [
+        "Details on the specific tasks or prompts used to elicit these 'personalities'.",
+        "Information on the hardware or software environment used.",
+        "Confirmation of whether these observations are consistent across different users or sessions."
+      ],
+      "id": "H01",
+      "brief_id": "H01",
+      "split": "validation_source",
+      "source_group_id": "reddit:1jv1o8o",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-04-09",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/",
+      "source_hash": "1d45aa20b8d28b32ffe82961e8c0e82d79b0b2f2c19a35f5fc99c01006725288",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How do you perceive and choose between the distinct 'personalities' of local LLMs like Gemini, Claude, ChatGPT, and Grok?",
+      "body": "An archived 2025 Reddit post describes how several LLMs—Gemini, Claude, ChatGPT, and Grok—each exhibit distinct interaction styles or \"personalities.\" For example, Claude is noted for intuitively balancing conciseness and elaboration, while Gemini tends to be verbose and sometimes overly emphatic in longer chats. ChatGPT is seen as formal and concise, and Grok resembles Claude but feels less attuned, though it’s used more often due to Claude’s rate limits. Given these subjective impressions, how do you weigh such personality traits when choosing which local LLM to use for studying, coding, or general interaction? Are there particular traits that make one model your go-to despite limitations like rate limits? Also, how consistent are these personality impressions across different sessions or tasks in your experience?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "How do you perceive and choose between the distinct 'personalities' of local LLMs like Gemini, Claude, ChatGPT, and Grok?",
+      "body": "An archived 2025 Reddit post describes how several LLMs—Gemini, Claude, ChatGPT, and Grok—each exhibit distinct interaction styles or \"personalities.\" For example, Claude is noted for intuitively balancing conciseness and elaboration, while Gemini tends to be verbose and sometimes overly emphatic in longer chats. ChatGPT is seen as formal and concise, and Grok resembles Claude but feels less attuned, though it’s used more often due to Claude’s rate limits. Given these subjective impressions, how do you weigh such personality traits when choosing which local LLM to use for studying, coding, or general interaction? Are there particular traits that make one model your go-to despite limitations like rate limits? Also, how consistent are these personality impressions across different sessions or tasks in your experience?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "Tie",
+    "changed_dimension": "community_fit",
+    "design_reason": "Exact identical text; detects forced preference",
+    "source_type": "identical",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP02",
+    "brief_id": "H01",
+    "source_group_id": "reddit:1jv1o8o",
+    "split": "validation",
+    "brief": {
+      "topic": "LLM Personalities and User Preference",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand and discuss the perceived 'personalities' of different large language models and how these characteristics influence user choice and interaction.",
+      "context": "A user's archived account from 2025-04-09 describes observations about the distinct 'personalities' of several LLMs (Gemini, Claude, ChatGPT, Grok) based on their use for studying, learning, and coding. The user notes how these perceived personalities affect their preference and usage patterns.",
+      "motivation": "This question is worth discussing as understanding the subjective 'personalities' of LLMs can shed light on user experience, model design, and the nuances of human-AI interaction, which is relevant to local LLM enthusiasts.",
+      "desired_response": "A discussion comparing and contrasting the perceived 'personalities' of various LLMs, sharing personal preferences for interaction styles, and explaining how these factors influence which LLM is used most frequently.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author observed that LLMs like Gemini, Claude, ChatGPT, and Grok each exhibit a distinct 'personality'.",
+          "evidence_quote": "I've noticed that they all have a very distinct personality",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author found Claude to be the most intuitive, understanding when to be concise, elaborate, or ask follow-up questions.",
+          "evidence_quote": "personally Claude feels the most like it just \"gets\" me, it knows when to stay concise, when to elaborate or when to ask follow up questions.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F3",
+          "text": "Gemini was described by the source author as verbose and, in longer conversations, prone to using excessive capitalization, bolding, or cursive text.",
+          "evidence_quote": "Gemini on the other hand tends to yap a lot and in longer conversations even tends to lose its cool a bit, starting to write progressively more in caps, bolded or cursive text until it just starts all out tweaking.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F4",
+          "text": "ChatGPT was perceived by the source author as having a 'clean' and generally formal, concise personality.",
+          "evidence_quote": "ChatGPT seems like it has the most \"clean\" personality, it's generally quite formal and concise.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F5",
+          "text": "Grok was noted by the source author to be similar to Claude but not as effective, though it was used most frequently due to Claude's rate limits.",
+          "evidence_quote": "And last, but not least Grok seems somewhat similar to Claude, it doesn't *quite* get me as much (I would say its like 90% there), but its the one I actually tend to use the most, since Claude has a very annoying rate limit.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        }
+      ],
+      "allowed_claims": [
+        "Users may perceive differences in LLM 'personalities'.",
+        "User preference for an LLM can be influenced by its perceived interaction style.",
+        "Rate limits can affect LLM usage frequency."
+      ],
+      "forbidden_claims": [
+        "LLM personalities are objectively measurable traits.",
+        "Specific LLMs are definitively 'better' than others.",
+        "The observations are universally applicable to all users.",
+        "The source author's experiences represent definitive model behavior."
+      ],
+      "essential_limitations": [
+        "The observations are subjective and based on the source author's personal experience.",
+        "The specific versions or configurations of the LLMs used are not detailed.",
+        "The exact nature of the 'rate limit' for Claude is not specified."
+      ],
+      "missing_information": [
+        "Details on the specific tasks or prompts used to elicit these 'personalities'.",
+        "Information on the hardware or software environment used.",
+        "Confirmation of whether these observations are consistent across different users or sessions."
+      ],
+      "id": "H01",
+      "brief_id": "H01",
+      "split": "validation_source",
+      "source_group_id": "reddit:1jv1o8o",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-04-09",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/",
+      "source_hash": "1d45aa20b8d28b32ffe82961e8c0e82d79b0b2f2c19a35f5fc99c01006725288",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How do you perceive and choose between the distinct 'personalities' of local LLMs like Gemini, Claude, ChatGPT, and Grok?",
+      "body": "An archived 2025 Reddit post describes how several LLMs—Gemini, Claude, ChatGPT, and Grok—each exhibit distinct interaction styles or \"personalities.\" For example, Claude is noted for intuitively balancing conciseness and elaboration, while Gemini tends to be verbose and sometimes overly emphatic in longer chats. ChatGPT is seen as formal and concise, and Grok resembles Claude but feels less attuned, though it’s used more often due to Claude’s rate limits. Given these subjective impressions, how do you weigh such personality traits when choosing which local LLM to use for studying, coding, or general interaction? Are there particular traits that make one model your go-to despite limitations like rate limits? Also, how consistent are these personality impressions across different sessions or tasks in your experience?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Perceived personality differences among various large language models",
+      "body": "An archived 2025 Reddit post describes how different large language models exhibit distinct interaction styles. One model is noted for intuitive balance between brevity and elaboration, another tends to be verbose and emphatic in longer conversations, a third is formal and concise, and a fourth resembles the second but is less effective and used more due to rate limits on the second. These subjective impressions raise questions about how perceived personality traits influence user interaction and model preference.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "Uses generic terms for models and symptoms to preserve core factual propositions while abstracting away specific model names and user context.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP03",
+    "brief_id": "H01",
+    "source_group_id": "reddit:1jv1o8o",
+    "split": "validation",
+    "brief": {
+      "topic": "LLM Personalities and User Preference",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand and discuss the perceived 'personalities' of different large language models and how these characteristics influence user choice and interaction.",
+      "context": "A user's archived account from 2025-04-09 describes observations about the distinct 'personalities' of several LLMs (Gemini, Claude, ChatGPT, Grok) based on their use for studying, learning, and coding. The user notes how these perceived personalities affect their preference and usage patterns.",
+      "motivation": "This question is worth discussing as understanding the subjective 'personalities' of LLMs can shed light on user experience, model design, and the nuances of human-AI interaction, which is relevant to local LLM enthusiasts.",
+      "desired_response": "A discussion comparing and contrasting the perceived 'personalities' of various LLMs, sharing personal preferences for interaction styles, and explaining how these factors influence which LLM is used most frequently.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author observed that LLMs like Gemini, Claude, ChatGPT, and Grok each exhibit a distinct 'personality'.",
+          "evidence_quote": "I've noticed that they all have a very distinct personality",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author found Claude to be the most intuitive, understanding when to be concise, elaborate, or ask follow-up questions.",
+          "evidence_quote": "personally Claude feels the most like it just \"gets\" me, it knows when to stay concise, when to elaborate or when to ask follow up questions.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F3",
+          "text": "Gemini was described by the source author as verbose and, in longer conversations, prone to using excessive capitalization, bolding, or cursive text.",
+          "evidence_quote": "Gemini on the other hand tends to yap a lot and in longer conversations even tends to lose its cool a bit, starting to write progressively more in caps, bolded or cursive text until it just starts all out tweaking.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F4",
+          "text": "ChatGPT was perceived by the source author as having a 'clean' and generally formal, concise personality.",
+          "evidence_quote": "ChatGPT seems like it has the most \"clean\" personality, it's generally quite formal and concise.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        },
+        {
+          "id": "F5",
+          "text": "Grok was noted by the source author to be similar to Claude but not as effective, though it was used most frequently due to Claude's rate limits.",
+          "evidence_quote": "And last, but not least Grok seems somewhat similar to Claude, it doesn't *quite* get me as much (I would say its like 90% there), but its the one I actually tend to use the most, since Claude has a very annoying rate limit.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/"
+        }
+      ],
+      "allowed_claims": [
+        "Users may perceive differences in LLM 'personalities'.",
+        "User preference for an LLM can be influenced by its perceived interaction style.",
+        "Rate limits can affect LLM usage frequency."
+      ],
+      "forbidden_claims": [
+        "LLM personalities are objectively measurable traits.",
+        "Specific LLMs are definitively 'better' than others.",
+        "The observations are universally applicable to all users.",
+        "The source author's experiences represent definitive model behavior."
+      ],
+      "essential_limitations": [
+        "The observations are subjective and based on the source author's personal experience.",
+        "The specific versions or configurations of the LLMs used are not detailed.",
+        "The exact nature of the 'rate limit' for Claude is not specified."
+      ],
+      "missing_information": [
+        "Details on the specific tasks or prompts used to elicit these 'personalities'.",
+        "Information on the hardware or software environment used.",
+        "Confirmation of whether these observations are consistent across different users or sessions."
+      ],
+      "id": "H01",
+      "brief_id": "H01",
+      "split": "validation_source",
+      "source_group_id": "reddit:1jv1o8o",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-04-09",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jv1o8o/what_are_yalls_opinion_about_the_differences_in/",
+      "source_hash": "1d45aa20b8d28b32ffe82961e8c0e82d79b0b2f2c19a35f5fc99c01006725288",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Subjective observations on distinct personalities of several LLMs",
+      "body": "A 2025 archived Reddit post reports that LLMs like Gemini, Claude, ChatGPT, and Grok each have distinct perceived personalities. Claude is described as intuitive in knowing when to be concise or elaborate, Gemini as verbose and prone to excessive formatting in long chats, ChatGPT as formal and concise, and Grok as similar to Claude but less effective and used more often due to Claude’s rate limits. These observations are based on one user’s experience and include no detailed task or environment information.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "How do you perceive and choose between the distinct 'personalities' of local LLMs like Gemini, Claude, ChatGPT, and Grok?",
+      "body": "An archived 2025 Reddit post describes how several LLMs—Gemini, Claude, ChatGPT, and Grok—each exhibit distinct interaction styles or \"personalities.\" For example, Claude is noted for intuitively balancing conciseness and elaboration, while Gemini tends to be verbose and sometimes overly emphatic in longer chats. ChatGPT is seen as formal and concise, and Grok resembles Claude but feels less attuned, though it’s used more often due to Claude’s rate limits. Given these subjective impressions, how do you weigh such personality traits when choosing which local LLM to use for studying, coding, or general interaction? Are there particular traits that make one model your go-to despite limitations like rate limits? Also, how consistent are these personality impressions across different sessions or tasks in your experience?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "Restates the source observations without posing a question or inviting discussion, focusing on factual content only.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP04",
+    "brief_id": "H02",
+    "source_group_id": "reddit:1i2ez1l",
+    "split": "validation",
+    "brief": {
+      "topic": "Integrating LLM Features into Mobile Apps",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Exploring the feasibility and best practices for integrating LLM-generated content features into a mobile application, considering both API-based and local LLM options.",
+      "context": "An iOS developer, new to LLMs, is considering adding a feature to generate game-related character information (backstory, stats) within their app. They are weighing the pros and cons of using external APIs versus local LLMs, and seeking advice on model selection, preparation, and deployment.",
+      "motivation": "This question is worth discussing to understand the trade-offs between API-based and local LLMs for mobile app integration, particularly for content generation tasks, and to identify potential challenges and solutions for developers new to the field.",
+      "desired_response": "Guidance on choosing between API (OpenAI, Claude, Gemini) and local LLMs for mobile app content generation, advice on preparing and deploying local models, and strategies for limiting model functionality.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author is exploring the integration of LLM-generated content for a game, specifically character details like backstory and stats, rather than conversational AI.",
+          "evidence_quote": "I have an idea to integrate an LLM feature in my app that will generate content for users, specifically character information and stats for a game (not actual conversation, but stuff like backstory, age, strength, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F2",
+          "text": "The author is considering both API-based LLMs (OpenAI, Claude, Gemini) and local LLMs for their app.",
+          "evidence_quote": "Would this be better suited for OpenAI, Claude or Gemini? What, if any, local LLMs can run on a phone to complete these tasks?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F3",
+          "text": "The author is concerned about potential friction for users, including setup, login management, and performance, when considering API-based solutions.",
+          "evidence_quote": "I like that I don't have to setup a whole login/management/system for a tool like OpenAI (not to mention costs and user performance considerations)",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F4",
+          "text": "The author anticipates that local models might increase app size and introduce other performance considerations.",
+          "evidence_quote": "but I can also see a local model might balloon my app size or cause other performance considerations.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F5",
+          "text": "The author is inquiring about the necessity of fine-tuning a model and preparing it for app deployment.",
+          "evidence_quote": "Will I need to fine tune the model? What all will I need to do to \"prep\" it for deployment in an app?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F6",
+          "text": "The author is interested in methods to limit an LLM's functionality, such as preventing sexual or controversial content.",
+          "evidence_quote": "Are there ways to limit its functionality (no sexual content or controversial stuff)?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        }
+      ],
+      "allowed_claims": [
+        "LLMs can generate various types of content.",
+        "Mobile apps can potentially integrate LLM features.",
+        "API-based LLMs and local LLMs are options for integration.",
+        "User experience factors like app size and performance are relevant.",
+        "Model preparation and content filtering are considerations for LLM deployment."
+      ],
+      "forbidden_claims": [
+        "Specific LLM models are definitively better for mobile app content generation.",
+        "A particular local LLM has been successfully tested on a phone for this task.",
+        "The exact steps for fine-tuning or preparing a model for app deployment are provided.",
+        "Quantifiable performance metrics for API vs. local LLMs on mobile devices.",
+        "Guaranteed methods for completely limiting LLM output to prevent all undesirable content."
+      ],
+      "essential_limitations": [
+        "The specific mobile device or operating system is not mentioned.",
+        "The exact nature and complexity of the game content to be generated are not detailed.",
+        "The author's technical expertise beyond being an iOS developer is not specified.",
+        "The source date is 2025-01-16, and LLM technology evolves rapidly."
+      ],
+      "missing_information": [
+        "Specific local LLM models suitable for mobile deployment.",
+        "Detailed technical requirements for running local LLMs on a phone.",
+        "Guidance on fine-tuning strategies for content generation.",
+        "Methods for implementing content filters within an LLM.",
+        "Comparative analysis of API costs and performance for this specific use case."
+      ],
+      "id": "H02",
+      "brief_id": "H02",
+      "split": "validation_source",
+      "source_group_id": "reddit:1i2ez1l",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-01-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/",
+      "source_hash": "72e2c8c882a7d5273b96dabf8c086e726f610fb7ed401324d21d5dc957ea35c7",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Thoughts on Adding LLM Features to a Mobile Game App",
+      "body": "I'm exploring options to integrate LLM-generated content into my mobile app focused on game characters. I'm weighing different approaches and would like to hear experiences or considerations around using external APIs versus local models. Also interested in deployment challenges and ways to control generated content.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Advice on Integrating LLM-Generated Game Character Content into a Mobile App",
+      "body": "I'm an iOS developer looking to add a feature in my app that generates game-related character information such as backstory, age, and stats. I'm considering whether to use API-based LLMs like OpenAI, Claude, or Gemini, or to run a local LLM directly on the phone. I want to understand the trade-offs between these options, including setup complexity, user login management, costs, app size, and performance impacts. Additionally, I'm curious about what preparation is needed to deploy a local model, including whether fine-tuning is necessary. Finally, I want to know if there are ways to limit the model's output to avoid sexual or controversial content. Any guidance on model selection, deployment strategies, and content filtering would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the explicit question and specific purpose of generating character details, making it more general and discussion-oriented to better fit community brainstorming rather than a direct troubleshooting request.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP05",
+    "brief_id": "H02",
+    "source_group_id": "reddit:1i2ez1l",
+    "split": "validation",
+    "brief": {
+      "topic": "Integrating LLM Features into Mobile Apps",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Exploring the feasibility and best practices for integrating LLM-generated content features into a mobile application, considering both API-based and local LLM options.",
+      "context": "An iOS developer, new to LLMs, is considering adding a feature to generate game-related character information (backstory, stats) within their app. They are weighing the pros and cons of using external APIs versus local LLMs, and seeking advice on model selection, preparation, and deployment.",
+      "motivation": "This question is worth discussing to understand the trade-offs between API-based and local LLMs for mobile app integration, particularly for content generation tasks, and to identify potential challenges and solutions for developers new to the field.",
+      "desired_response": "Guidance on choosing between API (OpenAI, Claude, Gemini) and local LLMs for mobile app content generation, advice on preparing and deploying local models, and strategies for limiting model functionality.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author is exploring the integration of LLM-generated content for a game, specifically character details like backstory and stats, rather than conversational AI.",
+          "evidence_quote": "I have an idea to integrate an LLM feature in my app that will generate content for users, specifically character information and stats for a game (not actual conversation, but stuff like backstory, age, strength, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F2",
+          "text": "The author is considering both API-based LLMs (OpenAI, Claude, Gemini) and local LLMs for their app.",
+          "evidence_quote": "Would this be better suited for OpenAI, Claude or Gemini? What, if any, local LLMs can run on a phone to complete these tasks?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F3",
+          "text": "The author is concerned about potential friction for users, including setup, login management, and performance, when considering API-based solutions.",
+          "evidence_quote": "I like that I don't have to setup a whole login/management/system for a tool like OpenAI (not to mention costs and user performance considerations)",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F4",
+          "text": "The author anticipates that local models might increase app size and introduce other performance considerations.",
+          "evidence_quote": "but I can also see a local model might balloon my app size or cause other performance considerations.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F5",
+          "text": "The author is inquiring about the necessity of fine-tuning a model and preparing it for app deployment.",
+          "evidence_quote": "Will I need to fine tune the model? What all will I need to do to \"prep\" it for deployment in an app?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F6",
+          "text": "The author is interested in methods to limit an LLM's functionality, such as preventing sexual or controversial content.",
+          "evidence_quote": "Are there ways to limit its functionality (no sexual content or controversial stuff)?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        }
+      ],
+      "allowed_claims": [
+        "LLMs can generate various types of content.",
+        "Mobile apps can potentially integrate LLM features.",
+        "API-based LLMs and local LLMs are options for integration.",
+        "User experience factors like app size and performance are relevant.",
+        "Model preparation and content filtering are considerations for LLM deployment."
+      ],
+      "forbidden_claims": [
+        "Specific LLM models are definitively better for mobile app content generation.",
+        "A particular local LLM has been successfully tested on a phone for this task.",
+        "The exact steps for fine-tuning or preparing a model for app deployment are provided.",
+        "Quantifiable performance metrics for API vs. local LLMs on mobile devices.",
+        "Guaranteed methods for completely limiting LLM output to prevent all undesirable content."
+      ],
+      "essential_limitations": [
+        "The specific mobile device or operating system is not mentioned.",
+        "The exact nature and complexity of the game content to be generated are not detailed.",
+        "The author's technical expertise beyond being an iOS developer is not specified.",
+        "The source date is 2025-01-16, and LLM technology evolves rapidly."
+      ],
+      "missing_information": [
+        "Specific local LLM models suitable for mobile deployment.",
+        "Detailed technical requirements for running local LLMs on a phone.",
+        "Guidance on fine-tuning strategies for content generation.",
+        "Methods for implementing content filters within an LLM.",
+        "Comparative analysis of API costs and performance for this specific use case."
+      ],
+      "id": "H02",
+      "brief_id": "H02",
+      "split": "validation_source",
+      "source_group_id": "reddit:1i2ez1l",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-01-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/",
+      "source_hash": "72e2c8c882a7d5273b96dabf8c086e726f610fb7ed401324d21d5dc957ea35c7",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Integrating Large Language Models for Content Generation in Mobile Apps",
+      "body": "As a mobile developer, I'm considering adding a feature that generates character-related content like backstory and stats using large language models. I'm evaluating whether to use popular API services or local models that can run on a phone. I'm also concerned about setup, performance, and deployment preparation, including fine-tuning and content restrictions.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Advice on Integrating LLM-Generated Game Character Content into a Mobile App",
+      "body": "I'm an iOS developer looking to add a feature in my app that generates game-related character information such as backstory, age, and stats. I'm considering whether to use API-based LLMs like OpenAI, Claude, or Gemini, or to run a local LLM directly on the phone. I want to understand the trade-offs between these options, including setup complexity, user login management, costs, app size, and performance impacts. Additionally, I'm curious about what preparation is needed to deploy a local model, including whether fine-tuning is necessary. Finally, I want to know if there are ways to limit the model's output to avoid sexual or controversial content. Any guidance on model selection, deployment strategies, and content filtering would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "specificity",
+    "design_reason": "This variant replaces specific LLM service names with general terms like 'popular API services' and 'large language models' to reduce exact identifiers while preserving the factual content and concerns.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP06",
+    "brief_id": "H02",
+    "source_group_id": "reddit:1i2ez1l",
+    "split": "validation",
+    "brief": {
+      "topic": "Integrating LLM Features into Mobile Apps",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Exploring the feasibility and best practices for integrating LLM-generated content features into a mobile application, considering both API-based and local LLM options.",
+      "context": "An iOS developer, new to LLMs, is considering adding a feature to generate game-related character information (backstory, stats) within their app. They are weighing the pros and cons of using external APIs versus local LLMs, and seeking advice on model selection, preparation, and deployment.",
+      "motivation": "This question is worth discussing to understand the trade-offs between API-based and local LLMs for mobile app integration, particularly for content generation tasks, and to identify potential challenges and solutions for developers new to the field.",
+      "desired_response": "Guidance on choosing between API (OpenAI, Claude, Gemini) and local LLMs for mobile app content generation, advice on preparing and deploying local models, and strategies for limiting model functionality.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author is exploring the integration of LLM-generated content for a game, specifically character details like backstory and stats, rather than conversational AI.",
+          "evidence_quote": "I have an idea to integrate an LLM feature in my app that will generate content for users, specifically character information and stats for a game (not actual conversation, but stuff like backstory, age, strength, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F2",
+          "text": "The author is considering both API-based LLMs (OpenAI, Claude, Gemini) and local LLMs for their app.",
+          "evidence_quote": "Would this be better suited for OpenAI, Claude or Gemini? What, if any, local LLMs can run on a phone to complete these tasks?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F3",
+          "text": "The author is concerned about potential friction for users, including setup, login management, and performance, when considering API-based solutions.",
+          "evidence_quote": "I like that I don't have to setup a whole login/management/system for a tool like OpenAI (not to mention costs and user performance considerations)",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F4",
+          "text": "The author anticipates that local models might increase app size and introduce other performance considerations.",
+          "evidence_quote": "but I can also see a local model might balloon my app size or cause other performance considerations.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F5",
+          "text": "The author is inquiring about the necessity of fine-tuning a model and preparing it for app deployment.",
+          "evidence_quote": "Will I need to fine tune the model? What all will I need to do to \"prep\" it for deployment in an app?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        },
+        {
+          "id": "F6",
+          "text": "The author is interested in methods to limit an LLM's functionality, such as preventing sexual or controversial content.",
+          "evidence_quote": "Are there ways to limit its functionality (no sexual content or controversial stuff)?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/"
+        }
+      ],
+      "allowed_claims": [
+        "LLMs can generate various types of content.",
+        "Mobile apps can potentially integrate LLM features.",
+        "API-based LLMs and local LLMs are options for integration.",
+        "User experience factors like app size and performance are relevant.",
+        "Model preparation and content filtering are considerations for LLM deployment."
+      ],
+      "forbidden_claims": [
+        "Specific LLM models are definitively better for mobile app content generation.",
+        "A particular local LLM has been successfully tested on a phone for this task.",
+        "The exact steps for fine-tuning or preparing a model for app deployment are provided.",
+        "Quantifiable performance metrics for API vs. local LLMs on mobile devices.",
+        "Guaranteed methods for completely limiting LLM output to prevent all undesirable content."
+      ],
+      "essential_limitations": [
+        "The specific mobile device or operating system is not mentioned.",
+        "The exact nature and complexity of the game content to be generated are not detailed.",
+        "The author's technical expertise beyond being an iOS developer is not specified.",
+        "The source date is 2025-01-16, and LLM technology evolves rapidly."
+      ],
+      "missing_information": [
+        "Specific local LLM models suitable for mobile deployment.",
+        "Detailed technical requirements for running local LLMs on a phone.",
+        "Guidance on fine-tuning strategies for content generation.",
+        "Methods for implementing content filters within an LLM.",
+        "Comparative analysis of API costs and performance for this specific use case."
+      ],
+      "id": "H02",
+      "brief_id": "H02",
+      "split": "validation_source",
+      "source_group_id": "reddit:1i2ez1l",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-01-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i2ez1l/im_an_ios_developer_thinking_of_adding_an_llm/",
+      "source_hash": "72e2c8c882a7d5273b96dabf8c086e726f610fb7ed401324d21d5dc957ea35c7",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Considering LLM Integration for Mobile App Content Generation",
+      "body": "I'm an iOS developer interested in adding a feature that generates game character information using LLMs. I'm comparing API-based and local model options, thinking about user experience factors like app size and performance. I also want to understand what is involved in preparing a model for deployment and how to limit certain types of content.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Advice on Integrating LLM-Generated Game Character Content into a Mobile App",
+      "body": "I'm an iOS developer looking to add a feature in my app that generates game-related character information such as backstory, age, and stats. I'm considering whether to use API-based LLMs like OpenAI, Claude, or Gemini, or to run a local LLM directly on the phone. I want to understand the trade-offs between these options, including setup complexity, user login management, costs, app size, and performance impacts. Additionally, I'm curious about what preparation is needed to deploy a local model, including whether fine-tuning is necessary. Finally, I want to know if there are ways to limit the model's output to avoid sexual or controversial content. Any guidance on model selection, deployment strategies, and content filtering would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "This version removes the explicit question about which models to choose and omits direct requests for advice, focusing instead on stating the facts and considerations to maintain factual integrity while reducing the information seeking aspect.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP07",
+    "brief_id": "H04",
+    "source_group_id": "reddit:1ky9q2a",
+    "split": "validation",
+    "brief": {
+      "topic": "OCR for Mathematical and Code Content",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Identify the smallest, most effective OCR model capable of accurately reading mathematical expressions and code.",
+      "context": "A user on Reddit sought recommendations for small OCR models that could handle math and code, reporting issues with existing models like Google's Gemma and Qwen-2.5-vl-7b.",
+      "motivation": "This question is worth discussing to help the community find efficient OCR solutions for specialized content, potentially improving document processing and data extraction for technical materials.",
+      "desired_response": "Discussion and recommendations for small OCR models that perform well with mathematical notation and programming code, based on user experiences and observations.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author found that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) struggled with OCR tasks, sometimes failing to read entire sections or making errors.",
+          "evidence_quote": "I tried Google's Gemma models 2b, 7b, 27b (my LMStudio has Gemma 3 4B Instruct QAT) but it always makes some mistake.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F2",
+          "text": "A specific instance of failure with Gemma involved misreading a list, where it only recognized 2 out of 4 items.",
+          "evidence_quote": "For example, a particular section had 4 listicles but it only read 2 of them.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F3",
+          "text": "The Qwen-2.5-vl-7b model was observed to have difficulty distinguishing between similar numerical representations, such as 10^9 and 109.",
+          "evidence_quote": "Another one was Qwen-2.5-vl-7b which can't understand the difference between 10^9 and 109.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author expressed a desire for a small model that excels at both math and code, and can read entire sections accurately.",
+          "evidence_quote": "Is there any small model that excels at math & code plus can read the whole sections without problems?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F5",
+          "text": "Google's Gemma is considered good but not enough as it frequently gets things wrong.",
+          "evidence_quote": "Google's Gemma is good but not enough as it frequently gets things wrong.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        }
+      ],
+      "allowed_claims": [
+        "Models like Gemma and Qwen-2.5-vl-7b have shown limitations in OCR tasks involving math and code.",
+        "There is a need for small OCR models that can accurately process mathematical expressions and code.",
+        "Users are seeking recommendations for effective OCR solutions for technical content."
+      ],
+      "forbidden_claims": [
+        "Specific model performance metrics (e.g., accuracy percentages, speed benchmarks).",
+        "Confirmation of successful fixes or alternative models that definitively solve the problem.",
+        "Claims of timeless truth or universal applicability of any model's performance.",
+        "Any personal experience or testing conducted by the current speaker."
+      ],
+      "essential_limitations": [
+        "The specific hardware or software configurations used by the source author are not detailed.",
+        "The exact nature and complexity of the mathematical expressions and code encountered are not specified.",
+        "The source date is May 29, 2025, and model capabilities may have evolved since then."
+      ],
+      "missing_information": [
+        "Details on the specific versions of Gemma and Qwen models tested.",
+        "Information about the image quality or format of the documents being processed.",
+        "Any specific settings or parameters used when running the OCR models."
+      ],
+      "id": "H04",
+      "brief_id": "H04",
+      "split": "validation_source",
+      "source_group_id": "reddit:1ky9q2a",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-29",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/",
+      "source_hash": "e540b4d01c4c4c285dfe0d184e3ae517663c0c713430d1ad63eafff2e866e230",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Small OCR Models for Math and Code: Any Recommendations?",
+      "body": "A user shared that some popular OCR models like Google's Gemma and Qwen-2.5-vl-7b have trouble accurately reading math expressions and code snippets, sometimes missing parts or confusing similar numbers. They’re looking for a small model that can handle these tasks better. Given these challenges, what small OCR models have you found effective for math and code? Any insights on balancing model size with reading accuracy for technical content would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Seeking Small OCR Models That Handle Math and Code Better Than Gemma or Qwen-2.5-vl-7b",
+      "body": "A Reddit user reported that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) frequently make mistakes when reading mathematical and code content, sometimes missing entire list items. Similarly, Qwen-2.5-vl-7b struggles to distinguish expressions like 10^9 from 109. Given these limitations, the user asked if there are any smaller OCR models that can accurately read full sections containing math and code without such errors. Since the source is from May 2025 and details about hardware, document quality, or specific model versions are missing, it’s unclear what alternatives might exist or how well they perform. For those experienced with local OCR models, are there any compact models known to handle complex mathematical notation and programming code more reliably? What tradeoffs in size versus accuracy have you encountered for this specialized OCR task?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the specific focus on the exact models tested and the detailed failures, instead inviting broader community input without a precise question about tradeoffs or alternatives.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP08",
+    "brief_id": "H04",
+    "source_group_id": "reddit:1ky9q2a",
+    "split": "validation",
+    "brief": {
+      "topic": "OCR for Mathematical and Code Content",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Identify the smallest, most effective OCR model capable of accurately reading mathematical expressions and code.",
+      "context": "A user on Reddit sought recommendations for small OCR models that could handle math and code, reporting issues with existing models like Google's Gemma and Qwen-2.5-vl-7b.",
+      "motivation": "This question is worth discussing to help the community find efficient OCR solutions for specialized content, potentially improving document processing and data extraction for technical materials.",
+      "desired_response": "Discussion and recommendations for small OCR models that perform well with mathematical notation and programming code, based on user experiences and observations.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author found that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) struggled with OCR tasks, sometimes failing to read entire sections or making errors.",
+          "evidence_quote": "I tried Google's Gemma models 2b, 7b, 27b (my LMStudio has Gemma 3 4B Instruct QAT) but it always makes some mistake.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F2",
+          "text": "A specific instance of failure with Gemma involved misreading a list, where it only recognized 2 out of 4 items.",
+          "evidence_quote": "For example, a particular section had 4 listicles but it only read 2 of them.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F3",
+          "text": "The Qwen-2.5-vl-7b model was observed to have difficulty distinguishing between similar numerical representations, such as 10^9 and 109.",
+          "evidence_quote": "Another one was Qwen-2.5-vl-7b which can't understand the difference between 10^9 and 109.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author expressed a desire for a small model that excels at both math and code, and can read entire sections accurately.",
+          "evidence_quote": "Is there any small model that excels at math & code plus can read the whole sections without problems?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F5",
+          "text": "Google's Gemma is considered good but not enough as it frequently gets things wrong.",
+          "evidence_quote": "Google's Gemma is good but not enough as it frequently gets things wrong.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        }
+      ],
+      "allowed_claims": [
+        "Models like Gemma and Qwen-2.5-vl-7b have shown limitations in OCR tasks involving math and code.",
+        "There is a need for small OCR models that can accurately process mathematical expressions and code.",
+        "Users are seeking recommendations for effective OCR solutions for technical content."
+      ],
+      "forbidden_claims": [
+        "Specific model performance metrics (e.g., accuracy percentages, speed benchmarks).",
+        "Confirmation of successful fixes or alternative models that definitively solve the problem.",
+        "Claims of timeless truth or universal applicability of any model's performance.",
+        "Any personal experience or testing conducted by the current speaker."
+      ],
+      "essential_limitations": [
+        "The specific hardware or software configurations used by the source author are not detailed.",
+        "The exact nature and complexity of the mathematical expressions and code encountered are not specified.",
+        "The source date is May 29, 2025, and model capabilities may have evolved since then."
+      ],
+      "missing_information": [
+        "Details on the specific versions of Gemma and Qwen models tested.",
+        "Information about the image quality or format of the documents being processed.",
+        "Any specific settings or parameters used when running the OCR models."
+      ],
+      "id": "H04",
+      "brief_id": "H04",
+      "split": "validation_source",
+      "source_group_id": "reddit:1ky9q2a",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-29",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/",
+      "source_hash": "e540b4d01c4c4c285dfe0d184e3ae517663c0c713430d1ad63eafff2e866e230",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Seeking Small OCR Models That Handle Math and Code Better Than Gemma or Qwen-2.5-vl-7b",
+      "body": "A Reddit user reported that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) frequently make mistakes when reading mathematical and code content, sometimes missing entire list items. Similarly, Qwen-2.5-vl-7b struggles to distinguish expressions like 10^9 from 109. Given these limitations, the user asked if there are any smaller OCR models that can accurately read full sections containing math and code without such errors. Since the source is from May 2025 and details about hardware, document quality, or specific model versions are missing, it’s unclear what alternatives might exist or how well they perform. For those experienced with local OCR models, are there any compact models known to handle complex mathematical notation and programming code more reliably? What tradeoffs in size versus accuracy have you encountered for this specialized OCR task?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Issues with Certain OCR Models Reading Technical Content: Seeking Alternatives",
+      "body": "Some OCR models, including a set of Google’s models and another 7B parameter vision-language model, have been reported to struggle with reading mathematical notation and code accurately. Problems include missing list items and confusing numerical expressions like exponentiation versus concatenation. There is interest in finding smaller OCR models that can reliably process entire sections of math and code without these errors. Given these observations, what smaller OCR models or approaches have you found effective for such specialized OCR tasks?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This draft replaces specific model names with generic descriptors while preserving the core problem and question, maintaining relevance but reducing specificity.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP09",
+    "brief_id": "H04",
+    "source_group_id": "reddit:1ky9q2a",
+    "split": "validation",
+    "brief": {
+      "topic": "OCR for Mathematical and Code Content",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Identify the smallest, most effective OCR model capable of accurately reading mathematical expressions and code.",
+      "context": "A user on Reddit sought recommendations for small OCR models that could handle math and code, reporting issues with existing models like Google's Gemma and Qwen-2.5-vl-7b.",
+      "motivation": "This question is worth discussing to help the community find efficient OCR solutions for specialized content, potentially improving document processing and data extraction for technical materials.",
+      "desired_response": "Discussion and recommendations for small OCR models that perform well with mathematical notation and programming code, based on user experiences and observations.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author found that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) struggled with OCR tasks, sometimes failing to read entire sections or making errors.",
+          "evidence_quote": "I tried Google's Gemma models 2b, 7b, 27b (my LMStudio has Gemma 3 4B Instruct QAT) but it always makes some mistake.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F2",
+          "text": "A specific instance of failure with Gemma involved misreading a list, where it only recognized 2 out of 4 items.",
+          "evidence_quote": "For example, a particular section had 4 listicles but it only read 2 of them.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F3",
+          "text": "The Qwen-2.5-vl-7b model was observed to have difficulty distinguishing between similar numerical representations, such as 10^9 and 109.",
+          "evidence_quote": "Another one was Qwen-2.5-vl-7b which can't understand the difference between 10^9 and 109.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author expressed a desire for a small model that excels at both math and code, and can read entire sections accurately.",
+          "evidence_quote": "Is there any small model that excels at math & code plus can read the whole sections without problems?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        },
+        {
+          "id": "F5",
+          "text": "Google's Gemma is considered good but not enough as it frequently gets things wrong.",
+          "evidence_quote": "Google's Gemma is good but not enough as it frequently gets things wrong.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/"
+        }
+      ],
+      "allowed_claims": [
+        "Models like Gemma and Qwen-2.5-vl-7b have shown limitations in OCR tasks involving math and code.",
+        "There is a need for small OCR models that can accurately process mathematical expressions and code.",
+        "Users are seeking recommendations for effective OCR solutions for technical content."
+      ],
+      "forbidden_claims": [
+        "Specific model performance metrics (e.g., accuracy percentages, speed benchmarks).",
+        "Confirmation of successful fixes or alternative models that definitively solve the problem.",
+        "Claims of timeless truth or universal applicability of any model's performance.",
+        "Any personal experience or testing conducted by the current speaker."
+      ],
+      "essential_limitations": [
+        "The specific hardware or software configurations used by the source author are not detailed.",
+        "The exact nature and complexity of the mathematical expressions and code encountered are not specified.",
+        "The source date is May 29, 2025, and model capabilities may have evolved since then."
+      ],
+      "missing_information": [
+        "Details on the specific versions of Gemma and Qwen models tested.",
+        "Information about the image quality or format of the documents being processed.",
+        "Any specific settings or parameters used when running the OCR models."
+      ],
+      "id": "H04",
+      "brief_id": "H04",
+      "split": "validation_source",
+      "source_group_id": "reddit:1ky9q2a",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-29",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ky9q2a/smallest_best_ocr_model_that_can_read_math_code/",
+      "source_hash": "e540b4d01c4c4c285dfe0d184e3ae517663c0c713430d1ad63eafff2e866e230",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Reported Limitations of Some OCR Models on Math and Code Content",
+      "body": "A source from May 2025 noted that certain OCR models, including multiple Google Gemma variants and a 7B vision-language model, often make mistakes when reading mathematical expressions and code. Examples include missing list items and confusing similar numeric expressions. The source expressed a desire for a small OCR model that can read full sections of math and code accurately. However, details on hardware, document quality, or exact model versions tested were not provided, and the findings are based on user reports rather than formal benchmarks.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Seeking Small OCR Models That Handle Math and Code Better Than Gemma or Qwen-2.5-vl-7b",
+      "body": "A Reddit user reported that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) frequently make mistakes when reading mathematical and code content, sometimes missing entire list items. Similarly, Qwen-2.5-vl-7b struggles to distinguish expressions like 10^9 from 109. Given these limitations, the user asked if there are any smaller OCR models that can accurately read full sections containing math and code without such errors. Since the source is from May 2025 and details about hardware, document quality, or specific model versions are missing, it’s unclear what alternatives might exist or how well they perform. For those experienced with local OCR models, are there any compact models known to handle complex mathematical notation and programming code more reliably? What tradeoffs in size versus accuracy have you encountered for this specialized OCR task?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "This alternative restates the facts without posing a question or inviting discussion, focusing on summarizing the reported limitations and context.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP10",
+    "brief_id": "H07",
+    "source_group_id": "reddit:1k2ycef",
+    "split": "validation",
+    "brief": {
+      "topic": "Hallucination Detection in RAG Pipelines",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing lightweight and efficient methods for detecting hallucinations in RAG pipelines, specifically exploring the capabilities of LettuceDetect.",
+      "context": "A community member is sharing information about an open-source tool called LettuceDetect, designed to flag hallucinated spans in LLM-generated answers within RAG pipelines. The tool aims to address limitations of existing methods, such as context window constraints and high inference costs.",
+      "motivation": "The original author is seeking community feedback on LettuceDetect, particularly from those working with local RAG, hallucination evaluation, or aiming for lightweight solutions. This discussion aims to gather insights and potential collaborations for real-time detection.",
+      "desired_response": "Community members are encouraged to share their thoughts on LettuceDetect, its potential applications, and ideas for real-time detection, based on the provided information.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "Hallucinations are identified as a significant challenge in RAG pipelines, particularly in specialized fields like medicine and law.",
+          "evidence_quote": "Hallucinations are still one of the biggest headaches in RAG pipelines, especially in tricky domains (medical, legal, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F2",
+          "text": "Existing hallucination detection methods can be limited by context window size, especially with encoder-only models.",
+          "evidence_quote": "Has context window limitations, particularly in encoder-only models",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F3",
+          "text": "Some current detection approaches incur high inference costs due to their reliance on LLMs.",
+          "evidence_quote": "Has high inference costs from LLM-based hallucination detectors",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F4",
+          "text": "LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers without requiring an LLM.",
+          "evidence_quote": "LettuceDetect — an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers. No LLM required",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F5",
+          "text": "LettuceDetect is built on ModernBERT and handles up to 4K tokens.",
+          "evidence_quote": "built on ModernBERT, handles up to 4K tokens",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F6",
+          "text": "LettuceDetect achieves 79.22% F1 on the RAGTruth benchmark.",
+          "evidence_quote": "hits 79.22% F1 on the RAGTruth benchmark",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F7",
+          "text": "LettuceDetect is MIT licensed and comes with Python packages, pretrained models, and a Hugging Face demo.",
+          "evidence_quote": "MIT licensed — comes with Python packages, pretrained models, Hugging Face demo",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        }
+      ],
+      "allowed_claims": [
+        "LettuceDetect is an open-source tool.",
+        "LettuceDetect is designed for RAG pipelines.",
+        "LettuceDetect aims to detect hallucinations.",
+        "LettuceDetect is based on an encoder model.",
+        "LettuceDetect can handle up to 4K tokens.",
+        "LettuceDetect is MIT licensed."
+      ],
+      "forbidden_claims": [
+        "LettuceDetect has been personally tested by the reader.",
+        "LettuceDetect guarantees 100% accuracy.",
+        "LettuceDetect is the only solution for hallucination detection.",
+        "The reader has direct experience with the development of LettuceDetect.",
+        "The RAGTruth benchmark results are independently verified by the reader."
+      ],
+      "essential_limitations": [
+        "The specific hardware or computational resources used for the reported benchmark results are not detailed.",
+        "The exact configuration settings for LettuceDetect are not provided.",
+        "The performance of LettuceDetect in real-time detection scenarios is still under development."
+      ],
+      "missing_information": [
+        "Details on the specific types of hallucinations LettuceDetect is most effective at identifying.",
+        "Information on the training data used for the pretrained models.",
+        "Comparative performance data against other lightweight hallucination detection methods."
+      ],
+      "id": "H07",
+      "brief_id": "H07",
+      "split": "validation_source",
+      "source_group_id": "reddit:1k2ycef",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-04-19",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/",
+      "source_hash": "38b1bed2c748d5da4a359cac453b63f34c025c7d66fc2aa6c78a2f5fa906ef93",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Overview of a New Hallucination Detection Tool",
+      "body": "Hallucinations are a known issue in RAG pipelines, particularly in complex fields. Some detection methods have limitations like small context windows and high inference costs. LettuceDetect is an open-source framework that flags hallucinated spans in generated answers without needing an LLM. It is based on an encoder model and can process long inputs. The tool is available with Python packages and pretrained models under an open license. Feedback on its use and potential improvements is welcome.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "B": {
+      "title": "Introducing LettuceDetect: A Lightweight Hallucination Detector for RAG Pipelines",
+      "body": "Hallucinations remain a significant challenge in retrieval-augmented generation (RAG) pipelines, especially in specialized domains like medicine and law. Existing detection methods often face limitations such as restricted context window sizes, particularly with encoder-only models, and high inference costs due to reliance on large language models (LLMs). LettuceDetect is an open-source, encoder-based framework designed to flag hallucinated spans in LLM-generated answers without requiring an LLM. Built on ModernBERT, it can handle inputs up to 4,000 tokens and achieves 79.22% F1 on the RAGTruth benchmark. Licensed under MIT, LettuceDetect includes Python packages, pretrained models, and a Hugging Face demo. Community feedback is sought to explore its potential applications and ideas for real-time hallucination detection in local RAG setups.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the direct call for community engagement and specific references to the audience's interests, making it less purpose-driven and more informational.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP11",
+    "brief_id": "H07",
+    "source_group_id": "reddit:1k2ycef",
+    "split": "validation",
+    "brief": {
+      "topic": "Hallucination Detection in RAG Pipelines",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing lightweight and efficient methods for detecting hallucinations in RAG pipelines, specifically exploring the capabilities of LettuceDetect.",
+      "context": "A community member is sharing information about an open-source tool called LettuceDetect, designed to flag hallucinated spans in LLM-generated answers within RAG pipelines. The tool aims to address limitations of existing methods, such as context window constraints and high inference costs.",
+      "motivation": "The original author is seeking community feedback on LettuceDetect, particularly from those working with local RAG, hallucination evaluation, or aiming for lightweight solutions. This discussion aims to gather insights and potential collaborations for real-time detection.",
+      "desired_response": "Community members are encouraged to share their thoughts on LettuceDetect, its potential applications, and ideas for real-time detection, based on the provided information.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "Hallucinations are identified as a significant challenge in RAG pipelines, particularly in specialized fields like medicine and law.",
+          "evidence_quote": "Hallucinations are still one of the biggest headaches in RAG pipelines, especially in tricky domains (medical, legal, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F2",
+          "text": "Existing hallucination detection methods can be limited by context window size, especially with encoder-only models.",
+          "evidence_quote": "Has context window limitations, particularly in encoder-only models",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F3",
+          "text": "Some current detection approaches incur high inference costs due to their reliance on LLMs.",
+          "evidence_quote": "Has high inference costs from LLM-based hallucination detectors",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F4",
+          "text": "LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers without requiring an LLM.",
+          "evidence_quote": "LettuceDetect — an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers. No LLM required",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F5",
+          "text": "LettuceDetect is built on ModernBERT and handles up to 4K tokens.",
+          "evidence_quote": "built on ModernBERT, handles up to 4K tokens",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F6",
+          "text": "LettuceDetect achieves 79.22% F1 on the RAGTruth benchmark.",
+          "evidence_quote": "hits 79.22% F1 on the RAGTruth benchmark",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F7",
+          "text": "LettuceDetect is MIT licensed and comes with Python packages, pretrained models, and a Hugging Face demo.",
+          "evidence_quote": "MIT licensed — comes with Python packages, pretrained models, Hugging Face demo",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        }
+      ],
+      "allowed_claims": [
+        "LettuceDetect is an open-source tool.",
+        "LettuceDetect is designed for RAG pipelines.",
+        "LettuceDetect aims to detect hallucinations.",
+        "LettuceDetect is based on an encoder model.",
+        "LettuceDetect can handle up to 4K tokens.",
+        "LettuceDetect is MIT licensed."
+      ],
+      "forbidden_claims": [
+        "LettuceDetect has been personally tested by the reader.",
+        "LettuceDetect guarantees 100% accuracy.",
+        "LettuceDetect is the only solution for hallucination detection.",
+        "The reader has direct experience with the development of LettuceDetect.",
+        "The RAGTruth benchmark results are independently verified by the reader."
+      ],
+      "essential_limitations": [
+        "The specific hardware or computational resources used for the reported benchmark results are not detailed.",
+        "The exact configuration settings for LettuceDetect are not provided.",
+        "The performance of LettuceDetect in real-time detection scenarios is still under development."
+      ],
+      "missing_information": [
+        "Details on the specific types of hallucinations LettuceDetect is most effective at identifying.",
+        "Information on the training data used for the pretrained models.",
+        "Comparative performance data against other lightweight hallucination detection methods."
+      ],
+      "id": "H07",
+      "brief_id": "H07",
+      "split": "validation_source",
+      "source_group_id": "reddit:1k2ycef",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-04-19",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/",
+      "source_hash": "38b1bed2c748d5da4a359cac453b63f34c025c7d66fc2aa6c78a2f5fa906ef93",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Introducing LettuceDetect: A Lightweight Hallucination Detector for RAG Pipelines",
+      "body": "Hallucinations remain a significant challenge in retrieval-augmented generation (RAG) pipelines, especially in specialized domains like medicine and law. Existing detection methods often face limitations such as restricted context window sizes, particularly with encoder-only models, and high inference costs due to reliance on large language models (LLMs). LettuceDetect is an open-source, encoder-based framework designed to flag hallucinated spans in LLM-generated answers without requiring an LLM. Built on ModernBERT, it can handle inputs up to 4,000 tokens and achieves 79.22% F1 on the RAGTruth benchmark. Licensed under MIT, LettuceDetect includes Python packages, pretrained models, and a Hugging Face demo. Community feedback is sought to explore its potential applications and ideas for real-time hallucination detection in local RAG setups.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "B": {
+      "title": "Introducing an Open-Source Hallucination Detector for RAG Pipelines",
+      "body": "Hallucinations are a major challenge in retrieval-augmented generation pipelines, especially in specialized domains. Current detection methods can be limited by context window size and incur high inference costs due to reliance on large language models. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It is built on a modern encoder model and can handle inputs up to several thousand tokens. The tool achieves strong benchmark performance and is available with Python packages, pretrained models, and an online demo under an open-source license. Community feedback is encouraged to explore its applications and real-time detection possibilities.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This variant replaces exact identifiers like 'ModernBERT', '4K tokens', 'MIT license', and 'RAGTruth benchmark' with more general terms to reduce specificity while preserving factual content.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP12",
+    "brief_id": "H07",
+    "source_group_id": "reddit:1k2ycef",
+    "split": "validation",
+    "brief": {
+      "topic": "Hallucination Detection in RAG Pipelines",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing lightweight and efficient methods for detecting hallucinations in RAG pipelines, specifically exploring the capabilities of LettuceDetect.",
+      "context": "A community member is sharing information about an open-source tool called LettuceDetect, designed to flag hallucinated spans in LLM-generated answers within RAG pipelines. The tool aims to address limitations of existing methods, such as context window constraints and high inference costs.",
+      "motivation": "The original author is seeking community feedback on LettuceDetect, particularly from those working with local RAG, hallucination evaluation, or aiming for lightweight solutions. This discussion aims to gather insights and potential collaborations for real-time detection.",
+      "desired_response": "Community members are encouraged to share their thoughts on LettuceDetect, its potential applications, and ideas for real-time detection, based on the provided information.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "Hallucinations are identified as a significant challenge in RAG pipelines, particularly in specialized fields like medicine and law.",
+          "evidence_quote": "Hallucinations are still one of the biggest headaches in RAG pipelines, especially in tricky domains (medical, legal, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F2",
+          "text": "Existing hallucination detection methods can be limited by context window size, especially with encoder-only models.",
+          "evidence_quote": "Has context window limitations, particularly in encoder-only models",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F3",
+          "text": "Some current detection approaches incur high inference costs due to their reliance on LLMs.",
+          "evidence_quote": "Has high inference costs from LLM-based hallucination detectors",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F4",
+          "text": "LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers without requiring an LLM.",
+          "evidence_quote": "LettuceDetect — an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers. No LLM required",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F5",
+          "text": "LettuceDetect is built on ModernBERT and handles up to 4K tokens.",
+          "evidence_quote": "built on ModernBERT, handles up to 4K tokens",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F6",
+          "text": "LettuceDetect achieves 79.22% F1 on the RAGTruth benchmark.",
+          "evidence_quote": "hits 79.22% F1 on the RAGTruth benchmark",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        },
+        {
+          "id": "F7",
+          "text": "LettuceDetect is MIT licensed and comes with Python packages, pretrained models, and a Hugging Face demo.",
+          "evidence_quote": "MIT licensed — comes with Python packages, pretrained models, Hugging Face demo",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/"
+        }
+      ],
+      "allowed_claims": [
+        "LettuceDetect is an open-source tool.",
+        "LettuceDetect is designed for RAG pipelines.",
+        "LettuceDetect aims to detect hallucinations.",
+        "LettuceDetect is based on an encoder model.",
+        "LettuceDetect can handle up to 4K tokens.",
+        "LettuceDetect is MIT licensed."
+      ],
+      "forbidden_claims": [
+        "LettuceDetect has been personally tested by the reader.",
+        "LettuceDetect guarantees 100% accuracy.",
+        "LettuceDetect is the only solution for hallucination detection.",
+        "The reader has direct experience with the development of LettuceDetect.",
+        "The RAGTruth benchmark results are independently verified by the reader."
+      ],
+      "essential_limitations": [
+        "The specific hardware or computational resources used for the reported benchmark results are not detailed.",
+        "The exact configuration settings for LettuceDetect are not provided.",
+        "The performance of LettuceDetect in real-time detection scenarios is still under development."
+      ],
+      "missing_information": [
+        "Details on the specific types of hallucinations LettuceDetect is most effective at identifying.",
+        "Information on the training data used for the pretrained models.",
+        "Comparative performance data against other lightweight hallucination detection methods."
+      ],
+      "id": "H07",
+      "brief_id": "H07",
+      "split": "validation_source",
+      "source_group_id": "reddit:1k2ycef",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-04-19",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/",
+      "source_hash": "38b1bed2c748d5da4a359cac453b63f34c025c7d66fc2aa6c78a2f5fa906ef93",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "LettuceDetect: A Tool for Detecting Hallucinations in RAG Pipelines",
+      "body": "Hallucinations are a significant problem in retrieval-augmented generation pipelines, especially in complex domains. Existing detection methods can be limited by context window size and high inference costs. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It supports long input sequences and is available under an open license with accompanying software and models. Feedback on its use and potential for real-time detection is welcomed.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "B": {
+      "title": "Introducing LettuceDetect: A Lightweight Hallucination Detector for RAG Pipelines",
+      "body": "Hallucinations remain a significant challenge in retrieval-augmented generation (RAG) pipelines, especially in specialized domains like medicine and law. Existing detection methods often face limitations such as restricted context window sizes, particularly with encoder-only models, and high inference costs due to reliance on large language models (LLMs). LettuceDetect is an open-source, encoder-based framework designed to flag hallucinated spans in LLM-generated answers without requiring an LLM. Built on ModernBERT, it can handle inputs up to 4,000 tokens and achieves 79.22% F1 on the RAGTruth benchmark. Licensed under MIT, LettuceDetect includes Python packages, pretrained models, and a Hugging Face demo. Community feedback is sought to explore its potential applications and ideas for real-time hallucination detection in local RAG setups.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "This version removes specific performance metrics and detailed tool features, retaining only the core facts to reduce the information value while keeping the factual basis.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP13",
+    "brief_id": "H08",
+    "source_group_id": "reddit:1l8c3nb",
+    "split": "validation",
+    "brief": {
+      "topic": "MiniSearch capabilities and local LLM integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+      "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+      "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+      "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "MiniSearch has been updated to gather more textual and graphical results to provide grounded answers for follow-up questions.",
+          "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F2",
+          "text": "All links and images collected during a session will keep being listed, with the only limit being system memory.",
+          "evidence_quote": "All links and images collected during a session will keep being listed, and the only limit will be your system memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F3",
+          "text": "The chat runs on a sliding window where the context is always kept under 4k tokens, so users don't need to worry about context size.",
+          "evidence_quote": "You don't need to worry about context size, as the chat runs on a sliding window where the context is always kept under 4k tokens.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F4",
+          "text": "The web app is optimized to work on mobile browsers, allowing users to probably finish their research before running out of memory on these devices.",
+          "evidence_quote": "Also, the web app is optimized to work on mobile browsers, so even on these devices you'll probably finish your research before running out of memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F5",
+          "text": "MiniSearch can be run on a machine via Docker, or a public instance is available as a Hugging Face Space.",
+          "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available as a Hugging Face Space here:",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F6",
+          "text": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in the browser and comment about web search results.",
+          "evidence_quote": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in your browser and comment about the web search results, so that's what it defaults to.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F7",
+          "text": "Users who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic) can select \"Remote server (API)\" in the \"AI Processing Location\" menu option.",
+          "evidence_quote": "But for those who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic), which can respond faster, they just need to select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option,",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F8",
+          "text": "To configure remote servers, users need to configure their API Base URL, Access Key, and Model.",
+          "evidence_quote": "and configure their API Base URL, Access Key and Model.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        }
+      ],
+      "allowed_claims": [
+        "MiniSearch aims to improve web research by providing more comprehensive results.",
+        "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+        "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+      ],
+      "forbidden_claims": [
+        "MiniSearch guarantees a specific level of research accuracy.",
+        "The tool has been tested for performance on all mobile devices.",
+        "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+        "The 4k token limit is a universal constraint for all LLM interactions."
+      ],
+      "essential_limitations": [
+        "The exact system memory limit for the local instance is not specified beyond 'your system memory'.",
+        "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+        "The specific small LLMs used by the default browser-based processing are not detailed."
+      ],
+      "missing_information": [
+        "Details on the specific small LLMs used for default browser processing.",
+        "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+        "Information on the 'graphical results' mentioned in the update."
+      ],
+      "id": "H08",
+      "brief_id": "H08",
+      "split": "validation_source",
+      "source_group_id": "reddit:1l8c3nb",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-06-10",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/",
+      "source_hash": "a6fa8652142ba9553db5d37c855c232b1571e9d00ef31abcf35477a19617ce17",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "MiniSearch update: How practical is its remote server API setup for local LLM inference engines?",
+      "body": "MiniSearch has been updated to collect more textual and graphical results during web research sessions, aiming to provide more grounded answers for follow-up questions. It supports running locally via Docker or using a public Hugging Face Space instance. The default setup uses small LLMs running in the browser, but users can opt to connect to local inference engines like LM Studio, Ollama, or vLLM—or cloud servers—by selecting \"Remote server (API)\" and configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, though memory limits depend on the device. Given these features, has anyone here integrated MiniSearch with local inference engines through the remote API option? What has your experience been regarding setup complexity, latency, and reliability? Also, any insights on how well the graphical results feature works in practice would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "MiniSearch update: Features and integration options for local LLMs",
+      "body": "MiniSearch now gathers more textual and graphical results to support deeper web research. It can run locally via Docker or through a public Hugging Face Space. The default uses small browser-based LLMs, but users can switch to local or cloud inference engines by selecting \"Remote server (API)\" and configuring API details. The chat context stays under 4k tokens, and the app is optimized for mobile browsers. What do you think about these features and the potential for local LLM integration?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the direct question about user experience and setup details to make it more general and open-ended, fitting broader community discussion rather than seeking specific practical feedback.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP14",
+    "brief_id": "H08",
+    "source_group_id": "reddit:1l8c3nb",
+    "split": "validation",
+    "brief": {
+      "topic": "MiniSearch capabilities and local LLM integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+      "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+      "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+      "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "MiniSearch has been updated to gather more textual and graphical results to provide grounded answers for follow-up questions.",
+          "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F2",
+          "text": "All links and images collected during a session will keep being listed, with the only limit being system memory.",
+          "evidence_quote": "All links and images collected during a session will keep being listed, and the only limit will be your system memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F3",
+          "text": "The chat runs on a sliding window where the context is always kept under 4k tokens, so users don't need to worry about context size.",
+          "evidence_quote": "You don't need to worry about context size, as the chat runs on a sliding window where the context is always kept under 4k tokens.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F4",
+          "text": "The web app is optimized to work on mobile browsers, allowing users to probably finish their research before running out of memory on these devices.",
+          "evidence_quote": "Also, the web app is optimized to work on mobile browsers, so even on these devices you'll probably finish your research before running out of memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F5",
+          "text": "MiniSearch can be run on a machine via Docker, or a public instance is available as a Hugging Face Space.",
+          "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available as a Hugging Face Space here:",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F6",
+          "text": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in the browser and comment about web search results.",
+          "evidence_quote": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in your browser and comment about the web search results, so that's what it defaults to.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F7",
+          "text": "Users who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic) can select \"Remote server (API)\" in the \"AI Processing Location\" menu option.",
+          "evidence_quote": "But for those who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic), which can respond faster, they just need to select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option,",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F8",
+          "text": "To configure remote servers, users need to configure their API Base URL, Access Key, and Model.",
+          "evidence_quote": "and configure their API Base URL, Access Key and Model.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        }
+      ],
+      "allowed_claims": [
+        "MiniSearch aims to improve web research by providing more comprehensive results.",
+        "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+        "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+      ],
+      "forbidden_claims": [
+        "MiniSearch guarantees a specific level of research accuracy.",
+        "The tool has been tested for performance on all mobile devices.",
+        "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+        "The 4k token limit is a universal constraint for all LLM interactions."
+      ],
+      "essential_limitations": [
+        "The exact system memory limit for the local instance is not specified beyond 'your system memory'.",
+        "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+        "The specific small LLMs used by the default browser-based processing are not detailed."
+      ],
+      "missing_information": [
+        "Details on the specific small LLMs used for default browser processing.",
+        "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+        "Information on the 'graphical results' mentioned in the update."
+      ],
+      "id": "H08",
+      "brief_id": "H08",
+      "split": "validation_source",
+      "source_group_id": "reddit:1l8c3nb",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-06-10",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/",
+      "source_hash": "a6fa8652142ba9553db5d37c855c232b1571e9d00ef31abcf35477a19617ce17",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Updated web research tool supports local and cloud AI inference with configurable API",
+      "body": "A web research tool has been updated to collect more textual and graphical results for follow-up questions. It runs either locally via Docker or on a public cloud instance. The default AI processing uses small models in the browser, but users can select remote AI servers by configuring API Base URL, Access Key, and Model. The chat context is limited to under 4k tokens, and the app is optimized for mobile browsers with memory limits depending on the device. How practical is configuring remote AI servers for local inference engines in your experience?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "MiniSearch update: How practical is its remote server API setup for local LLM inference engines?",
+      "body": "MiniSearch has been updated to collect more textual and graphical results during web research sessions, aiming to provide more grounded answers for follow-up questions. It supports running locally via Docker or using a public Hugging Face Space instance. The default setup uses small LLMs running in the browser, but users can opt to connect to local inference engines like LM Studio, Ollama, or vLLM—or cloud servers—by selecting \"Remote server (API)\" and configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, though memory limits depend on the device. Given these features, has anyone here integrated MiniSearch with local inference engines through the remote API option? What has your experience been regarding setup complexity, latency, and reliability? Also, any insights on how well the graphical results feature works in practice would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "specificity",
+    "design_reason": "This draft replaces specific product names with generic descriptions to focus on the core facts while preserving the main question about remote server configuration practicality.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "HP15",
+    "brief_id": "H08",
+    "source_group_id": "reddit:1l8c3nb",
+    "split": "validation",
+    "brief": {
+      "topic": "MiniSearch capabilities and local LLM integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+      "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+      "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+      "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "MiniSearch has been updated to gather more textual and graphical results to provide grounded answers for follow-up questions.",
+          "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F2",
+          "text": "All links and images collected during a session will keep being listed, with the only limit being system memory.",
+          "evidence_quote": "All links and images collected during a session will keep being listed, and the only limit will be your system memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F3",
+          "text": "The chat runs on a sliding window where the context is always kept under 4k tokens, so users don't need to worry about context size.",
+          "evidence_quote": "You don't need to worry about context size, as the chat runs on a sliding window where the context is always kept under 4k tokens.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F4",
+          "text": "The web app is optimized to work on mobile browsers, allowing users to probably finish their research before running out of memory on these devices.",
+          "evidence_quote": "Also, the web app is optimized to work on mobile browsers, so even on these devices you'll probably finish your research before running out of memory.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F5",
+          "text": "MiniSearch can be run on a machine via Docker, or a public instance is available as a Hugging Face Space.",
+          "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available as a Hugging Face Space here:",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F6",
+          "text": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in the browser and comment about web search results.",
+          "evidence_quote": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in your browser and comment about the web search results, so that's what it defaults to.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F7",
+          "text": "Users who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic) can select \"Remote server (API)\" in the \"AI Processing Location\" menu option.",
+          "evidence_quote": "But for those who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic), which can respond faster, they just need to select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option,",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        },
+        {
+          "id": "F8",
+          "text": "To configure remote servers, users need to configure their API Base URL, Access Key, and Model.",
+          "evidence_quote": "and configure their API Base URL, Access Key and Model.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+        }
+      ],
+      "allowed_claims": [
+        "MiniSearch aims to improve web research by providing more comprehensive results.",
+        "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+        "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+      ],
+      "forbidden_claims": [
+        "MiniSearch guarantees a specific level of research accuracy.",
+        "The tool has been tested for performance on all mobile devices.",
+        "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+        "The 4k token limit is a universal constraint for all LLM interactions."
+      ],
+      "essential_limitations": [
+        "The exact system memory limit for the local instance is not specified beyond 'your system memory'.",
+        "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+        "The specific small LLMs used by the default browser-based processing are not detailed."
+      ],
+      "missing_information": [
+        "Details on the specific small LLMs used for default browser processing.",
+        "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+        "Information on the 'graphical results' mentioned in the update."
+      ],
+      "id": "H08",
+      "brief_id": "H08",
+      "split": "validation_source",
+      "source_group_id": "reddit:1l8c3nb",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-06-10",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/",
+      "source_hash": "a6fa8652142ba9553db5d37c855c232b1571e9d00ef31abcf35477a19617ce17",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "MiniSearch update: How practical is its remote server API setup for local LLM inference engines?",
+      "body": "MiniSearch has been updated to collect more textual and graphical results during web research sessions, aiming to provide more grounded answers for follow-up questions. It supports running locally via Docker or using a public Hugging Face Space instance. The default setup uses small LLMs running in the browser, but users can opt to connect to local inference engines like LM Studio, Ollama, or vLLM—or cloud servers—by selecting \"Remote server (API)\" and configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, though memory limits depend on the device. Given these features, has anyone here integrated MiniSearch with local inference engines through the remote API option? What has your experience been regarding setup complexity, latency, and reliability? Also, any insights on how well the graphical results feature works in practice would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "MiniSearch update: How practical is its remote server API setup for local LLM inference engines?",
+      "body": "MiniSearch has been updated to collect more textual and graphical results during web research sessions, aiming to provide more grounded answers for follow-up questions. It supports running locally via Docker or using a public Hugging Face Space instance. The default setup uses small LLMs running in the browser, but users can opt to connect to local inference engines like LM Studio, Ollama, or vLLM—or cloud servers—by selecting \"Remote server (API)\" and configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, though memory limits depend on the device. Given these features, has anyone here integrated MiniSearch with local inference engines through the remote API option? What has your experience been regarding setup complexity, latency, and reliability? Also, any insights on how well the graphical results feature works in practice would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "Tie",
+    "changed_dimension": "information_value",
+    "design_reason": "Same words/facts; paragraph-only variation treated as design tie, not human gold",
+    "source_type": "near_equal",
+    "labels": "synthetic design expectations, not human community gold"
+  }
+]

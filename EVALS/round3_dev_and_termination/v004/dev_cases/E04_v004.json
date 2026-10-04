@@ -1,0 +1,315 @@
+{
+  "brief_id": "E04",
+  "brief": {
+    "topic": "Local LLM performance on MacBook Air M1 (8GB RAM)",
+    "audience": "Users interested in running LLMs on low-spec hardware, AI enthusiasts, developers",
+    "content_archetype": "B",
+    "speaker_role": "community analyst or resource curator",
+    "source_relationship": "third_party_archive",
+    "source_date": "2025-06-28",
+    "posting_intent": "share_finding",
+    "current_context": "Share a reported ten-model comparison on limited-memory hardware, highlighting a striking speed observation and self-evaluation limitations.",
+    "core_value": "Identifying which LLMs perform best and worst on resource-constrained hardware.",
+    "core_hook": {
+      "text": "Discover which LLMs actually work well on a MacBook Air M1 with only 8GB of RAM, as one model took 8 minutes to write a single question.",
+      "fact_refs": [
+        "f1",
+        "f4"
+      ]
+    },
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The benchmark tested 10 LLMs locally on a MacBook Air M1 with 8GB RAM.",
+        "evidence_quote": "I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!)",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "Quantized versions of models were used with specific Ollama environment variables set.",
+        "evidence_quote": "(All models run with quantized versions, via: os.environ[\"OLLAMA_CONTEXT_LENGTH\"] = \"4096\" and os.environ[\"OLLAMA_KV_CACHE_TYPE\"] = \"q4_0\")",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The methodology involved generating questions, answering them, and evaluating the answers across 5 topics.",
+        "evidence_quote": "Each model:\n\n1. Generated 1 question on 5 topics: *Math, Writing, Coding, Psychology, History*\n2. Answered all 50 questions (5 x 10)\n3. Evaluated every answer (including their own)",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "One model, Qwen3 4B, took 486 seconds (over 8 minutes) to generate a single math question.",
+        "evidence_quote": "Qwen3 4B took 486s (8+ mins) to generate a single Math question!",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The author calls Gemma3:latest a consistent numerical scorer with no bias; this is the author's assessment, not an independently established absence of bias.",
+        "evidence_quote": "Best scorer: Gemma3:latest – consistent, numerical, no bias",
+        "status": "opinion"
+      },
+      {
+        "id": "f6",
+        "text": "Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, were noted to overrate their own answers.",
+        "evidence_quote": "Score inflation is real: Mistral, Qwen3, and LLaMA 3.1 8B overrate themselves",
+        "status": "author_report"
+      },
+      {
+        "id": "f7",
+        "text": "Model size does not directly correlate with performance; larger models are not always better.",
+        "evidence_quote": "Model size ≠ performance. Bigger isn't always better.",
+        "status": "opinion"
+      }
+    ],
+    "limitations": [
+      "The benchmark was conducted on a specific hardware configuration (MacBook Air M1, 8GB RAM).",
+      "Results are based on a single user's testing and may not be universally applicable.",
+      "The evaluation of 'quality' is subjective to the author's assessment.",
+      "Specific quantized versions were used, which might differ from other quantization methods.",
+      "LLM self-evaluation and closeness to model-average scores are not independent ground-truth answer quality."
+    ],
+    "allowed_claims": [
+      "LLMs can be run locally on an M1 MacBook Air with 8GB RAM.",
+      "Performance varies significantly between different LLMs.",
+      "Some models are faster at question generation than others.",
+      "Some models are faster at answer generation than others.",
+      "Model evaluation quality and consistency differ.",
+      "Self-bias in answer evaluation was observed in several models.",
+      "Model size is not the sole determinant of performance."
+    ],
+    "forbidden_claims": [
+      "Claims of personal ownership or direct experience with the tested LLMs.",
+      "Claims that these results are definitive for all hardware or all users.",
+      "Invented usage scenarios or equipment not mentioned in the source.",
+      "Claims of independent verification beyond the author's report.",
+      "Claims about the creator identity of the LLMs or the benchmark author."
+    ],
+    "decision": null,
+    "desired_help": null,
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lmfiu9/i_tested_10_llms_locally_on_my_macbook_air_m1_8gb/",
+    "scenario_id": "E04-scenario-v004",
+    "scenario_version": "v004",
+    "source_facts": [
+      {
+        "id": "f1",
+        "text": "The benchmark tested 10 LLMs locally on a MacBook Air M1 with 8GB RAM.",
+        "evidence_quote": "I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!)",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "Quantized versions of models were used with specific Ollama environment variables set.",
+        "evidence_quote": "(All models run with quantized versions, via: os.environ[\"OLLAMA_CONTEXT_LENGTH\"] = \"4096\" and os.environ[\"OLLAMA_KV_CACHE_TYPE\"] = \"q4_0\")",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The methodology involved generating questions, answering them, and evaluating the answers across 5 topics.",
+        "evidence_quote": "Each model:\n\n1. Generated 1 question on 5 topics: *Math, Writing, Coding, Psychology, History*\n2. Answered all 50 questions (5 x 10)\n3. Evaluated every answer (including their own)",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "One model, Qwen3 4B, took 486 seconds (over 8 minutes) to generate a single math question.",
+        "evidence_quote": "Qwen3 4B took 486s (8+ mins) to generate a single Math question!",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The author calls Gemma3:latest a consistent numerical scorer with no bias; this is the author's assessment, not an independently established absence of bias.",
+        "evidence_quote": "Best scorer: Gemma3:latest – consistent, numerical, no bias",
+        "status": "opinion"
+      },
+      {
+        "id": "f6",
+        "text": "Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, were noted to overrate their own answers.",
+        "evidence_quote": "Score inflation is real: Mistral, Qwen3, and LLaMA 3.1 8B overrate themselves",
+        "status": "author_report"
+      },
+      {
+        "id": "f7",
+        "text": "Model size does not directly correlate with performance; larger models are not always better.",
+        "evidence_quote": "Model size ≠ performance. Bigger isn't always better.",
+        "status": "opinion"
+      }
+    ],
+    "pre_generation_repair": "source-grounded assistant correction; not a human evaluation label"
+  },
+  "drafts": [
+    {
+      "title": "Benchmarking 10 LLMs on MacBook Air M1 (8GB RAM): Qwen3 4B Took Over 8 Minutes to Generate a Single Math Question",
+      "body": "A recent benchmark tested 10 different large language models (LLMs) locally on a MacBook Air M1 with 8GB of RAM, using quantized versions configured with specific Ollama environment variables. The methodology involved each model generating one question on five topics (Math, Writing, Coding, Psychology, History), answering all 50 generated questions, and then evaluating every answer, including their own. A striking finding was that the Qwen3 4B model took 486 seconds—more than 8 minutes—to generate a single math question, highlighting significant performance variability on limited-memory hardware. Additionally, several models such as Mistral, Qwen3, and LLaMA 3.1 8B showed a tendency to overrate their own answers, indicating self-evaluation bias. The author noted that model size did not directly correlate with performance, emphasizing that bigger models aren't always better for constrained devices. While Gemma3:latest was identified as a consistent and numerically stable scorer, these assessments are subjective and based on this specific hardware and quantized setup. This benchmark underscores the challenges and trade-offs when running LLMs locally on low-spec machines like the M1 MacBook Air with limited RAM.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f6",
+        "f7",
+        "f5"
+      ]
+    },
+    {
+      "title": "Benchmarking 10 LLMs on a MacBook Air M1 (8GB RAM) Reveals Huge Speed Differences and Self-Evaluation Biases",
+      "body": "A recent benchmark tested 10 quantized large language models (LLMs) locally on a MacBook Air M1 with 8GB RAM to evaluate their performance under tight hardware constraints. Each model generated one question across five topics—Math, Writing, Coding, Psychology, and History—then answered all 50 questions and self-evaluated their responses. Notably, the Qwen3 4B model took 486 seconds (over 8 minutes) just to generate a single math question, highlighting significant speed variability among models. Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, showed a tendency to overrate their own answers, indicating self-evaluation biases. These results underline that running LLMs locally on low-spec hardware is feasible but performance and evaluation quality vary widely. Users should consider these factors, along with the limitations of a single-user test and specific quantized setups, when selecting models for local deployment.",
+      "fact_refs": [
+        "f1",
+        "f3",
+        "f4",
+        "f6"
+      ]
+    }
+  ],
+  "variants": [
+    "G0",
+    "G1"
+  ],
+  "quality": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [
+          "Gemma3:latest was identified as a consistent and numerically stable scorer, these assessments are subjective and based on this specific hardware and quantized setup."
+        ],
+        "reason": "Draft 0 accurately reflects the source content, including the specific models tested, the methodology, the striking speed observation for Qwen3 4B, and the noted self-evaluation biases. It correctly attributes opinions and author reports as such. The claim about Gemma3:latest is qualified as subjective and based on the specific setup, aligning with the source's opinion status.",
+        "body_words": 175,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": false,
+        "independent_audit": {
+          "index": 0,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "The draft accurately reflects the source material, maintaining the speaker's role and providing essential context. All claims are supported by the source, and there are no unsupported or unverified claims presented as fact. The title accurately reflects the body content."
+        }
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 1 accurately summarizes the key findings from the source, including the benchmark setup, the methodology, the extreme slowness of Qwen3 4B, and the observed self-evaluation biases. It correctly references the relevant facts and adheres to the brief's constraints.",
+        "body_words": 134,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true,
+        "independent_audit": {
+          "index": 1,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "The draft accurately summarizes the source, maintaining the speaker's perspective and providing necessary context. All claims are directly supported by the source, and there are no unsupported or unverified claims. The title is consistent with the body's content."
+        }
+      }
+    ]
+  },
+  "translation": {
+    "task_zh": {
+      "content_archetype": "B",
+      "posting_intent": "分享发现",
+      "current_context": "分享一项关于有限内存硬件上十个模型的比较报告，突出一个显著的速度观察和自我评估的局限性。",
+      "core_value": "识别在资源受限硬件上表现最优和最差的LLM。",
+      "source_date": "2025-06-28",
+      "scenario_note": "受控产品输入，来源为第三方存档证据。"
+    },
+    "drafts": [
+      {
+        "title": "在MacBook Air M1（8GB内存）上对10个LLM进行基准测试：Qwen3 4B生成单个数学问题耗时超过8分钟",
+        "body": "最近的一项基准测试在配备8GB内存的MacBook Air M1上本地测试了10个不同的大型语言模型（LLM），使用了量化版本并配置了特定的Ollama环境变量。方法论包括每个模型在五个主题（数学、写作、编码、心理学、历史）上各生成一个问题，回答所有50个生成的问题，然后评估每个答案，包括它们自己的。一个显著的发现是Qwen3 4B模型生成单个数学问题耗时486秒——超过8分钟，凸显了有限内存硬件上的性能差异。此外，多个模型如Mistral、Qwen3和LLaMA 3.1 8B表现出高估自身答案的倾向，显示了自我评估偏差。作者指出模型大小与性能不直接相关，强调更大的模型并不总是适合受限设备。虽然Gemma3:latest被认为是一个一致且数值稳定的评分者，但这些评估是主观的，基于特定硬件和量化设置。该基准测试强调了在低规格机器如M1 MacBook Air有限内存上本地运行LLM时的挑战和权衡。"
+      },
+      {
+        "title": "在MacBook Air M1（8GB内存）上对10个LLM进行基准测试揭示巨大速度差异和自我评估偏差",
+        "body": "最近的一项基准测试在配备8GB内存的MacBook Air M1上本地测试了10个量化大型语言模型（LLM），以评估它们在硬件受限条件下的性能。每个模型在五个主题——数学、写作、编码、心理学和历史——上各生成一个问题，然后回答所有50个问题并自我评估其回答。值得注意的是，Qwen3 4B模型仅生成一个数学问题就耗时486秒（超过8分钟），凸显了模型间显著的速度差异。多个模型，包括Mistral、Qwen3和LLaMA 3.1 8B，表现出高估自身答案的倾向，显示了自我评估偏差。这些结果表明，在低规格硬件上本地运行LLM是可行的，但性能和评估质量差异很大。用户在选择本地部署模型时应考虑这些因素，以及单用户测试和特定量化设置的局限性。"
+      }
+    ]
+  },
+  "numeric_translation_checks": [
+    {
+      "english": [
+        "1",
+        "10",
+        "3",
+        "3.1",
+        "4",
+        "486",
+        "50",
+        "8"
+      ],
+      "chinese": [
+        "1",
+        "10",
+        "3",
+        "3.1",
+        "4",
+        "486",
+        "50",
+        "8"
+      ],
+      "same": true
+    },
+    {
+      "english": [
+        "1",
+        "10",
+        "3",
+        "3.1",
+        "4",
+        "486",
+        "50",
+        "8"
+      ],
+      "chinese": [
+        "1",
+        "10",
+        "3",
+        "3.1",
+        "4",
+        "486",
+        "50",
+        "8"
+      ],
+      "same": true
+    }
+  ],
+  "plan": {
+    "content_archetype": "B",
+    "primary_value": "discovery",
+    "strongest_grounded_hook": "Discover which LLMs actually work well on a MacBook Air M1 with only 8GB of RAM, as one model took 8 minutes to write a single question.",
+    "why_readers_should_care": "Users interested in running LLMs on low-spec hardware need to know which models are feasible and efficient, as performance varies widely and some models may be impractically slow.",
+    "recommended_angle": "Present the reported benchmark results highlighting the wide performance differences among 10 LLMs tested locally on a MacBook Air M1 (8GB RAM), focusing on speed and self-evaluation biases, while noting the limitations of the single-user test and specific hardware.",
+    "essential_context": "The benchmark involved running quantized versions of 10 LLMs locally on a MacBook Air M1 with 8GB RAM, generating and answering questions across five topics, and self-evaluating answers. One model, Qwen3 4B, took over 8 minutes to generate a single math question, illustrating significant performance variation.",
+    "facts_to_emphasize": [
+      "f1",
+      "f3",
+      "f4",
+      "f6"
+    ],
+    "facts_optional": [
+      "f2",
+      "f5",
+      "f7"
+    ],
+    "natural_opening_strategy": "Introduce the benchmark setup: testing 10 quantized LLMs locally on a MacBook Air M1 with 8GB RAM to assess their practical performance on limited hardware.",
+    "natural_ending_strategy": "Conclude by emphasizing the variability in speed and self-assessment accuracy among models, and the importance of considering hardware constraints and evaluation limitations when choosing an LLM for local use.",
+    "engagement_risk": "The content may seem technical or niche, potentially limiting interest to only those focused on local LLM deployment on low-spec devices. Overly generic summaries without the specific benchmark details would reduce engagement.",
+    "safety_constraints": "Avoid claims of universal applicability beyond the tested hardware and single-user report. Do not imply independent verification or definitive quality judgments beyond the author's assessment."
+  },
+  "source_hash": "9ab8ef5716852514a27b377438c4d5a3ecbb958f41d04aab4143c882ca12b8df"
+}

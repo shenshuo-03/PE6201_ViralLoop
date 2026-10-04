@@ -1,0 +1,100 @@
+{
+  "outcome": "Loss",
+  "dimensions": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "Uncertain",
+      "overall": "A"
+    },
+    "swap_consistent": {
+      "community_fit": true,
+      "specificity": true,
+      "information_value": true,
+      "usefulness": true,
+      "credibility": false,
+      "overall": true
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "A",
+          "specificity": "A",
+          "information_value": "A",
+          "usefulness": "A",
+          "credibility": "B",
+          "overall": "A"
+        },
+        "evidence": "Draft A directly mirrors the brief's facts (F1–F6), explicitly naming MLC.ai, WebGPU/WASM requirements, <100MB model size constraint, and both use cases (Chart.js + summaries). It asks concrete questions aligned with desired_response: tool experiences, model recommendations, and prompting strategies. Draft B strips specificity by omitting MLC.ai, WebGPU/WASM, size targets, and the secondary summary use case (F3). It introduces unsupported framing ('hardware and browser environments of users are unknown') that echoes essential_limitations but wasn't part of the source author's stated problem—this violates the instruction to avoid inventing missing settings and adds report-like hedging. Draft B's vagueness ('effective frameworks,' 'practical tradeoffs') reduces actionability; a community member cannot respond with targeted tool comparisons or model suggestions without the specifics A provides. Draft A preserves the source author's actual constraints and exploration state (started looking into MLC.ai, hasn't found feedback), maintaining credibility. Draft B's credibility is slightly lower because it reframes the problem as user-environment uncertainty rather than the author's genuine exploration gap, creating a false premise not in the brief."
+      },
+      "usage": {
+        "run_id": "v002-r0444",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:16.878777+00:00",
+        "tag": "judge_final:F04:V1_vs_V0:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "8d43b838bede480a59ff3a4f791603b18878eafddb9c4f4ca3ddeb51ef7e3da6",
+        "actual_cost_usd": 0.003869,
+        "budget_charge_usd": 0.003869,
+        "reserved_upper_usd": 0.012426,
+        "input_tokens": 2114,
+        "output_tokens": 351,
+        "latency_seconds": 5.210906499996781,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112811-SSobYlKUdJh81AUCrnR3",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "B",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Draft B preserves all six grounded facts (F1–F6) with concrete technical requirements (WebGPU/WASM, <100MB models, MLC.ai exploration), creating actionable specificity for community response. Draft A omits F3–F6 entirely, removes the secondary use case, strips technical constraints, and introduces unsupported framing ('variability in users' setups complicates tool selection') that invents external reasoning not in the brief. B's explicit mention of MLC.ai, quantization targets, and dual use cases (JSON→Chart.js + summaries) directly invites experienced practitioners to share tested approaches. A's vaguer appeal ('practical tradeoffs') and hedging ('unknown hardware') weakens community fit by deflecting rather than anchoring the question. Both avoid forbidden claims and respect the speaker's reader-only relationship to the source. B's completeness and specificity make it more worth posting for a local LLM enthusiast audience seeking concrete tool recommendations."
+      },
+      "usage": {
+        "run_id": "v002-r0445",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:21.596245+00:00",
+        "tag": "judge_final:F04:V1_vs_V0:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "dbf68710dc9c8a400f4b78a449ddd5a56c15440a93963bfa85e13ff68c2d9876",
+        "actual_cost_usd": 0.003604,
+        "budget_charge_usd": 0.003604,
+        "reserved_upper_usd": 0.012426,
+        "input_tokens": 2114,
+        "output_tokens": 298,
+        "latency_seconds": 4.684373900003266,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112816-rmBF0XXDPk6Tw0mf7q25",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F04",
+  "comparison": "V1_vs_V0",
+  "older": "V0",
+  "newer": "V1",
+  "at": "2026-10-04T11:20:21.618637+00:00"
+}

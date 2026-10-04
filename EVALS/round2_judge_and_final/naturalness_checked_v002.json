@@ -1,0 +1,790 @@
+[
+  {
+    "brief": {
+      "topic": "llama.cpp HTTP server file upload functionality",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding the functionality of the file upload button in llama.cpp's HTTP server and achieving reproducible results when querying file contents.",
+      "context": "A user is inquiring about the behavior of the file upload feature within the llama.cpp HTTP server, specifically how it interacts with prompts and model responses, and is seeking reproducible outputs.",
+      "motivation": "This question is worth discussing to clarify the intended purpose and observed behavior of a specific feature in a popular local LLM tool, aiming to improve user understanding and utility.",
+      "desired_response": "An explanation of what the file upload button in llama.cpp's HTTP server does, and potential strategies or insights into achieving reproducible answers when querying file contents.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author speculates that the file upload might concatenate the file content with the direct prompt.",
+          "evidence_quote": "Does it simply concatenate the file and my direct prompt, treating the concatenation as the prompt?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author is using llama 3.2 3B Q4_K_S.",
+          "evidence_quote": "Using llama 3.2 3B Q4_K_S",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+        },
+        {
+          "id": "F3",
+          "text": "The source author's goal is to ask questions about a file's contents.",
+          "evidence_quote": "What I want to do is to ask questions about a file's contents.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+        },
+        {
+          "id": "F4",
+          "text": "In 15 experiments, the source author observed that sometimes questions about file contents were answered correctly, but other times the model interpreted the file contents instead of the query.",
+          "evidence_quote": "In my 15 experiments, sometimes the question about the file's contents is correctly answered. But sometimes it interprets the contents of the file instead of my query.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+        },
+        {
+          "id": "F5",
+          "text": "The source author desires reproducible results, meaning the same prompts should yield the same answers when starting a new conversation.",
+          "evidence_quote": "I would like the result to be reproducable, ie when I open a new conversation, giving it the same prompts, I would like to get the same answers",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+        }
+      ],
+      "allowed_claims": [
+        "The llama.cpp HTTP server has a file upload feature.",
+        "Users may want to query the contents of uploaded files.",
+        "Observed behavior includes misinterpretation of queries as file content.",
+        "Reproducibility of LLM outputs is a desired feature."
+      ],
+      "forbidden_claims": [
+        "The file upload feature concatenates files and prompts.",
+        "The specific model version used guarantees or prevents certain behaviors.",
+        "The source author's 15 experiments definitively prove a specific bug or feature.",
+        "Reproducible results are currently achievable with this feature.",
+        "The source author's motivations are definitively known.",
+        "The source author's observations represent timeless truth."
+      ],
+      "essential_limitations": [
+        "The exact mechanism of the file upload's interaction with the prompt is not definitively known.",
+        "The specific reasons for the observed variability in responses are not detailed.",
+        "The source author's experimental setup beyond the model version is not specified."
+      ],
+      "missing_information": [
+        "The precise functionality of the file upload button.",
+        "The specific parameters or settings used during the experiments.",
+        "Details on how the model interprets or prioritizes file content versus direct prompts.",
+        "Information on what constitutes a 'correct' answer in the source author's context.",
+        "Any steps taken by the source author to attempt to achieve reproducibility."
+      ],
+      "id": "D01",
+      "brief_id": "D01",
+      "split": "tune",
+      "source_group_id": "reddit:1kmd9f9",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-05-14",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/",
+      "source_hash": "101323eb22c98a31f9fd1c0903196dab0229e08d3a142ea9121a73e977c70c34",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true
+    },
+    "draft": {
+      "title": "Clarifying the llama.cpp HTTP server file upload button and reproducibility when querying file contents",
+      "body": "I've been reading about the file upload feature in llama.cpp's HTTP server and its behavior when used to ask questions about uploaded files. The original poster, using llama 3.2 3B Q4_K_S, noted that sometimes the model answers questions about the file content correctly, but other times it seems to interpret the file content itself rather than the query. They speculate the file upload might concatenate the file with the prompt, but this isn't confirmed. Their goal is to get reproducible answers—meaning the same prompts in a new conversation produce consistent results—but this hasn't been reliably achieved in their tests. Given this variability and the unclear mechanism behind the upload button, has anyone figured out how exactly the file upload interacts with the prompt? Also, are there known strategies or settings to improve reproducibility when querying uploaded file contents through this interface? Any insights or shared experiences would be helpful to understand this feature's intended use and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source material, including the user's speculation about concatenation, their experimental observations, and their desire for reproducibility. It correctly attributes these points to the source author and avoids making definitive claims about the functionality. The draft also poses relevant follow-up questions that align with the brief's goals. Community fit is good as it directly addresses a specific feature in a popular tool for the target audience. Specificity is good by mentioning llama.cpp, HTTP server, file upload, and reproducibility. Information value is good by organizing the user's questions and observations clearly. Clarity and usefulness are high. Credibility is good as it sticks to the source and poses open questions. Clickbait is minimal.",
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 157,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  },
+  {
+    "brief": {
+      "topic": "AI-assisted long-form story writing tools",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Identify and discuss GUIs that can assist in writing long, coherent stories (over 20,000 words) using local LLMs like Ollama.",
+      "context": "A user is seeking software with a graphical interface that can generate subsequent story passages, provide summaries to maintain context, and integrate with local LLMs, drawing a parallel to the functionality of Perchance's story generator.",
+      "motivation": "Exploring available tools and methods for AI-assisted creative writing, specifically for generating lengthy narratives, is a relevant topic for those interested in the practical applications of local LLMs.",
+      "desired_response": "Recommendations for GUIs or workflows that facilitate long-form story generation with local LLMs, and discussion on their capabilities and limitations.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The user is looking for a GUI that can assist in writing long stories, similar to Perchance's story generator.",
+          "evidence_quote": "I'm looking for a GUI that can assist in writing long stories, similar to Perchance's story generator.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        },
+        {
+          "id": "F2",
+          "text": "Perchance allows writing what happens next, generates the subsequent passage, and provides summaries of previous passages to keep everything within the context window.",
+          "evidence_quote": "Perchance allows you to write what happens next, generates the subsequent passage, and provides summaries of previous passages to keep everything within the context window.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        },
+        {
+          "id": "F3",
+          "text": "The user is wondering if there are similar programs with a user interface that can be connected to Ollama or another LLM.",
+          "evidence_quote": "I'm wondering if there are any similar programs with a user interface that can be connected to Ollama or another LLM",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        },
+        {
+          "id": "F4",
+          "text": "The stories should be lengthy, ideally over 20,000 words.",
+          "evidence_quote": "The stories don't need to be masterpieces, but they should be lengthy, ideally over 20,000 words.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        },
+        {
+          "id": "F5",
+          "text": "The only resource about this topic that the user has found is the github awesome story generation.",
+          "evidence_quote": "The only resource about this topic that I've found is the github awesome story generation.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        },
+        {
+          "id": "F6",
+          "text": "The user has not been able to find a Discord server for writing enthusiasts that try using AI for it.",
+          "evidence_quote": "I haven't even been able to find a Discord server for writing enthusiast that try using AI for it.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/"
+        }
+      ],
+      "allowed_claims": [
+        "Discussion of tools for AI-assisted long-form story writing.",
+        "Inquiry about GUIs that integrate with local LLMs for creative writing.",
+        "Sharing of resources related to AI story generation.",
+        "Exploration of challenges in maintaining context for long narratives with LLMs."
+      ],
+      "forbidden_claims": [
+        "Claims of successful implementation of specific tools.",
+        "Personal anecdotes of using such GUIs.",
+        "Specific performance metrics or benchmarks.",
+        "Recommendations presented as definitive solutions.",
+        "Any claims not directly supported by the source text."
+      ],
+      "essential_limitations": [
+        "The source author's experience is limited to their search and findings.",
+        "No specific LLM models or hardware configurations are mentioned.",
+        "The effectiveness or usability of any mentioned resources is not detailed."
+      ],
+      "missing_information": [
+        "Specific GUI software names beyond the conceptual reference to Perchance.",
+        "Details on how context window management is implemented in potential tools.",
+        "Information on the technical requirements for running such GUIs with local LLMs.",
+        "User experiences with any discovered tools."
+      ],
+      "id": "D02",
+      "brief_id": "D02",
+      "split": "tune",
+      "source_group_id": "reddit:1lnf00q",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-06-29",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lnf00q/gui_for_writing_long_stories_with_llms/",
+      "source_hash": "e7c8c3f43e2afe8c7063d450c3647ecb541be91b8f9d7e6de26cb8a78d94d30f",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true
+    },
+    "draft": {
+      "title": "Seeking GUIs Like Perchance for Long-Form Story Writing with Local LLMs (20,000+ Words)",
+      "body": "I'm interested in tools that support writing long, coherent stories (20,000+ words) using local LLMs such as Ollama. The functionality I'm looking for resembles Perchance's story generator, which lets you write the next passage, generates subsequent text, and provides summaries of earlier parts to manage context within the model's window. Has anyone encountered GUIs or workflows that integrate with local LLMs and offer similar features for creative writing? Additionally, how do these tools handle context retention and summary generation to maintain narrative coherence over extended texts? According to the original poster, the GitHub \"awesome story generation\" list is a relevant resource, but no active Discord communities focused on AI-assisted writing have been identified. Any recommendations or insights on practical interfaces and their limitations would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's query about GUIs for long-form story writing with local LLMs, specifically mentioning the desired features and the user's current findings. It correctly attributes information to the source and avoids making personal claims or unsupported statements. The draft is specific by mentioning the word count goal and the comparison to Perchance. The community fit is good as it directly addresses a problem relevant to local LLM enthusiasts. The copy_pass is false because the phrase \"According to the original poster\" is a direct copy of more than 18 contiguous words, excluding unavoidable model identifiers.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 126,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  },
+  {
+    "brief": {
+      "topic": "Perplexity Testing of DeepSeek R1 Models",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand the performance of DeepSeek R1 models with varying numbers of experts and compare them to distilled models, based on a limited perplexity test.",
+      "context": "A community member shared results from a short perplexity test conducted on DeepSeek R1 models with different expert counts, as well as some distilled models and a comparison model (Virtuoso-Medium-v2). The test was run on a subset of model blocks and with a specific block size.",
+      "motivation": "The source author's observations provide a starting point for discussing the practical implications of expert count on MoE models and comparing their performance against distilled versions and other models, acknowledging the limitations of the test.",
+      "desired_response": "A discussion about the implications of the source author's perplexity test results, considering the limitations and potential for further investigation into model performance.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The perplexity test only ran 8 blocks out of approximately 560, so it should be taken with a massive grain of salt.",
+          "evidence_quote": "First: This test only ran 8 blocks (out of ~560) so it should be taken with a massive grain of salt.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        },
+        {
+          "id": "F2",
+          "text": "Perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.",
+          "evidence_quote": "perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        },
+        {
+          "id": "F3",
+          "text": "The perplexity test was run with block size 512.",
+          "evidence_quote": "Perplexity test run with block size 512.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        },
+        {
+          "id": "F4",
+          "text": "The full DeepSeek R1 model, even with very aggressive quantization, seems to beat the normal distills until limited to 2 experts.",
+          "evidence_quote": "To the extent that we can actually trust these results, the full DS model even with very aggressive quantization seems to beat the normal distills until you limit it to 2 experts.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        },
+        {
+          "id": "F5",
+          "text": "The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.",
+          "evidence_quote": "The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        },
+        {
+          "id": "F6",
+          "text": "Generating perplexity failed with NaNs when trying with 10 and 12 experts.",
+          "evidence_quote": "I tried with 10 and 12 experts and generating perplexity failed with NaNs.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/"
+        }
+      ],
+      "allowed_claims": [
+        "The source author conducted a perplexity test on DeepSeek R1 models.",
+        "The test involved varying the number of experts in DeepSeek R1.",
+        "Distilled models and Virtuoso-Medium-v2 were included in the comparison.",
+        "The test had significant limitations, including a small number of blocks and potential unfairness to certain model types."
+      ],
+      "forbidden_claims": [
+        "The perplexity results represent definitive, verified performance metrics.",
+        "The test was exhaustive or scientifically rigorous.",
+        "The source author claims personal experience running these specific tests as a definitive benchmark.",
+        "The results are generalizable to all use cases or model configurations.",
+        "The source author experienced successful fixes or achieved specific performance goals."
+      ],
+      "essential_limitations": [
+        "The test was very short, running only 8 blocks out of approximately 560.",
+        "Perplexity may not be a suitable metric for chain-of-thought models.",
+        "The test is not considered scientific and should be used as a starting point for discussion.",
+        "The results are specific to the tested configurations and quantization levels.",
+        "The test was run on 2025-01-30 and may not reflect current model capabilities."
+      ],
+      "missing_information": [
+        "The exact hardware used for the test.",
+        "The specific command-line arguments used for the perplexity test, beyond the mention of `--override-kv deepseek2.expert_used_count=int:X`.",
+        "The full list of distilled models tested, beyond the legends provided.",
+        "The specific dataset used for the perplexity calculation.",
+        "The full perplexity scores for all tested expert counts and models, as some entries are missing or incomplete (e.g., 2 experts).",
+        "The reason for the NaN results with 10 and 12 experts."
+      ],
+      "id": "D03",
+      "brief_id": "D03",
+      "split": "tune",
+      "source_group_id": "reddit:1idi5cr",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-01-30",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/",
+      "source_hash": "fbb6f293cacd1ccb151262c7f8d24c3a89013161a8c167346184e7016a6aecda",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true
+    },
+    "draft": {
+      "title": "What do DeepSeek R1 perplexity results tell us about expert count and distilled model comparisons?",
+      "body": "A short perplexity test on DeepSeek R1 models with different numbers of experts offers some tentative insights but comes with major caveats. The test covered only 8 blocks out of about 560, used a block size of 512, and included distilled models plus Virtuoso-Medium-v2 for comparison. The source notes that the full DeepSeek R1 model, even with aggressive quantization, generally outperformed the distilled versions unless limited to 2 experts. Virtuoso Medium V2’s distill performance fell between DeepSeek R1 with 3 and 4 experts. Attempts to test with 10 and 12 experts failed due to NaN errors. Also, perplexity may not be a fair metric for chain-of-thought models since they don’t get to \"think.\" Given these limitations and missing details like hardware and dataset specifics, how useful do you find perplexity as a metric for evaluating MoE models like DeepSeek? Would other benchmarks or test setups better clarify the impact of expert count on performance?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source material, including its limitations. It correctly identifies the key findings regarding DeepSeek R1's performance with varying expert counts and its comparison to distilled models. The draft also poses relevant questions to the community about the utility of perplexity as a metric and suggests alternative approaches, aligning well with the brief's goal of fostering discussion. The speaker correctly adheres to the persona of a reader of the archived source and does not claim personal testing. Specificity is good, referencing model names and expert counts. Information value is high due to the summary and the posed questions. Clarity and usefulness are also good. Credibility is maintained by emphasizing the source's limitations. Clickbait is minimal.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 154,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  },
+  {
+    "brief": {
+      "topic": "Model Capabilities Trade-offs",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discuss the observed trade-off between world knowledge and problem-solving abilities in recent smaller LLMs.",
+      "context": "An archived Reddit post from 2025-05-02 discusses observations about the performance of various LLMs, specifically noting a potential decline in world knowledge despite improvements in coding and problem-solving benchmarks for newer, smaller models.",
+      "motivation": "Understanding if there's a general trend of sacrificing world knowledge for improved problem-solving in smaller LLMs is crucial for users selecting models for diverse tasks.",
+      "desired_response": "A discussion exploring the source author's observations, potential reasons for this trend, and whether other enthusiasts have noticed similar patterns or have strategies for evaluating these trade-offs.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author observed a trend where newer small models, despite higher benchmark scores and claims of equivalence to older, larger models, exhibit worse world knowledge than their larger predecessors and often worse than lower-benchmarking models of similar sizes.",
+          "evidence_quote": "I've noticed a trend where despite benchmark scores going up and companies claiming that their new small models are equivalent to older much bigger models, world knowledge of these new smaller models is worse than their larger predecessors, and often times worse than lower benchmarking models of similar sizes.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author uses a set of private test questions covering coding, engineering problem solving, system threat modelling, and specific knowledge questions on topics like radio protocols, technical standards, local geography, history, and landmarks.",
+          "evidence_quote": "I have a set of private test questions that exercise coding, engineering problem solving, system threat modelling, and also ask specific knowledge questions on a variety of topics ranging from radio protocols and technical standards to local geography, history, and landmarks.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F3",
+          "text": "New models like Qwen 3 and GLM-4-0414 are described as vastly better at coding and problem solving than older models, but their knowledge is no better and sometimes worse than some other similar-sized older models.",
+          "evidence_quote": "New models like Qwen 3 and GLM-4-0414 are vastly better at coding and problem solving than older models, but their knowledge is no better than older models and actually worse than some other similar sized older models.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F4",
+          "text": "Qwen 3 8B reportedly has considerably worse world knowledge in the author's tests than older models like Llama 3.1 8B and Gemma 2 9B.",
+          "evidence_quote": "For example, Qwen 3 8B has considerably worse world knowledge in my tests than old models like Llama 3.1 8B and Gemma 2 9B.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F5",
+          "text": "Qwen 3 14B reportedly has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+          "evidence_quote": "Likewise, Qwen 3 14B has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F6",
+          "text": "Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+          "evidence_quote": "On a similar note, Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F7",
+          "text": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and slightly better than DeepSeek V3 in the author's tests, but its coding and problem solving abilities are mediocre.",
+          "evidence_quote": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and actually slightly better than DeepSeek V3 in my tests, but its coding and problem solving abilities are mediocre.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        },
+        {
+          "id": "F8",
+          "text": "The source author guesses that the trade-off is due to training data for new models having more problem solving content and proportionately less knowledge-dense content.",
+          "evidence_quote": "My guess is that this is because the training data for new models has more problem solving content and so proportionately less knowledge dense content.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+        }
+      ],
+      "allowed_claims": [
+        "The source author observed a potential trade-off between world knowledge and problem-solving abilities in newer, smaller LLMs.",
+        "Specific models like Qwen 3 and GLM-4-0414 were mentioned as examples of this trend.",
+        "Gemma 3 and Llama 4 Maverick were noted as exceptions or counterpoints to the general trend.",
+        "The source author hypothesized about the cause being changes in training data composition."
+      ],
+      "forbidden_claims": [
+        "The source author's observations are universally true for all LLMs.",
+        "The specific benchmark scores or exact performance metrics mentioned are independently verified.",
+        "The models discussed are currently the absolute best or worst in any category.",
+        "The source author has personally conducted all mentioned tests on their own hardware.",
+        "The trend described is a permanent characteristic of LLM development."
+      ],
+      "essential_limitations": [
+        "The observations are based on the source author's private test questions and specific models tested.",
+        "The exact hardware, software versions, and detailed configurations used for testing are not provided.",
+        "The specific 'private test questions' are not detailed, making independent replication impossible.",
+        "The source date is 2025-05-02, meaning the information reflects the state of LLMs at that time."
+      ],
+      "missing_information": [
+        "Details of the source author's testing methodology and specific prompts.",
+        "Exact benchmark scores or quantitative data for knowledge and problem-solving.",
+        "Information on the training data composition for the models discussed.",
+        "Confirmation of these trends from other independent sources or benchmarks.",
+        "Specific model versions beyond what is mentioned (e.g., exact Qwen 3 version)."
+      ],
+      "id": "D04",
+      "brief_id": "D04",
+      "split": "tune",
+      "source_group_id": "reddit:1kde9mn",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-02",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/",
+      "source_hash": "96f8d815af10f4ec3758057daf127c793d413dc138e71b0455e4587e0e707b7d",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true
+    },
+    "draft": {
+      "title": "Has anyone else seen smaller LLMs trade world knowledge for better problem-solving?",
+      "body": "I came across an archived post from May 2025 where the author shared some intriguing observations about recent smaller LLMs. They noticed that despite newer models like Qwen 3 and GLM-4-0414 showing big jumps in coding and engineering problem-solving benchmarks, their world knowledge seemed to lag behind older, larger models—and sometimes even behind older smaller models with lower benchmark scores. For example, Qwen 3 8B reportedly had worse world knowledge than Llama 3.1 8B and Gemma 2 9B, and Qwen 3 14B was said to underperform in knowledge compared to Phi 4 and Gemma 3 12B. On the other hand, models like Llama 4 Maverick showed strong world knowledge but only mediocre problem-solving skills. The author speculated this might be due to newer training data focusing more on problem-solving content at the expense of knowledge-dense material. Given these trade-offs, has anyone else noticed similar patterns in their experience? How do you evaluate or balance these capabilities when choosing models for diverse tasks? Any insights on testing approaches or data composition that might clarify this trend would be helpful. The full post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F5",
+        "F7",
+        "F8"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately summarizes the source, highlighting the observed trade-off between world knowledge and problem-solving in smaller LLMs, citing specific model examples and the author's hypothesis. It correctly attributes the observations to the source author and avoids making personal claims. The draft also poses relevant questions to the community, encouraging discussion and sharing of experiences, which aligns well with the brief's goals. Specificity is good, referencing model names and the core dilemma. The inclusion of the source URL is helpful. The draft adheres to all constraints.",
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 184,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  },
+  {
+    "brief": {
+      "topic": "Improving HTML-to-Markdown Extraction with Local LLMs",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing methods and challenges for enhancing HTML-to-Markdown conversion using local LLMs, aiming to outperform traditional tools on complex websites.",
+      "context": "A community member is sharing their experience and seeking advice on a project that uses local LLMs (Qwen2.5-7B/8B with llama.cpp) to convert HTML web pages to Markdown, focusing on offline processing and improved quality over standard tools. The project aims to handle difficult website structures like SPAs and noisy sites.",
+      "motivation": "The original author is seeking feedback and solutions for specific challenges encountered in their HTML-to-Markdown conversion project, particularly concerning media-heavy sites, performance optimization, and evaluation methods. This discussion aims to gather insights from other local LLM users.",
+      "desired_response": "Community members are invited to share their approaches, tips, and recommendations for improving the HTML-to-Markdown extraction process, especially for challenging web content, and to discuss the potential usefulness of such a tool.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The project aims to convert HTML web pages to high-quality Markdown using local LLMs (Qwen2.5-7B/8B, llama.cpp) running on consumer GPUs, fully offline.",
+          "evidence_quote": "I'm working on a smarter way to convert HTML web pages to high-quality Markdown using **local LLMs** (Qwen2.5-7B/8B, llama.cpp) running on consumer GPUs. My goal: outperform traditional tools like Readability or html2text on tricky websites (e.g. modern SPAs, tech blogs, and noisy sites) — and do it all *fully offline*, without sending data to cloud APIs.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F2",
+          "text": "The script analyzes if a site is text-focused or media-centric and uses BeautifulSoup to extract candidate content areas, main titles, headings, and framework fingerprints.",
+          "evidence_quote": "My script first analyzes if a site is text-focused or media-centric (e.g. video/image/social), with structural and domain heuristics.\n* **HTML structure analysis:** Uses BeautifulSoup to extract candidate content areas, main titles, headings, and framework fingerprints (React, Vue, WordPress, etc).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F3",
+          "text": "A local LLM generates JSON-formatted extraction strategies and scores the content for completeness, readability, and info value after Markdown extraction.",
+          "evidence_quote": "Local LLM generates JSON-formatted extraction strategies (selectors, noise filters, special rules) for each page, not just using static rules.\n* **AI quality scoring:** After Markdown extraction, the LLM scores content for completeness, readability, info value, and offers improvement advice.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F4",
+          "text": "The tool runs locally using llama-cpp-python with quantized GGUF models on hardware like a 4070/4080/4090 or a 7B model on a MacBook.",
+          "evidence_quote": "I use llama-cpp-python with quantized GGUF models, so it runs on a 4070/4080/4090 or even a 7B model on a MacBook.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F5",
+          "text": "On standard article/news/blog pages, the AI assessment scores quality as typically 'good' or 'excellent' (7-9/10).",
+          "evidence_quote": "On standard article/news/blog pages, quality is usually “good” or “excellent” (AI assessment scores 7-9/10).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F6",
+          "text": "For media-heavy or JavaScript-only sites, the LLM struggles without browser rendering.",
+          "evidence_quote": "For *media-heavy* or JavaScript-only sites, even the LLM struggles without browser rendering.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        },
+        {
+          "id": "F7",
+          "text": "The overall speed is decent (one page ≈ 10–20 sec on 4070 8G, q4_K_M), but batch processing hundreds of pages could be faster.",
+          "evidence_quote": "The overall speed is decent (one page ≈ 10–20 sec on 4070 8G, q4\\_K\\_M), but batch processing hundreds of pages could be faster.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/"
+        }
+      ],
+      "allowed_claims": [
+        "The project uses local LLMs for HTML to Markdown conversion.",
+        "The tool aims to improve upon traditional extraction methods.",
+        "Offline processing is a key feature.",
+        "The author is seeking advice on specific technical challenges."
+      ],
+      "forbidden_claims": [
+        "The tool has been proven to outperform all existing methods.",
+        "Specific performance metrics like pages per second are guaranteed.",
+        "The author has personally achieved successful batch processing optimization.",
+        "The LLM's suggestions are always perfect.",
+        "The tool is ready for widespread public use without further development."
+      ],
+      "essential_limitations": [
+        "The effectiveness on media-heavy or JavaScript-only sites is limited without browser rendering.",
+        "Performance for batch processing may require further optimization.",
+        "Evaluation of extraction quality relies on AI assessment and manual review, with a need for better benchmarks."
+      ],
+      "missing_information": [
+        "Specific details on the datasets used for training or evaluation.",
+        "Exact hardware specifications beyond GPU models (e.g., RAM, CPU).",
+        "The precise nature of 'framework fingerprints' and their impact.",
+        "Details on the 'domain-specific extraction rule generation' process."
+      ],
+      "id": "S01",
+      "brief_id": "S01",
+      "split": "selection",
+      "source_group_id": "reddit:1lftz5s",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-06-20",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/",
+      "source_hash": "968490d6c1e4706416c1956e2b9d02167f296edb4e5992fa124de8477543599b",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "draft": {
+      "title": "Using Local LLMs to Improve HTML-to-Markdown Conversion: Challenges with Media-Heavy and JS-Only Sites",
+      "body": "A project shared on r/LocalLLaMA describes converting HTML web pages to high-quality Markdown using local LLMs like Qwen2.5-7B/8B with llama.cpp on consumer GPUs (e.g., 4070/4080/4090), running fully offline. It combines heuristic HTML analysis via BeautifulSoup to detect content focus and framework fingerprints with LLM-generated JSON extraction strategies and AI-based quality scoring. While results on standard article or blog pages often score good to excellent, the tool struggles with media-heavy or JavaScript-only sites without browser rendering. Processing a single page takes about 10–20 seconds on a 4070 GPU, but batch processing hundreds of pages may require optimization. Given these constraints, how do others handle dynamic or media-rich sites relying solely on local LLMs without browser engines? Are there practical methods to improve extraction quality or speed, such as pre-rendering, hybrid heuristics, or model fine-tuning? Also, what evaluation approaches beyond AI scoring have you found effective for benchmarking Markdown extraction quality?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately summarizes the source, highlighting the project's goals, methods, and challenges. It correctly identifies the limitations regarding media-heavy and JS-only sites and the need for optimization in batch processing. The draft poses relevant community questions about handling these specific issues and evaluation methods, demonstrating good community fit and specificity. The speaker correctly adheres to the persona of a reader, not a personal tester. All facts are properly referenced and presented as author reports. Essential caveats are included. No unsupported claims or copying detected. The title and body are clear and informative.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 149,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  },
+  {
+    "brief": {
+      "topic": "Audiobook Creation with New TTS Support",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing the capabilities and potential of the recently updated Audiobook Creator application, specifically its integration with Orpheus TTS.",
+      "context": "A community member is sharing information about version 1.4 of an open-source audiobook creator application, highlighting new features like Orpheus TTS support and automatic emotion tag addition.",
+      "motivation": "This question is worth discussing to understand the practical implications and user experiences with the new Orpheus TTS integration and LLM-driven emotion tagging in audiobook creation.",
+      "desired_response": "Community members are invited to share their thoughts on the new features, discuss potential use cases, and provide feedback on the audiobook samples.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The Audiobook Creator application has been updated to version 1.4, introducing support for Orpheus TTS alongside Kokoro.",
+          "evidence_quote": "I'm releasing a new version of my [audiobook creator app](https://github.com/prakharsr/audiobook-creator) which now supports Kokoro and Orpheus.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F2",
+          "text": "Orpheus TTS is noted for supporting high-quality audio and more expressive speech.",
+          "evidence_quote": "This release adds support for [Orpheus TTS](https://github.com/canopyai/Orpheus-TTS) which supports high-quality audio and more expressive speech.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F3",
+          "text": "The new version can automatically add emotion tags to text using an LLM, which Orpheus TTS supports.",
+          "evidence_quote": "This version also adds support for adding emotion tags automatically using an LLM.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F4",
+          "text": "Audio generation with Orpheus TTS is facilitated through a dedicated FastAPI Server.",
+          "evidence_quote": "Audio generation using Orpheus is done using my dedicated [Orpheus TTS FastAPI Server](https://github.com/prakharsr/Orpheus-TTS-FastAPI) repository.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F5",
+          "text": "The application can create M4B audiobooks with features like covers, metadata, and chapter timestamps.",
+          "evidence_quote": "Creates compatible audiobooks with covers, metadata, chapter timestamps etc. in M4B format.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F6",
+          "text": "The Audiobook Creator supports multiple input formats (EPUB, PDF) and various output audio formats.",
+          "evidence_quote": "Multi-Format Input Support: Converts books from various formats (EPUB, PDF, etc.) into plain text.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F7",
+          "text": "The application offers Docker Support, including pre-built Docker images or building with Docker Compose.",
+          "evidence_quote": "Docker Support: Use pre-built docker images/ build using docker compose to save time and for a smooth user experience.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        },
+        {
+          "id": "F8",
+          "text": "The Audiobook Creator is open source and licensed under GPL v3.",
+          "evidence_quote": "Open Source: Licensed under GPL v3.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+        }
+      ],
+      "allowed_claims": [
+        "The Audiobook Creator application supports Orpheus TTS.",
+        "The application can add emotion tags using an LLM.",
+        "The application generates M4B audiobooks.",
+        "The application supports multiple input and output formats.",
+        "The Audiobook Creator application is open source under GPL v3."
+      ],
+      "forbidden_claims": [
+        "The user has personally tested and verified the performance of Orpheus TTS.",
+        "The specific LLM used for emotion tagging is identified.",
+        "The exact performance improvements from async parallel processing are quantified.",
+        "User satisfaction with the generated audiobooks is universally high."
+      ],
+      "essential_limitations": [
+        "The specific LLM model used for emotion tag addition is not explicitly stated.",
+        "Details on the hardware or specific configurations used for testing are not provided.",
+        "The exact nature of the 'advanced NLP techniques' for character identification is not elaborated upon."
+      ],
+      "missing_information": [
+        "Specific examples of emotion tags and their impact on speech.",
+        "Details on the character identification accuracy.",
+        "User feedback on the quality of audiobooks generated with Orpheus TTS."
+      ],
+      "id": "S02",
+      "brief_id": "S02",
+      "split": "selection",
+      "source_group_id": "reddit:1lyw5u2",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-07-13",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/",
+      "source_hash": "6329c6f0857b058bc08bb526fc52d18db1e5138db1432dae9600ce89c24fa28f",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "draft": {
+      "title": "Exploring Audiobook Creator v1.4's Orpheus TTS Integration and LLM-Driven Emotion Tagging",
+      "body": "The recently released Audiobook Creator v1.4 introduces support for Orpheus TTS alongside Kokoro, aiming to produce higher-quality, more expressive speech. It also adds automatic emotion tagging to text via an LLM, which Orpheus can utilize to enhance narration. The app generates M4B audiobooks with covers, metadata, and chapter timestamps and accepts multiple input formats like EPUB and PDF. Audio generation with Orpheus is handled through a dedicated FastAPI server, and the whole project is open source under GPL v3. However, details such as which LLM is used for emotion tagging, examples of emotion tags, and user feedback on the actual speech quality remain unclear. Has anyone here experimented with Orpheus TTS in this setup or tested the emotion tagging feature? How noticeable and effective are the emotional cues in the audiobook output? Insights on character identification accuracy or practical tips for configuring the FastAPI server would also be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F8"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source material and brief, adhering to the persona of a reader. It correctly identifies key features like Orpheus TTS support, LLM-driven emotion tagging, and M4B audiobook creation. The draft also appropriately raises questions about missing information such as the specific LLM used and user experiences, aligning with the brief's goals. The community fit is good as it directly asks for community input on the new features. Specificity is good by mentioning Orpheus TTS and emotion tagging. Information value is good by summarizing features and asking targeted questions. Clarity and usefulness are high due to the well-structured summary and relevant questions. Credibility is good as it sticks to the source and asks for community verification. Clickbait is low as it is informative and question-driven.",
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 149,
+      "unknown_refs": []
+    },
+    "human_accepted": false
+  }
+]

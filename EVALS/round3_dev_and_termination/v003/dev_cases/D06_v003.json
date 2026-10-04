@@ -1,0 +1,305 @@
+{
+  "brief_id": "D06",
+  "brief": {
+    "topic": "Qwen3 Model Performance Benchmarks",
+    "audience": "r/LocalLLaMA readers",
+    "posting_intent": "Seeking community advice on selecting a Qwen3 model for a hypothetical task, based on provided benchmark data.",
+    "speaker_role": "community member seeking help with explicitly hypothetical product decision, not source author",
+    "current_user_goal": "To understand which Qwen3 model might be most suitable for a hypothetical task involving multilingual text processing and coding, given the benchmark scores.",
+    "current_decision": "Undecided between Qwen3-32b and Qwen3-235b-a22b for a hypothetical application.",
+    "desired_help": "Guidance on how to interpret the benchmark scores for NER and SQL generation in the context of a hypothetical multilingual application, and whether the observed multilingual limitations are likely to impact performance significantly for a specific hypothetical use case.",
+    "scenario_origin": "controlled_hypothetical",
+    "experimental_user_scenario": "Imagine I am evaluating Qwen3 models for a hypothetical project that requires robust performance in both Named Entity Recognition (NER) across several European languages and SQL query generation. I need to decide between the Qwen3-32b and Qwen3-235b-a22b models. The benchmark data shows Qwen3-32b scoring higher in RAG and equal in SQL generation, while Qwen3-235b-a22b scores higher in SQL generation and slightly lower in NER. Both models show limitations in non-English languages, particularly Nordic languages for NER and responding in English when asked for other languages in RAG. How should I weigh these trade-offs for my hypothetical project, considering the observed multilingual issues?",
+    "context": "The user is evaluating different Qwen3 models based on benchmark results presented in a Reddit post. The evaluation is for a hypothetical application that requires multilingual NER and SQL generation capabilities.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Qwen3 models generally perform well, with coding capabilities being particularly strong across various model sizes.",
+        "evidence_quote": "These are generally very very good models.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F2",
+        "text": "All tested Qwen3 models show some struggle with non-English languages. If non-English questions are excluded from the dataset, scores will rise about 5-10 points.",
+        "evidence_quote": "They all seem to struggle a bit in non english languages. If you take out non English questions from the dataset, the scores will across the board rise about 5-10 points.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F3",
+        "text": "In Named Entity Recognition (NER), the qwen/qwen3-30b-a3b-04-28 model achieved the highest score (90.00).",
+        "evidence_quote": "qwen/qwen3-30b-a3b-04-28:free|90.00|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F4",
+        "text": "For SQL Query Generation, qwen/qwen3-235b-a22b-04-28, qwen/qwen3-14b, and qwen/qwen3-32b all achieved perfect scores (100.00), indicating excellent coding performance.",
+        "evidence_quote": "|qwen/qwen3-235b-a22b-04-28:free|100.00|Excellent coding performance,|\n|qwen/qwen3-14b:free|100.00|Excellent coding performance,|\n|qwen/qwen3-32b:free|100.00|Excellent coding performance,|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F5",
+        "text": "In Retrieval Augmented Generation (RAG), qwen/qwen3-32b scored highest (92.50).",
+        "evidence_quote": "|qwen/qwen3-32b:free|92.50|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F6",
+        "text": "The qwen/qwen3-8b model achieved a score of 85.00 in SQL Query Generation, noted as good performance comparable to other 8b models.",
+        "evidence_quote": "|qwen/qwen3-8b:free|85.00|Good performance, comparable to other 8b models.|\n",
+        "status": "historical author report"
+      },
+      {
+        "id": "F7",
+        "text": "Coding is top notch, even with the smaller models.",
+        "evidence_quote": "Coding is top notch, even with the smaller models.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F8",
+        "text": "Multilingual translation seemed to be the main source of errors in NER, especially Nordic languages.",
+        "evidence_quote": "*Note: multilingual translation seemed to be the main source of errors, especially Nordic languages.*",
+        "status": "historical author report"
+      },
+      {
+        "id": "F9",
+        "text": "A key issue in RAG is models responding in English when asked to respond in the source language (e.g., Japanese).",
+        "evidence_quote": "*Note: Key issue is models responding in English when asked to respond in the source language (e.g., Japanese).*",
+        "status": "historical author report"
+      }
+    ],
+    "limitations": [
+      "The benchmark data is from a single source and may not represent all possible use cases or conditions.",
+      "The specific dataset used for testing is not fully detailed, only that it includes non-English questions.",
+      "The observed multilingual issues are noted but not quantified in terms of impact on specific downstream tasks beyond the benchmark categories."
+    ],
+    "allowed_claims": [
+      "Qwen3 models have varying performance across different tasks (Harmful Question Detection, NER, SQL Generation, RAG).",
+      "Coding tasks, like SQL generation, show strong performance across several Qwen3 models.",
+      "Multilingual capabilities, particularly with Nordic languages in NER and response language in RAG, present challenges for the tested Qwen3 models.",
+      "The qwen/qwen3-32b model performed well in RAG and SQL generation.",
+      "The qwen/qwen3-235b-a22b-04-28 model performed excellently in SQL generation."
+    ],
+    "forbidden_claims": [
+      "The user owns specific hardware or has prior experience with these models.",
+      "The user has successfully implemented a solution using any of these models.",
+      "The benchmark scores directly translate to a guaranteed outcome for any real-world application.",
+      "The multilingual limitations are definitively insurmountable for all non-English tasks.",
+      "Any specific model is definitively 'better' than another without considering the specific hypothetical application's priorities."
+    ],
+    "source_date": "2025-04-29",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kaqi3k/qwen_3_8b_14b_32b_30ba3b_235ba22b_tested/",
+    "scenario_id": "D06-scenario-v003",
+    "scenario_version": "v003",
+    "source_facts": [
+      {
+        "id": "F1",
+        "text": "Qwen3 models generally perform well, with coding capabilities being particularly strong across various model sizes.",
+        "evidence_quote": "These are generally very very good models.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F2",
+        "text": "All tested Qwen3 models show some struggle with non-English languages. If non-English questions are excluded from the dataset, scores will rise about 5-10 points.",
+        "evidence_quote": "They all seem to struggle a bit in non english languages. If you take out non English questions from the dataset, the scores will across the board rise about 5-10 points.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F3",
+        "text": "In Named Entity Recognition (NER), the qwen/qwen3-30b-a3b-04-28 model achieved the highest score (90.00).",
+        "evidence_quote": "qwen/qwen3-30b-a3b-04-28:free|90.00|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F4",
+        "text": "For SQL Query Generation, qwen/qwen3-235b-a22b-04-28, qwen/qwen3-14b, and qwen/qwen3-32b all achieved perfect scores (100.00), indicating excellent coding performance.",
+        "evidence_quote": "|qwen/qwen3-235b-a22b-04-28:free|100.00|Excellent coding performance,|\n|qwen/qwen3-14b:free|100.00|Excellent coding performance,|\n|qwen/qwen3-32b:free|100.00|Excellent coding performance,|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F5",
+        "text": "In Retrieval Augmented Generation (RAG), qwen/qwen3-32b scored highest (92.50).",
+        "evidence_quote": "|qwen/qwen3-32b:free|92.50|",
+        "status": "historical author report"
+      },
+      {
+        "id": "F6",
+        "text": "The qwen/qwen3-8b model achieved a score of 85.00 in SQL Query Generation, noted as good performance comparable to other 8b models.",
+        "evidence_quote": "|qwen/qwen3-8b:free|85.00|Good performance, comparable to other 8b models.|\n",
+        "status": "historical author report"
+      },
+      {
+        "id": "F7",
+        "text": "Coding is top notch, even with the smaller models.",
+        "evidence_quote": "Coding is top notch, even with the smaller models.",
+        "status": "historical author report"
+      },
+      {
+        "id": "F8",
+        "text": "Multilingual translation seemed to be the main source of errors in NER, especially Nordic languages.",
+        "evidence_quote": "*Note: multilingual translation seemed to be the main source of errors, especially Nordic languages.*",
+        "status": "historical author report"
+      },
+      {
+        "id": "F9",
+        "text": "A key issue in RAG is models responding in English when asked to respond in the source language (e.g., Japanese).",
+        "evidence_quote": "*Note: Key issue is models responding in English when asked to respond in the source language (e.g., Japanese).*",
+        "status": "historical author report"
+      }
+    ]
+  },
+  "drafts": [
+    {
+      "title": "Choosing Between Qwen3-32b and Qwen3-235b-a22b for Multilingual NER and SQL: Benchmark Insights Needed",
+      "body": "I'm evaluating Qwen3 models for a hypothetical project requiring strong Named Entity Recognition (NER) across European languages and accurate SQL query generation. The benchmark data shows Qwen3-32b leads in Retrieval Augmented Generation (RAG) with a 92.5 score and matches Qwen3-235b-a22b's perfect 100 in SQL generation. Meanwhile, Qwen3-235b-a22b excels in SQL but scores slightly lower in NER compared to Qwen3-32b. Both models share challenges handling non-English languages, especially Nordic ones in NER, and tend to respond in English rather than the source language in RAG scenarios. Given that excluding non-English questions can boost scores by 5–10 points, how should I interpret these multilingual limitations for a use case focused on European languages? Would the slight NER edge of Qwen3-32b outweigh the SQL strengths of Qwen3-235b-a22b, or are these differences negligible considering the multilingual gaps? Any insights on balancing these trade-offs for a multilingual text and coding task would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F5",
+        "F8",
+        "F9"
+      ]
+    },
+    {
+      "title": "Choosing Between Qwen3-32b and Qwen3-235b-a22b for Hypothetical Multilingual NER and SQL Tasks: How to Weigh Benchmark Trade-offs?",
+      "body": "I'm hypothetically evaluating Qwen3 models for a project requiring strong multilingual Named Entity Recognition (NER) and SQL query generation. The benchmark data shows that Qwen3-32b scores highest in Retrieval Augmented Generation (RAG) at 92.5 and matches Qwen3-235b-a22b in SQL generation with a perfect 100 score. Meanwhile, Qwen3-235b-a22b also achieves 100 in SQL but has slightly lower NER performance. Both models exhibit limitations with non-English languages—especially Nordic languages in NER and a tendency to respond in English rather than the source language in RAG. Given these points, how should I interpret the trade-offs? Specifically, how might the multilingual limitations affect a hypothetical use case focused on European languages, and is the higher RAG score of Qwen3-32b worth prioritizing over the slight SQL edge of Qwen3-235b-a22b? Any insights on balancing these factors would be appreciated for this controlled hypothetical evaluation.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F5",
+        "F8",
+        "F9"
+      ]
+    }
+  ],
+  "variants": [
+    "G0",
+    "G1"
+  ],
+  "quality": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 1 accurately reflects the source data and the hypothetical scenario. It correctly identifies the strengths and weaknesses of the Qwen3 models in NER and SQL generation, as well as their multilingual limitations. The draft poses relevant questions about interpreting these trade-offs for the hypothetical use case, aligning with the brief's intent to seek community advice. The use of fact references is appropriate.",
+        "body_words": 149,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 2 successfully adheres to the source data and the hypothetical scenario. It accurately presents the benchmark scores for the Qwen3 models concerning NER and SQL generation, along with their noted multilingual challenges. The draft effectively frames the user's hypothetical decision-making process and seeks guidance on interpreting the trade-offs, consistent with the brief's objectives. The inclusion of fact references is correct.",
+        "body_words": 138,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true
+      }
+    ]
+  },
+  "translation": {
+    "task_zh": {
+      "goal": "评估哪款Qwen3模型更适合一个假设性任务，该任务需要在多种欧洲语言中具备强大的命名实体识别（NER）能力和准确的SQL查询生成能力，基于提供的基准测试数据。",
+      "decision": "在假设性应用中，尚未决定选择Qwen3-32b还是Qwen3-235b-a22b。",
+      "desired_help": "希望获得关于如何解读NER和SQL生成的基准分数的指导，特别是在假设的多语言应用场景中，以及观察到的多语言限制是否会显著影响该特定假设用例的性能。",
+      "source_date": "2025-04-29",
+      "scenario_note": "受控假设用户场景；历史资料不代表本人亲测"
+    },
+    "drafts": [
+      {
+        "title": "在多语言NER和SQL任务中选择Qwen3-32b与Qwen3-235b-a22b：需要基准测试见解",
+        "body": "我正在评估Qwen3模型，用于一个假设项目，该项目需要在欧洲语言中具备强大的命名实体识别（NER）能力和准确的SQL查询生成。基准数据表明，Qwen3-32b在检索增强生成（RAG）中以92.5分领先，并且在SQL生成方面与Qwen3-235b-a22b的满分100分持平。与此同时，Qwen3-235b-a22b在SQL方面表现出色，但在NER上的得分略低于Qwen3-32b。两款模型在处理非英语语言时都存在挑战，尤其是在NER中的北欧语言，并且在RAG场景中倾向于用英语而非源语言回答。鉴于排除非英语问题可以使分数提升5到10分，我应如何解读这些多语言限制，针对一个专注于欧洲语言的用例？Qwen3-32b在NER上的微弱优势是否超过Qwen3-235b-a22b在SQL上的优势，还是考虑到多语言差距，这些差异可以忽略？任何关于如何平衡这些权衡以应对多语言文本和编码任务的见解都将不胜感激。"
+      },
+      {
+        "title": "在假设的多语言NER和SQL任务中选择Qwen3-32b与Qwen3-235b-a22b：如何权衡基准测试的利弊？",
+        "body": "我正在假设性地评估Qwen3模型，用于一个需要强大多语言命名实体识别（NER）和SQL查询生成的项目。基准数据显示，Qwen3-32b在检索增强生成（RAG）中得分最高，为92.5分，并且在SQL生成方面与Qwen3-235b-a22b的满分100分持平。与此同时，Qwen3-235b-a22b在SQL方面也达到100分，但NER表现略低。两款模型在非英语语言方面存在限制——尤其是在NER中的北欧语言，以及在RAG中倾向于用英语而非源语言回答。鉴于这些情况，我应如何解读这些权衡？具体来说，这些多语言限制可能如何影响一个专注于欧洲语言的假设用例？Qwen3-32b较高的RAG分数是否值得优先考虑，超过Qwen3-235b-a22b在SQL上的微弱优势？对于这一受控假设评估，任何关于平衡这些因素的见解都将非常感谢。"
+      }
+    ]
+  },
+  "numeric_translation_checks": [
+    {
+      "english": [
+        "10",
+        "100",
+        "22",
+        "235",
+        "3",
+        "32",
+        "5",
+        "92.5"
+      ],
+      "chinese": [
+        "10",
+        "100",
+        "22",
+        "235",
+        "3",
+        "32",
+        "5",
+        "92.5"
+      ],
+      "same": true
+    },
+    {
+      "english": [
+        "100",
+        "22",
+        "235",
+        "3",
+        "32",
+        "92.5"
+      ],
+      "chinese": [
+        "100",
+        "22",
+        "235",
+        "3",
+        "32",
+        "92.5"
+      ],
+      "same": true
+    }
+  ],
+  "plan": {
+    "speaker": "community member seeking help with explicitly hypothetical product decision, not source author",
+    "scenario_origin": "controlled_hypothetical",
+    "current_goal": "To understand which Qwen3 model might be most suitable for a hypothetical task involving multilingual text processing and coding, given the benchmark scores.",
+    "central_purpose": "To evaluate trade-offs between Qwen3-32b and Qwen3-235b-a22b models for a hypothetical multilingual application requiring strong NER and SQL generation capabilities, considering observed multilingual limitations.",
+    "desired_response": "Guidance on interpreting benchmark scores for NER and SQL generation in the context of a hypothetical multilingual application, including how to weigh the trade-offs between Qwen3-32b's higher RAG score and Qwen3-235b-a22b's higher SQL generation score, and an assessment of the potential impact of multilingual limitations (notably in Nordic languages for NER and language response issues in RAG) on the hypothetical use case.",
+    "relevant_evidence_ids": [
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "F8",
+      "F9"
+    ],
+    "must_preserve": [
+      "The user goal to evaluate Qwen3-32b versus Qwen3-235b-a22b for a hypothetical multilingual NER and SQL generation task.",
+      "The benchmark data indicating Qwen3-32b scores highest in RAG and matches Qwen3-235b-a22b in SQL generation, while Qwen3-235b-a22b scores slightly higher in SQL but lower in NER.",
+      "The noted multilingual limitations affecting NER (especially Nordic languages) and RAG (models responding in English when asked to respond in other languages).",
+      "The hypothetical nature of the user's evaluation and decision context."
+    ],
+    "must_not_invent": [
+      "Any claims about the user's actual hardware, experience, or implementation success.",
+      "Definitive statements that one model is better than the other without considering the hypothetical application's priorities.",
+      "Quantitative impact of multilingual limitations beyond what is reported in the benchmark data.",
+      "Any guarantees that benchmark scores will directly translate to real-world performance."
+    ]
+  },
+  "source_hash": "89b54b22d5e1f22c7f2af7ce7049ee7d7de9300ca22f1e7d26cb7523be5c0895"
+}

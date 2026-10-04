@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViralLoop — Live Demo</title>
+<style>
+  :root{
+    --bg:#faf9f7; --panel:#ffffff; --ink:#1f1e1c; --muted:#6b6862;
+    --line:#e3e0da; --teal:#0F6E56; --tealbg:#E1F5EE; --red:#A32D2D; --redbg:#FCEBEB;
+    --amber:#854F0B; --amberbg:#FAEEDA; --gray:#5F5E5A; --graybg:#F1EFE8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;padding:24px}
+  .wrap{max-width:1000px;margin:0 auto}
+  h1{font-size:22px;font-weight:500;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:20px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+  .nav button{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+       padding:8px 14px;border-radius:20px;font-size:13.5px;cursor:pointer;font-family:inherit}
+  .nav button:hover{border-color:#c9c5bd}
+  .nav button[aria-current="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-bottom:16px}
+  .card h2{font-size:17px;font-weight:500;margin:0 0 4px}
+  .card h3{font-size:14px;font-weight:500;margin:20px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  p{margin:8px 0}
+  a{color:var(--teal)}
+  code{background:var(--graybg);padding:1px 5px;border-radius:4px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13.5px}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+  th{font-weight:500;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.03em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:500}
+  .p-teal{background:var(--tealbg);color:var(--teal)}
+  .p-red{background:var(--redbg);color:var(--red)}
+  .p-amber{background:var(--amberbg);color:var(--amber)}
+  .p-gray{background:var(--graybg);color:var(--gray)}
+  .note{border-left:3px solid var(--amber);background:var(--amberbg);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:12px 0}
+  .good{border-left:3px solid var(--teal);background:var(--tealbg);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:12px 0}
+  .bad{border-left:3px solid var(--red);background:var(--redbg);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:12px 0}
+  .page{display:none}
+  .page.active{display:block}
+  .field{display:flex;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+  .field b{min-width:190px;font-weight:500;color:var(--muted)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cols{grid-template-columns:1fr}.field{flex-direction:column;gap:0}}
+  .footer{color:var(--muted);font-size:12.5px;margin-top:22px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ViralLoop — Live Demo</h1>
+  <div class="sub">PE6201 End-of-Course Project · Shen Shuo · a fact-constrained community drafting prototype and three rounds of experiments</div>
+
+  <div class="nav" id="nav"></div>
+  <div id="pages"></div>
+
+  <div class="footer">All figures shown are real results from frozen experiment artefacts. Nothing here was generated for the demo.</div>
+</div>
+
+<script>
+const PAGES = [
+{ id:"overview", label:"1 · What it is", html:`
+<div class="card">
+  <h2>What ViralLoop does</h2>
+  <p>It takes a real author's intent and dated source material, and produces a <b>fact-constrained draft</b> for a technical community — with rule-based checks and mandatory human confirmation.</p>
+  <h3>Persona</h3>
+  <p><b>Wei</b>, an engineer who just found something surprising in a benchmark. He reads r/LocalLLaMA daily and has never posted. He knows whether his result is a headline or a footnote — he doesn't. The system's job is to give him back <i>his own point, better organised</i>.</p>
+  <h3>The headline result</h3>
+  <div class="bad">Historical engagement <b>is</b> predictable (AP 0.552–0.585 vs a 0.247 lazy baseline). That predictability <b>did not</b> transfer into a generation gain. The bottlenecks were evaluator alignment, task realism, and complexity cost.</div>
+  <h3>What it deliberately does not do</h3>
+  <p>No automated publishing. No virality probability. No cross-platform claims. No online engagement was ever measured.</p>
+</div>`},
+
+{ id:"data", label:"2 · Data", html:`
+<div class="card">
+  <h2>Data and splits</h2>
+  <p>Source: <code>pszemraj/LocalLLaMA-posts</code> — a Reddit <b>r/LocalLLaMA</b> archive, 100,679 rows, ODC-BY. One community, so platform and domain stay roughly constant.</p>
+  <table>
+    <tr><th>Stage</th><th class="num">N</th><th>Meaning</th></tr>
+    <tr><td>Raw corpus</td><td class="num">100,679</td><td>Public archive</td></tr>
+    <tr><td>Free-rule candidates</td><td class="num">20,019</td><td>2025, text-only, length/type filters</td></tr>
+    <tr><td>Stratified recovery</td><td class="num">2,800</td><td>By month × type — never sampled by score</td></tr>
+    <tr><td>Observation audit</td><td class="num">400</td><td>95.75% found at 36–38h of age</td></tr>
+    <tr><td><b>Final model data</b></td><td class="num"><b>2,336</b></td><td>After age-window filter and second clean</td></tr>
+  </table>
+  <h3>Two problems solved properly</h3>
+  <div class="good"><b>Observation age.</b> Score and retrieval timestamp were recovered from the same upstream archive, and the window was fixed at 36–38 hours — so an older post can't win just by having been visible longer.</div>
+  <div class="good"><b>Leakage.</b> The label is built from post-publication score. No post-publication field ever enters the model. Retrieval draws from Train only — Final cases never enter the RAG library.</div>
+  <h3>Splits (temporal)</h3>
+  <table>
+    <tr><th>Split</th><th>Months</th><th class="num">N</th><th class="num">High-perf</th></tr>
+    <tr><td>Train</td><td>Jan–Jul</td><td class="num">1,396</td><td class="num">337</td></tr>
+    <tr><td>Tune</td><td>Aug–Sep</td><td class="num">398</td><td class="num">99</td></tr>
+    <tr><td>Selection</td><td>Oct</td><td class="num">194</td><td class="num">49</td></tr>
+    <tr><td><b>Final</b></td><td>Nov–Dec</td><td class="num"><b>348</b></td><td class="num"><b>86</b></td></tr>
+  </table>
+  <div class="note"><b>What score is not.</b> It is a net-vote signal — not impressions, not clicks, not unique readers. The target is <i>relative high score within community and month</i>, not "viral".</div>
+</div>`},
+
+{ id:"evaluator", label:"3 · Can history be predicted?", html:`
+<div class="card">
+  <h2>Historical evaluators — Final split, 348 posts</h2>
+  <p>Positive rate 0.247. AP is the primary metric because the positive class is a minority.</p>
+  <table>
+    <tr><th>Model</th><th class="num">P</th><th class="num">R</th><th class="num">F1</th><th class="num">AP</th><th class="num">Acc</th></tr>
+    <tr><td>E0 lazy — always predict "not high-performing"</td><td class="num">0.000</td><td class="num">0.000</td><td class="num">0.000</td><td class="num">0.247</td><td class="num">0.753</td></tr>
+    <tr><td>E1 context only</td><td class="num">0.291</td><td class="num">0.500</td><td class="num">0.368</td><td class="num">0.305</td><td class="num">0.575</td></tr>
+    <tr><td>E1b context + structure</td><td class="num">0.381</td><td class="num">0.593</td><td class="num">0.464</td><td class="num">0.420</td><td class="num">0.661</td></tr>
+    <tr><td><b>E2 TF-IDF + logistic regression</b></td><td class="num">0.510</td><td class="num">0.605</td><td class="num">0.553</td><td class="num"><b>0.552</b></td><td class="num">0.759</td></tr>
+    <tr><td>E3 text + context</td><td class="num">0.468</td><td class="num">0.686</td><td class="num">0.557</td><td class="num">0.500</td><td class="num">0.730</td></tr>
+    <tr><td><b>E4 semantic embedding</b></td><td class="num">0.451</td><td class="num">0.698</td><td class="num">0.548</td><td class="num"><b>0.585</b></td><td class="num">0.716</td></tr>
+  </table>
+  <div class="good"><b>Reading it correctly.</b> The lazy baseline's 0.753 accuracy is exactly the trap the brief warns about — it gets there by never predicting the positive class. AP exposes it. E2's AP increment over the prior has an author-clustered bootstrap interval of roughly <b>[0.219, 0.405]</b>, so the signal is real.</div>
+  <img src="../REPORT/figures/historical_evaluator_AP.png" alt="Historical evaluator AP comparison" style="width:100%;border:1px solid var(--line);border-radius:8px;margin-top:12px">
+</div>`},
+
+{ id:"generator", label:"4 · Does it help generation?", html:`
+<div class="card">
+  <h2>The answer is no — and here is the number</h2>
+  <p>180 candidates across eight arms. Frozen E2 as the optimisation proxy; E4 as an independent auditor that never fed back.</p>
+  <table>
+    <tr><th>Version</th><th class="num">Mean E2 proxy</th><th class="num">Auto quality</th></tr>
+    <tr><td>G0 generic</td><td class="num">0.243551</td><td class="num">4.100</td></tr>
+    <tr><td>G1 prompt</td><td class="num">0.241535</td><td class="num">4.150</td></tr>
+    <tr><td>G3 RAG</td><td class="num">0.241345</td><td class="num">4.075</td></tr>
+    <tr><td>G4 both pattern cards</td><td class="num">0.240208</td><td class="num">4.000</td></tr>
+    <tr><td>O1 resample</td><td class="num">0.241574</td><td class="num">4.100</td></tr>
+    <tr><td>O2 feedback</td><td class="num">0.241713</td><td class="num">4.050</td></tr>
+  </table>
+  <h3>The headline comparison — feedback vs equal-budget resampling</h3>
+  <div class="bad">
+    E2 difference <b>O2 − O1 = +0.0001395</b> · bootstrap 95% CI <b>[−0.0008932, +0.0009857]</b> → contains zero<br>
+    Independent E4 audit <b>−0.0146241</b> · CI <b>[−0.0414844, +0.0074620]</b> → also contains zero
+  </div>
+  <div class="note"><b>A 0.244 proxy score is not a 24.4% virality probability.</b> It is a score from a model trained on a different distribution from generated text.</div>
+  <h3>And then the humans disagreed with the machine entirely</h3>
+  <p>Automatic quality scores were uniformly high and nearly identical across arms. Real reviewers said drafts were too abstract and unlike real community posts. One reviewer, verbatim:</p>
+  <div class="bad">"Information density is too high — doesn't look like something a real user would post."</div>
+  <p>The automatic ruler rewarded clear, complete, compliant text. The human was asking whether anyone would <i>post</i> it. Those are different questions — and that gap became the project's central observation.</p>
+  <img src="../REPORT/figures/generator_proxy_and_quality.png" alt="Generator proxy score and quality" style="width:100%;border:1px solid var(--line);border-radius:8px;margin-top:12px">
+</div>`},
+
+{ id:"judge", label:"5 · The ruler failed admission", html:`
+<div class="card">
+  <h2>Round 2 tested its own measuring stick — and it failed</h2>
+  <p>30 controlled comparison pairs (15 calibration, 15 validation), covering community fit, specificity and information value, with AB/BA swapping.</p>
+  <table>
+    <tr><th>Judge</th><th>Stage</th><th>Agreement</th><th>Swap</th><th>Community / Specificity / Info value</th><th>Verdict</th></tr>
+    <tr><td>Gemini Lite</td><td>Calibration</td><td>12/15</td><td>86.7%</td><td>5/5, 4/5, 3/5</td><td><span class="pill p-teal">Meets threshold</span></td></tr>
+    <tr><td>Gemini Flash</td><td>Calibration</td><td>4/15</td><td>33.3%</td><td>1/5, 2/5, 1/5</td><td><span class="pill p-red">Fails</span></td></tr>
+    <tr><td><b>Gemini Lite</b></td><td><b>Validation</b></td><td>12/15</td><td>86.7%</td><td>5/5, 5/5, <b>2/5</b></td><td><span class="pill p-red">Info value below 60% — not admitted</span></td></tr>
+    <tr><td>Claude Haiku 4.5</td><td>Validation</td><td>15/15</td><td>100%</td><td>5/5 each</td><td><span class="pill p-teal">Passes controlled cases</span></td></tr>
+  </table>
+  <div class="note"><b>Two things that must stay straight.</b> (1) These agreements are against <i>pre-constructed labels by the same person who designed the pairs</i> — not against human raters. Claude's 15/15 means it agreed with my own test, not that it judges community quality with 100% accuracy. (2) Lite's ~80% overall does not excuse the specific information-value failure. A judge can be broadly agreeable and still blind on the one dimension that matters.</div>
+  <div class="good">Because admission failed, the formal feedback arm was <b>closed</b>. That is the protocol working, not failing.</div>
+</div>`},
+
+{ id:"round3", label:"6 · Round 3: the task was wrong", html:`
+<div class="card">
+  <h2>The deepest problem wasn't the model — it was the task</h2>
+  <h3>Attempt 1 — all eight tasks collapsed into help-seeking</h3>
+  <p>The brief unified every task around one identity: a community member currently making a decision and asking for help. Material that was plainly a release, a tutorial or a personal test got rewritten as <i>"I saw some old material, now I'd like your help"</i>.</p>
+  <table>
+    <tr><th>Source topic</th><th>What it became</th></tr>
+    <tr><td>Multilingual TTS and Anki</td><td>A request for help comparing options</td></tr>
+    <tr><td>Qwen3 tech report</td><td>Release news mislabelled as an experience post</td></tr>
+    <tr><td>SOCAMM technical analysis</td><td>An analysis piece turned into an advice request</td></tr>
+    <tr><td>Sigil local application</td><td>A resource showcase turned into a help request</td></tr>
+  </table>
+  <p>Claude's AB/BA swap consistency was <b>3/8</b>, below the planned 7/8 — a stability measure, not accuracy against humans.</p>
+  <div class="bad"><b>The schema was the bug.</b> Not the model. A wrong schema systematically changes the task for every single item.</div>
+
+  <h3>Attempt 2 — four archetypes, and a better question</h3>
+  <p>Rebuilt as four archetypes, 2 each: <b>question · finding · opinion · resource</b>. Help-seeking stopped being the default. The primary question also changed — from <i>"which would make you reply?"</i> to <b><i>"would you open this in your feed and keep reading?"</i></b></p>
+  <div class="good">This fixed the type collapse. It did not fix the summary tone.</div>
+
+  <h3>Quality checks — and what those numbers mean</h3>
+  <table>
+    <tr><th>Check</th><th>Result</th><th>How to read it</th></tr>
+    <tr><td>Offline dry-run</td><td>27 passed</td><td>Process constraints only</td></tr>
+    <tr><td>Original automatic quality</td><td>7/16</td><td>Judge over-blocked attributed claims</td></tr>
+    <tr><td>Supplementary publication check</td><td>2/16</td><td>Covers only some risks</td></tr>
+    <tr><td>Formal human preference</td><td><span class="pill p-red">Not completed</span></td><td>Must not be reconstructed</td></tr>
+  </table>
+  <div class="note"><b>7/16 and 2/16 are process labels — not content accuracy, hallucination rates, or real publishability.</b> The remaining 14 drafts must not be called "14 pieces of false content".</div>
+
+  <h3>Termination</h3>
+  <div class="bad">Round 3 <b>terminated early at the Dev stage</b> due to poor real-human quality feedback. No valid conclusion about G1 versus G0 can be given. The planned Final was never run and was not reconstructed.</div>
+</div>`},
+
+{ id:"limits", label:"7 · Limitations", html:`
+<div class="card">
+  <h2>What this project does and does not establish</h2>
+  <h3>Established</h3>
+  <ul>
+    <li>On this cleaned 2025 r/LocalLLaMA data with temporal splits, a text model discriminates historical relative high score better than a constant ranking.</li>
+    <li>Round 1's RAG, pattern cards and feedback loops did not consistently improve the generation proxy or the independent audit.</li>
+    <li>A judge with good overall agreement can still fail on a specific dimension. Admission must be per-dimension.</li>
+    <li>Real human feedback surfaced unnaturalness and over-density that automatic scores did not reflect at all.</li>
+    <li>A uniform "decision + help me" schema changes tasks that were originally different types.</li>
+    <li>Automatic judges disagree with each other; the favourable label cannot be cherry-picked.</li>
+  </ul>
+  <h3>Not established</h3>
+  <ul>
+    <li>That ViralLoop is a validated viral-copy generator.</li>
+    <li>That E2/E4 scores on generated text are real performance probabilities.</li>
+    <li>That any specific writing pattern caused real engagement gains.</li>
+    <li>That V0 is universally better than all strong prompts or all RAG.</li>
+    <li>That Claude or JEV represent community users, or that a connection validates capability.</li>
+    <li>That any online engagement improvement occurred — <b>nothing was ever published</b>.</li>
+  </ul>
+  <h3>Protocol deviations, stated rather than hidden</h3>
+  <table>
+    <tr><th>Item</th><th>Actual</th><th>Effect</th></tr>
+    <tr><td>Round 2 token cap</td><td>Declared 1,000,000; recorded 1,225,228 (+22.52%)</td><td><span class="pill p-red">Audit FAIL</span></td></tr>
+    <tr><td>Round 2 records</td><td>11 manifests and 68 raw responses missing</td><td>Not reproducible for those units</td></tr>
+    <tr><td>Round 2 final V1</td><td>Deleted context <i>and</i> changed length target</td><td>Confounded — zero attribution</td></tr>
+    <tr><td>Round 2 O1</td><td>12 ties: fallback returned the original</td><td>Treatment intensity was zero</td></tr>
+    <tr><td>Round 3 Final</td><td>Never run</td><td>No result exists</td></tr>
+    <tr><td>Human evaluation</td><td>Single reviewer, translated into Chinese</td><td>Not representative of the community</td></tr>
+  </table>
+  <div class="note"><b>The deepest limitation is statistical.</b> With 10–12 tasks, this experiment could only ever detect an enormous effect. The minimum detectable effect was never computed up front — <b>the design was underpowered by construction</b>. On an uncalibrated target, a positive result and a negative result are equally uninterpretable.</div>
+</div>`},
+
+{ id:"decision", label:"8 · Decision & cost", html:`
+<div class="card">
+  <h2>The final product decision</h2>
+  <div class="good"><b>Retain:</b> complete fact brief · simple fact-constrained LLM drafting · deterministic checks · mandatory human confirmation · full ledger and provenance.<br><br>
+  <b>Retain as research assets:</b> historical prediction (E2/E4) · RAG · pattern cards.<br><br>
+  <b>Close:</b> the feedback loop as a default path · multi-sample with selector · motivation/engagement planner · title optimiser.</div>
+  <h3>Cost</h3>
+  <table>
+    <tr><th>Round</th><th class="num">Calls</th><th class="num">Tokens</th><th class="num">API cost (US$)</th></tr>
+    <tr><td>Round 1</td><td class="num">350</td><td class="num">1,403,922</td><td class="num">0.3442</td></tr>
+    <tr><td>Round 2 (v002)</td><td class="num">500</td><td class="num">1,230,780</td><td class="num">0.7087</td></tr>
+    <tr><td>Round 3 (both attempts)</td><td class="num">146</td><td class="num">415,588</td><td class="num">0.2639</td></tr>
+    <tr><td><b>Total</b></td><td class="num"><b>996</b></td><td class="num"><b>3,050,290</b></td><td class="num"><b>1.3168</b></td></tr>
+  </table>
+  <p>Cheap on API. The cost that actually held the project back was never money — it was reconciling confounds, checking source identity, repairing briefs by hand, and getting a human to judge highly technical content in a second language.</p>
+  <h3>The lesson</h3>
+  <div class="note">Not <i>"complexity is bad."</i> It is that <b>I put calibrating the measuring stick last, when it should have been first.</b></div>
+</div>`}
+];
+
+const nav = document.getElementById('nav');
+const holder = document.getElementById('pages');
+PAGES.forEach((p,i)=>{
+  const b=document.createElement('button');
+  b.textContent=p.label; b.onclick=()=>go(i); b.dataset.i=i;
+  nav.appendChild(b);
+  const d=document.createElement('div');
+  d.className='page'; d.id='page-'+p.id; d.innerHTML=p.html;
+  holder.appendChild(d);
+});
+function go(i){
+  PAGES.forEach((p,j)=>{
+    document.getElementById('page-'+p.id).classList.toggle('active', j===i);
+    nav.children[j].setAttribute('aria-current', j===i ? 'true':'false');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+go(0);
+document.addEventListener('keydown',e=>{
+  const cur=[...nav.children].findIndex(b=>b.getAttribute('aria-current')==='true');
+  if(e.key==='ArrowRight'&&cur<PAGES.length-1) go(cur+1);
+  if(e.key==='ArrowLeft'&&cur>0) go(cur-1);
+});
+</script>
+</body>
+</html>

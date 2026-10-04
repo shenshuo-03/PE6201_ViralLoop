@@ -1,0 +1,79 @@
+{
+  "brief": {
+    "topic": "Setting up a local AI coding assistant with VS Code and Continue",
+    "audience": "Developers interested in local AI coding assistants",
+    "content_archetype": "D",
+    "speaker_role": "community analyst or resource curator; not original author",
+    "source_relationship": "third_party_archive",
+    "source_date": "2025-06-16",
+    "posting_intent": "Informational",
+    "current_context": "The user is seeking information on how to set up a local AI coding assistant, specifically for VS Code, using the Continue extension and local LLM models.",
+    "core_value": "Enabling developers to use AI coding assistants locally without relying on remote APIs.",
+    "core_hook": {
+      "text": "Take control of your coding copilot by setting up a fully local IDE with MCP integration using Continue.",
+      "fact_refs": [
+        "f1"
+      ]
+    },
+    "facts": [
+      {
+        "id": "f1",
+        "text": "You don't need remote APIs for a coding copliot, or the MCP Course! Set up a fully local IDE with MCP integration using Continue.",
+        "evidence_quote": "You don't need remote APIs for a coding copliot, or the MCP Course! Set up a fully local IDE with MCP integration using Continue.",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "The Continue extension from the VS Code marketplace serves as the AI coding assistant.",
+        "evidence_quote": "Get the Continue extension from the VS Code marketplace to serve as the AI coding assistant.",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "A local model can be served using an OpenAI compatible server in Llama.cpp / LmStudio/ etc.",
+        "evidence_quote": "Serve the model with an OpenAI compatible server in Llama.cpp / LmStudio/ etc.",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "A `.continue/models/llama-max.yaml` file is needed in the project to configure Continue for the local Ollama model.",
+        "evidence_quote": "Create a `.continue/models/llama-max.yaml` file in your project to tell Continue how to use the local Ollama model.",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "A `.continue/mcpServers/playwright-mcp.yaml` file integrates tools like the Playwright browser automation tool with the assistant.",
+        "evidence_quote": "Create a `.continue/mcpServers/playwright-mcp.yaml` file to integrate a tool, like the Playwright browser automation tool, with your assistant.",
+        "status": "author_report"
+      },
+      {
+        "id": "f6",
+        "text": "A full tutorial is available at a Hugging Face URL.",
+        "evidence_quote": "Check out the full tutorial here: [https://huggingface.co/learn/mcp-course/unit2/continue-client](https://huggingface.co/learn/mcp-course/unit2/continue-client)",
+        "status": "author_report"
+      }
+    ],
+    "limitations": [
+      "The source text describes a tutorial and assumes the user has the necessary technical background to follow it.",
+      "Specific model compatibility or performance is not detailed.",
+      "The tutorial is presented as a guide, not a verified solution."
+    ],
+    "allowed_claims": [
+      "It is possible to set up a local AI coding assistant using VS Code, the Continue extension, and local LLM models.",
+      "The Continue extension facilitates integration with local LLM servers.",
+      "Configuration files are required to connect Continue to local models and tools.",
+      "Tools like Playwright can be integrated with the local assistant."
+    ],
+    "forbidden_claims": [
+      "The speaker has personally set up this system and experienced its benefits.",
+      "The tutorial guarantees a specific level of performance or functionality.",
+      "The source author is the creator of the Continue extension or the MCP course.",
+      "Any claims about the ease of setup or troubleshooting without direct evidence from the source."
+    ],
+    "decision": null,
+    "desired_help": null
+  },
+  "corrections": [],
+  "scenario_pass": true,
+  "source_pass": true
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "Uncertain",
+    "information_value": "B",
+    "usefulness": "B",
+    "credibility": "Uncertain",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": false,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "Tie",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Draft A treats the brief as a report-writing task, summarizing archived observations in third-person recap style ('A 2025 archived Reddit post reports...'). This violates the core motivation: the community should *discuss* personalities and preferences, not receive a passive summary. Draft B reframes the archived observations as a genuine prompt for community engagement—it presents the source findings as context, then poses specific questions ('how do you weigh such personality traits...', 'Are there particular traits...', 'how consistent are these impressions...') that invite local LLM enthusiasts to share their own experiences and contribute to understanding. Both preserve facts accurately and cite sources equally. However, B directly addresses the desired response (discussion comparing/contrasting, sharing preferences, explaining influence on usage) by structuring the post as an open question rather than a closed summary. A's final sentence ('include no detailed task or environment information') reads like a limitation note rather than community-facing content. B acknowledges the same limitations implicitly while keeping focus on what the community *can* contribute. For a local enthusiast audience, B creates genuine motivation to respond; A invites passive reading."
+    },
+    "usage": {
+      "run_id": "v002-r0168",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:29:55.868894+00:00",
+      "tag": "judge_validation:HP03:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "520128f25197127674fb02ca63d719c33f24667f640ed74a649973daf2d5af93",
+      "actual_cost_usd": 0.003718,
+      "budget_charge_usd": 0.003718,
+      "reserved_upper_usd": 0.011968,
+      "input_tokens": 2083,
+      "output_tokens": 327,
+      "latency_seconds": 5.213117200008128,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109790-PJHt7TarZw2lrNyz9RAg",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A frames the archived observations as a genuine discussion prompt with concrete questions ('how do you weigh such personality traits', 'how consistent are these impressions') that invite community members to share their own experiences and validate/challenge the source author's claims. It positions the reader as a peer contributor, not a passive recipient. Draft B recaps the facts in report format ('reports that', 'are described as') without establishing why a local LLM enthusiast should engage—it reads as a summary of someone else's experience rather than an opening for dialogue. A preserves the subjective nature ('subjective impressions', 'in your experience') while B states observations more flatly ('are described as'). A acknowledges missing context ('no detailed task or environment information' is implicit in the open questions) and invites clarification; B explicitly lists limitations but offers no pathway for the community to address them. For a community discussion post, A's question-driven structure with specific prompts for comparison and consistency checks is substantially more actionable than B's descriptive recap."
+    },
+    "usage": {
+      "run_id": "v002-r0169",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:30:00.702781+00:00",
+      "tag": "judge_validation:HP03:BA",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "cd96d424dc819ef7bf88d2734746e3931152250fea60004f4d412f05aabaff77",
+      "actual_cost_usd": 0.003593,
+      "budget_charge_usd": 0.003593,
+      "reserved_upper_usd": 0.011968,
+      "input_tokens": 2083,
+      "output_tokens": 302,
+      "latency_seconds": 4.801242199988337,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109795-00g35VT2ZXphduiovG34",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "anthropic/claude-haiku-4.5"
+}

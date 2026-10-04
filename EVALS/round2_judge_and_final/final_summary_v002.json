@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-04T11:23:17.225492+00:00",
+  "selected_product_before_final": "V0",
+  "comparisons": {
+    "V1_vs_V0": {
+      "n": 12,
+      "counts": {
+        "Win": 1,
+        "Loss": 7,
+        "Tie": 0,
+        "Uncertain": 3,
+        "Failure": 1
+      },
+      "decisive_win_rate": 0.125,
+      "decisive_coverage": 0.6666666666666666,
+      "uncertain_rate": 0.25,
+      "tie_rate": 0.0,
+      "failure_rate": 0.08333333333333333,
+      "decisive_win_rate_wilson_95": [
+        0.02241690886329617,
+        0.4708948057698615
+      ],
+      "identity_ties": 0,
+      "conditional_interval_not_all_topic_success_probability": true
+    },
+    "V2_vs_V1": {
+      "n": 12,
+      "counts": {
+        "Win": 3,
+        "Loss": 2,
+        "Tie": 0,
+        "Uncertain": 7,
+        "Failure": 0
+      },
+      "decisive_win_rate": 0.6,
+      "decisive_coverage": 0.4166666666666667,
+      "uncertain_rate": 0.5833333333333334,
+      "tie_rate": 0.0,
+      "failure_rate": 0.0,
+      "decisive_win_rate_wilson_95": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "identity_ties": 0,
+      "conditional_interval_not_all_topic_success_probability": true
+    },
+    "O1_vs_V2": {
+      "n": 12,
+      "counts": {
+        "Win": 0,
+        "Loss": 0,
+        "Tie": 12,
+        "Uncertain": 0,
+        "Failure": 0
+      },
+      "decisive_win_rate": null,
+      "decisive_coverage": 0.0,
+      "uncertain_rate": 0.0,
+      "tie_rate": 1.0,
+      "failure_rate": 0.0,
+      "decisive_win_rate_wilson_95": null,
+      "identity_ties": 12,
+      "conditional_interval_not_all_topic_success_probability": true
+    }
+  },
+  "evidence_boundary": "Offline independent model preference; no real posting or real virality outcomes; 12 topics per comparison, exploratory small-sample intervals",
+  "human_final_pending": true,
+  "costs": {
+    "prior": 0.34422535,
+    "round": 0.69894848,
+    "total": 1.04317383
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "Uncertain",
+    "usefulness": "B",
+    "credibility": "Uncertain",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it includes more specific details from the brief, such as the mention of ModernBERT, the 4K token limit, and the 79.22% F1 score on the RAGTruth benchmark, which are directly relevant to the problem and audience. Post A is more generic and omits these key specifics. Both posts correctly identify the problem and the tool's purpose, but B provides a more concrete and informative overview for the target audience of local LLM enthusiasts interested in lightweight solutions."
+    },
+    "usage": {
+      "run_id": "v002-r0158",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:29:27.842123+00:00",
+      "tag": "judge_validation:HP12:AB",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "43b6dbe9d9510c4e8b2c7b863e3daf3e774462a21f9754a266a4fb5104950aae",
+      "actual_cost_usd": 0.0002711,
+      "budget_charge_usd": 0.0002711,
+      "reserved_upper_usd": 0.0012034,
+      "input_tokens": 1999,
+      "output_tokens": 178,
+      "latency_seconds": 1.1840152000077069,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109766-1K9JvbIlqQsYGp3ltmYY",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is superior because it provides more specific details from the brief, such as the model (ModernBERT), token limit (4K), and benchmark F1 score (79.22%), directly referencing facts F1, F2, F3, F4, F5, F6, and F7. Post B is more generic, omitting these key specifics and only referencing F1. Both posts correctly identify the problem and introduce the tool, but A's inclusion of concrete details makes it more informative and useful for the target audience of local LLM enthusiasts interested in lightweight solutions."
+    },
+    "usage": {
+      "run_id": "v002-r0159",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:29:29.451247+00:00",
+      "tag": "judge_validation:HP12:BA",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "4e6ccffcb731da48b00daa23ee99bc2790bbe45ebedfbc84aacf93d5f4ff0582",
+      "actual_cost_usd": 0.0002767,
+      "budget_charge_usd": 0.0002767,
+      "reserved_upper_usd": 0.0012034,
+      "input_tokens": 1999,
+      "output_tokens": 192,
+      "latency_seconds": 1.5824187999824062,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109767-J0LeHcTM9k9UFF4NdyDe",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,31 @@
+{
+  "speaker": "community member seeking help with explicitly hypothetical product decision, not source author",
+  "scenario_origin": "controlled_hypothetical",
+  "current_goal": "To understand why llama.cpp might be performing significantly slower than EXL2 for long context tasks and to explore potential configuration options within llama.cpp to improve its performance.",
+  "central_purpose": "Seeking community advice on optimizing llama.cpp for long context performance, given observed differences with EXL2.",
+  "desired_response": "Guidance on specific llama.cpp settings or techniques that could improve its performance with long contexts, potentially avoiding layer offloading, or confirmation that EXL2 is the superior choice for this specific use case.",
+  "relevant_evidence_ids": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6"
+  ],
+  "must_preserve": [
+    "The user is experimenting with the RAPTOR example from Langchain modified to use Langchain's LlamaCpp.",
+    "The user is running the Phi-3-medium-128k-instruct model with a 50k context window.",
+    "The user observed that llama.cpp requires offloading 5 out of 41 layers on a 3090 GPU, resulting in a 20-hour runtime.",
+    "The user observed that ExLlamav2 completes the same task in 20 minutes using 19GB VRAM at 50k context.",
+    "The user is questioning if llama.cpp settings can be adjusted to prevent layer offloading.",
+    "The user is comparing performance between llama.cpp and ExLlamav2 for long context tasks.",
+    "The user is seeking configuration advice or confirmation about the better choice for this use case."
+  ],
+  "must_not_invent": [
+    "Any specific hardware details beyond '3090' mention.",
+    "Any successful optimization or configuration changes made by the user.",
+    "Any definitive decision by the user to switch to ExLlamav2 or to continue with llama.cpp.",
+    "Any runtime targets or performance metrics not explicitly stated.",
+    "Any personal history or claims about ownership or expertise."
+  ]
+}

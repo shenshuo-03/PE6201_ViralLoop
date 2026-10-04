@@ -1,0 +1,22 @@
+{
+  "content_archetype": "A",
+  "primary_value": "utility",
+  "strongest_grounded_hook": "Is the Adreno GPU in a Samsung Galaxy S22 Ultra being effectively utilized by llama.cpp, or are observed speeds of less than 2 tokens/sec for Mistral-NeMo-Minitron-8B-Instruct-Q4_0 indicative of a problem? (f1, f2; source date: 2025-01-13; author report; limitations: single user report, no independent verification)",
+  "why_readers_should_care": "Developers and researchers aiming to optimize on-device LLM inference need to understand whether reported low token generation speeds reflect inefficient GPU utilization or other bottlenecks, to guide performance improvements on mobile hardware.",
+  "recommended_angle": "Identify what diagnostic evidence would distinguish between actual GPU acceleration usage and other performance constraints in the historical phone-speed report, without assuming ownership or reproducing the measurements.",
+  "essential_context": "A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and observed less than 2 tokens/sec with the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model, slower than 6 tokens/sec on a GPU-less AMD machine. The user questions if the phone's GPU is used at all, referencing a Qualcomm blog post about an OpenCL GPU backend for Adreno GPUs. The report is a single-user observation without detailed configuration or independent verification.",
+  "facts_to_emphasize": [
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5"
+  ],
+  "facts_optional": [
+    "f6"
+  ],
+  "natural_opening_strategy": "Present the observed performance data from the user running llama.cpp on the Galaxy S22 Ultra and the question about GPU utilization raised by the user.",
+  "natural_ending_strategy": "Highlight the need for specific diagnostics to clarify GPU usage before attributing low speeds to lack of GPU acceleration, acknowledging the limitations of the single-user report.",
+  "engagement_risk": "Risk of readers assuming the report reflects general performance or definitive conclusions about GPU usage without further evidence; potential confusion if technical diagnostics are not clearly explained.",
+  "safety_constraints": "Avoid asserting definitive claims about GPU utilization or performance causality; do not reproduce or claim ownership of the measurements; respect the limitations of the single-user report and lack of independent verification."
+}

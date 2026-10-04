@@ -1,0 +1,33 @@
+{
+  "draft": {
+    "title": "What do DeepSeek R1 perplexity results tell us about expert count and distilled model comparisons?",
+    "body": "A short perplexity test on DeepSeek R1 models with different numbers of experts offers some tentative insights but comes with major caveats. The test covered only 8 blocks out of about 560, used a block size of 512, and included distilled models plus Virtuoso-Medium-v2 for comparison. The source notes that the full DeepSeek R1 model, even with aggressive quantization, generally outperformed the distilled versions unless limited to 2 experts. Virtuoso Medium V2’s distill performance fell between DeepSeek R1 with 3 and 4 experts. Attempts to test with 10 and 12 experts failed due to NaN errors. Also, perplexity may not be a fair metric for chain-of-thought models since they don’t get to \"think.\" Given these limitations and missing details like hardware and dataset specifics, how useful do you find perplexity as a metric for evaluating MoE models like DeepSeek? Would other benchmarks or test setups better clarify the impact of expert count on performance?",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0037",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:17:26.523271+00:00",
+    "tag": "naturalness:D03:fact_repair",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "fb2300d51a1517b03a7f9bd05101a72b5140626d708e37a3c3b14c7f972b5d3c",
+    "actual_cost_usd": 0.0017456,
+    "budget_charge_usd": 0.0017456,
+    "reserved_upper_usd": 0.007414799999999999,
+    "input_tokens": 3328,
+    "output_tokens": 259,
+    "latency_seconds": 2.19564089999767,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109044-YpXNgBgHH0AyYAfEDjDS",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "brief_id": "E01",
+      "variant": "G0",
+      "automatic_pass": true,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": true,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E01",
+      "variant": "G1",
+      "automatic_pass": true,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": true,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E02",
+      "variant": "G0",
+      "automatic_pass": true,
+      "publication_blockers": [
+        "Internal fact IDs leaked into publishable body (including lowercase IDs missed by original regex)."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E02",
+      "variant": "G1",
+      "automatic_pass": true,
+      "publication_blockers": [
+        "Internal fact IDs leaked into publishable body (including lowercase IDs missed by original regex)."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E03",
+      "variant": "G0",
+      "automatic_pass": false,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E03",
+      "variant": "G1",
+      "automatic_pass": false,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E04",
+      "variant": "G0",
+      "automatic_pass": false,
+      "publication_blockers": [
+        "Undated recent wording for 2025 material can imply current results; needs publication-date correction."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E04",
+      "variant": "G1",
+      "automatic_pass": true,
+      "publication_blockers": [
+        "Undated recent wording for 2025 material can imply current results; needs publication-date correction."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E05",
+      "variant": "G0",
+      "automatic_pass": false,
+      "publication_blockers": [
+        "Undated recent wording for 2025 material can imply current results; needs publication-date correction."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E05",
+      "variant": "G1",
+      "automatic_pass": false,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E06",
+      "variant": "G0",
+      "automatic_pass": false,
+      "publication_blockers": [
+        "Internal fact IDs leaked into publishable body (including lowercase IDs missed by original regex).",
+        "Some research criticisms are stated with excessive certainty relative to unverified archived allegations."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E06",
+      "variant": "G1",
+      "automatic_pass": false,
+      "publication_blockers": [
+        "Internal fact IDs leaked into publishable body (including lowercase IDs missed by original regex)."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E07",
+      "variant": "G0",
+      "automatic_pass": true,
+      "publication_blockers": [
+        "This resource-specific vector-only implementation is generalized to GraphRAG as a whole; unsupported scope extension."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E07",
+      "variant": "G1",
+      "automatic_pass": true,
+      "publication_blockers": [
+        "This resource-specific vector-only implementation is generalized to GraphRAG as a whole; unsupported scope extension."
+      ],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E08",
+      "variant": "G0",
+      "automatic_pass": false,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    },
+    {
+      "brief_id": "E08",
+      "variant": "G1",
+      "automatic_pass": false,
+      "publication_blockers": [],
+      "eligible_as_frozen_publishable_candidate": false,
+      "boundary": "Assistant source/content audit; not human preference or independent scientific verification. Guard disagreement does not authorize silently changing labels."
+    }
+  ],
+  "raw_outputs_unchanged": true,
+  "purpose": "protect publishing/selector from ignored case-sensitive ID check and claim-scope errors"
+}

@@ -1,0 +1,196 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "phase": "calibration",
+  "n": 15,
+  "target_correct": 4,
+  "target_accuracy": 0.26666666666666666,
+  "target_swap_consistency": 0.3333333333333333,
+  "overall_swap_consistency": 0.13333333333333333,
+  "dimension_results": {
+    "community_fit": {
+      "n": 5,
+      "correct": 1,
+      "accuracy": 0.2
+    },
+    "specificity": {
+      "n": 5,
+      "correct": 2,
+      "accuracy": 0.4
+    },
+    "information_value": {
+      "n": 5,
+      "correct": 1,
+      "accuracy": 0.2
+    }
+  },
+  "identical_forced_choice": false,
+  "design_expectation_only": true,
+  "records": [
+    {
+      "pair_id": "CP01",
+      "dimension": "community_fit",
+      "expected": "Tie",
+      "target_pred": "Tie",
+      "target_correct": true,
+      "overall_pred": "Tie",
+      "target_swap_consistent": true,
+      "overall_swap_consistent": true,
+      "kind": "identical"
+    },
+    {
+      "pair_id": "CP02",
+      "dimension": "specificity",
+      "expected": "A",
+      "target_pred": "A",
+      "target_correct": true,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": true,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP03",
+      "dimension": "information_value",
+      "expected": "B",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP04",
+      "dimension": "community_fit",
+      "expected": "B",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP05",
+      "dimension": "specificity",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP06",
+      "dimension": "information_value",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP07",
+      "dimension": "community_fit",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP08",
+      "dimension": "specificity",
+      "expected": "A",
+      "target_pred": "A",
+      "target_correct": true,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": true,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP09",
+      "dimension": "information_value",
+      "expected": "B",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP10",
+      "dimension": "community_fit",
+      "expected": "B",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP11",
+      "dimension": "specificity",
+      "expected": "A",
+      "target_pred": "B",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": true,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP12",
+      "dimension": "information_value",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP13",
+      "dimension": "community_fit",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP14",
+      "dimension": "specificity",
+      "expected": "A",
+      "target_pred": "Uncertain",
+      "target_correct": false,
+      "overall_pred": "Uncertain",
+      "target_swap_consistent": false,
+      "overall_swap_consistent": false,
+      "kind": "targeted_degradation"
+    },
+    {
+      "pair_id": "CP15",
+      "dimension": "information_value",
+      "expected": "Tie",
+      "target_pred": "Tie",
+      "target_correct": true,
+      "overall_pred": "Tie",
+      "target_swap_consistent": true,
+      "overall_swap_consistent": true,
+      "kind": "near_equal"
+    }
+  ],
+  "admitted": false
+}

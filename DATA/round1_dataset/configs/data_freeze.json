@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-04T07:36:15.888699+00:00",
+  "seed": 6201,
+  "window_hours": [
+    36.0,
+    38.0
+  ],
+  "near_duplicates_removed": 19,
+  "rows": 2336,
+  "splits": {
+    "final_test": {
+      "n": 348,
+      "positive": 86,
+      "months": [
+        "2025-11",
+        "2025-12"
+      ]
+    },
+    "selection_dev": {
+      "n": 194,
+      "positive": 49,
+      "months": [
+        "2025-10"
+      ]
+    },
+    "train": {
+      "n": 1396,
+      "positive": 337,
+      "months": [
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07"
+      ]
+    },
+    "tune_dev": {
+      "n": 398,
+      "positive": 99,
+      "months": [
+        "2025-08",
+        "2025-09"
+      ]
+    }
+  },
+  "cohort_label_rule": "score > month/type 75th percentile; monthly fallback n<20; retrospective target not forward probability",
+  "author_history": "sampled, observed_before_publication, missing flagged",
+  "final_test_runs": 0,
+  "data_sha256": "dc75420e4a791d1808ee1eb1b6ea86f4edfa8c95ccf4b8517046c5a53ccb914f"
+}

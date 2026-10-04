@@ -1,0 +1,139 @@
+{
+  "loop_version": "v002",
+  "brief": {
+    "topic": "Model Capabilities Trade-offs",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discuss the observed trade-off between world knowledge and problem-solving abilities in recent smaller LLMs.",
+    "context": "An archived Reddit post from 2025-05-02 discusses observations about the performance of various LLMs, specifically noting a potential decline in world knowledge despite improvements in coding and problem-solving benchmarks for newer, smaller models.",
+    "motivation": "Understanding if there's a general trend of sacrificing world knowledge for improved problem-solving in smaller LLMs is crucial for users selecting models for diverse tasks.",
+    "desired_response": "A discussion exploring the source author's observations, potential reasons for this trend, and whether other enthusiasts have noticed similar patterns or have strategies for evaluating these trade-offs.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The source author observed a trend where newer small models, despite higher benchmark scores and claims of equivalence to older, larger models, exhibit worse world knowledge than their larger predecessors and often worse than lower-benchmarking models of similar sizes.",
+        "evidence_quote": "I've noticed a trend where despite benchmark scores going up and companies claiming that their new small models are equivalent to older much bigger models, world knowledge of these new smaller models is worse than their larger predecessors, and often times worse than lower benchmarking models of similar sizes.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F2",
+        "text": "The source author uses a set of private test questions covering coding, engineering problem solving, system threat modelling, and specific knowledge questions on topics like radio protocols, technical standards, local geography, history, and landmarks.",
+        "evidence_quote": "I have a set of private test questions that exercise coding, engineering problem solving, system threat modelling, and also ask specific knowledge questions on a variety of topics ranging from radio protocols and technical standards to local geography, history, and landmarks.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F3",
+        "text": "New models like Qwen 3 and GLM-4-0414 are described as vastly better at coding and problem solving than older models, but their knowledge is no better and sometimes worse than some other similar-sized older models.",
+        "evidence_quote": "New models like Qwen 3 and GLM-4-0414 are vastly better at coding and problem solving than older models, but their knowledge is no better than older models and actually worse than some other similar sized older models.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F4",
+        "text": "Qwen 3 8B reportedly has considerably worse world knowledge in the author's tests than older models like Llama 3.1 8B and Gemma 2 9B.",
+        "evidence_quote": "For example, Qwen 3 8B has considerably worse world knowledge in my tests than old models like Llama 3.1 8B and Gemma 2 9B.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F5",
+        "text": "Qwen 3 14B reportedly has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+        "evidence_quote": "Likewise, Qwen 3 14B has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F6",
+        "text": "Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+        "evidence_quote": "On a similar note, Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F7",
+        "text": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and slightly better than DeepSeek V3 in the author's tests, but its coding and problem solving abilities are mediocre.",
+        "evidence_quote": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and actually slightly better than DeepSeek V3 in my tests, but its coding and problem solving abilities are mediocre.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      {
+        "id": "F8",
+        "text": "The source author guesses that the trade-off is due to training data for new models having more problem solving content and proportionately less knowledge-dense content.",
+        "evidence_quote": "My guess is that this is because the training data for new models has more problem solving content and so proportionately less knowledge dense content.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      }
+    ],
+    "allowed_claims": [
+      "The source author observed a potential trade-off between world knowledge and problem-solving abilities in newer, smaller LLMs.",
+      "Specific models like Qwen 3 and GLM-4-0414 were mentioned as examples of this trend.",
+      "Gemma 3 and Llama 4 Maverick were noted as exceptions or counterpoints to the general trend.",
+      "The source author hypothesized about the cause being changes in training data composition."
+    ],
+    "forbidden_claims": [
+      "The source author's observations are universally true for all LLMs.",
+      "The specific benchmark scores or exact performance metrics mentioned are independently verified.",
+      "The models discussed are currently the absolute best or worst in any category.",
+      "The source author has personally conducted all mentioned tests on their own hardware.",
+      "The trend described is a permanent characteristic of LLM development."
+    ],
+    "essential_limitations": [
+      "The observations are based on the source author's private test questions and specific models tested.",
+      "The exact hardware, software versions, and detailed configurations used for testing are not provided.",
+      "The specific 'private test questions' are not detailed, making independent replication impossible.",
+      "The source date is 2025-05-02, meaning the information reflects the state of LLMs at that time."
+    ],
+    "missing_information": [
+      "Details of the source author's testing methodology and specific prompts.",
+      "Exact benchmark scores or quantitative data for knowledge and problem-solving.",
+      "Information on the training data composition for the models discussed.",
+      "Confirmation of these trends from other independent sources or benchmarks.",
+      "Specific model versions beyond what is mentioned (e.g., exact Qwen 3 version)."
+    ],
+    "id": "D04",
+    "brief_id": "D04",
+    "split": "tune",
+    "source_group_id": "reddit:1kde9mn",
+    "content_type": "Experience / Benchmark",
+    "source_date": "2025-05-02",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/",
+    "source_hash": "96f8d815af10f4ec3758057daf127c793d413dc138e71b0455e4587e0e707b7d",
+    "language": "English",
+    "persona": "community reader of a dated public account",
+    "quotes_checked": true
+  },
+  "draft": {
+    "title": "Has anyone else seen smaller LLMs trade world knowledge for better problem-solving?",
+    "body": "I came across an archived post from May 2025 where the author shared some intriguing observations about recent smaller LLMs. They noticed that despite newer models like Qwen 3 and GLM-4-0414 showing big jumps in coding and engineering problem-solving benchmarks, their world knowledge seemed to lag behind older, larger models—and sometimes even behind older smaller models with lower benchmark scores. For example, Qwen 3 8B reportedly had worse world knowledge than Llama 3.1 8B and Gemma 2 9B, and Qwen 3 14B was said to underperform in knowledge compared to Phi 4 and Gemma 3 12B. On the other hand, models like Llama 4 Maverick showed strong world knowledge but only mediocre problem-solving skills. The author speculated this might be due to newer training data focusing more on problem-solving content at the expense of knowledge-dense material. Given these trade-offs, has anyone else noticed similar patterns in their experience? How do you evaluate or balance these capabilities when choosing models for diverse tasks? Any insights on testing approaches or data composition that might clarify this trend would be helpful. The full post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/",
+    "fact_refs": [
+      "F1",
+      "F3",
+      "F4",
+      "F5",
+      "F7",
+      "F8"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0017",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:08:03.624210+00:00",
+    "tag": "naturalness:D04",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "67a7b391b3cdc1608a9ccfa457d30ca34bd3b6e8492f4c8f105b9dfc510566b7",
+    "actual_cost_usd": 0.0013704,
+    "budget_charge_usd": 0.0013704,
+    "reserved_upper_usd": 0.006189999999999999,
+    "input_tokens": 2122,
+    "output_tokens": 326,
+    "latency_seconds": 2.4648416000127327,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108480-1AQioqp3uyxk0ikMEyit",
+    "contract_sha256": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304"
+  },
+  "human_accepted": false
+}

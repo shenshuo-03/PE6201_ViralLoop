@@ -1,0 +1,100 @@
+{
+  "outcome": "Uncertain",
+  "dimensions": {
+    "community_fit": "Uncertain",
+    "specificity": "Uncertain",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "Uncertain",
+      "specificity": "Uncertain",
+      "information_value": "Uncertain",
+      "usefulness": "Uncertain",
+      "credibility": "Uncertain",
+      "overall": "Uncertain"
+    },
+    "swap_consistent": {
+      "community_fit": false,
+      "specificity": false,
+      "information_value": false,
+      "usefulness": false,
+      "credibility": false,
+      "overall": false
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "B",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "B",
+          "overall": "B"
+        },
+        "evidence": "Both posts preserve the core facts (F1, F2) and invite discussion appropriately. However, B better serves the community's actual needs: (1) **Community fit**: B explicitly invites experiential input ('Has anyone here experienced or studied...'), creating actionable engagement; A asks rhetorical questions about tradeoffs without grounding them in what the community can contribute. (2) **Specificity**: B acknowledges the 'enshittification' language while flagging its vagueness ('details on these changes are sparse'), respecting the brief's essential_limitations; A omits this uncertainty marker, implying clarity where none exists. (3) **Information value**: B frames the core tension—balancing openness and order without central authority—as the focal question; A repeats the concern without sharpening what distinguishes this migration decision. (4) **Usefulness**: B signals what expertise would help (decentralized platform case studies, moderation patterns); A asks for abstract 'examples' and 'tradeoffs' without specifying what the community uniquely knows. (5) **Credibility**: B's acknowledgment of sparse details on 'latest developments' and 'enshittification' aligns with the brief's essential_limitations and forbidden_claims (avoiding definitive claims about platform degradation); A treats concerns as established fact without this epistemic restraint. Both avoid forbidden claims, but B's framing is more honest about what remains unknown and what the community can actually resolve."
+      },
+      "usage": {
+        "run_id": "v002-r0434",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:19:26.920142+00:00",
+        "tag": "judge_final:F01:V2_vs_V1:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "a1fca2451311dfa5fd75a6954fb3918eb143f9d1333e9b80daa2ece997e4137d",
+        "actual_cost_usd": 0.004084,
+        "budget_charge_usd": 0.004084,
+        "reserved_upper_usd": 0.012291,
+        "input_tokens": 2069,
+        "output_tokens": 403,
+        "latency_seconds": 5.412296000024071,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112761-HbrI0howLN5ikrxAfX3Q",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "Tie",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts accurately ground concerns in F1–F2 without inventing details. A frames the question narrowly around 'control by moderators' and asks for decentralized platform case studies, which is relevant but somewhat assumes the problem is already established. B reframes the concern as a genuine tension—acknowledging both the centralization worry AND potential downsides (moderation consistency, discoverability)—making it more balanced for community discussion. B's closing ('how others weigh the balance') invites genuine deliberation rather than validation of a premise. A's phrasing ('enshittification' in quotes, 'details on these changes are sparse') signals skepticism but doesn't fully leverage that to open dialogue. B avoids the \"enshittification\" framing entirely, staying closer to the concrete concern (moderator control) while explicitly naming tradeoffs, which better serves the brief's goal of 'open discussion' about feasibility and desirability. Both cite F1–F2 appropriately and avoid forbidden claims. B's specificity to 'moderation consistency or discoverability' as concrete Fediverse challenges is marginally more actionable than A's generic 'community cohesion' language. Neither introduces unsupported external facts."
+      },
+      "usage": {
+        "run_id": "v002-r0435",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:19:31.915581+00:00",
+        "tag": "judge_final:F01:V2_vs_V1:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "2a09ea7767c5eeb260e1101be93f80def1ba51d1b38402caeee039f7a8dbac9e",
+        "actual_cost_usd": 0.003829,
+        "budget_charge_usd": 0.003829,
+        "reserved_upper_usd": 0.012291,
+        "input_tokens": 2069,
+        "output_tokens": 352,
+        "latency_seconds": 4.967063199990662,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112766-FHVpgbGzkqLXMta2N5Kc",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F01",
+  "comparison": "V2_vs_V1",
+  "older": "V1",
+  "newer": "V2",
+  "at": "2026-10-04T11:19:31.937744+00:00"
+}

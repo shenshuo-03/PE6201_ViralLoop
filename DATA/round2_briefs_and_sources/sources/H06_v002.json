@@ -1,0 +1,14 @@
+{
+  "brief_id": "H06",
+  "source_group_id": "reddit:1k6o4wj",
+  "id": "1k6o4wj",
+  "split": "validation_source",
+  "content_type": "Experience / Benchmark",
+  "source_date": "1745487556",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k6o4wj/mcp_an_easy_explanation/",
+  "source_title": "MCP, an easy explanation",
+  "source_text": "When I tried looking up what an MCP is, I could only find tweets like “omg how do people not know what MCP is?!?”\n\nSo, in the spirit of not gatekeeping, here’s my understanding:\n\nMCP stands for Model Context Protocol. The purpose of this protocol is to define a standardized and flexible way for people to build AI agents with.\n\nMCP has two main parts:\n\nThe MCP Server & The MCP Client\n\nThe MCP Server is just a normal API that does whatever it is you want to do. The MCP client is just an LLM that knows your MCP server very well and can execute requests.\n\nLet’s say you want to build an AI agent that gets data insights using natural language. \n\nWith MCP, your MCP server exposes different capabilities as endpoints… maybe /users to access user information and /transactions to get sales data.\n\nNow, imagine a user asks the AI agent: \"What was our total revenue last month?\"\n\nThe LLM from the MCP client receives this natural language request. Based on its understanding of the available endpoints on your MCP server, it determines that \"total revenue\" relates to \"transactions.\" \n\nIt then decides to call the /transactions endpoint on your MCP server to get the necessary data to answer the user's question. \n\nIf the user asked \"How many new users did we get?\", the LLM would instead decide to call the /users endpoint.\n\nLet me know if I got that right or if you have any questions!\n\nI’ve been learning more about agent protocols and post my takeaways on X @joshycodes. Happy to talk more if anyone’s curious!",
+  "collected_at": "2026-10-04T10:03:39.113767+00:00",
+  "historical_split": "train",
+  "source_hash": "d70222849e20d5820eb588041fadb63c69af4bc7759329e3ebc2ea69d60cdfb3"
+}

@@ -1,0 +1,34 @@
+{
+  "draft": {
+    "title": "Using Local LLMs to Improve HTML-to-Markdown Conversion: Challenges with Media-Heavy and JS-Only Sites",
+    "body": "A project shared on r/LocalLLaMA describes converting HTML web pages to high-quality Markdown using local LLMs like Qwen2.5-7B/8B with llama.cpp on consumer GPUs (e.g., 4070/4080/4090), running fully offline. It combines heuristic HTML analysis via BeautifulSoup to detect content focus and framework fingerprints with LLM-generated JSON extraction strategies and AI-based quality scoring. While results on standard article or blog pages often score good to excellent, the tool struggles with media-heavy or JavaScript-only sites without browser rendering. Processing a single page takes about 10–20 seconds on a 4070 GPU, but batch processing hundreds of pages may require optimization. Given these constraints, how do others handle dynamic or media-rich sites relying solely on local LLMs without browser engines? Are there practical methods to improve extraction quality or speed, such as pre-rendering, hybrid heuristics, or model fine-tuning? Also, what evaluation approaches beyond AI scoring have you found effective for benchmarking Markdown extraction quality?",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0040",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:17:34.007483+00:00",
+    "tag": "naturalness:S01:fact_repair",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "63d6a4e2d8b39db3833bfdb08de667f5935926646ccd4ee00f6e453960be32a2",
+    "actual_cost_usd": 0.0018128,
+    "budget_charge_usd": 0.0018128,
+    "reserved_upper_usd": 0.008211999999999999,
+    "input_tokens": 3432,
+    "output_tokens": 275,
+    "latency_seconds": 2.7551800000073854,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109051-1eA7mM9t1LvIoNlE5Dc5",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

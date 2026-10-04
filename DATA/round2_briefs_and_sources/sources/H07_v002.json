@@ -1,0 +1,14 @@
+{
+  "brief_id": "H07",
+  "source_group_id": "reddit:1k2ycef",
+  "id": "1k2ycef",
+  "split": "validation_source",
+  "content_type": "Discussion / Opinion",
+  "source_date": "1745075213",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1k2ycef/ive_built_a_lightweight_hallucination_detector/",
+  "source_title": "I've built a lightweight hallucination detector for RAG pipelines – open source, fast, runs up to 4K tokens",
+  "source_text": "Hallucinations are still one of the biggest headaches in RAG pipelines, especially in tricky domains (medical, legal, etc). Most detection methods either:\n\n* **Has context window limitations**, particularly in encoder-only models\n* **Has high inference costs** from LLM-based hallucination detectors\n\nSo we've put together [**LettuceDetect**](https://github.com/KRLabsOrg/LettuceDetect) — an open-source, encoder-based framework that flags hallucinated spans in LLM-generated answers. No LLM required, runs faster, and integrates easily into any RAG setup.\n\n# 🥬 Quick highlights:\n\n* **Token-level detection** → tells you exactly which parts of the answer aren't backed by your retrieved context\n* **Long-context ready** → built on ModernBERT, handles up to 4K tokens\n* **Accurate & efficient** → hits 79.22% F1 on the RAGTruth benchmark, competitive with fine-tuned LLMs\n* **MIT licensed** → comes with Python packages, pretrained models, Hugging Face demo\n\n# Links:\n\n* GitHub: [https://github.com/KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect)\n* Blog: [https://huggingface.co/blog/adaamko/lettucedetect](https://huggingface.co/blog/adaamko/lettucedetect)\n* Preprint: [https://arxiv.org/abs/2502.17125](https://arxiv.org/abs/2502.17125)\n* Demo + models: [https://huggingface.co/KRLabsOrg](https://huggingface.co/KRLabsOrg)\n\nCurious what you think here — especially if you're doing local RAG, hallucination eval, or trying to keep things lightweight. Also working on real-time detection (not just post-gen), so open to ideas/collabs there too.",
+  "collected_at": "2026-10-04T10:03:39.128775+00:00",
+  "historical_split": "train",
+  "source_hash": "38b1bed2c748d5da4a359cac453b63f34c025c7d66fc2aa6c78a2f5fa906ef93"
+}

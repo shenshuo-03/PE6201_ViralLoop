@@ -1,0 +1,14 @@
+{
+  "brief_id": "F08",
+  "source_group_id": "reddit:1kx1kct",
+  "id": "1kx1kct",
+  "split": "final",
+  "content_type": "Experience / Benchmark",
+  "source_date": "1748386808",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kx1kct/what_am_i_doing_wrong_qwen38b/",
+  "source_title": "What am I doing wrong (Qwen3-8B)?",
+  "source_text": "Qwen3-8B Q6_K_L in LMStudio. TitanXP (12GB VRAM) gpu, 32GB ram. \n\nAs far as I read, this model should work fine with my card but it's incredibly slow. It keeps \"thinking\" for the simplest prompts. \n\nFirst thing I tried was saying \"Hello\" and it immediately starting doing math and trying to figure out the solution to a Pythagorean Theorm problem I didn't give it. \n\nI told it to \"Sat Hi\". It took \"thought for 14.39 seconds\" then said \"hello\". \n\nMistral Nemo Instruct 2407 Q4_K_S (12B parameter model) runs significantly faster even though it's a larger model. \n\nIs this simply a quantization issue or is something wrong here? ",
+  "collected_at": "2026-10-04T10:03:39.108627+00:00",
+  "historical_split": "train",
+  "source_hash": "2a8ffa8a5d3369812c83deea8b9d19a0960c7ebf3975e93d8756128aa1322331"
+}

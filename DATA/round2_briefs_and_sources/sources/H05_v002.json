@@ -1,0 +1,14 @@
+{
+  "brief_id": "H05",
+  "source_group_id": "reddit:1jj3hjx",
+  "id": "1jj3hjx",
+  "split": "validation_source",
+  "content_type": "Experience / Benchmark",
+  "source_date": "1742854136",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jj3hjx/searching_for_good_audio_tokenizer/",
+  "source_title": "Searching for Good Audio Tokenizer",
+  "source_text": "Hello! I’m looking for an audio tokenizer. I’ve tried using Mel-spectrograms and K-means, but those methods didn’t work well. I need a tokenizer that operates at 48kHz (I don’t want any other sample rates) and can make around 50 tokens per second of audio. The token range should be either 0-2048 or 0-4096.\n\nIt needs to be trainable from scratch on macOS (please do not suggest pre-trained models) and should function as a standalone system. This means I want to train it as a single .pth file without relying on other models like HuBERT. Additionally, it should be versatile enough to handle various types of audio, including speech, music, and even my fart sounds. Thank you!",
+  "collected_at": "2026-10-04T10:03:39.112766+00:00",
+  "historical_split": "train",
+  "source_hash": "04bb36dda5f874d6df7a17910cd477296d192e0b2e8cce39041508661dac5c1f"
+}

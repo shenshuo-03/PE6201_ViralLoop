@@ -1,0 +1,100 @@
+{
+  "topic": "MiniSearch capabilities and local LLM integration",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+  "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+  "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+  "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+  "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "MiniSearch has been updated to gather more textual and graphical results to provide grounded answers for follow-up questions.",
+      "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F2",
+      "text": "All links and images collected during a session will keep being listed, with the only limit being system memory.",
+      "evidence_quote": "All links and images collected during a session will keep being listed, and the only limit will be your system memory.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F3",
+      "text": "The chat runs on a sliding window where the context is always kept under 4k tokens, so users don't need to worry about context size.",
+      "evidence_quote": "You don't need to worry about context size, as the chat runs on a sliding window where the context is always kept under 4k tokens.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F4",
+      "text": "The web app is optimized to work on mobile browsers, allowing users to probably finish their research before running out of memory on these devices.",
+      "evidence_quote": "Also, the web app is optimized to work on mobile browsers, so even on these devices you'll probably finish your research before running out of memory.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F5",
+      "text": "MiniSearch can be run on a machine via Docker, or a public instance is available as a Hugging Face Space.",
+      "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available as a Hugging Face Space here:",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F6",
+      "text": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in the browser and comment about web search results.",
+      "evidence_quote": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in your browser and comment about the web search results, so that's what it defaults to.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F7",
+      "text": "Users who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic) can select \"Remote server (API)\" in the \"AI Processing Location\" menu option.",
+      "evidence_quote": "But for those who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic), which can respond faster, they just need to select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option,",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    },
+    {
+      "id": "F8",
+      "text": "To configure remote servers, users need to configure their API Base URL, Access Key, and Model.",
+      "evidence_quote": "and configure their API Base URL, Access Key and Model.",
+      "status": "source-author report, not independently verified measurement",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/"
+    }
+  ],
+  "allowed_claims": [
+    "MiniSearch aims to improve web research by providing more comprehensive results.",
+    "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+    "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+  ],
+  "forbidden_claims": [
+    "MiniSearch guarantees a specific level of research accuracy.",
+    "The tool has been tested for performance on all mobile devices.",
+    "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+    "The 4k token limit is a universal constraint for all LLM interactions."
+  ],
+  "essential_limitations": [
+    "The exact system memory limit for the local instance is not specified beyond 'your system memory'.",
+    "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+    "The specific small LLMs used by the default browser-based processing are not detailed."
+  ],
+  "missing_information": [
+    "Details on the specific small LLMs used for default browser processing.",
+    "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+    "Information on the 'graphical results' mentioned in the update."
+  ],
+  "id": "H08",
+  "brief_id": "H08",
+  "split": "validation_source",
+  "source_group_id": "reddit:1l8c3nb",
+  "content_type": "Discussion / Opinion",
+  "source_date": "2025-06-10",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l8c3nb/minisearch_updated_go_deeper_in_your_web_research/",
+  "source_hash": "a6fa8652142ba9553db5d37c855c232b1571e9d00ef31abcf35477a19617ce17",
+  "language": "English",
+  "persona": "community reader of a dated public account",
+  "quotes_checked": true,
+  "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+}

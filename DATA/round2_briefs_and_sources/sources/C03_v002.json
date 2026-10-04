@@ -1,0 +1,14 @@
+{
+  "brief_id": "C03",
+  "source_group_id": "reddit:1jzpniw",
+  "id": "1jzpniw",
+  "split": "calibration_source",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "1744717116",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jzpniw/any_draft_model_that_works_well_with_the_march/",
+  "source_title": "Any draft model that works (well?) with the March release of QwQ-32B?",
+  "source_text": "Hi all,\n\nI'm trying to run the March release of QwQ-32B using llama.cpp, but struggling to find a compatible draft model. I have tried several GGUFs from HF, and keep getting the following error:\n\n    the draft model 'xxxxxxxxxx.gguf' is not compatible with the target model '/models/QwQ-32B.Q8_0.gguf'\n\nFor reference, I'm using unsloth/QwQ-32B-GGUF. \n\nThis is how I'm running llama.cpp (dual E5-2699v4, 44 physical cores):\n\n    llama-server -m /models/QwQ-32B.Q8_0.gguf\n    -md /models/qwen2.5-1.5b-instruct-q8_0.gguf\n    --sampling-seq k --top-k 1 -fa --temp 0.0 -sm row --no-mmap\n    -ngl 99 -ngld 99 --port 9005 -c 50000\n    --draft-max 16 --draft-min 5 --draft-p-min 0.5\n    --override-kv tokenizer.ggml.add_bos_token=bool:false\n    --cache-type-k q8_0 --cache-type-v q8_0\n    --device CUDA2,CUDA3 --device-draft CUDA3 --tensor-split 0,0,1,1\n    --slots --metrics --numa distribute -t 40 --no-warmup\n\nI have tried 5 different Qwen2.5-1.5B-Instruct models all without success.",
+  "collected_at": "2026-10-04T10:03:39.094221+00:00",
+  "historical_split": "train",
+  "source_hash": "c79a843c4acd128ef90378f5e6a0df921edfcd7b02a84fe4b7031b6563c286b3"
+}

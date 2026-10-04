@@ -1,0 +1,14 @@
+{
+  "brief_id": "D03",
+  "source_group_id": "reddit:1idi5cr",
+  "id": "1idi5cr",
+  "split": "tune",
+  "content_type": "Experience / Benchmark",
+  "source_date": "1738224048",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/",
+  "source_title": "I did a very short perplexity test with DeepSeek R1 with different numbers of experts and also some of the distilled models",
+  "source_text": "First: This test only ran 8 blocks (out of ~560) so it should be taken with a massive grain of salt. I'd say based on my experience running perplexity on models you usually don't end up with something completely different from the trend at the beginning but it's definitely not impossible. You also shouldn't compare perplexity here with other unrelated models, perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.\n\nExperts | PPL\n-|-\n      8 | 3.4155, 4.2311, 3.0817, 2.8601, 2.6933, 2.5792, 2.5123, 2.5239\n     16 | 3.5350, 4.3594, 3.0307, 2.8619, 2.7227, 2.6664, 2.6288, 2.6568\n      6 | 3.4227, 4.2400, 3.1610, 2.9933, 2.8307, 2.7110, 2.6253, 2.6488\n      4 | 3.5790, 4.5984, 3.5135, 3.4490, 3.2952, 3.2563, 3.1883, 3.2978\n   VMv2 | 4.6217, 6.3318, 4.8642, 3.6984, 3.0867, 2.8033, 2.6044, 2.5547\n      3 | 3.9209, 4.9318, 4.0944, 4.2450, 4.2071, 4.3095, 4.3150, 4.6082\n LR170B | 4.1261, 4.9672, 5.0192, 5.1777, 5.3557, 5.6300, 5.8582, 6.2350\n QR132B | 5.9082, 7.5575, 6.0677, 5.0672, 4.8776, 4.8903, 4.7712, 4.7167\n      2 | 6.2387, 7.7455\n\nLegend:\n\n* Normal = DeepSeek-R1-UD-IQ1_M - https://unsloth.ai/blog/deepseekr1-dynamic\n* `LR170B` = DeepSeek-R1-Distill-Llama-70B-Q5_K_M\n* `QR132B` = DeepSeek-R1-Distill-Qwen-32B-Q6_K\n* `VMv2` = Virtuoso-Medium-v2-Q6_K (32B model) - https://huggingface.co/arcee-ai/Virtuoso-Medium-v2-GGUF\n\nTable sorted by average PPL, lower PPL is better. Perplexity test run with block size 512. You can override the number of experts for the llama.cpp commandline apps (`llama-cli`, `llama-perplexity`, etc) using `--override-kv deepseek2.expert_used_count=int:4` or whatever.This is only meaningful on actual MoE models, not the distills.\n\nAgain, this really isn't a scientific test, at most it should be considered a place to start discussion. To the extent that we can actually trust these results, the full DS model even with very aggressive quantization seems to beat the normal distills until you limit it to 2 experts. The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.\n\nI tried with 10 and 12 experts and generating perplexity failed with NaNs.",
+  "collected_at": "2026-10-04T10:03:39.105526+00:00",
+  "historical_split": "train",
+  "source_hash": "fbb6f293cacd1ccb151262c7f8d24c3a89013161a8c167346184e7016a6aecda"
+}

@@ -1,0 +1,138 @@
+{
+  "loop_version": "v002",
+  "brief": {
+    "topic": "Audiobook Creation with New TTS Support",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discussing the capabilities and potential of the recently updated Audiobook Creator application, specifically its integration with Orpheus TTS.",
+    "context": "A community member is sharing information about version 1.4 of an open-source audiobook creator application, highlighting new features like Orpheus TTS support and automatic emotion tag addition.",
+    "motivation": "This question is worth discussing to understand the practical implications and user experiences with the new Orpheus TTS integration and LLM-driven emotion tagging in audiobook creation.",
+    "desired_response": "Community members are invited to share their thoughts on the new features, discuss potential use cases, and provide feedback on the audiobook samples.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The Audiobook Creator application has been updated to version 1.4, introducing support for Orpheus TTS alongside Kokoro.",
+        "evidence_quote": "I'm releasing a new version of my [audiobook creator app](https://github.com/prakharsr/audiobook-creator) which now supports Kokoro and Orpheus.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F2",
+        "text": "Orpheus TTS is noted for supporting high-quality audio and more expressive speech.",
+        "evidence_quote": "This release adds support for [Orpheus TTS](https://github.com/canopyai/Orpheus-TTS) which supports high-quality audio and more expressive speech.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F3",
+        "text": "The new version can automatically add emotion tags to text using an LLM, which Orpheus TTS supports.",
+        "evidence_quote": "This version also adds support for adding emotion tags automatically using an LLM.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F4",
+        "text": "Audio generation with Orpheus TTS is facilitated through a dedicated FastAPI Server.",
+        "evidence_quote": "Audio generation using Orpheus is done using my dedicated [Orpheus TTS FastAPI Server](https://github.com/prakharsr/Orpheus-TTS-FastAPI) repository.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F5",
+        "text": "The application can create M4B audiobooks with features like covers, metadata, and chapter timestamps.",
+        "evidence_quote": "Creates compatible audiobooks with covers, metadata, chapter timestamps etc. in M4B format.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F6",
+        "text": "The Audiobook Creator supports multiple input formats (EPUB, PDF) and various output audio formats.",
+        "evidence_quote": "Multi-Format Input Support: Converts books from various formats (EPUB, PDF, etc.) into plain text.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F7",
+        "text": "The application offers Docker Support, including pre-built Docker images or building with Docker Compose.",
+        "evidence_quote": "Docker Support: Use pre-built docker images/ build using docker compose to save time and for a smooth user experience.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      },
+      {
+        "id": "F8",
+        "text": "The Audiobook Creator is open source and licensed under GPL v3.",
+        "evidence_quote": "Open Source: Licensed under GPL v3.",
+        "status": "source-author report, not independently verified measurement",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/"
+      }
+    ],
+    "allowed_claims": [
+      "The Audiobook Creator application supports Orpheus TTS.",
+      "The application can add emotion tags using an LLM.",
+      "The application generates M4B audiobooks.",
+      "The application supports multiple input and output formats.",
+      "The Audiobook Creator application is open source under GPL v3."
+    ],
+    "forbidden_claims": [
+      "The user has personally tested and verified the performance of Orpheus TTS.",
+      "The specific LLM used for emotion tagging is identified.",
+      "The exact performance improvements from async parallel processing are quantified.",
+      "User satisfaction with the generated audiobooks is universally high."
+    ],
+    "essential_limitations": [
+      "The specific LLM model used for emotion tag addition is not explicitly stated.",
+      "Details on the hardware or specific configurations used for testing are not provided.",
+      "The exact nature of the 'advanced NLP techniques' for character identification is not elaborated upon."
+    ],
+    "missing_information": [
+      "Specific examples of emotion tags and their impact on speech.",
+      "Details on the character identification accuracy.",
+      "User feedback on the quality of audiobooks generated with Orpheus TTS."
+    ],
+    "id": "S02",
+    "brief_id": "S02",
+    "split": "selection",
+    "source_group_id": "reddit:1lyw5u2",
+    "content_type": "Discussion / Opinion",
+    "source_date": "2025-07-13",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lyw5u2/audiobook_creator_v14_added_support_for_orpheus/",
+    "source_hash": "6329c6f0857b058bc08bb526fc52d18db1e5138db1432dae9600ce89c24fa28f",
+    "language": "English",
+    "persona": "community reader of a dated public account",
+    "quotes_checked": true,
+    "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+  },
+  "draft": {
+    "title": "Exploring Audiobook Creator v1.4's Orpheus TTS Integration and LLM-Driven Emotion Tagging",
+    "body": "The recently released Audiobook Creator v1.4 introduces support for Orpheus TTS alongside Kokoro, aiming to produce higher-quality, more expressive speech. It also adds automatic emotion tagging to text via an LLM, which Orpheus can utilize to enhance narration. The app generates M4B audiobooks with covers, metadata, and chapter timestamps and accepts multiple input formats like EPUB and PDF. Audio generation with Orpheus is handled through a dedicated FastAPI server, and the whole project is open source under GPL v3. However, details such as which LLM is used for emotion tagging, examples of emotion tags, and user feedback on the actual speech quality remain unclear. Has anyone here experimented with Orpheus TTS in this setup or tested the emotion tagging feature? How noticeable and effective are the emotional cues in the audiobook output? Insights on character identification accuracy or practical tips for configuring the FastAPI server would also be valuable.",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F8"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0027",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:14:08.384133+00:00",
+    "tag": "naturalness:S02",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ab8dbf8ec77161f3e0d7dae9bf96e04fa9accdcb19105acf35cfdd76c527e608",
+    "actual_cost_usd": 0.001134,
+    "budget_charge_usd": 0.001134,
+    "reserved_upper_usd": 0.0055124,
+    "input_tokens": 1831,
+    "output_tokens": 251,
+    "latency_seconds": 2.0895930000115186,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108846-wAWu04BCvPYNIh20v84c",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  },
+  "human_accepted": false
+}

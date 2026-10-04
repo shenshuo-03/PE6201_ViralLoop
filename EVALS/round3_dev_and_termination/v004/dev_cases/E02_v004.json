@@ -1,0 +1,298 @@
+{
+  "brief_id": "E02",
+  "brief": {
+    "topic": "Performance of llama.cpp on mobile devices",
+    "audience": "Developers and researchers interested in on-device LLM performance",
+    "content_archetype": "A",
+    "speaker_role": "community analyst or resource curator; not original author",
+    "source_relationship": "third_party_archive",
+    "source_date": "2025-01-13",
+    "posting_intent": "ask_for_help",
+    "current_context": "Investigate whether a historical phone-speed report is sufficient to diagnose GPU utilization; do not claim ownership or reproduce the measurements.",
+    "core_value": "Understanding and optimizing LLM inference performance on edge devices.",
+    "core_hook": {
+      "text": "Is the Adreno GPU in a Samsung Galaxy S22 Ultra being effectively utilized by llama.cpp, or are observed speeds of less than 2 tokens/sec for Mistral-NeMo-Minitron-8B-Instruct-Q4_0 indicative of a problem?",
+      "fact_refs": [
+        "f1",
+        "f2"
+      ]
+    },
+    "facts": [
+      {
+        "id": "f1",
+        "text": "The user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra.",
+        "evidence_quote": "Fast forward to today when I was finally able to compile and run llama.cpp on my phone (a Samsung Galaxy S22 Ultra)",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "The user is experiencing speeds of less than 2 tokens/sec with the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model on their phone.",
+        "evidence_quote": "I'm getting <2 tokens/sec with this model",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The user's GPU-less AMD machine achieved 6 tokens/sec with the same model.",
+        "evidence_quote": "for reference on my GPU-less AMD I was getting 6 tokens/sec",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "The user questions if the phone's GPU is being used at all.",
+        "evidence_quote": "What I'm getting makes me question if the GPU of the phone is used at all.",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The user is referencing a Qualcomm.com blog post about an OpenCL GPU backend for llama.cpp on Qualcomm Adreno GPUs.",
+        "evidence_quote": "based on \\[this blog post at Qualcomm.com\\](https://www.qualcomm.com/developer/blog/2024/11/introducing-new-opn-cl-gpu-backend-llama-cpp-for-qualcomm-adreno-gpu)",
+        "status": "author_report"
+      },
+      {
+        "id": "f6",
+        "text": "The user previously tested small edge models on a GPU-less AMD machine.",
+        "evidence_quote": "So about a month ago I had created \\[a very rudimentary test of models running on Edge devices\\](https://www.reddit.com/r/LocalLLaMA/comments/1hft45b/list\\_of\\_smalledge\\_models\\_i\\_tested\\_without\\_a\\_gpu/) (i.e. potatoes like my AMD machine without a GPU).",
+        "status": "author_report"
+      }
+    ],
+    "limitations": [
+      "The source text is a single user's report and may not represent general performance.",
+      "No independent verification of the reported speeds or GPU utilization is provided.",
+      "The specific configuration and background processes on the phone are not detailed."
+    ],
+    "allowed_claims": [
+      "Users are investigating llama.cpp performance on mobile devices.",
+      "Specific LLM models and hardware configurations are being tested.",
+      "Observed inference speeds can vary significantly.",
+      "Questions exist regarding the effective utilization of mobile GPUs for LLM inference."
+    ],
+    "forbidden_claims": [
+      "The speaker has definitively proven that llama.cpp is not utilizing the Adreno GPU.",
+      "The reported speeds are universally experienced by all users.",
+      "The Qualcomm blog post guarantees specific performance metrics.",
+      "The speaker is an expert in mobile GPU optimization for LLMs."
+    ],
+    "decision": "Identify what evidence would distinguish GPU utilization from a bottleneck in this historical report.",
+    "desired_help": "Which diagnostics are needed before attributing the reported speed to unused GPU acceleration?",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i0nftp/can_someone_help_verify_these_speeds_im_getting/",
+    "scenario_id": "E02-scenario-v004",
+    "scenario_version": "v004",
+    "source_facts": [
+      {
+        "id": "f1",
+        "text": "The user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra.",
+        "evidence_quote": "Fast forward to today when I was finally able to compile and run llama.cpp on my phone (a Samsung Galaxy S22 Ultra)",
+        "status": "author_report"
+      },
+      {
+        "id": "f2",
+        "text": "The user is experiencing speeds of less than 2 tokens/sec with the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model on their phone.",
+        "evidence_quote": "I'm getting <2 tokens/sec with this model",
+        "status": "author_report"
+      },
+      {
+        "id": "f3",
+        "text": "The user's GPU-less AMD machine achieved 6 tokens/sec with the same model.",
+        "evidence_quote": "for reference on my GPU-less AMD I was getting 6 tokens/sec",
+        "status": "author_report"
+      },
+      {
+        "id": "f4",
+        "text": "The user questions if the phone's GPU is being used at all.",
+        "evidence_quote": "What I'm getting makes me question if the GPU of the phone is used at all.",
+        "status": "author_report"
+      },
+      {
+        "id": "f5",
+        "text": "The user is referencing a Qualcomm.com blog post about an OpenCL GPU backend for llama.cpp on Qualcomm Adreno GPUs.",
+        "evidence_quote": "based on \\[this blog post at Qualcomm.com\\](https://www.qualcomm.com/developer/blog/2024/11/introducing-new-opn-cl-gpu-backend-llama-cpp-for-qualcomm-adreno-gpu)",
+        "status": "author_report"
+      },
+      {
+        "id": "f6",
+        "text": "The user previously tested small edge models on a GPU-less AMD machine.",
+        "evidence_quote": "So about a month ago I had created \\[a very rudimentary test of models running on Edge devices\\](https://www.reddit.com/r/LocalLLaMA/comments/1hft45b/list\\_of\\_smalledge\\_models\\_i\\_tested\\_without\\_a\\_gpu/) (i.e. potatoes like my AMD machine without a GPU).",
+        "status": "author_report"
+      }
+    ],
+    "pre_generation_repair": "source-grounded assistant correction; not a human evaluation label"
+  },
+  "drafts": [
+    {
+      "title": "Assessing llama.cpp Performance on Samsung Galaxy S22 Ultra: Is the Adreno GPU Being Utilized?",
+      "body": "A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and reported inference speeds of less than 2 tokens per second using the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model (f1, f2). For comparison, the same model ran at about 6 tokens per second on a GPU-less AMD machine (f3, f6). This discrepancy raises the question of whether the phone’s Adreno GPU is effectively engaged during inference (f4).\n\nThe user referenced a Qualcomm blog post describing an OpenCL GPU backend for llama.cpp targeting Adreno GPUs (f5), but it’s unclear if this backend was enabled or properly configured in their setup. Without detailed diagnostics—such as GPU utilization metrics, logs confirming OpenCL execution, or profiling data—it’s difficult to determine if the slow speed is due to lack of GPU acceleration or other bottlenecks.\n\nWhat specific diagnostics or tools would best verify whether the Adreno GPU is active during llama.cpp runs on mobile? Identifying this could help distinguish between configuration issues and inherent performance limits on the device.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "title": "Diagnosing llama.cpp Performance on Galaxy S22 Ultra: How to Verify Adreno GPU Utilization?",
+      "body": "A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and reported inference speeds of less than 2 tokens per second using the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model (f1, f2). Interestingly, the same model ran at about 6 tokens per second on a GPU-less AMD machine (f3). This discrepancy led to questions about whether the phone’s Adreno GPU is actually being leveraged during inference (f4). The user referenced a Qualcomm blog post describing an OpenCL GPU backend for llama.cpp on Adreno GPUs (f5), but no details on the phone’s configuration or runtime diagnostics were provided. Given this single-user report and the lack of independent verification, it’s unclear if the low speed is due to unused GPU acceleration, CPU bottlenecks, or other factors. What specific diagnostics or profiling tools would help confirm whether the Adreno GPU is active during llama.cpp inference on this device? Identifying GPU utilization metrics versus CPU load or memory stalls seems essential before concluding about performance limitations.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ]
+    }
+  ],
+  "variants": [
+    "G0",
+    "G1"
+  ],
+  "quality": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 0 accurately reflects the source text and adheres to the brief's constraints. It correctly attributes claims to the author and avoids making definitive statements about GPU utilization, instead posing questions about diagnostics. The title and body are in agreement, and all factual claims are supported by the provided facts.",
+        "body_words": 162,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true,
+        "independent_audit": {
+          "index": 0,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "The draft accurately reflects the source material, maintaining the speaker's role as a community analyst. It correctly attributes all claims to the original user's report and avoids making any definitive statements about GPU utilization. The title and body are consistent, and essential context from the source is included. No unsupported or unverified claims are present."
+        }
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "speaker_pass": true,
+        "essential_context_pass": true,
+        "title_body_pass": true,
+        "unsupported_claims": [],
+        "unverified_claims": [],
+        "reason": "Draft 1 successfully meets all criteria. It accurately represents the source material, stays within the bounds of the brief by focusing on diagnostic questions rather than definitive claims, and maintains title-body agreement. All factual assertions are grounded in the provided source facts.",
+        "body_words": 159,
+        "unknown_refs": [],
+        "copy_spans": [],
+        "format_pass": true,
+        "hard_pass": true,
+        "independent_audit": {
+          "index": 1,
+          "factual_pass": true,
+          "speaker_pass": true,
+          "essential_context_pass": true,
+          "title_body_pass": true,
+          "unsupported_claims": [],
+          "unverified_claims": [],
+          "reason": "The draft accurately summarizes the user's report and inquiry, adhering to the speaker's role. It correctly attributes all factual claims to the original user and avoids making any definitive conclusions about the cause of the performance. The title and body are aligned, and necessary context is provided. There are no unsupported or unverified claims."
+        }
+      }
+    ]
+  },
+  "translation": {
+    "task_zh": {
+      "content_archetype": "A",
+      "posting_intent": "寻求帮助",
+      "current_context": "调查历史手机速度报告是否足以诊断GPU利用率；不声称所有权或复制测量数据。",
+      "core_value": "理解并优化边缘设备上的大型语言模型推理性能。",
+      "source_date": "2025-01-13",
+      "scenario_note": "受控产品输入，非第三方存档证据"
+    },
+    "drafts": [
+      {
+        "title": "评估llama.cpp在三星Galaxy S22 Ultra上的性能：Adreno GPU是否被利用？",
+        "body": "一位用户在三星Galaxy S22 Ultra上编译并运行了llama.cpp，报告使用Mistral-NeMo-Minitron-8B-Instruct-Q4_0模型的推理速度低于每秒2个token（f1，f2）。作为对比，同一模型在无GPU的AMD机器上运行速度约为每秒6个token（f3，f6）。这一差异引发了对手机Adreno GPU在推理过程中是否有效参与的疑问（f4）。\n\n该用户引用了高通博客文章，描述了针对Adreno GPU的llama.cpp OpenCL GPU后端（f5），但不清楚该后端是否在其环境中启用或正确配置。缺乏详细的诊断信息——如GPU利用率指标、确认OpenCL执行的日志或性能分析数据——使得难以判断速度缓慢是由于缺乏GPU加速还是其他瓶颈。\n\n哪些具体的诊断工具或方法最能验证llama.cpp运行时Adreno GPU是否处于活跃状态？识别这一点有助于区分配置问题与设备固有性能限制。"
+      },
+      {
+        "title": "诊断llama.cpp在Galaxy S22 Ultra上的性能：如何验证Adreno GPU利用率？",
+        "body": "一位用户在三星Galaxy S22 Ultra上编译并运行了llama.cpp，报告使用Mistral-NeMo-Minitron-8B-Instruct-Q4_0模型的推理速度低于每秒2个token（f1，f2）。有趣的是，同一模型在无GPU的AMD机器上运行速度约为每秒6个token（f3）。这一差异引发了对手机Adreno GPU是否真正被用于推理的疑问（f4）。该用户引用了高通博客文章，描述了针对Adreno GPU的llama.cpp OpenCL GPU后端（f5），但未提供手机配置或运行时诊断的详细信息。鉴于这是单一用户报告且缺乏独立验证，目前尚不清楚低速是由于未使用GPU加速、CPU瓶颈还是其他因素。哪些具体的诊断或性能分析工具有助于确认该设备上llama.cpp推理时Adreno GPU是否处于活跃状态？在得出性能限制结论前，识别GPU利用率指标与CPU负载或内存阻塞的区别似乎至关重要。"
+      }
+    ]
+  },
+  "numeric_translation_checks": [
+    {
+      "english": [
+        "0",
+        "1",
+        "2",
+        "22",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "chinese": [
+        "0",
+        "1",
+        "2",
+        "22",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "same": true
+    },
+    {
+      "english": [
+        "0",
+        "1",
+        "2",
+        "22",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "chinese": [
+        "0",
+        "1",
+        "2",
+        "22",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "same": true
+    }
+  ],
+  "plan": {
+    "content_archetype": "A",
+    "primary_value": "utility",
+    "strongest_grounded_hook": "Is the Adreno GPU in a Samsung Galaxy S22 Ultra being effectively utilized by llama.cpp, or are observed speeds of less than 2 tokens/sec for Mistral-NeMo-Minitron-8B-Instruct-Q4_0 indicative of a problem? (f1, f2; source date: 2025-01-13; author report; limitations: single user report, no independent verification)",
+    "why_readers_should_care": "Developers and researchers aiming to optimize on-device LLM inference need to understand whether reported low token generation speeds reflect inefficient GPU utilization or other bottlenecks, to guide performance improvements on mobile hardware.",
+    "recommended_angle": "Identify what diagnostic evidence would distinguish between actual GPU acceleration usage and other performance constraints in the historical phone-speed report, without assuming ownership or reproducing the measurements.",
+    "essential_context": "A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and observed less than 2 tokens/sec with the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model, slower than 6 tokens/sec on a GPU-less AMD machine. The user questions if the phone's GPU is used at all, referencing a Qualcomm blog post about an OpenCL GPU backend for Adreno GPUs. The report is a single-user observation without detailed configuration or independent verification.",
+    "facts_to_emphasize": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5"
+    ],
+    "facts_optional": [
+      "f6"
+    ],
+    "natural_opening_strategy": "Present the observed performance data from the user running llama.cpp on the Galaxy S22 Ultra and the question about GPU utilization raised by the user.",
+    "natural_ending_strategy": "Highlight the need for specific diagnostics to clarify GPU usage before attributing low speeds to lack of GPU acceleration, acknowledging the limitations of the single-user report.",
+    "engagement_risk": "Risk of readers assuming the report reflects general performance or definitive conclusions about GPU usage without further evidence; potential confusion if technical diagnostics are not clearly explained.",
+    "safety_constraints": "Avoid asserting definitive claims about GPU utilization or performance causality; do not reproduce or claim ownership of the measurements; respect the limitations of the single-user report and lack of independent verification."
+  },
+  "source_hash": "b30cb3173fa43e0f5077c0dddf4061b34fc490248392d62174be1dd0ef65a307"
+}

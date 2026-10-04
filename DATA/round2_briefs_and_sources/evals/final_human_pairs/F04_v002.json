@@ -1,0 +1,53 @@
+{
+  "task_zh": "识别和讨论在浏览器内完全运行小型LLM的工具和技术，用于将JSON数据生成Chart.js配置等任务。",
+  "A": {
+    "title": "用于JSON到Chart.js配置转换的轻量级浏览器内LLM？",
+    "body": "我正在研究在浏览器内完全运行小型语言模型，以将JSON数据转换为有效的Chart.js配置。目标是保持一切轻量级且在客户端进行，但用户的硬件和浏览器环境未知，这使得工具选择变得复杂。\n\n有人找到有效的浏览器内推理框架能够很好地处理这种结构化生成而没有繁重依赖吗？考虑到用户设置的多样性，我对在浏览器内平衡模型大小、速度和可靠性的框架的实际权衡或建议感到好奇。\n\n任何关于可以专门帮助JSON到Chart.js配置生成的轻量级工具的经验或提示将非常有帮助。",
+    "fact_refs": [
+      "F1",
+      "F2"
+    ]
+  },
+  "B": {
+    "title": "寻求轻量级浏览器内LLM的建议，用于将JSON转换为Chart.js配置",
+    "body": "我正在探索在Web浏览器内完全运行小型语言模型的可行性，目标是将JSON数据转换为有效的Chart.js配置以进行可视化。此外，为数据生成简短的自然语言摘要是次要目标。关键要求包括支持小型量化模型，最好在100MB以下，以及与WebGPU或WASM兼容的运行时，以实现高效的客户端推理。我已经开始关注MLC.ai作为一个有前途的选项，但尚未找到关于其在此特定任务上有效性的详细社区反馈。这里有人尝试过浏览器内LLM推理框架进行结构化数据转换或可视化生成吗？如果有，哪些模型和提示方法效果最好？也对可能更好地支持这些用例的替代运行时或工具感到好奇，特别是那些针对轻量级、浏览器原生部署进行优化的工具。",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ]
+  },
+  "pair_id": "F04",
+  "english_A": {
+    "title": "Lightweight In-Browser LLMs for JSON to Chart.js Config Conversion?",
+    "body": "I'm looking into running small language models entirely in the browser to convert JSON data into valid Chart.js configurations. The goal is to keep everything lightweight and client-side, but the hardware and browser environments of users are unknown, which complicates tool selection.\n\nHas anyone found effective in-browser inference frameworks that handle this kind of structured generation well without heavy dependencies? Given the variability in users' setups, I'm curious about practical tradeoffs or recommendations for frameworks that balance model size, speed, and reliability in-browser.\n\nAny experiences or pointers to lightweight tools that can specifically assist with JSON-to-Chart.js config generation would be really helpful.",
+    "fact_refs": [
+      "F1",
+      "F2"
+    ]
+  },
+  "english_B": {
+    "title": "Seeking Recommendations for Lightweight In-Browser LLMs to Convert JSON into Chart.js Configs",
+    "body": "I'm exploring the feasibility of running small language models entirely within a web browser, aiming to transform JSON data into valid Chart.js configurations for visualization. Additionally, generating brief natural language summaries of the data is a secondary goal. Key requirements include support for small quantized models ideally under 100MB, and runtimes compatible with WebGPU or WASM for efficient client-side inference. I've started looking into MLC.ai as a promising option but haven't found detailed community feedback on its effectiveness for this specific task. Has anyone here experimented with in-browser LLM inference frameworks for structured data transformation or visualization generation? If so, what models and prompting approaches worked best? Also curious about alternative runtimes or tools that might better support these use cases, especially those optimized for lightweight, browser-native deployments.",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ]
+  },
+  "translation_numeric_checks": {
+    "A": true,
+    "B": true
+  },
+  "raw_numeric_translation_checks": {
+    "A": true,
+    "B": true
+  },
+  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+}

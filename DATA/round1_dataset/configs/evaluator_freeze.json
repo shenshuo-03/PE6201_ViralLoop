@@ -1,0 +1,46 @@
+{
+  "E1_context_only": {
+    "threshold": 0.225,
+    "C": 0.1,
+    "selection_average_precision": 0.39115193012685684,
+    "selection_f1": 0.38095238095238093
+  },
+  "E1b_context_structure": {
+    "threshold": 0.225,
+    "C": 0.1,
+    "selection_average_precision": 0.3942963581775157,
+    "selection_f1": 0.4297520661157025
+  },
+  "E2_tfidf": {
+    "threshold": 0.25,
+    "C": 0.1,
+    "selection_average_precision": 0.4882618984004658,
+    "selection_f1": 0.38636363636363635
+  },
+  "E3_text_context": {
+    "threshold": 0.17500000000000002,
+    "C": 10.0,
+    "selection_average_precision": 0.5043604905127899,
+    "selection_f1": 0.5128205128205128
+  },
+  "E4_lsa": {
+    "threshold": 0.225,
+    "C": 1.0,
+    "selection_average_precision": 0.5444995043544435,
+    "selection_f1": 0.5405405405405406
+  },
+  "optimization_model": "E2_tfidf",
+  "best_selection_model": "E4_semantic",
+  "created_at": "2026-10-04T07:37:03.573202+00:00",
+  "final_test_run": false,
+  "optimization_signal_gate": true,
+  "output_interpretation": "model-relative potential score; not real viral probability",
+  "E4_semantic": {
+    "threshold": 0.275,
+    "C": 1.0,
+    "selection_average_precision": 0.5758767485581394,
+    "selection_f1": 0.5555555555555556,
+    "embedding_model": "openai/text-embedding-3-small",
+    "max_chars": 4000
+  }
+}

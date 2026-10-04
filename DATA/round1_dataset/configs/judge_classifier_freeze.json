@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-04T08:00:47.392209+00:00",
+  "thresholds": {
+    "E5a_zero_shot": 0.4,
+    "E5b_few_shot": 0.4,
+    "E5c_retrieval": 0.25
+  },
+  "final_n": 80,
+  "subset_rule": "fixed random IDs, independent of label/score; same IDs across judge and local models",
+  "interpretation": "exploratory sample; generic GPT judge not named Jev"
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Tie",
+    "specificity": "Tie",
+    "information_value": "Tie",
+    "usefulness": "Tie",
+    "credibility": "Tie",
+    "overall": "Tie"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "Tie",
+        "specificity": "Tie",
+        "information_value": "Tie",
+        "usefulness": "Tie",
+        "credibility": "Tie",
+        "overall": "Tie"
+      },
+      "evidence": "Drafts A and B are identical in all substantive content: title, body text, fact references, and structure. Both preserve the brief's facts accurately without inventing missing settings (e.g., acknowledging 'graphical results' are mentioned but not detailed, noting memory limits depend on device rather than specifying exact thresholds). Both frame the post as a genuine question to the local LLM community about practical integration experience rather than a report-recap. Both appropriately attribute claims to source-author reports and avoid forbidden claims. The identical wording means no differentiation is possible across any evaluation dimension."
+    },
+    "usage": {
+      "run_id": "v002-r0192",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:31:46.716547+00:00",
+      "tag": "judge_validation:HP15:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "dd6ed009dadf3b0bcea79effb749db073aebb8eb2c19379546f7059b455a0c1c",
+      "actual_cost_usd": 0.003699,
+      "budget_charge_usd": 0.003699,
+      "reserved_upper_usd": 0.014228999999999999,
+      "input_tokens": 2629,
+      "output_tokens": 214,
+      "latency_seconds": 3.441796900006011,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109903-zmeQiOBM0kZwyAD3Qoyr",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "Tie",
+        "specificity": "Tie",
+        "information_value": "Tie",
+        "usefulness": "Tie",
+        "credibility": "Tie",
+        "overall": "Tie"
+      },
+      "evidence": "Drafts A and B are identical in all substantive content: title, body text, fact references, and structure. Both preserve the brief's facts accurately without inventing missing settings (e.g., acknowledging 'graphical results' are mentioned but not detailed, noting memory limits depend on device rather than specifying exact thresholds). Both frame the post as a genuine question to the local LLM community about practical integration experience rather than a report-recap. Both appropriately attribute claims to source-author reports and avoid forbidden claims. The identical wording means no differentiation is possible across any evaluation dimension."
+    },
+    "usage": {
+      "run_id": "v002-r0192",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:31:46.716547+00:00",
+      "tag": "judge_validation:HP15:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "dd6ed009dadf3b0bcea79effb749db073aebb8eb2c19379546f7059b455a0c1c",
+      "actual_cost_usd": 0.003699,
+      "budget_charge_usd": 0.003699,
+      "reserved_upper_usd": 0.014228999999999999,
+      "input_tokens": 2629,
+      "output_tokens": 214,
+      "latency_seconds": 3.441796900006011,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109903-zmeQiOBM0kZwyAD3Qoyr",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "anthropic/claude-haiku-4.5"
+}

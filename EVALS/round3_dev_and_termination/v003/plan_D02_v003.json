@@ -1,0 +1,32 @@
+{
+  "speaker": "community member seeking help with explicitly hypothetical product decision, not source author",
+  "scenario_origin": "controlled_hypothetical",
+  "current_goal": "To determine if the Nvidia M60 is a viable and potentially better option than the M40 for running LLMs, given its theoretical performance and price point, despite concerns about its memory configuration.",
+  "central_purpose": "Seeking community advice on whether the Nvidia M60's memory configuration (8x2GB) significantly impacts LLM inference performance with multi-GPU support, and if it offers better value than the M40 for budget local LLM inference setups.",
+  "desired_response": "Guidance on the practical implications of the M60's 8x2GB memory spread for LLM inference using multi-GPU tools like Kobold or Ollama, including whether the M60's theoretically higher performance and similar or lower price make it a good value compared to the M40 for running 'half-decent' models at 'okay speeds' within a ~$100 budget.",
+  "relevant_evidence_ids": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7"
+  ],
+  "must_preserve": [
+    "The user is evaluating Nvidia M40 vs M60 GPUs specifically for local LLM inference.",
+    "The M40 is commonly recommended for low-budget LLM inference rigs.",
+    "The M60 has a memory configuration of 8x2GB spread across two GPUs, which raises concerns.",
+    "Most modern LLM tools like Kobold and Ollama support multi-GPU inference.",
+    "The M60 is priced similarly or less than the M40 and theoretically offers almost twice the performance.",
+    "The user is considering a purchase around $100 and wants to run half-decent models at okay speeds.",
+    "The user is seeking community input on whether the M60's memory configuration is a significant bottleneck or not."
+  ],
+  "must_not_invent": [
+    "Any definitive claims that the M60 is better or worse than the M40 for LLM inference.",
+    "Any assertion that the M60's memory configuration is or is not a problem for LLM inference.",
+    "Any guarantees about running specific LLM models or achieving specific speeds with either GPU.",
+    "Any personal purchase or testing experience by the user.",
+    "Any specific LLM models or performance targets the user has beyond 'half-decent' and 'okay speeds'."
+  ]
+}

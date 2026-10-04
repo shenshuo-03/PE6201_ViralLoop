@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "Uncertain",
+    "usefulness": "B",
+    "credibility": "Uncertain",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better aligned with the community fit and usefulness criteria by posing direct questions to the audience, encouraging discussion about their own experiences and preferences, which directly addresses the 'problem_or_goal' and 'desired_response' of the brief. Post B also maintains specificity by directly referencing the LLMs and the observed traits from the source, while also prompting for more specific user experiences related to tasks and consistency, aligning better with the 'specificity' requirement. Both posts maintain similar levels of information value and credibility by summarizing the source facts without adding external information or making unsupported claims. However, Post B's direct engagement with the audience makes it more suitable for a community discussion."
+    },
+    "usage": {
+      "run_id": "v002-r0139",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:57.267299+00:00",
+      "tag": "judge_validation:HP03:AB",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "d8236f497fe576da8a1c8e2c7db192189ae9fe8669008af7f2ed8b8429ca0e4e",
+      "actual_cost_usd": 0.0002747,
+      "budget_charge_usd": 0.0002747,
+      "reserved_upper_usd": 0.0011538,
+      "input_tokens": 1915,
+      "output_tokens": 208,
+      "latency_seconds": 1.5163756999827456,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109735-yrn2dvNMQtt4fcxxSPS8",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is superior because it directly engages the community with a question about their own experiences and preferences, aligning with the brief's goal of fostering discussion. It also asks for specific examples of how users weigh these perceived personalities and their consistency, which is more actionable than Post B's more report-like summary. Both posts accurately reflect the provided facts and limitations, but Post A's framing makes it more relevant and useful for the target audience of local LLM enthusiasts seeking to share and compare their own interactions."
+    },
+    "usage": {
+      "run_id": "v002-r0140",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:58.620537+00:00",
+      "tag": "judge_validation:HP03:BA",
+      "phase": "validation",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "3cf735366229e031d5dc27670d2ba3de0afc0f5eae7d7eeaf074640226693e3e",
+      "actual_cost_usd": 0.0002615,
+      "budget_charge_usd": 0.0002615,
+      "reserved_upper_usd": 0.0011538,
+      "input_tokens": 1915,
+      "output_tokens": 175,
+      "latency_seconds": 1.3242200000095181,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109737-MtZjP0SiKPqkEr9ommoC",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

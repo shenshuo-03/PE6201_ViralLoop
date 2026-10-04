@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-04T08:17:44.423986+00:00",
+  "unique_generated_texts": 178,
+  "candidate_score_correlation": 0.4943619288979245,
+  "all_variants": {
+    "G0_generic": 0.20501598268747329,
+    "G1_prompt": 0.19940678179264068,
+    "G2_fewshot_planning": 0.19633380696177483,
+    "G3_rag": 0.19650332108139992,
+    "G4_both": 0.19251250624656677,
+    "G4_positive": 0.20295462459325792,
+    "O1_resample": 0.20333894342184067,
+    "O2_feedback": 0.1887148931622505
+  },
+  "comparisons": [
+    {
+      "a": "O2_feedback",
+      "b": "O1_resample",
+      "metric": "optimizer_score",
+      "n_joint": 10,
+      "mean_delta": 0.00013950363007263767,
+      "ci95_low": -0.0008362861320710085,
+      "ci95_high": 0.0009853225876727237
+    },
+    {
+      "a": "O2_feedback",
+      "b": "O1_resample",
+      "metric": "audit_score",
+      "n_joint": 10,
+      "mean_delta": -0.01462405025959015,
+      "ci95_low": -0.041484350189566616,
+      "ci95_high": 0.007461997605860232
+    },
+    {
+      "a": "G4_both",
+      "b": "G0_generic",
+      "metric": "optimizer_score",
+      "n_joint": 10,
+      "mean_delta": -0.0033423184734258345,
+      "ci95_low": -0.0059889245442095165,
+      "ci95_high": -0.001169481212896795
+    },
+    {
+      "a": "G4_both",
+      "b": "G0_generic",
+      "metric": "audit_score",
+      "n_joint": 10,
+      "mean_delta": -0.012503476440906524,
+      "ci95_low": -0.04134556781500578,
+      "ci95_high": 0.01666904009878635
+    },
+    {
+      "a": "G4_both",
+      "b": "G4_positive",
+      "metric": "optimizer_score",
+      "n_joint": 10,
+      "mean_delta": -0.0022399079557527597,
+      "ci95_low": -0.0038524892379910767,
+      "ci95_high": -0.0006599980345205091
+    },
+    {
+      "a": "G4_both",
+      "b": "G4_positive",
+      "metric": "audit_score",
+      "n_joint": 10,
+      "mean_delta": -0.010442118346691131,
+      "ci95_low": -0.0340438530407846,
+      "ci95_high": 0.01093744475394487
+    }
+  ],
+  "note": "post-hoc exploratory audit; neither model is real audience truth; no generators changed"
+}

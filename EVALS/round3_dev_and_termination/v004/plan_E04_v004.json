@@ -1,0 +1,23 @@
+{
+  "content_archetype": "B",
+  "primary_value": "discovery",
+  "strongest_grounded_hook": "Discover which LLMs actually work well on a MacBook Air M1 with only 8GB of RAM, as one model took 8 minutes to write a single question.",
+  "why_readers_should_care": "Users interested in running LLMs on low-spec hardware need to know which models are feasible and efficient, as performance varies widely and some models may be impractically slow.",
+  "recommended_angle": "Present the reported benchmark results highlighting the wide performance differences among 10 LLMs tested locally on a MacBook Air M1 (8GB RAM), focusing on speed and self-evaluation biases, while noting the limitations of the single-user test and specific hardware.",
+  "essential_context": "The benchmark involved running quantized versions of 10 LLMs locally on a MacBook Air M1 with 8GB RAM, generating and answering questions across five topics, and self-evaluating answers. One model, Qwen3 4B, took over 8 minutes to generate a single math question, illustrating significant performance variation.",
+  "facts_to_emphasize": [
+    "f1",
+    "f3",
+    "f4",
+    "f6"
+  ],
+  "facts_optional": [
+    "f2",
+    "f5",
+    "f7"
+  ],
+  "natural_opening_strategy": "Introduce the benchmark setup: testing 10 quantized LLMs locally on a MacBook Air M1 with 8GB RAM to assess their practical performance on limited hardware.",
+  "natural_ending_strategy": "Conclude by emphasizing the variability in speed and self-assessment accuracy among models, and the importance of considering hardware constraints and evaluation limitations when choosing an LLM for local use.",
+  "engagement_risk": "The content may seem technical or niche, potentially limiting interest to only those focused on local LLM deployment on low-spec devices. Overly generic summaries without the specific benchmark details would reduce engagement.",
+  "safety_constraints": "Avoid claims of universal applicability beyond the tested hardware and single-user report. Do not imply independent verification or definitive quality judgments beyond the author's assessment."
+}

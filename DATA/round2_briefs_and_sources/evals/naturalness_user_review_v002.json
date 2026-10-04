@@ -1,0 +1,40 @@
+[
+  {
+    "id": "D01",
+    "type": "Question / Troubleshooting",
+    "brief_goal_zh": "理解 llama.cpp HTTP 服务器中文件上传按钮的功能，并在查询文件内容时实现可复现的结果。",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/",
+    "source_date": "2025-05-14",
+    "title_zh": "澄清 llama.cpp HTTP 服务器文件上传按钮以及查询文件内容时的可复现性",
+    "body_zh": "我一直在阅读 llama.cpp 的 HTTP 服务器中的文件上传功能，以及在使用它来询问上传文件内容时的行为。原始发帖人使用 llama 3.2 3B Q4_K_S，注意到模型有时能正确回答关于文件内容的问题，但有时它似乎在解释文件内容本身而不是查询。他们推测文件上传可能会将文件与提示连接起来，但这并未得到证实。他们的目标是获得可复现的答案——这意味着在新的对话中相同的提示会产生一致的结果——但这在他们的测试中尚未可靠实现。考虑到这种可变性和上传按钮背后不明确的机制，是否有人弄清楚了文件上传究竟是如何与提示交互的？此外，在使用此界面查询上传文件内容时，是否有已知的策略或设置可以提高可复现性？任何见解或经验分享都有助于理解此功能的预期用途和局限性。",
+    "title_en": "Clarifying the llama.cpp HTTP server file upload button and reproducibility when querying file contents",
+    "body_en": "I've been reading about the file upload feature in llama.cpp's HTTP server and its behavior when used to ask questions about uploaded files. The original poster, using llama 3.2 3B Q4_K_S, noted that sometimes the model answers questions about the file content correctly, but other times it seems to interpret the file content itself rather than the query. They speculate the file upload might concatenate the file with the prompt, but this isn't confirmed. Their goal is to get reproducible answers—meaning the same prompts in a new conversation produce consistent results—but this hasn't been reliably achieved in their tests. Given this variability and the unclear mechanism behind the upload button, has anyone figured out how exactly the file upload interacts with the prompt? Also, are there known strategies or settings to improve reproducibility when querying uploaded file contents through this interface? Any insights or shared experiences would be helpful to understand this feature's intended use and limitations.",
+    "numeric_check": true
+  },
+  {
+    "id": "D03",
+    "type": "Experience / Benchmark",
+    "brief_goal_zh": "基于有限的困惑度测试，了解具有不同专家数量的 DeepSeek R1 模型的性能，并将其与蒸馏模型进行比较。",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/",
+    "source_date": "2025-01-30",
+    "title_zh": "预测下一个词的分数，能说明模型会推理吗？",
+    "body_zh": "我看到一份2025年1月的用户报告，其中包含一个非常小的DeepSeek R1测试。该测试衡量了困惑度（perplexity）：大致来说，就是模型预测后续文本的能力。但该测试没有给模型一个逐步推导答案的机会。\n\n这让我不禁思考，这类分数在解决实际问题方面能告诉我们多少信息。样本量很小，所以我不会仅凭此来选择模型。\n\n有什么简单的后续测试可以用来检查推理能力，而不是仅仅检查文本预测能力？",
+    "title_en": "Does predicting the next word tell us much about reasoning?",
+    "body_en": "I came across a January 2025 user report with a very small DeepSeek R1 test. It measured perplexity: roughly, how well a model predicts the text that comes next. But the test didn't give the model a chance to work through an answer step by step.\n\nThat left me wondering how much this kind of score tells us about solving actual problems. The sample was tiny, so I wouldn't use it to pick a model on its own.\n\nWhat would be a simple follow-up test to check reasoning, rather than just text prediction?",
+    "numeric_check": true,
+    "revision": 2,
+    "revision_reason": "根据真人反馈，经助手编辑减少信息密度；不算生成器有效性证据，等待重新验收"
+  },
+  {
+    "id": "S01",
+    "type": "Discussion / Opinion",
+    "brief_goal_zh": "讨论使用本地大语言模型增强 HTML 到 Markdown 转换的方法和挑战，目标是在复杂网站上超越传统工具。",
+    "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/",
+    "source_date": "2025-06-20",
+    "title_zh": "使用本地大语言模型改进 HTML 到 Markdown 的转换：媒体密集型和纯 JavaScript 网站的挑战",
+    "body_zh": "r/LocalLLaMA 上分享的一个项目描述了如何使用本地大语言模型（如 Qwen2.5-7B/8B）结合 llama.cpp 在消费级 GPU（例如 4070/4080/4090）上，完全离线地将 HTML 网页转换为高质量的 Markdown。该项目结合了使用 BeautifulSoup 进行启发式 HTML 分析以检测内容焦点和框架指纹，以及大语言模型生成的 JSON 提取策略和基于 AI 的质量评分。虽然在标准文章或博客页面上的结果通常获得良好到优秀的评分，但该工具在处理媒体密集型或纯 JavaScript 网站时遇到困难，因为没有浏览器渲染。在 4070 GPU 上处理单个页面大约需要 10-20 秒，但批量处理数百个页面可能需要优化。鉴于这些限制，其他人是如何在不使用浏览器引擎的情况下，仅依靠本地大语言模型来处理动态或富媒体网站的？是否存在可以提高提取质量或速度的实用方法，例如预渲染、混合启发式方法或模型微调？此外，除了 AI 评分之外，您还发现了哪些有效的评估方法来对 Markdown 提取质量进行基准测试？",
+    "title_en": "Using Local LLMs to Improve HTML-to-Markdown Conversion: Challenges with Media-Heavy and JS-Only Sites",
+    "body_en": "A project shared on r/LocalLLaMA describes converting HTML web pages to high-quality Markdown using local LLMs like Qwen2.5-7B/8B with llama.cpp on consumer GPUs (e.g., 4070/4080/4090), running fully offline. It combines heuristic HTML analysis via BeautifulSoup to detect content focus and framework fingerprints with LLM-generated JSON extraction strategies and AI-based quality scoring. While results on standard article or blog pages often score good to excellent, the tool struggles with media-heavy or JavaScript-only sites without browser rendering. Processing a single page takes about 10–20 seconds on a 4070 GPU, but batch processing hundreds of pages may require optimization. Given these constraints, how do others handle dynamic or media-rich sites relying solely on local LLMs without browser engines? Are there practical methods to improve extraction quality or speed, such as pre-rendering, hybrid heuristics, or model fine-tuning? Also, what evaluation approaches beyond AI scoring have you found effective for benchmarking Markdown extraction quality?",
+    "numeric_check": true
+  }
+]

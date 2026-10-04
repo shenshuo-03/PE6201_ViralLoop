@@ -1,0 +1,14 @@
+{
+  "brief_id": "C01",
+  "source_group_id": "reddit:1knvgva",
+  "id": "1knvgva",
+  "split": "calibration_source",
+  "content_type": "Question / Troubleshooting",
+  "source_date": "1747382665",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/",
+  "source_title": "Why do I need to share my contact information/get a HF token with Mistral to use their models in vLLM but not with Ollama?",
+  "source_text": "I've been working with Ollama on a locally hosted AI project, and I was looking to try some alternatives to see what the performance is like. vLLM appears to be a performance focused alternative so I've got that downloaded in Docker, however there are models it can't use without accepting to share my contact information on the HuggingFace website and setting the HF token in the environment for vLLM. I would like to avoid this step as one of the selling points of the project I'm working on is that it's easy for the user to install, and having the user make an account somewhere and get an access token is contrary to that goal.\n\nHow come Ollama has direct access to the Mistral models without requiring this extra step? Furthermore, the Mistral website says 7B is released under the Apache 2.0 license and can be \"used without restrictions\", so could someone please shed some light on why they need my contact information if I go through HF, and if there's an alternative route as a workaround? Thanks!",
+  "collected_at": "2026-10-04T10:03:39.093219+00:00",
+  "historical_split": "train",
+  "source_hash": "a8b672094b43293040b0c607aed18beb0ef2c1f87d4c9c681f63db52f1f28174"
+}

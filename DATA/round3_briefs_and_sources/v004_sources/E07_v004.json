@@ -1,0 +1,15 @@
+{
+  "brief_id": "E07",
+  "id": "1l4c4hh",
+  "phase": "dev",
+  "content_archetype": "D",
+  "source_group_id": "1028",
+  "original_content_type": "Tutorial / Guide",
+  "source_date": "2025-06-05",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l4c4hh/stepbystep_graphrag_tutorial_for_multihop_qa_from/",
+  "source_hash": "96a93df2c03470f6f401c3f1de38e412c193f5c4a864351892b80ea260e541a2",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "Step-by-step GraphRAG tutorial for multi-hop QA - from the RAG_Techniques repo (16K+ stars)",
+  "source_text": "Many people asked for this! Now I have a new step-by-step tutorial on **GraphRAG** in my **RAG\\_Techniques** repo on GitHub (16K+ stars), one of the world’s leading RAG resources packed with hands-on tutorials for different techniques.\n\n**Why do we need this?**\n\nRegular RAG cannot answer hard questions like:  \n*“How did the protagonist defeat the villain’s assistant?”* (Harry Potter and Quirrell)  \nIt cannot connect information across multiple steps.\n\n**How does it work?**\n\nIt combines vector search with graph reasoning.  \nIt uses only vector databases - no need for separate graph databases.  \nIt finds entities and relationships, expands connections using math, and uses AI to pick the right answers.\n\n**What you will learn**\n\n* Turn text into entities, relationships and passages for vector storage\n* Build two types of search (entity search and relationship search)\n* Use math matrices to find connections between data points\n* Use AI prompting to choose the best relationships\n* Handle complex questions that need multiple logical steps\n* Compare results: Graph RAG vs simple RAG with real examples\n\n**Full notebook available here:**  \n[GraphRAG with vector search and multi-step reasoning](https://github.com/NirDiamant/RAG_TECHNIQUES/blob/main/all_rag_techniques/graphrag_with_milvus_vectordb.ipynb)"
+}

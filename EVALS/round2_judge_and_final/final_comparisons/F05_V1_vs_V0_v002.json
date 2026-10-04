@@ -1,0 +1,100 @@
+{
+  "outcome": "Loss",
+  "dimensions": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "A",
+    "overall": "A"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "swap_consistent": {
+      "community_fit": true,
+      "specificity": true,
+      "information_value": true,
+      "usefulness": true,
+      "credibility": true,
+      "overall": true
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "A",
+          "specificity": "A",
+          "information_value": "A",
+          "usefulness": "A",
+          "credibility": "A",
+          "overall": "A"
+        },
+        "evidence": "Draft A directly embodies the brief's core motivation: a user with the exact hardware (F1) seeking targeted data on backends (F3), quantization methods (F6), and multi-GPU strategies for specific models (F2). It acknowledges prior inconclusive results (F4) and explicitly invites community response with relevant constraints (missing ROCm/driver details). Draft B reports the same hardware and models but frames them as 'a user' from 'a 2025 Reddit post'—creating distance and ambiguity about speaker relationship. The brief specifies the persona as 'reader of archived source; no claim of personally running reported tests,' yet B's phrasing ('I came across') and vague framing ('hints at notable speed differences') obscures whether B is the original poster or a community reader, violating credibility. B also omits F6 (quantization inquiry) and F4 (prior inconclusive experiments), reducing specificity and information value. A preserves all actionable facts, maintains clear speaker relationship (community reader seeking help), and structures the post as a genuine question the audience can respond to. B reads as a secondhand report rather than a motivated inquiry, weakening community fit and usefulness."
+      },
+      "usage": {
+        "run_id": "v002-r0448",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:40.162407+00:00",
+        "tag": "judge_final:F05:V1_vs_V0:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "3b058935508ff1e7dfeec37344d1d532ce128e9a23acd2be0191e776721bf405",
+        "actual_cost_usd": 0.004187,
+        "budget_charge_usd": 0.004187,
+        "reserved_upper_usd": 0.012724,
+        "input_tokens": 2462,
+        "output_tokens": 345,
+        "latency_seconds": 7.26459390000673,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112832-eSQpMov7WveJZhqpIivm",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "B",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "B",
+          "overall": "B"
+        },
+        "evidence": "Draft A frames the post as a report about someone else's dated experiment ('I came across a 2025 Reddit post'), creating distance from the actual problem and weakening community engagement. It asks a generic comparative question without grounding it in the poster's own constraints or motivation. Draft B directly owns the hardware setup and motivation ('I'm exploring inference options'), explicitly acknowledges the inconclusive prior data (F4), names specific quantization methods the poster is actually considering (F6), and transparently flags missing information (ROCm/driver versions, detailed setups) that would help respondents give targeted advice. Draft B preserves all key facts (F1–F4, F6) while A only uses F1–F2. Draft B's framing—'since available reports lack info'—demonstrates credibility by acknowledging limitations rather than presenting archived observations as timeless facts. Both avoid forbidden claims, but B's specificity about quantization methods, multi-GPU utilization, and configuration details gives the community concrete angles to respond to, whereas A's 'hints at notable speed differences' is vague and doesn't invite actionable contribution."
+      },
+      "usage": {
+        "run_id": "v002-r0449",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:45.242297+00:00",
+        "tag": "judge_final:F05:V1_vs_V0:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "c0cf255409b9dc700ebf06e15aeb66f2c85da0d3893b30c2a5628e045be13d71",
+        "actual_cost_usd": 0.004067,
+        "budget_charge_usd": 0.004067,
+        "reserved_upper_usd": 0.012724,
+        "input_tokens": 2462,
+        "output_tokens": 321,
+        "latency_seconds": 5.049324200022966,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112840-3pWcJC8TM0e2g3UcparS",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F05",
+  "comparison": "V1_vs_V0",
+  "older": "V0",
+  "newer": "V1",
+  "at": "2026-10-04T11:20:45.266779+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "outcome": "Uncertain",
+  "dimensions": {
+    "community_fit": "Uncertain",
+    "specificity": "Tie",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Tie",
+    "overall": "Uncertain"
+  },
+  "judge": {
+    "combined": {
+      "community_fit": "Uncertain",
+      "specificity": "Tie",
+      "information_value": "Uncertain",
+      "usefulness": "Uncertain",
+      "credibility": "Tie",
+      "overall": "Uncertain"
+    },
+    "swap_consistent": {
+      "community_fit": false,
+      "specificity": true,
+      "information_value": false,
+      "usefulness": false,
+      "credibility": true,
+      "overall": false
+    },
+    "raw_AB": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "Tie",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts accurately preserve F1 and F2 without inventing claims or testing experiences. Draft A frames the question around 'effective frameworks' and 'practical tradeoffs' but remains somewhat abstract—it asks what works 'well' without anchoring to the concrete constraints from the brief (F4: <100MB models, F5: WebGPU/WASM support, F6: MLC.ai exploration). Draft B more directly addresses community_fit by naming the specific technical requirements ('small LLM inference efficiently in-browser') and invites concrete tradeoffs ('model size, speed, or ease of integration'), making it clearer what respondents should address. Neither post violates forbidden claims or essential limitations. Draft B's phrasing 'without relying on external APIs or servers' better motivates why client-side matters. Both acknowledge unknown hardware/browser environments appropriately. Draft B's closing ('use case is quite specific and the environment unpredictable') more explicitly signals why the community's varied experiences are valuable, improving community_fit and usefulness. Neither post mentions MLC.ai, WebGPU, WASM, or the <100MB constraint—both equally underspecified on this dimension (Tie). Draft B's framing of 'tradeoffs' as a concrete contribution request is slightly more actionable than Draft A's vaguer 'pointers to lightweight tools.'"
+      },
+      "usage": {
+        "run_id": "v002-r0446",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:26.911793+00:00",
+        "tag": "judge_final:F04:V2_vs_V1:AB",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "40363ae0c4a1d426b88deb22c8305248ea7f7060685d1475dc17c43046bcb984",
+        "actual_cost_usd": 0.003995,
+        "budget_charge_usd": 0.003995,
+        "reserved_upper_usd": 0.012223000000000001,
+        "input_tokens": 2070,
+        "output_tokens": 385,
+        "latency_seconds": 5.277757200004999,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112821-dfDMLibeUoAAtk9R6SlI",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "raw_BA": {
+      "value": {
+        "preferences": {
+          "community_fit": "B",
+          "specificity": "Tie",
+          "information_value": "B",
+          "usefulness": "B",
+          "credibility": "Tie",
+          "overall": "B"
+        },
+        "evidence": "Both posts accurately preserve F1 and F2 without inventing claims or testing experiences. However, B better serves community_fit by framing the question around *practical tradeoffs* and *effective frameworks* that the audience can directly address, rather than A's vaguer appeal for \"insights on tradeoffs.\" B also has stronger information_value: it explicitly names the constraint (unknown hardware/browser environments) as a *reason* tool selection matters, turning a limitation into a concrete discussion anchor. A mentions this constraint but treats it as background context rather than a driver of the question. Both omit F4 (quantized models <100MB) and F5 (WebGPU/WASM support)—critical specificity details from the brief—making them equal on specificity despite this gap. Neither makes forbidden claims. B's phrasing (\"Has anyone found effective frameworks,\" \"practical tradeoffs\") invites concrete community experience more directly than A's softer \"Are there any tools\" and \"Any insights.\" Credibility is tied: both correctly attribute exploration to the speaker without claiming personal testing or MLC.ai experience."
+      },
+      "usage": {
+        "run_id": "v002-r0447",
+        "loop_version": "v002",
+        "at": "2026-10-04T11:20:32.838713+00:00",
+        "tag": "judge_final:F04:V2_vs_V1:BA",
+        "phase": "final",
+        "model": "anthropic/claude-haiku-4.5",
+        "cache_key": "ff5f147d8979a810f1405fb25e2d25ef11c3301e3837c1581548afe8389ed11c",
+        "actual_cost_usd": 0.00371,
+        "budget_charge_usd": 0.00371,
+        "reserved_upper_usd": 0.012223000000000001,
+        "input_tokens": 2070,
+        "output_tokens": 328,
+        "latency_seconds": 5.895182800013572,
+        "retry": 0,
+        "finish_reason": "stop",
+        "request_id": "gen-1791112826-aW3niKUS6CS9xcUnSBAD",
+        "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+      }
+    },
+    "model": "anthropic/claude-haiku-4.5"
+  },
+  "identity_check": false,
+  "brief_id": "F04",
+  "comparison": "V2_vs_V1",
+  "older": "V1",
+  "newer": "V2",
+  "at": "2026-10-04T11:20:32.863491+00:00"
+}

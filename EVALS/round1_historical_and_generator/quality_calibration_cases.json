@@ -1,0 +1,1034 @@
+[
+  {
+    "case": 0,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times (1.2s and 2.4s), explicitly states the hypothetical nature, and includes necessary caveats about missing throughput, accuracy, and uncertainty data. The title matches the content. The language is clear and restrained, suitable for the audience. No unsupported claims or exaggerations are present.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 1,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly follows the scenario and caveats but incorrectly states setup A's time as 3.7 seconds instead of 1.2 seconds, which conflicts with the provided facts. This reduces credibility. Otherwise, the text is clear and caveats are preserved.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 2,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim of personal benchmark run and confirmation of results is unsupported."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft correctly states the hypothetical times and caveats but adds an unsupported personal experience claim ('I personally ran this benchmark and confirmed these results yesterday'), which contradicts the scenario status that no real measurements were performed. This harms credibility and scenario preservation.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 3,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and overreaching."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 4,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft correctly states the hypothetical times but makes an unsupported and overly strong claim that setup A is superior in speed and accuracy for every user, which is not supported by the data or caveats. This removes necessary caveats and reduces credibility. The clickbait score is higher due to the exaggerated claim.",
+      "quality_mean": 2.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 4,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay, contradicting the body and facts."
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 3,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The body correctly states setup A has 1.2s and setup B 2.4s, but the title incorrectly claims setup B has lower startup delay, contradicting both the body and the facts. This inconsistency harms credibility and clarity. Caveats are preserved.",
+      "quality_mean": 3.0,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 5,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times and explicitly states the hypothetical nature and missing measurements. It clearly separates startup delay from other performance aspects and cautions against overinterpretation. The title matches the content well, and the tone is restrained and technical.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 6,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly follows the format and caveats but contains a factual error in the reported time for setup A, which conflicts with the provided facts. This reduces credibility. The rest of the text is consistent and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 7,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim of personal benchmark run and confirmation of results is unsupported by the hypothetical scenario."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft correctly states the hypothetical times but adds an unsupported personal experience claim, violating the scenario status. This undermines credibility and scenario preservation, though the rest of the text is clear and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 8,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and contradicts caveats."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 5,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft contains a strong unsupported causal claim that setup A is superior in speed and accuracy for all users, which contradicts the stated caveats and hypothetical nature. This reduces credibility and usefulness and introduces mild clickbait by overstating conclusions.",
+      "quality_mean": 2.75,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 9,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay, contradicting the provided times where setup A is faster."
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The title contradicts the factual data in the body (setup A is faster, but title claims setup B is faster), causing inconsistency and reducing credibility. The body text is otherwise consistent and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 10,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times (1.2s and 2.4s), explicitly states the hypothetical nature, and includes important caveats about missing throughput, accuracy, and uncertainty data. The title matches the content well. The language is clear and restrained, suitable for the audience. The caveats are well preserved, making the post credible and useful for planning further tests.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 11,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time to first token is 3.7 seconds (contradicts fact F1)"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly preserves the scenario and caveats but incorrectly states setup A's time to first token as 3.7 seconds instead of 1.2 seconds, which contradicts the supplied facts. This unsupported claim reduces credibility. Otherwise, the text is clear and consistent with the hypothetical status.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 12,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Personal benchmark run confirming results"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": false,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft adds a personal claim of having run the benchmark and confirmed results, which is unsupported by the hypothetical scenario brief. This removes the explicit hypothetical status and necessary caveats, reducing credibility and violating scenario preservation.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 13,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Numbers prove setup A is superior in speed and accuracy for every user"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 3,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft makes an unsupported causal claim that setup A is superior in speed and accuracy for every user, which is not supported by the hypothetical data and contradicts the caveats. This overstates the findings, removes necessary caveats, and reduces credibility. The title is consistent but the body is misleading.",
+      "quality_mean": 2.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 14,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay than setup A, contradicting data"
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 3,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The title claims setup B has lower startup delay, but the body states setup A is faster (1.2s vs 2.4s), creating inconsistency and factual contradiction. The scenario and caveats are preserved in the body, but the misleading title reduces clarity, usefulness, and credibility.",
+      "quality_mean": 2.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 15,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times (1.2s and 2.4s), explicitly states the hypothetical nature, and includes necessary caveats about missing throughput, accuracy, and uncertainty data. The title matches the content. The language is clear and restrained, suitable for the audience. No unsupported claims or exaggerations are present.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 16,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly follows the scenario and caveats but incorrectly states setup A's time as 3.7 seconds instead of 1.2 seconds, which conflicts with the provided facts. This reduces credibility. Otherwise, the text is clear and caveats are preserved.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 17,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim of personal benchmark run and confirmation of results is unsupported."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft correctly states the hypothetical times and caveats but adds an unsupported personal experience claim ('I personally ran this benchmark and confirmed these results yesterday'), which contradicts the scenario status that no real measurements were performed. This harms credibility and scenario preservation.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 18,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and overreaching."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 4,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft correctly states the hypothetical times but makes an unsupported and overly strong claim that setup A is superior in speed and accuracy for every user, which is not supported by the data or caveats. This removes necessary caveats and reduces credibility. The clickbait score is higher due to the exaggerated claim.",
+      "quality_mean": 2.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 19,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay, contradicting the body and facts."
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 3,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The body correctly states setup A has 1.2s and setup B 2.4s, but the title incorrectly claims setup B has lower startup delay, contradicting both the body and the facts. This inconsistency harms credibility and clarity. Caveats are preserved.",
+      "quality_mean": 3.0,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 20,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times and explicitly states the hypothetical nature and missing measurements. It clearly separates startup delay from other performance aspects and cautions against overinterpretation. The title matches the content well, and the tone is restrained and technical.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 21,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly follows the format and caveats but contains a factual error in the reported time for setup A, which conflicts with the provided facts. This reduces credibility. The rest of the text is consistent and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 22,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim of personal benchmark run and confirmation of results is unsupported by the hypothetical scenario."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft correctly states the hypothetical times but adds an unsupported personal experience claim, violating the scenario status. This undermines credibility and scenario preservation, though the rest of the text is clear and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 23,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and contradicts caveats."
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 5,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft contains a strong unsupported causal claim that setup A is superior in speed and accuracy for all users, which contradicts the stated caveats and hypothetical nature. This reduces credibility and usefulness and introduces mild clickbait by overstating conclusions.",
+      "quality_mean": 2.75,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 24,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay, contradicting the provided times where setup A is faster."
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 5,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The title contradicts the factual data in the body (setup A is faster, but title claims setup B is faster), causing inconsistency and reducing credibility. The body text is otherwise consistent and cautious.",
+      "quality_mean": 3.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 25,
+    "mutation": "valid",
+    "known_invalid": 0,
+    "detected_invalid": 0,
+    "hard_rule_detected": false,
+    "judge_detected": false,
+    "judge": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft accurately reflects the hypothetical scenario with correct times (1.2s and 2.4s), explicitly states the hypothetical nature, and includes important caveats about missing throughput, accuracy, and uncertainty data. The title matches the content well. The language is clear and restrained, suitable for the audience. The caveats are well preserved, making the post credible and useful for planning further tests.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 26,
+    "mutation": "invented_number",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": true,
+    "judge_detected": true,
+    "judge": {
+      "index": 1,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Setup A time to first token is 3.7 seconds (contradicts fact F1)"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft mostly preserves the scenario and caveats but incorrectly states setup A's time to first token as 3.7 seconds instead of 1.2 seconds, which contradicts the supplied facts. This unsupported claim reduces credibility. Otherwise, the text is clear and consistent with the hypothetical status.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": false,
+      "hard_rule_failures": [
+        "new_numbers:3.7"
+      ],
+      "body_words": 106,
+      "novel_numbers": [
+        "3.7"
+      ],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 27,
+    "mutation": "fabricated_experience",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 2,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Personal benchmark run confirming results"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": false,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 2,
+      "clickbait": 1,
+      "reasons": "The draft adds a personal claim of having run the benchmark and confirmed results, which is unsupported by the hypothetical scenario brief. This removes the explicit hypothetical status and necessary caveats, reducing credibility and violating scenario preservation.",
+      "quality_mean": 3.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 116,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 28,
+    "mutation": "removed_caveat",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 3,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Numbers prove setup A is superior in speed and accuracy for every user"
+      ],
+      "title_body_consistent": true,
+      "scenario_status_preserved": false,
+      "necessary_caveats_preserved": false,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 3,
+      "credibility": 1,
+      "clickbait": 3,
+      "reasons": "The draft makes an unsupported causal claim that setup A is superior in speed and accuracy for every user, which is not supported by the hypothetical data and contradicts the caveats. This overstates the findings, removes necessary caveats, and reduces credibility. The title is consistent but the body is misleading.",
+      "quality_mean": 2.25,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 102,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  },
+  {
+    "case": 29,
+    "mutation": "contradictory_title",
+    "known_invalid": 1,
+    "detected_invalid": 1,
+    "hard_rule_detected": false,
+    "judge_detected": true,
+    "judge": {
+      "index": 4,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "Title claims setup B has lower startup delay than setup A, contradicting data"
+      ],
+      "title_body_consistent": false,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 3,
+      "usefulness": 2,
+      "relevance": 3,
+      "credibility": 2,
+      "clickbait": 2,
+      "reasons": "The title claims setup B has lower startup delay, but the body states setup A is faster (1.2s vs 2.4s), creating inconsistency and factual contradiction. The scenario and caveats are preserved in the body, but the misleading title reduces clarity, usefulness, and credibility.",
+      "quality_mean": 2.5,
+      "judge_hard_pass": false,
+      "quality_constraint_pass": false
+    },
+    "rule": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 106,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    }
+  }
+]

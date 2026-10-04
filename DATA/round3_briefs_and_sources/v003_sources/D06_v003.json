@@ -1,0 +1,13 @@
+{
+  "id": "1kaqi3k",
+  "brief_id": "D06",
+  "phase": "dev",
+  "source_group_id": "784",
+  "content_type": "Experience / Benchmark",
+  "source_date": "2025-04-29",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kaqi3k/qwen_3_8b_14b_32b_30ba3b_235ba22b_tested/",
+  "source_hash": "89b54b22d5e1f22c7f2af7ce7049ee7d7de9300ca22f1e7d26cb7523be5c0895",
+  "historical_split": "train",
+  "source_title": "Qwen 3 8B, 14B, 32B, 30B-A3B & 235B-A22B Tested",
+  "source_text": "[https://www.youtube.com/watch?v=GmE4JwmFuHk](https://www.youtube.com/watch?v=GmE4JwmFuHk)\n\n**Score Tables with Key Insights:**\n\n* These are generally very very good models.\n* They all seem to struggle a bit in non english languages. If you take out non English questions from the dataset, the scores will across the board rise about 5-10 points.\n* Coding is top notch, even with the smaller models.\n* I have not yet tested the 0.6, 1 and 4B, that will come soon. In my experience for the use cases I cover, 8b is the bare minimum, but I have been surprised in the past, I'll post soon!\n\n**Test 1: Harmful Question Detection**  (Timestamp \\~3:30)\n\n|Model|Score|\n|:-|:-|\n|qwen/qwen3-32b:free|100.00|\n|qwen/qwen3-235b-a22b-04-28:free|95.00|\n|qwen/qwen3-8b:free|80.00|\n|qwen/qwen3-30b-a3b-04-28:free|80.00|\n|qwen/qwen3-14b:free|75.00|\n\n**Test 2: Named Entity Recognition (NER)**  (Timestamp \\~5:56)\n\n|Model|Score|\n|:-|:-|\n|qwen/qwen3-30b-a3b-04-28:free|90.00|\n|qwen/qwen3-32b:free|80.00|\n|qwen/qwen3-8b:free|80.00|\n|qwen/qwen3-14b:free|80.00|\n|qwen/qwen3-235b-a22b-04-28:free|75.00|\n|*Note: multilingual translation seemed to be the main source of errors, especially Nordic languages.*||\n\n**Test 3: SQL Query Generation** (Timestamp \\~8:47)\n\n|Model|Score|Key Insight|\n|:-|:-|:-|\n|qwen/qwen3-235b-a22b-04-28:free|100.00|Excellent coding performance,|\n|qwen/qwen3-14b:free|100.00|Excellent coding performance,|\n|qwen/qwen3-32b:free|100.00|Excellent coding performance,|\n|qwen/qwen3-30b-a3b-04-28:free|95.00|Very strong performance from the smaller MoE model.|\n|qwen/qwen3-8b:free|85.00|Good performance, comparable to other 8b models.|\n\n**Test 4: Retrieval Augmented Generation (RAG)** (Timestamp \\~11:22)\n\n|Model|Score|\n|:-|:-|\n|qwen/qwen3-32b:free|92.50|\n|qwen/qwen3-14b:free|90.00|\n|qwen/qwen3-235b-a22b-04-28:free|89.50|\n|qwen/qwen3-8b:free|85.00|\n|qwen/qwen3-30b-a3b-04-28:free|85.00|\n|*Note: Key issue is models responding in English when asked to respond in the source language (e.g., Japanese).*||"
+}

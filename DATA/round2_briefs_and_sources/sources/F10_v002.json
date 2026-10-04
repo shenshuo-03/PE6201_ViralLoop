@@ -1,0 +1,14 @@
+{
+  "brief_id": "F10",
+  "source_group_id": "reddit:1ik9e54",
+  "id": "1ik9e54",
+  "split": "final",
+  "content_type": "Discussion / Opinion",
+  "source_date": "1738971985",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ik9e54/kokorosharp_local_tts_in_c/",
+  "source_title": "KokoroSharp - Local TTS in C#",
+  "source_text": "So, to start with, I am working on a fully offline AI voice chat app, and while it's about 90% ready to release, a specific new, high-performance audio model came out (\\*stares at Kokoro\\*).\n\nWhat did I do?\n\nI dropped everything to build a local, cross-platform TTS engine! Beginner-friendly yet flexible.\n\n    KokoroTTS tts = KokoroTTS.LoadModel();\n    KokoroVoice heartVoice = KokoroVoiceManager.GetVoice(\"af_heart\");\n    while (true) { tts.SpeakFast(Console.ReadLine(), heartVoice); }\n\nIt's available on [NuGet](https://www.nuget.org/packages/KokoroSharp/)! Just install the package and you're ready!\n\nI really hope people like it! And, of course, the source is open: [https://github.com/Lyrcaxis/KokoroSharp](https://github.com/Lyrcaxis/KokoroSharp)",
+  "collected_at": "2026-10-04T10:03:39.124781+00:00",
+  "historical_split": "train",
+  "source_hash": "1f13d56ae05d341fc8878378667f18646b2249e5a66233233f1d34cba3409383"
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "A",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A preserves concrete failure modes (Gemma missing 2/4 list items, Qwen confusing 10^9 vs 109) and names specific model variants (Gemma 2b/7b/27b/3 4B Instruct QAT, Qwen-2.5-vl-7b), enabling community members to recognize whether they've tested the same models. It explicitly flags missing context (hardware, document quality, model versions) and source date (May 2025), maintaining credibility boundaries. The closing question directly invites tradeoff discussion relevant to local LLM work. Draft B abstracts away identifying details ('a set of Google's models,' 'another 7B parameter vision-language model,' 'numerical expressions like exponentiation versus concatenation'), reducing specificity and making it harder for readers to assess relevance to their own setups or contribute targeted experience. While B is more concise, it sacrifices the concrete anchors that make A actionable for the stated audience. Both avoid forbidden claims, but A's precision and uncertainty acknowledgment better serve community_fit and usefulness for local LLM enthusiasts seeking reproducible comparisons."
+    },
+    "usage": {
+      "run_id": "v002-r0178",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:30:43.812767+00:00",
+      "tag": "judge_validation:HP08:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "7dc0c551a5bce644744cf6bfb8d69c4bf1b26fcbeceaff27c8840fe49fc62524",
+      "actual_cost_usd": 0.003729,
+      "budget_charge_usd": 0.003729,
+      "reserved_upper_usd": 0.011723,
+      "input_tokens": 2039,
+      "output_tokens": 338,
+      "latency_seconds": 4.6575632999883965,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109838-KQONqFHb3oRdZ85aaNmn",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "B",
+        "overall": "B"
+      },
+      "evidence": "Draft B better serves the local LLM community by naming specific models (Gemma variants, Qwen-2.5-vl-7b) and concrete failure modes (missing list items, 10^9 vs 109 confusion) that readers can recognize and test against. It explicitly acknowledges missing context (hardware, document quality, model versions, May 2025 date) rather than abstracting away these details, which preserves credibility and invites informed discussion. Draft B frames the question as a genuine gap-finding exercise ('are there any compact models known to handle...what tradeoffs have you encountered') rather than a generic invitation. Draft A generalizes to 'a set of Google's models and another 7B parameter vision-language model,' losing the specificity needed for community members to map their own experiences onto the problem. Both preserve facts accurately, but B's concrete naming and explicit uncertainty acknowledgment make it more actionable for a technical audience seeking to contribute real-world comparisons."
+    },
+    "usage": {
+      "run_id": "v002-r0179",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:30:48.057752+00:00",
+      "tag": "judge_validation:HP08:BA",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "ccf12892223814e9475a9b4acaa9e5c909d5f3c3f85c151b989433a49e7dff08",
+      "actual_cost_usd": 0.003509,
+      "budget_charge_usd": 0.003509,
+      "reserved_upper_usd": 0.011723,
+      "input_tokens": 2039,
+      "output_tokens": 294,
+      "latency_seconds": 4.216552600002615,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109843-PPyxHSYNxfwEwt2dz5xP",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "anthropic/claude-haiku-4.5"
+}

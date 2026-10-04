@@ -1,0 +1,399 @@
+{
+  "at": "2026-10-04T10:31:46.747659+00:00",
+  "internal": {
+    "model": "google/gemini-2.5-flash-lite",
+    "phase": "validation",
+    "n": 15,
+    "target_correct": 12,
+    "target_accuracy": 0.8,
+    "target_swap_consistency": 0.8666666666666667,
+    "overall_swap_consistency": 1.0,
+    "dimension_results": {
+      "community_fit": {
+        "n": 5,
+        "correct": 5,
+        "accuracy": 1.0
+      },
+      "specificity": {
+        "n": 5,
+        "correct": 5,
+        "accuracy": 1.0
+      },
+      "information_value": {
+        "n": 5,
+        "correct": 2,
+        "accuracy": 0.4
+      }
+    },
+    "identical_forced_choice": false,
+    "design_expectation_only": true,
+    "records": [
+      {
+        "pair_id": "HP01",
+        "dimension": "community_fit",
+        "expected": "Tie",
+        "target_pred": "Tie",
+        "target_correct": true,
+        "overall_pred": "Tie",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "identical"
+      },
+      {
+        "pair_id": "HP02",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP03",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "Uncertain",
+        "target_correct": false,
+        "overall_pred": "B",
+        "target_swap_consistent": false,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP04",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP05",
+        "dimension": "specificity",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP06",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "Tie",
+        "target_correct": false,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP07",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP08",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP09",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP10",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP11",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP12",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "Uncertain",
+        "target_correct": false,
+        "overall_pred": "B",
+        "target_swap_consistent": false,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP13",
+        "dimension": "community_fit",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP14",
+        "dimension": "specificity",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP15",
+        "dimension": "information_value",
+        "expected": "Tie",
+        "target_pred": "Tie",
+        "target_correct": true,
+        "overall_pred": "Tie",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "near_equal"
+      }
+    ],
+    "admitted": false
+  },
+  "external": {
+    "model": "anthropic/claude-haiku-4.5",
+    "phase": "validation",
+    "n": 15,
+    "target_correct": 15,
+    "target_accuracy": 1.0,
+    "target_swap_consistency": 1.0,
+    "overall_swap_consistency": 1.0,
+    "dimension_results": {
+      "community_fit": {
+        "n": 5,
+        "correct": 5,
+        "accuracy": 1.0
+      },
+      "specificity": {
+        "n": 5,
+        "correct": 5,
+        "accuracy": 1.0
+      },
+      "information_value": {
+        "n": 5,
+        "correct": 5,
+        "accuracy": 1.0
+      }
+    },
+    "identical_forced_choice": false,
+    "design_expectation_only": true,
+    "records": [
+      {
+        "pair_id": "HP01",
+        "dimension": "community_fit",
+        "expected": "Tie",
+        "target_pred": "Tie",
+        "target_correct": true,
+        "overall_pred": "Tie",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "identical"
+      },
+      {
+        "pair_id": "HP02",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP03",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP04",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP05",
+        "dimension": "specificity",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP06",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP07",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP08",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP09",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP10",
+        "dimension": "community_fit",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP11",
+        "dimension": "specificity",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP12",
+        "dimension": "information_value",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP13",
+        "dimension": "community_fit",
+        "expected": "A",
+        "target_pred": "A",
+        "target_correct": true,
+        "overall_pred": "A",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP14",
+        "dimension": "specificity",
+        "expected": "B",
+        "target_pred": "B",
+        "target_correct": true,
+        "overall_pred": "B",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "targeted_degradation"
+      },
+      {
+        "pair_id": "HP15",
+        "dimension": "information_value",
+        "expected": "Tie",
+        "target_pred": "Tie",
+        "target_correct": true,
+        "overall_pred": "Tie",
+        "target_swap_consistent": true,
+        "overall_swap_consistent": true,
+        "kind": "near_equal"
+      }
+    ],
+    "admitted": true
+  },
+  "feedback_allowed": false,
+  "independent_final_claims_allowed": true,
+  "human_naturalness_pending": true,
+  "note": "Controlled task sensitivity only. No human labels collected, no general community accuracy claim."
+}

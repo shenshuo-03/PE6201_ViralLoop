@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A preserves all seven grounded facts with exact details (ModernBERT, 4K tokens, 79.22% F1, MIT license, Python packages, Hugging Face demo), while Draft B omits or vaguely generalizes critical specifics (\"modern encoder model\" instead of ModernBERT, \"several thousand tokens\" instead of 4K, no benchmark score, no license name). For a local LLM community seeking lightweight solutions, Draft A's precision on architecture, capacity, and performance metrics directly enables evaluation and integration decisions. Draft A also properly attributes all claims to source-author reports without overstating verification. Draft B's vaguer framing (\"strong benchmark performance\" without the F1 score) reduces actionability and credibility for technical readers. Both avoid forbidden claims, but A's specificity better serves the stated audience motivation of gathering insights on real-time detection and potential collaborations."
+    },
+    "usage": {
+      "run_id": "v002-r0184",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:31:10.824933+00:00",
+      "tag": "judge_validation:HP11:AB",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "656333e29562de0c8c34d1010c32d0306fc4406771534396a3dbf5b34a408009",
+      "actual_cost_usd": 0.00368,
+      "budget_charge_usd": 0.00368,
+      "reserved_upper_usd": 0.012673,
+      "input_tokens": 2285,
+      "output_tokens": 279,
+      "latency_seconds": 4.088389499986079,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109866-rN7CThQNmGu9I1WruzM2",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Both posts stay within allowed claims and avoid forbidden ones. Draft A uses vague language ('modern encoder model,' 'several thousand tokens,' 'strong benchmark performance') that obscures the specific facts provided. Draft B preserves concrete details: ModernBERT, 4K tokens, 79.22% F1 on RAGTruth, and mentions medicine/law as domain examples. For a local LLM enthusiast audience evaluating a lightweight tool, specificity matters—they need exact specs to assess fit for their setup. Both appropriately attribute claims to source without personal verification. Draft B's precision on model architecture, token capacity, and benchmark score gives readers actionable information to decide whether to test LettuceDetect; Draft A's hedging ('several thousand,' 'strong') forces them back to the source. Neither post invents unsupported claims or crosses into forbidden territory. Credibility is tied because both correctly cite the Reddit source and avoid overstating the author's relationship. Community fit and usefulness favor B because concrete specifications directly address the stated motivation: 'lightweight and efficient methods' require exact resource/performance numbers to evaluate."
+    },
+    "usage": {
+      "run_id": "v002-r0185",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:31:15.978291+00:00",
+      "tag": "judge_validation:HP11:BA",
+      "phase": "validation",
+      "model": "anthropic/claude-haiku-4.5",
+      "cache_key": "a0385cf99cfeb878ca0154002719a69488d07528946a24ff767e97281373bd49",
+      "actual_cost_usd": 0.003915,
+      "budget_charge_usd": 0.003915,
+      "reserved_upper_usd": 0.012673,
+      "input_tokens": 2285,
+      "output_tokens": 326,
+      "latency_seconds": 5.125241699977778,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109870-xRXh7VSypKinxpmiglR5",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "anthropic/claude-haiku-4.5"
+}

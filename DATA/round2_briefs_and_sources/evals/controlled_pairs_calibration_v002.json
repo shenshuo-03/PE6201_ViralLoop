@@ -1,0 +1,1940 @@
+[
+  {
+    "pair_id": "CP01",
+    "brief_id": "C01",
+    "source_group_id": "reddit:1knvgva",
+    "split": "calibration",
+    "brief": {
+      "topic": "Model Access Requirements for Local LLM Deployment",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding why some LLM deployment tools (like vLLM) require Hugging Face tokens and personal information for certain models, while others (like Ollama) do not, and exploring potential workarounds.",
+      "context": "A user is investigating performance differences between local LLM deployment tools, specifically vLLM and Ollama. They encountered a requirement to share contact information and obtain a Hugging Face token to use Mistral models with vLLM, which conflicts with their project's goal of easy user installation. They are seeking clarification on this discrepancy, especially since Mistral models are stated to be under an unrestricted Apache 2.0 license.",
+      "motivation": "This question is worth discussing because it highlights a practical barrier for users aiming for simple, local LLM deployments. Understanding the underlying reasons for differing access requirements can help enthusiasts choose appropriate tools and potentially find solutions that balance performance with ease of use.",
+      "desired_response": "An explanation of the technical or policy reasons behind Hugging Face token requirements for certain models in vLLM, a comparison with Ollama's approach, and potential alternative methods or workarounds to access models without sharing personal information or requiring user account creation.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The user is working with Ollama on a locally hosted AI project.",
+          "evidence_quote": "I've been working with Ollama on a locally hosted AI project",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F2",
+          "text": "vLLM is a performance-focused alternative that the user has downloaded in Docker.",
+          "evidence_quote": "vLLM appears to be a performance focused alternative so I've got that downloaded in Docker",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F3",
+          "text": "vLLM cannot use certain models without accepting to share contact information on HuggingFace and setting an HF token in the environment.",
+          "evidence_quote": "however there are models it can't use without accepting to share my contact information on the HuggingFace website and setting the HF token in the environment for vLLM.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F4",
+          "text": "The user wants to avoid requiring users to make an account and get an access token, as it is contrary to their project's goal of easy installation.",
+          "evidence_quote": "I would like to avoid this step as one of the selling points of the project I'm working on is that it's easy for the user to install, and having the user make an account somewhere and get an access token is contrary to that goal.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F5",
+          "text": "Ollama has direct access to Mistral models without requiring the extra step of sharing contact information or getting an HF token.",
+          "evidence_quote": "How come Ollama has direct access to the Mistral models without requiring this extra step?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F6",
+          "text": "The Mistral website states that 7B is released under the Apache 2.0 license and can be \"used without restrictions\".",
+          "evidence_quote": "Furthermore, the Mistral website says 7B is released under the Apache 2.0 license and can be \"used without restrictions\"",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F7",
+          "text": "The user is asking why contact information is needed if they go through Hugging Face, given the unrestricted license.",
+          "evidence_quote": "so could someone please shed some light on why they need my contact information if I go through HF",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F8",
+          "text": "The user is asking if there is an alternative route as a workaround.",
+          "evidence_quote": "and if there's an alternative route as a workaround?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        }
+      ],
+      "allowed_claims": [
+        "vLLM may require Hugging Face authentication for certain models.",
+        "Ollama appears to offer direct access to some models without authentication.",
+        "Model licensing terms (e.g., Apache 2.0) might differ from access requirements.",
+        "User experience and ease of installation are considerations for local LLM deployment."
+      ],
+      "forbidden_claims": [
+        "vLLM definitively requires Hugging Face tokens for all models.",
+        "Ollama is technically superior to vLLM.",
+        "Mistral models are universally free of any access restrictions.",
+        "The user has personally tested and confirmed performance differences.",
+        "The user's project has already been successfully deployed with Ollama."
+      ],
+      "essential_limitations": [
+        "The specific Mistral models requiring HF tokens with vLLM are not detailed beyond 'Mistral models'.",
+        "The exact technical mechanism by which Ollama accesses models is not explained.",
+        "The precise nature of the 'contact information' requested by Hugging Face is not specified.",
+        "The source does not detail the Docker setup for vLLM beyond its download."
+      ],
+      "missing_information": [
+        "The specific vLLM version and Docker image used.",
+        "The exact Mistral model(s) encountered the access issue (beyond 'Mistral models' and '7B').",
+        "Details on the performance metrics or goals the user is trying to benchmark.",
+        "Any specific Hugging Face terms of service or policies relevant to model access."
+      ],
+      "id": "C01",
+      "brief_id": "C01",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1knvgva",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-05-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/",
+      "source_hash": "a8b672094b43293040b0c607aed18beb0ef2c1f87d4c9c681f63db52f1f28174",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Why does vLLM require a Hugging Face token and contact info for Mistral models while Ollama does not?",
+      "body": "I'm working on a local AI project using Ollama and exploring vLLM as a performance-focused alternative. However, I noticed that vLLM requires me to share contact information on Hugging Face and set an HF token in the environment to use certain Mistral models. This is puzzling because Mistral 7B is released under an Apache 2.0 license and supposedly can be used without restrictions. Ollama, on the other hand, seems to provide direct access to these models without needing this extra step. Since my project aims for easy user installation without requiring account creation or token setup, this requirement is a significant barrier. Does anyone know why vLLM enforces this Hugging Face authentication for these models despite their open license? Also, are there any known workarounds to avoid sharing personal info or requiring users to get tokens when using vLLM with Mistral models?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Why does vLLM require a Hugging Face token and contact info for Mistral models while Ollama does not?",
+      "body": "I'm working on a local AI project using Ollama and exploring vLLM as a performance-focused alternative. However, I noticed that vLLM requires me to share contact information on Hugging Face and set an HF token in the environment to use certain Mistral models. This is puzzling because Mistral 7B is released under an Apache 2.0 license and supposedly can be used without restrictions. Ollama, on the other hand, seems to provide direct access to these models without needing this extra step. Since my project aims for easy user installation without requiring account creation or token setup, this requirement is a significant barrier. Does anyone know why vLLM enforces this Hugging Face authentication for these models despite their open license? Also, are there any known workarounds to avoid sharing personal info or requiring users to get tokens when using vLLM with Mistral models?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "Tie",
+    "changed_dimension": "community_fit",
+    "design_reason": "Exact identical text; detects forced preference",
+    "source_type": "identical",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP02",
+    "brief_id": "C01",
+    "source_group_id": "reddit:1knvgva",
+    "split": "calibration",
+    "brief": {
+      "topic": "Model Access Requirements for Local LLM Deployment",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding why some LLM deployment tools (like vLLM) require Hugging Face tokens and personal information for certain models, while others (like Ollama) do not, and exploring potential workarounds.",
+      "context": "A user is investigating performance differences between local LLM deployment tools, specifically vLLM and Ollama. They encountered a requirement to share contact information and obtain a Hugging Face token to use Mistral models with vLLM, which conflicts with their project's goal of easy user installation. They are seeking clarification on this discrepancy, especially since Mistral models are stated to be under an unrestricted Apache 2.0 license.",
+      "motivation": "This question is worth discussing because it highlights a practical barrier for users aiming for simple, local LLM deployments. Understanding the underlying reasons for differing access requirements can help enthusiasts choose appropriate tools and potentially find solutions that balance performance with ease of use.",
+      "desired_response": "An explanation of the technical or policy reasons behind Hugging Face token requirements for certain models in vLLM, a comparison with Ollama's approach, and potential alternative methods or workarounds to access models without sharing personal information or requiring user account creation.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The user is working with Ollama on a locally hosted AI project.",
+          "evidence_quote": "I've been working with Ollama on a locally hosted AI project",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F2",
+          "text": "vLLM is a performance-focused alternative that the user has downloaded in Docker.",
+          "evidence_quote": "vLLM appears to be a performance focused alternative so I've got that downloaded in Docker",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F3",
+          "text": "vLLM cannot use certain models without accepting to share contact information on HuggingFace and setting an HF token in the environment.",
+          "evidence_quote": "however there are models it can't use without accepting to share my contact information on the HuggingFace website and setting the HF token in the environment for vLLM.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F4",
+          "text": "The user wants to avoid requiring users to make an account and get an access token, as it is contrary to their project's goal of easy installation.",
+          "evidence_quote": "I would like to avoid this step as one of the selling points of the project I'm working on is that it's easy for the user to install, and having the user make an account somewhere and get an access token is contrary to that goal.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F5",
+          "text": "Ollama has direct access to Mistral models without requiring the extra step of sharing contact information or getting an HF token.",
+          "evidence_quote": "How come Ollama has direct access to the Mistral models without requiring this extra step?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F6",
+          "text": "The Mistral website states that 7B is released under the Apache 2.0 license and can be \"used without restrictions\".",
+          "evidence_quote": "Furthermore, the Mistral website says 7B is released under the Apache 2.0 license and can be \"used without restrictions\"",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F7",
+          "text": "The user is asking why contact information is needed if they go through Hugging Face, given the unrestricted license.",
+          "evidence_quote": "so could someone please shed some light on why they need my contact information if I go through HF",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F8",
+          "text": "The user is asking if there is an alternative route as a workaround.",
+          "evidence_quote": "and if there's an alternative route as a workaround?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        }
+      ],
+      "allowed_claims": [
+        "vLLM may require Hugging Face authentication for certain models.",
+        "Ollama appears to offer direct access to some models without authentication.",
+        "Model licensing terms (e.g., Apache 2.0) might differ from access requirements.",
+        "User experience and ease of installation are considerations for local LLM deployment."
+      ],
+      "forbidden_claims": [
+        "vLLM definitively requires Hugging Face tokens for all models.",
+        "Ollama is technically superior to vLLM.",
+        "Mistral models are universally free of any access restrictions.",
+        "The user has personally tested and confirmed performance differences.",
+        "The user's project has already been successfully deployed with Ollama."
+      ],
+      "essential_limitations": [
+        "The specific Mistral models requiring HF tokens with vLLM are not detailed beyond 'Mistral models'.",
+        "The exact technical mechanism by which Ollama accesses models is not explained.",
+        "The precise nature of the 'contact information' requested by Hugging Face is not specified.",
+        "The source does not detail the Docker setup for vLLM beyond its download."
+      ],
+      "missing_information": [
+        "The specific vLLM version and Docker image used.",
+        "The exact Mistral model(s) encountered the access issue (beyond 'Mistral models' and '7B').",
+        "Details on the performance metrics or goals the user is trying to benchmark.",
+        "Any specific Hugging Face terms of service or policies relevant to model access."
+      ],
+      "id": "C01",
+      "brief_id": "C01",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1knvgva",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-05-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/",
+      "source_hash": "a8b672094b43293040b0c607aed18beb0ef2c1f87d4c9c681f63db52f1f28174",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Why does vLLM require a Hugging Face token and contact info for Mistral models while Ollama does not?",
+      "body": "I'm working on a local AI project using Ollama and exploring vLLM as a performance-focused alternative. However, I noticed that vLLM requires me to share contact information on Hugging Face and set an HF token in the environment to use certain Mistral models. This is puzzling because Mistral 7B is released under an Apache 2.0 license and supposedly can be used without restrictions. Ollama, on the other hand, seems to provide direct access to these models without needing this extra step. Since my project aims for easy user installation without requiring account creation or token setup, this requirement is a significant barrier. Does anyone know why vLLM enforces this Hugging Face authentication for these models despite their open license? Also, are there any known workarounds to avoid sharing personal info or requiring users to get tokens when using vLLM with Mistral models?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Why does a local LLM runtime require authentication for some Apache 2.0 licensed models while another doesn’t?",
+      "body": "In my exploration of local LLM runtimes, I found that one performance-focused runtime requires sharing contact info and setting an authentication token to use certain 7B parameter models released under Apache 2.0. Another runtime offers direct access to these models without such requirements. Given the license allows unrestricted use, what technical or policy reasons might explain this discrepancy? Are there known methods to bypass the authentication step while maintaining ease of installation?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This draft replaces specific product names with generic terms while preserving the core issue about authentication requirements and licensing, maintaining factual accuracy without naming particular tools or models.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP03",
+    "brief_id": "C01",
+    "source_group_id": "reddit:1knvgva",
+    "split": "calibration",
+    "brief": {
+      "topic": "Model Access Requirements for Local LLM Deployment",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding why some LLM deployment tools (like vLLM) require Hugging Face tokens and personal information for certain models, while others (like Ollama) do not, and exploring potential workarounds.",
+      "context": "A user is investigating performance differences between local LLM deployment tools, specifically vLLM and Ollama. They encountered a requirement to share contact information and obtain a Hugging Face token to use Mistral models with vLLM, which conflicts with their project's goal of easy user installation. They are seeking clarification on this discrepancy, especially since Mistral models are stated to be under an unrestricted Apache 2.0 license.",
+      "motivation": "This question is worth discussing because it highlights a practical barrier for users aiming for simple, local LLM deployments. Understanding the underlying reasons for differing access requirements can help enthusiasts choose appropriate tools and potentially find solutions that balance performance with ease of use.",
+      "desired_response": "An explanation of the technical or policy reasons behind Hugging Face token requirements for certain models in vLLM, a comparison with Ollama's approach, and potential alternative methods or workarounds to access models without sharing personal information or requiring user account creation.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The user is working with Ollama on a locally hosted AI project.",
+          "evidence_quote": "I've been working with Ollama on a locally hosted AI project",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F2",
+          "text": "vLLM is a performance-focused alternative that the user has downloaded in Docker.",
+          "evidence_quote": "vLLM appears to be a performance focused alternative so I've got that downloaded in Docker",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F3",
+          "text": "vLLM cannot use certain models without accepting to share contact information on HuggingFace and setting an HF token in the environment.",
+          "evidence_quote": "however there are models it can't use without accepting to share my contact information on the HuggingFace website and setting the HF token in the environment for vLLM.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F4",
+          "text": "The user wants to avoid requiring users to make an account and get an access token, as it is contrary to their project's goal of easy installation.",
+          "evidence_quote": "I would like to avoid this step as one of the selling points of the project I'm working on is that it's easy for the user to install, and having the user make an account somewhere and get an access token is contrary to that goal.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F5",
+          "text": "Ollama has direct access to Mistral models without requiring the extra step of sharing contact information or getting an HF token.",
+          "evidence_quote": "How come Ollama has direct access to the Mistral models without requiring this extra step?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F6",
+          "text": "The Mistral website states that 7B is released under the Apache 2.0 license and can be \"used without restrictions\".",
+          "evidence_quote": "Furthermore, the Mistral website says 7B is released under the Apache 2.0 license and can be \"used without restrictions\"",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F7",
+          "text": "The user is asking why contact information is needed if they go through Hugging Face, given the unrestricted license.",
+          "evidence_quote": "so could someone please shed some light on why they need my contact information if I go through HF",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        },
+        {
+          "id": "F8",
+          "text": "The user is asking if there is an alternative route as a workaround.",
+          "evidence_quote": "and if there's an alternative route as a workaround?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/"
+        }
+      ],
+      "allowed_claims": [
+        "vLLM may require Hugging Face authentication for certain models.",
+        "Ollama appears to offer direct access to some models without authentication.",
+        "Model licensing terms (e.g., Apache 2.0) might differ from access requirements.",
+        "User experience and ease of installation are considerations for local LLM deployment."
+      ],
+      "forbidden_claims": [
+        "vLLM definitively requires Hugging Face tokens for all models.",
+        "Ollama is technically superior to vLLM.",
+        "Mistral models are universally free of any access restrictions.",
+        "The user has personally tested and confirmed performance differences.",
+        "The user's project has already been successfully deployed with Ollama."
+      ],
+      "essential_limitations": [
+        "The specific Mistral models requiring HF tokens with vLLM are not detailed beyond 'Mistral models'.",
+        "The exact technical mechanism by which Ollama accesses models is not explained.",
+        "The precise nature of the 'contact information' requested by Hugging Face is not specified.",
+        "The source does not detail the Docker setup for vLLM beyond its download."
+      ],
+      "missing_information": [
+        "The specific vLLM version and Docker image used.",
+        "The exact Mistral model(s) encountered the access issue (beyond 'Mistral models' and '7B').",
+        "Details on the performance metrics or goals the user is trying to benchmark.",
+        "Any specific Hugging Face terms of service or policies relevant to model access."
+      ],
+      "id": "C01",
+      "brief_id": "C01",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1knvgva",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-05-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1knvgva/why_do_i_need_to_share_my_contact_informationget/",
+      "source_hash": "a8b672094b43293040b0c607aed18beb0ef2c1f87d4c9c681f63db52f1f28174",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Access requirements for Mistral 7B models via Hugging Face and local LLM tools",
+      "body": "A user working with a local AI project using Ollama and vLLM reports that vLLM requires sharing contact information on Hugging Face and setting an HF token to use certain Mistral models. Ollama appears to provide direct access without this step. The Mistral 7B model is licensed under Apache 2.0 and stated to be usable without restrictions. The user seeks clarification on why Hugging Face requests contact info despite the license and whether alternative access methods exist.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Why does vLLM require a Hugging Face token and contact info for Mistral models while Ollama does not?",
+      "body": "I'm working on a local AI project using Ollama and exploring vLLM as a performance-focused alternative. However, I noticed that vLLM requires me to share contact information on Hugging Face and set an HF token in the environment to use certain Mistral models. This is puzzling because Mistral 7B is released under an Apache 2.0 license and supposedly can be used without restrictions. Ollama, on the other hand, seems to provide direct access to these models without needing this extra step. Since my project aims for easy user installation without requiring account creation or token setup, this requirement is a significant barrier. Does anyone know why vLLM enforces this Hugging Face authentication for these models despite their open license? Also, are there any known workarounds to avoid sharing personal info or requiring users to get tokens when using vLLM with Mistral models?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "This version focuses on restating the facts without posing a direct question or comparison, reducing actionable discussion but preserving the key information from the source.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP04",
+    "brief_id": "C02",
+    "source_group_id": "reddit:1jcwbim",
+    "split": "calibration",
+    "brief": {
+      "topic": "Vision LLM Image Interpretation",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding how vision-capable Large Language Models (LLMs) process and interpret image data, specifically regarding their spatial awareness and object localization capabilities.",
+      "context": "A community member is reading an archived user account discussing the internal workings of vision LLMs and their limitations in understanding spatial relationships within images. The original author shared observations from testing models like ChatGPT, Grok, and Gemma 3 27B.",
+      "motivation": "This question is worth discussing to better understand the current capabilities and limitations of vision LLMs, which could inform future development and user expectations.",
+      "desired_response": "A discussion exploring the technical approaches vision LLMs might use to process images and why they may struggle with precise spatial reasoning, drawing on the observations from the archived post.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author questions whether a vision LLM extracts a general concept of the image using a vision transformer, meaning it has only limited information.",
+          "evidence_quote": "Does it just extract a general concept of the image using a vision transformer, meaning it has only limited information?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author questions whether the image is loaded into memory the whole time, allowing the LLM to analyze any part of it.",
+          "evidence_quote": "Or is the image loaded into memory the whole time, allowing the LLM to analyze any part of it?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F3",
+          "text": "The source author questions whether a vision LLM relies on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding.",
+          "evidence_quote": "Or does it rely on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author states that LLMs seem to lack real spatial awareness when dealing with images.",
+          "evidence_quote": "The reason I ask is that LLMs seem to lack real spatial awareness when dealing with images.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F5",
+          "text": "When asked to recreate an image using JavaScript and Canvas, tested LLMs failed to correctly place objects in the right locations and sizes, only capturing the concept of the image.",
+          "evidence_quote": "Instead of correctly placing objects in the right locations and sizes, it only captures the *concept* of the image.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F6",
+          "text": "The source author would be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper scale, but it seems incapable of doing that.",
+          "evidence_quote": "I’d be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper(is) scale. But it seems incapable of doing that.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F7",
+          "text": "The source author tested this with ChatGPT, Grok, and Gemma 3 27B, and the results were similar: they draw the concept of the image without any details.",
+          "evidence_quote": "I've tested this with ChatGPT, Grok, and Gemma 3 27B, and the results are similar: they draw concept of the image I gave originally, without any details.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F8",
+          "text": "The source author tried to convince the LLM to draw features where they should be on the canvas, but the LLM just didn't understand.",
+          "evidence_quote": "And I tried to convince llm to draw features where they should be on the canvas, llm just don't understand.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        }
+      ],
+      "allowed_claims": [
+        "Vision LLMs may process images by extracting general concepts.",
+        "Vision LLMs might rely on external components for object detection.",
+        "Current vision LLMs may exhibit limitations in spatial awareness.",
+        "The ability to accurately place objects or bounding boxes in images is a reported challenge for some vision LLMs."
+      ],
+      "forbidden_claims": [
+        "The source author's tests definitively prove how all vision LLMs work.",
+        "The source author's tests represent a complete benchmark of vision LLM capabilities.",
+        "The LLMs tested have been definitively proven to lack any spatial reasoning.",
+        "The source author's observations are universally applicable to all vision LLM architectures.",
+        "The specific internal mechanisms of the tested LLMs have been fully elucidated."
+      ],
+      "essential_limitations": [
+        "The exact architecture and processing pipeline of the tested LLMs are unknown.",
+        "The specific versions or configurations of ChatGPT, Grok, and Gemma 3 27B used are not detailed.",
+        "The precise nature of the 'structured list' or 'bounding box' output is not specified.",
+        "The source author's testing methodology is not fully described."
+      ],
+      "missing_information": [
+        "Details on the vision transformer or perceptron models potentially used.",
+        "Information on how image data is tokenized or represented internally.",
+        "The specific prompts used to elicit the observed behavior.",
+        "Confirmation of whether the LLM had access to the full image data or a processed representation."
+      ],
+      "id": "C02",
+      "brief_id": "C02",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jcwbim",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-03-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/",
+      "source_hash": "5dc86fbc37fe126877abd9a1ffddb2a193bdcf2901023bce78f5bf45e11cc416",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How Do Vision LLMs Actually Process Images?",
+      "body": "A user shared observations about vision LLMs like ChatGPT, Grok, and Gemma 3 27B struggling to understand spatial relationships in images. They question whether these models extract only a general concept via a vision transformer, keep the entire image in memory, or rely on a separate object detector that outputs a list of features. Attempts to have these LLMs recreate images with correct object placement and scale failed, showing they mainly capture the overall concept rather than details. What are your thoughts on how vision LLMs handle image data internally? Any insights on improving their spatial awareness?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Why Do Vision LLMs Struggle with Spatial Awareness and Object Placement in Images?",
+      "body": "An archived Reddit post from 2025 discusses how vision-capable LLMs like ChatGPT, Grok, and Gemma 3 27B seem to capture only a general concept of images rather than detailed spatial information. The author wonders if these models rely on a vision transformer that extracts limited information, or if the image is fully loaded into memory for detailed analysis, or if a separate perceptron provides just a structured list of detected objects. Notably, when asked to recreate images with accurate object placement and scale (e.g., using JavaScript Canvas), these LLMs fail to position objects correctly, indicating a lack of real spatial awareness. The author would consider it a success if the models could at least output bounding boxes with correct positions and sizes, but this appears beyond their current capability. Given these observations, what technical approaches might vision LLMs be using internally that lead to this limitation? Are there known methods or architectures that could improve spatial reasoning and object localization in vision LLMs?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the specific goal of understanding technical approaches and instead invites broader community input without a focused technical question, making it more open-ended and less targeted.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP05",
+    "brief_id": "C02",
+    "source_group_id": "reddit:1jcwbim",
+    "split": "calibration",
+    "brief": {
+      "topic": "Vision LLM Image Interpretation",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding how vision-capable Large Language Models (LLMs) process and interpret image data, specifically regarding their spatial awareness and object localization capabilities.",
+      "context": "A community member is reading an archived user account discussing the internal workings of vision LLMs and their limitations in understanding spatial relationships within images. The original author shared observations from testing models like ChatGPT, Grok, and Gemma 3 27B.",
+      "motivation": "This question is worth discussing to better understand the current capabilities and limitations of vision LLMs, which could inform future development and user expectations.",
+      "desired_response": "A discussion exploring the technical approaches vision LLMs might use to process images and why they may struggle with precise spatial reasoning, drawing on the observations from the archived post.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author questions whether a vision LLM extracts a general concept of the image using a vision transformer, meaning it has only limited information.",
+          "evidence_quote": "Does it just extract a general concept of the image using a vision transformer, meaning it has only limited information?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author questions whether the image is loaded into memory the whole time, allowing the LLM to analyze any part of it.",
+          "evidence_quote": "Or is the image loaded into memory the whole time, allowing the LLM to analyze any part of it?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F3",
+          "text": "The source author questions whether a vision LLM relies on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding.",
+          "evidence_quote": "Or does it rely on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author states that LLMs seem to lack real spatial awareness when dealing with images.",
+          "evidence_quote": "The reason I ask is that LLMs seem to lack real spatial awareness when dealing with images.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F5",
+          "text": "When asked to recreate an image using JavaScript and Canvas, tested LLMs failed to correctly place objects in the right locations and sizes, only capturing the concept of the image.",
+          "evidence_quote": "Instead of correctly placing objects in the right locations and sizes, it only captures the *concept* of the image.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F6",
+          "text": "The source author would be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper scale, but it seems incapable of doing that.",
+          "evidence_quote": "I’d be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper(is) scale. But it seems incapable of doing that.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F7",
+          "text": "The source author tested this with ChatGPT, Grok, and Gemma 3 27B, and the results were similar: they draw the concept of the image without any details.",
+          "evidence_quote": "I've tested this with ChatGPT, Grok, and Gemma 3 27B, and the results are similar: they draw concept of the image I gave originally, without any details.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F8",
+          "text": "The source author tried to convince the LLM to draw features where they should be on the canvas, but the LLM just didn't understand.",
+          "evidence_quote": "And I tried to convince llm to draw features where they should be on the canvas, llm just don't understand.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        }
+      ],
+      "allowed_claims": [
+        "Vision LLMs may process images by extracting general concepts.",
+        "Vision LLMs might rely on external components for object detection.",
+        "Current vision LLMs may exhibit limitations in spatial awareness.",
+        "The ability to accurately place objects or bounding boxes in images is a reported challenge for some vision LLMs."
+      ],
+      "forbidden_claims": [
+        "The source author's tests definitively prove how all vision LLMs work.",
+        "The source author's tests represent a complete benchmark of vision LLM capabilities.",
+        "The LLMs tested have been definitively proven to lack any spatial reasoning.",
+        "The source author's observations are universally applicable to all vision LLM architectures.",
+        "The specific internal mechanisms of the tested LLMs have been fully elucidated."
+      ],
+      "essential_limitations": [
+        "The exact architecture and processing pipeline of the tested LLMs are unknown.",
+        "The specific versions or configurations of ChatGPT, Grok, and Gemma 3 27B used are not detailed.",
+        "The precise nature of the 'structured list' or 'bounding box' output is not specified.",
+        "The source author's testing methodology is not fully described."
+      ],
+      "missing_information": [
+        "Details on the vision transformer or perceptron models potentially used.",
+        "Information on how image data is tokenized or represented internally.",
+        "The specific prompts used to elicit the observed behavior.",
+        "Confirmation of whether the LLM had access to the full image data or a processed representation."
+      ],
+      "id": "C02",
+      "brief_id": "C02",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jcwbim",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-03-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/",
+      "source_hash": "5dc86fbc37fe126877abd9a1ffddb2a193bdcf2901023bce78f5bf45e11cc416",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Why Do Vision LLMs Struggle with Spatial Awareness and Object Placement in Images?",
+      "body": "An archived Reddit post from 2025 discusses how vision-capable LLMs like ChatGPT, Grok, and Gemma 3 27B seem to capture only a general concept of images rather than detailed spatial information. The author wonders if these models rely on a vision transformer that extracts limited information, or if the image is fully loaded into memory for detailed analysis, or if a separate perceptron provides just a structured list of detected objects. Notably, when asked to recreate images with accurate object placement and scale (e.g., using JavaScript Canvas), these LLMs fail to position objects correctly, indicating a lack of real spatial awareness. The author would consider it a success if the models could at least output bounding boxes with correct positions and sizes, but this appears beyond their current capability. Given these observations, what technical approaches might vision LLMs be using internally that lead to this limitation? Are there known methods or architectures that could improve spatial reasoning and object localization in vision LLMs?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Why Do Some Vision LLMs Fail to Place Objects Correctly in Image Reconstructions?",
+      "body": "An archived post reports that vision LLMs tested (including a 27B parameter model and others) seem to only grasp the concept of an image rather than detailed spatial layout. The author questions whether these models use a vision transformer with limited info, keep the entire image in memory, or depend on a separate perceptron that outputs object lists. When asked to redraw images with correct object positions and scales, the models failed, suggesting limited spatial awareness. They hoped for bounding boxes with accurate placement but saw none. What might cause these spatial limitations in such models, and are there architectural strategies to address them?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This alternative replaces specific model names with generic descriptors and keeps the core facts, preserving the technical question but reducing explicit references to particular models or brands.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP06",
+    "brief_id": "C02",
+    "source_group_id": "reddit:1jcwbim",
+    "split": "calibration",
+    "brief": {
+      "topic": "Vision LLM Image Interpretation",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Understanding how vision-capable Large Language Models (LLMs) process and interpret image data, specifically regarding their spatial awareness and object localization capabilities.",
+      "context": "A community member is reading an archived user account discussing the internal workings of vision LLMs and their limitations in understanding spatial relationships within images. The original author shared observations from testing models like ChatGPT, Grok, and Gemma 3 27B.",
+      "motivation": "This question is worth discussing to better understand the current capabilities and limitations of vision LLMs, which could inform future development and user expectations.",
+      "desired_response": "A discussion exploring the technical approaches vision LLMs might use to process images and why they may struggle with precise spatial reasoning, drawing on the observations from the archived post.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The source author questions whether a vision LLM extracts a general concept of the image using a vision transformer, meaning it has only limited information.",
+          "evidence_quote": "Does it just extract a general concept of the image using a vision transformer, meaning it has only limited information?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F2",
+          "text": "The source author questions whether the image is loaded into memory the whole time, allowing the LLM to analyze any part of it.",
+          "evidence_quote": "Or is the image loaded into memory the whole time, allowing the LLM to analyze any part of it?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F3",
+          "text": "The source author questions whether a vision LLM relies on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding.",
+          "evidence_quote": "Or does it rely on the output of a separate perceptron that detects objects and features, providing only a structured list rather than a full visual understanding?",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author states that LLMs seem to lack real spatial awareness when dealing with images.",
+          "evidence_quote": "The reason I ask is that LLMs seem to lack real spatial awareness when dealing with images.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F5",
+          "text": "When asked to recreate an image using JavaScript and Canvas, tested LLMs failed to correctly place objects in the right locations and sizes, only capturing the concept of the image.",
+          "evidence_quote": "Instead of correctly placing objects in the right locations and sizes, it only captures the *concept* of the image.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F6",
+          "text": "The source author would be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper scale, but it seems incapable of doing that.",
+          "evidence_quote": "I’d be happy if the LLM could just represent objects as bounding boxes in the correct positions with proper(is) scale. But it seems incapable of doing that.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F7",
+          "text": "The source author tested this with ChatGPT, Grok, and Gemma 3 27B, and the results were similar: they draw the concept of the image without any details.",
+          "evidence_quote": "I've tested this with ChatGPT, Grok, and Gemma 3 27B, and the results are similar: they draw concept of the image I gave originally, without any details.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        },
+        {
+          "id": "F8",
+          "text": "The source author tried to convince the LLM to draw features where they should be on the canvas, but the LLM just didn't understand.",
+          "evidence_quote": "And I tried to convince llm to draw features where they should be on the canvas, llm just don't understand.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/"
+        }
+      ],
+      "allowed_claims": [
+        "Vision LLMs may process images by extracting general concepts.",
+        "Vision LLMs might rely on external components for object detection.",
+        "Current vision LLMs may exhibit limitations in spatial awareness.",
+        "The ability to accurately place objects or bounding boxes in images is a reported challenge for some vision LLMs."
+      ],
+      "forbidden_claims": [
+        "The source author's tests definitively prove how all vision LLMs work.",
+        "The source author's tests represent a complete benchmark of vision LLM capabilities.",
+        "The LLMs tested have been definitively proven to lack any spatial reasoning.",
+        "The source author's observations are universally applicable to all vision LLM architectures.",
+        "The specific internal mechanisms of the tested LLMs have been fully elucidated."
+      ],
+      "essential_limitations": [
+        "The exact architecture and processing pipeline of the tested LLMs are unknown.",
+        "The specific versions or configurations of ChatGPT, Grok, and Gemma 3 27B used are not detailed.",
+        "The precise nature of the 'structured list' or 'bounding box' output is not specified.",
+        "The source author's testing methodology is not fully described."
+      ],
+      "missing_information": [
+        "Details on the vision transformer or perceptron models potentially used.",
+        "Information on how image data is tokenized or represented internally.",
+        "The specific prompts used to elicit the observed behavior.",
+        "Confirmation of whether the LLM had access to the full image data or a processed representation."
+      ],
+      "id": "C02",
+      "brief_id": "C02",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jcwbim",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "2025-03-16",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jcwbim/how_vision_llm_works_what_model_actually_see/",
+      "source_hash": "5dc86fbc37fe126877abd9a1ffddb2a193bdcf2901023bce78f5bf45e11cc416",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Why Do Vision LLMs Struggle with Spatial Awareness and Object Placement in Images?",
+      "body": "An archived Reddit post from 2025 discusses how vision-capable LLMs like ChatGPT, Grok, and Gemma 3 27B seem to capture only a general concept of images rather than detailed spatial information. The author wonders if these models rely on a vision transformer that extracts limited information, or if the image is fully loaded into memory for detailed analysis, or if a separate perceptron provides just a structured list of detected objects. Notably, when asked to recreate images with accurate object placement and scale (e.g., using JavaScript Canvas), these LLMs fail to position objects correctly, indicating a lack of real spatial awareness. The author would consider it a success if the models could at least output bounding boxes with correct positions and sizes, but this appears beyond their current capability. Given these observations, what technical approaches might vision LLMs be using internally that lead to this limitation? Are there known methods or architectures that could improve spatial reasoning and object localization in vision LLMs?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "B": {
+      "title": "Observations on Vision LLMs and Their Spatial Awareness Limitations",
+      "body": "A 2025 Reddit post discusses how vision LLMs like ChatGPT, Grok, and Gemma 3 27B appear to extract only general concepts from images rather than detailed spatial information. The author questions whether these models use vision transformers, keep images fully in memory, or rely on separate perceptrons that output structured object lists. Attempts to recreate images with correct object placement and scale failed, indicating limited spatial awareness. The author notes that bounding box representation with proper scale and position seems beyond these models' current capability. These observations highlight challenges in vision LLMs' understanding of spatial relationships.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "information_value",
+    "design_reason": "This version restates the facts without posing a question or inviting discussion, reducing its usefulness for community problem-solving or technical insight.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP07",
+    "brief_id": "C04",
+    "source_group_id": "reddit:1kgs1z7",
+    "split": "calibration",
+    "brief": {
+      "topic": "Optimizing llama.cpp performance with multiple GPUs",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing methods to improve token generation speed in llama.cpp when using multiple GPUs, particularly with mixed hardware.",
+      "context": "This discussion is based on an archived user account from May 7, 2025, detailing their experiments with llama.cpp on a system with a 3090 and two 3060 GPUs. The original author explored tensor splitting and row split modes to enhance performance with various models.",
+      "motivation": "Understanding how to configure tensor splitting and other settings in llama.cpp can significantly impact performance when running large language models on multi-GPU setups. This question aims to explore these techniques based on the archived observations.",
+      "desired_response": "A discussion about the effectiveness of tensor splitting and row split modes in llama.cpp for optimizing performance on multi-GPU systems, referencing the observations made in the source material.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "For smaller models like Qwen3 8B and Qwen3 14B, disabling the 3060 GPUs resulted in a performance boost.",
+          "evidence_quote": "If we disable them, we see a performance boost: from 48 to 82 tokens per second, and from 28 to 48.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F2",
+          "text": "For Qwen3 32B, adjusting the tensor split improved performance from 13.0 to 15.6 tokens per second, and further to 16.4 tokens per second using the \"row\" split mode.",
+          "evidence_quote": "We can improve performance from the default 13.0 tokens per second to 15.6 by adjusting the tensor split. Furthermore, we can go even higher, to 16.4 tokens per second, by using the \"row\" split mode.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F3",
+          "text": "For Nemotron 49B (Q6), tuning resulted in an improvement from 12.4 to 14.1 tokens per second.",
+          "evidence_quote": "With some tuning, we can go from 12.4 to 14.1 tokens per second.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F4",
+          "text": "For DeepSeek-R1-Distill-Llama-70B (Q4), performance improved from 10.3 to 12.1 tokens per second.",
+          "evidence_quote": "We start at 10.3 tokens per second and improve to 12.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F5",
+          "text": "For Gemma3 27B, optimized tensor split values boosted performance from 14.9 to 18.9 tokens per second, but using `sm` row mode slightly decreased speed to 18.5.",
+          "evidence_quote": "With optimized tensor split values, we boost performance from 14.9 to 18.9 tokens per second. However, using `sm` row mode slightly decreases the speed to 18.5.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F6",
+          "text": "For Mistral Small 24B, performance increased from 18.8 to 28.2 tokens per second with tensor split, but `sm` row mode reduced it slightly to 26.1.",
+          "evidence_quote": "Performance goes from 18.8 to 28.2 tokens per second with tensor split, but again, `sm` row mode reduces it slightly to 26.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        }
+      ],
+      "allowed_claims": [
+        "Tensor splitting can be used to manage model VRAM requirements across multiple GPUs.",
+        "Different split modes ('row', 'sm') may yield varying performance results.",
+        "Experimentation is key to finding optimal tensor split configurations for specific models and hardware."
+      ],
+      "forbidden_claims": [
+        "The reported token-per-second values are universally applicable.",
+        "The 'row' split mode is always superior.",
+        "Mixing GPUs is inherently problematic.",
+        "Specific hardware configurations are guaranteed to achieve these exact results."
+      ],
+      "essential_limitations": [
+        "The specific motherboard and riser configuration are not detailed.",
+        "The exact VRAM allocation for each GPU is not specified.",
+        "The precise version of llama.cpp used is not stated, only that it was recent.",
+        "The system's CPU and RAM specifications are not provided."
+      ],
+      "missing_information": [
+        "Detailed VRAM allocation settings for each GPU.",
+        "Specific llama.cpp version used for testing.",
+        "Full system specifications beyond GPU models."
+      ],
+      "id": "C04",
+      "brief_id": "C04",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1kgs1z7",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-07",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "source_hash": "cb113181f3a217989e37f681dd9ccd976f4f54d1b7082f642b6431773f13b0fe",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How effective is tensor splitting and row split mode for multi-GPU llama.cpp setups with mixed 3090 and 3060 cards?",
+      "body": "An archived 2025 Reddit post reports experiments running llama.cpp on a system with a 3090 and two 3060 GPUs. For smaller models like Qwen3 8B and 14B, disabling the 3060s actually improved token generation speed (e.g., from 48 to 82 tokens/sec). For larger models, adjusting tensor split parameters improved performance: Qwen3 32B went from 13.0 to 15.6 tokens/sec, further rising to 16.4 with \"row\" split mode. Other models like Nemotron 49B (Q6) and DeepSeek-R1-Distill-Llama-70B (Q4) also saw modest gains from tuning. Interestingly, for Gemma3 27B and Mistral Small 24B, optimized tensor splits increased speed, but using the `sm` row mode slightly reduced it. Given these mixed results, what practical advice or heuristics have you found for configuring tensor splits and split modes in llama.cpp on heterogeneous multi-GPU rigs? Are there patterns in when \"row\" or other modes help or hurt performance? Any insights on balancing VRAM and compute across GPUs with different capabilities would be especially useful. The original post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Multi-GPU llama.cpp performance tuning with tensor splits and row modes",
+      "body": "A user from 2025 shared their experience running llama.cpp on a system with a 3090 and two 3060 GPUs. They found that disabling the 3060s improved speed for smaller models, while adjusting tensor splits and using \"row\" split mode helped larger models like Qwen3 32B and Nemotron 49B. However, for some models, certain row modes slightly decreased performance. What are your experiences or recommendations for tuning tensor splits and split modes in multi-GPU setups? How do you decide when to disable weaker GPUs or try different split modes?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the focused question about practical heuristics and patterns, making it more of a general community prompt rather than a targeted technical inquiry.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP08",
+    "brief_id": "C04",
+    "source_group_id": "reddit:1kgs1z7",
+    "split": "calibration",
+    "brief": {
+      "topic": "Optimizing llama.cpp performance with multiple GPUs",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing methods to improve token generation speed in llama.cpp when using multiple GPUs, particularly with mixed hardware.",
+      "context": "This discussion is based on an archived user account from May 7, 2025, detailing their experiments with llama.cpp on a system with a 3090 and two 3060 GPUs. The original author explored tensor splitting and row split modes to enhance performance with various models.",
+      "motivation": "Understanding how to configure tensor splitting and other settings in llama.cpp can significantly impact performance when running large language models on multi-GPU setups. This question aims to explore these techniques based on the archived observations.",
+      "desired_response": "A discussion about the effectiveness of tensor splitting and row split modes in llama.cpp for optimizing performance on multi-GPU systems, referencing the observations made in the source material.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "For smaller models like Qwen3 8B and Qwen3 14B, disabling the 3060 GPUs resulted in a performance boost.",
+          "evidence_quote": "If we disable them, we see a performance boost: from 48 to 82 tokens per second, and from 28 to 48.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F2",
+          "text": "For Qwen3 32B, adjusting the tensor split improved performance from 13.0 to 15.6 tokens per second, and further to 16.4 tokens per second using the \"row\" split mode.",
+          "evidence_quote": "We can improve performance from the default 13.0 tokens per second to 15.6 by adjusting the tensor split. Furthermore, we can go even higher, to 16.4 tokens per second, by using the \"row\" split mode.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F3",
+          "text": "For Nemotron 49B (Q6), tuning resulted in an improvement from 12.4 to 14.1 tokens per second.",
+          "evidence_quote": "With some tuning, we can go from 12.4 to 14.1 tokens per second.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F4",
+          "text": "For DeepSeek-R1-Distill-Llama-70B (Q4), performance improved from 10.3 to 12.1 tokens per second.",
+          "evidence_quote": "We start at 10.3 tokens per second and improve to 12.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F5",
+          "text": "For Gemma3 27B, optimized tensor split values boosted performance from 14.9 to 18.9 tokens per second, but using `sm` row mode slightly decreased speed to 18.5.",
+          "evidence_quote": "With optimized tensor split values, we boost performance from 14.9 to 18.9 tokens per second. However, using `sm` row mode slightly decreases the speed to 18.5.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F6",
+          "text": "For Mistral Small 24B, performance increased from 18.8 to 28.2 tokens per second with tensor split, but `sm` row mode reduced it slightly to 26.1.",
+          "evidence_quote": "Performance goes from 18.8 to 28.2 tokens per second with tensor split, but again, `sm` row mode reduces it slightly to 26.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        }
+      ],
+      "allowed_claims": [
+        "Tensor splitting can be used to manage model VRAM requirements across multiple GPUs.",
+        "Different split modes ('row', 'sm') may yield varying performance results.",
+        "Experimentation is key to finding optimal tensor split configurations for specific models and hardware."
+      ],
+      "forbidden_claims": [
+        "The reported token-per-second values are universally applicable.",
+        "The 'row' split mode is always superior.",
+        "Mixing GPUs is inherently problematic.",
+        "Specific hardware configurations are guaranteed to achieve these exact results."
+      ],
+      "essential_limitations": [
+        "The specific motherboard and riser configuration are not detailed.",
+        "The exact VRAM allocation for each GPU is not specified.",
+        "The precise version of llama.cpp used is not stated, only that it was recent.",
+        "The system's CPU and RAM specifications are not provided."
+      ],
+      "missing_information": [
+        "Detailed VRAM allocation settings for each GPU.",
+        "Specific llama.cpp version used for testing.",
+        "Full system specifications beyond GPU models."
+      ],
+      "id": "C04",
+      "brief_id": "C04",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1kgs1z7",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-07",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "source_hash": "cb113181f3a217989e37f681dd9ccd976f4f54d1b7082f642b6431773f13b0fe",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How effective is tensor splitting and row split mode for multi-GPU llama.cpp setups with mixed 3090 and 3060 cards?",
+      "body": "An archived 2025 Reddit post reports experiments running llama.cpp on a system with a 3090 and two 3060 GPUs. For smaller models like Qwen3 8B and 14B, disabling the 3060s actually improved token generation speed (e.g., from 48 to 82 tokens/sec). For larger models, adjusting tensor split parameters improved performance: Qwen3 32B went from 13.0 to 15.6 tokens/sec, further rising to 16.4 with \"row\" split mode. Other models like Nemotron 49B (Q6) and DeepSeek-R1-Distill-Llama-70B (Q4) also saw modest gains from tuning. Interestingly, for Gemma3 27B and Mistral Small 24B, optimized tensor splits increased speed, but using the `sm` row mode slightly reduced it. Given these mixed results, what practical advice or heuristics have you found for configuring tensor splits and split modes in llama.cpp on heterogeneous multi-GPU rigs? Are there patterns in when \"row\" or other modes help or hurt performance? Any insights on balancing VRAM and compute across GPUs with different capabilities would be especially useful. The original post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Optimizing token generation speed in multi-GPU LLM setups with tensor splitting and split modes",
+      "body": "An archived report from 2025 describes experiments using a system with one high-end GPU and two mid-tier GPUs running a local LLM inference engine. For smaller models, disabling the mid-tier GPUs improved token throughput, while for larger models, tuning tensor split parameters and applying different split modes like \"row\" yielded performance gains. Some modes improved speed, others slightly reduced it depending on the model. Given mixed GPU capabilities, what strategies have you found effective for balancing VRAM and compute when configuring tensor splits and split modes? Any guidance on when to enable or disable certain GPUs would be helpful.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This draft replaces specific GPU and model names with generic terms while preserving the core factual propositions, maintaining relevance but reducing specificity.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP09",
+    "brief_id": "C04",
+    "source_group_id": "reddit:1kgs1z7",
+    "split": "calibration",
+    "brief": {
+      "topic": "Optimizing llama.cpp performance with multiple GPUs",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discussing methods to improve token generation speed in llama.cpp when using multiple GPUs, particularly with mixed hardware.",
+      "context": "This discussion is based on an archived user account from May 7, 2025, detailing their experiments with llama.cpp on a system with a 3090 and two 3060 GPUs. The original author explored tensor splitting and row split modes to enhance performance with various models.",
+      "motivation": "Understanding how to configure tensor splitting and other settings in llama.cpp can significantly impact performance when running large language models on multi-GPU setups. This question aims to explore these techniques based on the archived observations.",
+      "desired_response": "A discussion about the effectiveness of tensor splitting and row split modes in llama.cpp for optimizing performance on multi-GPU systems, referencing the observations made in the source material.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "For smaller models like Qwen3 8B and Qwen3 14B, disabling the 3060 GPUs resulted in a performance boost.",
+          "evidence_quote": "If we disable them, we see a performance boost: from 48 to 82 tokens per second, and from 28 to 48.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F2",
+          "text": "For Qwen3 32B, adjusting the tensor split improved performance from 13.0 to 15.6 tokens per second, and further to 16.4 tokens per second using the \"row\" split mode.",
+          "evidence_quote": "We can improve performance from the default 13.0 tokens per second to 15.6 by adjusting the tensor split. Furthermore, we can go even higher, to 16.4 tokens per second, by using the \"row\" split mode.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F3",
+          "text": "For Nemotron 49B (Q6), tuning resulted in an improvement from 12.4 to 14.1 tokens per second.",
+          "evidence_quote": "With some tuning, we can go from 12.4 to 14.1 tokens per second.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F4",
+          "text": "For DeepSeek-R1-Distill-Llama-70B (Q4), performance improved from 10.3 to 12.1 tokens per second.",
+          "evidence_quote": "We start at 10.3 tokens per second and improve to 12.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F5",
+          "text": "For Gemma3 27B, optimized tensor split values boosted performance from 14.9 to 18.9 tokens per second, but using `sm` row mode slightly decreased speed to 18.5.",
+          "evidence_quote": "With optimized tensor split values, we boost performance from 14.9 to 18.9 tokens per second. However, using `sm` row mode slightly decreases the speed to 18.5.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        },
+        {
+          "id": "F6",
+          "text": "For Mistral Small 24B, performance increased from 18.8 to 28.2 tokens per second with tensor split, but `sm` row mode reduced it slightly to 26.1.",
+          "evidence_quote": "Performance goes from 18.8 to 28.2 tokens per second with tensor split, but again, `sm` row mode reduces it slightly to 26.1.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/"
+        }
+      ],
+      "allowed_claims": [
+        "Tensor splitting can be used to manage model VRAM requirements across multiple GPUs.",
+        "Different split modes ('row', 'sm') may yield varying performance results.",
+        "Experimentation is key to finding optimal tensor split configurations for specific models and hardware."
+      ],
+      "forbidden_claims": [
+        "The reported token-per-second values are universally applicable.",
+        "The 'row' split mode is always superior.",
+        "Mixing GPUs is inherently problematic.",
+        "Specific hardware configurations are guaranteed to achieve these exact results."
+      ],
+      "essential_limitations": [
+        "The specific motherboard and riser configuration are not detailed.",
+        "The exact VRAM allocation for each GPU is not specified.",
+        "The precise version of llama.cpp used is not stated, only that it was recent.",
+        "The system's CPU and RAM specifications are not provided."
+      ],
+      "missing_information": [
+        "Detailed VRAM allocation settings for each GPU.",
+        "Specific llama.cpp version used for testing.",
+        "Full system specifications beyond GPU models."
+      ],
+      "id": "C04",
+      "brief_id": "C04",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1kgs1z7",
+      "content_type": "Experience / Benchmark",
+      "source_date": "2025-05-07",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "source_hash": "cb113181f3a217989e37f681dd9ccd976f4f54d1b7082f642b6431773f13b0fe",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Reported token generation speeds and tuning effects for llama.cpp on a multi-GPU system",
+      "body": "A 2025 user report details token generation speeds on a system with a 3090 and two 3060 GPUs running llama.cpp. For smaller models, disabling the 3060s increased speed from 48 to 82 tokens/sec. For larger models, adjusting tensor split parameters improved speeds from 13.0 to 15.6 tokens/sec, with further gains to 16.4 tokens/sec using \"row\" split mode. Other models showed similar tuning benefits, though some row modes slightly decreased performance. These results illustrate how tensor splitting and split modes can affect multi-GPU performance in llama.cpp.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "How effective is tensor splitting and row split mode for multi-GPU llama.cpp setups with mixed 3090 and 3060 cards?",
+      "body": "An archived 2025 Reddit post reports experiments running llama.cpp on a system with a 3090 and two 3060 GPUs. For smaller models like Qwen3 8B and 14B, disabling the 3060s actually improved token generation speed (e.g., from 48 to 82 tokens/sec). For larger models, adjusting tensor split parameters improved performance: Qwen3 32B went from 13.0 to 15.6 tokens/sec, further rising to 16.4 with \"row\" split mode. Other models like Nemotron 49B (Q6) and DeepSeek-R1-Distill-Llama-70B (Q4) also saw modest gains from tuning. Interestingly, for Gemma3 27B and Mistral Small 24B, optimized tensor splits increased speed, but using the `sm` row mode slightly reduced it. Given these mixed results, what practical advice or heuristics have you found for configuring tensor splits and split modes in llama.cpp on heterogeneous multi-GPU rigs? Are there patterns in when \"row\" or other modes help or hurt performance? Any insights on balancing VRAM and compute across GPUs with different capabilities would be especially useful. The original post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "information_value",
+    "design_reason": "This alternative restates the facts without posing a focused question or inviting specific community discussion, reducing its practical engagement value.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP10",
+    "brief_id": "C07",
+    "source_group_id": "reddit:1jbbci4",
+    "split": "calibration",
+    "brief": {
+      "topic": "Exploring a Provider-Agnostic Standard for Persistent AI Context",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To establish a standardized, provider-agnostic JSON format for capturing and converting persistent user context into natural language prompts for LLMs.",
+      "context": "The source author is proposing a new approach to address the stateless nature of LLMs and their tendency to hit token limits, which disrupts continuity and personalization in AI interactions. This idea builds upon existing work in persistent memory for AI.",
+      "motivation": "Discussing the validity and potential pitfalls of standardizing AI context in a provider-agnostic JSON format with a natural language conversion layer to improve LLM continuity and personalization.",
+      "desired_response": "Feedback on the concept's validity, potential pitfalls, and opportunities for refinement.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The author proposes a standardized, provider-agnostic JSON format to capture persistent user context.",
+          "evidence_quote": "I'm proposing a standardized, provider-agnostic format for capturing user context as structured JSON.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F2",
+          "text": "This format aims to enable AI models to maintain and transfer context seamlessly across different providers.",
+          "evidence_quote": "This enables AI models to maintain and transfer context seamlessly across different providers, enhancing personalization",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F3",
+          "text": "The proposed system includes a layer to convert structured data into natural language prompts for LLMs.",
+          "evidence_quote": "it includes a built-in layer that converts this structured data into natural language prompts",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F4",
+          "text": "LLMs are described as inherently stateless and often hitting token limits, causing sessions to feel like a reset.",
+          "evidence_quote": "As many of you know, LLMs are inherently stateless and often hit token limits, making every new session feel like a reset.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F5",
+          "text": "The author acknowledges existing work in persistent memory projects like Mem0, Letta, and Cognee.",
+          "evidence_quote": "My approach builds on the growing body of work around persistent memory—projects like Mem0, Letta, and Cognee",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        }
+      ],
+      "allowed_claims": [
+        "The source author is seeking feedback on a proposed provider-agnostic standard for AI context.",
+        "The proposed standard involves a JSON format and a natural language conversion layer.",
+        "The goal is to improve context persistence and personalization in LLM interactions."
+      ],
+      "forbidden_claims": [
+        "The proposed standard has been tested and proven effective.",
+        "Specific performance metrics or benchmarks for the proposed standard.",
+        "The author has personally implemented and used this system successfully.",
+        "The proposed standard is the only or best solution for AI context."
+      ],
+      "essential_limitations": [
+        "The specific implementation details of the natural language conversion layer are not provided.",
+        "The exact structure of the JSON format is not detailed.",
+        "The source author is soliciting feedback, indicating the concept is still in development."
+      ],
+      "missing_information": [
+        "Details on how the JSON context is populated.",
+        "Examples of the generated natural language prompts.",
+        "Information on which specific AI providers have been considered for compatibility.",
+        "The technical specifications or libraries used for the conversion layer."
+      ],
+      "id": "C07",
+      "brief_id": "C07",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jbbci4",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-03-14",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/",
+      "source_hash": "791747b77d2a94f11949e32b4994c892a527485fed85ec7ba31241dab40bdb71",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Thoughts on a Standardized Format for AI Context Persistence?",
+      "body": "A proposal suggests using a provider-agnostic JSON format to capture persistent user context for AI models, addressing issues like statelessness and token limits in LLMs (F1, F4). This would include converting structured data into natural language prompts to maintain context across providers (F2, F3). It builds on work from projects like Mem0 and Cognee (F5). What are the main hurdles in adopting such a standard? Are there existing tools or frameworks that could support this approach?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Is a Provider-Agnostic JSON Standard for Persistent AI Context Practical for Local LLMs?",
+      "body": "A Reddit user proposes a provider-agnostic JSON format to capture persistent user context for AI models, aiming to overcome LLMs' statelessness and token limits that disrupt session continuity (F1, F4). This format would include a layer converting structured JSON data into natural language prompts, potentially enabling seamless context transfer across different AI providers (F2, F3). The idea builds on existing persistent memory projects like Mem0, Letta, and Cognee (F5). However, details on the JSON structure, how context is populated, and the conversion layer’s implementation remain unclear. Given these gaps, how feasible is it to standardize such a format broadly? What practical challenges might arise in ensuring compatibility across diverse LLMs and providers? Has anyone explored or prototyped similar provider-agnostic context persistence approaches in local LLM setups?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "B",
+    "changed_dimension": "community_fit",
+    "design_reason": "Removes the focused question about local LLMs and prototyping, making the post more general and less community-specific.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP11",
+    "brief_id": "C07",
+    "source_group_id": "reddit:1jbbci4",
+    "split": "calibration",
+    "brief": {
+      "topic": "Exploring a Provider-Agnostic Standard for Persistent AI Context",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To establish a standardized, provider-agnostic JSON format for capturing and converting persistent user context into natural language prompts for LLMs.",
+      "context": "The source author is proposing a new approach to address the stateless nature of LLMs and their tendency to hit token limits, which disrupts continuity and personalization in AI interactions. This idea builds upon existing work in persistent memory for AI.",
+      "motivation": "Discussing the validity and potential pitfalls of standardizing AI context in a provider-agnostic JSON format with a natural language conversion layer to improve LLM continuity and personalization.",
+      "desired_response": "Feedback on the concept's validity, potential pitfalls, and opportunities for refinement.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The author proposes a standardized, provider-agnostic JSON format to capture persistent user context.",
+          "evidence_quote": "I'm proposing a standardized, provider-agnostic format for capturing user context as structured JSON.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F2",
+          "text": "This format aims to enable AI models to maintain and transfer context seamlessly across different providers.",
+          "evidence_quote": "This enables AI models to maintain and transfer context seamlessly across different providers, enhancing personalization",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F3",
+          "text": "The proposed system includes a layer to convert structured data into natural language prompts for LLMs.",
+          "evidence_quote": "it includes a built-in layer that converts this structured data into natural language prompts",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F4",
+          "text": "LLMs are described as inherently stateless and often hitting token limits, causing sessions to feel like a reset.",
+          "evidence_quote": "As many of you know, LLMs are inherently stateless and often hit token limits, making every new session feel like a reset.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F5",
+          "text": "The author acknowledges existing work in persistent memory projects like Mem0, Letta, and Cognee.",
+          "evidence_quote": "My approach builds on the growing body of work around persistent memory—projects like Mem0, Letta, and Cognee",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        }
+      ],
+      "allowed_claims": [
+        "The source author is seeking feedback on a proposed provider-agnostic standard for AI context.",
+        "The proposed standard involves a JSON format and a natural language conversion layer.",
+        "The goal is to improve context persistence and personalization in LLM interactions."
+      ],
+      "forbidden_claims": [
+        "The proposed standard has been tested and proven effective.",
+        "Specific performance metrics or benchmarks for the proposed standard.",
+        "The author has personally implemented and used this system successfully.",
+        "The proposed standard is the only or best solution for AI context."
+      ],
+      "essential_limitations": [
+        "The specific implementation details of the natural language conversion layer are not provided.",
+        "The exact structure of the JSON format is not detailed.",
+        "The source author is soliciting feedback, indicating the concept is still in development."
+      ],
+      "missing_information": [
+        "Details on how the JSON context is populated.",
+        "Examples of the generated natural language prompts.",
+        "Information on which specific AI providers have been considered for compatibility.",
+        "The technical specifications or libraries used for the conversion layer."
+      ],
+      "id": "C07",
+      "brief_id": "C07",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jbbci4",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-03-14",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/",
+      "source_hash": "791747b77d2a94f11949e32b4994c892a527485fed85ec7ba31241dab40bdb71",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Is a Provider-Agnostic JSON Standard for Persistent AI Context Practical for Local LLMs?",
+      "body": "A Reddit user proposes a provider-agnostic JSON format to capture persistent user context for AI models, aiming to overcome LLMs' statelessness and token limits that disrupt session continuity (F1, F4). This format would include a layer converting structured JSON data into natural language prompts, potentially enabling seamless context transfer across different AI providers (F2, F3). The idea builds on existing persistent memory projects like Mem0, Letta, and Cognee (F5). However, details on the JSON structure, how context is populated, and the conversion layer’s implementation remain unclear. Given these gaps, how feasible is it to standardize such a format broadly? What practical challenges might arise in ensuring compatibility across diverse LLMs and providers? Has anyone explored or prototyped similar provider-agnostic context persistence approaches in local LLM setups?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "Exploring a JSON-Based Format for Persistent Context in AI Models",
+      "body": "An author proposes a provider-agnostic JSON format to capture persistent user context, aiming to mitigate statelessness and token limits common in AI language models (F1, F4). This includes a conversion layer that turns structured data into natural language prompts, facilitating context transfer across different AI systems (F2, F3). The concept builds on persistent memory projects like Mem0 and Letta (F5). What challenges might arise in implementing such a format across varied AI providers? How might the conversion layer handle diverse prompt requirements?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "Uses generic terms like 'AI models' and 'AI systems' instead of specific LLM/local references, preserving core facts but reducing specificity.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP12",
+    "brief_id": "C07",
+    "source_group_id": "reddit:1jbbci4",
+    "split": "calibration",
+    "brief": {
+      "topic": "Exploring a Provider-Agnostic Standard for Persistent AI Context",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To establish a standardized, provider-agnostic JSON format for capturing and converting persistent user context into natural language prompts for LLMs.",
+      "context": "The source author is proposing a new approach to address the stateless nature of LLMs and their tendency to hit token limits, which disrupts continuity and personalization in AI interactions. This idea builds upon existing work in persistent memory for AI.",
+      "motivation": "Discussing the validity and potential pitfalls of standardizing AI context in a provider-agnostic JSON format with a natural language conversion layer to improve LLM continuity and personalization.",
+      "desired_response": "Feedback on the concept's validity, potential pitfalls, and opportunities for refinement.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The author proposes a standardized, provider-agnostic JSON format to capture persistent user context.",
+          "evidence_quote": "I'm proposing a standardized, provider-agnostic format for capturing user context as structured JSON.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F2",
+          "text": "This format aims to enable AI models to maintain and transfer context seamlessly across different providers.",
+          "evidence_quote": "This enables AI models to maintain and transfer context seamlessly across different providers, enhancing personalization",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F3",
+          "text": "The proposed system includes a layer to convert structured data into natural language prompts for LLMs.",
+          "evidence_quote": "it includes a built-in layer that converts this structured data into natural language prompts",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F4",
+          "text": "LLMs are described as inherently stateless and often hitting token limits, causing sessions to feel like a reset.",
+          "evidence_quote": "As many of you know, LLMs are inherently stateless and often hit token limits, making every new session feel like a reset.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        },
+        {
+          "id": "F5",
+          "text": "The author acknowledges existing work in persistent memory projects like Mem0, Letta, and Cognee.",
+          "evidence_quote": "My approach builds on the growing body of work around persistent memory—projects like Mem0, Letta, and Cognee",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/"
+        }
+      ],
+      "allowed_claims": [
+        "The source author is seeking feedback on a proposed provider-agnostic standard for AI context.",
+        "The proposed standard involves a JSON format and a natural language conversion layer.",
+        "The goal is to improve context persistence and personalization in LLM interactions."
+      ],
+      "forbidden_claims": [
+        "The proposed standard has been tested and proven effective.",
+        "Specific performance metrics or benchmarks for the proposed standard.",
+        "The author has personally implemented and used this system successfully.",
+        "The proposed standard is the only or best solution for AI context."
+      ],
+      "essential_limitations": [
+        "The specific implementation details of the natural language conversion layer are not provided.",
+        "The exact structure of the JSON format is not detailed.",
+        "The source author is soliciting feedback, indicating the concept is still in development."
+      ],
+      "missing_information": [
+        "Details on how the JSON context is populated.",
+        "Examples of the generated natural language prompts.",
+        "Information on which specific AI providers have been considered for compatibility.",
+        "The technical specifications or libraries used for the conversion layer."
+      ],
+      "id": "C07",
+      "brief_id": "C07",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1jbbci4",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-03-14",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jbbci4/exploring_a_provideragnostic_standard_for/",
+      "source_hash": "791747b77d2a94f11949e32b4994c892a527485fed85ec7ba31241dab40bdb71",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "Is a Provider-Agnostic JSON Standard for Persistent AI Context Practical for Local LLMs?",
+      "body": "A Reddit user proposes a provider-agnostic JSON format to capture persistent user context for AI models, aiming to overcome LLMs' statelessness and token limits that disrupt session continuity (F1, F4). This format would include a layer converting structured JSON data into natural language prompts, potentially enabling seamless context transfer across different AI providers (F2, F3). The idea builds on existing persistent memory projects like Mem0, Letta, and Cognee (F5). However, details on the JSON structure, how context is populated, and the conversion layer’s implementation remain unclear. Given these gaps, how feasible is it to standardize such a format broadly? What practical challenges might arise in ensuring compatibility across diverse LLMs and providers? Has anyone explored or prototyped similar provider-agnostic context persistence approaches in local LLM setups?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "B": {
+      "title": "A Proposed Provider-Agnostic JSON Format for Capturing Persistent AI Context",
+      "body": "The author suggests a standardized JSON format to capture persistent user context for AI models, addressing the stateless nature and token limits of these models (F1, F4). This format includes a layer that converts structured data into natural language prompts to enable context transfer across providers (F2, F3). The approach builds on existing persistent memory projects such as Mem0, Letta, and Cognee (F5). Details on the JSON structure and conversion layer implementation are not provided, and the author seeks feedback on the concept.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "information_value",
+    "design_reason": "Restates the facts without posing a specific question or comparison, focusing on summarizing the proposal and its context.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP13",
+    "brief_id": "C08",
+    "source_group_id": "reddit:1luy32e",
+    "split": "calibration",
+    "brief": {
+      "topic": "SmolLM3 Model Performance and MistralRS Integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discuss the capabilities and integration of the SmolLM3 model with the MistralRS framework, based on archived user observations.",
+      "context": "An archived Reddit post from July 8, 2025, announces day-0 support for the SmolLM3 model within the MistralRS framework. The post details the model's specifications and MistralRS features.",
+      "motivation": "Understanding the reported performance and features of new models like SmolLM3 when integrated with frameworks like MistralRS is valuable for enthusiasts exploring local LLM deployments.",
+      "desired_response": "A discussion about the reported 'SoTA 3B model' status, its reasoning capabilities, context window, and performance metrics, as well as the features offered by MistralRS for running such models.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The SmolLM3 model is described as a state-of-the-art 3 billion parameter model.",
+          "evidence_quote": "It's a **SoTA 3B model**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F2",
+          "text": "SmolLM3 is noted for its hybrid reasoning capabilities.",
+          "evidence_quote": "hybrid **reasoning**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F3",
+          "text": "The model reportedly supports a 128,000 token context window.",
+          "evidence_quote": "128k context",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author observed a performance of 105 tokens per second with AFQ4 on an M3 Max.",
+          "evidence_quote": "Hits ⚡105 T/s withAFQ4 @ M3 Max.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F5",
+          "text": "MistralRS includes features such as a built-in MCP client and an OpenAI HTTP server.",
+          "evidence_quote": "Builtin MCP client\n* OpenAI HTTP server",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F6",
+          "text": "MistralRS offers full multimodal inference capabilities for image, audio, and text.",
+          "evidence_quote": "Full multimodal inference engine (**in**: image, audio, text in, **out:** image, audio, text).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        }
+      ],
+      "allowed_claims": [
+        "SmolLM3 is a 3B parameter model.",
+        "SmolLM3 has hybrid reasoning.",
+        "SmolLM3 supports a 128k context window.",
+        "MistralRS offers multimodal inference.",
+        "MistralRS provides an OpenAI HTTP server."
+      ],
+      "forbidden_claims": [
+        "The performance metrics are independently verified.",
+        "The model's reasoning capabilities are universally proven.",
+        "The context window size is guaranteed across all hardware.",
+        "MistralRS is the only framework supporting SmolLM3.",
+        "The user personally ran these tests."
+      ],
+      "essential_limitations": [
+        "The specific hardware configuration for the observed 105 T/s is mentioned (M3 Max with AFQ4), but actual user hardware may vary.",
+        "The 'day-0 support' implies immediate availability upon release, but actual implementation stability may evolve.",
+        "The multimodal capabilities are stated but not detailed in terms of specific performance or limitations."
+      ],
+      "missing_information": [
+        "Details on the specific implementation of 'hybrid reasoning'.",
+        "Information on the training data or methodology for SmolLM3.",
+        "Further benchmarks or comparisons with other models.",
+        "Specifics on the 'multi-device backend' mentioned for future MistralRS development."
+      ],
+      "id": "C08",
+      "brief_id": "C08",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1luy32e",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-07-08",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/",
+      "source_hash": "0e8cf7b37e49fafa62209b9844253850483860491936788b0191896522830452",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How does SmolLM3’s 128k context and hybrid reasoning impact practical use in MistralRS?",
+      "body": "An archived post from mid-2025 reports that SmolLM3 is a state-of-the-art 3 billion parameter model with hybrid reasoning capabilities and a notably large 128,000 token context window. It also mentions a performance figure of 105 tokens per second on an M3 Max using AFQ4 quantization. This model has day-0 support in the MistralRS framework, which itself offers features like a built-in MCP client, an OpenAI HTTP server, and full multimodal inference for image, audio, and text. Given these reported specs, what are the practical tradeoffs in deploying SmolLM3 locally with MistralRS? Specifically, how does the large context window affect memory and speed in real-world scenarios, and how mature is the hybrid reasoning functionality in typical tasks? Additionally, how well do MistralRS’s multimodal and server features integrate with such a model in practice? Any insights or experiences with this setup would be valuable to understand its current usability and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "What are your thoughts on SmolLM3 support in MistralRS?",
+      "body": "A 2025 Reddit post highlights that SmolLM3, a 3B parameter model with hybrid reasoning and a 128k token context window, is supported from day one in MistralRS. The post also notes performance of 105 tokens per second on an M3 Max with AFQ4 and mentions MistralRS features like a built-in MCP client and multimodal inference capabilities. Without focusing on personal benchmarks, what do you think about the potential of SmolLM3 within MistralRS? How might these features influence local LLM usage going forward?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "community_fit",
+    "design_reason": "This version removes the focused technical question about tradeoffs and practical deployment, instead inviting broader community opinions on the model and framework support, which may be less targeted for users seeking specific implementation insights.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP14",
+    "brief_id": "C08",
+    "source_group_id": "reddit:1luy32e",
+    "split": "calibration",
+    "brief": {
+      "topic": "SmolLM3 Model Performance and MistralRS Integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discuss the capabilities and integration of the SmolLM3 model with the MistralRS framework, based on archived user observations.",
+      "context": "An archived Reddit post from July 8, 2025, announces day-0 support for the SmolLM3 model within the MistralRS framework. The post details the model's specifications and MistralRS features.",
+      "motivation": "Understanding the reported performance and features of new models like SmolLM3 when integrated with frameworks like MistralRS is valuable for enthusiasts exploring local LLM deployments.",
+      "desired_response": "A discussion about the reported 'SoTA 3B model' status, its reasoning capabilities, context window, and performance metrics, as well as the features offered by MistralRS for running such models.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The SmolLM3 model is described as a state-of-the-art 3 billion parameter model.",
+          "evidence_quote": "It's a **SoTA 3B model**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F2",
+          "text": "SmolLM3 is noted for its hybrid reasoning capabilities.",
+          "evidence_quote": "hybrid **reasoning**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F3",
+          "text": "The model reportedly supports a 128,000 token context window.",
+          "evidence_quote": "128k context",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author observed a performance of 105 tokens per second with AFQ4 on an M3 Max.",
+          "evidence_quote": "Hits ⚡105 T/s withAFQ4 @ M3 Max.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F5",
+          "text": "MistralRS includes features such as a built-in MCP client and an OpenAI HTTP server.",
+          "evidence_quote": "Builtin MCP client\n* OpenAI HTTP server",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F6",
+          "text": "MistralRS offers full multimodal inference capabilities for image, audio, and text.",
+          "evidence_quote": "Full multimodal inference engine (**in**: image, audio, text in, **out:** image, audio, text).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        }
+      ],
+      "allowed_claims": [
+        "SmolLM3 is a 3B parameter model.",
+        "SmolLM3 has hybrid reasoning.",
+        "SmolLM3 supports a 128k context window.",
+        "MistralRS offers multimodal inference.",
+        "MistralRS provides an OpenAI HTTP server."
+      ],
+      "forbidden_claims": [
+        "The performance metrics are independently verified.",
+        "The model's reasoning capabilities are universally proven.",
+        "The context window size is guaranteed across all hardware.",
+        "MistralRS is the only framework supporting SmolLM3.",
+        "The user personally ran these tests."
+      ],
+      "essential_limitations": [
+        "The specific hardware configuration for the observed 105 T/s is mentioned (M3 Max with AFQ4), but actual user hardware may vary.",
+        "The 'day-0 support' implies immediate availability upon release, but actual implementation stability may evolve.",
+        "The multimodal capabilities are stated but not detailed in terms of specific performance or limitations."
+      ],
+      "missing_information": [
+        "Details on the specific implementation of 'hybrid reasoning'.",
+        "Information on the training data or methodology for SmolLM3.",
+        "Further benchmarks or comparisons with other models.",
+        "Specifics on the 'multi-device backend' mentioned for future MistralRS development."
+      ],
+      "id": "C08",
+      "brief_id": "C08",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1luy32e",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-07-08",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/",
+      "source_hash": "0e8cf7b37e49fafa62209b9844253850483860491936788b0191896522830452",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How does SmolLM3’s 128k context and hybrid reasoning impact practical use in MistralRS?",
+      "body": "An archived post from mid-2025 reports that SmolLM3 is a state-of-the-art 3 billion parameter model with hybrid reasoning capabilities and a notably large 128,000 token context window. It also mentions a performance figure of 105 tokens per second on an M3 Max using AFQ4 quantization. This model has day-0 support in the MistralRS framework, which itself offers features like a built-in MCP client, an OpenAI HTTP server, and full multimodal inference for image, audio, and text. Given these reported specs, what are the practical tradeoffs in deploying SmolLM3 locally with MistralRS? Specifically, how does the large context window affect memory and speed in real-world scenarios, and how mature is the hybrid reasoning functionality in typical tasks? Additionally, how well do MistralRS’s multimodal and server features integrate with such a model in practice? Any insights or experiences with this setup would be valuable to understand its current usability and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "Evaluating a 3B parameter model with hybrid reasoning and large context in a multimodal inference framework",
+      "body": "A reported 3 billion parameter model claims hybrid reasoning and supports a 128,000 token context window, achieving around 105 tokens per second on a high-end ARM-based chip using quantization. This model is integrated into a framework that includes a client protocol, an HTTP server compatible with popular APIs, and multimodal inference for images, audio, and text. Considering these features, what are the main challenges or benefits when running such a model locally? How do the large context and reasoning capabilities affect resource use and responsiveness? Also, how effective is the framework’s multimodal support in practice?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "A",
+    "changed_dimension": "specificity",
+    "design_reason": "This alternative replaces specific names and hardware with generic descriptions while preserving the factual content, making it suitable for readers interested in similar setups without focusing on the exact model or platform.",
+    "source_type": "targeted_degradation",
+    "labels": "synthetic design expectations, not human community gold"
+  },
+  {
+    "pair_id": "CP15",
+    "brief_id": "C08",
+    "source_group_id": "reddit:1luy32e",
+    "split": "calibration",
+    "brief": {
+      "topic": "SmolLM3 Model Performance and MistralRS Integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Discuss the capabilities and integration of the SmolLM3 model with the MistralRS framework, based on archived user observations.",
+      "context": "An archived Reddit post from July 8, 2025, announces day-0 support for the SmolLM3 model within the MistralRS framework. The post details the model's specifications and MistralRS features.",
+      "motivation": "Understanding the reported performance and features of new models like SmolLM3 when integrated with frameworks like MistralRS is valuable for enthusiasts exploring local LLM deployments.",
+      "desired_response": "A discussion about the reported 'SoTA 3B model' status, its reasoning capabilities, context window, and performance metrics, as well as the features offered by MistralRS for running such models.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The SmolLM3 model is described as a state-of-the-art 3 billion parameter model.",
+          "evidence_quote": "It's a **SoTA 3B model**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F2",
+          "text": "SmolLM3 is noted for its hybrid reasoning capabilities.",
+          "evidence_quote": "hybrid **reasoning**",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F3",
+          "text": "The model reportedly supports a 128,000 token context window.",
+          "evidence_quote": "128k context",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F4",
+          "text": "The source author observed a performance of 105 tokens per second with AFQ4 on an M3 Max.",
+          "evidence_quote": "Hits ⚡105 T/s withAFQ4 @ M3 Max.",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F5",
+          "text": "MistralRS includes features such as a built-in MCP client and an OpenAI HTTP server.",
+          "evidence_quote": "Builtin MCP client\n* OpenAI HTTP server",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        },
+        {
+          "id": "F6",
+          "text": "MistralRS offers full multimodal inference capabilities for image, audio, and text.",
+          "evidence_quote": "Full multimodal inference engine (**in**: image, audio, text in, **out:** image, audio, text).",
+          "status": "source-author report, not independently verified measurement",
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/"
+        }
+      ],
+      "allowed_claims": [
+        "SmolLM3 is a 3B parameter model.",
+        "SmolLM3 has hybrid reasoning.",
+        "SmolLM3 supports a 128k context window.",
+        "MistralRS offers multimodal inference.",
+        "MistralRS provides an OpenAI HTTP server."
+      ],
+      "forbidden_claims": [
+        "The performance metrics are independently verified.",
+        "The model's reasoning capabilities are universally proven.",
+        "The context window size is guaranteed across all hardware.",
+        "MistralRS is the only framework supporting SmolLM3.",
+        "The user personally ran these tests."
+      ],
+      "essential_limitations": [
+        "The specific hardware configuration for the observed 105 T/s is mentioned (M3 Max with AFQ4), but actual user hardware may vary.",
+        "The 'day-0 support' implies immediate availability upon release, but actual implementation stability may evolve.",
+        "The multimodal capabilities are stated but not detailed in terms of specific performance or limitations."
+      ],
+      "missing_information": [
+        "Details on the specific implementation of 'hybrid reasoning'.",
+        "Information on the training data or methodology for SmolLM3.",
+        "Further benchmarks or comparisons with other models.",
+        "Specifics on the 'multi-device backend' mentioned for future MistralRS development."
+      ],
+      "id": "C08",
+      "brief_id": "C08",
+      "split": "calibration_source",
+      "source_group_id": "reddit:1luy32e",
+      "content_type": "Discussion / Opinion",
+      "source_date": "2025-07-08",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1luy32e/smollm3_has_day0_support_in_mistralrs/",
+      "source_hash": "0e8cf7b37e49fafa62209b9844253850483860491936788b0191896522830452",
+      "language": "English",
+      "persona": "community reader of a dated public account",
+      "quotes_checked": true,
+      "quote_check": "contiguous normalized alphanumeric tokens; Markdown punctuation ignored, not semantic entailment proof"
+    },
+    "A": {
+      "title": "How does SmolLM3’s 128k context and hybrid reasoning impact practical use in MistralRS?",
+      "body": "An archived post from mid-2025 reports that SmolLM3 is a state-of-the-art 3 billion parameter model with hybrid reasoning capabilities and a notably large 128,000 token context window. It also mentions a performance figure of 105 tokens per second on an M3 Max using AFQ4 quantization. This model has day-0 support in the MistralRS framework, which itself offers features like a built-in MCP client, an OpenAI HTTP server, and full multimodal inference for image, audio, and text. Given these reported specs, what are the practical tradeoffs in deploying SmolLM3 locally with MistralRS? Specifically, how does the large context window affect memory and speed in real-world scenarios, and how mature is the hybrid reasoning functionality in typical tasks? Additionally, how well do MistralRS’s multimodal and server features integrate with such a model in practice? Any insights or experiences with this setup would be valuable to understand its current usability and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "How does SmolLM3’s 128k context and hybrid reasoning impact practical use in MistralRS?",
+      "body": "An archived post from mid-2025 reports that SmolLM3 is a state-of-the-art 3 billion parameter model with hybrid reasoning capabilities and a notably large 128,000 token context window. It also mentions a performance figure of 105 tokens per second on an M3 Max using AFQ4 quantization. This model has day-0 support in the MistralRS framework, which itself offers features like a built-in MCP client, an OpenAI HTTP server, and full multimodal inference for image, audio, and text. Given these reported specs, what are the practical tradeoffs in deploying SmolLM3 locally with MistralRS? Specifically, how does the large context window affect memory and speed in real-world scenarios, and how mature is the hybrid reasoning functionality in typical tasks? Additionally, how well do MistralRS’s multimodal and server features integrate with such a model in practice? Any insights or experiences with this setup would be valuable to understand its current usability and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "expected_winner": "Tie",
+    "changed_dimension": "information_value",
+    "design_reason": "Same words/facts; paragraph-only variation treated as design tie, not human gold",
+    "source_type": "near_equal",
+    "labels": "synthetic design expectations, not human community gold"
+  }
+]
