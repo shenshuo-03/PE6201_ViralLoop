@@ -2,6 +2,7 @@
 
 **PE6201 Emerging AI Technologies · End-of-Course Project · Final Report**
 Individual work · Shen Shuo · ~1,200 words
+Repository: https://github.com/shenshuo-03/PE6201_ViralLoop (public)
 
 ---
 

@@ -4,6 +4,8 @@ Two requirement sources are used together: the **official PE6201 Assessment Time
 
 Legend — **Verified** means the file exists and its content was checked during packaging. **Not re-run** means the artefact is a frozen record and was deliberately not re-executed.
 
+**Submitted repository:** `https://github.com/shenshuo-03/PE6201_ViralLoop` — public, default branch `main`, 518 tracked files. Everything in this index at repo root maps 1:1 to the folders below.
+
 ---
 
 ## Part A · Official course requirements
@@ -11,14 +13,14 @@ Legend — **Verified** means the file exists and its content was checked during
 | # | Course requirement (source) | Submitted file | Status | Verified |
 |---|---|---|---|---|
 | A1 | **Problem Statement** — mandatory milestone, ~1 page, provided template (Timeline §1) | `REPORT/Problem_Statement_EN.md` | Complete — English rendering of the Week-3 submission, with a provenance note | ✅ content checked |
-| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` (~1,240 words) | Complete | ✅ word count checked |
-| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | Complete and packaged — **public repo upload pending (see F1)** | ✅ files present |
-| A4 | **Recorded video presentation / demo, face + screen visible** (Timeline §4) | `DEMO/Video_Script_EN.md` (script only) | **Script complete. Video NOT recorded** — author action required | ⚠️ see F1 |
+| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` (~1,300 words) | Complete — body prose measured at 1,303 words; slightly over the 1,200 guide, which is noted rather than hidden | ✅ word count checked |
+| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete and uploaded.** Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, default branch `main`, 518 files) | ✅ uploaded & verified |
+| A4 | **Recorded video presentation / demo, face + screen visible** (Timeline §4) | `DEMO/Video_Script_EN.md` (script only) | **Script complete. Video NOT recorded** — author action required | ⚠️ author action |
 | A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md` | Documented; see honest verification note below | ⚠️ partially verified |
 | A6 | Named dataset, named baseline, named number (check 2) | `DATA/DATA_README.md`, `REPORT/Final_Report_EN.md` §3–4 | Complete | ✅ |
 | A7 | First person throughout (check 3) | `REPORT/` | Complete | ✅ |
-| A8 | Read once for typos — communication is 25% (check 5) | all `REPORT/` documents | **Not done by the author yet** | ⚠️ see F1 |
-| A9 | Submit to **NTULearn** (Timeline: "Submit to NTULearn unless a brief says otherwise") | — | **Author action required** | ❌ see F1 |
+| A8 | Read once for typos — communication is 25% (check 5) | all `REPORT/` documents | **Not done by the author yet** | ⚠️ author action |
+| A9 | Submit to **NTULearn** (Timeline: "Submit to NTULearn unless a brief says otherwise") | — | **Author action required** | ❌ author action |
 
 **On A5's honest verification note.** The commands in `CODE/README.md` were read from the actual scripts — nothing was guessed. They were **not re-executed against live APIs** during packaging, because the experiments are frozen and re-running them would consume paid budget and could mutate frozen outputs. `CODE/README.md` marks each such command **[NOT RE-RUN]** rather than claiming it was tested.
 
@@ -98,10 +100,12 @@ Every item below points at a **real** artefact. "Planned" is never presented as 
 | No secrets / tokens | ✅ | Keys are read from environment only; nothing hard-coded |
 | No unrelated caches | ✅ | API caches, `__pycache__`, vendored libraries excluded |
 | No bulk duplicate raw responses | ✅ | Per-call caches excluded; the run record (`runs/`) is kept because it is the provenance chain |
-| No obsolete reports causing confusion | ✅ | Chinese in-progress drafts are **not** copied; each round has one English explainer |
+| No obsolete reports causing confusion | ✅ | Chinese in-progress *reports and drafts* are not copied; each round has exactly one English explainer |
 | Key experiment evidence **not** deleted | ✅ | Frozen results, ledgers, audits and failure records are all preserved |
 | English filenames | ⚠️ **three exceptions** — see below | All *new* files are English |
 | Clear directory structure | ✅ | `REPORT/ DEMO/ CODE/ DATA/ EVALS/ PRODUCT_DOCUMENTATION/` + 2 index files |
+
+**On Chinese retained inside `CODE/` and `DATA/`.** All marker-facing documents are English. Chinese that survives is confined to (a) comments and prompt strings inside the frozen experiment source under `CODE/`, and (b) two Round-3 working notes, `CODE/round3_v003/v003/plan_v003.md` and `CODE/round3_v004/process_archive_v004.md`. These are the files as written at run time. They were kept untranslated for provenance and are fully explained in English by `CODE/CODE_MODULE_GUIDE.md` and `REPORT/Round3_Explainer.md`. Round-1 dataset text is Reddit English; the Chinese that appears in `DATA/` is embedded inside frozen artefacts, not added by packaging.
 
 **Disclosed filename exceptions.** Three items keep their original names because renaming them would break the provenance chain to the frozen experiment artefacts and to the parent report's evidence index:
 

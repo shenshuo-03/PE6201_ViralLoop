@@ -8,7 +8,7 @@
 
 | # | Action | Why only you can do it | Done? |
 |---|---|---|---|
-| 1 | **Upload the repository to GitHub and confirm it is PUBLIC** | Requires your GitHub account and credentials. No valid token, SSH key or `gh` CLI was present on this machine. | ☐ |
+| 1 | ~~Upload the repository to GitHub and confirm it is PUBLIC~~ | **DONE on your behalf on 4 Oct 2026 — `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, 518 files, default branch `main`).** Open the link once and confirm it is the account you want it under. | ✅ done |
 | 2 | **Record the video presentation** (~5 min, face **and** screen visible) | The brief requires your own face and screen. The script is ready at `DEMO/Video_Script_EN.md`. | ☐ |
 | 3 | **Check your name and matriculation number** appear correctly | Identity fields are placeholders in `REPORT/Problem_Statement_EN.md` | ☐ |
 | 4 | **Submit to NTULearn** | Course requirement; only you have access | ☐ |
@@ -24,7 +24,7 @@
 | 9 | Add a repository description and topic tags on GitHub | Helps a marker find it |
 | 10 | Add the repo link into `REPORT/Final_Report_EN.md` | One line under the title |
 | 11 | Record a 30-second screen-only clip of `ViralLoop_Demo.html` as a backup | If the live demo has issues during the video, you have a fallback |
-| 12 | Delete or archive the working folders (`实验1.0版`, `实验1.1版`, `实验1.2版`) from any folder you share | They are the raw workspace; the submission package is self-contained |
+| 12 | Delete or archive the three raw round working folders from any folder you share | They are the raw workspace; the submission package (`PE6201_ViralLoop_Final/`) is self-contained |
 | 13 | Double-check that `build_final_package.py` is not accidentally committed with a local path in it | It contains absolute Windows paths; harmless, but it is a build tool, not part of the submission |
 
 The **one thing you must not do** is re-run the experiments. They are frozen. Re-running would consume paid budget, could mutate frozen outputs, and would create numbers that contradict the report.
@@ -35,7 +35,7 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 
 | Deliverable | Status |
 |---|---|
-| Final English report (~1,240 words) | ✅ |
+| Final English report (~1,300 words) | ✅ |
 | Problem statement (English) | ✅ |
 | Round 1 / 2 / 3 explainers | ✅ |
 | `DATA_README.md` | ✅ |
@@ -45,9 +45,9 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 | `ViralLoop_Demo.html` (English, 8 pages, self-contained) | ✅ |
 | English video script | ✅ |
 | `SUBMISSION_INDEX.md` | ✅ |
-| Data, evals, code from all three rounds packaged | ✅ 429 files, 23.3 MB |
+| Data, evals, code from all three rounds packaged | ✅ 518 files, ~24 MB (excluding .git) |
 | Secret scan | ✅ 0 hits |
-| Git repository initialised and committed locally | ✅ |
+| Git repository initialised, committed, and **pushed to a public GitHub repo** | ✅ `https://github.com/shenshuo-03/PE6201_ViralLoop` |
 
 ---
 
@@ -66,6 +66,8 @@ These are deliberate design decisions in the package, not oversights.
 5. **Raw corpora and embeddings are excluded** (65 MB + 108 MB) because they regenerate from the documented source. If a marker wants them, `data_pipeline.py` regenerates them.
 
 6. **Three filenames are not English** — Round 3's `v003`/`v004` identifiers and the preserved original Chinese Problem Statement. Both are provenance, and the reasons are documented in `SUBMISSION_INDEX.md` §D.
+
+7. **Some Chinese remains inside `CODE/` and `DATA/` — deliberately.** Every *document a marker reads first* (report, explainers, all four READMEs, module guide, product documentation, demo page) is fully English. What is still Chinese is: (a) Chinese comments and prompt strings inside the frozen experiment source under `CODE/`, and (b) Round 3's two Chinese working notes (`plan_v003.md`, `process_archive_v004.md`). These are the artefacts as they were written at run time; translating them would have overwritten provenance, and the packaging brief explicitly said not to do that. `CODE/CODE_MODULE_GUIDE.md` gives the English explanation of every module, so no marker needs the Chinese to follow the code. If you would still prefer them translated, say so — it is a comment-only change with no effect on results.
 
 ---
 

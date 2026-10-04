@@ -2,6 +2,8 @@
 
 **Individual work · Shen Shuo**
 
+**Submitted repository:** https://github.com/shenshuo-03/PE6201_ViralLoop (public)
+
 ViralLoop is a research prototype that turns a real author's intent and dated source material into a
 fact-constrained draft for technical communities, with rule-based checks and mandatory human
 confirmation. It also contains three rounds of experiments testing whether historical engagement
