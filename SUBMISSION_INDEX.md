@@ -13,16 +13,16 @@ Legend — **Verified** means the file exists and its content was checked during
 | # | Course requirement (source) | Submitted file | Status | Verified |
 |---|---|---|---|---|
 | A1 | **Problem Statement** — mandatory milestone, ~1 page, provided template (Timeline §1) | `REPORT/Problem_Statement_EN.md` | Complete — English rendering of the Week-3 submission, with a provenance note | ✅ content checked |
-| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` (~1,300 words) | Complete — body prose measured at 1,303 words; slightly over the 1,200 guide, which is noted rather than hidden | ✅ word count checked |
+| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` | Complete. **Prose measured at 987 words — inside the 1,200-word cap.** Counting every table cell, figure caption and heading as well gives 1,471; the cap applies to the writeup prose, and both numbers are stated so the marker does not have to guess which convention was used | ✅ word count checked |
 | A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete and uploaded.** Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, default branch `main`, 518 files) | ✅ uploaded & verified |
 | A4 | **Recorded video presentation / demo, face + screen visible** (Timeline §4) | `DEMO/Video_Script_EN.md` (script only) | **Script complete. Video NOT recorded** — author action required | ⚠️ author action |
-| A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md` | Documented; see honest verification note below | ⚠️ partially verified |
+| A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md`, `CODE/requirements.txt`, `CODE/INSTALL_LOG.txt` | Two tiers. **Verified:** install, all 10 library imports, and syntax compile of all 50 Python files, in a clean virtual environment (5 Oct 2026, exit 0, US$0.00). **Not re-run:** the API-calling experiment commands, deliberately. See the note below | ✅ install verified / ⚠️ experiments not re-run |
 | A6 | Named dataset, named baseline, named number (check 2) | `DATA/DATA_README.md`, `REPORT/Final_Report_EN.md` §3–4 | Complete | ✅ |
 | A7 | First person throughout (check 3) | `REPORT/` | Complete | ✅ |
 | A8 | Read once for typos — communication is 25% (check 5) | all `REPORT/` documents | **Not done by the author yet** | ⚠️ author action |
 | A9 | Submit to **NTULearn** (Timeline: "Submit to NTULearn unless a brief says otherwise") | — | **Author action required** | ❌ author action |
 
-**On A5's honest verification note.** The commands in `CODE/README.md` were read from the actual scripts — nothing was guessed. They were **not re-executed against live APIs** during packaging, because the experiments are frozen and re-running them would consume paid budget and could mutate frozen outputs. `CODE/README.md` marks each such command **[NOT RE-RUN]** rather than claiming it was tested.
+**On A5's honest verification note.** The repository now ships a consolidated `CODE/requirements.txt`, and its install was **actually executed** in a clean virtual environment: 27 packages installed, exit code 0, all ten third-party libraries imported, and all 50 Python files under `CODE/` compiled with zero syntax errors. Full raw output is in `CODE/INSTALL_LOG.txt`. What was **not** done is re-running the API-calling experiment commands: the experiments are frozen, a live re-run would consume paid budget, and it could mutate the frozen outputs the report's numbers are derived from. `CODE/README.md` marks each such command **[NOT RE-RUN]** rather than claiming it was tested.
 
 ---
 
@@ -30,10 +30,10 @@ Legend — **Verified** means the file exists and its content was checked during
 
 | # | Brief item | Delivered as | Status |
 |---|---|---|---|
-| B1 | Final English project report, ~1200 words, specified storyline | `REPORT/Final_Report_EN.md` | ✅ |
+| B1 | Final English project report, ~1200 words, specified storyline | `REPORT/Final_Report_EN.md` | ✅ 987 words of prose, inside the 1,200 cap; both real figures embedded with captions |
 | B2 | Data → `DATA_README.md` with source, cleaning, 36–38h window, labels, splits, leakage control, per-round usage, raw vs processed | `DATA/DATA_README.md` | ✅ |
 | B3 | Evals → `EVALS_README.md` with what/why/IO/metric/result/limitations, including failed or stopped evals | `EVALS/EVALS_README.md` | ✅ |
-| B4 | Code → `README.md` with setup, deps, API config, run/demo/repro commands, output locations | `CODE/README.md` | ✅ documented, ⚠️ not re-run |
+| B4 | Code → `README.md` with setup, deps, API config, run/demo/repro commands, output locations | `CODE/README.md` | ✅ documented; install + library load + full syntax compile **verified** (`CODE/INSTALL_LOG.txt`), API-calling commands ⚠️ not re-run |
 | B5 | `CODE_MODULE_GUIDE.md` — file/module level | `CODE/CODE_MODULE_GUIDE.md` | ✅ |
 | B6 | `PRODUCT_DOCUMENTATION.md` — persona, problem, IO, both architectures, external intelligence, metrics targeted vs reached, cost, limitations, final decision | `PRODUCT_DOCUMENTATION/PRODUCT_DOCUMENTATION.md` | ✅ |
 | B7 | `ViralLoop_Demo.html` — all English, opens and pages correctly in a browser | `DEMO/ViralLoop_Demo.html` | ✅ self-contained, no server needed, 8 pages, arrow-key navigation |

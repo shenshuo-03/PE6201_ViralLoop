@@ -1,6 +1,12 @@
 # CODE/README — Environment, Setup and Reproduction
 
-> **Verification status.** The commands below are documented from the actual project scripts and configuration. The end-to-end counts reported in the report are internally consistent with the frozen JSON/CSV artefacts in this repository. Commands marked **[NOT RE-RUN]** were **not** re-executed against live APIs during packaging, because (a) the experiments were frozen and must not be re-run, and (b) live re-runs would consume paid API budget and could mutate frozen outputs. Nothing below is guessed — each command name, flag and output path was read from the source; but the "verified" column is honest about what was actually executed.
+> **Verification status.** Two tiers, kept separate on purpose.
+>
+> **Verified — actually executed on 5 Oct 2026, in a clean virtual environment:** dependency installation (`pip install -r CODE/requirements.txt`), import of all ten third-party libraries, and a full syntax compile of all 50 Python files under `CODE/`. Cost US$0.00, no model API contacted. Raw output and its honest limits: **[`CODE/INSTALL_LOG.txt`](INSTALL_LOG.txt)**.
+>
+> **Not re-run — marked `[NOT RE-RUN]` below:** the experiment commands that call model APIs. These were deliberately not re-executed, because the experiments are frozen and must not be re-run: a live re-run would consume paid API budget and could mutate the frozen outputs that the report's numbers come from. Every command name, flag and output path was read from the actual source — nothing is guessed — but the flag is honest about what was executed.
+>
+> The end-to-end counts reported in the report are internally consistent with the frozen JSON/CSV artefacts in this repository.
 
 ---
 
@@ -10,7 +16,7 @@
 |---|---|
 | OS used | Windows 11 (commands below use PowerShell) |
 | Python | 3.13 |
-| Key libraries | `numpy`, `pandas`, `scikit-learn`, `scipy`, `pyarrow`, `matplotlib`, `requests` (see `round1_generation_pipeline/requirements.txt`) |
+| Key libraries | `numpy`, `pandas`, `scikit-learn`, `scipy`, `pyarrow`, `matplotlib`, `requests`, `reportlab`, `pypdf`, `Pillow` (see `CODE/requirements.txt`) |
 | Model access | **OpenRouter** (single gateway for all LLM and embedding calls) |
 
 Round 1 shipped a vendored dependency directory (`vendor/`) so it could run without a global install. That directory is **excluded** from this repository as bundled third-party code; use `requirements.txt` instead.
@@ -18,14 +24,13 @@ Round 1 shipped a vendored dependency directory (`vendor/`) so it could run with
 ## 2. Dependency installation
 
 ```bash
-# Round 1 pipeline
-pip install -r CODE/round1_generation_pipeline/requirements.txt
-
-# Round 2 and Round 3 use the same scientific stack plus a small web layer for the
-# human-review interface (Python standard library http.server; no extra package).
+# All three rounds — one consolidated file
+pip install -r CODE/requirements.txt
 ```
 
-`requirements.lock.txt` is the frozen resolution used for the Round 1 run. **[NOT RE-RUN]**
+`CODE/requirements.txt` is the union of what the three rounds actually import; `round1_generation_pipeline/requirements.txt` is the same set as declared for Round 1, and `requirements.lock.txt` is the frozen resolution used for the Round 1 run. Round 2 and Round 3 add **no** third-party packages — their human-review web interfaces use only the Python standard library (`http.server`).
+
+> **Install command status: [VERIFIED]** — `pip install -r CODE/requirements.txt` was executed in a clean virtual environment on 5 Oct 2026 and completed with exit code 0, installing 27 packages. All ten imported libraries then loaded, and all 50 Python files under `CODE/` compiled without syntax errors. See `CODE/INSTALL_LOG.txt` for the recorded output, including the limits of what this does and does not prove.
 
 ## 3. API configuration
 

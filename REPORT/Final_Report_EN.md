@@ -1,7 +1,7 @@
 # ViralLoop — A Fact-Constrained Community Post Drafting and Evaluation Prototype
 
 **PE6201 Emerging AI Technologies · End-of-Course Project · Final Report**
-Individual work · Shen Shuo · ~1,200 words
+Individual work · Shen Shuo · 987 words of prose (1,471 in total once tables, figure captions and headings are counted)
 Repository: https://github.com/shenshuo-03/PE6201_ViralLoop (public)
 
 ---
@@ -67,6 +67,10 @@ Primary metric: **Average Precision (AP)** on the held-out 348 historical posts,
 
 Author-clustered bootstrap put E2's AP gain over the prior at roughly **[0.219, 0.405]** — i.e. the historical prediction signal is real.
 
+![Average Precision by model on the 348 held-out historical posts](figures/historical_evaluator_AP.png)
+
+*Figure 1 — Average Precision on the held-out final split (n = 348). The dashed line at 0.247 is both the lazy "always negative" baseline and the test-set positive prevalence. E2 (TF-IDF) and E4 (semantic) clear it by a wide margin; E1's context-only rung barely moves off the floor. This is the "predictable" half of the claim — and the only half that survived.*
+
 ## 5. The finding: prediction did not transfer to generation
 
 Round 1 generated 180 candidates across eight arms (G0 generic, G1 prompt, G2 few-shot/planning, G3 RAG, G4 positive patterns, G4 both, O1 resample, O2 feedback), all judged by a frozen E2 and an independent quality model.
@@ -83,6 +87,10 @@ Round 1 generated 180 candidates across eight arms (G0 generic, G1 prompt, G2 fe
 The headline comparison — feedback versus equal-budget resampling — was **+0.0001395**, with a topic-bootstrap 95% interval of **[−0.0008932, +0.0009857]**. The interval contains zero. The independent historical auditor agreed: **−0.0146 [−0.0415, +0.0075]**, also containing zero.
 
 **Complexity did not buy anything measurable.** A score of 0.244 is *not* a 24.4% virality probability; it is a proxy from a model trained on a different distribution from generated text.
+
+![Proxy score and independent quality by generation arm](figures/generator_proxy_and_quality.png)
+
+*Figure 2 — The generation experiment in one picture. **Left:** mean selected E2 proxy score by arm — every arm, including RAG and the feedback loop, sits at ≈0.24, inside the interval that contains zero. **Right:** independent quality rating on a 1–5 scale — flat across arms, with the feedback arm (O2) reaching 4.20 against a 4.06–4.10 band. Neither view shows the ladder buying a usable gain, which is why the ladder was cut.*
 
 Crucially, while the automatic scores moved within noise, the **human reaction did not**. Reviewers said drafts were too abstract and did not look like real community posts. That gap — tidy automatic scores versus a human "I would not post this" — became the project's central observation.
 

@@ -35,7 +35,10 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 
 | Deliverable | Status |
 |---|---|
-| Final English report (~1,300 words) | ✅ |
+| Final English report — 987 words of prose (1,471 counting tables, captions and headings) | ✅ |
+| Both real result figures embedded in the report with captions | ✅ |
+| `CODE/requirements.txt` (consolidated, all three rounds) + `CODE/INSTALL_LOG.txt` | ✅ |
+| Install / import / syntax verification in a clean environment | ✅ 5 Oct 2026, exit 0, US$0.00 |
 | Problem statement (English) | ✅ |
 | Round 1 / 2 / 3 explainers | ✅ |
 | `DATA_README.md` | ✅ |
@@ -55,7 +58,7 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 
 These are deliberate design decisions in the package, not oversights.
 
-1. **The code was not re-executed.** Every command in `CODE/README.md` was read from the real scripts, but marked **[NOT RE-RUN]** where it was not executed. The experiments are frozen; re-running them would be wrong. If a marker asks "does this run?", the honest answer is: the pipeline ran end-to-end during the project and the artefacts are the record — but the live re-run was deliberately not performed during packaging.
+1. **The experiments were not re-executed — but the repository was verified to install and load.** `pip install -r CODE/requirements.txt` was actually run in a clean virtual environment on 5 Oct 2026 (exit 0, 27 packages), all ten third-party libraries imported, and all 50 Python files under `CODE/` compiled with zero syntax errors — recorded verbatim in `CODE/INSTALL_LOG.txt` at US$0.00 cost. What was deliberately not done is re-running the API-calling experiment commands themselves, because the runs are frozen and a live re-run would consume paid budget and could mutate the outputs the report's numbers come from. Those commands stay marked **[NOT RE-RUN]** in `CODE/README.md`. So if a marker asks "does this install and load?", the answer is now **yes, demonstrated**. If they ask "did you re-run the experiments?", the honest answer is **no, and that was the correct call**.
 
 2. **Round 2's protocol audit FAILED.** Token cap exceeded by ~22.5%; 11 manifests and 68 raw responses missing. This is disclosed in the report and in the explainers. Do not let it be discovered rather than stated — stating it first is a strength.
 

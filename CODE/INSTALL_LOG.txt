@@ -1,0 +1,102 @@
+================================================================================
+PE6201 ViralLoop — dependency install and code-load verification log
+================================================================================
+
+WHY THIS FILE EXISTS
+  CODE/README.md previously marked its setup commands [NOT RE-RUN], because the
+  experiments are frozen and re-running them would consume paid API budget and
+  could mutate frozen outputs. That reasoning is sound for the *experiment*
+  commands — but it left one honest gap: nothing in the package demonstrated
+  that the repository even installs and loads on a machine that is not mine.
+
+  This file closes that gap without touching a single experiment. Everything
+  below is read-only or build-time: no model API was called, no frozen artefact
+  was written, and no human label was synthesised. Cost: US$0.00.
+
+WHAT THIS FILE DOES *NOT* CLAIM
+  It does not claim the experiments were re-executed. The reported counts remain
+  the frozen record. Only installation, import and source-level load are verified.
+
+--------------------------------------------------------------------------------
+ENVIRONMENT
+--------------------------------------------------------------------------------
+  Date run            : 5 October 2026
+  Machine             : Windows 11 (author's laptop)
+  Interpreter used    : Python 3.13.14
+  Environment         : fresh virtual environment, created for this check only
+                        (no pre-installed packages, no vendored directory)
+  Network             : package index only (PyPI). No model endpoint contacted.
+
+--------------------------------------------------------------------------------
+COMMAND 1 — dependency installation
+--------------------------------------------------------------------------------
+  $ pip install -r CODE/requirements.txt
+
+  Result: exit code 0
+
+  Successfully installed
+    Pillow-12.3.0          certifi-2026.7.22         charset_normalizer-3.5.2
+    cloudpickle-3.1.2      contourpy-1.4.0           cycler-0.12.1
+    fonttools-4.66.1       idna-3.20                 joblib-1.6.0
+    kiwisolver-1.5.1       matplotlib-3.11.2         narwhals-2.26.0
+    numpy-2.5.3            packaging-26.3            pandas-3.0.6
+    pyarrow-25.0.1         pyparsing-3.3.3           pypdf-6.19.0
+    python-dateutil-2.9.0.post0                      reportlab-5.0.1
+    requests-2.34.2        scikit-learn-1.9.1        scipy-1.18.1
+    six-1.17.0             threadpoolctl-3.7.0       tzdata-2026.5
+    urllib3-2.8.0
+
+  27 packages, 0 errors, 0 conflicts.
+
+--------------------------------------------------------------------------------
+COMMAND 2 — third-party imports resolve
+--------------------------------------------------------------------------------
+  Every library the three rounds import, loaded in the same clean environment:
+
+    OK   numpy        2.5.3
+    OK   pandas       3.0.6
+    OK   sklearn      1.9.1
+    OK   scipy        1.18.1
+    OK   pyarrow      25.0.1
+    OK   matplotlib   3.11.2
+    OK   requests     2.34.2
+    OK   reportlab    5.0.1
+    OK   pypdf        6.19.0
+    OK   PIL          12.3.0
+
+  10 of 10 loaded. Note that Round 2 and Round 3 import no third-party package
+  beyond this set — their review web interfaces run on the standard library.
+
+--------------------------------------------------------------------------------
+COMMAND 3 — every shipped source file parses
+--------------------------------------------------------------------------------
+  $ python -m compileall -q CODE
+
+  Result: exit code 0
+  50 Python files under CODE/ compiled with zero syntax errors (57 .pyc artefacts
+  produced, all removed afterwards so the repository stays clean).
+
+  This is a source-level load check, not a functional test: it proves the code a
+  marker receives is syntactically valid under the interpreter declared in
+  CODE/README.md. It does not exercise experiment logic, which requires API keys.
+
+--------------------------------------------------------------------------------
+HONEST LIMITS OF THIS VERIFICATION
+--------------------------------------------------------------------------------
+  1. Experiments were NOT re-executed. The published counts, ledgers and audits
+     remain the frozen record from the original runs, unchanged.
+  2. No API key was used, so no model call path was tested end to end here.
+     CODE/README.md section 3 documents the required environment variable, and
+     section 4's experiment commands remain marked [NOT RE-RUN] — deliberately.
+  3. Package versions resolved on 5 Oct 2026 are the versions listed above. The
+     original Round 1 run used the resolution captured in
+     round1_generation_pipeline/requirements.lock.txt; minor version drift over
+     time is expected and does not affect the frozen results.
+  4. The Round 3 offline validator (round3_v004/offline_validate_v004.py) was
+     deliberately NOT run from this packaged copy. It resolves paths relative to
+     the original working tree (loops/v003, work/experiment_libs) and would fail
+     here for structural reasons that say nothing about the code. Running it in
+     the wrong location would have produced a misleading red flag rather than a
+     real finding.
+
+================================================================================

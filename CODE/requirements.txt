@@ -1,0 +1,29 @@
+# PE6201 ViralLoop — consolidated Python dependencies for all three rounds.
+#
+# This file is the union of what the three rounds actually import.
+# Round 1 declares the same set in round1_generation_pipeline/requirements.txt;
+# Round 2 and Round 3 add no third-party packages at all — their web review
+# interfaces use only the Python standard library (http.server, json, urllib).
+#
+# Python 3.11+ is assumed. Install with:
+#     pip install -r CODE/requirements.txt
+#
+# NOTE: Round 1 originally ran against a vendored dependency directory (vendor/).
+# That directory is intentionally NOT shipped in this repository; this file
+# replaces it. See CODE/README.md section 2 and section 6.
+
+# Core scientific stack — data processing, splits, evaluation, figures
+pandas>=2.2
+numpy>=2.0
+pyarrow>=17
+scikit-learn>=1.5
+scipy>=1.13
+matplotlib>=3.9
+
+# HTTP client for model API calls (generation, embeddings, auto-judge)
+requests>=2.32
+
+# Round 1 artefact generation (PDF/PNG report material) and retrieval
+reportlab>=4
+pypdf>=5
+Pillow>=10.0
