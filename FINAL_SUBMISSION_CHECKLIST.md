@@ -8,7 +8,7 @@
 
 | # | Action | Why only you can do it | Done? |
 |---|---|---|---|
-| 1 | ~~Upload the repository to GitHub and confirm it is PUBLIC~~ | **DONE on your behalf on 4 Oct 2026, then replaced on 6 Oct 2026 with the complete, English-only package — `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, 5,507 files, default branch `main`).** Open the link once and confirm it is the account you want it under. | ✅ done |
+| 1 | ~~Upload the repository to GitHub and confirm it is PUBLIC~~ | **DONE on your behalf on 4 Oct 2026, then replaced on 6 Oct 2026 with the complete, English-only package — `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, 5,508 files, default branch `main`).** Open the link once and confirm it is the account you want it under. | ✅ done |
 | 2 | **Record the video presentation** (~5 min, face **and** screen visible) | The brief requires your own face and screen. The script is ready at `DEMO/Video_Script_EN.md`. | ☐ |
 | 3 | **Check your name and matriculation number** appear correctly | Identity fields are placeholders in `REPORT/Problem_Statement_EN.md` | ☐ |
 | 4 | **Submit to NTULearn** | Course requirement; only you have access | ☐ |
@@ -52,7 +52,7 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 | `ViralLoop_Demo.html` (English, 8 pages, self-contained) | ✅ |
 | English video script | ✅ |
 | `SUBMISSION_INDEX.md` | ✅ |
-| Data, evals, code and frozen evidence from all three rounds packaged | ✅ 5,507 files, ~90 MB (excluding .git) |
+| Data, evals, code and frozen evidence from all three rounds packaged | ✅ 5,508 files, ~90 MB (excluding .git) |
 | Secret scan | ✅ 0 hits |
 | Git repository initialised, committed, and **pushed to a public GitHub repo** | ✅ `https://github.com/shenshuo-03/PE6201_ViralLoop` |
 

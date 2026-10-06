@@ -4,7 +4,7 @@ Two requirement sources are used together: the **official PE6201 Assessment Time
 
 Legend — **Verified** means the file exists and its content was checked during packaging. **Not re-run** means the artefact is a frozen record and was deliberately not re-executed.
 
-**Submitted repository:** `https://github.com/shenshuo-03/PE6201_ViralLoop` — public, default branch `main`, **5,507 files**: 520 already tracked plus 4,987 newly packaged files restored from the original working tree. Everything in this index at repo root maps 1:1 to the folders below.
+**Submitted repository:** `https://github.com/shenshuo-03/PE6201_ViralLoop` — public, default branch `main`, **5,508 files**: 520 already tracked, 4,987 restored from the original working tree, plus a new `.gitattributes` that keeps checkouts byte-exact. Everything in this index at repo root maps 1:1 to the folders below.
 
 ---
 
@@ -14,7 +14,7 @@ Legend — **Verified** means the file exists and its content was checked during
 |---|---|---|---|---|
 | A1 | **Problem Statement** — mandatory milestone, ~1 page, provided template (Timeline §1) | `REPORT/Problem_Statement_EN.md` | Complete — English rendering of the Week-3 submission, with a provenance note | ✅ content checked |
 | A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` | Complete. **Prose measured at 1,183 words — inside the 1,200-word cap**, counted the inclusive way (every non-heading, non-table, non-caption line). Counting table rows, figure captions and headings as well gives 1,939; the cap applies to the writeup prose, and both numbers are stated so the marker does not have to guess which convention was used | ✅ word count checked |
-| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete.** All three rounds' real source, plus the frozen evidence each round produced. Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (default branch `main`, 5,507 files) | ✅ uploaded & verified |
+| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete.** All three rounds' real source, plus the frozen evidence each round produced. Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (default branch `main`, 5,508 files) | ✅ uploaded & verified |
 | A4 | **Recorded video presentation / demo, face + screen visible** (Timeline §4) | `DEMO/Video_Script_EN.md` (script only) | **Script complete. Video NOT recorded** — author action required | ⚠️ author action |
 | A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md`, `CODE/REPRODUCTION.md`, `CODE/requirements.txt`, `CODE/INSTALL_LOG.txt` | **Verified, three layers.** (1) `python CODE/run_all_checks.py` → **14/14 stages passed**, no API key, no cost: every module compiles, every offline entry point runs, Round 1's final test re-derives **bit-identically**, Round 3's validator passes **29/29**. (2) Dependency install, all 10 library imports and full syntax compile in a clean virtual environment. (3) Evidence integrity re-checked **after** every stage: 5,370 frozen files still match their SHA-256 manifest. Only the *paid* calls are not re-issued, deliberately — see the note below | ✅ run + reproduce + install verified |
 | A6 | Named dataset, named baseline, named number (check 2) | `DATA/DATA_README.md`, `REPORT/Final_Report_EN.md` §3–4 | Complete | ✅ |

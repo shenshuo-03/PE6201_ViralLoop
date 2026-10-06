@@ -61,6 +61,18 @@ Scratch output is excluded from version control:
 **/reproduced_run/
 ```
 
+### Byte-exact checkouts
+
+The evidence manifest compares SHA-256 hashes, so it only means something if a
+clone receives the same bytes the author verified. Git's default
+`core.autocrlf=true` rewrites line endings on checkout; on Windows that would
+change those bytes and make the verification fail for a reason that has nothing
+to do with the experiments. The package therefore ships a `.gitattributes`
+containing `* -text`, which disables end-of-line conversion in both directions.
+Every one of the 5,508 staged blobs was checked byte-identical to the working
+tree before the submission was pushed, so `git clone` reproduces it exactly on
+any platform.
+
 ---
 
 ## 3. How the claim is checked

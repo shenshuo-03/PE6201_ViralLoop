@@ -1,6 +1,6 @@
 # RAW_EVIDENCE_NOTE — the 176 files that still contain Chinese, and why
 
-The submission package is English. **Three deliberate exceptions are documented here so a marker is not surprised by them, and so the reason for each is on the record.** Together they are 176 of the 5,507 files in this repository — plus this note itself, which quotes the Chinese it is describing.
+The submission package is English. **Three deliberate exceptions are documented here so a marker is not surprised by them, and so the reason for each is on the record.** Together they are 176 of the 5,508 files in this repository — plus this note itself, which quotes the Chinese it is describing.
 
 Reproduce the count yourself:
 
