@@ -1,0 +1,235 @@
+{
+  "at": "2026-10-04T11:07:57.218074+00:00",
+  "loop_version": "v002",
+  "brief_id": "D01",
+  "phase": "tune",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Clarifying llama.cpp HTTP server file upload: How does it combine file content with prompts?",
+        "body": "A Reddit post from 2025 raises questions about how llama.cpp's HTTP server file upload feature integrates uploaded file content with user prompts. The original poster wonders if the file content is simply concatenated with the prompt text before being sent to the model. They used llama 3.2 3B Q4_K_S and tried asking questions about the uploaded file's contents. However, the responses were inconsistent—sometimes the model answered the question correctly, other times it seemed to interpret the file content itself rather than the query. This variability and the lack of clear documentation make it unclear how the file upload feature actually works under the hood. Has anyone here observed or figured out the exact mechanism by which the file upload and prompt are combined? Also, are there known strategies to improve reproducibility of answers when querying uploaded file contents through this interface? Understanding this would help in reliably leveraging the file upload button for local LLM use cases.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source and brief, posing clear questions about the file upload functionality and reproducibility. It correctly attributes observations to the source author and avoids making definitive claims about the feature's behavior. The community fit is good as it directly addresses a technical aspect of llama.cpp relevant to local LLM enthusiasts. Specificity is high, referencing the file upload feature and the goal of querying file contents. Information value is good, organizing the user's questions and observations effectively. Clarity and usefulness are high, making the post easy to understand and actionable for others who might have insights. Credibility is high due to its faithful representation of the source and adherence to the brief's constraints. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 157,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Exploring reproducibility challenges with llama.cpp HTTP server file upload queries",
+        "body": "From a 2025 Reddit discussion, a user reports inconsistent outputs when querying the contents of files uploaded via llama.cpp’s HTTP server interface. They speculate the file content might be concatenated with the prompt, but this isn't confirmed. Using llama 3.2 3B Q4_K_S, they ran about 15 tests and found that sometimes questions about the file's contents were answered correctly, while other times the model seemed to focus on interpreting the file content itself rather than the query. The user also expressed a desire for reproducible results—getting the same answers when repeating the same prompts in new conversations. Given these observations and the unclear internal handling of file uploads, what approaches or best practices might help achieve more consistent and reproducible querying of uploaded files in llama.cpp’s HTTP server?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 effectively summarizes the source material and brief, focusing on the reproducibility aspect. It correctly attributes the observations to the original poster and maintains the conditional nature of the claims. Community fit is good as it targets a specific technical challenge within the local LLM community. Specificity is high, mentioning the file upload feature and reproducibility. Information value is good, framing the problem and seeking solutions. Clarity and usefulness are high. Credibility is maintained by adhering to the source and brief. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 128,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "What does llama.cpp’s HTTP server file upload actually do, and how to get stable Q&A on file contents?",
+        "body": "A 2025 Reddit post questions the actual function of the file upload button in llama.cpp’s HTTP server. The poster wonders if the uploaded file content is simply appended to their prompt text or handled differently. Using llama 3.2 3B Q4_K_S, they attempted to ask questions about the uploaded file’s contents but saw mixed results: sometimes the model answered correctly, other times it seemed to interpret the file content as the query itself. They want reproducible answers—consistent outputs when issuing the same prompts in new sessions—but the variability suggests the internal combination of file and prompt is not straightforward or stable. Does anyone have insight into how the file upload input is processed internally? Also, what techniques might improve reproducibility when querying uploaded files via this interface?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 accurately captures the essence of the source and brief, posing direct questions about the file upload functionality and reproducibility. It correctly attributes the user's experiences and avoids making unsubstantiated claims. Community fit is good, as it addresses a specific feature of llama.cpp that would interest local LLM users. Specificity is high, focusing on the file upload button and stable Q&A on file contents. Information value is good, clearly outlining the problem and seeking expert input. Clarity and usefulness are high. Credibility is maintained by staying true to the source and brief. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 126,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "How does llama.cpp’s file upload button actually combine uploaded files with prompts in the HTTP server?",
+      "body": "I’ve been reading a 2025 Reddit post about llama.cpp’s HTTP server file upload feature and how it interacts with prompts. The original poster wonders whether the uploaded file content is simply concatenated with the direct prompt text before being sent to the model. They noticed inconsistent answers when asking questions about the uploaded file’s content, which raises questions about how the input is constructed internally.\n\nSince the exact mechanism isn’t clearly documented or confirmed, I’m curious if anyone here has insight or experience with how the file upload and prompt are combined under the hood. Could the inconsistent responses be due to how the server merges the file and prompt, or might there be other factors at play? \n\nUnderstanding this could help clarify how best to format inputs when using this feature, especially with models like llama 3.2 3B Q4_K_S as referenced in the original discussion.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 correctly identifies the core questions from the source about file upload functionality and prompt concatenation. It accurately reflects the user's speculation and observed inconsistencies without claiming personal experience or definitive knowledge. The mention of the specific model (llama 3.2 3B Q4_K_S) adds specificity. The community fit is good as it directly asks for insights from other users. The copy_pass is false because the phrase 'treating the concatenation as the prompt' is copied verbatim from the source.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 146,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "How does llama.cpp’s file upload button actually combine uploaded files with prompts in the HTTP server?",
+      "body": "I’ve been reading a 2025 Reddit post about llama.cpp’s HTTP server file upload feature and how it interacts with prompts. The original poster wonders whether the uploaded file content is simply concatenated with the direct prompt text before being sent to the model. They noticed inconsistent answers when asking questions about the uploaded file’s content, which raises questions about how the input is constructed internally.\n\nSince the exact mechanism isn’t clearly documented or confirmed, I’m curious if anyone here has insight or experience with how the file upload and prompt are combined under the hood. Could the inconsistent responses be due to how the server merges the file and prompt, or might there be other factors at play? \n\nUnderstanding this could help clarify how best to format inputs when using this feature, especially with models like llama 3.2 3B Q4_K_S as referenced in the original discussion.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 correctly identifies the core questions from the source about file upload functionality and prompt concatenation. It accurately reflects the user's speculation and observed inconsistencies without claiming personal experience or definitive knowledge. The mention of the specific model (llama 3.2 3B Q4_K_S) adds specificity. The community fit is good as it directly asks for insights from other users. The copy_pass is false because the phrase 'treating the concatenation as the prompt' is copied verbatim from the source.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 146,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0240",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:07:54.468080+00:00",
+    "tag": "O1:D01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d2a83bec894dae6c5a2ef2c7abf162d392f7ec3a94e2758aa95583a02272543e",
+    "actual_cost_usd": 0.0017996,
+    "budget_charge_usd": 0.0017996,
+    "reserved_upper_usd": 0.0086944,
+    "input_tokens": 1963,
+    "output_tokens": 634,
+    "latency_seconds": 4.725413400010439,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112069-K0ytyh5aq3uVNghHU9wx",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0241",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:07:57.195732+00:00",
+    "tag": "quality:D01:O1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "530df000ab6fffd6df87f7228b723bb61f541c4a4932593259b1cdca9a8fa0fb",
+    "actual_cost_usd": 0.000546,
+    "budget_charge_usd": 0.000546,
+    "reserved_upper_usd": 0.0018530999999999999,
+    "input_tokens": 2692,
+    "output_tokens": 692,
+    "latency_seconds": 2.6971860000048764,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112074-MHNGMLNZdTkGQc2TzcXq",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

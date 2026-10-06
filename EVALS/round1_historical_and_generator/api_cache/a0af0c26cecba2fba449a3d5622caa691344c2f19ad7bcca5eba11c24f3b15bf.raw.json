@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100718-hNy8JKnAuEX1fSUgDfC0",
+  "object": "chat.completion",
+  "created": 1791100718,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[\n  {\"index\":0,\"probability\":0.4,\"reason\":\"Technical detail and offline RAG chatbot project suggest moderate interest; some complexity but niche usage.\"},\n  {\"index\":1,\"probability\":0.3,\"reason\":\"Asking for building AI agent from scratch shows engagement but less polished, likely moderate interest.\"},\n  {\"index\":2,\"probability\":0.35,\"reason\":\"Detailed hardware benchmarking discussion appeals to enthusiasts, moderate niche interest.\"},\n  {\"index\":3,\"probability\":0.25,\"reason\":\"Strong negative opinion on UI; likely lower engagement due to critical tone and niche topic.\"},\n  {\"index\":4,\"probability\":0.4,\"reason\":\"Practical multi-GPU inference setup question with detailed specs; likely moderate interest.\"},\n  {\"index\":5,\"probability\":0.35,\"reason\":\"Request for multi-GPU PCIe speed benchmarks; technical and niche but relevant to enthusiasts.\"},\n  {\"index\":6,\"probability\":0.3,\"reason\":\"Waiting on DGX Spark units order; personal experience with some broader interest but niche.\"},\n  {\"index\":7,\"probability\":0.45,\"reason\":\"Announcement of a large language model with multi-language focus; likely higher interest.\"}\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6418,
+    "completion_tokens": 266,
+    "total_tokens": 6684,
+    "cost": 0.0029928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0029928,
+      "upstream_inference_prompt_cost": 0.0025672,
+      "upstream_inference_completions_cost": 0.0004256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

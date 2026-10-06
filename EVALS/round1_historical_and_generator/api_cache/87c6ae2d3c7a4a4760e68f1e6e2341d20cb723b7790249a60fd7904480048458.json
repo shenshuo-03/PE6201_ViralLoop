@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1-F3) accurately. It maintains necessary caveats about the lack of audits and the need to check logs and network connections. The title matches the content well. The language is clear and technical, suitable for the intended audience. It invites discussion on specific monitoring metrics, which is actionable and relevant. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and all facts (F1-F3). It emphasizes the importance of prompt isolation and scrutiny of logs and network activity, while explicitly noting the absence of formal audits. The title is consistent with the body and clearly signals the hypothetical nature. The writing is clear and technical, appropriate for the audience. It encourages discussion on identifying unintended data leakage, providing actionable value without unsupported claims or clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:57:04.821603+00:00",
+    "tag": "selection_dev:S02:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "87c6ae2d3c7a4a4760e68f1e6e2341d20cb723b7790249a60fd7904480048458",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 955,
+    "output_tokens": 385,
+    "actual_cost_usd": 0.000998,
+    "token_price_estimate_usd": 0.000998,
+    "reserved_upper_usd": 0.0048552,
+    "budget_charge_usd": 0.000998,
+    "latency_seconds": 3.2330894000042463,
+    "retry": 0,
+    "request_id": "gen-1791100621-36bgLvMyr5ybJnl6rDz0"
+  },
+  "raw_response": {
+    "id": "gen-1791100621-36bgLvMyr5ybJnl6rDz0",
+    "object": "chat.completion",
+    "created": 1791100621,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1-F3) accurately. It maintains necessary caveats about the lack of audits and the need to check logs and network connections. The title matches the content well. The language is clear and technical, suitable for the intended audience. It invites discussion on specific monitoring metrics, which is actionable and relevant. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and all facts (F1-F3). It emphasizes the importance of prompt isolation and scrutiny of logs and network activity, while explicitly noting the absence of formal audits. The title is consistent with the body and clearly signals the hypothetical nature. The writing is clear and technical, appropriate for the audience. It encourages discussion on identifying unintended data leakage, providing actionable value without unsupported claims or clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 955,
+      "completion_tokens": 385,
+      "total_tokens": 1340,
+      "cost": 0.000998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000998,
+        "upstream_inference_prompt_cost": 0.000382,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

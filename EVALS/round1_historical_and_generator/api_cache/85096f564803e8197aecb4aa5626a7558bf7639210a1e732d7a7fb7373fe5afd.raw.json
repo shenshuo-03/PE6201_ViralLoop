@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100908-HlSdrz9iHq05vXDJGWyu",
+  "object": "chat.completion",
+  "created": 1791100908,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.6,\"reason\":\"Open-source implementation of a novel LLM agent framework with strong quantitative improvements and active development suggests above-average interest and engagement.\"},{\"index\":1,\"probability\":0.3,\"reason\":\"A practical question about speeding up TTS with some technical detail but less novelty or broad appeal, likely moderate interest.\"},{\"index\":2,\"probability\":0.5,\"reason\":\"New devtool for on-device AI with free access and cloud hardware support, appealing to developers, moderate to high interest expected.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"User exploring local LLMs with hands-on control, a niche but relevant topic, moderate interest but less technical novelty.\"},{\"index\":4,\"probability\":0.45,\"reason\":\"Discussion on model selection for low-stakes RAG with specific hardware constraints, somewhat technical and practical, moderate interest.\"},{\"index\":5,\"probability\":0.55,\"reason\":\"Personal assistant memory system with empirical results and technical depth, likely to attract engaged technical audience.\"},{\"index\":6,\"probability\":0.5,\"reason\":\"New MCP workflow orchestrator addressing context limits in SRE automation, technical and practical, moderate interest.\"},{\"index\":7,\"probability\":0.35,\"reason\":\"Technical question about logging input in llama-cli, useful but narrow scope and less broad appeal.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7026,
+    "completion_tokens": 294,
+    "total_tokens": 7320,
+    "cost": 0.0032808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0032808,
+      "upstream_inference_prompt_cost": 0.0028104,
+      "upstream_inference_completions_cost": 0.0004704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

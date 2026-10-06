@@ -1,0 +1,110 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present measured results, preserving necessary caveats. It separates VRAM components as per the facts and uses clear, technical language suitable for the target audience. The title accurately reflects the content. The post is relevant and useful for readers planning VRAM usage conceptually. There is no clickbait or exaggeration."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly states the hypothetical nature and separates VRAM into the three required categories. The language is clear and technical, matching the audience. The title matches the content well. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait are present."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains the hypothetical status and clearly separates VRAM components as required. The language is clear and technical, appropriate for the audience. The title is consistent with the body content. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait detected."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:47:27.415653+00:00",
+    "tag": "tune_dev:D01:O1_resample:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "baa1c33d9b49e7b3ef7e04c00f9ee883bc002476247901a034df1c0e873c6e4a",
+    "status": "success",
+    "input_tokens": 1441,
+    "output_tokens": 501,
+    "actual_cost_usd": 0.001378,
+    "token_price_estimate_usd": 0.0013779999999999999,
+    "reserved_upper_usd": 0.0057696,
+    "budget_charge_usd": 0.001378,
+    "latency_seconds": 3.303182100004051,
+    "retry": 0,
+    "request_id": "gen-1791100044-rigEcRQPA2wWKSRLYiXZ"
+  },
+  "raw_response": {
+    "id": "gen-1791100044-rigEcRQPA2wWKSRLYiXZ",
+    "object": "chat.completion",
+    "created": 1791100044,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present measured results, preserving necessary caveats. It separates VRAM components as per the facts and uses clear, technical language suitable for the target audience. The title accurately reflects the content. The post is relevant and useful for readers planning VRAM usage conceptually. There is no clickbait or exaggeration.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly states the hypothetical nature and separates VRAM into the three required categories. The language is clear and technical, matching the audience. The title matches the content well. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains the hypothetical status and clearly separates VRAM components as required. The language is clear and technical, appropriate for the audience. The title is consistent with the body content. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait detected.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1441,
+      "completion_tokens": 501,
+      "total_tokens": 1942,
+      "cost": 0.001378,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001378,
+        "upstream_inference_prompt_cost": 0.0005764,
+        "upstream_inference_completions_cost": 0.0008016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

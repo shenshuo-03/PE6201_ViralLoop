@@ -1,0 +1,62 @@
+{
+  "topic": "OCR for Mathematical and Code Content",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Identify the smallest, most effective OCR model capable of accurately reading mathematical expressions and code.",
+  "context": "A user on Reddit sought recommendations for small OCR models that could handle math and code, reporting issues with existing models like Google's Gemma and Qwen-2.5-vl-7b.",
+  "motivation": "This question is worth discussing to help the community find efficient OCR solutions for specialized content, potentially improving document processing and data extraction for technical materials.",
+  "desired_response": "Discussion and recommendations for small OCR models that perform well with mathematical notation and programming code, based on user experiences and observations.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The source author found that Google's Gemma models (2b, 7b, 27b, and 4B Instruct QAT) struggled with OCR tasks, sometimes failing to read entire sections or making errors.",
+      "evidence_quote": "I tried Google's Gemma models 2b, 7b, 27b (my LMStudio has Gemma 3 4B Instruct QAT) but it always makes some mistake.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "A specific instance of failure with Gemma involved misreading a list, where it only recognized 2 out of 4 items.",
+      "evidence_quote": "For example, a particular section had 4 listicles but it only read 2 of them.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "The Qwen-2.5-vl-7b model was observed to have difficulty distinguishing between similar numerical representations, such as 10^9 and 109.",
+      "evidence_quote": "Another one was Qwen-2.5-vl-7b which can't understand the difference between 10^9 and 109.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "The source author expressed a desire for a small model that excels at both math and code, and can read entire sections accurately.",
+      "evidence_quote": "Is there any small model that excels at math & code plus can read the whole sections without problems?",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "Google's Gemma models were considered good but insufficient due to frequent errors in OCR tasks.",
+      "evidence_quote": "Google's Gemma is good but not enough as it frequently gets things wrong.",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "Models like Gemma and Qwen-2.5-vl-7b have shown limitations in OCR tasks involving math and code.",
+    "There is a need for small OCR models that can accurately process mathematical expressions and code.",
+    "Users are seeking recommendations for effective OCR solutions for technical content."
+  ],
+  "forbidden_claims": [
+    "Specific model performance metrics (e.g., accuracy percentages, speed benchmarks).",
+    "Confirmation of successful fixes or alternative models that definitively solve the problem.",
+    "Claims of timeless truth or universal applicability of any model's performance.",
+    "Any personal experience or testing conducted by the current speaker."
+  ],
+  "essential_limitations": [
+    "The specific hardware or software configurations used by the source author are not detailed.",
+    "The exact nature and complexity of the mathematical expressions and code encountered are not specified.",
+    "The source date is May 29, 2025, and model capabilities may have evolved since then."
+  ],
+  "missing_information": [
+    "Details on the specific versions of Gemma and Qwen models tested.",
+    "Information about the image quality or format of the documents being processed.",
+    "Any specific settings or parameters used when running the OCR models."
+  ]
+}

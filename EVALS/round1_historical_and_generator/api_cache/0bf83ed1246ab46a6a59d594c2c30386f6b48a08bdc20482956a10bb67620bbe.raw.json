@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100710-CrBuqdBSobB52CXWXqkI",
+  "object": "chat.completion",
+  "created": 1791100710,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical discussion with clear problem and dataset reference, moderate interest expected.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"Common technical help request, likely average engagement.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Detailed benchmark with comparative analysis, likely above average interest.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"In-depth tutorial with performance details, likely to attract higher engagement.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Project update with fixes and new features, moderate interest expected.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Insightful benchmark analysis on reasoning efficiency, likely to attract attention.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Brief update on new feature preview, moderate interest.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"User seeking resource recommendations, typical engagement level.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5981,
+    "completion_tokens": 209,
+    "total_tokens": 6190,
+    "cost": 0.0027268,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0027268,
+      "upstream_inference_prompt_cost": 0.0023924,
+      "upstream_inference_completions_cost": 0.0003344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

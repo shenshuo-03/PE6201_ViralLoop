@@ -1,0 +1,313 @@
+{
+  "at": "2026-10-04T08:08:52.883699+00:00",
+  "topic": {
+    "id": "T03",
+    "split": "final_test",
+    "topic": "Hypothetical local inference speed: what the numbers do not show",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Two hypothetical runtimes achieve 18 and 24 tokens per second.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The hypothetical test uses one prompt on the same machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Time to first token and answer quality were not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The sample does not establish a universal winner.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G3_rag",
+  "generation_usage": {
+    "at": "2026-10-04T08:08:49.549602+00:00",
+    "tag": "final_test:T03:G3_rag",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "6fd77b876e2f07b447ae51c821eb175278b8984577c54f202b5d3e6adcca3eec",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2101,
+    "output_tokens": 542,
+    "actual_cost_usd": 0.0004269,
+    "token_price_estimate_usd": 0.00042689999999999997,
+    "reserved_upper_usd": 0.0015339999999999998,
+    "budget_charge_usd": 0.0004269,
+    "latency_seconds": 2.606744599994272,
+    "retry": 0,
+    "request_id": "gen-1791101327-xMbuEfGm0LFlkzHPaUY4"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:08:52.868154+00:00",
+    "tag": "final_test:T03:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3a454b1d07f47730f202e6889288f25831ec4fa646b771b6d575184e4b7faa39",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 957,
+    "output_tokens": 412,
+    "actual_cost_usd": 0.001042,
+    "token_price_estimate_usd": 0.001042,
+    "reserved_upper_usd": 0.0047504,
+    "budget_charge_usd": 0.001042,
+    "latency_seconds": 3.2898630000127014,
+    "retry": 0,
+    "request_id": "gen-1791101329-EgQXvgQNkrvlAL3ZBh92"
+  },
+  "retrieved_ids": [
+    "1iva9w5",
+    "1lreu44",
+    "1ijxefw",
+    "1megdy9",
+    "1jpohf2"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "7f3f5084032da24553249b5a186d5d88f6e84e49fa4a58273a285e4a3f7495d0",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Inference Speeds: 18 vs. 24 Tokens/Sec - What's Missing?",
+        "body": "This post discusses a hypothetical experiment comparing two local inference runtimes. The scenario involves the same machine and a single prompt, yielding observed speeds of 18 and 24 tokens per second respectively (F1). It's crucial to note that this is a hypothetical scenario and not based on measured results or personal experience. The experiment's limitations are significant: time to first token was not measured, nor was the quality of the generated answers (F3). Consequently, these numbers do not establish a universal winner or provide a complete picture of performance (F4). The goal here is to highlight that raw token speed, in isolation, may not reflect the full user experience. Further discussion on other qualitative metrics would be beneficial.",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4"
+        ],
+        "plan": "Discuss hypothetical inference speeds, emphasizing limitations and the need for broader metrics. Invite discussion on what other factors constitute a 'better' runtime beyond raw token speed."
+      },
+      "performance_score": 0.24219012451047314,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and references the provided facts accurately (F1, F3, F4). It preserves the scenario status and necessary caveats, avoiding unsupported claims. The title matches the body content well. The writing is clear and restrained, suitable for the target audience. It highlights the limitations of raw token speed as a metric and invites broader discussion, making it useful and relevant. Credibility is strong due to explicit caveats and no overstatements. Clickbait is minimal.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 118,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical Token Speed Comparison: 18 vs. 24 T/s on Identical Hardware - Caveats",
+        "body": "A hypothetical test was conducted on a single machine using one specific prompt to compare two local inference runtimes. The observed results were 18 tokens per second for one runtime and 24 tokens per second for the other (F1). It is important to understand that this is a hypothetical setup, not a real-world measurement or personal experience. The current findings are incomplete; they do not account for crucial aspects like the initial latency before the first token appears or the actual quality and coherence of the generated output (F3). Therefore, this limited comparison cannot definitively declare one runtime superior to the other (F4). The focus is solely on a specific, hypothetical throughput metric under constrained conditions, underscoring the need for a more comprehensive evaluation.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Present hypothetical inference benchmarks, clearly stating their limitations. Focus on the 'what's not measured' aspect and invite discussion on how to evaluate local LLMs more holistically, beyond simple token speed."
+      },
+      "performance_score": 0.24046474088666817,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all relevant facts (F1, F2, F3, F4). It explicitly states the limitations and does not make unsupported claims. The title is consistent with the body, emphasizing caveats. The text is clear and technical, appropriate for the audience. It stresses the need for comprehensive evaluation beyond token speed, which is useful and relevant. Credibility is maintained by preserving caveats and scenario status. Clickbait is low.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 124,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Inference Speeds: 18 vs. 24 Tokens/Sec - What's Missing?",
+      "body": "This post discusses a hypothetical experiment comparing two local inference runtimes. The scenario involves the same machine and a single prompt, yielding observed speeds of 18 and 24 tokens per second respectively (F1). It's crucial to note that this is a hypothetical scenario and not based on measured results or personal experience. The experiment's limitations are significant: time to first token was not measured, nor was the quality of the generated answers (F3). Consequently, these numbers do not establish a universal winner or provide a complete picture of performance (F4). The goal here is to highlight that raw token speed, in isolation, may not reflect the full user experience. Further discussion on other qualitative metrics would be beneficial.",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4"
+      ],
+      "plan": "Discuss hypothetical inference speeds, emphasizing limitations and the need for broader metrics. Invite discussion on what other factors constitute a 'better' runtime beyond raw token speed."
+    },
+    "performance_score": 0.24219012451047314,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and references the provided facts accurately (F1, F3, F4). It preserves the scenario status and necessary caveats, avoiding unsupported claims. The title matches the body content well. The writing is clear and restrained, suitable for the target audience. It highlights the limitations of raw token speed as a metric and invites broader discussion, making it useful and relevant. Credibility is strong due to explicit caveats and no overstatements. Clickbait is minimal.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 118,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

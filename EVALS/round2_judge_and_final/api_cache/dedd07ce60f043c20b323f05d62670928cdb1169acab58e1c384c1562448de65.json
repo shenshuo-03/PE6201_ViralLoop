@@ -1,0 +1,93 @@
+{
+  "value": {
+    "baseline": {
+      "title": "MiniSearch update: How practical is its remote server API setup for local LLM inference engines?",
+      "body": "MiniSearch has been updated to collect more textual and graphical results during web research sessions, aiming to provide more grounded answers for follow-up questions. It supports running locally via Docker or using a public Hugging Face Space instance. The default setup uses small LLMs running in the browser, but users can opt to connect to local inference engines like LM Studio, Ollama, or vLLM—or cloud servers—by selecting \"Remote server (API)\" and configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, though memory limits depend on the device. Given these features, has anyone here integrated MiniSearch with local inference engines through the remote API option? What has your experience been regarding setup complexity, latency, and reliability? Also, any insights on how well the graphical results feature works in practice would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "alternatives": [
+      {
+        "dimension": "community_fit",
+        "draft": {
+          "title": "MiniSearch update: Features and integration options for local LLMs",
+          "body": "MiniSearch now gathers more textual and graphical results to support deeper web research. It can run locally via Docker or through a public Hugging Face Space. The default uses small browser-based LLMs, but users can switch to local or cloud inference engines by selecting \"Remote server (API)\" and configuring API details. The chat context stays under 4k tokens, and the app is optimized for mobile browsers. What do you think about these features and the potential for local LLM integration?",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This version removes the direct question about user experience and setup details to make it more general and open-ended, fitting broader community discussion rather than seeking specific practical feedback."
+      },
+      {
+        "dimension": "specificity",
+        "draft": {
+          "title": "Updated web research tool supports local and cloud AI inference with configurable API",
+          "body": "A web research tool has been updated to collect more textual and graphical results for follow-up questions. It runs either locally via Docker or on a public cloud instance. The default AI processing uses small models in the browser, but users can select remote AI servers by configuring API Base URL, Access Key, and Model. The chat context is limited to under 4k tokens, and the app is optimized for mobile browsers with memory limits depending on the device. How practical is configuring remote AI servers for local inference engines in your experience?",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This draft replaces specific product names with generic descriptions to focus on the core facts while preserving the main question about remote server configuration practicality."
+      },
+      {
+        "dimension": "information_value",
+        "draft": {
+          "title": "MiniSearch update adds more results and remote server API option for AI processing",
+          "body": "MiniSearch now gathers more textual and graphical results during sessions to provide grounded answers. It can be run locally via Docker or accessed as a public Hugging Face Space. The default AI processing uses small browser-based LLMs, but users can select \"Remote server (API)\" to connect to local or cloud inference engines by configuring API Base URL, Access Key, and Model. The chat context is managed with a sliding window under 4k tokens, and the app is optimized for mobile browsers, with session limits tied to system memory.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This version restates the reported facts clearly without posing a question or inviting discussion, focusing on delivering the information as-is for reference."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0079",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:27:24.777816+00:00",
+    "tag": "pair_builder:validation:H08",
+    "phase": "preflight",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "dedd07ce60f043c20b323f05d62670928cdb1169acab58e1c384c1562448de65",
+    "actual_cost_usd": 0.0021652,
+    "budget_charge_usd": 0.0021652,
+    "reserved_upper_usd": 0.0085532,
+    "input_tokens": 2141,
+    "output_tokens": 818,
+    "latency_seconds": 5.586601200018777,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109639-8E3beWbSBvgb322FLTCR",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

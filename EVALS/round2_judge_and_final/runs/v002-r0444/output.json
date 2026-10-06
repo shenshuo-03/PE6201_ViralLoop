@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "B",
+    "overall": "A"
+  },
+  "evidence": "Draft A directly mirrors the brief's facts (F1–F6), explicitly naming MLC.ai, WebGPU/WASM requirements, <100MB model size constraint, and both use cases (Chart.js + summaries). It asks concrete questions aligned with desired_response: tool experiences, model recommendations, and prompting strategies. Draft B strips specificity by omitting MLC.ai, WebGPU/WASM, size targets, and the secondary summary use case (F3). It introduces unsupported framing ('hardware and browser environments of users are unknown') that echoes essential_limitations but wasn't part of the source author's stated problem—this violates the instruction to avoid inventing missing settings and adds report-like hedging. Draft B's vagueness ('effective frameworks,' 'practical tradeoffs') reduces actionability; a community member cannot respond with targeted tool comparisons or model suggestions without the specifics A provides. Draft A preserves the source author's actual constraints and exploration state (started looking into MLC.ai, hasn't found feedback), maintaining credibility. Draft B's credibility is slightly lower because it reframes the problem as user-environment uncertainty rather than the author's genuine exploration gap, creating a false premise not in the brief."
+}

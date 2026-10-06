@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101327-xMbuEfGm0LFlkzHPaUY4",
+  "object": "chat.completion",
+  "created": 1791101327,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical Inference Speeds: 18 vs. 24 Tokens/Sec - What's Missing?\",\n      \"body\": \"This post discusses a hypothetical experiment comparing two local inference runtimes. The scenario involves the same machine and a single prompt, yielding observed speeds of 18 and 24 tokens per second respectively (F1). It's crucial to note that this is a hypothetical scenario and not based on measured results or personal experience. The experiment's limitations are significant: time to first token was not measured, nor was the quality of the generated answers (F3). Consequently, these numbers do not establish a universal winner or provide a complete picture of performance (F4). The goal here is to highlight that raw token speed, in isolation, may not reflect the full user experience. Further discussion on other qualitative metrics would be beneficial.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Discuss hypothetical inference speeds, emphasizing limitations and the need for broader metrics. Invite discussion on what other factors constitute a 'better' runtime beyond raw token speed.\"\n    },\n    {\n      \"title\": \"Hypothetical Token Speed Comparison: 18 vs. 24 T/s on Identical Hardware - Caveats\",\n      \"body\": \"A hypothetical test was conducted on a single machine using one specific prompt to compare two local inference runtimes. The observed results were 18 tokens per second for one runtime and 24 tokens per second for the other (F1). It is important to understand that this is a hypothetical setup, not a real-world measurement or personal experience. The current findings are incomplete; they do not account for crucial aspects like the initial latency before the first token appears or the actual quality and coherence of the generated output (F3). Therefore, this limited comparison cannot definitively declare one runtime superior to the other (F4). The focus is solely on a specific, hypothetical throughput metric under constrained conditions, underscoring the need for a more comprehensive evaluation.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Present hypothetical inference benchmarks, clearly stating their limitations. Focus on the 'what's not measured' aspect and invite discussion on how to evaluate local LLMs more holistically, beyond simple token speed.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2101,
+    "completion_tokens": 542,
+    "total_tokens": 2643,
+    "cost": 0.0004269,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004269,
+      "upstream_inference_prompt_cost": 0.0002101,
+      "upstream_inference_completions_cost": 0.0002168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

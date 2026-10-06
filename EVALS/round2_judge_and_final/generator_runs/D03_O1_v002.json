@@ -1,0 +1,238 @@
+{
+  "at": "2026-10-04T11:08:16.712937+00:00",
+  "loop_version": "v002",
+  "brief_id": "D03",
+  "phase": "tune",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "What can we realistically infer from DeepSeek R1 perplexity tested on just 8 blocks?",
+        "body": "A 2025 test of DeepSeek R1 models with varying expert counts showed the full model (except when limited to 2 experts) generally outperforming normal distills under aggressive quantization, with Virtuoso Medium V2 distill sitting between 3 and 4 expert versions. However, this test ran on only 8 blocks out of about 560, using block size 512, so the results come with major caveats. Perplexity may also unfairly penalize chain-of-thought models since they can't leverage their reasoning steps during evaluation. The test also encountered NaNs at 10 and 12 experts, leaving some gaps. Given these constraints, what are practical approaches to better benchmark DeepSeek R1 variants locally without resorting to full-scale perplexity runs? Are there alternative metrics or smaller-scale tests that can more reliably reflect real-world performance?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source, including its limitations and the specific findings regarding DeepSeek R1 and distilled models. It correctly identifies the small sample size (8 blocks), the potential unfairness of perplexity for CoT models, and the NaN issue. The draft poses relevant community questions about alternative benchmarking methods for local LLM enthusiasts, aligning well with the brief's goal of fostering discussion. Specificity is good, referencing model names and the core findings. Information value is high due to the well-structured questions and summary of limitations. Clarity and usefulness are excellent. Credibility is maintained by adhering strictly to the source's reported data and caveats. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 126,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Considering the limited 8-block perplexity test, how should we weigh expert count effects in DeepSeek R1?",
+        "body": "An archived perplexity test from early 2025 compared DeepSeek R1 models with different numbers of experts, alongside distilled models and Virtuoso-Medium-v2. The test was run with block size 512 but only covered 8 blocks out of roughly 560, so its conclusions are tentative. It suggested that full DeepSeek R1 models outperform normal distills except when limited to 2 experts, and Virtuoso Medium V2 distill performed comparably to 3-4 expert versions. However, perplexity might not fairly evaluate chain-of-thought models, and attempts at 10 and 12 experts failed with NaNs. How do others interpret the tradeoffs between expert count and model quality here? Are there known workarounds or alternative evaluation techniques that can better capture performance differences without the risk of NaNs or unfair scoring?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 effectively summarizes the source's perplexity test results and its significant limitations (8 blocks, block size, CoT model suitability, NaNs). It poses pertinent questions about interpreting tradeoffs and alternative evaluation techniques, directly addressing the brief's objective. Specificity is strong, mentioning model names and the core experimental details. Information value is high, providing a concise overview and actionable discussion points. Clarity and usefulness are excellent. Credibility is maintained by accurately representing the source and its caveats. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 123,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Is perplexity a useful metric for DeepSeek R1 MoE models given this small-sample test?",
+        "body": "A brief perplexity test from 2025 on DeepSeek R1 models with varying expert counts showed some interesting trends: full models generally beat normal distills unless restricted to 2 experts, and Virtuoso Medium V2 distill ranked between 3 and 4 expert versions. But the test only ran on 8 blocks out of about 560, used block size 512, and encountered NaNs at higher expert counts (10 and 12). Also, perplexity may not be suitable for chain-of-thought models since they can’t perform intermediate reasoning in this setup. Given these limitations, is perplexity a meaningful metric for evaluating MoE models like DeepSeek R1? What alternative benchmarks or evaluation methods could better reflect their real-world capabilities, especially for locally running setups?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 3 accurately captures the essence of the source's perplexity test, highlighting the key findings (full vs. distilled models, Virtuoso performance) and crucial limitations (small sample size, block size, CoT suitability, NaNs). It poses a direct and relevant question about the meaningfulness of perplexity for MoE models like DeepSeek R1 and asks for alternative evaluation methods, aligning perfectly with the brief. Specificity is good, referencing model types and experimental constraints. Information value is high due to the focused questions and summary. Clarity and usefulness are excellent. Credibility is strong, as it strictly adheres to the source's reported data and caveats. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 117,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+      "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 3,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's limitations regarding the small number of blocks tested and the potential unfairness of perplexity for CoT models. It poses a relevant question about the reliability of such limited tests for decision-making. Specificity is adequate, referencing DeepSeek R1 and perplexity. Information value is good, as it highlights key limitations and prompts further discussion. Community fit is good, as it directly addresses a technical concern relevant to local LLM enthusiasts. The speaker correctly avoids claiming personal experience.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 125,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+      "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 3,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's limitations regarding the small number of blocks tested and the potential unfairness of perplexity for CoT models. It poses a relevant question about the reliability of such limited tests for decision-making. Specificity is adequate, referencing DeepSeek R1 and perplexity. Information value is good, as it highlights key limitations and prompts further discussion. Community fit is good, as it directly addresses a technical concern relevant to local LLM enthusiasts. The speaker correctly avoids claiming personal experience.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 125,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0247",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:13.557443+00:00",
+    "tag": "O1:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "8730683b79a5bff4a8a69f0b7acf50b0dce43b011ea134d14ac2f37cce8c6832",
+    "actual_cost_usd": 0.001872,
+    "budget_charge_usd": 0.001872,
+    "reserved_upper_usd": 0.0086784,
+    "input_tokens": 2064,
+    "output_tokens": 654,
+    "latency_seconds": 4.887330900004599,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112088-nvSN3w6gqXPunaMAsyPZ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0248",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:16.687545+00:00",
+    "tag": "quality:D03:O1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "33d75acb91630f391a276d025de28986a08ce5f76eb61bf1cc7d4b54848f167c",
+    "actual_cost_usd": 0.00044568,
+    "budget_charge_usd": 0.00044568,
+    "reserved_upper_usd": 0.0020821,
+    "input_tokens": 3907,
+    "output_tokens": 812,
+    "latency_seconds": 3.1011591000133194,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112093-WwyIYejJHkmbUcZ0Dt8A",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

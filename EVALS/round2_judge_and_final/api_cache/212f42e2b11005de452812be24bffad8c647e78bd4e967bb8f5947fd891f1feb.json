@@ -1,0 +1,59 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's limitations regarding the perplexity test (small block count, potential unfairness to CoT models) and poses relevant questions for the community about the reliability of such tests and alternative evaluation methods. It adheres to the persona and avoids unsupported claims."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately captures the core limitations of the source test (small sample size, perplexity's suitability for CoT models) and frames them as a question for the community, seeking alternative benchmarks. It maintains the persona and avoids making claims beyond the source."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0244",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:03.768762+00:00",
+    "tag": "quality:D03:V1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "212f42e2b11005de452812be24bffad8c647e78bd4e967bb8f5947fd891f1feb",
+    "actual_cost_usd": 0.0004883,
+    "budget_charge_usd": 0.0004883,
+    "reserved_upper_usd": 0.0019549999999999997,
+    "input_tokens": 3575,
+    "output_tokens": 327,
+    "latency_seconds": 1.7152061999950092,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112081-YMnT5jRlv3oXmT6hCYRV",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

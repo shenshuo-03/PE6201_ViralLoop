@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102639-R5szBhDim1LpSvMQHdFW",
+  "object": "chat.completion",
+  "created": 1791102639,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about lack of real measurements and unassessed metrics. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. It invites discussion on possible causes for latency differences, providing moderate actionable value. The post is relevant to local inference discussions and maintains credibility by avoiding unsupported claims or personal experience. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly preserves the hypothetical scenario and necessary caveats, with no unsupported claims. The title matches the body content well. The writing is clear and accessible to the intended technical audience. It encourages conceptual discussion without presenting fabricated data. The post is relevant and credible, and the clickbait score is low due to the restrained, factual title.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 377,
+    "total_tokens": 1416,
+    "cost": 0.0010188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010188,
+      "upstream_inference_prompt_cost": 0.0004156,
+      "upstream_inference_completions_cost": 0.0006032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

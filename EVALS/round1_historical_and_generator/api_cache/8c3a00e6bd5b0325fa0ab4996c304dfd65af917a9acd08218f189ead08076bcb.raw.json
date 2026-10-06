@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100821-Iw9Euv0JWdnBOsdBXsgU",
+  "object": "chat.completion",
+  "created": 1791100821,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Relevant hardware question with some similarity to a high-class example; moderate interest and specificity.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.35,\n      \"reason\": \"Niche TTS question with emotional expressiveness focus; examples show mixed historical class but some high-class similarity.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.3,\n      \"reason\": \"Focused local LLM classification task; examples show mixed historical class with moderate similarity.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.4,\n      \"reason\": \"Hardware comparison for local model use; examples include a high-class post with similar topic and moderate similarity.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.25,\n      \"reason\": \"Experience/benchmark post about a celebrity LLM project; examples show mixed classes with low similarity.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Hardware upgrade question with personal use context; examples show mixed classes and moderate similarity.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.25,\n      \"reason\": \"Speculative discussion about hardware interconnects; examples show mixed classes with low similarity.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.3,\n      \"reason\": \"Discussion about running AI models on modest hardware; examples show mixed classes with moderate similarity.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4495,
+    "completion_tokens": 363,
+    "total_tokens": 4858,
+    "cost": 0.0023788,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0023788,
+      "upstream_inference_prompt_cost": 0.001798,
+      "upstream_inference_completions_cost": 0.0005808
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and accurately reflects the supplied facts (40 documents, known answer in one, failure to retrieve that document, unknown root cause). It avoids unsupported claims and maintains necessary caveats. The title matches the body content well. The language is clear and technical, suitable for the target audience. It offers actionable suggestions for initial debugging steps, making it useful and relevant. The tone is credible and restrained, with no clickbait elements."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical scenario and all key facts without unsupported claims. The title aligns well with the body, which emphasizes a systematic approach to diagnosis. The language is clear and technical, appropriate for the audience. It invites focused technical discussion on initial diagnostic steps, providing actionable value. The scenario status and caveats are explicitly stated, maintaining credibility and avoiding clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:12:42.855099+00:00",
+    "tag": "final_test:T07:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "60b38f8be02fa3671c10b2afd4c61d5ddfca9cea7b9ce9de07a2d6dfdcb28c1e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1007,
+    "output_tokens": 382,
+    "actual_cost_usd": 0.001014,
+    "token_price_estimate_usd": 0.001014,
+    "reserved_upper_usd": 0.0049564,
+    "budget_charge_usd": 0.001014,
+    "latency_seconds": 2.8897142999921925,
+    "retry": 0,
+    "request_id": "gen-1791101560-skXigTDAfy5M3ygHa39z"
+  },
+  "raw_response": {
+    "id": "gen-1791101560-skXigTDAfy5M3ygHa39z",
+    "object": "chat.completion",
+    "created": 1791101560,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and accurately reflects the supplied facts (40 documents, known answer in one, failure to retrieve that document, unknown root cause). It avoids unsupported claims and maintains necessary caveats. The title matches the body content well. The language is clear and technical, suitable for the target audience. It offers actionable suggestions for initial debugging steps, making it useful and relevant. The tone is credible and restrained, with no clickbait elements.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately preserves the hypothetical scenario and all key facts without unsupported claims. The title aligns well with the body, which emphasizes a systematic approach to diagnosis. The language is clear and technical, appropriate for the audience. It invites focused technical discussion on initial diagnostic steps, providing actionable value. The scenario status and caveats are explicitly stated, maintaining credibility and avoiding clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1007,
+      "completion_tokens": 382,
+      "total_tokens": 1389,
+      "cost": 0.001014,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001014,
+        "upstream_inference_prompt_cost": 0.0004028,
+        "upstream_inference_completions_cost": 0.0006112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

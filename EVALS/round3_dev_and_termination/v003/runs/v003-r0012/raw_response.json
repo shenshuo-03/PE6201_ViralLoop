@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118660-e0OyXz9Vd7nS7N9bWKPn",
+  "object": "chat.completion",
+  "created": 1791118660,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"speaker\": \"community member seeking help\",\n  \"scenario_origin\": \"controlled_hypothetical\",\n  \"current_goal\": \"To find an efficient way to extract and format chat logs from OpenRouter for use in training materials.\",\n  \"central_purpose\": \"Seeking advice on tools or methods to export OpenRouter chat conversations into a reusable format, ideally PDF or similar, for use in training sessions.\",\n  \"desired_response\": \"Recommendations for tools or techniques that can export OpenRouter chats in a well-formatted, reusable manner (e.g., PDF) suitable for training sessions, or methods to use OpenRouter with multiple models to achieve this directly.\",\n  \"relevant_evidence_ids\": [\n    \"F1\",\n    \"F2\",\n    \"F3\",\n    \"F4\",\n    \"F5\",\n    \"F6\"\n  ],\n  \"must_preserve\": [\n    \"The user goal to export and format OpenRouter chat conversations for training sessions without extensive manual reformatting.\",\n    \"The desire for output formats like PDF that are suitable for training materials.\",\n    \"The context that OpenRouter is used to compare multiple AI models and that some edited chats are valuable for training.\",\n    \"The user’s awareness of JSON export but preference for more user-friendly formats.\",\n    \"The request for tools or workflows that can automate or simplify the export and formatting process.\"\n  ],\n  \"must_not_invent\": [\n    \"Any specific tools or methods that successfully export OpenRouter chats to PDF.\",\n    \"Details about the exact AI models used or specific conditions of chat generation beyond general development use cases.\",\n    \"Any personal history, job titles, hardware/software ownership, or success metrics related to the user’s training materials.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1607,
+    "completion_tokens": 356,
+    "total_tokens": 1963,
+    "cost": 0.0012124,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012124,
+      "upstream_inference_prompt_cost": 0.0006428,
+      "upstream_inference_completions_cost": 0.0005696
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

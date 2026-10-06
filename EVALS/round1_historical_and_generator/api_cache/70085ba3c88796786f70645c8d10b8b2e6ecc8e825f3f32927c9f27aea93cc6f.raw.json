@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101575-xY61l3d5d9f2WFdk56yJ",
+  "object": "chat.completion",
+  "created": 1791101575,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not invent facts beyond the supplied synthetic inputs. It logically outlines plausible initial inspection points (chunking, indexing, query formulation) consistent with the scenario facts. The language is clear and technical, suitable for the target audience. It preserves necessary caveats about lack of evidence for root cause and invites community discussion, enhancing usefulness and relevance. The title matches the body content well and is restrained without exaggeration.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes the same key inspection areas with clear explanations. It explicitly states the synthetic nature and lack of specific cause, preserving important caveats. The style is clear and technical, appropriate for the audience. The title aligns well with the content and is not sensationalized. The post invites community input, increasing engagement and usefulness.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1166,
+    "completion_tokens": 377,
+    "total_tokens": 1543,
+    "cost": 0.0010696,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010696,
+      "upstream_inference_prompt_cost": 0.0004664,
+      "upstream_inference_completions_cost": 0.0006032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

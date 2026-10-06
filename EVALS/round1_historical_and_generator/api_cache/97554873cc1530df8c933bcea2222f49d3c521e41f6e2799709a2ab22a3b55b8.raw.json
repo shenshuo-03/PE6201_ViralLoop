@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100771-UCL7uSRuOhF6K6ksOHWr",
+  "object": "chat.completion",
+  "created": 1791100771,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Niche GPU question with some technical interest but limited broad appeal.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Animation studio query on TTS with emotional expression may attract specialized interest.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Practical local LLM model question for classification task likely to engage technical users.\"},{\"index\":3,\"probability\":0.45,\"reason\":\"Detailed hardware comparison for local model use, relevant to many users.\"},{\"index\":4,\"probability\":0.5,\"reason\":\"Creative project involving a celebrity and LLMs with detailed explanation, likely to attract attention.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Hardware upgrade question for LLM use, relevant to enthusiasts but somewhat niche.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Speculative hardware networking question, niche and technical but less broadly engaging.\"},{\"index\":7,\"probability\":0.35,\"reason\":\"Inquiry about AI models on modest hardware, relevant but limited audience.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1628,
+    "completion_tokens": 235,
+    "total_tokens": 1863,
+    "cost": 0.0010272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010272,
+      "upstream_inference_prompt_cost": 0.0006512,
+      "upstream_inference_completions_cost": 0.000376
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

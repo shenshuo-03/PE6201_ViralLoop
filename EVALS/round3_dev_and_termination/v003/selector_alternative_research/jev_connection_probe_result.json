@@ -1,0 +1,29 @@
+{
+  "connection_success": true,
+  "run_id": "v003-r0082",
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+    "goal_clear": {
+      "type": "noul",
+      "noul": 0.96
+    },
+    "intent": {
+      "type": "choice",
+      "choice": "seek_advice",
+      "probabilities": {
+        "seek_advice": 1,
+        "report_test": 0,
+        "uncertain": 0
+      },
+      "confidence": 1
+    }
+  },
+  "usage": {
+    "input_tokens": 389,
+    "output_tokens": 62,
+    "cost": 1.6338e-05
+  },
+  "error_type": null,
+  "latency_seconds": 0.6769151000189595,
+  "not_selector_validation": true
+}

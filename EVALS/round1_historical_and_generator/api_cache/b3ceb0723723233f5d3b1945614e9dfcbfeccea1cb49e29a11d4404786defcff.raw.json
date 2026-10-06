@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102702-Ud2XAzCMpezOwM5P9MxU",
+  "object": "chat.completion",
+  "created": 1791102702,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"id\": \"H02\", \"topic_id\": \"T02\", \"topic\": \"一个假设的上下文长度记忆实验\", \"facts\": [{\"id\": \"F1\", \"text\": \"在一次假设的运行中，上下文长度2048使用7 GB，8192使用11 GB。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"模型、运行时和硬件保持不变。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"没有收集输出质量或吞吐量结果。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设的上下文长度记忆：2048与8192个标记的VRAM使用情况\", \"body\": \"本文概述了一个假设的实验，探索本地LLM在不同上下文长度下的VRAM消耗。该场景纯属理论，没有进行实际测量。在此假设的上下文中，估计运行一个上下文长度为2048个标记的模型将使用7 GB的VRAM。在相同的条件下，将其扩展到8192个标记的上下文长度，假设需要11 GB的VRAM。假设模型、运行时环境和硬件规格在此假设的比较中保持不变。至关重要的是，在此假设的设置中，没有收集或模拟关于输出质量或推理速度（标记/秒）的数据。目的是仅根据上下文窗口大小来隔离内存占用差异。欢迎就此类内存扩展的含义进行讨论。\"}, \"B\": {\"title\": \"LLM上下文长度的假设内存使用情况：2048 vs 8192（固定硬件）\", \"body\": \"本文讨论了一个假设的实验，探索本地语言模型中不同上下文长度的内存占用情况。在此理论场景中，我们考虑一个固定的模型、运行时和硬件设置。主要关注点是与上下文扩展相关的RAM消耗。\\n\\n对于2048个标记的假设上下文长度，估计内存使用量为7 GB。当扩展到8192个标记的上下文长度时，假设的内存使用量增加到11 GB。需要重申的是，这些是计划实验的假设数据，而不是测量结果。在此假设的设置中，没有收集输出质量或吞吐量基准测试。其唯一目的是在受控的理论条件下观察由更长上下文直接引入的内存开销。进一步研究性能影响需要实际测试。\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 684,
+    "completion_tokens": 516,
+    "total_tokens": 1200,
+    "cost": 0.0002748,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002748,
+      "upstream_inference_prompt_cost": 6.84e-05,
+      "upstream_inference_completions_cost": 0.0002064
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

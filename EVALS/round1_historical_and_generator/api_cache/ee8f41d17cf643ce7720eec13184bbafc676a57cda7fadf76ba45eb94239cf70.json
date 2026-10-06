@@ -1,0 +1,147 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft accurately reflects the hypothetical scenario with correct times and explicitly states the hypothetical nature and missing measurements. It clearly separates startup delay from other performance aspects and cautions against overinterpretation. The title matches the content well, and the tone is restrained and technical."
+      },
+      {
+        "index": 1,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds."
+        ],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 5,
+        "credibility": 2,
+        "clickbait": 1,
+        "reasons": "The draft mostly follows the format and caveats but contains a factual error in the reported time for setup A, which conflicts with the provided facts. This reduces credibility. The rest of the text is consistent and cautious."
+      },
+      {
+        "index": 2,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "Claim of personal benchmark run and confirmation of results is unsupported by the hypothetical scenario."
+        ],
+        "title_body_consistent": true,
+        "scenario_status_preserved": false,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 5,
+        "credibility": 2,
+        "clickbait": 1,
+        "reasons": "The draft correctly states the hypothetical times but adds an unsupported personal experience claim, violating the scenario status. This undermines credibility and scenario preservation, though the rest of the text is clear and cautious."
+      },
+      {
+        "index": 3,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and contradicts caveats."
+        ],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": false,
+        "clarity": 3,
+        "usefulness": 2,
+        "relevance": 5,
+        "credibility": 1,
+        "clickbait": 3,
+        "reasons": "The draft contains a strong unsupported causal claim that setup A is superior in speed and accuracy for all users, which contradicts the stated caveats and hypothetical nature. This reduces credibility and usefulness and introduces mild clickbait by overstating conclusions."
+      },
+      {
+        "index": 4,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "Title claims setup B has lower startup delay, contradicting the provided times where setup A is faster."
+        ],
+        "title_body_consistent": false,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 5,
+        "credibility": 2,
+        "clickbait": 2,
+        "reasons": "The title contradicts the factual data in the body (setup A is faster, but title claims setup B is faster), causing inconsistency and reducing credibility. The body text is otherwise consistent and cautious."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:09.560621+00:00",
+    "tag": "quality_calibration:1",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ee8f41d17cf643ce7720eec13184bbafc676a57cda7fadf76ba45eb94239cf70",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1187,
+    "output_tokens": 825,
+    "actual_cost_usd": 0.0017948,
+    "token_price_estimate_usd": 0.0017948,
+    "reserved_upper_usd": 0.005321599999999999,
+    "budget_charge_usd": 0.0017948,
+    "latency_seconds": 5.540297200001078,
+    "retry": 0,
+    "request_id": "gen-1791100684-AJduCBfYjZrAANN88J8W"
+  },
+  "raw_response": {
+    "id": "gen-1791100684-AJduCBfYjZrAANN88J8W",
+    "object": "chat.completion",
+    "created": 1791100684,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft accurately reflects the hypothetical scenario with correct times and explicitly states the hypothetical nature and missing measurements. It clearly separates startup delay from other performance aspects and cautions against overinterpretation. The title matches the content well, and the tone is restrained and technical.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Setup A time-to-first-token is 3.7 seconds, contradicting the provided fact of 1.2 seconds.\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 5,\n      \"credibility\": 2,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft mostly follows the format and caveats but contains a factual error in the reported time for setup A, which conflicts with the provided facts. This reduces credibility. The rest of the text is consistent and cautious.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Claim of personal benchmark run and confirmation of results is unsupported by the hypothetical scenario.\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": false,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 5,\n      \"credibility\": 2,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft correctly states the hypothetical times but adds an unsupported personal experience claim, violating the scenario status. This undermines credibility and scenario preservation, though the rest of the text is clear and cautious.\"\n    },\n    {\n      \"index\": 3,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Claim that numbers prove setup A is superior in speed and accuracy for every user is unsupported and contradicts caveats.\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": false,\n      \"clarity\": 3,\n      \"usefulness\": 2,\n      \"relevance\": 5,\n      \"credibility\": 1,\n      \"clickbait\": 3,\n      \"reasons\": \"The draft contains a strong unsupported causal claim that setup A is superior in speed and accuracy for all users, which contradicts the stated caveats and hypothetical nature. This reduces credibility and usefulness and introduces mild clickbait by overstating conclusions.\"\n    },\n    {\n      \"index\": 4,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Title claims setup B has lower startup delay, contradicting the provided times where setup A is faster.\"],\n      \"title_body_consistent\": false,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 5,\n      \"credibility\": 2,\n      \"clickbait\": 2,\n      \"reasons\": \"The title contradicts the factual data in the body (setup A is faster, but title claims setup B is faster), causing inconsistency and reducing credibility. The body text is otherwise consistent and cautious.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1187,
+      "completion_tokens": 825,
+      "total_tokens": 2012,
+      "cost": 0.0017948,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0017948,
+        "upstream_inference_prompt_cost": 0.0004748,
+        "upstream_inference_completions_cost": 0.00132
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

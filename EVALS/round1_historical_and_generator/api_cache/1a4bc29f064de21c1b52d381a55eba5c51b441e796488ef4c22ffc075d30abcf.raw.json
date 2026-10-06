@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100779-4QV9stw6JzV7GPRfM9RG",
+  "object": "chat.completion",
+  "created": 1791100779,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical troubleshooting post with niche hardware/software details; moderate interest but limited broad appeal.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"Reflective question on expensive setups; likely average engagement given niche and somewhat negative tone.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Discussion on prompt management with shared tool; practical and relevant, slightly above average interest.\"},{\"index\":3,\"probability\":0.5,\"reason\":\"Announcement of a large open multilingual model merge; likely higher interest due to novelty and scale.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Question about future support of a specific model; niche and speculative, moderate interest.\"},{\"index\":5,\"probability\":0.55,\"reason\":\"Detailed tutorial on LoRA fine-tuning with code and colab; practical guide with high utility and engagement.\"},{\"index\":6,\"probability\":0.4,\"reason\":\"User seeking advice on building AI glasses; personal and technical, likely moderate engagement.\"},{\"index\":7,\"probability\":0.45,\"reason\":\"Discussion/opinion on GPT-1 fine-tuning with example outputs; technical and somewhat novel, moderate interest.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6346,
+    "completion_tokens": 263,
+    "total_tokens": 6609,
+    "cost": 0.0029592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0029592,
+      "upstream_inference_prompt_cost": 0.0025384,
+      "upstream_inference_completions_cost": 0.0004208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "at": "2026-10-04T08:14:53.543782+00:00",
+  "topic": {
+    "id": "T09",
+    "split": "final_test",
+    "topic": "A hypothetical comparison: reproducibility before model recommendations",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario compares two local models.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The model versions, prompt, generation settings and hardware need to be recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No experimental outcome has been provided.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:14:49.904842+00:00",
+    "tag": "final_test:T09:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "fe935bcce3db5f37427e8cb58882feb5ee326caa7defaf6a2faa25e18e79bfeb",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 908,
+    "output_tokens": 669,
+    "actual_cost_usd": 0.0003584,
+    "token_price_estimate_usd": 0.0003584,
+    "reserved_upper_usd": 0.0012166,
+    "budget_charge_usd": 0.0003584,
+    "latency_seconds": 2.9718632999865804,
+    "retry": 0,
+    "request_id": "gen-1791101687-KuSWJHdtrZemoRjs0O22"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:14:53.532632+00:00",
+    "tag": "final_test:T09:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3910af1ac38a6cdbf478e94fff35a3084c9ec83fdcccc637e726d97887d299ab",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1082,
+    "output_tokens": 429,
+    "actual_cost_usd": 0.0011192,
+    "token_price_estimate_usd": 0.0011191999999999999,
+    "reserved_upper_usd": 0.0050788,
+    "budget_charge_usd": 0.0011192,
+    "latency_seconds": 3.5811433999915607,
+    "retry": 0,
+    "request_id": "gen-1791101690-IbTKgYfsrb7zgHe7mh0N"
+  },
+  "retrieved_ids": [
+    "1kmaztr",
+    "1k63kpq"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "3aabe02df49e61777314be4d805866e2898093511d6b432db4891fc92faa17c9",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical: Assessing Local Model Reproducibility - What Needs Recording?",
+        "body": "I'm exploring a hypothetical scenario for comparing local language models, specifically focusing on reproducibility. The core question is: what technical details are essential to record to ensure a generated output from a specific local model can be reliably reproduced later? [F1]\n\nMy current thinking is that simply noting the model name isn't enough. We'd need to meticulously log the exact model version, the precise prompt used, all generation settings (like temperature, top-p, repetition penalties), and the underlying hardware configuration (CPU, GPU, RAM, VRAM). This level of detail seems crucial if we ever want to compare outcomes between different setups or even within the same setup over time.\n\nThis is purely a hypothetical discussion at this stage, as no actual experimental results are available. [F3] I'm interested in hearing from others on what other parameters or system-level details might be critical for achieving true reproducibility in a local LLM context. What else should be on this checklist?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft a Reddit post discussing the hypothetical need for detailed recording of parameters to ensure reproducibility when comparing local LLMs. Explicitly state the hypothetical nature and lack of experimental results. List potential parameters to record based on F2. Keep the word count within the brief. Ensure the title is restrained and the body focuses on the question of reproducibility. Invite focused discussion."
+      },
+      "performance_score": 0.22826995934217337,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly notes the absence of experimental results, preserving necessary caveats. It accurately references the need to record model version, prompt, generation settings, and hardware, consistent with the provided facts. The title matches the body content well, focusing on reproducibility and recording requirements. The language is clear and technical, suitable for the target audience. The post invites discussion on additional parameters, adding usefulness and relevance. There are no unsupported claims or exaggerations, and the clickbait score is low due to restrained, factual titling.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 156,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical Discussion: Reproducibility Factors for Local LLM Comparisons",
+        "body": "This is a hypothetical thought experiment regarding the reproducibility of outputs from local language models. If one were to conduct a comparative analysis between two different local models, what specific technical elements would need to be documented to ensure the results are reproducible? [F1]\n\nMy initial hypothesis suggests a comprehensive log is necessary. This would include the exact model identifier (e.g., commit hash or specific build), the verbatim prompt text, the precise generation parameters (temperature, top-k, top-p, etc.), and potentially even the operating system and driver versions. The goal is to capture a complete snapshot of the environment and settings.\n\nIt's important to reiterate that this is a purely theoretical exercise; no actual comparison has been performed, and no results exist. [F3] The intention is to build a robust checklist of requirements for future hypothetical reproducibility studies. What other factors, beyond the obvious model and prompt, do you believe are essential for ensuring identical outputs can be generated on demand in a local LLM environment?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Create a second Reddit post focusing on the hypothetical technical requirements for reproducible local LLM comparisons. Emphasize the theoretical nature and absence of data. Detail key recording parameters based on F2. Frame it as a discussion prompt for essential documentation. Ensure it adheres to the length and style guidelines. Invite discussion on overlooked factors."
+      },
+      "performance_score": 0.22921671328788756,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and explicitly states no actual results exist, preserving necessary caveats. It correctly identifies key parameters to record, including model identifier, prompt, generation parameters, and environment details, consistent with the facts. The title accurately reflects the content, focusing on reproducibility factors. The language is clear and technical, appropriate for the audience. The post encourages community input on additional factors, enhancing usefulness and relevance. There are no unsupported claims or misleading elements, and the clickbait score is minimal.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 165,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Hypothetical Discussion: Reproducibility Factors for Local LLM Comparisons",
+      "body": "This is a hypothetical thought experiment regarding the reproducibility of outputs from local language models. If one were to conduct a comparative analysis between two different local models, what specific technical elements would need to be documented to ensure the results are reproducible? [F1]\n\nMy initial hypothesis suggests a comprehensive log is necessary. This would include the exact model identifier (e.g., commit hash or specific build), the verbatim prompt text, the precise generation parameters (temperature, top-k, top-p, etc.), and potentially even the operating system and driver versions. The goal is to capture a complete snapshot of the environment and settings.\n\nIt's important to reiterate that this is a purely theoretical exercise; no actual comparison has been performed, and no results exist. [F3] The intention is to build a robust checklist of requirements for future hypothetical reproducibility studies. What other factors, beyond the obvious model and prompt, do you believe are essential for ensuring identical outputs can be generated on demand in a local LLM environment?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Create a second Reddit post focusing on the hypothetical technical requirements for reproducible local LLM comparisons. Emphasize the theoretical nature and absence of data. Detail key recording parameters based on F2. Frame it as a discussion prompt for essential documentation. Ensure it adheres to the length and style guidelines. Invite discussion on overlooked factors."
+    },
+    "performance_score": 0.22921671328788756,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also maintains the hypothetical framing and explicitly states no actual results exist, preserving necessary caveats. It correctly identifies key parameters to record, including model identifier, prompt, generation parameters, and environment details, consistent with the facts. The title accurately reflects the content, focusing on reproducibility factors. The language is clear and technical, appropriate for the audience. The post encourages community input on additional factors, enhancing usefulness and relevance. There are no unsupported claims or misleading elements, and the clickbait score is minimal.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 165,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

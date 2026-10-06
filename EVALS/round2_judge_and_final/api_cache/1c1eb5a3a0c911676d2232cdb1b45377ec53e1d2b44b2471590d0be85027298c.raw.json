@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112718-zm4U0jjLfRBmg1Bu94cA",
+  "object": "chat.completion",
+  "created": 1791112718,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Qwen3 30B A3B model stalls with 'thinking' enabled in Open WebUI—any workarounds?\",\"body\":\"I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send requests normally. However, enabling the 'thinking' feature caused the model to freeze mid-generation, with the progress indicator stuck indefinitely. Without 'thinking' enabled, the model worked fine.\\n\\nThis raises the question of whether the 'thinking' feature's implementation might be incompatible or unstable with this model version, or if resource constraints during incremental generation could be a factor. Has anyone else experienced this kind of hang when using 'thinking' with large models like Qwen3 30B A3B in Open WebUI? Are there known tweaks or config changes that help avoid these stalls?\",\"fact_refs\":[\"F2\",\"F3\"]},{\"title\":\"Why does Qwen3 30B A3B freeze mid-sentence with 'thinking' on in Open WebUI?\",\"body\":\"A user report from May 2025 describes that while the Qwen3 30B A3B model connects and responds fine in Open WebUI, enabling the 'thinking' progress feature causes generation to halt mid-sentence indefinitely. The model otherwise runs normally without this feature.\\n\\nThis suggests a possible interaction issue between the model's generation process and the 'thinking' mechanism in Open WebUI. Since the exact Open WebUI version isn't specified, it's unclear if this is a compatibility problem or a resource bottleneck during streaming output.\\n\\nHas anyone found reliable ways to diagnose or prevent this kind of generation freeze when using 'thinking' with large models? Would disabling partial output buffering or adjusting timeouts help?\",\"fact_refs\":[\"F2\",\"F3\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1262,
+    "completion_tokens": 386,
+    "total_tokens": 1648,
+    "cost": 0.0011224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011224,
+      "upstream_inference_prompt_cost": 0.0005048,
+      "upstream_inference_completions_cost": 0.0006176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

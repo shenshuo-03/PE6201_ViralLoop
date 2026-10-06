@@ -1,0 +1,309 @@
+{
+  "at": "2026-10-04T08:08:37.375258+00:00",
+  "topic": {
+    "id": "T03",
+    "split": "final_test",
+    "topic": "Hypothetical local inference speed: what the numbers do not show",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Two hypothetical runtimes achieve 18 and 24 tokens per second.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The hypothetical test uses one prompt on the same machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Time to first token and answer quality were not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The sample does not establish a universal winner.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T08:08:34.461845+00:00",
+    "tag": "final_test:T03:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "a3b9e72cccd02b4a66cfd58aa61d99006b00c1de92aabdf81a7210ceb557922b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 462,
+    "output_tokens": 617,
+    "actual_cost_usd": 0.000293,
+    "token_price_estimate_usd": 0.00029299999999999997,
+    "reserved_upper_usd": 0.0010368,
+    "budget_charge_usd": 0.000293,
+    "latency_seconds": 2.911825900009717,
+    "retry": 0,
+    "request_id": "gen-1791101311-jJ1KaMLUxWtI3CO9OY6E"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:08:37.342891+00:00",
+    "tag": "final_test:T03:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "cec8a2d39940900a4550e59f4f5d7c8cc6e09eea07cfe94eea6ee0780a34b92d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1026,
+    "output_tokens": 388,
+    "actual_cost_usd": 0.0010312,
+    "token_price_estimate_usd": 0.0010312,
+    "reserved_upper_usd": 0.0049023999999999995,
+    "budget_charge_usd": 0.0010312,
+    "latency_seconds": 2.804894900007639,
+    "retry": 0,
+    "request_id": "gen-1791101314-xjOPqp6W1aqrtE5SS4GS"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "b96f08eae5a1414ab05abfa9ca75a10c781685fd9f3bde4339f0a8899f6377fe",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Local LLM Inference: Beyond Raw Tokens/Sec",
+        "body": "I'm exploring hypothetical local LLM inference speeds and wanted to discuss what raw token generation figures might miss. In a controlled, hypothetical test on the same hardware, two runtimes produced 18 and 24 tokens per second respectively (F1, F2). While a clear difference, this benchmark is incomplete. Crucially, neither the time to first token (TTFT) nor the actual quality of the generated answers were assessed (F3). A faster TTFT can significantly impact perceived responsiveness, even with a slightly lower tokens/sec rate. Similarly, a model that generates tokens slower but provides more coherent or accurate output might be preferable. This limited hypothetical scenario doesn't establish a universal winner (F4), as other factors are paramount. What other metrics do you consider essential when evaluating local LLM performance beyond just raw throughput?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "To initiate a discussion on the multifaceted nature of local LLM performance evaluation, going beyond simple token-per-second metrics. The post will highlight the limitations of the hypothetical benchmark and prompt the community to share their essential evaluation criteria."
+      },
+      "performance_score": 0.23952240949463705,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts accurately. It explicitly notes the absence of measurements for time to first token and answer quality, preserving necessary caveats. The title matches the body content well, focusing on the limitations of raw tokens/sec metrics. The language is clear and technical, suitable for the target audience, and it invites community discussion, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 129,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical Local Inference: What Do 18 vs. 24 Tokens/Sec Really Mean?",
+        "body": "Considering a hypothetical scenario for local LLM inference, I'm pondering the practical implications of varying token generation speeds. A simulated test on identical hardware yielded hypothetical speeds of 18 tokens/sec and 24 tokens/sec (F1, F2). While 24 tokens/sec is numerically higher, this snapshot lacks critical context. The hypothetical experiment did not capture the time it took to generate the first token, nor did it evaluate the semantic quality or relevance of the output (F3). A system with a slightly lower token rate but a much faster initial response might feel more interactive. Furthermore, this specific hypothetical test doesn't allow us to declare one as definitively superior for all use cases (F4). It's a reminder that benchmarks need careful interpretation. What aspects of local model performance, beyond raw throughput, are most important for your workflow?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "To foster a nuanced discussion about local LLM performance metrics. The post will present hypothetical speed figures and immediately qualify them with the unmeasured aspects (TTFT, quality), emphasizing that the hypothetical results are not definitive. It aims to gather community input on what constitutes 'good' performance in practice."
+      },
+      "performance_score": 0.24423908947080297,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all necessary caveats about unmeasured metrics. The title is consistent with the body, emphasizing the question of practical meaning behind token speed differences. The writing is clear and accessible while maintaining a technical tone. It encourages community input, making it useful and relevant. The post avoids sensationalism or misleading claims, resulting in a low clickbait score.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 134,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Hypothetical Local Inference: What Do 18 vs. 24 Tokens/Sec Really Mean?",
+      "body": "Considering a hypothetical scenario for local LLM inference, I'm pondering the practical implications of varying token generation speeds. A simulated test on identical hardware yielded hypothetical speeds of 18 tokens/sec and 24 tokens/sec (F1, F2). While 24 tokens/sec is numerically higher, this snapshot lacks critical context. The hypothetical experiment did not capture the time it took to generate the first token, nor did it evaluate the semantic quality or relevance of the output (F3). A system with a slightly lower token rate but a much faster initial response might feel more interactive. Furthermore, this specific hypothetical test doesn't allow us to declare one as definitively superior for all use cases (F4). It's a reminder that benchmarks need careful interpretation. What aspects of local model performance, beyond raw throughput, are most important for your workflow?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "To foster a nuanced discussion about local LLM performance metrics. The post will present hypothetical speed figures and immediately qualify them with the unmeasured aspects (TTFT, quality), emphasizing that the hypothetical results are not definitive. It aims to gather community input on what constitutes 'good' performance in practice."
+    },
+    "performance_score": 0.24423908947080297,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "This draft also accurately reflects the hypothetical scenario and includes all necessary caveats about unmeasured metrics. The title is consistent with the body, emphasizing the question of practical meaning behind token speed differences. The writing is clear and accessible while maintaining a technical tone. It encourages community input, making it useful and relevant. The post avoids sensationalism or misleading claims, resulting in a low clickbait score.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 134,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109721-af2ti94aKr2Q4zysX9yg",
+  "object": "chat.completion",
+  "created": 1791109721,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A is a concise summary of the brief's core facts, directly addressing the topic without adding external questions or interpretations. Draft B introduces questions about practicality and feasibility that, while relevant, are not directly supported by the brief's facts as a primary purpose of the post, making it less focused on simply presenting the concept for feedback as requested in the brief's 'desired_response'.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1747,
+    "completion_tokens": 152,
+    "total_tokens": 1899,
+    "cost": 0.0009041,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009041,
+      "upstream_inference_prompt_cost": 0.0005241,
+      "upstream_inference_completions_cost": 0.00038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

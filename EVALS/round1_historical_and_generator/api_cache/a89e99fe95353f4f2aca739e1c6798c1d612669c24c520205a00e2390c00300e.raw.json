@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101029-8jUCqWdLs3pjVioVxEal",
+  "object": "chat.completion",
+  "created": 1791101029,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"technical benchmarking post with some engagement potential but moderate similarity to a high-score example\"},{\"index\":1,\"probability\":0.35,\"reason\":\"detailed hardware benchmark with relevant data and a similar high-score example with moderate similarity\"},{\"index\":2,\"probability\":0.2,\"reason\":\"technical question about Vulkan dockers with low similarity to high-score examples and niche topic\"},{\"index\":3,\"probability\":0.15,\"reason\":\"showcase post with discussion/opinion style and low similarity to high-score examples\"},{\"index\":4,\"probability\":0.3,\"reason\":\"tool building for benchmarking prompts, relevant to community interest, moderate similarity to high-score example\"},{\"index\":5,\"probability\":0.25,\"reason\":\"technical discussion on RPC-server benchmarks, moderate similarity but complex content may limit broad appeal\"},{\"index\":6,\"probability\":0.2,\"reason\":\"request for detailed guide, tutorial style, low similarity to high-score examples and niche interest\"},{\"index\":7,\"probability\":0.1,\"reason\":\"simple question about API support, low similarity to high-score examples and less engaging content\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5748,
+    "completion_tokens": 247,
+    "total_tokens": 5995,
+    "cost": 0.0026944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0026944,
+      "upstream_inference_prompt_cost": 0.0022992,
+      "upstream_inference_completions_cost": 0.0003952
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "drafts": [
+    {
+      "title": "Challenges of Offline HTML-to-Markdown Conversion on Media-Heavy Sites Using Local LLMs",
+      "body": "A recent project from mid-2025 explores converting HTML web pages to Markdown entirely offline using local LLMs like Qwen2.5-7B/8B with llama.cpp. The approach includes analyzing page structure and content type with BeautifulSoup, then generating tailored extraction strategies via the LLM. While it reportedly scores well on standard article pages, the tool struggles with media-heavy or JavaScript-dependent sites without browser rendering.\n\nGiven these limitations, how do others handle complex SPA or media-centric pages in a fully offline setup? Are there practical ways to improve extraction quality without relying on browser engines, or is some hybrid approach unavoidable? Insights on balancing offline constraints with extraction fidelity would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F6"
+      ]
+    },
+    {
+      "title": "Balancing Quality and Speed in Local LLM-Based HTML-to-Markdown Tools",
+      "body": "An archived 2025 discussion describes a local LLM-powered tool that converts HTML pages to Markdown offline, aiming to outperform traditional methods on tricky sites. The system generates JSON extraction rules and scores output quality with the LLM itself. While quality on typical articles is often rated good to excellent, the processing speed is about 10–20 seconds per page on a 4070 GPU, which may be slow for large batches.\n\nFor those working with similar setups, what strategies have you found effective for scaling batch processing without sacrificing extraction quality? Is there a preferred way to optimize or parallelize local LLM inference for this task, or do current hardware/software limits impose a hard tradeoff?",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F7"
+      ]
+    }
+  ]
+}

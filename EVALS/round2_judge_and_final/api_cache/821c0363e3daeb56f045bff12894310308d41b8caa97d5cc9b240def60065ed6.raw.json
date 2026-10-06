@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112570-cfyVWVCdZcbwy9v2qdkb",
+  "object": "chat.completion",
+  "created": 1791112570,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 asks a specific question about Qwen3-8B performance on TitanXP with 12GB VRAM in LM Studio, referencing the source's hardware and model details. It correctly avoids claiming personal experience and focuses on community insights regarding VRAM constraints and quantization. The question is relevant to the brief's goal of understanding performance issues and comparing models.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 also asks a specific question about Qwen3-8B performance on TitanXP with 12GB VRAM in LM Studio, directly referencing the source's hardware and model. It adheres to the persona by not claiming personal experience and seeks community input on potential causes like memory limitations and LM Studio's handling of quantization. The question is well-aligned with the brief's objective.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2698,
+    "completion_tokens": 446,
+    "total_tokens": 3144,
+    "cost": 0.0004482,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004482,
+      "upstream_inference_prompt_cost": 0.0002698,
+      "upstream_inference_completions_cost": 0.0001784
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

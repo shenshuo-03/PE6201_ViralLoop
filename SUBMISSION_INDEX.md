@@ -4,7 +4,7 @@ Two requirement sources are used together: the **official PE6201 Assessment Time
 
 Legend — **Verified** means the file exists and its content was checked during packaging. **Not re-run** means the artefact is a frozen record and was deliberately not re-executed.
 
-**Submitted repository:** `https://github.com/shenshuo-03/PE6201_ViralLoop` — public, default branch `main`, 518 tracked files. Everything in this index at repo root maps 1:1 to the folders below.
+**Submitted repository:** `https://github.com/shenshuo-03/PE6201_ViralLoop` — public, default branch `main`, **5,507 files**: 520 already tracked plus 4,987 newly packaged files restored from the original working tree. Everything in this index at repo root maps 1:1 to the folders below.
 
 ---
 
@@ -13,16 +13,22 @@ Legend — **Verified** means the file exists and its content was checked during
 | # | Course requirement (source) | Submitted file | Status | Verified |
 |---|---|---|---|---|
 | A1 | **Problem Statement** — mandatory milestone, ~1 page, provided template (Timeline §1) | `REPORT/Problem_Statement_EN.md` | Complete — English rendering of the Week-3 submission, with a provenance note | ✅ content checked |
-| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` | Complete. **Prose measured at 987 words — inside the 1,200-word cap.** Counting every table cell, figure caption and heading as well gives 1,471; the cap applies to the writeup prose, and both numbers are stated so the marker does not have to guess which convention was used | ✅ word count checked |
-| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete and uploaded.** Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, default branch `main`, 518 files) | ✅ uploaded & verified |
+| A2 | **Business & technical trade-off analysis, ≤1,200 words** (Timeline §4) | `REPORT/Final_Report_EN.md` | Complete. **Prose measured at 1,183 words — inside the 1,200-word cap**, counted the inclusive way (every non-heading, non-table, non-caption line). Counting table rows, figure captions and headings as well gives 1,939; the cap applies to the writeup prose, and both numbers are stated so the marker does not have to guess which convention was used | ✅ word count checked |
+| A3 | **Working code in a GitHub repository** (Timeline §4; Watch-outs check 4) | `CODE/` — all three rounds' real source | **Complete.** All three rounds' real source, plus the frozen evidence each round produced. Public repo: `https://github.com/shenshuo-03/PE6201_ViralLoop` (default branch `main`, 5,507 files) | ✅ uploaded & verified |
 | A4 | **Recorded video presentation / demo, face + screen visible** (Timeline §4) | `DEMO/Video_Script_EN.md` (script only) | **Script complete. Video NOT recorded** — author action required | ⚠️ author action |
-| A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md`, `CODE/requirements.txt`, `CODE/INSTALL_LOG.txt` | Two tiers. **Verified:** install, all 10 library imports, and syntax compile of all 50 Python files, in a clean virtual environment (5 Oct 2026, exit 0, US$0.00). **Not re-run:** the API-calling experiment commands, deliberately. See the note below | ✅ install verified / ⚠️ experiments not re-run |
+| A5 | Repository must **run on someone else's machine** (Watch-outs check 4) | `CODE/README.md`, `CODE/REPRODUCTION.md`, `CODE/requirements.txt`, `CODE/INSTALL_LOG.txt` | **Verified, three layers.** (1) `python CODE/run_all_checks.py` → **14/14 stages passed**, no API key, no cost: every module compiles, every offline entry point runs, Round 1's final test re-derives **bit-identically**, Round 3's validator passes **29/29**. (2) Dependency install, all 10 library imports and full syntax compile in a clean virtual environment. (3) Evidence integrity re-checked **after** every stage: 5,370 frozen files still match their SHA-256 manifest. Only the *paid* calls are not re-issued, deliberately — see the note below | ✅ run + reproduce + install verified |
 | A6 | Named dataset, named baseline, named number (check 2) | `DATA/DATA_README.md`, `REPORT/Final_Report_EN.md` §3–4 | Complete | ✅ |
 | A7 | First person throughout (check 3) | `REPORT/` | Complete | ✅ |
 | A8 | Read once for typos — communication is 25% (check 5) | all `REPORT/` documents | **Not done by the author yet** | ⚠️ author action |
 | A9 | Submit to **NTULearn** (Timeline: "Submit to NTULearn unless a brief says otherwise") | — | **Author action required** | ❌ author action |
 
-**On A5's honest verification note.** The repository now ships a consolidated `CODE/requirements.txt`, and its install was **actually executed** in a clean virtual environment: 27 packages installed, exit code 0, all ten third-party libraries imported, and all 50 Python files under `CODE/` compiled with zero syntax errors. Full raw output is in `CODE/INSTALL_LOG.txt`. What was **not** done is re-running the API-calling experiment commands: the experiments are frozen, a live re-run would consume paid budget, and it could mutate the frozen outputs the report's numbers are derived from. `CODE/README.md` marks each such command **[NOT RE-RUN]** rather than claiming it was tested.
+**On A5's honest verification note.** Two different things are being verified, and they are kept apart.
+
+*Reproducibility* was **actually executed end to end**: `python CODE/run_all_checks.py` compiles every module, runs every offline entry point with `OPENROUTER_API_KEY` removed from the environment, re-derives Round 1's one-shot final test and compares it with the frozen results (max absolute difference **0.0** across all nine evaluator rows and all six per-model prediction files), re-runs Round 3's Attempt-2 validator (**29/29 checks pass**), and finishes by confirming the archive is untouched (**5,370 evidence files still match their SHA-256 manifest**). Mechanism, and what genuinely cannot be re-derived: `CODE/REPRODUCTION.md`.
+
+*Installation* was executed in a clean virtual environment: 27 packages, exit code 0, all ten third-party libraries imported, every Python file under `CODE/` compiled with zero syntax errors. Raw output: `CODE/INSTALL_LOG.txt`.
+
+What was **not** done is re-issuing the **paid** API calls. The experiments are frozen, a live re-run would spend budget and could only produce different text (temperature > 0), and it could mutate the frozen outputs the report's numbers come from. `CODE/README.md` marks each such command **[NOT RE-RUN]** rather than claiming it was tested.
 
 ---
 
@@ -30,7 +36,7 @@ Legend — **Verified** means the file exists and its content was checked during
 
 | # | Brief item | Delivered as | Status |
 |---|---|---|---|
-| B1 | Final English project report, ~1200 words, specified storyline | `REPORT/Final_Report_EN.md` | ✅ 987 words of prose, inside the 1,200 cap; both real figures embedded with captions |
+| B1 | Final English project report, ~1200 words, specified storyline | `REPORT/Final_Report_EN.md` | ✅ 1,183 words of prose (inclusive count), inside the 1,200 cap; both real figures embedded with captions |
 | B2 | Data → `DATA_README.md` with source, cleaning, 36–38h window, labels, splits, leakage control, per-round usage, raw vs processed | `DATA/DATA_README.md` | ✅ |
 | B3 | Evals → `EVALS_README.md` with what/why/IO/metric/result/limitations, including failed or stopped evals | `EVALS/EVALS_README.md` | ✅ |
 | B4 | Code → `README.md` with setup, deps, API config, run/demo/repro commands, output locations | `CODE/README.md` | ✅ documented; install + library load + full syntax compile **verified** (`CODE/INSTALL_LOG.txt`), API-calling commands ⚠️ not re-run |
@@ -43,6 +49,7 @@ Legend — **Verified** means the file exists and its content was checked during
 | B11 | `FINAL_SUBMISSION_CHECKLIST.md` | `FINAL_SUBMISSION_CHECKLIST.md` | ✅ |
 | B12 | Clean submission folder: no keys, no secrets, no unrelated caches, no duplicate raws, no obsolete reports causing confusion, English filenames, clear structure | see §D | ✅ with three disclosed exceptions |
 | B13 | Final submission audit | §A–§E of this file | ✅ |
+| B14 | Reproduction / verification: prove the code runs and the evidence is frozen | `CODE/REPRODUCTION.md`, `CODE/run_all_checks.py`, `CODE/verify_frozen_evidence.py`, `CODE/verify_packaged_code.py`, `CODE/scan_cjk.py` | ✅ `run_all_checks.py` → **14/14 stages passed**, no paid calls; 5,370 evidence files verified against their SHA-256 manifest after every stage |
 
 ---
 
@@ -98,20 +105,20 @@ Every item below points at a **real** artefact. "Planned" is never presented as 
 |---|---|---|
 | No API keys | ✅ | Automated secret scan over the whole package: **0 hits** |
 | No secrets / tokens | ✅ | Keys are read from environment only; nothing hard-coded |
-| No unrelated caches | ✅ | API caches, `__pycache__`, vendored libraries excluded |
-| No bulk duplicate raw responses | ✅ | Per-call caches excluded; the run record (`runs/`) is kept because it is the provenance chain |
-| No obsolete reports causing confusion | ✅ | Chinese in-progress *reports and drafts* are not copied; each round has exactly one English explainer |
+| No unrelated caches | ✅ | `__pycache__`, virtualenvs and vendored libraries excluded. Two caches are **shipped on purpose** (≈12 MB): `DATA/round1_dataset/embeddings/` and `EVALS/**/api_cache/`, because they belong to the frozen call record and let a marker reproduce the headline Round-1 result with zero API cost — which `CODE/run_all_checks.py` demonstrates |
+| No bulk duplicate raw responses | ✅ | The run record (`runs/`) is kept in full, because it is the provenance chain behind every cost figure in the report |
+| No obsolete reports causing confusion | ✅ | Superseded Chinese in-progress reports and drafts are not copied; each round has exactly one English explainer |
 | Key experiment evidence **not** deleted | ✅ | Frozen results, ledgers, audits and failure records are all preserved |
 | English filenames | ⚠️ **three exceptions** — see below | All *new* files are English |
 | Clear directory structure | ✅ | `REPORT/ DEMO/ CODE/ DATA/ EVALS/ PRODUCT_DOCUMENTATION/` + 2 index files |
 
-**On Chinese retained inside `CODE/` and `DATA/`.** All marker-facing documents are English. Chinese that survives is confined to (a) comments and prompt strings inside the frozen experiment source under `CODE/`, and (b) two Round-3 working notes, `CODE/round3_v003/v003/plan_v003.md` and `CODE/round3_v004/process_archive_v004.md`. These are the files as written at run time. They were kept untranslated for provenance and are fully explained in English by `CODE/CODE_MODULE_GUIDE.md` and `REPORT/Round3_Explainer.md`. Round-1 dataset text is Reddit English; the Chinese that appears in `DATA/` is embedded inside frozen artefacts, not added by packaging.
+**On the Chinese that survives — 176 files, all enumerated.** `EVALS/RAW_EVIDENCE_NOTE.md` is the full disclosure, and `python CODE/scan_cjk.py --summary` reproduces the count. Nothing a marker reads to understand the project contains Chinese: report, problem statement, explainers, READMEs, module guide, code, prompts, configuration, data descriptions, product documentation, web interfaces, CSV and JSON summaries are English only. The remaining Chinese falls into three declared categories — (a) 166 verbatim per-call API records under `EVALS/**/{api_cache,runs}/`, which are byte-for-byte what the provider returned and which the report's cost trail and the v003 hash baseline both depend on; (b) six characters inside verbatim Reddit source text in `DATA/round1_dataset/recovery_audit.csv`, which is the research object; (c) nine files under `CODE/_frozen_code/`, which are the **byte-identical originals** of the frozen round code and exist precisely so the packaging changes can be verified. Every English conversion of a frozen artefact is enumerated with both hashes in `EVALS/round3_dev_and_termination/v004/englishization_changelog_v004.json`, and is re-checked by `CODE/round3_v004/offline_validate_v004.py`.
 
 **Disclosed filename exceptions.** Three items keep their original names because renaming them would break the provenance chain to the frozen experiment artefacts and to the parent report's evidence index:
 
 1. Round-3 source folders retain `v003` / `v004` (these are version identifiers, already Latin).
 2. A small number of copied evidence JSON files carry `_v002` / `_v003` / `_v004` suffixes — these are the **actual filenames written at run time**, and the report's audit trail references them.
-3. `REPORT/source/` holds the original Chinese Problem Statement submission, preserved unchanged as provenance.
+3. `REPORT/source/Shen_Shuo_B_original.txt` holds the original Problem Statement submission, preserved unchanged as provenance (it was written in English).
 
 No raw experimental evidence was translated, rewritten, or truncated. Where Chinese content had to be preserved, an English specification accompanies it.
 

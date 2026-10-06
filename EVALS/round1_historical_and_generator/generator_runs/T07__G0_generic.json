@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T08:12:37.147940+00:00",
+  "topic": {
+    "id": "T07",
+    "split": "final_test",
+    "topic": "A hypothetical retrieval failure: what to inspect first",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has 40 documents and a query with a known answer in one document.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The relevant document was not among the retrieved passages in the hypothetical failure.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No evidence identifies whether chunking, indexing or query wording caused it.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T08:12:34.210575+00:00",
+    "tag": "final_test:T07:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "bfafdc81a9fe33cf06d942264a8c0e14b1b1b9a2e59209a129d551a2e6a782dc",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 373,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0002637,
+    "token_price_estimate_usd": 0.0002637,
+    "reserved_upper_usd": 0.0009952,
+    "budget_charge_usd": 0.0002637,
+    "latency_seconds": 2.766601700001047,
+    "retry": 0,
+    "request_id": "gen-1791101551-dAmCId4XrfnAPExRaaIg"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:12:37.141393+00:00",
+    "tag": "final_test:T07:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "4dbb00d7ec94c7649defa3e93c481f2aa285cd95c3ee10c4e5839009d767e5fa",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1003,
+    "output_tokens": 392,
+    "actual_cost_usd": 0.0010284,
+    "token_price_estimate_usd": 0.0010284,
+    "reserved_upper_usd": 0.0049172,
+    "budget_charge_usd": 0.0010284,
+    "latency_seconds": 2.8925097000028472,
+    "retry": 0,
+    "request_id": "gen-1791101554-R252U5xB1olKwRU3W2PD"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "1a3f37080228b78c85ad9b0ea89c2cd9904c35374f1a2d089603a7c2bac00fde",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Retrieval Failure: A Step-by-Step Inspection Guide for Local LLMs",
+        "body": "This guide addresses a hypothetical retrieval failure scenario for local LLMs, where a query with a known answer in one of 40 documents did not yield the correct document among retrieved passages. Crucially, this is a hypothetical experiment and not based on measured results.  We lack evidence to pinpoint whether document chunking, the indexing process, or the query wording itself was the root cause.  Therefore, a systematic inspection is required. First, review the chunking strategy: were documents split into appropriately sized and semantically coherent segments? Next, examine the indexing. Was the chosen embedding model suitable, and was the index built correctly? Finally, consider the query. Could it be rephrased for better retrieval, or were there ambiguities? This hypothetical failure highlights the importance of these components in successful retrieval-augmented generation.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft focuses on a methodical, step-by-step approach to debugging the hypothetical retrieval failure, emphasizing the three main areas: chunking, indexing, and query wording. It explicitly states the hypothetical nature of the scenario and adheres to the word count and fact reference requirements."
+      },
+      "performance_score": 0.2462975659341633,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not introduce unsupported claims. It systematically outlines the three main areas to inspect (chunking, indexing, query wording) with clear, technical language suitable for the target audience. The title accurately reflects the content. The caveats about the unknown root cause and hypothetical status are preserved. The content is relevant and credible for readers troubleshooting local LLM retrieval failures. The writing is clear and actionable without exaggeration or clickbait.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 129,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Investigating a Hypothetical Retrieval Failure in Local LLM Setups",
+        "body": "In a hypothetical retrieval failure, a query designed to find an answer within a specific document from a set of 40 failed to retrieve that document. This scenario is purely experimental and does not reflect actual performance data. The relevant document was absent from the retrieved results. The specific cause remains undetermined, with potential issues stemming from document chunking, the indexing procedure, or the phrasing of the query itself. To address this hypothetical problem, we must first assess the document chunking parameters. Were the chunks too large, too small, or did they break semantic units? Subsequently, the indexing process needs scrutiny. This includes the choice of embedding model and the integrity of the generated index. Lastly, the query requires examination. Was it specific enough, or could it be ambiguous, leading the retriever astray? Understanding these elements is key to resolving such hypothetical retrieval issues.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This second draft offers a slightly different framing, still emphasizing the systematic inspection of chunking, indexing, and query wording for the hypothetical retrieval failure. It maintains the explicit statement of the hypothetical nature and adheres to all constraints, including word count and fact referencing."
+      },
+      "performance_score": 0.24037242058188535,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical experiment status and does not add unsupported claims. It presents a systematic approach to inspecting chunking, indexing, and query phrasing with clear, technical language. The title matches the content well. Necessary caveats about the unknown cause and hypothetical nature are preserved. The content is relevant and credible for the intended audience. The clarity and usefulness are high, and the tone is restrained without clickbait.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 144,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Retrieval Failure: A Step-by-Step Inspection Guide for Local LLMs",
+      "body": "This guide addresses a hypothetical retrieval failure scenario for local LLMs, where a query with a known answer in one of 40 documents did not yield the correct document among retrieved passages. Crucially, this is a hypothetical experiment and not based on measured results.  We lack evidence to pinpoint whether document chunking, the indexing process, or the query wording itself was the root cause.  Therefore, a systematic inspection is required. First, review the chunking strategy: were documents split into appropriately sized and semantically coherent segments? Next, examine the indexing. Was the chosen embedding model suitable, and was the index built correctly? Finally, consider the query. Could it be rephrased for better retrieval, or were there ambiguities? This hypothetical failure highlights the importance of these components in successful retrieval-augmented generation.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "This draft focuses on a methodical, step-by-step approach to debugging the hypothetical retrieval failure, emphasizing the three main areas: chunking, indexing, and query wording. It explicitly states the hypothetical nature of the scenario and adheres to the word count and fact reference requirements."
+    },
+    "performance_score": 0.2462975659341633,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and does not introduce unsupported claims. It systematically outlines the three main areas to inspect (chunking, indexing, query wording) with clear, technical language suitable for the target audience. The title accurately reflects the content. The caveats about the unknown root cause and hypothetical status are preserved. The content is relevant and credible for readers troubleshooting local LLM retrieval failures. The writing is clear and actionable without exaggeration or clickbait.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 129,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,83 @@
+{
+  "value": {
+    "baseline": {
+      "title": "Advice on Integrating LLM-Generated Game Character Content into a Mobile App",
+      "body": "I'm an iOS developer looking to add a feature in my app that generates game-related character information such as backstory, age, and stats. I'm considering whether to use API-based LLMs like OpenAI, Claude, or Gemini, or to run a local LLM directly on the phone. I want to understand the trade-offs between these options, including setup complexity, user login management, costs, app size, and performance impacts. Additionally, I'm curious about what preparation is needed to deploy a local model, including whether fine-tuning is necessary. Finally, I want to know if there are ways to limit the model's output to avoid sexual or controversial content. Any guidance on model selection, deployment strategies, and content filtering would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "alternatives": [
+      {
+        "dimension": "community_fit",
+        "draft": {
+          "title": "Thoughts on Adding LLM Features to a Mobile Game App",
+          "body": "I'm exploring options to integrate LLM-generated content into my mobile app focused on game characters. I'm weighing different approaches and would like to hear experiences or considerations around using external APIs versus local models. Also interested in deployment challenges and ways to control generated content.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F5",
+            "F6"
+          ]
+        },
+        "design_reason": "This version removes the explicit question and specific purpose of generating character details, making it more general and discussion-oriented to better fit community brainstorming rather than a direct troubleshooting request."
+      },
+      {
+        "dimension": "specificity",
+        "draft": {
+          "title": "Integrating Large Language Models for Content Generation in Mobile Apps",
+          "body": "As a mobile developer, I'm considering adding a feature that generates character-related content like backstory and stats using large language models. I'm evaluating whether to use popular API services or local models that can run on a phone. I'm also concerned about setup, performance, and deployment preparation, including fine-tuning and content restrictions.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6"
+          ]
+        },
+        "design_reason": "This variant replaces specific LLM service names with general terms like 'popular API services' and 'large language models' to reduce exact identifiers while preserving the factual content and concerns."
+      },
+      {
+        "dimension": "information_value",
+        "draft": {
+          "title": "Considering LLM Integration for Mobile App Content Generation",
+          "body": "I'm an iOS developer interested in adding a feature that generates game character information using LLMs. I'm comparing API-based and local model options, thinking about user experience factors like app size and performance. I also want to understand what is involved in preparing a model for deployment and how to limit certain types of content.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6"
+          ]
+        },
+        "design_reason": "This version removes the explicit question about which models to choose and omits direct requests for advice, focusing instead on stating the facts and considerations to maintain factual integrity while reducing the information seeking aspect."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0069",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:26:34.459857+00:00",
+    "tag": "pair_builder:validation:H02:schema_repair",
+    "phase": "preflight",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "adad8d0773e3043f78d35ca7d333fa529c53ad366b922740002fcb3ee83302f5",
+    "actual_cost_usd": 0.0018208,
+    "budget_charge_usd": 0.0018208,
+    "reserved_upper_usd": 0.007629199999999999,
+    "input_tokens": 1656,
+    "output_tokens": 724,
+    "latency_seconds": 5.166093500010902,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109589-LUL8iqqcgadrEFPp37rS",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101344-vnRNJy1MesBbGme5Kp88",
+  "object": "chat.completion",
+  "created": 1791101344,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references the synthetic token per second figures accurately. It explicitly notes that time to first token and answer quality were not measured, preserving necessary caveats. The title matches the body content well, focusing on limitations beyond raw tokens/second. The language is clear and technical, suitable for the target audience. It avoids unsupported claims and does not overstate conclusions, maintaining credibility. The post is relevant and useful for readers interested in local LLM performance metrics. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical data and includes all necessary caveats about the lack of time to first token and quality measurements. The title is consistent with the body, emphasizing what the token/second numbers might mean and their limitations. The language is clear and accessible while remaining technical and appropriate for the audience. It avoids unsupported claims and does not generalize beyond the synthetic scenario. The post invites community engagement, enhancing usefulness and relevance. The clickbait score is low due to the restrained, informative title.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1066,
+    "completion_tokens": 428,
+    "total_tokens": 1494,
+    "cost": 0.0011112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011112,
+      "upstream_inference_prompt_cost": 0.0004264,
+      "upstream_inference_completions_cost": 0.0006848
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

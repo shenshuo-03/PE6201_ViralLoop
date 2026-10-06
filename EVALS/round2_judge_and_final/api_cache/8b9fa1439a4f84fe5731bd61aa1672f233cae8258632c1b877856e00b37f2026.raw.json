@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791108687-iBeSk84JhUuO4oH26z57",
+  "object": "chat.completion",
+  "created": 1791108687,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"brief\": {\n    \"topic\": \"Improving HTML-to-Markdown Extraction with Local LLMs\",\n    \"audience\": \"local LLM enthusiasts\",\n    \"problem_or_goal\": \"Discussing methods and challenges for enhancing HTML-to-Markdown conversion using local LLMs, aiming to outperform traditional tools on complex websites.\",\n    \"context\": \"A community member is sharing their experience and seeking advice on a project that uses local LLMs (Qwen2.5-7B/8B with llama.cpp) to convert HTML web pages to Markdown, focusing on offline processing and improved quality over standard tools. The project aims to handle difficult website structures like SPAs and noisy sites.\",\n    \"motivation\": \"The original author is seeking feedback and solutions for specific challenges encountered in their HTML-to-Markdown conversion project, particularly concerning media-heavy sites, performance optimization, and evaluation methods. This discussion aims to gather insights from other local LLM users.\",\n    \"desired_response\": \"Community members are invited to share their approaches, tips, and recommendations for improving the HTML-to-Markdown extraction process, especially for challenging web content, and to discuss the potential usefulness of such a tool.\",\n    \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n    \"facts\": [\n      {\n        \"id\": \"F1\",\n        \"text\": \"The project aims to convert HTML web pages to high-quality Markdown using local LLMs (Qwen2.5-7B/8B, llama.cpp) running on consumer GPUs, fully offline.\",\n        \"evidence_quote\": \"I'm working on a smarter way to convert HTML web pages to high-quality Markdown using local LLMs (Qwen2.5-7B/8B, llama.cpp) running on consumer GPUs. My goal: outperform traditional tools like Readability or html2text on tricky websites (e.g. modern SPAs, tech blogs, and noisy sites) — and do it all *fully offline*, without sending data to cloud APIs.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F2\",\n        \"text\": \"The system analyzes website types (text-focused or media-centric) and uses BeautifulSoup to extract candidate content areas, main titles, headings, and framework fingerprints.\",\n        \"evidence_quote\": \"My script first analyzes if a site is text-focused or media-centric (e.g. video/image/social), with structural and domain heuristics. Uses BeautifulSoup to extract candidate content areas, main titles, headings, and framework fingerprints (React, Vue, WordPress, etc).\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F3\",\n        \"text\": \"A local LLM generates JSON-formatted extraction strategies (selectors, noise filters, special rules) for each page and scores content for completeness, readability, and info value after Markdown extraction.\",\n        \"evidence_quote\": \"Local LLM generates JSON-formatted extraction strategies (selectors, noise filters, special rules) for each page, not just using static rules. After Markdown extraction, the LLM scores content for completeness, readability, info value, and offers improvement advice.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F4\",\n        \"text\": \"The tool runs locally using llama-cpp-python with quantized GGUF models on hardware like a 4070/4080/4090 or a 7B model on a MacBook.\",\n        \"evidence_quote\": \"I use llama-cpp-python with quantized GGUF models, so it runs on a 4070/4080/4090 or even a 7B model on a MacBook.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F5\",\n        \"text\": \"On standard article/news/blog pages, the AI assessment scores quality as usually “good” or “excellent” (7-9/10).\",\n        \"evidence_quote\": \"On standard article/news/blog pages, quality is usually “good” or “excellent” (AI assessment scores 7-9/10).\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F6\",\n        \"text\": \"For media-heavy or JavaScript-only sites, the LLM struggles without browser rendering.\",\n        \"evidence_quote\": \"For *media-heavy* or JavaScript-only sites, even the LLM struggles without browser rendering.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F7\",\n        \"text\": \"The overall speed is decent (one page ≈ 10–20 sec on 4070 8G, q4_K_M), but batch processing hundreds of pages could be faster.\",\n        \"evidence_quote\": \"The overall speed is decent (one page ≈ 10–20 sec on 4070 8G, q4\\\\_K\\\\_M), but batch processing hundreds of pages could be faster.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      }\n    ],\n    \"allowed_claims\": [\n      \"The project uses local LLMs for HTML to Markdown conversion.\",\n      \"The tool aims to improve upon traditional extraction methods.\",\n      \"Offline processing is a key feature.\",\n      \"The author is seeking advice on specific technical challenges.\"\n    ],\n    \"forbidden_claims\": [\n      \"The tool has been proven to outperform all existing methods.\",\n      \"Specific performance metrics like pages per second are guaranteed.\",\n      \"The author has personally achieved successful batch processing optimization.\",\n      \"The LLM's suggestions are always perfect.\",\n      \"The tool is ready for widespread public use without further development.\"\n    ],\n    \"essential_limitations\": [\n      \"The effectiveness on media-heavy or JavaScript-only sites is limited without browser rendering.\",\n      \"Performance for batch processing may require further optimization.\",\n      \"Evaluation of extraction quality relies on AI assessment and manual review, with a need for better benchmarks.\"\n    ],\n    \"missing_information\": [\n      \"Specific details on the datasets used for training or evaluation.\",\n      \"Exact hardware specifications beyond GPU models (e.g., RAM, CPU).\",\n      \"The precise nature of 'framework fingerprints' and their impact.\",\n      \"Details on the 'domain-specific extraction rule generation' process.\"\n    ]\n  },\n  \"corrections\": [\n    \"The 'facts' array was updated to include more precise and contiguous evidence quotes, ensuring each fact is directly supported by the source text without combining non-adjacent information. Specifically, F1 was expanded to include the LLM models and offline aspect, F2 was expanded to include website type detection, F3 was expanded to include the scoring aspect, and F4 was expanded to include the MacBook detail. A new fact, F7, was added to capture the performance details mentioned in the source. The 'invalid_verbatim_quotes' field was removed as all quotes are now valid.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2134,
+    "completion_tokens": 1611,
+    "total_tokens": 3745,
+    "cost": 0.0046677,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0046677,
+      "upstream_inference_prompt_cost": 0.0006402,
+      "upstream_inference_completions_cost": 0.0040275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

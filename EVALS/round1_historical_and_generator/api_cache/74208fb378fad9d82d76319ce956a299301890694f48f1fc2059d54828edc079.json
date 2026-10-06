@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly notes the limitations regarding TTFT, answer quality, and the non-universality of the results. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers to understand the limitations of raw token per second metrics. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft emphasizes the hypothetical nature strongly and clearly links all limitations to the facts. The title is appropriate and not sensationalized. The explanation is well structured and clear, making it useful and relevant for the audience. No unsupported claims or removal of caveats are present."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains factual accuracy and clearly states the hypothetical status and limitations. The grouping of caveats improves readability. The title matches the content well and is not clickbait. The post is clear, relevant, and useful for the intended audience."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:09:28.197635+00:00",
+    "tag": "final_test:T03:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "74208fb378fad9d82d76319ce956a299301890694f48f1fc2059d54828edc079",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1269,
+    "output_tokens": 493,
+    "actual_cost_usd": 0.0012964,
+    "token_price_estimate_usd": 0.0012964,
+    "reserved_upper_usd": 0.0053495999999999995,
+    "budget_charge_usd": 0.0012964,
+    "latency_seconds": 3.500321800005622,
+    "retry": 0,
+    "request_id": "gen-1791101364-l09yNNeKV0L72nlWoaAm"
+  },
+  "raw_response": {
+    "id": "gen-1791101364-l09yNNeKV0L72nlWoaAm",
+    "object": "chat.completion",
+    "created": 1791101364,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly notes the limitations regarding TTFT, answer quality, and the non-universality of the results. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers to understand the limitations of raw token per second metrics. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft emphasizes the hypothetical nature strongly and clearly links all limitations to the facts. The title is appropriate and not sensationalized. The explanation is well structured and clear, making it useful and relevant for the audience. No unsupported claims or removal of caveats are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains factual accuracy and clearly states the hypothetical status and limitations. The grouping of caveats improves readability. The title matches the content well and is not clickbait. The post is clear, relevant, and useful for the intended audience.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1269,
+      "completion_tokens": 493,
+      "total_tokens": 1762,
+      "cost": 0.0012964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012964,
+        "upstream_inference_prompt_cost": 0.0005076,
+        "upstream_inference_completions_cost": 0.0007888
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "at": "2026-10-04T08:12:50.768348+00:00",
+  "topic": {
+    "id": "T07",
+    "split": "final_test",
+    "topic": "A hypothetical retrieval failure: what to inspect first",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has 40 documents and a query with a known answer in one document.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The relevant document was not among the retrieved passages in the hypothetical failure.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No evidence identifies whether chunking, indexing or query wording caused it.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:12:47.440384+00:00",
+    "tag": "final_test:T07:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "42e56161dbbcfd3e190cb0360eb93de2c8359f41fd36b015ee6fa43c654b3e2d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1125,
+    "output_tokens": 735,
+    "actual_cost_usd": 0.0004065,
+    "token_price_estimate_usd": 0.00040649999999999996,
+    "reserved_upper_usd": 0.0012705,
+    "budget_charge_usd": 0.0004065,
+    "latency_seconds": 3.512366499999189,
+    "retry": 0,
+    "request_id": "gen-1791101564-F1c5XTt7MLWEtUChVt2V"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:12:50.760047+00:00",
+    "tag": "final_test:T07:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "09e3230a7b003081ccf0e7219dc1dfd60ecfcba3df6aa0ec418dd829f034af23",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1153,
+    "output_tokens": 384,
+    "actual_cost_usd": 0.0010756,
+    "token_price_estimate_usd": 0.0010756,
+    "reserved_upper_usd": 0.005212,
+    "budget_charge_usd": 0.0010756,
+    "latency_seconds": 3.2655167000048095,
+    "retry": 0,
+    "request_id": "gen-1791101567-I7uy8x3awWgH6pjJaETg"
+  },
+  "retrieved_ids": [
+    "1lsxxo2",
+    "1ig5ycw"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "19216000d200d3f6624cf57cb85b34cbc50fc8cca9c1b9f4a8eedafe0ce9ee7e",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Retrieval Failure: Initial Debugging Steps for Local LLM Systems",
+        "body": "This post outlines a hypothetical scenario involving a retrieval-augmented generation system where a query with a known answer failed to retrieve the correct document. The setup involved 40 documents, and the query's answer was present in a single, specific document (F1). However, in this hypothetical failure, that relevant document was not found among the retrieved passages (F2).\n\nCrucially, the cause of this failure remains undetermined in this hypothetical experiment. We don't yet know if the issue stems from the document chunking strategy, the indexing process, or the specific wording of the query itself (F3).\n\nFor those encountering similar hypothetical retrieval issues in their local LLM setups, what would be your first steps to systematically diagnose the problem? This is purely a theoretical exercise, so let's focus on the logical debugging flow without assuming any specific tools or measured results. What areas would you prioritize inspecting first given these unknown failure points?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft a technical Reddit post discussing a hypothetical retrieval failure. The post should clearly state the hypothetical nature of the scenario and the facts provided. It needs to detail the setup (40 documents, known answer, failure to retrieve) and the unknowns (chunking, indexing, query wording). The body should be 100-220 words and invite focused discussion on initial debugging steps. The title must be restrained and under 160 characters. Ensure fact references are correctly cited. The plan is to first describe the hypothetical failure, then pose the question about initial inspection steps, adhering strictly to the provided facts and constraints."
+      },
+      "performance_score": 0.2400190296202498,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and accurately cites all provided facts (F1, F2, F3). It maintains a restrained, technical tone appropriate for the audience and invites focused discussion on initial debugging steps without making unsupported claims or removing caveats. The title matches the content and is concise and restrained. The post is well-structured and readable, providing actionable value by prompting logical diagnostic approaches. No clickbait elements are present.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 151,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Debugging a Hypothetical RAG Retrieval Miss: Where to Look First?",
+        "body": "Consider a hypothetical RAG system test. We have a corpus of 40 documents, and a specific query is known to have its answer contained within one of those documents (F1). During a simulated test run, this query failed to retrieve the document containing the answer; it was not found in the retrieved set (F2).\n\nThis hypothetical failure presents an immediate diagnostic challenge. The provided experimental context does not indicate the root cause. It's unclear whether the problem lies with how the documents were initially chunked, how the index was constructed, or if the query itself was poorly formulated (F3).\n\nThis is a purely hypothetical scenario, not based on actual measurements or personal experience. When faced with such an unknown retrieval failure in a local LLM setup, what are the most logical first places to investigate? What specific aspects of chunking, indexing, or query construction would you examine initially to pinpoint the source of the hypothetical retrieval miss?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Create a second technical Reddit post on the same hypothetical retrieval failure topic. This draft should also explicitly maintain the hypothetical status and adhere to all constraints (word count, title length, fact refs). The focus will remain on the initial debugging steps for a retrieval miss in a RAG system, emphasizing the unknown causes. The plan is to rephrase the scenario and the question about initial inspection points, ensuring a distinct yet compliant output from the first draft. Fact references will be included as required."
+      },
+      "performance_score": 0.23303078534078545,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical scenario and cites all facts correctly. It uses clear, technical language and explicitly states the scenario is not based on real measurements or personal experience. The title accurately reflects the content and is concise. The post invites readers to consider logical first steps in debugging without unsupported claims or removing necessary caveats. It is well-written and relevant to the target audience, with no clickbait.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 157,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Retrieval Failure: Initial Debugging Steps for Local LLM Systems",
+      "body": "This post outlines a hypothetical scenario involving a retrieval-augmented generation system where a query with a known answer failed to retrieve the correct document. The setup involved 40 documents, and the query's answer was present in a single, specific document (F1). However, in this hypothetical failure, that relevant document was not found among the retrieved passages (F2).\n\nCrucially, the cause of this failure remains undetermined in this hypothetical experiment. We don't yet know if the issue stems from the document chunking strategy, the indexing process, or the specific wording of the query itself (F3).\n\nFor those encountering similar hypothetical retrieval issues in their local LLM setups, what would be your first steps to systematically diagnose the problem? This is purely a theoretical exercise, so let's focus on the logical debugging flow without assuming any specific tools or measured results. What areas would you prioritize inspecting first given these unknown failure points?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Draft a technical Reddit post discussing a hypothetical retrieval failure. The post should clearly state the hypothetical nature of the scenario and the facts provided. It needs to detail the setup (40 documents, known answer, failure to retrieve) and the unknowns (chunking, indexing, query wording). The body should be 100-220 words and invite focused discussion on initial debugging steps. The title must be restrained and under 160 characters. Ensure fact references are correctly cited. The plan is to first describe the hypothetical failure, then pose the question about initial inspection steps, adhering strictly to the provided facts and constraints."
+    },
+    "performance_score": 0.2400190296202498,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and accurately cites all provided facts (F1, F2, F3). It maintains a restrained, technical tone appropriate for the audience and invites focused discussion on initial debugging steps without making unsupported claims or removing caveats. The title matches the content and is concise and restrained. The post is well-structured and readable, providing actionable value by prompting logical diagnostic approaches. No clickbait elements are present.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 151,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101590-NtS11X0sIBO8wW5ibNgq",
+  "object": "chat.completion",
+  "created": 1791101590,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present any unsupported claims. It aligns well with the title and preserves the scenario status and necessary caveats. The explanation is clear and technical, suitable for the target audience. It provides actionable diagnostic steps focusing on chunking, indexing, and query processing, which are relevant and useful for readers troubleshooting RAG retrieval failures. The tone is restrained and credible, with no clickbait elements.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical status explicitly and avoids unsupported claims. The title matches the content, which focuses on initial diagnostic steps for a retrieval gap. The language is clear and technical, appropriate for the audience. It highlights the same core components (chunking, embedding/indexing, query formulation) as areas to investigate, providing useful guidance. The post is credible and avoids sensationalism or clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1127,
+    "completion_tokens": 382,
+    "total_tokens": 1509,
+    "cost": 0.001062,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001062,
+      "upstream_inference_prompt_cost": 0.0004508,
+      "upstream_inference_completions_cost": 0.0006112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

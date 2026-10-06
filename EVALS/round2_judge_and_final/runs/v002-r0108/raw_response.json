@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109682-71kMdCDZKPSKJpTckAAQ",
+  "object": "chat.completion",
+  "created": 1791109682,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"preferences\": {\"community_fit\": \"Tie\", \"specificity\": \"Tie\", \"information_value\": \"Tie\", \"usefulness\": \"Tie\", \"credibility\": \"Tie\", \"overall\": \"Tie\"}, \"evidence\": \"Both drafts are identical, thus all evaluation dimensions are a tie.\"}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2501,
+    "completion_tokens": 63,
+    "total_tokens": 2564,
+    "cost": 0.0009078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009078,
+      "upstream_inference_prompt_cost": 0.0007503,
+      "upstream_inference_completions_cost": 0.0001575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

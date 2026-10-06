@@ -1,0 +1,160 @@
+{
+  "at": "2026-10-04T11:05:37.753262+00:00",
+  "loop_version": "v002",
+  "brief_id": "D01",
+  "phase": "tune",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Clarifying llama.cpp HTTP server file upload behavior and reproducibility challenges",
+        "body": "I've come across a 2025 Reddit post discussing the file upload button in llama.cpp's HTTP server. The author wonders if uploading a file simply concatenates its content with the prompt, but this isn't confirmed. They tried asking questions about the uploaded file's contents, sometimes getting correct answers but other times the model seemed to interpret the file itself rather than the query.\n\nThe inconsistency in responses and lack of clarity on how the file upload interacts with prompts makes it hard to reproduce results reliably. Has anyone figured out what the file upload actually does behind the scenes? More importantly, are there strategies or settings to get consistent answers when querying uploaded files? Understanding this could help improve usability for those wanting to analyze file contents locally.",
+        "fact_refs": [
+          "F1",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's question about the llama.cpp HTTP server's file upload functionality and the user's observed inconsistencies. It correctly avoids claiming personal experience and highlights the desire for reproducible results. The community fit is good as it directly addresses a technical question relevant to local LLM enthusiasts. Specificity is good by mentioning the file upload feature and the problem of inconsistent responses. Information value is good by posing clear questions for the community. Clarity and usefulness are high, and credibility is maintained by sticking to the source's reported observations. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 127,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Understanding and stabilizing file upload queries in llama.cpp's HTTP server",
+        "body": "A user reported in 2025 that the llama.cpp HTTP server's file upload feature behaves unpredictably when querying file contents. Sometimes the model answers questions about the file correctly, but other times it seems to interpret the file content itself rather than the prompt. The exact mechanism—whether the file content is concatenated with the prompt or handled differently—is unclear.\n\nGiven this variability, achieving reproducible outputs when uploading files and querying them is challenging. For those who have worked with this feature, what approaches or prompt structures have helped you get stable, reproducible responses? Any insights into how the server processes uploaded files relative to direct prompts would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately captures the essence of the source material, focusing on the file upload feature's behavior and the challenge of reproducibility. It adheres to the persona by not claiming personal testing and correctly frames the user's observations as reports. The community fit is strong, directly engaging users with a technical query. Specificity is good, referencing the file upload and the observed issues. Information value is high due to the clear questions posed to the community. Clarity, usefulness, and credibility are all well-maintained. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 108,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Clarifying llama.cpp HTTP server file upload behavior and reproducibility challenges",
+      "body": "I've come across a 2025 Reddit post discussing the file upload button in llama.cpp's HTTP server. The author wonders if uploading a file simply concatenates its content with the prompt, but this isn't confirmed. They tried asking questions about the uploaded file's contents, sometimes getting correct answers but other times the model seemed to interpret the file itself rather than the query.\n\nThe inconsistency in responses and lack of clarity on how the file upload interacts with prompts makes it hard to reproduce results reliably. Has anyone figured out what the file upload actually does behind the scenes? More importantly, are there strategies or settings to get consistent answers when querying uploaded files? Understanding this could help improve usability for those wanting to analyze file contents locally.",
+      "fact_refs": [
+        "F1",
+        "F4",
+        "F5"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's question about the llama.cpp HTTP server's file upload functionality and the user's observed inconsistencies. It correctly avoids claiming personal experience and highlights the desire for reproducible results. The community fit is good as it directly addresses a technical question relevant to local LLM enthusiasts. Specificity is good by mentioning the file upload feature and the problem of inconsistent responses. Information value is good by posing clear questions for the community. Clarity and usefulness are high, and credibility is maintained by sticking to the source's reported observations. Clickbait is minimal.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 127,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0202",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:05:35.578064+00:00",
+    "tag": "V1:D01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c27d7383165ad76a81bfdf3752501189c2d85c9c1a4394c097cddf41285c7d97",
+    "actual_cost_usd": 0.0011712,
+    "budget_charge_usd": 0.0011712,
+    "reserved_upper_usd": 0.0063432,
+    "input_tokens": 1544,
+    "output_tokens": 346,
+    "latency_seconds": 3.0012527000217233,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111932-hTve0h0Ld0qVCHrxGRUH",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0203",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:05:37.730656+00:00",
+    "tag": "quality:D01:V1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "47102f43e684a0ef84abc41e7f599495fcebcedb74db29b58bcecb36233d5f20",
+    "actual_cost_usd": 0.0003967,
+    "budget_charge_usd": 0.0003967,
+    "reserved_upper_usd": 0.0017182999999999999,
+    "input_tokens": 2383,
+    "output_tokens": 396,
+    "latency_seconds": 2.1224583000002895,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111935-uMIWekRSHCd1NtwnK66f",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Draft A abstracts the problem into generic language ('character-related content,' 'popular API services,' 'local models'), losing the concrete friction points that make the question actionable for the community. Draft B preserves specific trade-offs from the brief: setup/login/cost friction with APIs (F3), app size concerns with local models (F4), and the explicit desire to filter sexual/controversial content (F6). Draft B names the actual API options (OpenAI, Claude, Gemini) and restates the core tension—local vs. API—with enough detail that community members can recognize their own experience and offer targeted advice. Draft A reads as a report summary; Draft B reads as a genuine developer question the community can engage with. Both cite all six facts and avoid forbidden claims, but B's specificity and preservation of the questioner's actual constraints (login friction, app size, content filtering) make it more likely to elicit useful responses. Neither invents unsupported facts, but A's generalization reduces community fit."
+  },
+  "usage": {
+    "run_id": "v002-r0172",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:30:15.242607+00:00",
+    "tag": "judge_validation:HP05:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "1d7c37a9dcbca3b472fade6c1873bc55cf491d0071304cce9999aa9158d481bc",
+    "actual_cost_usd": 0.003697,
+    "budget_charge_usd": 0.003697,
+    "reserved_upper_usd": 0.012587999999999998,
+    "input_tokens": 2197,
+    "output_tokens": 300,
+    "latency_seconds": 4.535784899984719,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109810-SyZcPMdfieqgRjeDx2xQ",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.4,
+        "reason": "Open-source AI tool with practical demos and clear use case may attract interest."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Controversial question about OpenAI model compression could spark discussion but niche."
+      },
+      {
+        "index": 2,
+        "probability": 0.3,
+        "reason": "Sharing working quantized models is useful but somewhat technical and niche."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "Practical question about transcription with visual speaker ID; useful but common query."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Short update on model support and quantization; limited broader appeal."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Detailed fine-tuning issue may engage specialized users but limited audience."
+      },
+      {
+        "index": 6,
+        "probability": 0.45,
+        "reason": "Offering free compute resources and open source cluster software likely to attract attention."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "New user sharing research on in-context learning impact; interesting but niche."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:24.977247+00:00",
+    "tag": "tune_dev:classifier:E5a_zero_shot:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f8932af4c53e0f4dd18a8466cff07c5f3c120d834cce4871a7466abb9666d4ce",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2071,
+    "output_tokens": 231,
+    "actual_cost_usd": 0.001198,
+    "token_price_estimate_usd": 0.0011979999999999998,
+    "reserved_upper_usd": 0.0059407999999999996,
+    "budget_charge_usd": 0.001198,
+    "latency_seconds": 2.190223400000832,
+    "retry": 0,
+    "request_id": "gen-1791100702-PLyrklQMyRIN1IkVPRqY"
+  },
+  "raw_response": {
+    "id": "gen-1791100702-PLyrklQMyRIN1IkVPRqY",
+    "object": "chat.completion",
+    "created": 1791100703,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.4,\"reason\":\"Open-source AI tool with practical demos and clear use case may attract interest.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Controversial question about OpenAI model compression could spark discussion but niche.\"},{\"index\":2,\"probability\":0.3,\"reason\":\"Sharing working quantized models is useful but somewhat technical and niche.\"},{\"index\":3,\"probability\":0.3,\"reason\":\"Practical question about transcription with visual speaker ID; useful but common query.\"},{\"index\":4,\"probability\":0.25,\"reason\":\"Short update on model support and quantization; limited broader appeal.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Detailed fine-tuning issue may engage specialized users but limited audience.\"},{\"index\":6,\"probability\":0.45,\"reason\":\"Offering free compute resources and open source cluster software likely to attract attention.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"New user sharing research on in-context learning impact; interesting but niche.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2071,
+      "completion_tokens": 231,
+      "total_tokens": 2302,
+      "cost": 0.001198,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001198,
+        "upstream_inference_prompt_cost": 0.0008284,
+        "upstream_inference_completions_cost": 0.0003696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

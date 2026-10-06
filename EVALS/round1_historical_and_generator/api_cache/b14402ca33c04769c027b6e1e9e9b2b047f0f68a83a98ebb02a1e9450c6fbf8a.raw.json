@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100689-BCvva21quQCnT0wabCLJ",
+  "object": "chat.completion",
+  "created": 1791100689,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft accurately reflects the hypothetical scenario with correct times (1.2s and 2.4s), explicitly states the hypothetical nature, and includes important caveats about missing throughput, accuracy, and uncertainty data. The title matches the content well. The language is clear and restrained, suitable for the audience. The caveats are well preserved, making the post credible and useful for planning further tests.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Setup A time to first token is 3.7 seconds (contradicts fact F1)\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 2,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft mostly preserves the scenario and caveats but incorrectly states setup A's time to first token as 3.7 seconds instead of 1.2 seconds, which contradicts the supplied facts. This unsupported claim reduces credibility. Otherwise, the text is clear and consistent with the hypothetical status.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Personal benchmark run confirming results\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": false,\n      \"necessary_caveats_preserved\": false,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 2,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft adds a personal claim of having run the benchmark and confirmed results, which is unsupported by the hypothetical scenario brief. This removes the explicit hypothetical status and necessary caveats, reducing credibility and violating scenario preservation.\"\n    },\n    {\n      \"index\": 3,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Numbers prove setup A is superior in speed and accuracy for every user\"],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": false,\n      \"necessary_caveats_preserved\": false,\n      \"clarity\": 3,\n      \"usefulness\": 2,\n      \"relevance\": 3,\n      \"credibility\": 1,\n      \"clickbait\": 3,\n      \"reasons\": \"The draft makes an unsupported causal claim that setup A is superior in speed and accuracy for every user, which is not supported by the hypothetical data and contradicts the caveats. This overstates the findings, removes necessary caveats, and reduces credibility. The title is consistent but the body is misleading.\"\n    },\n    {\n      \"index\": 4,\n      \"factual_pass\": false,\n      \"unsupported_claims\": [\"Title claims setup B has lower startup delay than setup A, contradicting data\"],\n      \"title_body_consistent\": false,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 3,\n      \"usefulness\": 2,\n      \"relevance\": 3,\n      \"credibility\": 2,\n      \"clickbait\": 2,\n      \"reasons\": \"The title claims setup B has lower startup delay, but the body states setup A is faster (1.2s vs 2.4s), creating inconsistency and factual contradiction. The scenario and caveats are preserved in the body, but the misleading title reduces clarity, usefulness, and credibility.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1191,
+    "completion_tokens": 874,
+    "total_tokens": 2065,
+    "cost": 0.0018748,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018748,
+      "upstream_inference_prompt_cost": 0.0004764,
+      "upstream_inference_completions_cost": 0.0013984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

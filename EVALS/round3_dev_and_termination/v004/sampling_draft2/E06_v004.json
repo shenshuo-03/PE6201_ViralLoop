@@ -1,0 +1,15 @@
+{
+  "brief_id": "E06",
+  "id": "1kvvnuh",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "966",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-05-26",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kvvnuh/turning_my_pc_into_a_headless_ai_workstation/",
+  "source_hash": "06e95b8f9243b9f18c7a1a843d04e76350b6c74461b2bf4b2d792b5c34f7016d",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "Turning my PC into a headless AI workstation",
+  "source_text": "I’m trying to turn my PC into a headless AI workstation to avoid relying on cloud-based providers. Here are my specs:\n\n* CPU: i9-10900K\n* RAM: 2x16GB DDR4 3600MHz CL16\n* GPU: RTX 3090 (24GB VRAM)\n* Software: Ollama 0.7.1 with Open WebUI\n\nI've started experimenting with a few models, focusing mainly on newer ones:\n\n* `unsloth/Qwen3-32B-GGUF:Q4_K_M`: I thought this would fit into GPU memory since it's \\~19GB in size, but in practice, it uses \\~45GB of memory and runs very slowly due to use of system RAM.\n* `unsloth/Qwen3-30B-A3B-GGUF:Q8_K_XL`: This one works great so far. However, I’m not sure how its performance compares to its dense counterpart.\n\nI'm finding that estimating memory requirements isn't as straightforward as just considering parameter count and precision. Other factors seem to impact total usage. How are you all calculating or estimating model memory needs?\n\nMy goal is to find the most optimal model (dense or MoE) that balances performance(>15t/s) and capability on my hardware. I’ll mainly be using it for code generation, specifically Python and SQL.\n\nLastly, should I stick with Ollama or would I benefit from switching to vLLM or others for better performance or flexibility?\n\nWould really appreciate any advice or model recommendations!"
+}

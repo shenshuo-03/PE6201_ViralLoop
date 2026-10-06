@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical detail and offline RAG chatbot context suggest moderate interest and niche appeal, likely above average but uncertain."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Interest in building AI agents from scratch and benchmarking suggests engaged audience, somewhat higher chance of high score."
+      },
+      {
+        "index": 2,
+        "probability": 0.3,
+        "reason": "Detailed hardware benchmarking discussion appeals to specialized users, moderate chance of high score."
+      },
+      {
+        "index": 3,
+        "probability": 0.25,
+        "reason": "Critical UI feedback likely niche and less broadly engaging, near prior probability."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Practical hardware upgrade question with some technical depth, moderate interest expected."
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Request for benchmarks on multi-GPU PCI speeds is technical and relevant, slightly above prior."
+      },
+      {
+        "index": 6,
+        "probability": 0.25,
+        "reason": "Order delay complaint is a niche troubleshooting post, likely average engagement."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Announcement of a large language model with detailed specs may attract moderate interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:26.188159+00:00",
+    "tag": "tune_dev:classifier:E5c_retrieval:24",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c7eb114200abda4ec751b294e37e52f18818ce9de61e60e2713109a66aa46268",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6232,
+    "output_tokens": 248,
+    "actual_cost_usd": 0.0028896,
+    "token_price_estimate_usd": 0.0028896,
+    "reserved_upper_usd": 0.011447599999999999,
+    "budget_charge_usd": 0.0028896,
+    "latency_seconds": 2.111015199989197,
+    "retry": 0,
+    "request_id": "gen-1791100764-xcBPA2PvrpyD71XBTs86"
+  },
+  "raw_response": {
+    "id": "gen-1791100764-xcBPA2PvrpyD71XBTs86",
+    "object": "chat.completion",
+    "created": 1791100764,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical detail and offline RAG chatbot context suggest moderate interest and niche appeal, likely above average but uncertain.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Interest in building AI agents from scratch and benchmarking suggests engaged audience, somewhat higher chance of high score.\"},{\"index\":2,\"probability\":0.3,\"reason\":\"Detailed hardware benchmarking discussion appeals to specialized users, moderate chance of high score.\"},{\"index\":3,\"probability\":0.25,\"reason\":\"Critical UI feedback likely niche and less broadly engaging, near prior probability.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Practical hardware upgrade question with some technical depth, moderate interest expected.\"},{\"index\":5,\"probability\":0.35,\"reason\":\"Request for benchmarks on multi-GPU PCI speeds is technical and relevant, slightly above prior.\"},{\"index\":6,\"probability\":0.25,\"reason\":\"Order delay complaint is a niche troubleshooting post, likely average engagement.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Announcement of a large language model with detailed specs may attract moderate interest.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6232,
+      "completion_tokens": 248,
+      "total_tokens": 6480,
+      "cost": 0.0028896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028896,
+        "upstream_inference_prompt_cost": 0.0024928,
+        "upstream_inference_completions_cost": 0.0003968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

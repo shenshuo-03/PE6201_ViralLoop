@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly notes that no model is claimed to outperform another, preserving necessary caveats. It accurately reflects the facts that leaderboard scores do not measure low latency or offline use requirements. The explanation is clear and technical, suitable for the target audience. It is relevant and useful for readers considering local LLM deployment decisions. The title matches the body content well, and there are no unsupported claims or exaggerations."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical scenario status and does not claim any model superiority, consistent with the facts. It explains why leaderboard scores may not capture latency and offline operation needs, which aligns with the provided facts. The language is clear and technical, appropriate for the audience. The title accurately reflects the body content. The post is relevant and useful for readers evaluating local LLM deployments. There are no unsupported claims or misleading statements."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:13:40.922730+00:00",
+    "tag": "final_test:T08:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d8f63ad92709310ae810a31993c9ef5981e4286d942b3f4b9fbeb16782e2f630",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 952,
+    "output_tokens": 388,
+    "actual_cost_usd": 0.0010016,
+    "token_price_estimate_usd": 0.0010016,
+    "reserved_upper_usd": 0.0049023999999999995,
+    "budget_charge_usd": 0.0010016,
+    "latency_seconds": 2.888525499991374,
+    "retry": 0,
+    "request_id": "gen-1791101618-ThWgmwhESiRAivW9AD3C"
+  },
+  "raw_response": {
+    "id": "gen-1791101618-ThWgmwhESiRAivW9AD3C",
+    "object": "chat.completion",
+    "created": 1791101618,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly notes that no model is claimed to outperform another, preserving necessary caveats. It accurately reflects the facts that leaderboard scores do not measure low latency or offline use requirements. The explanation is clear and technical, suitable for the target audience. It is relevant and useful for readers considering local LLM deployment decisions. The title matches the body content well, and there are no unsupported claims or exaggerations.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical scenario status and does not claim any model superiority, consistent with the facts. It explains why leaderboard scores may not capture latency and offline operation needs, which aligns with the provided facts. The language is clear and technical, appropriate for the audience. The title accurately reflects the body content. The post is relevant and useful for readers evaluating local LLM deployments. There are no unsupported claims or misleading statements.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 952,
+      "completion_tokens": 388,
+      "total_tokens": 1340,
+      "cost": 0.0010016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010016,
+        "upstream_inference_prompt_cost": 0.0003808,
+        "upstream_inference_completions_cost": 0.0006208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

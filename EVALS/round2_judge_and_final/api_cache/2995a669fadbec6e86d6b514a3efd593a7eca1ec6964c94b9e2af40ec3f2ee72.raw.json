@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112433-WskD51UTzDKXmkNciASv",
+  "object": "chat.completion",
+  "created": 1791112433,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"LLM Inference Performance on Multi-GPU AMD Setups\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"Seeking recommendations for the most efficient VRAM backend and optimal configurations for maximizing output speed/throughput when running large language models on a multi-GPU AMD setup.\",\n  \"context\": \"A user with a specific multi-GPU AMD hardware configuration (2x RX 7900 XTX, 1x RX 7800 XT, 64GB total VRAM) is looking for advice on optimizing LLM inference performance, particularly for Gemma3:27b and Qwen3 32B models.\",\n  \"motivation\": \"The source author previously observed inconclusive performance differences between backends and is seeking more targeted data with newer models from users with similar AMD multi-GPU setups to identify the most performant backend and configurations for speed and throughput.\",\n  \"desired_response\": \"Guidance on the most performant backends (e.g., VLLM, llama.cpp) for AMD GPUs, recommended quantization methods and bit depths, strategies for utilizing multiple GPUs, preferred inference frameworks, and specific configuration settings for optimal performance.\",\n  \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"The user has a multi-GPU AMD setup consisting of two Radeon RX 7900 XTX cards and one Radeon RX 7800 XT, totaling 64GB of VRAM.\",\n      \"evidence_quote\": \"GPUs: (64GB) 2x AMD Radeon RX 7900 XTX + 1x Radeon RX 7800 XT\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"The user is primarily interested in running Gemma3:27b and Qwen3 32B models.\",\n      \"evidence_quote\": \"I'm primarily interested in running Gemma3:27b, Qwen3 32B models\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"The user has previously experimented with VLLM and llama.cpp, noting performance differences of only 1-2 tokens per second, which they found inconclusive.\",\n      \"evidence_quote\": \"I've previously experimented with these backends with older models, and observed performance differences of only around 1-2 tokens per second, which was inconclusive.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"The user reported better speed with Vulkan and llama.cpp for Qwen3::30B MOE (110 token/s) and Qwen3:235B\\\\_Q2\\\\_K (around 14 token/s).\",\n      \"evidence_quote\": \"I also got better speed with Vulkan and llama.cpp for Qwen3::30B MOE for 110 token/s and around 14 token/s for Qwen3:235B\\\\_Q2\\\\_K form unsloth.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"The user is seeking information on quantization methods like GPTQ, AWQ, and GGUF, and their respective bit depths.\",\n      \"evidence_quote\": \"What quantization methods (e.g., GPTQ, AWQ, GGUF) are you using? and at what bit depth (e.g., 4-bit, 8-bit)?\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"Users with similar AMD multi-GPU setups may have relevant experience.\",\n    \"Backend performance can vary for different models and configurations.\",\n    \"Quantization methods and bit depths can impact LLM inference speed.\"\n  ],\n  \"forbidden_claims\": [\n    \"The user's hardware is definitively the best for LLM inference.\",\n    \"VLLM is universally faster than llama.cpp on AMD GPUs.\",\n    \"A specific quantization method is proven to be optimal for all AMD setups.\",\n    \"The user has achieved a specific token/second rate with a particular setup.\"\n  ],\n  \"essential_limitations\": [\n    \"The source author's reported performance figures are based on their specific, dated experiments and may not generalize.\",\n    \"The specific ROCm or driver versions used by the source author are not detailed.\",\n    \"The exact inference frameworks used in conjunction with the backends are not fully specified.\",\n    \"The source author's hardware configuration is specific and may not represent typical user setups.\"\n  ],\n  \"missing_information\": [\n    \"Specific ROCm and driver versions used by the source author.\",\n    \"Detailed configurations for VLLM and llama.cpp.\",\n    \"Specific inference frameworks used in conjunction with the backends.\",\n    \"The exact models and quantization details for the 1-2 tokens/sec observation.\",\n    \"The specific hardware configuration of other users who might respond.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1220,
+    "completion_tokens": 1204,
+    "total_tokens": 2424,
+    "cost": 0.0006036,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006036,
+      "upstream_inference_prompt_cost": 0.000122,
+      "upstream_inference_completions_cost": 0.0004816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

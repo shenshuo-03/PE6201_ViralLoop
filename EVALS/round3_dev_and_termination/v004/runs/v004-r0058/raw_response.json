@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121692-7cilK9f6CRLIjfghOTYO",
+  "object": "chat.completion",
+  "created": 1791121692,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"All claims in the draft are directly supported by the source text and align with the brief's instructions. The speaker identity is maintained as a resource curator, and essential context regarding the tutorial's nature and limitations is included. The title accurately reflects the body content.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"The draft accurately reflects the source material and adheres to the brief's requirements. The speaker role is appropriate, and the context of the tutorial as a resource is well-maintained. The title is consistent with the body, and no unsupported or unverified claims are made.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2751,
+    "completion_tokens": 276,
+    "total_tokens": 3027,
+    "cost": 0.0015153,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015153,
+      "upstream_inference_prompt_cost": 0.0008253,
+      "upstream_inference_completions_cost": 0.00069
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

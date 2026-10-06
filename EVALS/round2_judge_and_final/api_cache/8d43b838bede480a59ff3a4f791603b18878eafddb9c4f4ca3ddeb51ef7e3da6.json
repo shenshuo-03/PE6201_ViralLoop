@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "B",
+      "overall": "A"
+    },
+    "evidence": "Draft A directly mirrors the brief's facts (F1–F6), explicitly naming MLC.ai, WebGPU/WASM requirements, <100MB model size constraint, and both use cases (Chart.js + summaries). It asks concrete questions aligned with desired_response: tool experiences, model recommendations, and prompting strategies. Draft B strips specificity by omitting MLC.ai, WebGPU/WASM, size targets, and the secondary summary use case (F3). It introduces unsupported framing ('hardware and browser environments of users are unknown') that echoes essential_limitations but wasn't part of the source author's stated problem—this violates the instruction to avoid inventing missing settings and adds report-like hedging. Draft B's vagueness ('effective frameworks,' 'practical tradeoffs') reduces actionability; a community member cannot respond with targeted tool comparisons or model suggestions without the specifics A provides. Draft A preserves the source author's actual constraints and exploration state (started looking into MLC.ai, hasn't found feedback), maintaining credibility. Draft B's credibility is slightly lower because it reframes the problem as user-environment uncertainty rather than the author's genuine exploration gap, creating a false premise not in the brief."
+  },
+  "usage": {
+    "run_id": "v002-r0444",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:20:16.878777+00:00",
+    "tag": "judge_final:F04:V1_vs_V0:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "8d43b838bede480a59ff3a4f791603b18878eafddb9c4f4ca3ddeb51ef7e3da6",
+    "actual_cost_usd": 0.003869,
+    "budget_charge_usd": 0.003869,
+    "reserved_upper_usd": 0.012426,
+    "input_tokens": 2114,
+    "output_tokens": 351,
+    "latency_seconds": 5.210906499996781,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112811-SSobYlKUdJh81AUCrnR3",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

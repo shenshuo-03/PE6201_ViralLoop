@@ -1,0 +1,20 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Benchmarking 10 LLMs on MacBook Air M1 (8GB RAM): Qwen3 4B Took Over 8 Minutes to Generate a Single Math Question",
+        "body": "A recent benchmark tested 10 different large language models (LLMs) locally on a MacBook Air M1 with 8GB of RAM, using quantized versions configured with specific Ollama environment variables. The methodology involved each model generating one question on five topics (Math, Writing, Coding, Psychology, History), answering all 50 generated questions, and then evaluating every answer, including their own. A striking finding was that the Qwen3 4B model took 486 seconds—more than 8 minutes—to generate a single math question, highlighting significant performance variability on limited-memory hardware. Additionally, several models such as Mistral, Qwen3, and LLaMA 3.1 8B showed a tendency to overrate their own answers, indicating self-evaluation bias. The author noted that model size did not directly correlate with performance, emphasizing that bigger models aren't always better for constrained devices. While Gemma3:latest was identified as a consistent and numerically stable scorer, these assessments are subjective and based on this specific hardware and quantized setup. This benchmark underscores the challenges and trade-offs when running LLMs locally on low-spec machines like the M1 MacBook Air with limited RAM.",
+        "fact_refs": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f6",
+          "f7",
+          "f5"
+        ]
+      }
+    ]
+  },
+  "run_id": "v004-r0017"
+}

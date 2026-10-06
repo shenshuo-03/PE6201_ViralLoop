@@ -1,0 +1,72 @@
+{
+  "baseline": {
+    "title": "Why Do Vision LLMs Struggle with Spatial Awareness and Object Placement in Images?",
+    "body": "An archived Reddit post from 2025 discusses how vision-capable LLMs like ChatGPT, Grok, and Gemma 3 27B seem to capture only a general concept of images rather than detailed spatial information. The author wonders if these models rely on a vision transformer that extracts limited information, or if the image is fully loaded into memory for detailed analysis, or if a separate perceptron provides just a structured list of detected objects. Notably, when asked to recreate images with accurate object placement and scale (e.g., using JavaScript Canvas), these LLMs fail to position objects correctly, indicating a lack of real spatial awareness. The author would consider it a success if the models could at least output bounding boxes with correct positions and sizes, but this appears beyond their current capability. Given these observations, what technical approaches might vision LLMs be using internally that lead to this limitation? Are there known methods or architectures that could improve spatial reasoning and object localization in vision LLMs?",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ]
+  },
+  "alternatives": [
+    {
+      "dimension": "community_fit",
+      "draft": {
+        "title": "How Do Vision LLMs Actually Process Images?",
+        "body": "A user shared observations about vision LLMs like ChatGPT, Grok, and Gemma 3 27B struggling to understand spatial relationships in images. They question whether these models extract only a general concept via a vision transformer, keep the entire image in memory, or rely on a separate object detector that outputs a list of features. Attempts to have these LLMs recreate images with correct object placement and scale failed, showing they mainly capture the overall concept rather than details. What are your thoughts on how vision LLMs handle image data internally? Any insights on improving their spatial awareness?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "design_reason": "This version removes the specific goal of understanding technical approaches and instead invites broader community input without a focused technical question, making it more open-ended and less targeted."
+    },
+    {
+      "dimension": "specificity",
+      "draft": {
+        "title": "Why Do Some Vision LLMs Fail to Place Objects Correctly in Image Reconstructions?",
+        "body": "An archived post reports that vision LLMs tested (including a 27B parameter model and others) seem to only grasp the concept of an image rather than detailed spatial layout. The author questions whether these models use a vision transformer with limited info, keep the entire image in memory, or depend on a separate perceptron that outputs object lists. When asked to redraw images with correct object positions and scales, the models failed, suggesting limited spatial awareness. They hoped for bounding boxes with accurate placement but saw none. What might cause these spatial limitations in such models, and are there architectural strategies to address them?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "design_reason": "This alternative replaces specific model names with generic descriptors and keeps the core facts, preserving the technical question but reducing explicit references to particular models or brands."
+    },
+    {
+      "dimension": "information_value",
+      "draft": {
+        "title": "Observations on Vision LLMs and Their Spatial Awareness Limitations",
+        "body": "A 2025 Reddit post discusses how vision LLMs like ChatGPT, Grok, and Gemma 3 27B appear to extract only general concepts from images rather than detailed spatial information. The author questions whether these models use vision transformers, keep images fully in memory, or rely on separate perceptrons that output structured object lists. Attempts to recreate images with correct object placement and scale failed, indicating limited spatial awareness. The author notes that bounding box representation with proper scale and position seems beyond these models' current capability. These observations highlight challenges in vision LLMs' understanding of spatial relationships.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "design_reason": "This version restates the facts without posing a question or inviting discussion, reducing its usefulness for community problem-solving or technical insight."
+    }
+  ]
+}

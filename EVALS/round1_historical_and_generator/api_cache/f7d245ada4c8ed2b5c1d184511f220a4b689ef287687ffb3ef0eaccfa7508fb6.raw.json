@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101609-OQwkl0VQESi7V3xeGZWt",
+  "object": "chat.completion",
+  "created": 1791101609,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present any unsupported claims. It explicitly references the three main areas for debugging (chunking, embedding/indexing, query) and invites discussion without asserting causal conclusions. The title matches the body content well. The language is clear and technical, suitable for the target audience. The caveats about the synthetic nature and lack of error data are preserved. The draft is relevant and credible for readers interested in local LLaMA retrieval debugging. The clickbait score is low due to restrained, factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 5,\n      \"usefulness\": 5,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft is very clear and well-structured, using a numbered list to improve readability. It explicitly states the hypothetical nature and does not overstate any claims. The title accurately reflects the content and highlights the three key areas for investigation. The caveats about the synthetic setup and lack of error data are maintained. The draft is highly relevant and credible for the intended audience. The restrained tone avoids clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft preserves the hypothetical scenario status and clearly outlines the three main debugging areas. It uses bullet points for clarity and maintains a technical, restrained tone. The title is concise and consistent with the body. No unsupported claims are made. The caveats about synthetic data and lack of error logs are present. The draft is relevant and credible for the audience. Clickbait is minimal.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1469,
+    "completion_tokens": 581,
+    "total_tokens": 2050,
+    "cost": 0.0015172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015172,
+      "upstream_inference_prompt_cost": 0.0005876,
+      "upstream_inference_completions_cost": 0.0009296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

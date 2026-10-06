@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109602-xwkFA0Ym6BToQyk3FTEV",
+  "object": "chat.completion",
+  "created": 1791109602,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"baseline\":{\"title\":\"Seeking Small OCR Models That Handle Math and Code Better Than Gemma or Qwen-2.5-vl-7b\",\"body\":\"A Reddit user reported that Google's Gemma models (2b, 7b, 27b, and Gemma 3 4B Instruct QAT) frequently make mistakes when reading mathematical and code content, sometimes missing entire list items. Similarly, Qwen-2.5-vl-7b struggles to distinguish expressions like 10^9 from 109. Given these limitations, the user asked if there are any smaller OCR models that can accurately read full sections containing math and code without such errors. Since the source is from May 2025 and details about hardware, document quality, or specific model versions are missing, it’s unclear what alternatives might exist or how well they perform. For those experienced with local OCR models, are there any compact models known to handle complex mathematical notation and programming code more reliably? What tradeoffs in size versus accuracy have you encountered for this specialized OCR task?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\"]},\"alternatives\":[{\"dimension\":\"community_fit\",\"draft\":{\"title\":\"Small OCR Models for Math and Code: Any Recommendations?\",\"body\":\"A user shared that some popular OCR models like Google's Gemma and Qwen-2.5-vl-7b have trouble accurately reading math expressions and code snippets, sometimes missing parts or confusing similar numbers. They’re looking for a small model that can handle these tasks better. Given these challenges, what small OCR models have you found effective for math and code? Any insights on balancing model size with reading accuracy for technical content would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\"]},\"design_reason\":\"This version removes the specific focus on the exact models tested and the detailed failures, instead inviting broader community input without a precise question about tradeoffs or alternatives.\"},{\"dimension\":\"specificity\",\"draft\":{\"title\":\"Issues with Certain OCR Models Reading Technical Content: Seeking Alternatives\",\"body\":\"Some OCR models, including a set of Google’s models and another 7B parameter vision-language model, have been reported to struggle with reading mathematical notation and code accurately. Problems include missing list items and confusing numerical expressions like exponentiation versus concatenation. There is interest in finding smaller OCR models that can reliably process entire sections of math and code without these errors. Given these observations, what smaller OCR models or approaches have you found effective for such specialized OCR tasks?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\"]},\"design_reason\":\"This draft replaces specific model names with generic descriptors while preserving the core problem and question, maintaining relevance but reducing specificity.\"},{\"dimension\":\"information_value\",\"draft\":{\"title\":\"Reported Limitations of Some OCR Models on Math and Code Content\",\"body\":\"A source from May 2025 noted that certain OCR models, including multiple Google Gemma variants and a 7B vision-language model, often make mistakes when reading mathematical expressions and code. Examples include missing list items and confusing similar numeric expressions. The source expressed a desire for a small OCR model that can read full sections of math and code accurately. However, details on hardware, document quality, or exact model versions tested were not provided, and the findings are based on user reports rather than formal benchmarks.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\"]},\"design_reason\":\"This alternative restates the facts without posing a question or inviting discussion, focusing on summarizing the reported limitations and context.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1704,
+    "completion_tokens": 741,
+    "total_tokens": 2445,
+    "cost": 0.0018672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018672,
+      "upstream_inference_prompt_cost": 0.0006816,
+      "upstream_inference_completions_cost": 0.0011856
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

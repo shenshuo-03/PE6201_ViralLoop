@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121692-LXBSVVAg2eBYQXXlf0HP",
+  "object": "chat.completion",
+  "created": 1791121692,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"The draft accurately attributes all claims to the archived Reddit commenter and uses appropriate qualifying language. It correctly identifies the speaker as a 'commenter' and maintains the 'community analyst or resource curator' role. The title and body align, and essential context regarding the source's nature (Reddit comment, not verified proof) is present. No unsupported or unverified claims are made as established facts.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"The draft accurately attributes all claims to the archived Reddit comment and uses appropriate qualifying language such as 'suggests' and 'reportedly tested'. It correctly identifies the speaker as a 'commenter' and maintains the 'community analyst or resource curator' role. The title and body align, and essential context regarding the source's nature (Reddit comment, not verified proof) is present. No unsupported or unverified claims are made as established facts.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2899,
+    "completion_tokens": 335,
+    "total_tokens": 3234,
+    "cost": 0.0017072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017072,
+      "upstream_inference_prompt_cost": 0.0008697,
+      "upstream_inference_completions_cost": 0.0008375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

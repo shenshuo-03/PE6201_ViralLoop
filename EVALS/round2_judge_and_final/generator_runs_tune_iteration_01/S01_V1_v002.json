@@ -1,0 +1,158 @@
+{
+  "at": "2026-10-04T11:06:59.284384+00:00",
+  "loop_version": "v002",
+  "brief_id": "S01",
+  "phase": "tune",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Challenges in Offline HTML-to-Markdown Extraction for Media-Heavy Sites Using Local LLMs",
+        "body": "A project reported in mid-2025 explores using local LLMs like Qwen2.5-7B/8B with llama.cpp to convert HTML pages into Markdown offline, aiming to surpass traditional tools on complex sites. The approach analyzes site structure and uses AI-generated extraction strategies to improve quality on text-focused content.\n\nHowever, the author notes significant struggles with media-heavy or JavaScript-driven websites without browser rendering support. Given the limitations of offline parsing, how do others handle dynamic content or embedded media in local HTML-to-Markdown workflows? Are there effective heuristics or preprocessing steps that can bridge this gap without resorting to cloud APIs or full browser engines?\n\nUnderstanding practical ways to improve extraction quality on these challenging sites while maintaining offline operation would be valuable for anyone working on local content processing tools.",
+        "fact_refs": [
+          "F1",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source's discussion on challenges with media-heavy/JS-only sites and poses a relevant community question about handling dynamic content offline. It correctly cites the limitations mentioned in the source. Specificity is good, referencing local LLMs and the problem domain. Community fit is strong as it directly asks for advice on a shared challenge.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 125,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Balancing Quality and Speed in Local LLM-Based HTML-to-Markdown Conversion",
+        "body": "An offline HTML-to-Markdown converter using local LLMs reportedly achieves good to excellent extraction quality on standard article pages, with AI scoring between 7 and 9 out of 10. It uses structural heuristics and generates JSON extraction strategies per page.\n\nYet, the process takes around 10–20 seconds per page on consumer GPUs, and batch processing hundreds of pages could be faster. For those running similar local LLM pipelines, what optimization techniques or workflow adjustments have you found effective to improve throughput without sacrificing extraction quality? Are there tradeoffs in model size or quantization that significantly impact speed or accuracy in this context?\n\nInsights on balancing performance and content fidelity would help guide development for practical offline HTML extraction tools.",
+        "fact_refs": [
+          "F1",
+          "F5",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 accurately summarizes the source's points on performance and quality, posing a specific question about optimizing batch processing and balancing speed/accuracy. It correctly cites the source's reported speed and quality metrics. Specificity is good, mentioning local LLMs, HTML-to-Markdown, and performance concerns. Community fit is strong as it seeks practical optimization advice relevant to the audience.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 118,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Challenges in Offline HTML-to-Markdown Extraction for Media-Heavy Sites Using Local LLMs",
+      "body": "A project reported in mid-2025 explores using local LLMs like Qwen2.5-7B/8B with llama.cpp to convert HTML pages into Markdown offline, aiming to surpass traditional tools on complex sites. The approach analyzes site structure and uses AI-generated extraction strategies to improve quality on text-focused content.\n\nHowever, the author notes significant struggles with media-heavy or JavaScript-driven websites without browser rendering support. Given the limitations of offline parsing, how do others handle dynamic content or embedded media in local HTML-to-Markdown workflows? Are there effective heuristics or preprocessing steps that can bridge this gap without resorting to cloud APIs or full browser engines?\n\nUnderstanding practical ways to improve extraction quality on these challenging sites while maintaining offline operation would be valuable for anyone working on local content processing tools.",
+      "fact_refs": [
+        "F1",
+        "F6"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's discussion on challenges with media-heavy/JS-only sites and poses a relevant community question about handling dynamic content offline. It correctly cites the limitations mentioned in the source. Specificity is good, referencing local LLMs and the problem domain. Community fit is strong as it directly asks for advice on a shared challenge.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 125,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0229",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:57.302939+00:00",
+    "tag": "V1:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "25e4c30f325129ea5cc7828732954abedc53bff2c4ab39ca9616b7fc4ba485a5",
+    "actual_cost_usd": 0.001438,
+    "budget_charge_usd": 0.001438,
+    "reserved_upper_usd": 0.007139599999999999,
+    "input_tokens": 2059,
+    "output_tokens": 384,
+    "latency_seconds": 3.244042200007243,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112013-zKW7X4Jz47qaBVvdrmV2",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0230",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:59.260778+00:00",
+    "tag": "quality:S01:V1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "4d63e09c242ac820da4ff881f4e767723b04d7abbcc54f1921d83a7f3f3c7288",
+    "actual_cost_usd": 0.0005262,
+    "budget_charge_usd": 0.0005262,
+    "reserved_upper_usd": 0.0021549,
+    "input_tokens": 3510,
+    "output_tokens": 438,
+    "latency_seconds": 1.9253797999990638,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112017-LCXvPQ8W0yLXY8a0mHlb",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

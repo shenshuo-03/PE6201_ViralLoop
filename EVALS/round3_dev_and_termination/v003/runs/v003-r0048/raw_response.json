@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118694-Mjxs8Dtww9fOsLjEB6lu",
+  "object": "chat.completion",
+  "created": 1791118694,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"Draft 1 accurately reflects the source text and adheres to the brief. It correctly identifies the two UI approaches being considered (tabbed chats vs. single chat with persistent history) and references the Sigil application as an example for both features. The draft poses a question to the community about user intuition and efficiency, aligning with the brief's goal of seeking advice on UI design for a hypothetical local LLM application. It avoids making unsupported claims or inventing facts, and the speaker role is maintained as a community member seeking advice.\"}, {\"index\": 1, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"Draft 2 accurately reflects the source text and adheres to the brief. It correctly identifies the two UI approaches being considered (tabbed chats vs. single chat with persistent history) and references the Sigil application for both features. It also incorporates the detail about Sigil's design philosophy (fast, minimal, easy-to-run) which is relevant to UI complexity. The draft poses a question to the community about user intuition and efficiency, aligning with the brief's goal of seeking advice on UI design for a hypothetical local LLM application. It avoids making unsupported claims or inventing facts, and the speaker role is maintained as a community member seeking advice.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2477,
+    "completion_tokens": 354,
+    "total_tokens": 2831,
+    "cost": 0.0003893,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003893,
+      "upstream_inference_prompt_cost": 0.0002477,
+      "upstream_inference_completions_cost": 0.0001416
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101554-R252U5xB1olKwRU3W2PD",
+  "object": "chat.completion",
+  "created": 1791101554,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not introduce unsupported claims. It systematically outlines the three main areas to inspect (chunking, indexing, query wording) with clear, technical language suitable for the target audience. The title accurately reflects the content. The caveats about the unknown root cause and hypothetical status are preserved. The content is relevant and credible for readers troubleshooting local LLM retrieval failures. The writing is clear and actionable without exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical experiment status and does not add unsupported claims. It presents a systematic approach to inspecting chunking, indexing, and query phrasing with clear, technical language. The title matches the content well. Necessary caveats about the unknown cause and hypothetical nature are preserved. The content is relevant and credible for the intended audience. The clarity and usefulness are high, and the tone is restrained without clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1003,
+    "completion_tokens": 392,
+    "total_tokens": 1395,
+    "cost": 0.0010284,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010284,
+      "upstream_inference_prompt_cost": 0.0004012,
+      "upstream_inference_completions_cost": 0.0006272
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109886-oSVwYX69vgtdwKWEkn9W",
+  "object": "chat.completion",
+  "created": 1791109886,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly addresses the audience (local LLM enthusiasts) with a concrete, actionable question: 'has anyone here integrated MiniSearch with local inference engines through the remote API option?' It asks for specific user experiences on setup complexity, latency, and reliability—genuine friction points the community can respond to. It also flags the missing 'graphical results' detail as a knowledge gap worth discussing. Draft B recaps features generically and ends with 'What do you think about these features?'—a report-like invitation that doesn't anchor to a specific problem or decision the community faces. Both preserve facts accurately and cite sources equally, but A transforms the brief into a focused, answerable discussion prompt while B remains a feature summary. For a local LLM community, A's specificity about remote API configuration and request for integration experiences is substantially more valuable than B's open-ended feature recap.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2528,
+    "completion_tokens": 271,
+    "total_tokens": 2799,
+    "cost": 0.003883,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003883,
+      "upstream_inference_prompt_cost": 0.002528,
+      "upstream_inference_completions_cost": 0.001355
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

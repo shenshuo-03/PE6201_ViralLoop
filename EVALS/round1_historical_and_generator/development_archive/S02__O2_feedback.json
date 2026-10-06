@@ -1,0 +1,503 @@
+{
+  "at": "2026-10-04T07:57:53.967306+00:00",
+  "topic": {
+    "id": "S02",
+    "split": "selection_dev",
+    "topic": "What would count as evidence that local deployment improves privacy?",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario keeps prompts on a local machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Logs and optional network connections must also be checked.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No security audit or compliance certification was performed.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "O2_feedback",
+  "generation_usage": {
+    "at": "2026-10-04T07:57:49.735675+00:00",
+    "tag": "selection_dev:S02:O2_feedback",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "f2814c7ea9685ec1a62a08931c2d1e19a54eb9d94d010c1b69e1f645b1a435b3",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2500,
+    "output_tokens": 888,
+    "actual_cost_usd": 0.0006052,
+    "token_price_estimate_usd": 0.0006052,
+    "reserved_upper_usd": 0.0025128999999999998,
+    "budget_charge_usd": 0.0006052,
+    "latency_seconds": 3.9588967000017874,
+    "retry": 0,
+    "request_id": "gen-1791100665-tO9vuoDtLaVbbn64wRsI"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:57:53.954482+00:00",
+    "tag": "selection_dev:S02:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a8354408aae4b3202eed06ea550123fb70f84d6d5b7f3163bf576e8a2db646a3",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1283,
+    "output_tokens": 547,
+    "actual_cost_usd": 0.0013884,
+    "token_price_estimate_usd": 0.0013884,
+    "reserved_upper_usd": 0.0055712,
+    "budget_charge_usd": 0.0013884,
+    "latency_seconds": 4.1808557999902405,
+    "retry": 0,
+    "request_id": "gen-1791100669-eaAMiHkrmbl7AMxEgu0l"
+  },
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical: What constitutes evidence for local LLM privacy improvements?",
+        "body": "Exploring a hypothetical scenario for local LLM privacy. The core idea is that keeping prompts strictly on the local machine provides a theoretical privacy advantage over cloud services. To establish this, we need concrete evidence. \n\nWhat would count as sufficient proof? Primarily, demonstrating that prompts are processed entirely offline. This would involve verifying no data leaves the local system during inference. Additionally, a critical step would be to inspect system logs and any network traffic to ensure no sensitive information is inadvertently transmitted. \n\nIt's crucial to note this is a hypothetical experiment. No security audits or compliance certifications have been performed in this scenario. Therefore, while prompt isolation is a strong theoretical benefit, definitive proof of enhanced privacy is not yet established. What other factors should be considered as evidence in such a hypothetical evaluation?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Revise the title to be more direct about the hypothetical nature. Refine the opening to clearly state the hypothetical scenario and the core question about evidence for local LLM privacy. Ensure all facts are integrated naturally within the discussion of evidence gathering. Explicitly mention the lack of audits as a limitation."
+      },
+      "performance_score": 0.23260150101536956,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and integrates all provided facts (F1-F3) accurately. It explains the core idea of prompt isolation and the need to check logs and network traffic. The caveat about no audits is explicitly mentioned, preserving scenario integrity. The title matches the content well. The language is clear and technical, suitable for the audience. It invites further discussion on evidence, making it useful and relevant. No unsupported claims or exaggerations are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 135,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Assessing Local LLM Privacy: Hypothetical Evidence from Prompt Isolation and Log Audits",
+        "body": "This post examines a hypothetical framework for assessing privacy improvements with local LLM deployments. The fundamental premise is that processing prompts exclusively on a local machine offers inherent privacy benefits by preventing data from being sent to external servers. \n\nTo substantiate this claim, what specific evidence would be required? A key piece of evidence would be confirming that prompts are contained entirely within the local environment. This necessitates a thorough review of system logs and any network activity associated with the LLM's operation. Verifying that no prompt data or related metadata is logged or transmitted, even through optional network connections, is essential. \n\nIt is important to reiterate that this remains a hypothetical investigation. No formal security audits or compliance certifications have been conducted. Thus, while local prompt containment is a significant theoretical advantage, this scenario does not offer conclusive proof. What other technical checks would be necessary to build a stronger case for local LLM privacy?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "One-step revision: Make the title more specific by including 'Prompt Isolation and Log Audits'. Enhance the opening to further emphasize the hypothetical nature and the specific technical aspects being discussed. Ensure the body clearly links the evidence points (prompt isolation, logs, network checks) to the core question of privacy improvement."
+      },
+      "performance_score": 0.22456743377267105,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and references all facts. It emphasizes prompt isolation and log/network checks as evidence. The lack of audits is clearly stated as a limitation. The title is more specific, which helps clarity and relevance. The writing is clear and technical, appropriate for the audience. No unsupported claims or misleading statements are made.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 156,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Hypothetical Evidence for Local LLM Privacy: Beyond Prompt Isolation",
+        "body": "Considering a hypothetical scenario, this discussion focuses on what constitutes evidence that running LLMs locally genuinely enhances user privacy. The primary theoretical advantage is keeping prompts confined to the user's machine, preventing them from being sent to third-party servers.\n\nHowever, simply keeping prompts local (F1) might not be sufficient evidence on its own. A more robust evaluation would require examining system logs and any optional network connections the LLM framework might utilize (F2). The absence of any logged prompt data or exfiltration of information via these channels would be critical evidence. \n\nCrucially, this is a hypothetical exercise, and no formal security audit or compliance certification (F3) has been performed. Therefore, while these steps address prompt containment, they don't guarantee absolute privacy. What constitutes a comprehensive set of evidence points for such a hypothetical privacy assessment in local LLM deployments?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "One-step revision: Reorganize the post to explicitly frame prompt isolation as a starting point and then introduce logs/network checks as necessary further evidence. Clearly state the hypothetical status upfront and integrate fact references more directly. Refine the closing to invite discussion on a broader set of evidence."
+      },
+      "performance_score": 0.23200761589423025,
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft correctly frames the scenario as hypothetical and integrates all facts. It presents prompt isolation as a starting point and then adds logs/network checks as further evidence. The absence of audits is clearly noted as a limitation. The title aligns with the body content. The language is clear and technical, suitable for the target audience. No unsupported claims or exaggerations are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": false,
+        "hard_rule_failures": [
+          "new_numbers:1,2,3"
+        ],
+        "body_words": 139,
+        "novel_numbers": [
+          "1",
+          "2",
+          "3"
+        ],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": false,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Evidence for Local LLM Privacy Improvements: Prompt Isolation",
+      "body": "This post explores a hypothetical scenario for evaluating whether local LLM deployments enhance user privacy. The core idea is to isolate prompts, ensuring they never leave the local machine. This direct control over data flow is a primary theoretical benefit of local LLMs compared to cloud-based services.\n\nTo establish evidence for this, a controlled experiment would be needed. Key metrics would include verifying that prompts are processed entirely offline. Furthermore, a crucial step involves auditing system logs to confirm no prompt data is inadvertently transmitted. Any optional network connections used by the LLM framework itself would also require careful examination to ensure they do not exfiltrate prompt content or associated metadata.\n\nIt's vital to acknowledge the limitations of this hypothetical setup. No formal security audit or compliance certification has been performed. Therefore, while prompt isolation is a strong theoretical advantage, this scenario does not provide definitive proof of enhanced privacy. Discussion is invited on what constitutes sufficient evidence beyond prompt containment.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "The plan is to create two distinct Reddit posts discussing the hypothetical scenario of local LLM privacy improvements. Both posts will adhere to the specified constraints: technical English, restrained titles, specific word counts, and explicit mention of the hypothetical nature of the experiment. The first post will focus on the concept of prompt isolation as a key piece of evidence. The second post will broaden the scope to include log analysis and network traffic as additional verification points. Both will clearly state the lack of formal audits and invite focused discussion."
+    },
+    "performance_score": 0.23362789273781612,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1, F2, F3). It explains the concept of prompt isolation and the need to audit logs and network connections without overstating conclusions. The title matches the content well. The language is technical yet accessible, making it useful and relevant for the target audience. Necessary caveats about lack of formal audits are explicitly included. The post is restrained and not clickbait.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 161,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Evidence for Local LLM Privacy Improvements: Prompt Isolation",
+      "body": "This post explores a hypothetical scenario for evaluating whether local LLM deployments enhance user privacy. The core idea is to isolate prompts, ensuring they never leave the local machine. This direct control over data flow is a primary theoretical benefit of local LLMs compared to cloud-based services.\n\nTo establish evidence for this, a controlled experiment would be needed. Key metrics would include verifying that prompts are processed entirely offline. Furthermore, a crucial step involves auditing system logs to confirm no prompt data is inadvertently transmitted. Any optional network connections used by the LLM framework itself would also require careful examination to ensure they do not exfiltrate prompt content or associated metadata.\n\nIt's vital to acknowledge the limitations of this hypothetical setup. No formal security audit or compliance certification has been performed. Therefore, while prompt isolation is a strong theoretical advantage, this scenario does not provide definitive proof of enhanced privacy. Discussion is invited on what constitutes sufficient evidence beyond prompt containment.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "The plan is to create two distinct Reddit posts discussing the hypothetical scenario of local LLM privacy improvements. Both posts will adhere to the specified constraints: technical English, restrained titles, specific word counts, and explicit mention of the hypothetical nature of the experiment. The first post will focus on the concept of prompt isolation as a key piece of evidence. The second post will broaden the scope to include log analysis and network traffic as additional verification points. Both will clearly state the lack of formal audits and invite focused discussion."
+    },
+    "performance_score": 0.23362789273781612,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1, F2, F3). It explains the concept of prompt isolation and the need to audit logs and network connections without overstating conclusions. The title matches the content well. The language is technical yet accessible, making it useful and relevant for the target audience. Necessary caveats about lack of formal audits are explicitly included. The post is restrained and not clickbait.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 161,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "parent_variant": "G4_both",
+  "abstention": false,
+  "original_retained": true,
+  "prompt_sha256": "55b028d1d1115bdf3a8c5f108e18c91654403999c3fa8b9a5531ff4cb7b2001b",
+  "feedback_sent": {
+    "performance_score": 0.23362789273781612,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ],
+    "boundary": "relative classifier score, not causal or real virality probability"
+  }
+}

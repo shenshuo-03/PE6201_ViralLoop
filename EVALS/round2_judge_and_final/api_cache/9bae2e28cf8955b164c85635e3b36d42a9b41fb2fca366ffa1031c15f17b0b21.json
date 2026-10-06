@@ -1,0 +1,43 @@
+{
+  "value": {
+    "task_zh": "讨论一个新的、本地的、跨平台的 TTS 引擎的开发和潜力。",
+    "A": {
+      "title": "探索 KokoroSharp：一款新的本地、跨平台 C# TTS 引擎",
+      "body": "我偶然看到一篇 2025 年初的帖子，内容是关于 KokoroSharp，一个用 C# 编写的本地文本转语音引擎，它是跨平台的，并且可以通过 NuGet 获得。作者受到一个名为 Kokoro 的新的高性能音频模型的启发，开发了这个 TTS 引擎，并将其描述为对初学者友好但又灵活。源代码在 GitHub 上是开源的，示例用法包括加载模型和选择一个名为“af_heart”的声音。虽然原帖作者也在开发一个即将发布的离线 AI 语音聊天应用程序，但 KokoroSharp 的详细性能指标或硬件要求并未提供。对于那些对离线语音合成或将 TTS 与本地 LLM 集成感兴趣的人来说，您认为这款引擎有哪些实际的挑战或机遇？有人在 C# 或其他语言中探索过 KokoroSharp 或类似的本地 TTS 解决方案吗？",
+      "fact_refs": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    "B": {
+      "title": "KokoroSharp TTS 是否已准备好用于完全离线的 AI 语音聊天项目？",
+      "body": "我偶然看到一篇 2025 年初的帖子，其中作者几乎完成了（约 90%）一个完全离线的 AI 语音聊天应用程序。在名为 Kokoro 的新的高性能音频模型发布后，他们转向构建 KokoroSharp，一个本地、跨平台的 TTS 引擎。\n\n由此想到的问题是，考虑到 KokoroSharp 的开发背景和接近完成的状态，它是否足够成熟，可以用于离线 AI 语音聊天项目。源代码没有提供详细的性能指标或稳定性信息，因此不清楚它在实际离线场景中的集成或运行效果如何。\n\n有人在离线语音聊天设置中试验过 KokoroSharp 吗？您遇到了哪些实际的权衡或限制，尤其是在延迟、语音质量或平台兼容性方面？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  },
+  "usage": {
+    "run_id": "v002-r0489",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:24:29.777879+00:00",
+    "tag": "translate:human_final:F10",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "9bae2e28cf8955b164c85635e3b36d42a9b41fb2fca366ffa1031c15f17b0b21",
+    "actual_cost_usd": 0.000241,
+    "budget_charge_usd": 0.000241,
+    "reserved_upper_usd": 0.0013191,
+    "input_tokens": 558,
+    "output_tokens": 463,
+    "latency_seconds": 2.346429099998204,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791113067-u8oweptRBhE1nXFvCyJu",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

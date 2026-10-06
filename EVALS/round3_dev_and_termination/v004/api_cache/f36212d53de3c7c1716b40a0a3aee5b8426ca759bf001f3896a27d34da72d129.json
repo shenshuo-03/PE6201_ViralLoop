@@ -1,0 +1,93 @@
+{
+  "value": {
+    "brief": {
+      "topic": "GraphRAG for multi-hop question answering",
+      "audience": "Developers and AI practitioners interested in advanced RAG techniques",
+      "content_archetype": "D",
+      "speaker_role": "community analyst or resource curator; not original author",
+      "source_relationship": "third_party_archive",
+      "source_date": "2025-06-05",
+      "posting_intent": "Informational, educational",
+      "current_context": "The user is seeking to understand and implement advanced Retrieval Augmented Generation (RAG) techniques, specifically focusing on GraphRAG for handling complex, multi-step questions.",
+      "core_value": "Enables answering complex questions that require connecting information across multiple steps, which regular RAG cannot handle.",
+      "core_hook": {
+        "text": "Discover how GraphRAG combines vector search with graph reasoning to tackle complex questions that regular RAG struggles with.",
+        "fact_refs": [
+          "f1"
+        ]
+      },
+      "facts": [
+        {
+          "id": "f1",
+          "text": "GraphRAG combines vector search with graph reasoning to answer hard questions that regular RAG cannot answer, such as connecting information across multiple steps.",
+          "evidence_quote": "Regular RAG cannot answer hard questions like: *“How did the protagonist defeat the villain’s assistant?”* (Harry Potter and Quirrell) It cannot connect information across multiple steps.\n\nIt combines vector search with graph reasoning.",
+          "status": "author_report"
+        },
+        {
+          "id": "f2",
+          "text": "GraphRAG utilizes only vector databases, eliminating the need for separate graph databases.",
+          "evidence_quote": "It uses only vector databases - no need for separate graph databases.",
+          "status": "author_report"
+        },
+        {
+          "id": "f3",
+          "text": "The process involves finding entities and relationships, expanding connections using mathematical operations, and employing AI to select the correct answers.",
+          "evidence_quote": "It finds entities and relationships, expands connections using math, and uses AI to pick the right answers.",
+          "status": "author_report"
+        },
+        {
+          "id": "f4",
+          "text": "A tutorial covers turning text into entities, relationships, and passages for vector storage.",
+          "evidence_quote": "Turn text into entities, relationships and passages for vector storage",
+          "status": "author_report"
+        },
+        {
+          "id": "f5",
+          "text": "The tutorial teaches building two types of search: entity search and relationship search.",
+          "evidence_quote": "Build two types of search (entity search and relationship search)",
+          "status": "author_report"
+        },
+        {
+          "id": "f6",
+          "text": "Mathematical matrices are used to identify connections between data points.",
+          "evidence_quote": "Use math matrices to find connections between data points",
+          "status": "author_report"
+        },
+        {
+          "id": "f7",
+          "text": "AI prompting is employed to select the most appropriate relationships.",
+          "evidence_quote": "Use AI prompting to choose the best relationships",
+          "status": "author_report"
+        },
+        {
+          "id": "f8",
+          "text": "The tutorial demonstrates handling complex questions requiring multiple logical steps and compares GraphRAG results with simple RAG using real examples.",
+          "evidence_quote": "Handle complex questions that need multiple logical steps\nCompare results: Graph RAG vs simple RAG with real examples",
+          "status": "author_report"
+        }
+      ],
+      "limitations": [
+        "The source text describes a tutorial and its content, not a live implementation or personal experience.",
+        "The effectiveness and specific performance metrics of GraphRAG are presented as claims within the tutorial's description."
+      ],
+      "allowed_claims": [
+        "GraphRAG can handle multi-hop questions.",
+        "GraphRAG uses vector search and graph reasoning.",
+        "GraphRAG does not require separate graph databases.",
+        "The tutorial covers specific steps for implementing GraphRAG."
+      ],
+      "forbidden_claims": [
+        "Personal experience with implementing GraphRAG.",
+        "Independent verification of the tutorial's effectiveness.",
+        "Claims about the speaker's ownership or direct development of the RAG_Techniques repo.",
+        "Invented use cases or results not explicitly mentioned in the source."
+      ],
+      "decision": "The user is seeking to understand the technical approach and learning outcomes of the GraphRAG tutorial. The content should focus on explaining what GraphRAG is, how it works according to the tutorial, and what skills or knowledge can be gained from it.",
+      "desired_help": "Provide a summary of the GraphRAG tutorial's methodology and learning objectives, grounded in the provided source text. Focus on the technical aspects described and the benefits of GraphRAG over regular RAG for complex queries."
+    },
+    "corrections": [],
+    "scenario_pass": true,
+    "source_pass": true
+  },
+  "run_id": "v004-r0015"
+}

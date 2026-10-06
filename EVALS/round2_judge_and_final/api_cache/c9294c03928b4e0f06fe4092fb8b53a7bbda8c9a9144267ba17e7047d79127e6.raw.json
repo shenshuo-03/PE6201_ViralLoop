@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109746-HsDmXA77H0NBekHCKoxB",
+  "object": "chat.completion",
+  "created": 1791109746,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Post A is more specific by explicitly mentioning the types of content (backstory, age, stats) and the target platform (iOS developer). It also details the author's concerns about API friction (setup, login, costs, performance) and local model drawbacks (app size, performance) more clearly than Post B. Both posts cover the core questions about API vs. local LLMs, model preparation, and content filtering, but Post A's more detailed articulation of the problem and considerations makes it slightly more aligned with the brief's goal of exploring feasibility and best practices.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2066,
+    "completion_tokens": 188,
+    "total_tokens": 2254,
+    "cost": 0.0002818,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002818,
+      "upstream_inference_prompt_cost": 0.0002066,
+      "upstream_inference_completions_cost": 7.52e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

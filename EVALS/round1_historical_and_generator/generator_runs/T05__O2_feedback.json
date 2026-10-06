@@ -1,0 +1,497 @@
+{
+  "at": "2026-10-04T08:11:31.112043+00:00",
+  "topic": {
+    "id": "T05",
+    "split": "final_test",
+    "topic": "Checklist for a hypothetical offline local model test",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario allows downloading the model before disconnecting.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The offline check must include generation and checking for network requests.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No actual offline test has been run.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "O2_feedback",
+  "generation_usage": {
+    "at": "2026-10-04T08:11:26.980603+00:00",
+    "tag": "final_test:T05:O2_feedback",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "55076544168320b9b0e20b0aee515161ce0031f10e87ecc44559cb0d39d5a17b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2238,
+    "output_tokens": 764,
+    "actual_cost_usd": 0.0005294,
+    "token_price_estimate_usd": 0.0005294,
+    "reserved_upper_usd": 0.0024095999999999996,
+    "budget_charge_usd": 0.0005294,
+    "latency_seconds": 3.32649050001055,
+    "retry": 0,
+    "request_id": "gen-1791101483-8gpfxm1DCP7FjRGPF6jO"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:11:31.107175+00:00",
+    "tag": "final_test:T05:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "272ef3f896d17725116b6f7fa8b86026cc8fbd816e0a724bfdace543f8fad374",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1174,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0013752,
+    "token_price_estimate_usd": 0.0013752,
+    "reserved_upper_usd": 0.0053159999999999995,
+    "budget_charge_usd": 0.0013752,
+    "latency_seconds": 4.058522799998173,
+    "retry": 0,
+    "request_id": "gen-1791101487-narnPfExciF7sApRQlUE"
+  },
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Offline LLM Test: Generation & Network Isolation Checklist",
+        "body": "This post outlines a hypothetical checklist for testing local LLMs offline. The scenario assumes models can be downloaded beforehand and then the system disconnected. The core of this hypothetical test involves two key checks: first, verifying the model can generate coherent text outputs without any network access, ensuring all necessary components are locally available. Second, it mandates a thorough check for any network requests originating from the LLM or its inference engine during the offline period. It's crucial to reiterate that this is a theoretical framework; no actual offline tests have been performed within this context. The objective is to establish a clear, albeit unexecuted, procedure for validating offline LLM functionality and security. We aim to identify potential challenges and best practices for such a setup. Feedback on this proposed, hypothetical testing methodology is welcome.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Revise title for conciseness and clarity. Refine the opening to explicitly state the hypothetical nature. Ensure the two core checks (generation and network requests) are clearly presented as the focus of the hypothetical test."
+      },
+      "performance_score": 0.23447660573983034,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the test and aligns well with the provided facts. It explicitly mentions the two key checks (generation and network requests) and emphasizes no actual tests have been run. The language is clear and technical, suitable for the target audience. The title accurately reflects the content without exaggeration. The usefulness is moderate since it provides a structured checklist but no real data or results. Credibility is high due to explicit caveats and no unsupported claims.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 135,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Proposed Hypothetical Protocol for Offline Local LLM Verification",
+        "body": "We are considering a hypothetical protocol to test local LLMs in a strictly offline state. The premise is that the model can be fully downloaded prior to disconnection. The proposed verification process has two main components. Firstly, we need to confirm that the model can perform text generation tasks effectively when completely isolated from any network. This requires ensuring all model weights and runtime dependencies are present locally. Secondly, a critical part of this hypothetical test is to actively monitor and confirm that absolutely no network requests are made by the system during the offline phase. This is a purely theoretical exercise, as no actual offline testing has been conducted. The goal is to define a structured, albeit hypothetical, approach to assess offline LLM capabilities and network security. We are soliciting input on this conceptual testing framework.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Adjust the title to emphasize the 'protocol' aspect. Modify the opening sentence to be more direct about the hypothetical nature. Slightly rephrase the description of the two checks to enhance specificity regarding the verification steps."
+      },
+      "performance_score": 0.24174264754132926,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft maintains a clear and direct statement of the hypothetical protocol and the two main verification steps, consistent with the facts. The title emphasizes the protocol aspect, which matches the body content. The hypothetical status is clearly stated. The language is precise and technical, appropriate for the audience. Usefulness is moderate as it outlines a verification process but lacks empirical data. No unsupported claims or exaggerations are present.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 137,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Hypothetical Framework for Testing Local LLMs Offline: Generation & Network Integrity",
+        "body": "This post proposes a hypothetical framework for evaluating local language models (LLMs) in an offline environment. The scenario permits downloading the model in advance of the disconnection period. The hypothetical test procedure centers on two primary verification points. The first is to confirm the LLM's ability to generate text outputs reliably without any network connectivity, ensuring all necessary files are stored locally. The second is to implement and verify a method for detecting any and all outgoing network communications during the offline test. It is essential to underscore that this framework remains entirely hypothetical; no actual offline tests have been executed under these conditions. The aim is to outline a clear, theoretical methodology for assessing offline LLM performance and network isolation. We invite discussion on this conceptual testing approach.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Refine the title to include 'Integrity' for network checks. Slightly reword the opening to focus on the 'framework' aspect. Ensure conciseness in describing the two verification points, maintaining clarity on their hypothetical status."
+      },
+      "performance_score": 0.23528522856737155,
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly presents a hypothetical framework with two verification points aligned with the facts. The title includes 'Integrity' to highlight network checks, consistent with the body. The hypothetical nature is explicitly stated, preserving necessary caveats. The language is clear and technical, suitable for the audience. Usefulness is moderate due to the conceptual nature without actual results. No unsupported claims or misleading elements are found.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 129,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Proposed Hypothetical Protocol for Offline Local LLM Verification",
+      "body": "We are considering a hypothetical protocol to test local LLMs in a strictly offline state. The premise is that the model can be fully downloaded prior to disconnection. The proposed verification process has two main components. Firstly, we need to confirm that the model can perform text generation tasks effectively when completely isolated from any network. This requires ensuring all model weights and runtime dependencies are present locally. Secondly, a critical part of this hypothetical test is to actively monitor and confirm that absolutely no network requests are made by the system during the offline phase. This is a purely theoretical exercise, as no actual offline testing has been conducted. The goal is to define a structured, albeit hypothetical, approach to assess offline LLM capabilities and network security. We are soliciting input on this conceptual testing framework.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Adjust the title to emphasize the 'protocol' aspect. Modify the opening sentence to be more direct about the hypothetical nature. Slightly rephrase the description of the two checks to enhance specificity regarding the verification steps."
+    },
+    "performance_score": 0.24174264754132926,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft maintains a clear and direct statement of the hypothetical protocol and the two main verification steps, consistent with the facts. The title emphasizes the protocol aspect, which matches the body content. The hypothetical status is clearly stated. The language is precise and technical, appropriate for the audience. Usefulness is moderate as it outlines a verification process but lacks empirical data. No unsupported claims or exaggerations are present.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 137,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent": {
+    "index": 1,
+    "draft": {
+      "title": "Defining a Hypothetical Offline Test for Local Models: Generation and Network Isolation",
+      "body": "This guide details a hypothetical approach for testing local language models (LLMs) in an offline environment. The premise allows for pre-downloading models before initiating the offline phase.\n\nThe proposed test protocol focuses on two critical verification points:\n\n*   **Functional Generation:** Confirming the LLM can generate text outputs consistently while completely disconnected from any network. This requires ensuring all model assets and inference dependencies are stored locally and accessible.\n*   **Network Egress Verification:** Establishing a method to actively monitor and confirm the absence of any outgoing network communication during the offline test. This involves meticulous checking for any unexpected data transmission.\n\nIt is important to emphasize that this framework is purely hypothetical. No actual offline testing has been conducted within this scenario. The goal is to establish a clear, albeit theoretical, procedure for validating offline LLM performance and security. We seek to identify potential challenges and best practices for such a setup. Feedback on this hypothetical testing methodology is encouraged.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Present a hypothetical methodology for offline local LLM testing. Detail the two main verification steps: generation capability and network request monitoring. Clearly state that this is a hypothetical scenario without actual test results. Encourage community input on the proposed testing framework."
+    },
+    "performance_score": 0.23978165922635966,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also maintains factual accuracy and clearly states the hypothetical nature of the test. The title matches the content well, and the scenario status and caveats are preserved. The writing is clear and technical, appropriate for the audience. The guide provides a useful theoretical framework for offline testing, though it does not offer measured data or direct instructions. It is relevant and credible, with no exaggeration or clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 157,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent_variant": "G4_both",
+  "abstention": false,
+  "original_retained": false,
+  "prompt_sha256": "248414c7253470f4feb8f4e183d94a84f488affcf1eb3e77b02e2b11ca244373",
+  "feedback_sent": {
+    "performance_score": 0.23978165922635966,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ],
+    "boundary": "relative classifier score, not causal or real virality probability"
+  }
+}

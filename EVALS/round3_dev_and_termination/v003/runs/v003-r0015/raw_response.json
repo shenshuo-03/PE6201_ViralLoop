@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118662-AyX28CeIUjMY5l8P8clU",
+  "object": "chat.completion",
+  "created": 1791118662,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"speaker\": \"community member seeking help with explicitly hypothetical product decision, not source author\",\n  \"scenario_origin\": \"controlled_hypothetical\",\n  \"current_goal\": \"To find a suitable open-source TTS model for an Anki addon that generates audio for language learning flashcards, prioritizing local execution and multi-language support.\",\n  \"central_purpose\": \"Seeking community recommendations and insights on reliable, multi-language open-source TTS models for a specific application, while also clarifying potential concerns about voice cloning and legal issues.\",\n  \"desired_response\": \"Recommendations for consistent and reliable open-source TTS models with strong multi-language support that can run locally without paid services or APIs; clarification on legal and ethical considerations regarding voice cloning and distribution of voice samples; advice on user-friendly approaches to voice sample requirements.\",\n  \"relevant_evidence_ids\": [\n    \"F1\",\n    \"F2\",\n    \"F3\",\n    \"F4\",\n    \"F5\",\n    \"F6\",\n    \"F7\",\n    \"F8\",\n    \"F9\"\n  ],\n  \"must_preserve\": [\n    \"The user is developing an addon for Anki, an open-source flashcard software.\",\n    \"The addon aims to generate audio samples from flashcard content for language learning.\",\n    \"The TTS model must be local and free, without paid services or APIs.\",\n    \"The user is considering XTTS2 for its broad language support but finds it glitchy and focused on voice cloning.\",\n    \"The user is concerned about legal and ethical issues related to voice cloning and distribution of voice samples.\",\n    \"The user wants recommendations for the most consistent and reliable open-source TTS models with multi-language support.\",\n    \"The user prefers not to require users to provide their own voice samples due to user-friendliness concerns.\"\n  ],\n  \"must_not_invent\": [\n    \"Any personal experience or success with implementing TTS in the addon.\",\n    \"Any specific hardware ownership or performance measurements by the user.\",\n    \"Definitive claims about the 'best' TTS model without community input or trade-offs.\",\n    \"Legal advice or outcomes not supported by the source text.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2073,
+    "completion_tokens": 450,
+    "total_tokens": 2523,
+    "cost": 0.0015492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015492,
+      "upstream_inference_prompt_cost": 0.0008292,
+      "upstream_inference_completions_cost": 0.00072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

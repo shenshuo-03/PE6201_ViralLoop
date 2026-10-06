@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111992-PCf7oj4Kx6ls3yb1RQrr",
+  "object": "chat.completion",
+  "created": 1791111992,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Noticing a Trade-off Between World Knowledge and Problem-Solving in Newer Small LLMs—Anyone Else Seen This?\",\"body\":\"I came across an archived Reddit post from May 2025 discussing an interesting pattern in smaller local LLMs. The author noticed that newer models like Qwen 3 and GLM-4-0414 tend to outperform older ones in coding and problem-solving tasks but show worse world knowledge, sometimes even lagging behind older, lower-benchmarking models.\\n\\nThis seems to suggest a trade-off where training data might be more focused on problem-solving content, reducing knowledge density. For example, Qwen 3 8B reportedly has poorer world knowledge than Llama 3.1 8B, despite better coding skills. Has anyone else observed this kind of trade-off in their experience? How do you balance choosing models for tasks that require both strong knowledge recall and problem-solving abilities?\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F8\"],\"source_url\":\"https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/\"},{\"title\":\"World Knowledge vs. Problem Solving in Local LLMs: Are Training Data Shifts the Cause?\",\"body\":\"An archived discussion from May 2025 raised a point about a potential trade-off in some newer smaller LLMs: improved coding and problem-solving but degraded world knowledge. The source author’s private tests showed models like Qwen 3 14B having much worse world knowledge than older models like Phi 4 or Gemma 3 12B, despite benchmark claims.\\n\\nOne hypothesis is that newer models’ training data emphasize problem-solving content over knowledge-dense material. Given this, how might we effectively evaluate or select models when both knowledge retention and problem-solving are important? Are there known strategies or benchmarks that can help clarify these trade-offs beyond what the author’s private tests reveal?\",\"fact_refs\":[\"F1\",\"F3\",\"F5\",\"F8\"],\"source_url\":\"https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2430,
+    "completion_tokens": 465,
+    "total_tokens": 2895,
+    "cost": 0.001716,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001716,
+      "upstream_inference_prompt_cost": 0.000972,
+      "upstream_inference_completions_cost": 0.000744
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

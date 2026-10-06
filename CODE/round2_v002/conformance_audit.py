@@ -1,12 +1,16 @@
 """Audit original manifests; later-derived freeze evidence is separate and explicitly dated."""
 from runtime import *
+from _packaged_code import frozen_code_ok
 import importlib.util,collections
-helper=Path('C:/Users/19139/.codex/skills/ai-experiment-designer/scripts/audit_contract.py')
+helper=Path(__file__).resolve().parents[1]/'_vendor/audit_contract.py'
 spec=importlib.util.spec_from_file_location('audit_helper',helper);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 contracts={sha(p):p for p in LOOP.glob('experiment_contract*_v002.yaml')}
 if (LOOP/'product_contract_v002.yaml').exists():contracts[sha(LOOP/'product_contract_v002.yaml')]=LOOP/'product_contract_v002.yaml'
 freeze=read(LOOP/'configs/generator_freeze_v002.json')
-freeze_current_ok=all(sha(LOOP/'code'/name)==h for name,h in freeze['code_hashes'].items())
+# The packaging step changed some modules on purpose (path resolution, write
+# protection, Englishization).  _packaged_code holds the byte-identical original
+# of each, so a declared change is distinguishable from an arbitrary edit.
+freeze_current_ok=all(frozen_code_ok('round2_v002',freeze['code_hashes'],LOOP/'code').values())
 events=rows(LOOP/'events_v002.jsonl');final_reads=[e for e in events if e['stage']=='access' and e['evidence'].get('split')=='final']
 final_after=all(e['time']>=freeze['at'] for e in final_reads)
 records=[];priors=[]
@@ -26,4 +30,4 @@ for row in rows(LEDGER):
     priors.append(m)
 counts=collections.Counter(r['verdict'] for r in records)
 write(LOOP/'results/contract_manifest_audit_v002.json',{'at':now(),'counts':dict(counts),'records':records,'overall':'WARN' if not counts['FAIL'] else 'FAIL','scope':'Recorded conformance plus explicitly dated later hash/access verification; missing failed-call archives remain unknown, no reconstructed raw responses','ledger_rows':len(rows(LEDGER)),'billing_budget_usd':sum(costs())})
-print(json.dumps({'counts':dict(counts),'freeze_code_unchanged':freeze_current_ok,'all_final_source_reads_after_freeze':final_after}))
+print(json.dumps({'counts':dict(counts),'freeze_code_unchanged_or_declared':freeze_current_ok,'all_final_source_reads_after_freeze':final_after}))

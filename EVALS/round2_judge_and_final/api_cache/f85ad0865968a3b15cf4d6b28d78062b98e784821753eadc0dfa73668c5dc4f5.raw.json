@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791108346-LXxouAZthcBBXHBKB8F2",
+  "object": "chat.completion",
+  "created": 1791108346,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"How does llama.cpp's HTTP server file-upload button handle file content with prompts?\",\"body\":\"I've been looking into the file-upload feature of llama.cpp's HTTP server and trying to understand its exact behavior. According to a user report, the file-upload button might concatenate the uploaded file's content with the direct prompt, treating the combined text as a single prompt. The user wanted to ask questions about the file's contents and, over about 15 experiments, sometimes got correct answers, but other times the model seemed to interpret the file contents instead of the query. They also hoped for reproducible results—getting the same answers with the same prompts in new conversations—but this wasn't achieved. The exact mechanics of how the server processes the uploaded file alongside user prompts remain unclear, as do the reasons for the inconsistent responses. Has anyone else experimented with this feature in llama.cpp's HTTP server? How does your experience compare regarding the handling of file content and prompt interaction, and do you know if the file content is actually concatenated or integrated differently? Any insights into improving consistency or reproducibility when querying uploaded files would be very helpful.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\"],\"source_url\":\"https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1557,
+    "completion_tokens": 288,
+    "total_tokens": 1845,
+    "cost": 0.0010836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010836,
+      "upstream_inference_prompt_cost": 0.0006228,
+      "upstream_inference_completions_cost": 0.0004608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

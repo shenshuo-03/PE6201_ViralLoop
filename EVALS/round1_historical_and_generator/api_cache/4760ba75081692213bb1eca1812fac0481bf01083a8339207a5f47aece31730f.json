@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.6,
+        "reason": "Detailed technical content with new model quantization info and community acknowledgments suggests higher engagement."
+      },
+      {
+        "index": 1,
+        "probability": 0.3,
+        "reason": "Question post with unusual LLM behavior; niche interest but some curiosity likely."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Technical debugging discussion with practical relevance but limited broad appeal."
+      },
+      {
+        "index": 3,
+        "probability": 0.5,
+        "reason": "In-depth opinion on OCR models with practical takeaways; likely valued by professionals."
+      },
+      {
+        "index": 4,
+        "probability": 0.4,
+        "reason": "Specific technical question about model embedding dimensions; moderate interest."
+      },
+      {
+        "index": 5,
+        "probability": 0.25,
+        "reason": "Opinion post with strong language and controversial stance; may limit broad positive reception."
+      },
+      {
+        "index": 6,
+        "probability": 0.35,
+        "reason": "Request for real developer experiences on ByteDance model; niche but relevant."
+      },
+      {
+        "index": 7,
+        "probability": 0.55,
+        "reason": "Detailed benchmark and experience report on OCR model with quantitative results; likely high interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:35.854101+00:00",
+    "tag": "selection_dev:classifier:E5a_zero_shot:24",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "4760ba75081692213bb1eca1812fac0481bf01083a8339207a5f47aece31730f",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2058,
+    "output_tokens": 334,
+    "actual_cost_usd": 0.0013576,
+    "token_price_estimate_usd": 0.0013576,
+    "reserved_upper_usd": 0.0060628,
+    "budget_charge_usd": 0.0013576,
+    "latency_seconds": 2.685878900010721,
+    "retry": 0,
+    "request_id": "gen-1791100773-RgMQbPITTm9YbsCdpk7o"
+  },
+  "raw_response": {
+    "id": "gen-1791100773-RgMQbPITTm9YbsCdpk7o",
+    "object": "chat.completion",
+    "created": 1791100773,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.6,\n      \"reason\": \"Detailed technical content with new model quantization info and community acknowledgments suggests higher engagement.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.3,\n      \"reason\": \"Question post with unusual LLM behavior; niche interest but some curiosity likely.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"Technical debugging discussion with practical relevance but limited broad appeal.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.5,\n      \"reason\": \"In-depth opinion on OCR models with practical takeaways; likely valued by professionals.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.4,\n      \"reason\": \"Specific technical question about model embedding dimensions; moderate interest.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.25,\n      \"reason\": \"Opinion post with strong language and controversial stance; may limit broad positive reception.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.35,\n      \"reason\": \"Request for real developer experiences on ByteDance model; niche but relevant.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.55,\n      \"reason\": \"Detailed benchmark and experience report on OCR model with quantitative results; likely high interest.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2058,
+      "completion_tokens": 334,
+      "total_tokens": 2392,
+      "cost": 0.0013576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013576,
+        "upstream_inference_prompt_cost": 0.0008232,
+        "upstream_inference_completions_cost": 0.0005344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

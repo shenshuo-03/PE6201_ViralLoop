@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112491-aWFOAdOPEI4n6a6Rf1ce",
+  "object": "chat.completion",
+  "created": 1791112491,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Is llama.cpp with Open WebUI a viable Ollama replacement for local LLMs?\",\"body\":\"A Reddit user reported switching from Ollama to a setup using llama.cpp (or ik_llama.cpp) for inference while still keeping Open WebUI as the frontend. They found the transition quicker and easier than expected, doing this on both Linux and Windows. This suggests a possible practical alternative for managing local LLM models without Ollama.\\n\\nHowever, the report is from mid-2025 and doesn’t detail hardware or performance tradeoffs, so it’s unclear if this approach suits all users or workloads. For those considering leaving Ollama, does anyone have insights on how llama.cpp plus Open WebUI compares in stability, ease of model management, or inference speed? What are the main pain points or benefits you’ve encountered with this combo versus Ollama?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Switching from Ollama to llama.cpp with Open WebUI: practical for local LLM management?\",\"body\":\"An archived Reddit post from June 2025 describes a user who moved away from Ollama about a month prior, opting to run inference via llama.cpp or ik_llama.cpp while continuing to use Open WebUI as the frontend. They reported the switch was surprisingly fast and straightforward on both Linux and Windows.\\n\\nGiven the lack of detailed performance data and hardware specs, I’m curious how this setup holds up in day-to-day local LLM management. Has anyone else tried this transition and can share how it impacts usability or model handling compared to Ollama? Are there specific limitations or advantages that make llama.cpp with Open WebUI a practical alternative?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 953,
+    "completion_tokens": 359,
+    "total_tokens": 1312,
+    "cost": 0.0009556,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009556,
+      "upstream_inference_prompt_cost": 0.0003812,
+      "upstream_inference_completions_cost": 0.0005744
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

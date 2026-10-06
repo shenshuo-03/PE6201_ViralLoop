@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is superior because it directly asks about practical tradeoffs and real-world scenarios related to SmolLM3's large context window and hybrid reasoning within MistralRS, aligning better with the 'local LLM enthusiasts' audience and the goal of discussing capabilities. Post B is more general, asking for 'thoughts' and 'potential' without delving into specific practical implications or challenges. Both posts accurately reflect the provided facts and their limitations, but Post A's questions are more focused and actionable for a community discussion."
+    },
+    "usage": {
+      "run_id": "v002-r0103",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:57.348215+00:00",
+      "tag": "judge_calibration:CP13:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "6de0ffd321181c403356fcb1afda19600532f6420529c957c352c6c3b1664117",
+      "actual_cost_usd": 0.0002684,
+      "budget_charge_usd": 0.0002684,
+      "reserved_upper_usd": 0.0011114999999999999,
+      "input_tokens": 1984,
+      "output_tokens": 175,
+      "latency_seconds": 1.2430448000086471,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109675-8BnkIED3ztdsbqbzedwc",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it asks more specific questions about the practical implications of the reported features (e.g., \"how does the large context window affect memory and speed in real-world scenarios\", \"how mature is the hybrid reasoning functionality\", \"how well do MistralRS’s multimodal and server features integrate\"), making it more likely to elicit a useful discussion from the target audience of local LLM enthusiasts. Post A is more general and less probing. Both posts accurately reflect the provided facts and their limitations."
+    },
+    "usage": {
+      "run_id": "v002-r0104",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:58.705902+00:00",
+      "tag": "judge_calibration:CP13:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "213b6d9d42b0f67cc8d1e90c6b32c40aed1f1f139825e12449ac4ae4652627c4",
+      "actual_cost_usd": 0.0002688,
+      "budget_charge_usd": 0.0002688,
+      "reserved_upper_usd": 0.0011114999999999999,
+      "input_tokens": 1984,
+      "output_tokens": 176,
+      "latency_seconds": 1.331286500004353,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109677-kz0nNZMitRGUy4FleoAu",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

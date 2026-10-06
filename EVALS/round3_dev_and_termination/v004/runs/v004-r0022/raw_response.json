@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121664-JOd8PqqlgPw5U7qaiUYf",
+  "object": "chat.completion",
+  "created": 1791121664,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content_archetype\": \"A\",\n  \"primary_value\": \"utility\",\n  \"strongest_grounded_hook\": \"Encountering gibberish output after LoRA fine-tuning? This guide details a specific user's problem and configuration, offering a starting point for diagnosis.\",\n  \"why_readers_should_care\": \"Machine learning engineers and researchers working with LoRA fine-tuning on large language models may face similar unpredictable output issues; understanding a concrete reported case with detailed configuration helps target troubleshooting efforts.\",\n  \"recommended_angle\": \"Focus on identifying which aspects of the documented LoRA and training configuration or missing diagnostic details could be first inspected to isolate causes of gibberish output in classification tasks.\",\n  \"essential_context\": \"A user fine-tuned Qwen2.5-7B-Instruct-bnb-4bit with LoRA on a ~3,000 sample classification dataset, using a specific LoRA setup (r=16, lora_alpha=16, no dropout, bias='none', gradient checkpointing='unsloth') and training arguments (batch size 2, gradient accumulation 16, 3 epochs, learning rate 2e-4, conditional fp16/bf16, adamw_8bit optimizer). Post-tuning, the model outputs gibberish about 40% of the time on test predictions.\",\n  \"facts_to_emphasize\": [\"F01\", \"F02\", \"F03\", \"F04\", \"F05\"],\n  \"facts_optional\": [],\n  \"natural_opening_strategy\": \"Introduce the reported problem and configuration succinctly to frame the troubleshooting context.\",\n  \"natural_ending_strategy\": \"Summarize the need for targeted diagnostics to distinguish possible causes, noting the absence of confirmed solutions in the source.\",\n  \"engagement_risk\": \"The content may appear overly technical or narrowly focused, potentially limiting engagement to specialists; lack of resolution might frustrate readers seeking definitive answers.\",\n  \"safety_constraints\": \"Avoid implying causality or solution effectiveness; do not speculate beyond the reported facts; respect the user's original report without judgment.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2189,
+    "completion_tokens": 430,
+    "total_tokens": 2619,
+    "cost": 0.0015636,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015636,
+      "upstream_inference_prompt_cost": 0.0008756,
+      "upstream_inference_completions_cost": 0.000688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

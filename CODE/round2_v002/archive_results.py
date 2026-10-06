@@ -1,5 +1,6 @@
 """Offline evidence synthesis after actual runs; never completes missing human or publishing data."""
 from runtime import *
+from _packaged_code import frozen_code_ok
 import pickle,collections
 import pandas as pd
 
@@ -26,7 +27,7 @@ def summarize():
     write(LOOP/'results/historical_E2_association_audit_v002.json',{'model_retrained':False,'used_for_selection':False,'scores':audit_scores,'interpretation':'Association with retrospective high-score labels, not actual viral probability; E4 independently recorded in historical_E4_association_audit_v002.json'})
     missing_manifest=[r['run_id'] for r in ledger if not (LOOP/'runs'/r['run_id']/f'manifest_{r["run_id"]}.json').exists()]
     missing_raw=[r['run_id'] for r in ledger if not (LOOP/'runs'/r['run_id']/'raw_response.json').exists()]
-    frozen_ok={name:sha(LOOP/'code'/name)==h for name,h in freeze['code_hashes'].items()}
+    frozen_ok=frozen_code_ok('round2_v002',freeze['code_hashes'],LOOP/'code')
     reads=[e for e in events if e['stage']=='access' and e['evidence'].get('split')=='final']
     product_hash=sha(LOOP/'product_contract_v002.yaml') if (LOOP/'product_contract_v002.yaml').exists() else None
     total_tokens=sum((r.get('input_tokens') or 0)+(r.get('output_tokens') or 0) for r in ledger if r.get('contract_sha256')!=product_hash)
@@ -37,77 +38,77 @@ def summarize():
     write(LOOP/'results/cost_summary_v002.json',{'prior_usd':costs()[0],'round_usd':costs()[1],'total_usd':sum(costs()),'cap_usd':5,'round_cap_usd':2,'ledger_rows':len(ledger),'by_phase_usd':dict(byphase),'unknown_cost_conservatively_reserved_rows':[r['run_id'] for r in ledger if r.get('actual_cost_usd') is None]})
     lines=[]
     for k,s in summary['comparisons'].items():
-        c=s['counts'];rate='无决定性结果' if s['decisive_win_rate'] is None else f'{100*s["decisive_win_rate"]:.1f}%'
+        c=s['counts'];rate='no decisive outcome' if s['decisive_win_rate'] is None else f'{100*s["decisive_win_rate"]:.1f}%'
         lines.append(f'| {k} | {c["Win"]} | {c["Loss"]} | {c["Tie"]} | {c["Uncertain"]} | {c["Failure"]} | {rate} | {100*s["decisive_coverage"]:.1f}% |')
-    doc=f'''# PE6201 ViralLoop：第二轮实验过程与结果
+    doc=f'''# PE6201 ViralLoop: Round 2 Experiment Process and Results
 
-## 先看结论
+## Conclusions first
 
-第二轮自动生成和独立离线比较已实际运行。产品在Final前按预设规则冻结为 **{freeze['selected_product']}**：真实素材完整Brief、简单生成提示、两篇候选、质量筛查、固定顺序选稿。内部评测器未通过准入，反馈改写和偏好选稿关闭。
+Round 2 automated generation and independent offline comparison have been actually run. Before Final, the product was frozen by preset rules as **{freeze['selected_product']}**: full brief from real material, simple generation prompt, two candidates, quality screening, fixed-order selection. The internal evaluator did not pass admission, so feedback rewriting and preference-based selection were switched off.
 
-当前证据只支持判断离线写作偏好，**不能证明能生成真实爆款**。真人Final盲评与实际发布结果尚缺；三篇自然度验收不是正式真人效果评测。
+The current evidence only supports judgments about offline writing preference, and **cannot prove that it can produce a real viral hit**. Genuine human Final blind review and real publishing outcomes are still missing; the three-sample naturalness acceptance is not a formal human effectiveness evaluation.
 
-## 问题、实验对象与控制
+## Problem, experimental subject and controls
 
-目标是把真实素材写成有具体问题、值得社区讨论的内容，并检验强提示、结构RAG及增加采样是否带来增益。平台为r/LocalLLaMA，素材来自第一轮已清洗的2025年历史Train。第一轮模型不重训，历史Final不重跑。
+The goal is to turn real material into content that raises a concrete problem and is worth community discussion, and to test whether strong prompting, structural RAG and extra sampling bring any gain. The platform is r/LocalLLaMA and the material comes from the 2025 historical Train set cleaned in Round 1. The Round 1 model was not retrained and the historical Final was not rerun.
 
-按来源组隔离：4Tune、2Selection、12Final；另有自然度预览和评测器受控题。两个原Selection来源曾被预览，因此先降级为开发用途，再机械补选两条新Selection来源。Final预分配不变，源文本进入生成过程均发生在产品冻结后。
+Isolation by source group: 4 Tune, 2 Selection, 12 Final; plus naturalness previews and controlled evaluator items. Two original Selection sources had already been previewed, so they were first demoted to development use and two new Selection sources were mechanically added. The Final pre-allocation was unchanged, and every source text entered the generation process only after the product freeze.
 
-生成器均使用GPT-4.1-mini，同一任务使用同一完整事实来源，输入不含点赞、评论、score。各方法：
+All generators used GPT-4.1-mini, with the same full fact source for the same task, and the input contained no upvotes, comments or score. The methods:
 
-- V0：完整Brief、简单提示，2候选。
-- V1：先选一个发帖目的、最多2条必要事实，再用强提示，2候选。事实审核仍读取完整来源。
-- V2：V1加历史结构参考，2候选；检索库排除所有已分组来源，只提取写作结构。
-- O1：同一V2起稿额外采样3篇，保留原稿。由于偏好选稿器未准入，合格原稿优先保留，不能据此声称增加采样无效。
-- O2/V3：按评测器失败停止规则未执行，不能声称反馈优化有效或无效。
+- V0: full brief, simple prompt, 2 candidates.
+- V1: first choose one posting goal and at most 2 necessary facts, then use the strong prompt, 2 candidates. Fact checking still reads the full source.
+- V2: V1 plus a historical structure reference, 2 candidates; the retrieval library excludes all already-grouped sources and extracts writing structure only.
+- O1: extra sampling of 3 more drafts from the same V2 starting draft, retaining the original. Because the preference selector did not pass admission, qualified originals are preferentially retained, so no claim that extra sampling is ineffective can be made from this.
+- O2/V3: not executed due to the evaluator failure stop rule; no claim that feedback optimization is either effective or ineffective.
 
-## 实际执行过程
+## What actually happened
 
-1. Jev无可用直连凭证、目录价格无法可靠上界，没有进行付费接入。预先限定两个内部候选，随后没有继续找模型。
-2. 生成6篇来源明确的自然度预览，翻译3篇给本人检查。实际反馈：第1篇认可；第2篇因信息密度大拒绝；第3篇认可但注明技术背景难以判断。
-3. 两次自动简化仍堆积细节。助手做了一版直接编辑，本人回复“会”，认可其更像正常帖子。该编辑稿不纳入自动生成效果样本。
-4. 30对受控题按来源组分成15Calibration和15Validation，每对交换AB/BA。内部Gemini Flash Lite校准较好，但Validation信息价值仅2/5，未达逐维门槛，停止反馈及偏好选稿。外部Claude Haiku在15对受控Validation上符合全部设计预期。
-5. 正式Tune做两轮，第一轮输出完整保留。第二轮改为先聚焦再生成，没有使用外部裁判。随后Selection各方案合格任务数均2/2，按并列时优先简单方案的规则冻结V0。两个Selection任务很少，不能把这解释为V0普遍最好。
-6. 冻结后在12条新任务生成候选，再由外部Claude做独立比较。AB/BA不同意见合并为Uncertain；相同文本直接记身份Tie并明确不是Judge投票。没有从Final结果反向修改产品。
+1. Jev had no usable direct credentials and the catalogue price could not be reliably upper-bounded, so no paid integration was performed. Two internal candidates were fixed in advance, and no further model search followed.
+2. Six naturalness previews with clear provenance were generated, and 3 were translated for the author to check. Actual feedback: sample 1 accepted; sample 2 rejected for high information density; sample 3 accepted with a note that the technical background was hard to judge.
+3. Two automated simplifications still piled on detail. The assistant produced one directly edited version and the author replied "yes", accepting that it read more like a normal post. That edited draft is not counted as an automated-generation effect sample.
+4. The 30 controlled pairs were split by source group into 15 Calibration and 15 Validation, with AB/BA swapped for each pair. The internal Gemini Flash Lite calibrated well, but the Validation information value was only 2/5 and did not reach the per-dimension threshold, so feedback and preference selection were stopped. The external Claude Haiku met all design expectations on the 15 controlled Validation pairs.
+5. Formal Tune ran two rounds; the first round's outputs were fully retained. The second round was changed to focus first and then generate, without an external judge. Each Selection plan then qualified 2/2 tasks, and by the tie-break preference for the simpler plan, V0 was frozen. Two Selection tasks are very few, so this must not be interpreted as V0 being universally best.
+6. After the freeze, candidates were generated for the 12 new tasks and then independently compared by the external Claude. Disagreements between AB and BA were merged into Uncertain; identical texts were recorded directly as an identity Tie, explicitly not as a judge vote. The product was not modified retroactively from the Final results.
 
-## Final独立比较结果
+## Final independent comparison results
 
-Win表示新方法优于旧方法。决定性胜率仅以Win+Loss为分母；覆盖率为(Win+Loss)/12。Uncertain不计半胜。
+Win means the new method was better than the old one. The decisive win rate uses only Win+Loss as its denominator; coverage is (Win+Loss)/12. Uncertain is not counted as half a win.
 
-| 比较 | Win | Loss | Tie | Uncertain | Failure | 决定性胜率 | 决定性覆盖率 |
+| Comparison | Win | Loss | Tie | Uncertain | Failure | Decisive win rate | Decisive coverage |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | ---: |
 '''+ '\n'.join(lines)+f'''
 
-每项只有12个任务。Wilson区间保存在`final_summary_v002.json`，它是决定性子样本的条件区间，不是全体成功概率或真实爆款率。
+Each comparison covers only 12 tasks. The Wilson intervals are stored in `final_summary_v002.json`; they are conditional intervals for the decisive subsample, not an overall success probability or a real viral rate.
 
-## 生成检查与成本
+## Generation checks and cost
 
-'''+ '\n'.join(f'- {v}：{m["topics"]}题、{m["candidates"]}候选；工程硬检查通过{m["hard_pass"]}/{m["candidates"]}，选出合格稿{m["selected"]}/{m["topics"]}，候选平均{m["mean_words"]:.1f}英文词。' for v,m in metrics.items())+f'''
+'''+ '\n'.join(f'- {v}: {m["topics"]} topics, {m["candidates"]} candidates; {m["hard_pass"]}/{m["candidates"]} passed the engineering hard checks, {m["selected"]}/{m["topics"]} qualified drafts selected, candidates average {m["mean_words"]:.1f} English words.' for v,m in metrics.items())+f'''
 
-截至此报告，第二轮预算计入 **US${costs()[1]:.6f}**，第一轮 **US${costs()[0]:.6f}**，项目累计 **US${sum(costs()):.6f}**，低于本人授权US$5。详细流水包括失败请求和未知费用的保守预留。
+As of this report, the Round 2 accounted budget is **US${costs()[1]:.6f}**, Round 1 is **US${costs()[0]:.6f}**, and the project total is **US${sum(costs()):.6f}**, below the authorized US$5. The detailed ledger includes failed requests and conservative reservations for unknown costs.
 
-报告中的硬检查和质量分仍是模型工程筛查，不是事实认证或真实用户验收。E2与冻结E4仅对新稿做历史关联审计，不用于选型；其分数不解释为真实爆款概率。E4重新取得新稿的同规格嵌入，费用写入第二轮而不改第一轮流水。
+The hard checks and quality scores in the report are still model-engineering screening, not fact certification or genuine user acceptance. E2 and the frozen E4 only perform a historical association audit on new drafts and are not used for selection; their scores are not to be interpreted as real viral probabilities. E4 re-obtained same-specification embeddings for the new drafts, and that cost is written into Round 2 without altering the Round 1 ledger.
 
-## 局限与批判性分析
+## Limitations and critical analysis
 
-- **热度混杂没有消失。** 发布时间、热点、作者、曝光、推荐分发等均可能影响历史score；离线文案比较隔离了任务素材与生成条件，无法估计真实发帖后的因果增益。
-- **受控题不是真人金标准。** 15/15外部结果只代表识别了工程设计的差异，不能写“社区判断准确率100%”。内部信息价值失败说明不能把总体12/15掩盖某一关键维度无效。
-- **自动质量分与人意见曾冲突。** 自动检查认可的密集稿被本人拒绝。简化目标经人工确定，自动生成效果必须看独立结果，不能用人工编辑稿替代。
-- **公平比较有边界。** V1增加聚焦步骤、V2增加检索，费用需计入；候选数相同不等于调用成本完全相同。O1保留原稿的停止策略导致身份Tie，结论限于这套关闭偏好选择的实现。
-- **评审独立不等于无偏。** 外部与生成器模型家族不同且未参与选型，但仍会有风格偏好和题目人工构造影响。真人12对盲评尚未完成。
-- **历史素材不等于当前新闻。** 来源是归档作者自述，必要日期和不确定性必须保留。不能把别人的测量冒充亲测，不能声称模型当前表现。
-- **档案完整性有警告。** 早期{len(missing_manifest)}条缺完整单次manifest、{len(missing_raw)}条缺单次原始响应文件。费用流水保留，缓存不保证重建每次重试；不把记录缺口写成全部审核通过。
-- **Token控制失败。** 本轮已知累计{total_tokens:,} Token，超过内部协议100万Token限额。执行程序漏掉调用前Token阻断；不是用户US$5费用上限超支，但属于真实协议偏差。本轮不能标为完全遵守预注册预算的确认性实验，不改写旧上限来追认。后续产品控制另开版本，原冻结实验代码与记录保留。
+- **Popularity confounding has not disappeared.** Posting time, trending events, author, exposure and recommendation distribution can all affect the historical score; the offline text comparison isolates task material and generation conditions but cannot estimate the causal gain of an actual post.
+- **Controlled items are not a human gold standard.** The 15/15 external result only means the engineered differences were identified; it must not be written as "100% accuracy in community judgment". The internal information-value failure shows that an overall 12/15 must not mask a single ineffective key dimension.
+- **The automated quality score once conflicted with the human opinion.** A dense draft accepted by the automated check was rejected by the author. The simplification goal was set by a human, and automated-generation effects must be read from independent results and must not be replaced by the human-edited draft.
+- **Fair comparison has boundaries.** V1 adds a focusing step and V2 adds retrieval, so their cost must be counted; an equal number of candidates does not mean identical call cost. O1's stop strategy of retaining the original produced identity Ties, so the conclusions are limited to this implementation with preference selection switched off.
+- **An independent reviewer is not the same as an unbiased one.** The external model is from a different family from the generator and did not take part in selection, but stylistic preference and human construction of the items still have an influence. The 12 genuine human blind-review pairs are not yet complete.
+- **Historical material is not current news.** The source is archived author self-reports, so the necessary dates and uncertainties must be retained. Someone else's measurement must not be passed off as first-hand experience, and the model's current performance must not be claimed.
+- **There are archive-completeness warnings.** Early on, {len(missing_manifest)} records lacked a complete per-run manifest and {len(missing_raw)} lacked a per-run raw response file. The cost ledger is retained, but the cache does not guarantee every retry can be rebuilt; record gaps must not be written up as "all audits passed".
+- **Token control failed.** This round's known cumulative total is {total_tokens:,} tokens, exceeding the internal protocol limit of 1,000,000 tokens. The execution program omitted a pre-call token block; this is not an overspend of the user's US$5 cost cap, but it is a genuine protocol deviation. This round cannot be labelled a confirmatory experiment that fully observed the pre-registered budget, and the old cap will not be rewritten to retroactively legitimize it. Follow-up product controls open a separate version, while the original frozen experiment code and records are retained.
 
-## 可交付与下一步
+## Deliverables and next steps
 
-桌面实验1.1版含协议、真实素材、Brief、生成候选、选择路径、AB/BA原输出、费用流水、分组与冻结审核，以及可运行的生成页面。产品为事实约束社区写作辅助，当前不宣称已验证爆款。
+The desktop Experiment 1.1 package contains the protocol, real material, briefs, generated candidates, the selection path, the original AB/BA outputs, the cost ledger, grouping and freeze reviews, and a runnable generation page. The product is a fact-constrained community writing assistant and currently does not claim a verified viral outcome.
 
-剩余证据：由真人完成12对Final盲评；若未来检验真实互动提升，需另外预注册发布时间/主题分层与随机分配、固定观察窗口并进行真实发布。当前没有执行真实发布。
+Remaining evidence: the 12 genuine human Final blind-review pairs; if real interaction improvement is to be tested in the future, this requires separately pre-registering posting-time/topic stratification and random assignment, a fixed observation window, and an actual publish. No real publishing has been performed.
 '''
-    (ROOT/'第二轮实验_完整过程与结果.md').write_text(doc,encoding='utf-8')
-    pd.DataFrame([{'comparison':r['comparison'],'brief_id':r['brief_id'],'outcome':r['outcome']} for p in (LOOP/'results/final_comparisons').glob('*_v002.json') for r in [read(p)]]).to_csv(LOOP/'results/final_comparison_results_v002.csv',index=False,encoding='utf-8-sig')
-    (ROOT/'PROJECT_STATE.md').write_text('# 第二轮状态\n\nloop_version: v002\nstate: AUTOMATED_FINAL_COMPLETE_HUMAN_FINAL_PENDING\n\n自动生成、Selection冻结与外部Final比较完成；反馈关闭。产品冻结V0，未据Final改选。尚无真人Final和真实发布证据。\n',encoding='utf-8')
+    (LOOP/'round2_experiment_full_process_and_results.md').write_text(doc,encoding='utf-8')
+    pd.DataFrame([{'comparison':r['comparison'],'brief_id':r['brief_id'],'outcome':r['outcome']} for p in (LOOP/'results/final_comparisons').glob('*_v002.json') for r in [read(p)]]).to_csv(redirect_write(LOOP/'results/final_comparison_results_v002.csv'),index=False,encoding='utf-8-sig')
+    (LOOP/'PROJECT_STATE.md').write_text('# Round 2 status\n\nloop_version: v002\nstate: AUTOMATED_FINAL_COMPLETE_HUMAN_FINAL_PENDING\n\nAutomated generation, Selection freeze and external Final comparison are complete; feedback is switched off. The product is frozen at V0 and was not re-chosen based on Final. There is no genuine human Final or real publishing evidence yet.\n',encoding='utf-8')
     print(json.dumps({'final_metrics':summary['comparisons'],'cost':costs(),'archive_warnings':len(missing_manifest),'all_frozen_code_unchanged':all(frozen_ok.values())}))
 
 if __name__=='__main__':summarize()

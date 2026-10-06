@@ -1,0 +1,307 @@
+{
+  "at": "2026-10-04T08:15:00.434489+00:00",
+  "topic": {
+    "id": "T09",
+    "split": "final_test",
+    "topic": "A hypothetical comparison: reproducibility before model recommendations",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario compares two local models.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The model versions, prompt, generation settings and hardware need to be recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No experimental outcome has been provided.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G3_rag",
+  "generation_usage": {
+    "at": "2026-10-04T08:14:57.574113+00:00",
+    "tag": "final_test:T09:G3_rag",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "67cd40cc0c6775d5ae310d8ba05e7518f9c571bb26c57aaf484353eac1c1f8ca",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1875,
+    "output_tokens": 584,
+    "actual_cost_usd": 0.0004211,
+    "token_price_estimate_usd": 0.0004211,
+    "reserved_upper_usd": 0.0015461999999999997,
+    "budget_charge_usd": 0.0004211,
+    "latency_seconds": 2.776493599987589,
+    "retry": 0,
+    "request_id": "gen-1791101695-SBlajbU7jenED4bgWRFI"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:15:00.426293+00:00",
+    "tag": "final_test:T09:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f7392b2c56c7d97b68ee8518730f90cc7c5e641609acf0b1d435df03327eda70",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 978,
+    "output_tokens": 390,
+    "actual_cost_usd": 0.0010152,
+    "token_price_estimate_usd": 0.0010152,
+    "reserved_upper_usd": 0.0049023999999999995,
+    "budget_charge_usd": 0.0010152,
+    "latency_seconds": 2.7858807000156958,
+    "retry": 0,
+    "request_id": "gen-1791101697-aB9aGLCwMuk5j3pTEjGx"
+  },
+  "retrieved_ids": [
+    "1kmaztr",
+    "1k63kpq",
+    "1igr55c",
+    "1im84vo",
+    "1kvvnuh"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "2f18e91359c00fe033efcd7d4cb55699a59cd9e2e97d27ed2524722503f85570",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical reproducibility check: Model A vs. Model B",
+        "body": "I'm considering a hypothetical experiment to evaluate reproducibility in local LLMs. The scenario involves comparing two distinct local models, Model A and Model B. To ensure a fair and repeatable comparison, it's crucial to meticulously record all relevant parameters. This includes the specific model versions used, the exact prompt structure, all generation settings (like temperature, top-p, etc.), and the hardware configuration on which the tests would be run. Without this detailed information, any observed differences in output would be difficult to attribute reliably. This is purely a hypothetical setup; no actual results have been generated or observed. The core question is: what would be the best practice for documenting such a comparison to maximize the chances of others replicating the findings, assuming we were to conduct it?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft focuses on the hypothetical nature of the experiment and outlines the necessary documentation for reproducibility. It explicitly states that no results exist and frames the discussion around best practices for documentation in such a scenario. The goal is to solicit advice on how to set up the documentation framework for a future, hypothetical test."
+      },
+      "performance_score": 0.2323266953588735,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and correctly identifies the key parameters to record for reproducibility. It avoids making any unsupported claims or presenting results. The title matches the content well. The language is clear and technical, suitable for the intended audience. It provides actionable advice on documentation best practices, making it useful and relevant. The scenario status and necessary caveats are explicitly preserved, maintaining credibility. The clickbait score is low as the title is restrained and descriptive.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 127,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Designing a Hypothetical Reproducibility Study for Local LLMs",
+        "body": "Let's consider a hypothetical study designed to assess the reproducibility of outputs between two local language models. The premise is to isolate variables that influence model responses. To achieve this, a critical step would be to standardize and document every aspect of the testing environment and procedure. This includes specifying the exact model versions, the precise wording and structure of the input prompts, and all inference parameters such as temperature, top-k, and repetition penalties. Furthermore, the hardware specifications (CPU, GPU, RAM) must be recorded. This hypothetical experiment aims to establish a baseline for comparing the two models under identical conditions. It's important to emphasize that this is a conceptual exercise, and no actual experimental data or outcomes have been generated. The objective is to discuss the methodology for ensuring reproducibility in such a comparative setup.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft also emphasizes the hypothetical nature of the experiment. It focuses on the methodological aspects of designing a study to ensure reproducibility. By detailing the specific parameters that would need to be controlled and recorded, it sets the stage for a discussion on the best practices for setting up such a comparative test, explicitly stating that no results are available."
+      },
+      "performance_score": 0.23889240626810287,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and emphasizes the importance of controlling and documenting variables for reproducibility. It explicitly states no data or outcomes exist, preserving necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It offers useful methodological guidance without unsupported claims, maintaining credibility. The clickbait score is low due to the straightforward and factual title.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 135,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Designing a Hypothetical Reproducibility Study for Local LLMs",
+      "body": "Let's consider a hypothetical study designed to assess the reproducibility of outputs between two local language models. The premise is to isolate variables that influence model responses. To achieve this, a critical step would be to standardize and document every aspect of the testing environment and procedure. This includes specifying the exact model versions, the precise wording and structure of the input prompts, and all inference parameters such as temperature, top-k, and repetition penalties. Furthermore, the hardware specifications (CPU, GPU, RAM) must be recorded. This hypothetical experiment aims to establish a baseline for comparing the two models under identical conditions. It's important to emphasize that this is a conceptual exercise, and no actual experimental data or outcomes have been generated. The objective is to discuss the methodology for ensuring reproducibility in such a comparative setup.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "This draft also emphasizes the hypothetical nature of the experiment. It focuses on the methodological aspects of designing a study to ensure reproducibility. By detailing the specific parameters that would need to be controlled and recorded, it sets the stage for a discussion on the best practices for setting up such a comparative test, explicitly stating that no results are available."
+    },
+    "performance_score": 0.23889240626810287,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also accurately reflects the hypothetical scenario and emphasizes the importance of controlling and documenting variables for reproducibility. It explicitly states no data or outcomes exist, preserving necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It offers useful methodological guidance without unsupported claims, maintaining credibility. The clickbait score is low due to the straightforward and factual title.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 135,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

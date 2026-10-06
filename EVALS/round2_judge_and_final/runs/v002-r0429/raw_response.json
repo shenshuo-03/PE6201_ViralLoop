@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112721-GZvneW2DGjunHhcVlruJ",
+  "object": "chat.completion",
+  "created": 1791112721,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": false,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source, posing relevant questions about potential incompatibilities and resource constraints. It correctly avoids claiming personal experience and adheres to the persona. The community fit is good due to the specific technical problem and the request for workarounds. Specificity is high, referencing the model, UI, and the exact feature causing issues. Information value is good as it organizes the problem and asks targeted questions. Clarity and usefulness are high. Credibility is good as it relies on the source and asks for community input. Clickbait is low.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": false,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 accurately summarizes the source, focusing on the 'thinking' feature causing generation stalls in Open WebUI with the Qwen3 30B A3B model. It correctly maintains the persona and avoids unsupported claims. Community fit is good as it addresses a specific technical issue and seeks solutions. Specificity is high, detailing the model, UI, and the problematic feature. Information value is good, organizing the problem and asking for diagnostic/preventative measures. Clarity and usefulness are high. Credibility is good, relying on the source and seeking community input. Clickbait is low.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2572,
+    "completion_tokens": 516,
+    "total_tokens": 3088,
+    "cost": 0.0004636,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004636,
+      "upstream_inference_prompt_cost": 0.0002572,
+      "upstream_inference_completions_cost": 0.0002064
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

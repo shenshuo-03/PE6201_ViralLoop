@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and references the provided facts accurately (F1, F3, F4). It preserves the scenario status and necessary caveats, avoiding unsupported claims. The title matches the body content well. The writing is clear and restrained, suitable for the target audience. It highlights the limitations of raw token speed as a metric and invites broader discussion, making it useful and relevant. Credibility is strong due to explicit caveats and no overstatements. Clickbait is minimal."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all relevant facts (F1, F2, F3, F4). It explicitly states the limitations and does not make unsupported claims. The title is consistent with the body, emphasizing caveats. The text is clear and technical, appropriate for the audience. It stresses the need for comprehensive evaluation beyond token speed, which is useful and relevant. Credibility is maintained by preserving caveats and scenario status. Clickbait is low."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:08:52.868154+00:00",
+    "tag": "final_test:T03:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3a454b1d07f47730f202e6889288f25831ec4fa646b771b6d575184e4b7faa39",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 957,
+    "output_tokens": 412,
+    "actual_cost_usd": 0.001042,
+    "token_price_estimate_usd": 0.001042,
+    "reserved_upper_usd": 0.0047504,
+    "budget_charge_usd": 0.001042,
+    "latency_seconds": 3.2898630000127014,
+    "retry": 0,
+    "request_id": "gen-1791101329-EgQXvgQNkrvlAL3ZBh92"
+  },
+  "raw_response": {
+    "id": "gen-1791101329-EgQXvgQNkrvlAL3ZBh92",
+    "object": "chat.completion",
+    "created": 1791101329,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and references the provided facts accurately (F1, F3, F4). It preserves the scenario status and necessary caveats, avoiding unsupported claims. The title matches the body content well. The writing is clear and restrained, suitable for the target audience. It highlights the limitations of raw token speed as a metric and invites broader discussion, making it useful and relevant. Credibility is strong due to explicit caveats and no overstatements. Clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all relevant facts (F1, F2, F3, F4). It explicitly states the limitations and does not make unsupported claims. The title is consistent with the body, emphasizing caveats. The text is clear and technical, appropriate for the audience. It stresses the need for comprehensive evaluation beyond token speed, which is useful and relevant. Credibility is maintained by preserving caveats and scenario status. Clickbait is low.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 957,
+      "completion_tokens": 412,
+      "total_tokens": 1369,
+      "cost": 0.001042,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001042,
+        "upstream_inference_prompt_cost": 0.0003828,
+        "upstream_inference_completions_cost": 0.0006592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

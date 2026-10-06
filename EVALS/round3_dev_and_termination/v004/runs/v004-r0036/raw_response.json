@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121674-eh7rR0sPdKC43SJ2H50s",
+  "object": "chat.completion",
+  "created": 1791121674,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"The draft accurately reflects the source material, attributing all claims to the archived third-party report and Cerebras/Mistral. It includes essential context regarding the source date, the nature of the claims (vendor claims from a third-party archive), and the limitations of comparison conditions. The title accurately summarizes the body. No unsupported or unverified claims are presented as fact.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [],\n      \"reason\": \"The draft accurately reflects the source material, attributing all claims to the archived third-party report and Cerebras/Mistral. It includes essential context regarding the source date, the nature of the claims (vendor claims from a third-party archive), and the limitations of comparison conditions. The title accurately summarizes the body. No unsupported or unverified claims are presented as fact. It correctly omits the specific comparison numbers for ChatGPT 4o and Claude Sonnet 3.5, instead using a more general statement about being 'substantially faster', which is still grounded in the source's claim of a '10x performance improvement'.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2823,
+    "completion_tokens": 370,
+    "total_tokens": 3193,
+    "cost": 0.0017719,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017719,
+      "upstream_inference_prompt_cost": 0.0008469,
+      "upstream_inference_completions_cost": 0.000925
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

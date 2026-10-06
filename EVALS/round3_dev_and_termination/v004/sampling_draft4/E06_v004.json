@@ -1,0 +1,15 @@
+{
+  "brief_id": "E06",
+  "id": "1i67f3b",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "99",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-01-21",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i67f3b/quick_code_tested_deepseek_r1_vs_o1_vs_claude/",
+  "source_hash": "f0b3cb7a64ea5c5d198143b111390d590d0e980e2eb8609f4e2345f36acb6721",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "Quick Code Tested DeepSeek R1 vs O1 vs Claude",
+  "source_text": "I took a coding challenge which required planning, good coding, common sense of API design and good interpretation of requirements (IFBench) and gave it to R1, o1 and Sonnet. Early findings:\n\n(Those who just want to watch them code: https://youtu.be/EkFt9Bk_wmg\n\n- R1 has much much more detail in its Chain of Thought \n- R1's inference speed is on par with o1 (for now, since DeepSeek's API doesn't serve nearly as many requests as OpenAI)\n- R1 seemed to go on for longer when it's not certain that it figured out the solution \n- R1 reasoned wih code! Something I didn't see with any reasoning model. o1 might be hiding it if it's doing it\n++ Meaning it would write code and reason whether it would work or not, without using an interpreter/compiler\n\n-  R1: 💰 $0.14 / million input tokens (cache hit)\n💰 $0.55 / million input tokens (cache miss)\n💰 $2.19 / million output tokens\n\n- o1: 💰 $7.5 / million input tokens (cache hit)\n💰 $15 / million input tokens (cache miss)\n💰 $60 / million output tokens\n\n- o1 API tier restricted, R1 open to all, open weights and research paper\n- Paper: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf\n\n- 2nd on Aider's polyglot benchmark, only slightly below o1, above Claude 3.5 Sonnet and DeepSeek 3\n- they'll get to increase the 64k context length, which is a limitation in some use cases\n- will be interesting to see the R1/DeepSeek v3 Architect/Coder combination result in Aider and Cline on complex coding tasks on larger codebases\n\nHave you tried it out yet? First impressions?"
+}

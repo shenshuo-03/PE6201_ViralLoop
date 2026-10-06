@@ -1,0 +1,15 @@
+{
+  "drafts": [
+    {
+      "title": "Troubleshooting gibberish output after LoRA fine-tuning Qwen2.5-7B-Instruct-bnb-4bit for classification",
+      "body": "A user reported fine-tuning Qwen2.5-7B-Instruct-bnb-4bit with LoRA for a classification task using about 3,000 training samples. Their LoRA setup included r=16, lora_alpha=16, lora_dropout=0, bias='none', and gradient checkpointing set to \"unsloth\". Training arguments specified a per-device batch size of 2 with gradient accumulation of 16, three epochs, a learning rate of 2e-4, and mixed precision (fp16 or bf16 depending on hardware), optimized with adamw_8bit.\n\nDespite this, the model produces gibberish output roughly 40% of the time during prediction on test data after tuning. Since the cause is unclear, a key question is which diagnostic checks or metrics would best help distinguish whether the issue stems from data quality, LoRA hyperparameters, precision mode, or training stability. For example, would monitoring loss curves for overfitting or underfitting, validating data preprocessing consistency, or testing different precision settings provide useful insights? Clarifying these could help isolate the root cause in this documented configuration.",
+      "fact_refs": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05"
+      ]
+    }
+  ]
+}

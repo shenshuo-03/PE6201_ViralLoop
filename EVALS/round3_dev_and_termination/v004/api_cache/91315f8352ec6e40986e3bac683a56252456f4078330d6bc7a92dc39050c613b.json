@@ -1,0 +1,19 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Set Up a Fully Local AI Coding Assistant in VS Code with Continue and MCP Integration",
+        "body": "For developers interested in local AI coding assistants, there's a detailed archived tutorial (dated 2025-06-16) explaining how to configure a fully local IDE environment using VS Code, the Continue extension, and MCP integration. This setup allows you to run an AI coding assistant without relying on remote APIs, enhancing privacy and control over your coding workflow. The Continue extension from the VS Code marketplace acts as the interface to your local LLM server, which can be hosted using OpenAI-compatible servers like those in Llama.cpp or LmStudio. Configuration involves adding files such as `.continue/models/llama-max.yaml` to connect Continue to a local Ollama model, and `.continue/mcpServers/playwright-mcp.yaml` to integrate tools like the Playwright browser automation tool with your assistant. While the tutorial assumes a technical background to follow the steps, it offers a comprehensive guide for those looking to take control of their coding copilot locally. For full setup instructions, see the tutorial here: https://huggingface.co/learn/mcp-course/unit2/continue-client",
+        "fact_refs": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ]
+      }
+    ]
+  },
+  "run_id": "v004-r0052"
+}

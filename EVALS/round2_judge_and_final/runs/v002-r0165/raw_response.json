@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109776-KFGsDPa7H6ypyAK9EK2D",
+  "object": "chat.completion",
+  "created": 1791109776,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"Tie\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"Tie\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"Tie\"\n  },\n  \"evidence\": \"Both A and B are identical in title, body text, and fact references. They present the same framing (archived 2025 Reddit post), preserve the same five facts with proper source attribution and uncertainty markers (\\\"noted,\\\" \\\"seen as,\\\" \\\"subjective impressions\\\"), ask identical follow-up questions to the community, and avoid forbidden claims about objective personality measurement or universal applicability. Neither invents missing details about task types, hardware, or model versions. Both appropriately flag the rate-limit constraint as a usage factor without overstating it. The posts are functionally equivalent in community fit (concrete question with clear audience relevance), specificity (exact model names and observed traits without fabrication), information value (organized comparison with actionable distinctions), usefulness (readers know what to contribute), and credibility (claims grounded in source with proper uncertainty). No substantive difference exists between the two drafts.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2179,
+    "completion_tokens": 279,
+    "total_tokens": 2458,
+    "cost": 0.003574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003574,
+      "upstream_inference_prompt_cost": 0.002179,
+      "upstream_inference_completions_cost": 0.001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

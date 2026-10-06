@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109622-0sto5ymRSHv8sdYMt684",
+  "object": "chat.completion",
+  "created": 1791109622,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"baseline\": {\n    \"title\": \"Introducing LettuceDetect: A Lightweight Hallucination Detector for RAG Pipelines\",\n    \"body\": \"Hallucinations remain a significant challenge in retrieval-augmented generation (RAG) pipelines, especially in specialized domains like medicine and law. Existing detection methods often face limitations such as restricted context window sizes, particularly with encoder-only models, and high inference costs due to reliance on large language models (LLMs). LettuceDetect is an open-source, encoder-based framework designed to flag hallucinated spans in LLM-generated answers without requiring an LLM. Built on ModernBERT, it can handle inputs up to 4,000 tokens and achieves 79.22% F1 on the RAGTruth benchmark. Licensed under MIT, LettuceDetect includes Python packages, pretrained models, and a Hugging Face demo. Community feedback is sought to explore its potential applications and ideas for real-time hallucination detection in local RAG setups.\",\n    \"fact_refs\": [\"F1\"]\n  },\n  \"alternatives\": [\n    {\n      \"dimension\": \"community_fit\",\n      \"draft\": {\n        \"title\": \"Overview of a New Hallucination Detection Tool\",\n        \"body\": \"Hallucinations are a known issue in RAG pipelines, particularly in complex fields. Some detection methods have limitations like small context windows and high inference costs. LettuceDetect is an open-source framework that flags hallucinated spans in generated answers without needing an LLM. It is based on an encoder model and can process long inputs. The tool is available with Python packages and pretrained models under an open license. Feedback on its use and potential improvements is welcome.\",\n        \"fact_refs\": [\"F1\"]\n      },\n      \"design_reason\": \"This version removes the direct call for community engagement and specific references to the audience's interests, making it less purpose-driven and more informational.\"\n    },\n    {\n      \"dimension\": \"specificity\",\n      \"draft\": {\n        \"title\": \"Introducing an Open-Source Hallucination Detector for RAG Pipelines\",\n        \"body\": \"Hallucinations are a major challenge in retrieval-augmented generation pipelines, especially in specialized domains. Current detection methods can be limited by context window size and incur high inference costs due to reliance on large language models. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It is built on a modern encoder model and can handle inputs up to several thousand tokens. The tool achieves strong benchmark performance and is available with Python packages, pretrained models, and an online demo under an open-source license. Community feedback is encouraged to explore its applications and real-time detection possibilities.\",\n        \"fact_refs\": [\"F1\"]\n      },\n      \"design_reason\": \"This variant replaces exact identifiers like 'ModernBERT', '4K tokens', 'MIT license', and 'RAGTruth benchmark' with more general terms to reduce specificity while preserving factual content.\"\n    },\n    {\n      \"dimension\": \"information_value\",\n      \"draft\": {\n        \"title\": \"LettuceDetect: A Tool for Detecting Hallucinations in RAG Pipelines\",\n        \"body\": \"Hallucinations are a significant problem in retrieval-augmented generation pipelines, especially in complex domains. Existing detection methods can be limited by context window size and high inference costs. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It supports long input sequences and is available under an open license with accompanying software and models. Feedback on its use and potential for real-time detection is welcomed.\",\n        \"fact_refs\": [\"F1\"]\n      },\n      \"design_reason\": \"This version removes specific performance metrics and detailed tool features, retaining only the core facts to reduce the information value while keeping the factual basis.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1602,
+    "completion_tokens": 800,
+    "total_tokens": 2402,
+    "cost": 0.0019208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019208,
+      "upstream_inference_prompt_cost": 0.0006408,
+      "upstream_inference_completions_cost": 0.00128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

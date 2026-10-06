@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112971-toQ1baSvxPGu3HfPlcyM",
+  "object": "chat.completion",
+  "created": 1791112971,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly names the specific test result (date calculation accuracy comparison) and anchors the question to concrete observed differences: the merged model calculated 19,121 days correctly while DeepSeek-R1-Distill-Qwen-32B returned 19,486 (incorrect). This grounds community_fit by offering a concrete performance distinction locals can investigate. Draft B asks the same question but omits the actual test outcomes entirely—it mentions 'date calculations' generically without stating what either model produced, reducing specificity and information_value. Both preserve F1, F2 and avoid forbidden claims, but A's inclusion of F4 and F5 (the actual numerical results) makes it actionable: readers know exactly what performance gap was observed and can test whether it replicates. Draft B's vague 'practical differences' invitation is weaker because it doesn't show readers what to look for. Credibility is tied because both correctly attribute findings to user-reported tests and acknowledge limited environment detail. A's superior specificity and concrete evidence make it more worth posting to a community seeking optimization insights.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2599,
+    "completion_tokens": 318,
+    "total_tokens": 2917,
+    "cost": 0.004189,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004189,
+      "upstream_inference_prompt_cost": 0.002599,
+      "upstream_inference_completions_cost": 0.00159
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

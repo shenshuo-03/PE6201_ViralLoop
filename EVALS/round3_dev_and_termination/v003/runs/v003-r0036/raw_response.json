@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118681-H6BE0pOBsDxUPqhka53k",
+  "object": "chat.completion",
+  "created": 1791118681,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"brief\": {\n    \"topic\": \"Local LLM Application Development\",\n    \"audience\": \"r/LocalLLaMA readers\",\n    \"posting_intent\": \"Seeking community advice on choosing between different UI approaches for a local LLM application, based on hypothetical feature sets.\",\n    \"speaker_role\": \"community member seeking help with explicitly hypothetical product decision, not source author\",\n    \"current_user_goal\": \"To decide on the most user-friendly and efficient UI structure for a new local LLM application.\",\n    \"current_decision\": \"Evaluating whether to implement a tabbed chat interface or a single-chat interface with saved chat history.\",\n    \"desired_help\": \"Community members' opinions on the pros and cons of tabbed chat interfaces versus single-chat interfaces with persistent storage for local LLM applications, considering ease of use and feature management.\",\n    \"scenario_origin\": \"controlled_hypothetical\",\n    \"experimental_user_scenario\": \"A user is developing a new local LLM application and is deciding between two UI paradigms: one with tabbed chats (each with independent system prompts and settings) and another with a single chat interface that saves all conversations persistently in a sidebar. The user wants to understand which approach might be more intuitive for users experimenting with different models or prompts.\",\n    \"context\": \"The user is inspired by the development of local LLM applications and is considering UI design choices for their own hypothetical project. They are weighing the benefits of organized, separate chat sessions versus a consolidated history.\",\n    \"facts\": [\n      {\n        \"id\": \"F1\",\n        \"text\": \"The Sigil application features tabbed chats, where each tab independently remembers its system prompt and sampling settings.\",\n        \"evidence_quote\": \"Tabbed chats - each tab remembers its system prompt and sampling settings\",\n        \"status\": \"historical author report\"\n      },\n      {\n        \"id\": \"F2\",\n        \"text\": \"Sigil also offers persistent storage for saved chats, which are displayed in a sidebar and can be deleted non-destructively.\",\n        \"evidence_quote\": \"Persistent storage - saved chats show up in a sidebar, deletions are non-destructive\",\n        \"status\": \"historical author report\"\n      },\n      {\n        \"id\": \"F3\",\n        \"text\": \"The developer of Sigil aimed for the app to feel like a 'real app' rather than a demo, emphasizing speed and a minimal, easy-to-run interface.\",\n        \"evidence_quote\": \"Sigil’s meant to feel more like a real app than a demo — it’s fast, minimal, and easy to run.\",\n        \"status\": \"historical author report\"\n      },\n      {\n        \"id\": \"F4\",\n        \"text\": \"Sigil is built for HuggingFace models and functions offline.\",\n        \"evidence_quote\": \"Built for HuggingFace models and works offline\",\n        \"status\": \"historical author report\"\n      },\n      {\n        \"id\": \"F5\",\n        \"text\": \"The developer encourages others to use parts of their project for their own initiatives.\",\n        \"evidence_quote\": \"If there is anything from my project that you want to take for your own, please don't hesitate to take it!\",\n        \"status\": \"historical author report\"\n      },\n      {\n        \"id\": \"F6\",\n        \"text\": \"Sigil supports proper formatting for lists and markdown-style outputs.\",\n        \"evidence_quote\": \"Proper formatting support - lists and markdown-style outputs render cleanly\",\n        \"status\": \"historical author report\"\n      }\n    ],\n    \"limitations\": [\n      \"The user is not an owner of any specific equipment.\",\n      \"The user does not hold any particular job title.\",\n      \"No specific measurements or performance metrics are being considered.\",\n      \"No personal experience or success stories are being shared or invented.\",\n      \"The scenario is purely hypothetical and for the purpose of gathering community input on UI design principles.\"\n    ],\n    \"allowed_claims\": [\n      \"Discussion of UI/UX principles for local LLM applications.\",\n      \"Comparison of tabbed interfaces versus single-interface with persistent history.\",\n      \"Consideration of user experience for experimentation with LLMs.\",\n      \"Reference to features present in the Sigil application as examples.\"\n    ],\n    \"forbidden_claims\": [\n      \"Claims of ownership of Sigil or any other software.\",\n      \"Statements about personal success or failure in using local LLMs.\",\n      \"Invented technical specifications or performance benchmarks.\",\n      \"Any claims that are not directly related to the hypothetical user task and the provided source context.\"\n    ]\n  },\n  \"corrections\": [],\n  \"scenario_pass\": true,\n  \"source_pass\": true\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1484,
+    "completion_tokens": 1055,
+    "total_tokens": 2539,
+    "cost": 0.0030827,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030827,
+      "upstream_inference_prompt_cost": 0.0004452,
+      "upstream_inference_completions_cost": 0.0026375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

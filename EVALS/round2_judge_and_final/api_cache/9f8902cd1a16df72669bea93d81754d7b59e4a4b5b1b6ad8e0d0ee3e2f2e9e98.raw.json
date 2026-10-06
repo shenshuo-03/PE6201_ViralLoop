@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112215-YOSxVYxO9FEChnoGwZHa",
+  "object": "chat.completion",
+  "created": 1791112215,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Local or Free TTS for Short American English Dialogues with Gender Voice Options?\",\"body\":\"A user reported trying Coqui TTS (XTTS v2) locally for generating short dialogues between two speakers with natural American English accents, hoping to switch speaker genders (male/male, male/female, female/female). However, they found the output quality poor and are seeking alternatives beyond online services like ElevenLabs. Given their lack of programming experience and reliance on step-by-step guides, are there any known local or free TTS tools that handle multi-speaker dialogues with distinct, natural-sounding American English voices and flexible gender configuration? Insights on ease of setup and voice quality tradeoffs would be especially helpful.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]},{\"title\":\"Seeking Local TTS Solutions for Multi-Gender American English Dialogue Generation\",\"body\":\"A Reddit user shared difficulty achieving good quality with Coqui TTS (XTTS v2) for short two-speaker dialogues in natural American English, wanting to switch between male and female voices. They’ve used ElevenLabs online but want local or free options due to quality and privacy concerns. Since they’re new to programming and followed ChatGPT’s setup instructions for Coqui TTS, are there accessible local TTS projects or open-source models that support multi-speaker conversations with configurable genders and deliver clearer, more natural American English speech? Any recommendations on balancing voice quality and ease of use would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]},{\"title\":\"Alternatives to Coqui TTS for Natural American English Dialogues with Gender Voice Control?\",\"body\":\"According to a 2025 Reddit post, a user needed a local TTS system capable of producing short dialogues between two speakers with natural American English accents and flexible gender voice options. They installed Coqui TTS (XTTS v2) locally but found its output \\\"pretty terrible\\\" for reading text. Having tried ElevenLabs online, they seek local or free alternatives that can handle male/male, male/female, and female/female speaker combinations without requiring programming skills. Does anyone know of local TTS tools or open-source projects that meet these criteria, especially for straightforward short dialogues? How do these alternatives compare in voice quality and user-friendliness?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1992,
+    "completion_tokens": 522,
+    "total_tokens": 2514,
+    "cost": 0.001632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001632,
+      "upstream_inference_prompt_cost": 0.0007968,
+      "upstream_inference_completions_cost": 0.0008352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

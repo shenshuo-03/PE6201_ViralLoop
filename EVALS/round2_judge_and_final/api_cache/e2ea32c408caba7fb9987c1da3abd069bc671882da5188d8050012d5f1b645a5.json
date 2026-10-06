@@ -1,0 +1,60 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Can a local LLM trained solely on the 2018 International Building Code effectively analyze floor plans compared to cloud models?",
+        "body": "There's interest in training a local LLM exclusively on the 2018 International Building Code to provide building code analysis for floor plans. The key question is whether limiting the model to one detailed, technical document can yield focused and accurate responses, or if this approach might miss broader contextual understanding that cloud models like ChatGPT offer. Given that the input involves interpreting floor plans—complex visual data—how feasible is it for a local text-based model to handle this effectively? Could prompt engineering on a cloud model provide better results without the overhead of training a specialized local LLM? What are the real trade-offs between having a narrowly trained local model versus leveraging a broadly trained cloud AI with targeted prompts?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      {
+        "title": "Is training a local AI on one document like the 2018 Building Code practical for precise building code queries?",
+        "body": "A user wants to create a local AI trained only on the 2018 International Building Code to answer building code questions from floor plan inputs. The dilemma is whether this narrow focus can produce accurate and reliable data retrieval, or if relying on cloud models such as ChatGPT with carefully designed prompts is more practical. Given the complexity of building code interpretation and the unspecified nature of the floor plan input, does limiting training to a single document risk missing nuances? Would the effort and resources to train a local model justify potential gains in specificity, or is prompt engineering on cloud models a better path? Insights on this trade-off would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Local LLM on the 2018 Building Code vs. ChatGPT: Which better handles building code analysis from floor plans?",
+        "body": "There's a question about whether a local LLM trained strictly on the 2018 International Building Code can outperform or match cloud models like ChatGPT for building code analysis based on floor plans. The core issue is if restricting training data to a single, specialized document enables focused and accurate responses, or if cloud models with broader training and prompt engineering still hold an advantage. Considering the user is a layperson and details on training methods or prompt strategies are missing, what practical experiences or insights exist regarding this approach? Is it reasonable to expect a local model to handle such a technical domain effectively without extensive additional data or tooling?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0321",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:13:15.228521+00:00",
+    "tag": "O1:F03",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e2ea32c408caba7fb9987c1da3abd069bc671882da5188d8050012d5f1b645a5",
+    "actual_cost_usd": 0.0016468,
+    "budget_charge_usd": 0.0016468,
+    "reserved_upper_usd": 0.0086688,
+    "input_tokens": 1949,
+    "output_tokens": 542,
+    "latency_seconds": 4.189837799989618,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112390-9J9h07LfOH16tYTqYYJd",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

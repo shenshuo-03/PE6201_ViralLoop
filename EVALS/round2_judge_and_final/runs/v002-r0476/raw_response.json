@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112976-Hl2jKmmem36bkTh8f9Zh",
+  "object": "chat.completion",
+  "created": 1791112976,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"A\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"A\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Draft A preserves all five facts and explicitly acknowledges missing context (Open WebUI version, server specs, config details), grounding uncertainty appropriately. It invites both problem confirmation and debugging help. Draft B omits F1 (the 8.0 gguf quant detail) and F5 (cross-frontend success), reducing specificity and losing the key diagnostic signal that the model works elsewhere. However, B is more concise and directly frames the core actionable question—'thinking' stall with no workarounds found—making it more immediately relevant to community troubleshooting. A's longer framing risks feeling report-like despite its thoroughness. B's tighter focus on the specific stuck state and direct call for workarounds better matches the brief's goal of 'guidance or suggestions to resolve.' A's credibility is stronger due to full fact citation, but B's community fit is sharper: it avoids speculation about root cause and centers the practical problem. On balance, B's directness and audience-focused framing outweigh A's completeness, though A's methodical approach is defensible.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2097,
+    "completion_tokens": 320,
+    "total_tokens": 2417,
+    "cost": 0.003697,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003697,
+      "upstream_inference_prompt_cost": 0.002097,
+      "upstream_inference_completions_cost": 0.0016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

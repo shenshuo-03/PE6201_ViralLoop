@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101322-i74kUtzujcEJKDxRjONw",
+  "object": "chat.completion",
+  "created": 1791101322,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references the provided synthetic facts accurately. It emphasizes the limitations of using tokens per second alone and explicitly mentions unmeasured factors such as time to first token and answer quality. The title matches the body content well, and the post is well-structured and readable for the target audience. It avoids unsupported claims and maintains necessary caveats, making it credible and relevant. The post invites discussion on additional metrics, enhancing usefulness. The language is restrained and technical, with no clickbait elements.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and synthetic facts, explicitly stating the limitations of the benchmark and the unmeasured factors. The title is consistent with the body, focusing on benchmark limitations. The post is clear, well-organized, and uses appropriate technical language for the audience. It preserves all necessary caveats and does not overstate conclusions. The concluding question encourages engagement, adding to usefulness. There is no clickbait, and the credibility is strong due to careful wording and explicit hypothetical framing.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1154,
+    "completion_tokens": 420,
+    "total_tokens": 1574,
+    "cost": 0.0011336,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011336,
+      "upstream_inference_prompt_cost": 0.0004616,
+      "upstream_inference_completions_cost": 0.000672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

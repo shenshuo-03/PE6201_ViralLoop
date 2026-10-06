@@ -1,0 +1,13 @@
+# Byte-exact checkouts.
+#
+# The credibility of this repository rests on frozen evidence that is verified
+# by SHA-256 (see CODE/verify_frozen_evidence.py and
+# EVALS/FROZEN_EVIDENCE_MANIFEST.json).  With the default core.autocrlf=true,
+# Git rewrites line endings on checkout, so a clone on Windows would receive
+# different bytes from the author's working tree and the verification would
+# fail for reasons that have nothing to do with the experiments.
+#
+# Therefore: store every file exactly as it is on disk and never convert line
+# endings, in either direction.  "git clone" then reproduces the working tree
+# byte for byte, on any platform.
+* -text

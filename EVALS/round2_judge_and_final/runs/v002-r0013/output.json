@@ -1,0 +1,82 @@
+{
+  "brief": {
+    "topic": "Perplexity Testing of DeepSeek R1 Models",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "To understand the performance of DeepSeek R1 models with varying numbers of experts and compare them to distilled models, based on a limited perplexity test.",
+    "context": "A community member shared results from a short perplexity test conducted on DeepSeek R1 models with different expert counts, as well as some distilled models and a comparison model (Virtuoso-Medium-v2). The test was run on a subset of model blocks and with a specific block size.",
+    "motivation": "The source author's observations provide a starting point for discussing the practical implications of expert count on MoE models and comparing their performance against distilled versions and other models, acknowledging the limitations of the test.",
+    "desired_response": "A discussion about the implications of the source author's perplexity test results, considering the limitations and potential for further investigation into model performance.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The perplexity test only ran 8 blocks out of approximately 560, so it should be taken with a massive grain of salt.",
+        "evidence_quote": "First: This test only ran 8 blocks (out of ~560) so it should be taken with a massive grain of salt.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "Perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.",
+        "evidence_quote": "perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "The perplexity test was run with block size 512.",
+        "evidence_quote": "Perplexity test run with block size 512.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "The full DeepSeek R1 model, even with very aggressive quantization, seems to beat the normal distills until limited to 2 experts.",
+        "evidence_quote": "To the extent that we can actually trust these results, the full DS model even with very aggressive quantization seems to beat the normal distills until you limit it to 2 experts.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.",
+        "evidence_quote": "The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "Generating perplexity failed with NaNs when trying with 10 and 12 experts.",
+        "evidence_quote": "I tried with 10 and 12 experts and generating perplexity failed with NaNs.",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "The source author conducted a perplexity test on DeepSeek R1 models.",
+      "The test involved varying the number of experts in DeepSeek R1.",
+      "Distilled models and Virtuoso-Medium-v2 were included in the comparison.",
+      "The test had significant limitations, including a small number of blocks and potential unfairness to certain model types."
+    ],
+    "forbidden_claims": [
+      "The perplexity results represent definitive, verified performance metrics.",
+      "The test was exhaustive or scientifically rigorous.",
+      "The source author claims personal experience running these specific tests as a definitive benchmark.",
+      "The results are generalizable to all use cases or model configurations.",
+      "The source author experienced successful fixes or achieved specific performance goals."
+    ],
+    "essential_limitations": [
+      "The test was very short, running only 8 blocks out of approximately 560.",
+      "Perplexity may not be a suitable metric for chain-of-thought models.",
+      "The test is not considered scientific and should be used as a starting point for discussion.",
+      "The results are specific to the tested configurations and quantization levels.",
+      "The test was run on 2025-01-30 and may not reflect current model capabilities."
+    ],
+    "missing_information": [
+      "The exact hardware used for the test.",
+      "The specific command-line arguments used for the perplexity test, beyond the mention of `--override-kv deepseek2.expert_used_count=int:X`.",
+      "The full list of distilled models tested, beyond the legends provided.",
+      "The specific dataset used for the perplexity calculation.",
+      "The full perplexity scores for all tested expert counts and models, as some entries are missing or incomplete (e.g., 2 experts).",
+      "The reason for the NaN results with 10 and 12 experts."
+    ]
+  },
+  "corrections": [
+    "The 'facts' section was updated to ensure all evidence_quote values are exact and contiguous from the source text.",
+    "The 'essential_limitations' section was updated to include the specific source_date as a limitation, as per instructions.",
+    "The 'facts' section was updated to ensure the text accurately reflects the evidence_quote without interpretation or summarization."
+  ]
+}

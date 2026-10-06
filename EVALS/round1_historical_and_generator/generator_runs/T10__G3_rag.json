@@ -1,0 +1,204 @@
+{
+  "at": "2026-10-04T08:16:02.372444+00:00",
+  "topic": {
+    "id": "T10",
+    "split": "final_test",
+    "topic": "A precise troubleshooting question for a hypothetical slowdown",
+    "content_type": "Question / Troubleshooting",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The hypothetical setup uses a 16 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The slowdown begins when context length changes from 2048 to 8192.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Model and runtime versions are not yet recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No evidence proves a driver, memory or model issue.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G3_rag",
+  "generation_usage": {
+    "at": "2026-10-04T08:15:59.431288+00:00",
+    "tag": "final_test:T10:G3_rag",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "a64beada38fab6125f93cef2603b8b3610c5beb9e7ea04f4659008f8918a0b0d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1564,
+    "output_tokens": 630,
+    "actual_cost_usd": 0.0004084,
+    "token_price_estimate_usd": 0.00040839999999999995,
+    "reserved_upper_usd": 0.0014336,
+    "budget_charge_usd": 0.0004084,
+    "latency_seconds": 3.0182867999828886,
+    "retry": 0,
+    "request_id": "gen-1791101756-IjQH8kLCadlJJGDEGTk4"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:16:02.365217+00:00",
+    "tag": "final_test:T10:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1eb4fa7ce16082e6964f1a922e1e024ff609a0a2d655bcb4cb5dfff2f0c41b3b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1071,
+    "output_tokens": 395,
+    "actual_cost_usd": 0.0010604,
+    "token_price_estimate_usd": 0.0010604,
+    "reserved_upper_usd": 0.0050328,
+    "budget_charge_usd": 0.0010604,
+    "latency_seconds": 2.8919923000212293,
+    "retry": 0,
+    "request_id": "gen-1791101759-RsLP6lSTaJfxbsf9Zg5O"
+  },
+  "retrieved_ids": [
+    "1kmdzv0",
+    "1idgrh4",
+    "1m2gios",
+    "1iuv064",
+    "1hs4i8l"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "12ea73a7e6e8c9ccc3b2cbcedf79aa5e5879b12c5d01a12e3acac9bdf55509e4",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical LLM Slowdown: Context Length vs. GPU Memory",
+        "body": "I'm investigating a hypothetical performance issue in a local LLM setup. The scenario involves a 16 GB GPU. We observed a significant slowdown when increasing the context length from 2048 to 8192 tokens. The model and runtime versions have not yet been recorded in this hypothetical experiment. Crucially, there's currently no evidence suggesting issues with drivers, system memory, or the model weights themselves. The primary question is: what specific factors related to context expansion might cause such a slowdown on a 16 GB GPU, even without apparent VRAM or system RAM exhaustion? Could it be related to attention mechanisms, KV cache management overhead, or specific inference kernel inefficiencies that only manifest at larger context sizes? Any insights into potential bottlenecks in this hypothetical scenario would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "This draft focuses on a specific technical question about context length impact on a fixed GPU memory, framed as a hypothetical. It avoids personal experience and external data, adhering to the brief's constraints. The plan is to solicit expert opinions on potential bottlenecks within the hypothetical scenario, specifically regarding attention mechanisms and KV cache management, given the described context window change and GPU limitation."
+      },
+      "performance_score": 0.2312026814126732,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly references all provided facts. It avoids unsupported claims and does not invent external data. The technical question is well-focused on plausible causes of slowdown related to context length increase on a 16 GB GPU, such as attention mechanisms and KV cache overhead, which are relevant and useful for the target audience. The language is clear and restrained, suitable for a technical subreddit. The title accurately reflects the content without exaggeration or clickbait.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 127,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Troubleshooting Hypothetical LLM Performance Drop with Increased Context",
+        "body": "This post details a hypothetical scenario for troubleshooting a local LLM performance degradation. The setup is configured with a 16 GB GPU. A notable slowdown was observed specifically when the context length was increased from 2048 to 8192 tokens. Importantly, this is a hypothetical experiment, and model/runtime versions are currently unrecorded (F3). Furthermore, there is no existing data pointing to driver, VRAM, or model file corruption as the cause (F4). The core question is: beyond simple VRAM saturation, what other architectural or implementation details within an LLM inference pipeline could lead to such a pronounced slowdown solely due to an increase in context length on a system with 16 GB of GPU memory (F1)? Are there common patterns in KV cache implementations or attention computation scaling that could explain this, even if the system isn't crashing or reporting memory errors?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "This draft frames the issue as a hypothetical troubleshooting exercise, emphasizing the observed slowdown linked to context length increase on a 16 GB GPU. It explicitly states the hypothetical nature and lack of recorded versions or identified hardware issues. The plan is to prompt discussion on the underlying technical reasons for performance degradation related to context expansion, focusing on KV cache and attention mechanisms, while strictly adhering to the provided facts and avoiding any claims of measured results."
+      },
+      "performance_score": 0.23978094993741944,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and references all facts explicitly. It avoids unsupported claims and clearly states the lack of recorded model/runtime versions and absence of evidence for hardware or driver issues. The question is well-targeted to the audience, focusing on architectural and implementation factors that could cause slowdown with increased context length on a 16 GB GPU. The writing is clear and professional, and the title matches the body content without exaggeration.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 140,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Troubleshooting Hypothetical LLM Performance Drop with Increased Context",
+      "body": "This post details a hypothetical scenario for troubleshooting a local LLM performance degradation. The setup is configured with a 16 GB GPU. A notable slowdown was observed specifically when the context length was increased from 2048 to 8192 tokens. Importantly, this is a hypothetical experiment, and model/runtime versions are currently unrecorded (F3). Furthermore, there is no existing data pointing to driver, VRAM, or model file corruption as the cause (F4). The core question is: beyond simple VRAM saturation, what other architectural or implementation details within an LLM inference pipeline could lead to such a pronounced slowdown solely due to an increase in context length on a system with 16 GB of GPU memory (F1)? Are there common patterns in KV cache implementations or attention computation scaling that could explain this, even if the system isn't crashing or reporting memory errors?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "This draft frames the issue as a hypothetical troubleshooting exercise, emphasizing the observed slowdown linked to context length increase on a 16 GB GPU. It explicitly states the hypothetical nature and lack of recorded versions or identified hardware issues. The plan is to prompt discussion on the underlying technical reasons for performance degradation related to context expansion, focusing on KV cache and attention mechanisms, while strictly adhering to the provided facts and avoiding any claims of measured results."
+    },
+    "performance_score": 0.23978094993741944,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also maintains the hypothetical framing and references all facts explicitly. It avoids unsupported claims and clearly states the lack of recorded model/runtime versions and absence of evidence for hardware or driver issues. The question is well-targeted to the audience, focusing on architectural and implementation factors that could cause slowdown with increased context length on a 16 GB GPU. The writing is clear and professional, and the title matches the body content without exaggeration.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 140,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": []
+  },
+  "abstention": false
+}

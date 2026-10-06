@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101018-Vb3SzHJegThSk1aJmDgf",
+  "object": "chat.completion",
+  "created": 1791101018,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Detailed release notes with multiple features and bug fixes; moderate similarity to a high-class example; discussion type post.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.35,\n      \"reason\": \"Research-oriented post seeking community input; question type; similar examples include high-class posts about tools and usage.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.25,\n      \"reason\": \"Basic question about model reasoning; discussion type; similar examples lean slightly towards high but overall uncertain.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.5,\n      \"reason\": \"Comprehensive benchmark summary with detailed data; experience/benchmark type; similar examples are high-class.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.25,\n      \"reason\": \"Community resource sharing post; discussion/opinion type; similar examples mostly not high.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Experience sharing with setup and tips; experience/benchmark type; similar examples mixed but some high.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.3,\n      \"reason\": \"Detailed hardware cooling experience; experience/benchmark type; similar examples include high-class posts.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.25,\n      \"reason\": \"Question about hardware needs; question/troubleshooting type; similar examples mostly not high.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6649,
+    "completion_tokens": 369,
+    "total_tokens": 7018,
+    "cost": 0.00325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00325,
+      "upstream_inference_prompt_cost": 0.0026596,
+      "upstream_inference_completions_cost": 0.0005904
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

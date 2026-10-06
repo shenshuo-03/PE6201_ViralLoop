@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101505-gpnXwZLbu16qFQbfN5Qf",
+  "object": "chat.completion",
+  "created": 1791101505,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Prompt Regression Test Design: Comparing Old vs. New Prompts\",\n    \"body\": \"This post outlines a hypothetical design for a prompt regression test. The goal is to compare the performance of an existing prompt set against a new set using a consistent model configuration. We will use a fixed suite of 12 test prompts, covering both cases where answers are expected and where the provided information is insufficient to form an answer. The comparison methodology involves running both the old and new prompt sets against the same model, using identical settings to isolate the prompt's impact. It's crucial to note that this is a hypothetical experiment, and no actual performance improvement results are available at this stage. The focus is on the methodology for setting up such a test. We aim to establish a baseline for future evaluation. The next step would be to execute these tests and analyze the outputs. Any insights on structuring such a regression test, especially concerning the handling of insufficient information cases, would be valuable.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Outline a hypothetical prompt regression test. Detail the comparison method using fixed prompts and model settings. Explicitly state the hypothetical nature and lack of results. Invite discussion on methodology.\"\n  },\n  {\n    \"title\": \"Designing a Hypothetical Prompt Regression Test Framework\",\n    \"body\": \"I'm exploring the design for a hypothetical prompt regression test. The objective is to rigorously evaluate changes in prompt engineering by comparing a current set of prompts against a revised set. This hypothetical framework would utilize a fixed dataset of 12 test prompts, designed to include scenarios with clear answers and others where the information provided is insufficient for a definitive response. The core of the test involves running both prompt sets on the same model, maintaining identical model settings and parameters. This approach ensures that any observed differences can be attributed to the prompt variations themselves. It's important to emphasize that this is a conceptual exercise; no actual tests have been run, and therefore, no performance improvements or regressions have been measured or observed. The current stage is purely about defining the testing methodology. Future steps would involve execution and analysis. I'm interested in feedback on this proposed test design, particularly regarding the structure for handling insufficient information cases within a regression context.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Propose a hypothetical prompt regression test design. Emphasize the comparative methodology with fixed prompts and model settings. Clearly state the hypothetical nature and absence of measured results. Seek discussion on the test framework design.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1080,
+    "completion_tokens": 566,
+    "total_tokens": 1646,
+    "cost": 0.0003344,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003344,
+      "upstream_inference_prompt_cost": 0.000108,
+      "upstream_inference_completions_cost": 0.0002264
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

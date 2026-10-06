@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is better because it directly asks about the specific tools (vLLM and Ollama) and models (Mistral) mentioned in the brief, retaining the user's motivation for easy installation. Post B is more generic, referring to 'a performance-focused runtime' and 'another runtime' which reduces specificity and direct relevance to the user's stated problem. Post A also more clearly articulates the conflict between the Apache 2.0 license and the access requirements, directly referencing the user's concern about sharing contact information and the goal of easy installation. Both posts cite the same facts, but Post A's framing is more aligned with the original query's details and intent."
+    },
+    "usage": {
+      "run_id": "v002-r0081",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:27.574002+00:00",
+      "tag": "judge_calibration:CP02:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "faa10b5aa4507c3e08563bc7545411fa86afa6088aae9a2c831552822518de29",
+      "actual_cost_usd": 0.0003261,
+      "budget_charge_usd": 0.0003261,
+      "reserved_upper_usd": 0.0013535,
+      "input_tokens": 2409,
+      "output_tokens": 213,
+      "latency_seconds": 1.4470644999819342,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109645-sOpt7Ii1Cr5xjTBwHBc8",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it more directly addresses the user's specific problem and question, mentioning vLLM and Ollama by name in the title and body, and clearly articulating the conflict between the Apache 2.0 license and the Hugging Face token requirement. Post A is more generic in its title and phrasing, making it less immediately relevant to the user's specific technical dilemma. Both posts effectively use the provided facts and maintain credibility by referencing the source information."
+    },
+    "usage": {
+      "run_id": "v002-r0082",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:28.897267+00:00",
+      "tag": "judge_calibration:CP02:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "acaac5db08c25595947dfd2fcb016121a226e1d00edefd97d0ef06bff8d84b48",
+      "actual_cost_usd": 0.0003077,
+      "budget_charge_usd": 0.0003077,
+      "reserved_upper_usd": 0.0013535,
+      "input_tokens": 2409,
+      "output_tokens": 167,
+      "latency_seconds": 1.2978734000062104,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109647-LtrwIV2Oql3zUnZY0TdZ",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

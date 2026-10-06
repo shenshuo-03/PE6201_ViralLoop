@@ -1,0 +1,91 @@
+{
+  "value": {
+    "topic": "Llama.cpp HTTP Server File Upload Functionality",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Understanding the functionality of the file-upload button in llama.cpp's HTTP server and how it processes file content in relation to user prompts.",
+    "context": "A user is inquiring about the behavior of the file-upload feature within the llama.cpp HTTP server, specifically how it interacts with direct prompts and whether it can be used to query the content of uploaded files.",
+    "motivation": "This question is worth discussing to clarify the intended purpose and observed behavior of a specific feature in a popular local LLM tool, which could impact how users interact with and leverage uploaded documents for querying.",
+    "desired_response": "An explanation of what the file-upload button in llama.cpp's HTTP server does, how it handles file content when combined with prompts, and potential reasons for inconsistent responses when querying file contents.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The user suspects the file upload might concatenate the file content with the direct prompt, treating the combined text as the prompt.",
+        "evidence_quote": "Does it simply concatenate the file and my direct prompt, treating the concatenation as the prompt?",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The user's goal is to ask questions about the contents of an uploaded file.",
+        "evidence_quote": "What I want to do is to ask questions about a file's contents.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "In the source author's experiments, questions about file contents were sometimes answered correctly.",
+        "evidence_quote": "In my 15 experiments, sometimes the question about the file's contents is correctly answered.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "In some instances during the source author's tests, the model interpreted the file's contents instead of the user's query.",
+        "evidence_quote": "But sometimes it interprets the contents of the file instead of my query.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "The user desires reproducible results, meaning the same prompts should yield the same answers when starting a new conversation.",
+        "evidence_quote": "I would like the result to be reproducable, ie when I open a new conversation, giving it the same prompts, I would like to get the same answers",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "The llama.cpp HTTP server has a file-upload button.",
+      "Users may want to query the contents of uploaded files.",
+      "Observed behavior includes the model sometimes answering questions about file contents correctly.",
+      "Observed behavior includes the model sometimes interpreting file contents instead of the user's query.",
+      "Reproducibility of LLM responses is a desired feature."
+    ],
+    "forbidden_claims": [
+      "The file upload feature is confirmed to concatenate prompts and file content.",
+      "The specific model version (llama 3.2 3B Q4_K_S) is definitively the cause of unreliable results.",
+      "The exact mechanism of how the file upload works is known.",
+      "The source author achieved reproducible results.",
+      "The source author successfully fixed the observed issues."
+    ],
+    "essential_limitations": [
+      "The exact behavior of the file-upload button in llama.cpp's HTTP server is not definitively known.",
+      "The specific model version used by the source author is mentioned but its direct impact on the observed issues is speculative.",
+      "The number of experiments (15) is noted, but the conditions and scope of these experiments are not detailed.",
+      "The source author's observations are not independently verified.",
+      "The desired reproducibility has not been achieved by the source author."
+    ],
+    "missing_information": [
+      "The precise technical implementation of the file-upload functionality in llama.cpp's HTTP server.",
+      "Details on how the server processes and combines file content with user prompts.",
+      "Specific configurations or settings used by the source author.",
+      "The exact nature of the files uploaded during the experiments.",
+      "The specific queries made by the source author.",
+      "The criteria for determining if a response was 'correctly answered' or if the model 'interpreted the contents of the file instead of my query'."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0001",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:05:46.236754+00:00",
+    "tag": "brief_builder:D01",
+    "phase": "naturalness",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "d67a1f3ef170f874f227501e69c5c6f812f143b4945469dc32f329d6d34f70dd",
+    "actual_cost_usd": 0.0005159,
+    "budget_charge_usd": 0.0005159,
+    "reserved_upper_usd": 0.0011112,
+    "input_tokens": 743,
+    "output_tokens": 1104,
+    "latency_seconds": 4.285186100023566,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108342-KOBlUNlVefqVfEMAxNsG",
+    "contract_sha256": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304"
+  }
+}

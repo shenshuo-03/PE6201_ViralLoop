@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121667-6yPbnig27eInRFnlgAB7",
+  "object": "chat.completion",
+  "created": 1791121667,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Troubleshooting Gibberish Output After LoRA Fine-Tuning Qwen2.5-7B-Instruct-bnb-4bit for Classification\",\"body\":\"A user reported fine-tuning Qwen2.5-7B-Instruct-bnb-4bit with LoRA on a classification task using about 3,000 training samples. Their LoRA setup included r=16, lora_alpha=16, lora_dropout=0, bias set to \\\"none\\\", and gradient checkpointing configured as \\\"unsloth\\\" to optimize VRAM usage. Training arguments featured a per-device batch size of 2 with gradient accumulation of 16, max gradient norm 0.3, 3 epochs, learning rate 2e-4, conditional use of fp16 or bf16 precision depending on hardware support, and the adamw_8bit optimizer. Despite this, the user observed that the model produced gibberish characters roughly 40% of the time during test predictions post-tuning. Given this detailed configuration, which diagnostic steps or checks would be most informative to isolate whether the issue stems from data quality, LoRA parameter settings, training stability, or precision mode? The source does not provide a resolution, so targeted diagnostics are essential to distinguish possible causes in setups like this.\",\"fact_refs\":[\"F01\",\"F02\",\"F03\",\"F04\",\"F05\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2593,
+    "completion_tokens": 289,
+    "total_tokens": 2882,
+    "cost": 0.0014996,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014996,
+      "upstream_inference_prompt_cost": 0.0010372,
+      "upstream_inference_completions_cost": 0.0004624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

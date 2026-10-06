@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100960-GYDAXjxbZRF8GHYhpwWF",
+  "object": "chat.completion",
+  "created": 1791100960,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Niche anime dataset question with some community engagement potential but limited broad appeal.\"},{\"index\":1,\"probability\":0.4,\"reason\":\"Tutorial on training LLMs from social media comments, relevant and practical but somewhat common topic.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Benchmarking local models for instruction following is specialized and technical, moderate interest.\"},{\"index\":3,\"probability\":0.3,\"reason\":\"Hardware comparison discussion is practical but less likely to reach high score without strong opinions or novel insights.\"},{\"index\":4,\"probability\":0.45,\"reason\":\"Benchmark results with clear metrics and cost savings likely to attract attention in technical community.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Thoughtful conceptual post on AI paradigm shifts, appeals to deeper AI community but less broad.\"},{\"index\":6,\"probability\":0.35,\"reason\":\"Performance troubleshooting for large model on specific hardware, niche but relevant to practitioners.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Technical pattern for local agent tooling integration, useful but somewhat niche and detailed.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5748,
+    "completion_tokens": 251,
+    "total_tokens": 5999,
+    "cost": 0.0027008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0027008,
+      "upstream_inference_prompt_cost": 0.0022992,
+      "upstream_inference_completions_cost": 0.0004016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

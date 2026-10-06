@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112605-poUtf0qAwQM03jomHYHD",
+  "object": "chat.completion",
+  "created": 1791112605,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"The draft accurately reflects the source and brief, adhering to all constraints. It poses relevant questions about LLM capabilities in artistic interpretation, specifically referencing the Deepseek R1 example and the limitations mentioned in the brief. The community fit is good as it directly asks about local LLM experimentation. Specificity is good by mentioning the model and song. Information value is good due to the focused questions. Clarity and usefulness are high. Credibility is good as it grounds the discussion in the provided source. Clickbait is low.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"This draft also accurately reflects the source and brief, meeting all requirements. It effectively uses the Deepseek R1 example to question the depth of AI thematic analysis and asks specific, relevant questions to the local LLM community about evaluating such outputs. Community fit is strong due to the direct engagement with local LLM users. Specificity is good by naming the model and song. Information value is high due to the focused questions on evaluation methods. Clarity and usefulness are excellent. Credibility is good as it's based on the provided source and brief.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2746,
+    "completion_tokens": 431,
+    "total_tokens": 3177,
+    "cost": 0.000447,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000447,
+      "upstream_inference_prompt_cost": 0.0002746,
+      "upstream_inference_completions_cost": 0.0001724
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

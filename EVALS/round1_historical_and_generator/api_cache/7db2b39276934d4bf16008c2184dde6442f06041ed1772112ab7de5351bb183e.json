@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly and accurately presents the hypothetical TTFT values and explicitly states the scenario is hypothetical with no real measurements. It preserves all necessary caveats about the lack of throughput, accuracy, and statistical data. The language is technical and restrained, suitable for the target audience. The title matches the body content well. The post is relevant and credible given the scenario, though usefulness is moderate since it only presents synthetic data without actionable insights."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all required caveats about the synthetic nature of the data and absence of other metrics. The title is consistent with the body and clearly states the key parameters. The writing is clear and technical, appropriate for the audience. Like the first draft, it is relevant and credible but only moderately useful due to the lack of real data or actionable conclusions."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:47:43.689121+00:00",
+    "tag": "tune_dev:D02:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7db2b39276934d4bf16008c2184dde6442f06041ed1772112ab7de5351bb183e",
+    "status": "success",
+    "input_tokens": 960,
+    "output_tokens": 377,
+    "actual_cost_usd": 0.0009872,
+    "token_price_estimate_usd": 0.0009872000000000001,
+    "reserved_upper_usd": 0.004786,
+    "budget_charge_usd": 0.0009872,
+    "latency_seconds": 2.8729647000000114,
+    "retry": 0,
+    "request_id": "gen-1791100061-rtE4tI0ZNQ4eKioXCogj"
+  },
+  "raw_response": {
+    "id": "gen-1791100061-rtE4tI0ZNQ4eKioXCogj",
+    "object": "chat.completion",
+    "created": 1791100061,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly and accurately presents the hypothetical TTFT values and explicitly states the scenario is hypothetical with no real measurements. It preserves all necessary caveats about the lack of throughput, accuracy, and statistical data. The language is technical and restrained, suitable for the target audience. The title matches the body content well. The post is relevant and credible given the scenario, though usefulness is moderate since it only presents synthetic data without actionable insights.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all required caveats about the synthetic nature of the data and absence of other metrics. The title is consistent with the body and clearly states the key parameters. The writing is clear and technical, appropriate for the audience. Like the first draft, it is relevant and credible but only moderately useful due to the lack of real data or actionable conclusions.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 960,
+      "completion_tokens": 377,
+      "total_tokens": 1337,
+      "cost": 0.0009872,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009872,
+        "upstream_inference_prompt_cost": 0.000384,
+        "upstream_inference_completions_cost": 0.0006032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

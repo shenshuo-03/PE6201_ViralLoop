@@ -1,6 +1,6 @@
 # Round 3 Explainer — Task Realism Failed, and the Round Was Stopped at Dev
 
-Working directories: `实验1.2版/v003` and `v004` → packaged as `CODE/round3_v003`, `CODE/round3_v004`, `EVALS/round3_dev_and_termination`.
+Round 3 workspaces (`v003` and `v004`) → packaged as `CODE/round3_v003`, `CODE/round3_v004`, `EVALS/round3_dev_and_termination`.
 
 ## What Round 3 asked
 

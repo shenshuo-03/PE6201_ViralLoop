@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the absence of actual measurements or quality/speed metrics, preserving scenario status and necessary caveats. The title matches the content well. The explanation is clear and technical, suitable for the target audience. The post provides actionable value by framing a discussion on resource planning, though it does not provide new data or conclusions. Credibility is high due to careful caveat inclusion and no unsupported claims. Clickbait is minimal, with a restrained and factual title."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly communicates the hypothetical nature and lack of actual measurements, preserving all necessary caveats. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It invites community discussion on factors influencing VRAM usage, providing moderate actionable value. No unsupported claims are made, and credibility is maintained by explicit disclaimers. The title is factual and not clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:08:00.275212+00:00",
+    "tag": "final_test:T02:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "269bd3b80ad24196f6922533edd3afd6b9d96fb3c57c2b0944c0551c75bca32e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1066,
+    "output_tokens": 394,
+    "actual_cost_usd": 0.0010568,
+    "token_price_estimate_usd": 0.0010567999999999999,
+    "reserved_upper_usd": 0.005033599999999999,
+    "budget_charge_usd": 0.0010568,
+    "latency_seconds": 3.032692600012524,
+    "retry": 0,
+    "request_id": "gen-1791101277-dxF7LZhOPIWDiUroHR9i"
+  },
+  "raw_response": {
+    "id": "gen-1791101277-dxF7LZhOPIWDiUroHR9i",
+    "object": "chat.completion",
+    "created": 1791101277,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly notes the absence of actual measurements or quality/speed metrics, preserving scenario status and necessary caveats. The title matches the content well. The explanation is clear and technical, suitable for the target audience. The post provides actionable value by framing a discussion on resource planning, though it does not provide new data or conclusions. Credibility is high due to careful caveat inclusion and no unsupported claims. Clickbait is minimal, with a restrained and factual title.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical nature and lack of actual measurements, preserving all necessary caveats. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It invites community discussion on factors influencing VRAM usage, providing moderate actionable value. No unsupported claims are made, and credibility is maintained by explicit disclaimers. The title is factual and not clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1066,
+      "completion_tokens": 394,
+      "total_tokens": 1460,
+      "cost": 0.0010568,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010568,
+        "upstream_inference_prompt_cost": 0.0004264,
+        "upstream_inference_completions_cost": 0.0006304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

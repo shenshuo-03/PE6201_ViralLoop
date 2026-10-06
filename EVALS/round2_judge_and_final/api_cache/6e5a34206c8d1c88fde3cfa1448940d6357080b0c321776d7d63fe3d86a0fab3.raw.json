@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109847-gK31XUrdfCSesBvgNYcj",
+  "object": "chat.completion",
+  "created": 1791109847,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both drafts preserve the core facts accurately and acknowledge limitations. Draft A reads as a neutral summary/recap—it reports the problem but doesn't create genuine community engagement. Draft B reframes the same facts as a direct question to the audience ('For those experienced with local OCR models, are there any compact models...?'), explicitly invites shared experience ('What tradeoffs...have you encountered?'), and acknowledges uncertainty about alternatives. This transforms it from a report into a post that motivates discussion and positions readers as potential contributors. Both maintain equal specificity (no invented details) and credibility (same fact references, same source caveats). Draft B's closing questions and framing of the gap ('it's unclear what alternatives might exist') give the community a concrete role—they can either recommend models or share their own tradeoff observations. Draft A's closing ('based on user reports rather than formal benchmarks') is accurate but passive, not inviting response. For a local LLM enthusiast community, B better matches the brief's goal of 'discussion and recommendations' rather than documentation.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2045,
+    "completion_tokens": 310,
+    "total_tokens": 2355,
+    "cost": 0.003595,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003595,
+      "upstream_inference_prompt_cost": 0.002045,
+      "upstream_inference_completions_cost": 0.00155
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

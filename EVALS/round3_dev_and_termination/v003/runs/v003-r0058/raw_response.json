@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118887-yi13QYAFY93fwzxIKrnr",
+  "object": "chat.completion",
+  "created": 1791118887,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The draft accurately reflects the speaker's hypothetical goals and questions, using appropriate attribution for historical facts. The translation preserves the meaning, tense, and hypothetical nature of the claims.\"\n    },\n    {\n      \"index\": 1,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The draft correctly frames the speaker's inquiry as hypothetical and attributes all factual statements to the source author's reports. The translation is accurate and maintains the original intent and context.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3984,
+    "completion_tokens": 261,
+    "total_tokens": 4245,
+    "cost": 0.0018477,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018477,
+      "upstream_inference_prompt_cost": 0.0011952,
+      "upstream_inference_completions_cost": 0.0006525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

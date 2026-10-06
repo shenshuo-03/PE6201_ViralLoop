@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and aligns well with the provided facts (30 documents, retrieval on/off, unanswerable questions, no actual results). The language is clear and technical, suitable for the target audience. It invites discussion on experimental design and pitfalls, which is useful and relevant. The title accurately reflects the content. The caveats about no real measurements are explicit, preserving scenario integrity. The post is credible and restrained, with no exaggeration or clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully represents the hypothetical scenario and includes all key facts. The writing is clear and technical, appropriate for the audience. It emphasizes the hypothetical nature and lack of actual metrics, preserving necessary caveats. The title matches the body content well. The post is relevant and useful for readers interested in RAG evaluation design. It is credible and avoids clickbait or unsupported claims."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:56:33.853869+00:00",
+    "tag": "selection_dev:S01:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "00f59f8773fb39e2992348a58ca3d18f99990e0aa2cf1ec6cb4c4a5ddee3b0c0",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1016,
+    "output_tokens": 387,
+    "actual_cost_usd": 0.0010256,
+    "token_price_estimate_usd": 0.0010256,
+    "reserved_upper_usd": 0.0049172,
+    "budget_charge_usd": 0.0010256,
+    "latency_seconds": 2.9265088999964064,
+    "retry": 0,
+    "request_id": "gen-1791100591-djZWHhqaMma1xl02Zsi4"
+  },
+  "raw_response": {
+    "id": "gen-1791100591-djZWHhqaMma1xl02Zsi4",
+    "object": "chat.completion",
+    "created": 1791100591,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and aligns well with the provided facts (30 documents, retrieval on/off, unanswerable questions, no actual results). The language is clear and technical, suitable for the target audience. It invites discussion on experimental design and pitfalls, which is useful and relevant. The title accurately reflects the content. The caveats about no real measurements are explicit, preserving scenario integrity. The post is credible and restrained, with no exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully represents the hypothetical scenario and includes all key facts. The writing is clear and technical, appropriate for the audience. It emphasizes the hypothetical nature and lack of actual metrics, preserving necessary caveats. The title matches the body content well. The post is relevant and useful for readers interested in RAG evaluation design. It is credible and avoids clickbait or unsupported claims.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1016,
+      "completion_tokens": 387,
+      "total_tokens": 1403,
+      "cost": 0.0010256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010256,
+        "upstream_inference_prompt_cost": 0.0004064,
+        "upstream_inference_completions_cost": 0.0006192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

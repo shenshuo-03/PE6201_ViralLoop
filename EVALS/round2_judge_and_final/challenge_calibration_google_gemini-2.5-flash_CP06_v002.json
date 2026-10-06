@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Uncertain",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Tie",
+    "overall": "Uncertain"
+  },
+  "swap_consistent": {
+    "community_fit": false,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": false,
+    "credibility": true,
+    "overall": false
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A directly asks the community for technical approaches and known methods to improve spatial reasoning, aligning with the 'desired response' and 'community_fit' criteria. Draft B is a recap without a clear call to action or specific question for the community. Both drafts accurately reference the facts, but A uses them to build a focused question, while B merely summarizes. Draft A's concluding questions directly address the 'problem_or_goal' and 'motivation' from the brief, making it more useful and relevant for the target audience."
+    },
+    "usage": {
+      "run_id": "v002-r0117",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:20.489227+00:00",
+      "tag": "judge_calibration:CP06:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "566bd99a1c46f54ab6dec37d8849a4c8f41f286bf0f37ea8e96d9f971430f339",
+      "actual_cost_usd": 0.0011708,
+      "budget_charge_usd": 0.0011708,
+      "reserved_upper_usd": 0.0047185000000000005,
+      "input_tokens": 2411,
+      "output_tokens": 179,
+      "latency_seconds": 1.8644526000134647,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109698-OcGSedeOIvBiyeSgrvlk",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A is more concise and directly presents the observations without adding speculative questions about 'technical approaches' or 'known methods' that are not grounded in the brief's facts, making it a more direct and less speculative summary of the provided information. Draft B's added questions, while framed as community engagement, introduce elements not directly supported by the brief's facts or the speaker's persona as a 'reader of archived source; no claim of personally running reported tests', making it less faithful to the 'reader' persona and more like an expert seeking solutions."
+    },
+    "usage": {
+      "run_id": "v002-r0118",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:22.272525+00:00",
+      "tag": "judge_calibration:CP06:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "4b825dcf8838b0721a110545abcd7615587a23e23c73e8ec885e1433905c27d2",
+      "actual_cost_usd": 0.0011308,
+      "budget_charge_usd": 0.0011308,
+      "reserved_upper_usd": 0.0047185000000000005,
+      "input_tokens": 2411,
+      "output_tokens": 163,
+      "latency_seconds": 1.7585172999824863,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109700-aYL9ZitG6U7vWqRP72vb",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash"
+}

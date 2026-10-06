@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "topic on VS code alternatives with chat-based workflow is moderately interesting but niche discussion"
+      },
+      {
+        "index": 1,
+        "probability": 0.7,
+        "reason": "detailed benchmark update with new models and leaderboard likely attracts high engagement from technical audience"
+      },
+      {
+        "index": 2,
+        "probability": 0.5,
+        "reason": "practical tutorial question about PyTorch and WebGPU model behavior may get moderate attention from ML practitioners"
+      },
+      {
+        "index": 3,
+        "probability": 0.4,
+        "reason": "announcement of small models with links is interesting but somewhat niche discussion"
+      },
+      {
+        "index": 4,
+        "probability": 0.45,
+        "reason": "tool for scraping with browser fingerprinting is a practical developer topic with moderate appeal"
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "beginner question about optimizing local AI usage on limited hardware may get some engagement but less technical depth"
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "community thread for sharing experiences with specific GPU cards and models likely moderate interest"
+      },
+      {
+        "index": 7,
+        "probability": 0.4,
+        "reason": "request for smallest efficient English model for semantic reasoning is a niche but relevant discussion"
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:31.209046+00:00",
+    "tag": "selection_dev:classifier:E5a_zero_shot:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "0f298732cc5d676dc5c17c28891e640fb3734a1fd4bb3a5cdbd8524e466d178b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2009,
+    "output_tokens": 244,
+    "actual_cost_usd": 0.001194,
+    "token_price_estimate_usd": 0.001194,
+    "reserved_upper_usd": 0.0057944,
+    "budget_charge_usd": 0.001194,
+    "latency_seconds": 1.9935476000100607,
+    "retry": 0,
+    "request_id": "gen-1791100769-VTj5QnsYhMeqS362AoqG"
+  },
+  "raw_response": {
+    "id": "gen-1791100769-VTj5QnsYhMeqS362AoqG",
+    "object": "chat.completion",
+    "created": 1791100769,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"topic on VS code alternatives with chat-based workflow is moderately interesting but niche discussion\"},{\"index\":1,\"probability\":0.7,\"reason\":\"detailed benchmark update with new models and leaderboard likely attracts high engagement from technical audience\"},{\"index\":2,\"probability\":0.5,\"reason\":\"practical tutorial question about PyTorch and WebGPU model behavior may get moderate attention from ML practitioners\"},{\"index\":3,\"probability\":0.4,\"reason\":\"announcement of small models with links is interesting but somewhat niche discussion\"},{\"index\":4,\"probability\":0.45,\"reason\":\"tool for scraping with browser fingerprinting is a practical developer topic with moderate appeal\"},{\"index\":5,\"probability\":0.35,\"reason\":\"beginner question about optimizing local AI usage on limited hardware may get some engagement but less technical depth\"},{\"index\":6,\"probability\":0.4,\"reason\":\"community thread for sharing experiences with specific GPU cards and models likely moderate interest\"},{\"index\":7,\"probability\":0.4,\"reason\":\"request for smallest efficient English model for semantic reasoning is a niche but relevant discussion\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2009,
+      "completion_tokens": 244,
+      "total_tokens": 2253,
+      "cost": 0.001194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001194,
+        "upstream_inference_prompt_cost": 0.0008036,
+        "upstream_inference_completions_cost": 0.0003904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

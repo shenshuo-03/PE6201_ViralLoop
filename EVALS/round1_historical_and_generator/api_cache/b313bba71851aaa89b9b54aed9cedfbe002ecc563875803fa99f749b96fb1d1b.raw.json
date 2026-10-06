@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101186-iv1BUcFJtAIEVr6VUg7z",
+  "object": "chat.completion",
+  "created": 1791101186,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all provided facts explicitly. It maintains a restrained, technical tone appropriate for the audience. The memory and accuracy figures are presented as estimates without implying real measured results or significance. The trade-off between memory usage and accuracy is well explained, making it relevant and moderately useful for readers considering quantization options. The title accurately reflects the content without exaggeration or sensationalism.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical nature and references all facts correctly. The language is clear and technical, suitable for the target audience. It emphasizes the memory versus accuracy trade-off and includes all necessary caveats about the lack of real benchmarking. The title matches the content well and is not clickbait. The post is relevant and provides moderate actionable insight by framing the trade-offs conceptually.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1027,
+    "completion_tokens": 374,
+    "total_tokens": 1401,
+    "cost": 0.0010092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010092,
+      "upstream_inference_prompt_cost": 0.0004108,
+      "upstream_inference_completions_cost": 0.0005984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

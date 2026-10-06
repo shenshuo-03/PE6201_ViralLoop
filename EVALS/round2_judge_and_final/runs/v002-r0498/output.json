@@ -1,0 +1,25 @@
+{
+  "drafts": [
+    {
+      "title": "How exactly does llama.cpp's HTTP server handle file-upload prompts? Seeking clarity on concatenation and query reliability",
+      "body": "I came across an archived Reddit post from May 2025 where a user experimented with llama.cpp's HTTP server file-upload button using the llama 3.2 3B Q4_K_S model. They suspected that the server might simply concatenate the uploaded file content with the direct prompt, treating both as a single prompt input. This led to inconsistent results: sometimes the model answered questions about the file correctly, but other times it seemed to interpret the entire file content as the query itself. The user also expressed a desire for reproducible answers when reopening conversations with the same prompts, which apparently wasn’t reliably achieved. Given these observations, does anyone have insights into how the file-upload button actually processes and integrates file data with user prompts? Are there known ways to structure or delimit inputs to improve consistency and reproducibility? Understanding this could help users reliably query file contents through llama.cpp's HTTP server interface.",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "Inconsistent query results with llama.cpp's file-upload button—How to get reproducible answers?",
+      "body": "An archived report from May 2025 described using the file-upload button in llama.cpp's HTTP server with the llama 3.2 3B Q4_K_S model. The author suspected that the file content and their prompt were concatenated into a single input, which sometimes caused the model to either answer questions about the file or misinterpret the file as the query itself. They noted that no model reliably handled this concatenation, resulting in unpredictable outputs. The user also wanted reproducible results when restarting conversations with the same prompts but found this difficult. Does anyone know how the file-upload button merges file data and prompts under the hood? Are there strategies or prompt formats that help ensure the model distinguishes between file content and queries, leading to stable, repeatable responses? Any practical tips or explanations would be appreciated to improve usability of this feature.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

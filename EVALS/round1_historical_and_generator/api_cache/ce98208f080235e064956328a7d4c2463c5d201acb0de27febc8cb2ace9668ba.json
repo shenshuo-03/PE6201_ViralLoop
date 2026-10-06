@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly and accurately describes the hypothetical test design scenario, referencing all key facts (F1-F4). It explicitly states the hypothetical nature and lack of measured results, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in prompt regression testing frameworks. No unsupported claims or exaggerations are present, and the tone is restrained without clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all required facts (F1-F4). It clearly states the conceptual nature and absence of measured improvements. The title aligns well with the body content. The writing is clear, technical, and appropriate for the audience. The post is relevant and actionable for those designing prompt regression tests. No unsupported claims or misleading statements are made, and the tone is professional and restrained."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:11:44.239863+00:00",
+    "tag": "final_test:T06:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ce98208f080235e064956328a7d4c2463c5d201acb0de27febc8cb2ace9668ba",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1001,
+    "output_tokens": 388,
+    "actual_cost_usd": 0.0010212,
+    "token_price_estimate_usd": 0.0010211999999999999,
+    "reserved_upper_usd": 0.004874399999999999,
+    "budget_charge_usd": 0.0010212,
+    "latency_seconds": 3.1981853999895975,
+    "retry": 0,
+    "request_id": "gen-1791101501-JtHbWS2DlN4RAA0lkltI"
+  },
+  "raw_response": {
+    "id": "gen-1791101501-JtHbWS2DlN4RAA0lkltI",
+    "object": "chat.completion",
+    "created": 1791101501,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly and accurately describes the hypothetical test design scenario, referencing all key facts (F1-F4). It explicitly states the hypothetical nature and lack of measured results, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in prompt regression testing frameworks. No unsupported claims or exaggerations are present, and the tone is restrained without clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all required facts (F1-F4). It clearly states the conceptual nature and absence of measured improvements. The title aligns well with the body content. The writing is clear, technical, and appropriate for the audience. The post is relevant and actionable for those designing prompt regression tests. No unsupported claims or misleading statements are made, and the tone is professional and restrained.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1001,
+      "completion_tokens": 388,
+      "total_tokens": 1389,
+      "cost": 0.0010212,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010212,
+        "upstream_inference_prompt_cost": 0.0004004,
+        "upstream_inference_completions_cost": 0.0006208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

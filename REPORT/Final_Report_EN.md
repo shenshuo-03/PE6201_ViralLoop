@@ -1,20 +1,20 @@
 # ViralLoop — A Fact-Constrained Community Post Drafting and Evaluation Prototype
 
 **PE6201 Emerging AI Technologies · End-of-Course Project · Final Report**
-Individual work · Shen Shuo · 987 words of prose (1,471 in total once tables, figure captions and headings are counted)
+Individual work · Shen Shuo · prose **1,183 words**, counted the inclusive way — every non-heading, non-table, non-caption line. Counting headings, table rows and figure captions as well gives 1,939. Both numbers are stated so the marker does not have to guess which convention was used; the 1,200-word cap applies to the prose.
 Repository: https://github.com/shenshuo-03/PE6201_ViralLoop (public)
 
 ---
 
 ## 1. The problem, and why it matters
 
-Every technical community has a minority of posts that a large audience reads, and a majority that nobody opens. The intuition behind this project was that the difference is not luck — it is *expert tacit judgement*: which detail is the hook, which fact is worth keeping, when a post is honest about its own limits. If that judgement is latent in historical content, it should be learnable and transferable.
+Every technical community has a minority of posts a large audience reads, and a majority nobody opens. The intuition behind this project was that the difference is not luck — it is *expert tacit judgement*: which detail is the hook, which fact is worth keeping, when a post is honest about its own limits. If that judgement is latent in historical content, it should be learnable and transferable.
 
 That intuition survived contact with the data. **What did not survive was the assumption that a learnable signal can be turned into a usable generator.**
 
 I framed the project as a closed loop: learn patterns from historical high-performing posts → predict performance → generate candidates → evaluate independently → feed the evaluation back. Three rounds of experiments later, the honest finding is that the loop did not pay for itself. This report explains why, using the real numbers.
 
-**Scope.** Out of scope from the start: automated publishing, cross-platform virality, commercial launch, fine-tuning foundation models, and any claim about real-world engagement. This is a research prototype, not a product claim.
+**Scope.** Out of scope: automated publishing, cross-platform virality, commercial launch, fine-tuning foundation models, and any claim about real-world engagement. This is a research prototype, not a product claim.
 
 ## 2. Why AI, and which kind
 
@@ -30,9 +30,11 @@ I chose **prompting a rented foundation model**, and deliberately climbed no hig
 | Setup | Multi-sample plus selector | Unproven, removed |
 | Setup | Motivation / engagement planner | Unproven, removed |
 
-Non-AI baselines were named and measured against, not skipped: a **lazy baseline** (always predict "not high-performing") and a **constant prior**. The course watch-out — that accuracy without a majority-class baseline says nothing — is exactly the trap this project avoided.
+Non-AI baselines were named and measured against, not skipped: a **lazy baseline** (always predict "not high-performing") and a **constant prior**. The course watch-out — accuracy without a majority-class baseline says nothing — is the trap this project avoided.
 
-Which parts stay rules: the **fact, identity and date checks** are deterministic and stay as rules, together with human confirmation. Only drafting is delegated to the model.
+Which parts stay rules: the **fact, identity and date checks** are deterministic, together with human confirmation. Only drafting is delegated to the model.
+
+**Build versus buy.** Each rung was judged on cost per call, latency, behavioural control and data exposure. Renting a hosted model won on cost and latency; building — fine-tuning, self-hosting, orchestration — lost, because no measured gain exceeded noise. The one component I built is where correctness had to be auditable rather than plausible: deterministic fact, date and identity checks.
 
 ## 3. Data
 
@@ -48,13 +50,13 @@ From 100,679 raw posts, a rule filter produced 20,019 candidates; stratified sam
 | Observation audit | 400 | 95.75% found at 36–38h age |
 | Final model data | 2,336 | After age-window filter and second clean |
 
-Two data problems were solved properly rather than ignored. **Observation age:** the raw file did not guarantee equal accumulation time, so `score` and `retrieved_on` were recovered from the same source and the window was fixed at 36–38 hours. **Leakage:** the label is built from post-publication `score`; the model never sees score, comments or any post-publication field. Splits are temporal: Train (Jan–Jul, 1,396), Tune (Aug–Sep, 398), Selection (Oct, 194), **Final (Nov–Dec, 348)**.
+Two data problems were solved rather than ignored. **Observation age:** the raw file did not guarantee equal accumulation time, so `score` and `retrieved_on` were recovered from the same source and the window fixed at 36–38 hours. **Leakage:** the label is built from post-publication `score`; the model never sees score, comments or any post-publication field. Splits are temporal: Train (Jan–Jul, 1,396), Tune (Aug–Sep, 398), Selection (Oct, 194), **Final (Nov–Dec, 348)**.
 
 `score` is a net-vote signal — not impressions, not clicks, not unique readers. The target is **relative high score within community and month**, not "viral".
 
 ## 4. Success metric and evaluation
 
-Primary metric: **Average Precision (AP)** on the held-out 348 historical posts, with Precision/Recall/F1 and accuracy alongside; AP because the positive class is a minority (~24.7%) and ranking matters more than the threshold.
+Primary metric: **Average Precision (AP)** on the held-out 348 historical posts, with Precision/Recall/F1 alongside; AP because the positive class is a minority (~24.7%) and ranking matters more than the threshold.
 
 | Model | P | R | F1 | AP |
 |---|---:|---:|---:|---:|
@@ -86,13 +88,13 @@ Round 1 generated 180 candidates across eight arms (G0 generic, G1 prompt, G2 fe
 
 The headline comparison — feedback versus equal-budget resampling — was **+0.0001395**, with a topic-bootstrap 95% interval of **[−0.0008932, +0.0009857]**. The interval contains zero. The independent historical auditor agreed: **−0.0146 [−0.0415, +0.0075]**, also containing zero.
 
-**Complexity did not buy anything measurable.** A score of 0.244 is *not* a 24.4% virality probability; it is a proxy from a model trained on a different distribution from generated text.
+**Complexity did not buy anything measurable.** A score of 0.244 is *not* a 24.4% virality probability; it is a proxy from a model trained on a different distribution.
 
 ![Proxy score and independent quality by generation arm](figures/generator_proxy_and_quality.png)
 
 *Figure 2 — The generation experiment in one picture. **Left:** mean selected E2 proxy score by arm — every arm, including RAG and the feedback loop, sits at ≈0.24, inside the interval that contains zero. **Right:** independent quality rating on a 1–5 scale — flat across arms, with the feedback arm (O2) reaching 4.20 against a 4.06–4.10 band. Neither view shows the ladder buying a usable gain, which is why the ladder was cut.*
 
-Crucially, while the automatic scores moved within noise, the **human reaction did not**. Reviewers said drafts were too abstract and did not look like real community posts. That gap — tidy automatic scores versus a human "I would not post this" — became the project's central observation.
+Crucially, while the automatic scores moved within noise, the **human reaction did not**. Reviewers said drafts were too abstract to look like real community posts. That gap — tidy automatic scores versus a human "I would not post this" — became the project's central observation.
 
 ## 6. The real bottlenecks
 
@@ -100,7 +102,9 @@ Crucially, while the automatic scores moved within noise, the **human reaction d
 
 **Task realism.** Round 3, Attempt 1 unified the brief around a single identity — a community member seeking advice. The result was a systematic failure: **all 8 tasks collapsed into help-seeking posts**, including source material that was plainly a release, a tutorial or a personal test. The schema, not the model, was the bug. Attempt 2 replaced it with four archetypes (question / finding / opinion / resource) and split engagement from replyability, which fixed the type collapse but not the summarising tone.
 
-**Complexity cost.** The API bill was trivial (see §7). The real cost was interpretive: reconciling versions, checking source identity, repairing briefs by hand, and asking a human to judge highly technical content in a second language.
+The persona is a design artefact, not a prompt ornament: one identity per post (a community member reading a dated source, never that author's lived experience), a required `speaker_role` field, and four archetypes the brief must choose between rather than default to.
+
+**Complexity cost.** The API bill was trivial (§7). The real cost was interpretive: reconciling versions, checking source identity, repairing briefs by hand, and asking a human to judge technical content in a second language.
 
 ## 7. Cost
 
@@ -123,7 +127,7 @@ Round 2 exceeded its declared 1,000,000-token cap by ~23%, and 11 manifests plus
 | Silent failure — plausible but wrong post shipped | **Not fully mitigated.** Human confirmation is mandatory; no automated publish path exists |
 | Third-party text rights | Dataset is ODC-BY, but Reddit author text may carry separate rights; no redistribution for commercial use |
 
-The system is **intended for** drafting assistance with a real human author's own material and intent. It is **not intended for** automated publishing, engagement farming, or any inference about a person. Frameworks consulted: Singapore's **IMDA Model AI Governance Framework** for human-in-the-loop accountability, and the **OWASP Top 10 for LLM Applications (2025)** for prompt-injection handling (source material is treated as data, never as instructions).
+The system is **intended for** drafting assistance with a real human author's own material and intent. It is **not intended for** automated publishing, engagement farming, or any inference about a person. Frameworks consulted: Singapore's **IMDA Model AI Governance Framework** (human-in-the-loop accountability) and the **OWASP Top 10 for LLM Applications (2025)** (prompt-injection handling; source text is data, never instructions).
 
 ## 9. Final product decision
 
@@ -131,6 +135,8 @@ The defensible product is **not** the closed loop. It is:
 
 > A research prototype that turns a real author's intent and dated source material into a fact-constrained draft, with explicit rule checks and mandatory human confirmation. The closed loop is retained as a research asset, not as the default path.
 
-This is a decision made from evidence, not from failure to build the loop. **The bottleneck was never how much machinery to add; it was whether the task was real and whether the measuring stick was calibrated.** In these three rounds, neither was established well enough for any component comparison to be interpretable — and establishing them first is what a next iteration should do.
+This is a decision from evidence, not from failure to build the loop. **The bottleneck was never how much machinery to add; it was whether the task was real and whether the measuring stick was calibrated.** In these three rounds, neither was established well enough for any component comparison to be interpretable — and establishing them first is what a next iteration should do.
+
+**Smallest version that is still honest.** Rebuilt tomorrow, the first shippable version is deliberately tiny: one brief schema, one generation prompt, deterministic fact, date and identity checks, and mandatory human confirmation — about three API calls, under half a cent a draft at this project's measured US$0.0013 per call. No predictor, no retrieval, no feedback loop.
 
 **The most useful thing this project produced is a negative result with the receipts attached.**

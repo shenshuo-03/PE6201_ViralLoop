@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112022-S0B3eReQv1epdWbehruh",
+  "object": "chat.completion",
+  "created": 1791112022,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source's discussion on limitations with media-heavy and JS-only sites, posing a relevant community question about offline solutions. It correctly attributes the information to the source and avoids making personal claims. Specificity is good, referencing the type of sites and the core problem. Information value is high due to the focused question.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 accurately summarizes the source's points on speed and batch processing, posing a specific and relevant question to the community about optimization strategies. It adheres to the persona and avoids unsupported claims. Specificity is good, mentioning the speed metric and hardware. Information value is high due to the practical, technical question.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3487,
+    "completion_tokens": 422,
+    "total_tokens": 3909,
+    "cost": 0.0005175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005175,
+      "upstream_inference_prompt_cost": 0.0003487,
+      "upstream_inference_completions_cost": 0.0001688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

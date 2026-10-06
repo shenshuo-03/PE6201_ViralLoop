@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and includes all relevant caveats about no actual measurements or performance data. The memory usage figures and fixed conditions are accurately reported. The language is clear and technical, suitable for the target audience. It invites discussion without making unsupported claims or causal conclusions. The title matches the content well and is not sensationalized."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The memory usage data and fixed conditions are correctly presented. The writing is clear and technical, appropriate for the audience. The post invites discussion on practical evaluation and architectural factors without overstating the data. The title is consistent with the body and not clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:07:46.608793+00:00",
+    "tag": "final_test:T02:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "da18cdb13af2174aba949a7d9036600aed4af90e404dfb0bd4cb3180d8707459",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1002,
+    "output_tokens": 350,
+    "actual_cost_usd": 0.0009608,
+    "token_price_estimate_usd": 0.0009607999999999999,
+    "reserved_upper_usd": 0.0049624,
+    "budget_charge_usd": 0.0009608,
+    "latency_seconds": 2.7314233999932185,
+    "retry": 0,
+    "request_id": "gen-1791101264-ie7qkveYLFYWigV31wlh"
+  },
+  "raw_response": {
+    "id": "gen-1791101264-ie7qkveYLFYWigV31wlh",
+    "object": "chat.completion",
+    "created": 1791101264,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and includes all relevant caveats about no actual measurements or performance data. The memory usage figures and fixed conditions are accurately reported. The language is clear and technical, suitable for the target audience. It invites discussion without making unsupported claims or causal conclusions. The title matches the content well and is not sensationalized.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The memory usage data and fixed conditions are correctly presented. The writing is clear and technical, appropriate for the audience. The post invites discussion on practical evaluation and architectural factors without overstating the data. The title is consistent with the body and not clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1002,
+      "completion_tokens": 350,
+      "total_tokens": 1352,
+      "cost": 0.0009608,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009608,
+        "upstream_inference_prompt_cost": 0.0004008,
+        "upstream_inference_completions_cost": 0.00056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791108455-golYJdTRbBVWnV6g5Uci",
+  "object": "chat.completion",
+  "created": 1791108455,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Perplexity Testing of DeepSeek R1 Models\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"To understand the performance of DeepSeek R1 models with varying numbers of experts and compare them to distilled models, based on a limited perplexity test.\",\n  \"context\": \"A community member shared results from a short perplexity test conducted on DeepSeek R1 models with different expert counts, as well as some distilled models and a comparison model (Virtuoso-Medium-v2). The test was run on a subset of model blocks and with a specific block size.\",\n  \"motivation\": \"The source author's observations provide a starting point for discussing the practical implications of expert count on MoE models and comparing their performance against distilled versions and other models, acknowledging the limitations of the test.\",\n  \"desired_response\": \"A discussion about the implications of the source author's perplexity test results, considering the limitations and potential for further investigation into model performance.\",\n  \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"The perplexity test was limited to only 8 blocks of the model, suggesting the results should be viewed with significant caution.\",\n      \"evidence_quote\": \"This test only ran 8 blocks (out of ~560) so it should be taken with a massive grain of salt.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"The source author suggests that perplexity might not be a fair test for chain-of-thought models.\",\n      \"evidence_quote\": \"perplexity probably isn't a very fair test for chain of thought models since they don't get to do any thinking.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"The perplexity test was run with a block size of 512.\",\n      \"evidence_quote\": \"Perplexity test run with block size 512.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"The source author observed that the full DeepSeek R1 model, even with aggressive quantization, appeared to outperform normal distilled models until the expert count was reduced to 2.\",\n      \"evidence_quote\": \"the full DS model even with very aggressive quantization seems to beat the normal distills until you limit it to 2 experts.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"The Virtuoso Medium V2 distilled model's performance was noted to be between the full DeepSeek R1 model with 3 and 4 experts.\",\n      \"evidence_quote\": \"The Virtuoso Medium V2 distill looks pretty strong, ending up between full DS R1 with 3 and 4 experts.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F6\",\n      \"text\": \"The source author encountered NaN (Not a Number) results when attempting to generate perplexity with 10 and 12 experts.\",\n      \"evidence_quote\": \"I tried with 10 and 12 experts and generating perplexity failed with NaNs.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"The source author conducted a perplexity test on DeepSeek R1 models.\",\n    \"The test involved varying the number of experts in DeepSeek R1.\",\n    \"Distilled models and Virtuoso-Medium-v2 were included in the comparison.\",\n    \"The test had significant limitations, including a small number of blocks and potential unfairness to certain model types.\"\n  ],\n  \"forbidden_claims\": [\n    \"The perplexity results represent definitive, verified performance metrics.\",\n    \"The test was exhaustive or scientifically rigorous.\",\n    \"The source author claims personal experience running these specific tests as a definitive benchmark.\",\n    \"The results are generalizable to all use cases or model configurations.\",\n    \"The source author experienced successful fixes or achieved specific performance goals.\"\n  ],\n  \"essential_limitations\": [\n    \"The test was very short, running only 8 blocks out of approximately 560.\",\n    \"Perplexity may not be a suitable metric for chain-of-thought models.\",\n    \"The test is not considered scientific and should be used as a starting point for discussion.\",\n    \"The results are specific to the tested configurations and quantization levels.\",\n    \"The test was run on a specific date (2025-01-30) and may not reflect current model capabilities.\"\n  ],\n  \"missing_information\": [\n    \"The exact hardware used for the test.\",\n    \"The specific command-line arguments used for the perplexity test, beyond the mention of `--override-kv deepseek2.expert_used_count=int:X`.\",\n    \"The full list of distilled models tested, beyond the legends provided.\",\n    \"The specific dataset used for the perplexity calculation.\",\n    \"The full perplexity scores for all tested expert counts and models, as some entries are missing or incomplete (e.g., 2 experts).\",\n    \"The reason for the NaN results with 10 and 12 experts.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1644,
+    "completion_tokens": 1246,
+    "total_tokens": 2890,
+    "cost": 0.0006628,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006628,
+      "upstream_inference_prompt_cost": 0.0001644,
+      "upstream_inference_completions_cost": 0.0004984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

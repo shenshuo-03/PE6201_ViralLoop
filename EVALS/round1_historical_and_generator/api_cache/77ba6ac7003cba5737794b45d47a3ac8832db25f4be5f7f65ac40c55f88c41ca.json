@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references the key facts (F1, F2, F3). It emphasizes the need to look beyond prompt locality by checking logs and network connections, preserving necessary caveats about the lack of formal audits. The language is clear and technical, suitable for the target audience. The open question invites constructive discussion, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and references all supplied facts. It challenges the assumption that prompt locality alone is sufficient, highlighting the importance of logs and network connection scrutiny. The absence of formal audits is clearly stated. The writing is clear and technical, appropriate for the audience. The concluding question is well-posed to stimulate relevant discussion. No unsupported claims or clickbait elements are present."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:57:12.264642+00:00",
+    "tag": "selection_dev:S02:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "77ba6ac7003cba5737794b45d47a3ac8832db25f4be5f7f65ac40c55f88c41ca",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 989,
+    "output_tokens": 385,
+    "actual_cost_usd": 0.0010116,
+    "token_price_estimate_usd": 0.0010116,
+    "reserved_upper_usd": 0.0049832,
+    "budget_charge_usd": 0.0010116,
+    "latency_seconds": 2.9103183999977773,
+    "retry": 0,
+    "request_id": "gen-1791100629-yDb3szacRDwp1bZ8DWbk"
+  },
+  "raw_response": {
+    "id": "gen-1791100629-yDb3szacRDwp1bZ8DWbk",
+    "object": "chat.completion",
+    "created": 1791100629,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly references the key facts (F1, F2, F3). It emphasizes the need to look beyond prompt locality by checking logs and network connections, preserving necessary caveats about the lack of formal audits. The language is clear and technical, suitable for the target audience. The open question invites constructive discussion, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and references all supplied facts. It challenges the assumption that prompt locality alone is sufficient, highlighting the importance of logs and network connection scrutiny. The absence of formal audits is clearly stated. The writing is clear and technical, appropriate for the audience. The concluding question is well-posed to stimulate relevant discussion. No unsupported claims or clickbait elements are present.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 989,
+      "completion_tokens": 385,
+      "total_tokens": 1374,
+      "cost": 0.0010116,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010116,
+        "upstream_inference_prompt_cost": 0.0003956,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

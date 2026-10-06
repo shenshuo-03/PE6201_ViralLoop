@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112303-Loi1h2cRsLBMZY4qQRyS",
+  "object": "chat.completion",
+  "created": 1791112303,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Pose a question about a perceived shift in community contributions.\",\n  \"information_order\": [\n    \"Describe past community contributions and their perceived impact.\",\n    \"Contrast past contributions with current trends.\",\n    \"Hypothesize reasons for the observed changes.\",\n    \"Propose a new collaborative project.\",\n    \"Suggest a platform for organizing and accessing open-source projects.\"\n  ],\n  \"evidence_style\": \"Anecdotal observations and personal reflections on community trends.\",\n  \"question_or_cta\": \"Inquire about the reasons behind observed changes in community engagement or propose collaboration on new projects.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The evolution of community-driven model development.\",\n    \"The emergence of new project types.\",\n    \"Ideas for organizing and accessing open-source AI tools.\"\n  ],\n  \"common_weaknesses\": [\n    \"Difficulty in assessing the reliability of open-source projects.\",\n    \"High computational resource requirements for advanced models.\",\n    \"Potential for market monopolization due to resource costs.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 891,
+    "completion_tokens": 246,
+    "total_tokens": 1137,
+    "cost": 0.0001875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001875,
+      "upstream_inference_prompt_cost": 8.91e-05,
+      "upstream_inference_completions_cost": 9.84e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

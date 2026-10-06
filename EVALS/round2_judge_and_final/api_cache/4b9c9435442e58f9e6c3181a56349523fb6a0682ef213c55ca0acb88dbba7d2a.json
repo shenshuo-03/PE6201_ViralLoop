@@ -1,0 +1,61 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Best practices for prompt engineering to improve LLaMA 3.1 8B binary classification locally?",
+        "body": "A 2025 report describes using LLaMA 3.1 8B locally to classify prompts into related vs unrelated categories, but notes issues with prompt consistency and limited gains from few-shot examples. Embedding-based filtering is off the table due to the strict local-only setup. Given these constraints, what prompt engineering strategies or system prompt refinements have you found effective for boosting classification accuracy and reliability with local LLaMA models? Any tips on how to structure or phrase prompts to reduce ambiguity and improve model confidence in binary semantic classification would be especially welcome.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "How to enhance prompt consistency for local LLaMA 3.1 8B binary classification without embeddings?",
+        "body": "The original poster using LLaMA 3.1 8B locally for a binary related/unrelated prompt classification task reports trouble with prompt consistency and accuracy. Few-shot prompting only helps so much, and embedding-based filtering can’t be used due to the local-only requirement. Does anyone have experience with system prompt designs or prompt engineering techniques that improve classification stability in similar offline setups? Are there particular prompt formats or instructions that help the model distinguish semantic categories more reliably under these constraints?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Seeking prompt engineering advice for local-only LLaMA 3.1 8B classification: related vs unrelated",
+        "body": "A user reported in 2025 that classifying prompts as related or unrelated with LLaMA 3.1 8B running strictly locally faces challenges in accuracy and consistency. They couldn’t leverage embedding-based filtering and found few-shot examples insufficient. Given these limitations, what practical prompt engineering or system prompt adjustments have helped you improve binary classification results in similar local LLM projects? Insights on how to phrase or structure prompts to maximize semantic classification accuracy without external tools would be very helpful.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0273",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:43.488665+00:00",
+    "tag": "O1:S03",
+    "phase": "selection",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "4b9c9435442e58f9e6c3181a56349523fb6a0682ef213c55ca0acb88dbba7d2a",
+    "actual_cost_usd": 0.001492,
+    "budget_charge_usd": 0.001492,
+    "reserved_upper_usd": 0.008539999999999999,
+    "input_tokens": 1894,
+    "output_tokens": 459,
+    "latency_seconds": 3.542840799986152,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112179-rJf7D2tWS5RRQipoLU6N",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

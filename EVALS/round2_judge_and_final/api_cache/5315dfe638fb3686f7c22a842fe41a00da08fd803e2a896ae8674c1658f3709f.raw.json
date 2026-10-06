@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112506-N6xerlhQvOJK9vvobZka",
+  "object": "chat.completion",
+  "created": 1791112506,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 0 accurately reflects the source, adheres to the persona, and asks relevant community questions about the described setup. It correctly notes missing information and avoids unsupported claims. The specificity is good, referencing the tools and the user's reported experience.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately summarizes the source, maintains the persona, and poses pertinent questions to the community regarding the practical challenges of the described setup. It correctly identifies missing details and avoids making unsubstantiated claims. Specificity is good, mentioning the tools and the user's reported experience.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 accurately represents the source content, adheres to the persona, and asks relevant community questions about the practical aspects of the described LLM management setup. It correctly points out the missing information and refrains from making unsupported claims. Specificity is good, referencing the tools and the user's reported experience.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2811,
+    "completion_tokens": 600,
+    "total_tokens": 3411,
+    "cost": 0.0005211,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005211,
+      "upstream_inference_prompt_cost": 0.0002811,
+      "upstream_inference_completions_cost": 0.00024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly notes that the throughput values are aggregate and not per-user rates, with no latency measurements. The title accurately reflects the content. The language is technical and restrained, suitable for the target audience. The post is concise and informative, providing actionable insight into the tradeoff between batch sizes in local LLM inference throughput, while preserving all necessary caveats. Minor improvements in flow and phrasing could raise clarity and credibility slightly, but overall it is well done."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully presents the hypothetical scenario with clear caveats about the illustrative nature of the data, aggregate throughput, and lack of latency measurement. The title matches the content well. The tone is technical and restrained, appropriate for the audience. The explanation of the throughput increase with larger batch size is clear and balanced by noting the unmeasured latency tradeoff. The post is concise and relevant, providing useful conceptual understanding without unsupported claims or exaggeration."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:09:55.810055+00:00",
+    "tag": "final_test:T04:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "0a9e8c37f05c74a7440fb7aeda0a4b804bf8538e254e6afdfb2331de93f2e468",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1115,
+    "output_tokens": 405,
+    "actual_cost_usd": 0.001094,
+    "token_price_estimate_usd": 0.001094,
+    "reserved_upper_usd": 0.005082399999999999,
+    "budget_charge_usd": 0.001094,
+    "latency_seconds": 3.071506899999804,
+    "retry": 0,
+    "request_id": "gen-1791101392-G7q9HSUUFsZBG8vkhVz2"
+  },
+  "raw_response": {
+    "id": "gen-1791101392-G7q9HSUUFsZBG8vkhVz2",
+    "object": "chat.completion",
+    "created": 1791101392,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly notes that the throughput values are aggregate and not per-user rates, with no latency measurements. The title accurately reflects the content. The language is technical and restrained, suitable for the target audience. The post is concise and informative, providing actionable insight into the tradeoff between batch sizes in local LLM inference throughput, while preserving all necessary caveats. Minor improvements in flow and phrasing could raise clarity and credibility slightly, but overall it is well done.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully presents the hypothetical scenario with clear caveats about the illustrative nature of the data, aggregate throughput, and lack of latency measurement. The title matches the content well. The tone is technical and restrained, appropriate for the audience. The explanation of the throughput increase with larger batch size is clear and balanced by noting the unmeasured latency tradeoff. The post is concise and relevant, providing useful conceptual understanding without unsupported claims or exaggeration.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1115,
+      "completion_tokens": 405,
+      "total_tokens": 1520,
+      "cost": 0.001094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001094,
+        "upstream_inference_prompt_cost": 0.000446,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

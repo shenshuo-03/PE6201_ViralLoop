@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121691-LprlBSmQc5jo9n8p7PvZ",
+  "object": "chat.completion",
+  "created": 1791121691,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [\n        \"This setup allows you to serve a local language model through an OpenAI-compatible server like Llama.cpp or LmStudio, enabling a coding copilot experience entirely on your machine.\"\n      ],\n      \"reason\": \"Draft 0 accurately reflects the source content and adheres to the brief's requirements. It correctly attributes claims to the source and avoids making unsupported assertions. The speaker's role as a curator is maintained. The essential context of setting up a local AI coding assistant is preserved. The title and body are in agreement. The claim about serving a local language model is presented as a capability described in the tutorial, which is appropriate.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"speaker_pass\": true,\n      \"essential_context_pass\": true,\n      \"title_body_pass\": true,\n      \"unsupported_claims\": [],\n      \"unverified_claims\": [\n        \"This setup allows you to run an AI coding assistant without relying on remote APIs, enhancing privacy and control over your coding workflow.\"\n      ],\n      \"reason\": \"Draft 1 accurately reflects the source content and adheres to the brief's requirements. It correctly attributes claims to the source and avoids making unsupported assertions. The speaker's role as a curator is maintained. The essential context of setting up a local AI coding assistant is preserved. The title and body are in agreement. The claim about enhancing privacy and control is an interpretation of the benefits of a local setup, which is acceptable as an author report.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2689,
+    "completion_tokens": 417,
+    "total_tokens": 3106,
+    "cost": 0.0004357,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004357,
+      "upstream_inference_prompt_cost": 0.0002689,
+      "upstream_inference_completions_cost": 0.0001668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

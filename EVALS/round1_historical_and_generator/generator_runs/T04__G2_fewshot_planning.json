@@ -1,0 +1,312 @@
+{
+  "at": "2026-10-04T08:09:48.691608+00:00",
+  "topic": {
+    "id": "T04",
+    "split": "final_test",
+    "topic": "A hypothetical batching tradeoff",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Hypothetical batch size 1 produces 22 tokens per second in total; batch size 4 produces 55 in total.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "These are aggregate rates, not per-user rates.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Per-request latency was not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The values are illustrative, not real test results.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:09:45.920605+00:00",
+    "tag": "final_test:T04:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "3b100d333d11758092ad26e7eb9e4e266b5ef8a5859f3542160b710b04c37cf9",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1077,
+    "output_tokens": 602,
+    "actual_cost_usd": 0.0003485,
+    "token_price_estimate_usd": 0.00034849999999999996,
+    "reserved_upper_usd": 0.0012721,
+    "budget_charge_usd": 0.0003485,
+    "latency_seconds": 2.9507231999887154,
+    "retry": 0,
+    "request_id": "gen-1791101383-i3j0hDNYXnzRrWj4aCVK"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:09:48.680541+00:00",
+    "tag": "final_test:T04:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e325ee36a856ab37ef77943de680b4e4f1ef47188e7247829dec91e460164108",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1045,
+    "output_tokens": 365,
+    "actual_cost_usd": 0.001002,
+    "token_price_estimate_usd": 0.0010019999999999999,
+    "reserved_upper_usd": 0.0049868,
+    "budget_charge_usd": 0.001002,
+    "latency_seconds": 2.710603799991077,
+    "retry": 0,
+    "request_id": "gen-1791101386-p4IfKTDMhaQYOI6v1jOD"
+  },
+  "retrieved_ids": [
+    "1mdldom",
+    "1hrnvjo"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "d88a5226f0c658bbaa681d75647e8c95d0fec6981f1bf1ee4436e963a2df645d",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Batching Throughput: Batch Size 1 vs. 4",
+        "body": "I'm exploring a hypothetical scenario regarding language model throughput. The premise is that a batch size of 1 yields an aggregate throughput of 22 tokens per second, while increasing to a batch size of 4 hypothetically raises this aggregate rate to 55 tokens per second. It's crucial to note that these figures are presented as illustrative and are not derived from actual measurements or personal experience. The reported rates are aggregate, meaning they represent the total throughput across all requests processed simultaneously, not a per-request latency or speed. Per-request latency was not a measured metric in this hypothetical setup. The core question for discussion is how such a tradeoff might be practically evaluated, considering only aggregate throughput changes. What factors would typically influence the decision to favor higher aggregate throughput with larger batches, especially if per-request latency is unknown or unmeasured?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Create a post discussing the hypothetical batching tradeoff, focusing on aggregate throughput. Explicitly state the hypothetical nature. Mention the given token per second values for batch sizes 1 and 4. Clarify that these are aggregate rates and per-request latency was not measured. End with a question inviting discussion on evaluating such tradeoffs."
+      },
+      "performance_score": 0.24313956119801067,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the illustrative data and lack of latency measurements. The title matches the content well. The language is clear and technical, suitable for the target audience. The post invites discussion on evaluating tradeoffs, which is useful but limited by the absence of latency data. The credibility is good due to explicit disclaimers and no unsupported claims. The post is not clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 141,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical Aggregate Throughput: Batch Size Impact (22 vs 55 TPS)",
+        "body": "This post outlines a hypothetical experiment examining the impact of batch size on aggregate throughput for local language models. According to the hypothetical data, a batch size of 1 results in an aggregate throughput of 22 tokens per second (TPS). Increasing the batch size to 4 hypothetically boosts this aggregate throughput to 55 TPS. It is important to emphasize that these numbers are purely illustrative and do not represent real-world test results or personal findings. The reported TPS are aggregate figures, reflecting the total output across all concurrent requests, not individual request performance. Furthermore, per-request latency was not assessed in this hypothetical scenario. The key consideration here is the aggregate throughput increase. Given these hypothetical constraints, what are the typical implications or considerations when presented with such a throughput improvement, particularly when fine-grained latency metrics are absent?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Draft a second post on the hypothetical batching tradeoff. Similar to the first, emphasize the hypothetical nature and the illustrative data. State the aggregate TPS for batch sizes 1 and 4. Reiterate that these are aggregate and latency was not measured. Frame a question around the implications of aggregate throughput gains without latency data."
+      },
+      "performance_score": 0.2436583208183378,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and necessary caveats. The title accurately reflects the content. The writing is clear and technical, appropriate for the audience. It frames the scenario well and invites thoughtful discussion on throughput tradeoffs without latency data. No unsupported claims are made. The post is credible and not clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 137,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Hypothetical Aggregate Throughput: Batch Size Impact (22 vs 55 TPS)",
+      "body": "This post outlines a hypothetical experiment examining the impact of batch size on aggregate throughput for local language models. According to the hypothetical data, a batch size of 1 results in an aggregate throughput of 22 tokens per second (TPS). Increasing the batch size to 4 hypothetically boosts this aggregate throughput to 55 TPS. It is important to emphasize that these numbers are purely illustrative and do not represent real-world test results or personal findings. The reported TPS are aggregate figures, reflecting the total output across all concurrent requests, not individual request performance. Furthermore, per-request latency was not assessed in this hypothetical scenario. The key consideration here is the aggregate throughput increase. Given these hypothetical constraints, what are the typical implications or considerations when presented with such a throughput improvement, particularly when fine-grained latency metrics are absent?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Draft a second post on the hypothetical batching tradeoff. Similar to the first, emphasize the hypothetical nature and the illustrative data. State the aggregate TPS for batch sizes 1 and 4. Reiterate that these are aggregate and latency was not measured. Frame a question around the implications of aggregate throughput gains without latency data."
+    },
+    "performance_score": 0.2436583208183378,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also clearly preserves the hypothetical status and necessary caveats. The title accurately reflects the content. The writing is clear and technical, appropriate for the audience. It frames the scenario well and invites thoughtful discussion on throughput tradeoffs without latency data. No unsupported claims are made. The post is credible and not clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 137,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

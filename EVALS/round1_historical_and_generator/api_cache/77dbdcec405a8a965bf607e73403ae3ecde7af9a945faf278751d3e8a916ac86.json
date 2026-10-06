@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and avoids presenting any measured results or personal experience. It accurately references the need to record model versions, prompts, settings, and hardware as per the facts. The title matches the content well, focusing on reproducibility versus model recommendations. The language is clear and technical, suitable for the target audience. It poses relevant questions that encourage thoughtful discussion, making it useful and relevant. The draft maintains credibility by explicitly stating the scenario is hypothetical and does not overstate claims. The clickbait score is low due to restrained and factual presentation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and includes all necessary caveats. It emphasizes the importance of detailed recording for reproducibility, consistent with the provided facts. The title accurately reflects the content, focusing on reproducible recommendations. The language is clear and technical, appropriate for the audience. It raises practical questions about balancing detail and usability, which is useful and relevant. The draft maintains credibility by avoiding unsupported claims and clearly stating the scenario is hypothetical. The clickbait score is low due to the restrained and factual tone."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:14:45.829090+00:00",
+    "tag": "final_test:T09:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "77dbdcec405a8a965bf607e73403ae3ecde7af9a945faf278751d3e8a916ac86",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 933,
+    "output_tokens": 431,
+    "actual_cost_usd": 0.0010628,
+    "token_price_estimate_usd": 0.0010628,
+    "reserved_upper_usd": 0.004841999999999999,
+    "budget_charge_usd": 0.0010628,
+    "latency_seconds": 2.934739999996964,
+    "retry": 0,
+    "request_id": "gen-1791101683-n2Ybyb5lqj9mwRKgjmcj"
+  },
+  "raw_response": {
+    "id": "gen-1791101683-n2Ybyb5lqj9mwRKgjmcj",
+    "object": "chat.completion",
+    "created": 1791101683,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and avoids presenting any measured results or personal experience. It accurately references the need to record model versions, prompts, settings, and hardware as per the facts. The title matches the content well, focusing on reproducibility versus model recommendations. The language is clear and technical, suitable for the target audience. It poses relevant questions that encourage thoughtful discussion, making it useful and relevant. The draft maintains credibility by explicitly stating the scenario is hypothetical and does not overstate claims. The clickbait score is low due to restrained and factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly preserves the hypothetical status and includes all necessary caveats. It emphasizes the importance of detailed recording for reproducibility, consistent with the provided facts. The title accurately reflects the content, focusing on reproducible recommendations. The language is clear and technical, appropriate for the audience. It raises practical questions about balancing detail and usability, which is useful and relevant. The draft maintains credibility by avoiding unsupported claims and clearly stating the scenario is hypothetical. The clickbait score is low due to the restrained and factual tone.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 933,
+      "completion_tokens": 431,
+      "total_tokens": 1364,
+      "cost": 0.0010628,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010628,
+        "upstream_inference_prompt_cost": 0.0003732,
+        "upstream_inference_completions_cost": 0.0006896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

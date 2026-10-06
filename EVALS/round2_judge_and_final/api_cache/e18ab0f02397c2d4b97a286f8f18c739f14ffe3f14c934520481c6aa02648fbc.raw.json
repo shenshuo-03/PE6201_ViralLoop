@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111985-jArfETpuTbnwCqZYxEDR",
+  "object": "chat.completion",
+  "created": 1791111985,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Noticing a Trade-off Between World Knowledge and Problem Solving in Smaller LLMs?\",\"body\":\"An archived 2025 Reddit post highlights an interesting trend: newer smaller models like Qwen 3 and GLM-4-0414 show clear improvements in coding and problem-solving but seem to lag behind older, larger models in world knowledge. The author’s private tests suggest these new models sometimes have worse knowledge than even some older smaller models.\\n\\nThe proposed reason is that training data might be shifting toward more problem-solving content at the expense of knowledge-dense material. Has anyone else seen a similar pattern in their own usage or benchmarks? How do you balance these trade-offs when choosing models for tasks that require both solid factual knowledge and strong reasoning?\\n\\nGiven the tests date back to mid-2025 and rely on private questions, how might we design public benchmarks or evaluations to better capture this knowledge vs. problem-solving tension?\",\"fact_refs\":[\"F1\",\"F3\",\"F8\"]},{\"title\":\"Is There a Consistent Knowledge vs. Problem-Solving Trade-off in Recent Smaller LLMs?\",\"body\":\"A Reddit post from 2025 reports that newer smaller LLMs, despite higher scores on coding and reasoning benchmarks, often show weaker world knowledge compared to older models. For example, Qwen 3 8B reportedly has worse factual knowledge than older 8B models like Llama 3.1, even though it’s better at problem-solving.\\n\\nThe author speculates this may stem from training data emphasizing problem-solving tasks over knowledge-rich content. However, some models like Llama 4 Maverick buck this trend, showing strong world knowledge but mediocre problem-solving.\\n\\nFor those running local LLMs, how do you evaluate or prioritize these capabilities? Are there practical ways to measure or mitigate this trade-off when selecting models for diverse applications?\",\"fact_refs\":[\"F4\",\"F7\",\"F8\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2197,
+    "completion_tokens": 406,
+    "total_tokens": 2603,
+    "cost": 0.0015284,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015284,
+      "upstream_inference_prompt_cost": 0.0008788,
+      "upstream_inference_completions_cost": 0.0006496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

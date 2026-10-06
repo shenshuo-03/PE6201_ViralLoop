@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T08:02:54.709918+00:00",
+  "topic": {
+    "id": "S02",
+    "split": "selection_dev",
+    "topic": "What would count as evidence that local deployment improves privacy?",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario keeps prompts on a local machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Logs and optional network connections must also be checked.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No security audit or compliance certification was performed.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T07:57:01.547204+00:00",
+    "tag": "selection_dev:S02:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "dfc47625413963d3f3fb1a7b8b07f205082e12f152e5da117cef084bf25175e4",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 421,
+    "output_tokens": 539,
+    "actual_cost_usd": 0.0002577,
+    "token_price_estimate_usd": 0.0002577,
+    "reserved_upper_usd": 0.0010244,
+    "budget_charge_usd": 0.0002577,
+    "latency_seconds": 3.0844259000004968,
+    "retry": 0,
+    "request_id": "gen-1791100618-Uc03WzYTw8jzOgVPu5l5"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:57:04.821603+00:00",
+    "tag": "selection_dev:S02:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "87c6ae2d3c7a4a4760e68f1e6e2341d20cb723b7790249a60fd7904480048458",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 955,
+    "output_tokens": 385,
+    "actual_cost_usd": 0.000998,
+    "token_price_estimate_usd": 0.000998,
+    "reserved_upper_usd": 0.0048552,
+    "budget_charge_usd": 0.000998,
+    "latency_seconds": 3.2330894000042463,
+    "retry": 0,
+    "request_id": "gen-1791100621-36bgLvMyr5ybJnl6rDz0"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "8ce3d0a67d6d896d5c131e9a65251608c40ea37ef79ba757cd778252731ffe96",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Evidence for Local LLM Privacy Gains: Prompt Containment",
+        "body": "Considering a hypothetical scenario where we aim to demonstrate privacy improvements from local LLM deployments, what constitutes sufficient evidence? Fact F1 states that prompts are kept entirely on the local machine. This isolation is a primary proposed benefit. However, to fully assess privacy, we must also examine other data flows. Fact F2 highlights the need to check logs and any optional network connections. Even if prompts remain local, other metadata or usage information could potentially be exfiltrated or logged elsewhere. Furthermore, Fact F3 notes that no formal security audit or compliance certification has been performed in this hypothetical setup. Therefore, evidence would need to rigorously prove prompt containment and the absence of unintended data leakage through logs or network traffic, while acknowledging the lack of formal validation. What specific logging or network monitoring metrics would be most convincing?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Discuss evidence for local LLM privacy, focusing on prompt containment and data leakage, acknowledging hypothetical status and lack of audits. Invite discussion on specific monitoring metrics."
+      },
+      "performance_score": 0.2290211952825773,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1-F3) accurately. It maintains necessary caveats about the lack of audits and the need to check logs and network connections. The title matches the content well. The language is clear and technical, suitable for the intended audience. It invites discussion on specific monitoring metrics, which is actionable and relevant. No unsupported claims or exaggerations are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 138,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Assessing Local LLM Privacy: Beyond Prompt Isolation (Hypothetical)",
+        "body": "In a hypothetical exploration of local LLM privacy, we're investigating what evidence would confirm enhanced security. The core premise, as per Fact F1, is that prompts never leave the local machine. This is a critical starting point, but not the entire picture. To build a case for improved privacy, we need to consider the broader data handling. Fact F2 points out that logs and any optional network activity are crucial areas to scrutinize. If logs contain sensitive information or if optional network connections transmit data unexpectedly, the privacy benefit is diminished. It's also important to remember, as stated in Fact F3, that this hypothetical experiment includes no formal security audit or compliance certification. Therefore, convincing evidence would require demonstrating not just prompt isolation, but also verifiable control over all logging and network egress points, within the acknowledged limitations of a non-audited system. What are the key indicators of 'unintended data leakage' in this context?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Explore hypothetical evidence for local LLM privacy, emphasizing prompt isolation and the importance of logs/network activity, while noting the absence of audits. Prompt discussion on identifying unintended data leakage."
+      },
+      "performance_score": 0.23688618350713178,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and all facts (F1-F3). It emphasizes the importance of prompt isolation and scrutiny of logs and network activity, while explicitly noting the absence of formal audits. The title is consistent with the body and clearly signals the hypothetical nature. The writing is clear and technical, appropriate for the audience. It encourages discussion on identifying unintended data leakage, providing actionable value without unsupported claims or clickbait.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 154,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Assessing Local LLM Privacy: Beyond Prompt Isolation (Hypothetical)",
+      "body": "In a hypothetical exploration of local LLM privacy, we're investigating what evidence would confirm enhanced security. The core premise, as per Fact F1, is that prompts never leave the local machine. This is a critical starting point, but not the entire picture. To build a case for improved privacy, we need to consider the broader data handling. Fact F2 points out that logs and any optional network activity are crucial areas to scrutinize. If logs contain sensitive information or if optional network connections transmit data unexpectedly, the privacy benefit is diminished. It's also important to remember, as stated in Fact F3, that this hypothetical experiment includes no formal security audit or compliance certification. Therefore, convincing evidence would require demonstrating not just prompt isolation, but also verifiable control over all logging and network egress points, within the acknowledged limitations of a non-audited system. What are the key indicators of 'unintended data leakage' in this context?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Explore hypothetical evidence for local LLM privacy, emphasizing prompt isolation and the importance of logs/network activity, while noting the absence of audits. Prompt discussion on identifying unintended data leakage."
+    },
+    "performance_score": 0.23688618350713178,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also accurately reflects the hypothetical scenario and all facts (F1-F3). It emphasizes the importance of prompt isolation and scrutiny of logs and network activity, while explicitly noting the absence of formal audits. The title is consistent with the body and clearly signals the hypothetical nature. The writing is clear and technical, appropriate for the audience. It encourages discussion on identifying unintended data leakage, providing actionable value without unsupported claims or clickbait.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 154,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

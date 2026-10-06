@@ -52,79 +52,79 @@ def main():
     write_json(ROOT/'configs/runtime_versions.json',{'at':now(),'python':sys.version,'packages':versions});(ROOT/'requirements.lock.txt').write_text('\n'.join(k+'=='+v for k,v in versions.items())+'\n',encoding='utf-8')
     ledger=pd.DataFrame(entries());ledger.drop(columns=['cache_key','request_id'],errors='ignore').to_csv(ROOT/'results/cost_results.csv',index=False)
     status={'automated_completed':True,'human_review_completed':False,'face_video_completed':False,'real_platform_experiment_completed':False,'final_generated_candidates':len(fc),'formal_topics':10,'api_budget_accounted_usd':spent(),'known_actual_api_cost_usd':cost['known_actual_cost_usd']};write_json(ROOT/'results/DELIVERY_STATUS.json',status)
-    md=f'''# ViralLoop 实验1.0：真实结果与结论
+    md=f'''# ViralLoop Experiment 1.0: Real Results and Conclusions
 
-## 完成范围
+## Scope actually completed
 
-全量审计、清洗/去重/类型规则、400条上游审计、2,800条有限恢复、2,336条数据冻结、完整评测器阶梯、12张正负模式卡、生成器阶梯/消融、一次反馈对照、成本与失败日志、可运行本地界面均已实际执行。最终生成实验：**10主题、{len(fc)}份候选**；开发主题与最终主题分开。
+The full audit, cleaning/deduplication/type rules, the 400-record upstream audit, 2,800 limited recoveries, the 2,336-record data freeze, the complete evaluator ladder, twelve positive/negative pattern cards, the generator ladder/ablations, one feedback comparison, the cost and failure ledger, and a runnable local interface were all actually executed. Final generation experiment: **10 topics, {len(fc)} candidates**; development topics and final topics are kept separate.
 
-**尚未完成且未伪造**：真人12组盲评、露脸视频录制、实际平台随机A/B和传播表现。英文报告目前为可审阅草稿，必须保留这些边界。
+**Not completed and not fabricated**: the 12 genuine human blind-review pairs, the face-visible video recording, and real-platform randomized A/B and propagation outcomes. The English report is currently a reviewable draft and must keep these boundaries.
 
-## 1. 数据与控制变量
+## 1. Data and controlled variables
 
-400条审计全返回，95.75%位于36–38小时；score与观察时间来自同一源记录。原始100,679条，规则候选20,019；分层随机恢复2,800，最终2,336。Train1396/Tune398/Selection194/Test348。
+All 400 audit records were returned, 95.75% within 36-38 hours; score and observation time come from the same source record. 100,679 raw posts, 20,019 rule-eligible candidates; 2,800 stratified random recoveries, 2,336 final. Train 1396 / Tune 398 / Selection 194 / Test 348.
 
-保留低、零、负分。没有曝光数据，不能把文本关联当因果。作者可用历史仅{int((observations.author_prior_missing==0).sum())}/{len(observations)}，缺失率较高。初次捕获中位{first_age.median()*3600:.1f}秒，{int(first_age.gt(1).sum())}条超过1小时，最大{first_age.max():.2f}小时；正文发布瞬间状态仍有不确定性。标签是同月同类型回顾性相对排名，不是实时可知的绝对热度阈值。
+Low, zero and negative scores were retained. There is no exposure data, so textual association cannot be treated as causation. Usable author history is only {int((observations.author_prior_missing==0).sum())}/{len(observations)}; the missing rate is high. Median first-capture age is {first_age.median()*3600:.1f} seconds, {int(first_age.gt(1).sum())} records exceed one hour, maximum {first_age.max():.2f} hours; the state of the body at the moment of posting remains uncertain. Labels are a retrospective relative ranking within the same month and content type, not an absolute engagement threshold knowable in real time.
 
-## 2. 历史评测器：完整348条最终测试
+## 2. Historical evaluator: full 348-record final test
 
 {table(e,['model','precision','recall','f1','average_precision','brier'])}
 
-文本E2的AP={by['E2_tfidf'].average_precision:.3f}，严格上下文E1为{by['E1_context_only'].average_precision:.3f}，说明历史文本确有增量预测信号；**不能证明是表达而非主题、新闻和隐含作者因素造成**。真实语义模型AP={by['E4_semantic'].average_precision:.3f}，Brier={by['E4_semantic'].brier:.3f}；服务侧本地E2仍有无API调用、快和可解释的优势。E3开发表现好但最终AP未超过E2，说明增加上下文并非必然提升跨时间泛化。
+Text-only E2 has AP={by['E2_tfidf'].average_precision:.3f}, strict-context E1 {by['E1_context_only'].average_precision:.3f}, showing that historical text does carry incremental predictive signal; **this cannot prove the effect comes from wording rather than topic, news and implicit author factors**. The real semantic model has AP={by['E4_semantic'].average_precision:.3f}, Brier={by['E4_semantic'].brier:.3f}; the serving-side local E2 still has the advantages of no API calls, speed and interpretability. E3 performed well in development but its final AP did not exceed E2, showing that adding context does not necessarily improve cross-time generalization.
 
-作者聚类bootstrap：E2−先验AP区间{boot['ci95']['E2_minus_prior']}；E3−E1区间{boot['ci95']['E3_minus_E1']}。区间条件于保留月份，不能覆盖全部未来变化。
+Author-clustered bootstrap: E2 minus prior AP interval {boot['ci95']['E2_minus_prior']}; E3 minus E1 interval {boot['ci95']['E3_minus_E1']}. The intervals are conditional on the retained months and cannot cover all future variation.
 
-## 3. LLM Judge：相同80条子样本
+## 3. LLM Judge: the same 80-record subsample
 
 {table(match,['model','n','precision','recall','f1','average_precision'])}
 
-该随机80条只有11条正类（13.75%），与完整测试24.71%不同；因此用上表同一子样本比较，不能与完整348条混排。零样本/Few-shot/RAG Judge都真实执行；“Jev”未被提供具体模型，不冒称部署了独立奖励模型。小样本与阈值漂移限制结论。
+That random 80-record set contains only 11 positives (13.75%), different from the full test's 24.71%; therefore it is compared within the same subsample shown above and must not be pooled with the full 348. The zero-shot / few-shot / RAG judges were all genuinely executed; no specific model was provided for "Jev", and no independent reward model is claimed to have been deployed. Small samples and threshold drift limit the conclusions.
 
-## 4. 生成器与质量约束
+## 4. Generators and quality constraints
 
-相同模型与事实素材，G0/G1/G2/G3/G4-positive/G4-both每主题2稿；O1无反馈追加3稿，O2按本地评分/模式反馈改3稿；相同3600-token输出上限，实际tokens与费用分别记录。
+With the same model and fact material, G0/G1/G2/G3/G4-positive/G4-both produced 2 drafts per topic; O1 added 3 drafts without feedback, O2 revised 3 drafts using local scores/pattern feedback; with the same 3600-token output cap, actual tokens and cost were recorded separately.
 
 {table(gs,['variant','topics','coverage','mean_selected_performance','mean_selected_quality','mean_selected_clickbait'])}
 
-这是明确假设素材上的代理指标；潜力分都不能读作爆款概率。对拒答主题，平均选择分只包含合格输出，所以必须同时看coverage。独立Judge未向改写器提供评分理由；仍可能和生成器共享偏差，需要真人补检。
+These are proxy metrics on explicitly hypothetical material; no potential score may be read as a probability of going viral. For abstaining topics, the mean selected score includes only qualified outputs, so coverage must be read alongside it. The independent judge did not give the rewriter its scoring rationale; it may still share bias with the generator and needs genuine human checks.
 
-反馈O2−多采样O1的共同合格主题平均代理差值 **{o.mean_delta:+.5f}**，主题bootstrap95%区间 [{o.ci95_low:+.5f}, {o.ci95_high:+.5f}]，n={int(o.paired_topics)}。{'区间跨0，暂不能认为反馈优于多采样。' if o.ci95_low<=0<=o.ci95_high else '区间在该小样本内未跨0，但仍是探索性代理结果，不代表真实传播提升。'}
+The feedback O2 minus multi-sample O1 difference on jointly qualified topics averages **{o.mean_delta:+.5f}**, topic-bootstrap 95% interval [{o.ci95_low:+.5f}, {o.ci95_high:+.5f}], n={int(o.paired_topics)}. {'The interval spans 0, so feedback cannot yet be considered better than multi-sampling.' if o.ci95_low<=0<=o.ci95_high else 'The interval does not span 0 in this small sample, but this is still an exploratory proxy result and does not represent a real engagement gain.'}
 
-正负模式G4-both−仅正模式的代理差值{pn.mean_delta:+.5f}，区间[{pn.ci95_low:+.5f},{pn.ci95_high:+.5f}]；不能因为有更多规则就默认更好。模式卡在Train做BH校正，在Tune仅验证方向，不冒称所有开发p值显著。
+The positive-plus-negative pattern G4-both minus positive-only difference is {pn.mean_delta:+.5f}, interval [{pn.ci95_low:+.5f},{pn.ci95_high:+.5f}]; more rules must not be assumed better by default. Pattern cards were BH-corrected on Train and only direction-checked on Tune; no claim is made that all development p-values are significant.
 
-## 5. 最强与最划算
+## 5. Best and most cost-effective
 
-最终测试之前，Selection Dev已冻结：代理效果候选 **{freeze['best_performance_selection']}**；实际采用候选 **{freeze['best_practical_selection']}**。Selection只有2主题，选择本身很不稳定，不能包装成大规模最优结论。最终全版本结果照实保留，不按最终成绩重新改选型规则。
+Before the final test, Selection Dev was frozen: the proxy-performance candidate was **{freeze['best_performance_selection']}**; the actually adopted candidate was **{freeze['best_practical_selection']}**. Selection had only 2 topics, so the choice itself is very unstable and cannot be packaged as a large-scale optimal conclusion. All final full-version results are retained as-is, and the selection rule was not re-chosen to suit the final outcome.
 
-目前产品应以忠实事实与清晰表达为核心；高级RAG/模式/闭环只是实验可选流程。只有真人评审和真实发布后实验进一步支持时，才能提高对“内容表现优化”的产品承诺。
+The product should currently center on factual fidelity and clear expression; advanced RAG, patterns and closed loops are only optional experimental paths. Only when genuine human review and real published experiments provide further support can the product promise around "content performance optimization" be raised.
 
-## 6. 成本与失败
+## 6. Cost and failures
 
-全部调用预算计入 **US${cost['budget_accounted_usd']:.5f} / US$5**；有明确usage.cost的实付合计 **US${cost['known_actual_cost_usd']:.5f}**；{cost['unknown_charge_calls']}次缺费用字段的请求按保守上限占用预算，不能把估计装成精确结算。台账含开发调用、失败和修正，详见api_ledger/cost_results。
+All accounted call budget is **US${cost['budget_accounted_usd']:.5f} / US$5**; the total of explicit usage.cost charges actually paid is **US${cost['known_actual_cost_usd']:.5f}**; {cost['unknown_charge_calls']} requests lacking a cost field are charged against the budget at a conservative upper bound, and estimates must not be dressed up as exact settlement. The ledger covers development calls, failures and fixes; see api_ledger/cost_results.
 
-质量控制在30条受控变异（6组同一素材，非30个独立开放世界样本）上检出Precision={cal['precision_invalid']:.3f}/Recall={cal['recall_invalid']:.3f}。这只能说明这些预设事实错误被抓到，不是证明质量Judge准确率100%。
+Quality control detected Precision={cal['precision_invalid']:.3f}/Recall={cal['recall_invalid']:.3f} on 30 controlled mutations (6 groups of the same material, not 30 independent open-world samples). This only shows that these preset factual errors were caught, not that the quality judge is 100% accurate.
 
-真实失败包含：素材外数字、虚构建议被误写为事实、JSON截断、HTTP200内部provider error、事实引用误伤和软模式过度约束。开发规则修正及旧结果完整归档。没有为了展示闭环改善而删除保留原稿或失败主题。
+Real failures included: out-of-material numbers, fabricated advice miswritten as fact, truncated JSON, HTTP 200 with an internal provider error, fact-reference false positives, and over-constraining soft patterns. Development rule fixes and old results were fully archived. No retained original or failing topic was deleted in order to showcase closed-loop improvement.
 
-## 7. 可选Upworthy外部迁移
+## 7. Optional Upworthy external transfer
 
-真实跑了Reddit标题模型到Upworthy相同实验/图片/lede/excerpt的CTR排序：{up['n_experiments']}个实验，非并列{up['non_tie_n']}，准确率{up['pairwise_accuracy']:.3f}，随机基线0.5。未用Upworthy调参；排除官方指出的非随机时段。观察CTR仍有抽样噪声，域/时间/体裁差距大；不是完整Reddit帖或真实爆款证据。
+A real run ranked the Reddit title model against Upworthy with identical experiment/image/lede/excerpt CTR: {up['n_experiments']} experiments, {up['non_tie_n']} non-tied, accuracy {up['pairwise_accuracy']:.3f}, random baseline 0.5. No Upworthy data was used for tuning; officially flagged non-random periods were excluded. Observed CTR still carries sampling noise and the domain/time/genre gaps are large; this is not evidence about full Reddit posts or real viral hits.
 
-## 8. 用户只需补什么
+## 8. What the user still needs to add
 
-1. 打开本地 `/blind`，完成12组A/B/Tie真实评价（8组G4对G0，4组反馈对多采样，分开汇总）。
-2. 审阅报告中的假设素材、负结果和结论边界。
-3. 按Demo脚本录制5分钟左右本人露脸＋屏幕视频并自己提交。
+1. Open the local `/blind` page and complete 12 genuine A/B/Tie evaluations (8 pairs G4 vs G0, 4 pairs feedback vs multi-sampling, summarized separately).
+2. Review the hypothetical material, negative results and conclusion boundaries in the report.
+3. Record a roughly 5-minute face-visible plus screen video following the demo script and submit it yourself.
 
-这已经达到实验执行阈值。下一版优先补真实素材与真人/平台反馈，不继续堆Agent、微调和多平台复杂度。
+This has reached the experimental execution threshold. The next version should prioritize real material and genuine human/platform feedback rather than piling on more agents, fine-tuning and multi-platform complexity.
 '''
-    write_md(ROOT/'results/实验结果与结论.md',md)
+    write_md(ROOT/'results/experiment_1_0_results_and_conclusions.md',md)
     audit_path=ROOT/'results/independent_generation_audit_comparisons.csv'
     if audit_path.exists():
         audit=pd.read_csv(audit_path)
         ar=audit[audit.a.eq('O2_feedback')&audit.b.eq('O1_resample')&audit.metric.eq('audit_score')].iloc[0]
-        addon=f'\n## 9. 第二性能模型的独立复核（探索性后验分析）\n\n冻结的E4语义模型只做审计，没有向生成/改写提供反馈。对178份独立文本（180候选中有2份缓存共用文本）复核后，反馈−多采样的独立潜力分差值为{ar.mean_delta:+.5f}，95%主题区间[{ar.ci95_low:+.5f},{ar.ci95_high:+.5f}]。优化器和审计器均未证明反馈更优；不能把微小本模型升分写成传播收益，也不能凭两模型分歧就认定已经证明奖励投机。详见independent_generation_audit文件。\n\nselected_model_attributions.json另保存线性模型的真实logit贡献；系数体现词项/主题关联，不是因果修改建议。\n'
-        write_md(ROOT/'results/实验结果与结论.md',md+addon)
+        addon=f'\n## 9. Independent re-check by a second performance model (exploratory post-hoc analysis)\n\nThe frozen E4 semantic model was used for auditing only and never fed scores back into generation or rewriting. Re-checking 178 independent texts (2 of the 180 candidates shared cached text) gave a feedback-minus-multi-sampling independent potential-score difference of {ar.mean_delta:+.5f}, with a 95% topic interval [{ar.ci95_low:+.5f},{ar.ci95_high:+.5f}]. Neither the optimizer nor the auditor demonstrated that feedback is better; a tiny score gain from this model must not be written up as an engagement benefit, and disagreement between two models must not be taken as proof of reward hacking. See the independent_generation_audit files.\n\nselected_model_attributions.json separately stores the linear model\'s actual logit contributions; the coefficients reflect term/topic associations, not causal editing advice.\n'
+        write_md(ROOT/'results/experiment_1_0_results_and_conclusions.md',md+addon)
     make_figures(e,gs)
     report=f'''# ViralLoop: Constraint-Aware Content Generation and Independent Evaluation
 
@@ -178,36 +178,36 @@ A controlled thirty-case fact-check probe detected its predefined mutations, but
         paragraph=f'A separate frozen semantic classifier audited generated drafts without feeding scores back into optimization. This was an explicitly post-hoc exploratory check, not another truth label. Feedback minus fresh sampling on this second proxy averaged {ar.mean_delta:+.5f}, with interval [{ar.ci95_low:+.5f}, {ar.ci95_high:+.5f}]. The audit therefore did not validate feedback superiority either. Linear-model token contributions were reconstructed exactly from coefficients, but can reflect topics and entities rather than effective edits. Two duplicated drafts shared cached generation; they were not counted as additional independent texts.\n\n'
         report=report.replace('## Sources',paragraph+'## Sources')
     write_md(ROOT/'submission/report.md',report);words=len(re.findall(r"\b[\w]+(?:['-][\w]+)*\b",report.split('## Sources')[0]));write_json(ROOT/'submission/report_word_count.json',{'main_words':words,'target':1200,'acceptable_teacher_range_15pct':[1020,1380],'references_excluded':True,'status':'draft pending genuine human review and author verification'})
-    write_md(ROOT/'submission/demo_script.md',f'''# Demo脚本：约5分钟，真实本人露脸＋屏幕
+    write_md(ROOT/'submission/demo_script.md',f'''# Demo script: about 5 minutes, genuine face-visible plus screen
 
-视频录制由本人完成；AI不能代替本人露脸。不要展示API密钥。只播放真实运行记录时明确说“实验证据回放”；点击实时生成时明确说明真实调用模型。
+The recording is done by the author; AI cannot stand in for the author\'s face. Do not show API keys. When only replaying real run records, say clearly "replay of experimental evidence"; when clicking to generate live, state clearly that a real model call is being made.
 
-## 0:00–0:40 问题与边界
-介绍固定事实写技术社区内容，目标是比较生成策略和独立评测；不能承诺真实爆款率。
+## 0:00-0:40 Problem and boundaries
+Introduce writing technical-community content from fixed facts; the goal is to compare generation strategies and independent evaluation; no guarantee of a real viral rate can be made.
 
-## 0:40–1:30 数据与历史模型
-展示2336条冻结数据、36–38h恢复证据、时间分区。展示图：文本AP{by['E2_tfidf'].average_precision:.3f}、语义AP{by['E4_semantic'].average_precision:.3f}，lazy正类F1=0。解释主题/曝光混杂仍在。
+## 0:40-1:30 Data and historical models
+Show the 2,336 frozen records, the 36-38h recovery evidence, the time partitions. Show the figure: text AP {by['E2_tfidf'].average_precision:.3f}, semantic AP {by['E4_semantic'].average_precision:.3f}, lazy positive-class F1 = 0. Explain that topic/exposure confounding remains.
 
-## 1:30–3:15 产品闭环
-打开localhost:8765，选一个真实完成的T主题。先看Facts，说明假设素材；比较G0、G4-both、O1、O2。展示全部候选、约束失败、分数/质量和保留原稿。若演示实时生成，准备2条简短事实；不要在录像里等待超过预算或保证会升分。
+## 1:30-3:15 Product loop
+Open localhost:8765 and pick a genuinely completed T topic. Look at Facts first and explain that the material is hypothetical; compare G0, G4-both, O1, O2. Show all candidates, constraint failures, scores/quality and the retained original. If demonstrating live generation, prepare 2 short facts; do not exceed budget while waiting on camera or promise that scores will rise.
 
-## 3:15–4:10 实验对比
-展示10个主题结果与反馈对多采样差值{o.mean_delta:+.5f}及区间。解释“更复杂并非一定更好”，选择{freeze['best_practical_selection']}的务实理由。真人盲评未完成时明确说尚待补，不编结果。
+## 3:15-4:10 Experiment comparison
+Show the 10-topic results and the feedback-vs-multi-sampling difference {o.mean_delta:+.5f} with its interval. Explain that "more complex is not necessarily better" and the practical reasons for choosing {freeze['best_practical_selection']}. If genuine human blind review is not finished, say clearly that it is still pending and do not invent results.
 
-## 4:10–5:00 取舍与局限
-展示成本计入${cost['budget_accounted_usd']:.5f}、失败分类、没有Agent/微调的理由、未来真实读者验证。结尾说明README可复现；报告/evals/数据已透明保存。
+## 4:10-5:00 Trade-offs and limitations
+Show the accounted cost ${cost['budget_accounted_usd']:.5f}, the failure categories, the reasons for not using agents/fine-tuning, and future real-reader validation. Close by explaining that the README is reproducible; reports/evals/data are transparently stored.
 ''')
-    write_md(ROOT/'docs/reflection.md',f'''# 实验反思
+    write_md(ROOT/'docs/reflection.md',f'''# Experiment reflection
 
-已验证：历史文本存在相对表现预测信号，完整保留月份E2 AP={by['E2_tfidf'].average_precision:.3f}，真实语义={by['E4_semantic'].average_precision:.3f}。
+Verified: historical text carries a relative-performance predictive signal, E2 AP={by['E2_tfidf'].average_precision:.3f} over the full retained months, real semantic={by['E4_semantic'].average_precision:.3f}.
 
-未验证：表达形式的因果收益、生成稿真实互动、独立曝光归一化、完整作者声誉、多人盲评、大规模稳定策略。
+Not verified: the causal benefit of phrasing, the real interaction of generated drafts, independent exposure normalization, full author reputation, multi-person blind review, and a large-scale stable strategy.
 
-复杂度：上下文并不必然提高测试AP；RAG/模式未保证生成效果更好；反馈和多采样必须同一起稿同预算比。将大量例子和统计卡放进Prompt也可能引入事实、降低多样性或混淆目标。
+Complexity: context does not necessarily raise test AP; RAG/patterns did not guarantee better generation; feedback and multi-sampling must be compared from the same starting draft and the same budget. Putting many examples and statistics cards into the Prompt can also introduce facts, reduce diversity or confuse the objective.
 
-评测风险：质量规则误伤F编号在开发阶段已修正；未知数字规则仍保守，可能拒绝合法数量描述。独立模型可能共有偏差。窄范围合成事实检查不是开放世界100%准确率。10主题bootstrap只作探索。
+Evaluation risk: quality rules that falsely flagged F-prefixed references were fixed during development; the unknown-number rule is still conservative and may reject legitimate quantity descriptions. Independent models may share bias. A narrow synthetic fact-check is not open-world 100% accuracy. The 10-topic bootstrap is exploratory only.
 
-下一步：真实作者素材、真实人评审、只控制输入事实的编辑对照；具备读者流量才做随机曝光AB。暂不扩Agent/微调/多平台。
+Next steps: real author material, genuine human review, and an editing comparison that only controls the input facts; run randomized exposure A/B only when real reader traffic exists. Do not expand agents/fine-tuning/multi-platform for now.
 ''')
     print('ARTIFACTS report words',words,'final drafts',len(fc),'budget',spent(),flush=True)
 if __name__=='__main__':main()

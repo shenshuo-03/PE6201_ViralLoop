@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101766-q8UsDxQlFPSMDQZMRPl8",
+  "object": "chat.completion",
+  "created": 1791101766,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and includes all relevant facts from the brief. It avoids unsupported claims and maintains appropriate caveats about the lack of recorded model/runtime versions and absence of evidence for driver or hardware faults. The title accurately reflects the content. The language is technical and restrained, suitable for the target audience. The question is focused and invites discussion on architectural and implementation bottlenecks related to context length increase on a 16 GB GPU, which is relevant and useful for troubleshooting. The post is credible and not clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly preserves the hypothetical status and includes all key facts from the brief. It explicitly notes the lack of evidence for driver or model issues and the unrecorded model/runtime versions. The title matches the body content well. The language is clear and technical, appropriate for the audience. The post asks about common causes of latency increase with context length scaling on a 16 GB GPU, focusing on memory management, attention mechanisms, and quantization effects, which is relevant and useful. The tone is credible and restrained, with no clickbait elements.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 966,
+    "completion_tokens": 432,
+    "total_tokens": 1398,
+    "cost": 0.0010776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010776,
+      "upstream_inference_prompt_cost": 0.0003864,
+      "upstream_inference_completions_cost": 0.0006912
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

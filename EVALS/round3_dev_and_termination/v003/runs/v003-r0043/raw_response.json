@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118688-zYqOD3DdHT4FpKQBMht5",
+  "object": "chat.completion",
+  "created": 1791118688,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"speaker\": \"community member seeking help with explicitly hypothetical product decision, not source author\",\n  \"scenario_origin\": \"controlled_hypothetical\",\n  \"current_goal\": \"To decide on the most user-friendly and efficient UI structure for a new local LLM application.\",\n  \"central_purpose\": \"To gather community opinions on the pros and cons of tabbed chat interfaces versus single-chat interfaces with persistent storage for local LLM applications, focusing on ease of use and feature management.\",\n  \"desired_response\": \"Community members' opinions on the advantages and disadvantages of implementing a tabbed chat interface (where each tab remembers its own system prompt and sampling settings) versus a single chat interface that saves all conversations persistently in a sidebar, especially regarding intuitiveness for users experimenting with different models or prompts.\",\n  \"relevant_evidence_ids\": [\n    \"F1\",\n    \"F2\",\n    \"F3\",\n    \"F6\"\n  ],\n  \"must_preserve\": [\n    \"The user goal to evaluate UI design choices for a local LLM application remains unchanged.\",\n    \"The scenario is explicitly hypothetical and intended for community input on UI design principles.\",\n    \"No personal experience, ownership claims, or invented technical details are included.\",\n    \"Reference to features of the Sigil application as examples is allowed and preserved.\"\n  ],\n  \"must_not_invent\": [\n    \"Any personal history or success stories related to local LLM usage.\",\n    \"Claims of ownership or authorship of Sigil or any other software.\",\n    \"Technical specifications or performance benchmarks not present in the source facts.\",\n    \"Any information outside the provided source context and limitations.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1438,
+    "completion_tokens": 341,
+    "total_tokens": 1779,
+    "cost": 0.0011208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011208,
+      "upstream_inference_prompt_cost": 0.0005752,
+      "upstream_inference_completions_cost": 0.0005456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

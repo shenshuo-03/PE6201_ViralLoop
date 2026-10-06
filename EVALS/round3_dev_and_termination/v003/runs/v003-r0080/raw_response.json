@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118961-el9Y2RuaDRp5H7NgfmaM",
+  "object": "chat.completion",
+  "created": 1791118961,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"A is more concise and directly motivates the decision with concrete context (Sigil's design philosophy emphasizing speed/minimalism), making the question more actionable. B is slightly verbose and frames Sigil as implementing 'both' approaches simultaneously, which is less clear about the actual design choice being evaluated.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2108,
+    "completion_tokens": 140,
+    "total_tokens": 2248,
+    "cost": 0.002808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002808,
+      "upstream_inference_prompt_cost": 0.002108,
+      "upstream_inference_completions_cost": 0.0007
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

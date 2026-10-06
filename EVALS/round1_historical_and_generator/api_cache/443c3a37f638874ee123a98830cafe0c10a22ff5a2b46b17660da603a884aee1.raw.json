@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101498-SkctY6CTRcDMoxQW0e1o",
+  "object": "chat.completion",
+  "created": 1791101498,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Prompt Regression Test Design for Local LLMs\",\n    \"body\": \"This post outlines a hypothetical approach to designing a prompt regression test suite for local LLM experiments. The goal is to establish a repeatable method for evaluating prompt changes without relying on measured results. We propose using a fixed set of 12 test prompts (F1) to ensure consistent evaluation. The core idea is to compare the output of an 'old' prompt set against a 'new' set using identical model configurations (F2). This comparison should cover diverse scenarios, including questions with clear answers and those where information is insufficient (F3). It is crucial to remember that this is a hypothetical experiment design; no actual improvement data is available at this stage (F4). The intention is to create a framework for future, actual testing. We aim to establish a baseline before any modifications are made. This structured approach helps isolate the impact of prompt engineering.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Outline the hypothetical prompt regression test design. Detail the use of fixed prompts, comparison method, and case types. Emphasize the hypothetical nature and lack of results. Invite discussion on test design best practices.\"\n  },\n  {\n    \"title\": \"Designing a Hypothetical Prompt Regression Test for Local LLM Prompt Engineering\",\n    \"body\": \"This guide details a hypothetical framework for prompt regression testing in a local LLM context. The objective is to create a systematic way to assess prompt modifications. We propose a test suite comprising 12 fixed prompts (F1). The methodology involves evaluating both the existing and proposed new prompts against the same underlying model and settings (F2). This ensures a fair comparison. The test cases should be designed to include a mix of queries that are answerable with the provided context and those that are not, due to insufficient information (F3). It's vital to stress that this is a conceptual exercise and no performance improvements have been measured or confirmed (F4). The focus is on the *design* of the test, not its outcomes. This hypothetical setup aims to provide a reproducible method for prompt validation before any real-world deployment or extensive benchmarking.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Describe the hypothetical prompt regression test design. Explain the use of 12 fixed prompts and the comparison strategy. Include the requirement for answerable and insufficient-information cases. Clearly state the hypothetical status and absence of results. Seek community input on robust test design principles.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 562,
+    "total_tokens": 1008,
+    "cost": 0.0002694,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002694,
+      "upstream_inference_prompt_cost": 4.46e-05,
+      "upstream_inference_completions_cost": 0.0002248
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

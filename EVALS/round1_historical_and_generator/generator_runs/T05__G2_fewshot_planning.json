@@ -1,0 +1,303 @@
+{
+  "at": "2026-10-04T08:10:49.481525+00:00",
+  "topic": {
+    "id": "T05",
+    "split": "final_test",
+    "topic": "Checklist for a hypothetical offline local model test",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario allows downloading the model before disconnecting.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The offline check must include generation and checking for network requests.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No actual offline test has been run.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:10:46.612898+00:00",
+    "tag": "final_test:T05:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "235f1e748d1bb5de5857609b9171e5e6c773dd49074bbb3747d0e8cafbbc45b0",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 715,
+    "output_tokens": 738,
+    "actual_cost_usd": 0.0003667,
+    "token_price_estimate_usd": 0.00036669999999999997,
+    "reserved_upper_usd": 0.0011273,
+    "budget_charge_usd": 0.0003667,
+    "latency_seconds": 3.6989230000035604,
+    "retry": 0,
+    "request_id": "gen-1791101443-vIIFTlcYjFEbC2DwlJLC"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:10:49.477254+00:00",
+    "tag": "final_test:T05:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "04886f4aeb2fb37fd213741c4a5a517f78edceb7b5488699c8643b897770717e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1148,
+    "output_tokens": 386,
+    "actual_cost_usd": 0.0010768,
+    "token_price_estimate_usd": 0.0010768,
+    "reserved_upper_usd": 0.0051284,
+    "budget_charge_usd": 0.0010768,
+    "latency_seconds": 2.8205614000034984,
+    "retry": 0,
+    "request_id": "gen-1791101446-RjbH6cAAQm2FDIOVxJ2b"
+  },
+  "retrieved_ids": [
+    "1l65r2k",
+    "1ib80m9"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "b08e0ce7f263c53c7d61034523c912da9f38b85e54418d8a033e05f3e020b1c3",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Checklist: Verifying Local Models Offline",
+        "body": "I'm outlining a hypothetical procedure for testing local LLMs offline. The goal is to ensure a model functions correctly and doesn't attempt to contact external servers after initial download. This is a planned, hypothetical test, not a report of actual results (F3).\n\n**Proposed Offline Test Steps:**\n\n1.  **Model Download:** Ensure the model is fully downloaded while online (F1).\n2.  **Network Disconnection:** Cease all network connectivity.\n3.  **Local Inference:** Run the model to generate text. Verify that output is produced locally.\n4.  **Network Monitoring:** Simultaneously, monitor for any network requests originating from the LLM application or its dependencies. The absence of such requests is critical.\n\nThis checklist focuses on the *process* for a hypothetical scenario. It does not include specific software versions, hardware, or performance metrics, as no actual test has been conducted. The aim is to define a robust verification method. Any thoughts on refining these steps for a thorough, hypothetical offline validation?",
+        "fact_refs": [
+          "F1",
+          "F3"
+        ],
+        "plan": "Create a draft outlining a hypothetical checklist for offline local model testing. Emphasize that it's a planned procedure, not actual results (F3). Include steps for downloading (F1), disconnecting, generating text, and checking for network requests (F2). Keep the tone technical and restrained, suitable for r/LocalLLaMA. Ensure the body is within the word count and the title is concise and informative. Avoid any personal experience or measured results."
+      },
+      "performance_score": 0.23066239656247922,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the test (F3) and outlines a logical, stepwise checklist consistent with the scenario facts (F1, F2). It avoids unsupported claims and personal experience, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the audience, making it useful and relevant. Credibility is high due to explicit caveats and restrained tone. No clickbait elements are present.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 153,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Designing a Hypothetical Offline Test for Local LLMs",
+        "body": "This post outlines a hypothetical framework for evaluating local language models in an offline environment. The core objective is to confirm a model's standalone functionality post-download and its inability to make network calls. It's important to stress that this is a conceptual design; no actual offline testing has been performed (F3).\n\n**Hypothetical Test Design:**\n\n*   **Pre-requisite:** The model must be successfully downloaded while the system is online (F1).\n*   **Isolation:** Ensure complete network disconnection (Wi-Fi off, Ethernet unplugged).\n*   **Functional Check:** Initiate text generation using the local model. Confirm that output is generated without errors.\n*   **Network Traffic Analysis:** Concurrently, employ network monitoring tools to detect any outbound connection attempts. A successful offline test means zero network activity from the LLM process (F2).\n\nThis is a theoretical approach to ensure data privacy and model integrity in offline scenarios. The focus is on the *methodology* for a hypothetical validation. Further discussion on potential pitfalls or refinements to this conceptual plan would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft a second, distinct Reddit post focusing on a hypothetical offline test design for local LLMs. Reiterate the hypothetical nature of the experiment (F3). Detail steps including pre-download (F1), network isolation, local generation, and network request monitoring (F2). Maintain a technical, cautious tone suitable for the audience. Ensure adherence to word count and title length limits. Explicitly state that no real test has occurred."
+      },
+      "performance_score": 0.23675291618540098,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical status (F3) and includes all key steps from the facts (F1, F2). The title accurately reflects the content. The explanation is clear, technical, and cautious, suitable for the target audience. It avoids unsupported claims and personal anecdotes, maintaining credibility and necessary caveats. The post is relevant and actionable as a conceptual framework. No clickbait detected.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 158,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Designing a Hypothetical Offline Test for Local LLMs",
+      "body": "This post outlines a hypothetical framework for evaluating local language models in an offline environment. The core objective is to confirm a model's standalone functionality post-download and its inability to make network calls. It's important to stress that this is a conceptual design; no actual offline testing has been performed (F3).\n\n**Hypothetical Test Design:**\n\n*   **Pre-requisite:** The model must be successfully downloaded while the system is online (F1).\n*   **Isolation:** Ensure complete network disconnection (Wi-Fi off, Ethernet unplugged).\n*   **Functional Check:** Initiate text generation using the local model. Confirm that output is generated without errors.\n*   **Network Traffic Analysis:** Concurrently, employ network monitoring tools to detect any outbound connection attempts. A successful offline test means zero network activity from the LLM process (F2).\n\nThis is a theoretical approach to ensure data privacy and model integrity in offline scenarios. The focus is on the *methodology* for a hypothetical validation. Further discussion on potential pitfalls or refinements to this conceptual plan would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Draft a second, distinct Reddit post focusing on a hypothetical offline test design for local LLMs. Reiterate the hypothetical nature of the experiment (F3). Detail steps including pre-download (F1), network isolation, local generation, and network request monitoring (F2). Maintain a technical, cautious tone suitable for the audience. Ensure adherence to word count and title length limits. Explicitly state that no real test has occurred."
+    },
+    "performance_score": 0.23675291618540098,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also faithfully preserves the hypothetical status (F3) and includes all key steps from the facts (F1, F2). The title accurately reflects the content. The explanation is clear, technical, and cautious, suitable for the target audience. It avoids unsupported claims and personal anecdotes, maintaining credibility and necessary caveats. The post is relevant and actionable as a conceptual framework. No clickbait detected.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 158,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

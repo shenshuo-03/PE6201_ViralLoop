@@ -1,0 +1,14 @@
+{
+  "drafts": [
+    {
+      "title": "Reinforcement Learning Might Be Key to LLM Memory Management Beyond Just Larger Context Windows",
+      "body": "Recent large language models like Sonnet 3.7 and Deepseek v3 have shown notable reasoning improvements compared to earlier versions, suggesting progress in LLM capabilities. However, some observations—such as an agent's poor performance in complex tasks like playing Pokemon—indicate that reasoning still faces limitations, particularly around memory and context management. The challenge may not stem from insufficient context window size, as these models already handle large contexts, but rather from how memory and context are managed internally. One hypothesis is that reinforcement learning could address these management issues, enabling models to develop more sophisticated strategies for handling context. This might lead to emergent behaviors or tokens dedicated to higher-order context processing, similar to how previous models introduced tokens like <think>. While this is speculative and not yet verified, it suggests that simply increasing context length isn't a complete solution. Instead, integrating reinforcement learning to optimize memory use could be a promising direction for achieving more human-like agent performance. This perspective invites further exploration rather than definitive conclusions.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ]
+    }
+  ]
+}

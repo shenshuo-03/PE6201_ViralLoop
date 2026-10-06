@@ -1,6 +1,6 @@
 # Round 2 Explainer — Real Material, an Independent Judge, and a Ruler That Failed Admission
 
-Working directory: `实验1.1版/loops/v002` → packaged as `CODE/round2_v002`, `DATA/round2_briefs_and_sources`, `EVALS/round2_judge_and_final`.
+Round 2 workspace (`loops/v002`) → packaged as `CODE/round2_v002`, `DATA/round2_briefs_and_sources`, `EVALS/round2_judge_and_final`.
 
 ## What Round 2 changed
 

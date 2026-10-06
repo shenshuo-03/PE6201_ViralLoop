@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112536-MS604CRxlJybSHnpLaNB",
+  "object": "chat.completion",
+  "created": 1791112536,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 3,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source and brief, highlighting the benchmark's methodology and its limitations due to being a single-source, unverified report. It correctly notes the synthetic nature of the data and poses a relevant community question about the utility of such benchmarks. The speaker correctly avoids claiming personal testing. Specificity is good, referencing the benchmark's core function. Information value is adequate, providing a concise overview and a thoughtful question. Community fit is good, directly engaging the audience with a relevant query about local LLM capabilities. Credibility is adequate, acknowledging the source's limitations.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 3,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 also accurately summarizes the source and brief, focusing on the synthetic nature of FamilyBench and its implications. It correctly points out the limitations of early tests using fixed parameters and poses a pertinent question to the community about the value of synthetic benchmarks versus real-world data. The speaker adheres to the persona. Specificity is good, referencing the benchmark's design. Information value is adequate, offering a balanced perspective and a relevant question. Community fit is good, directly addressing the audience's potential concerns. Credibility is adequate, acknowledging the source's limitations.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3560,
+    "completion_tokens": 522,
+    "total_tokens": 4082,
+    "cost": 0.0005648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005648,
+      "upstream_inference_prompt_cost": 0.000356,
+      "upstream_inference_completions_cost": 0.0002088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

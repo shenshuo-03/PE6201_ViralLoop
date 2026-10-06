@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "Tie",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts accurately preserve F2 and F3 without inventing fixes or claiming definitive causation. Draft A frames the issue neutrally as a 'possible interaction problem' and asks for workarounds or version/settings guidance—concrete community-actionable questions. Draft B goes further by introducing a plausible diagnostic hypothesis ('resource constraints during incremental generation') that, while speculative, gives readers a testable angle to investigate and contributes actionable reasoning beyond the report. Both maintain credibility by citing the May 2025 source and avoiding forbidden claims. However, B's framing—'raises the question of whether'—signals uncertainty appropriately while offering diagnostic direction that could guide troubleshooting (e.g., memory profiling, batch size tuning). A's request for 'particular Open WebUI versions or settings' is valid but more generic. B's specificity to 'large models' and 'incremental generation' during 'thinking' phases connects the symptom to a plausible mechanism without overstepping into unsupported claims. Both are credible; B provides marginally more information value by suggesting a diagnostic pathway rather than only asking for workarounds."
+  },
+  "usage": {
+    "run_id": "v002-r0478",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:23:11.711952+00:00",
+    "tag": "judge_final:F12:V2_vs_V1:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "c10b873c3734641d644c9157b42336ef89cfa2ce01cf1d27b78dc381ef653586",
+    "actual_cost_usd": 0.003694,
+    "budget_charge_usd": 0.003694,
+    "reserved_upper_usd": 0.011338,
+    "input_tokens": 2024,
+    "output_tokens": 334,
+    "latency_seconds": 4.473528300004546,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112987-mPwXVHLW8oxz4La8TpAy",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

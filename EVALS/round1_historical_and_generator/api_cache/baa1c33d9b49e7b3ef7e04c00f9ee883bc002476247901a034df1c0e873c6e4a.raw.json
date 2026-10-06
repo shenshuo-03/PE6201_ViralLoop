@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100044-rigEcRQPA2wWKSRLYiXZ",
+  "object": "chat.completion",
+  "created": 1791100044,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present measured results, preserving necessary caveats. It separates VRAM components as per the facts and uses clear, technical language suitable for the target audience. The title accurately reflects the content. The post is relevant and useful for readers planning VRAM usage conceptually. There is no clickbait or exaggeration.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly states the hypothetical nature and separates VRAM into the three required categories. The language is clear and technical, matching the audience. The title matches the content well. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains the hypothetical status and clearly separates VRAM components as required. The language is clear and technical, appropriate for the audience. The title is consistent with the body content. The post is relevant and useful for conceptual VRAM planning. No unsupported claims or clickbait detected.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1441,
+    "completion_tokens": 501,
+    "total_tokens": 1942,
+    "cost": 0.001378,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001378,
+      "upstream_inference_prompt_cost": 0.0005764,
+      "upstream_inference_completions_cost": 0.0008016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

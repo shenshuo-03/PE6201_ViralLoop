@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Detailed personal experience and strong opinions on a niche model suggest moderate engagement but mixed sentiment may limit high score."
+      },
+      {
+        "index": 1,
+        "probability": 0.2,
+        "reason": "Technical hardware comparison with limited broader appeal; likely lower engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Revealing a benchmark hack is relevant and potentially impactful, increasing interest."
+      },
+      {
+        "index": 3,
+        "probability": 0.25,
+        "reason": "Short discussion on distributed inference with moderate technical interest but limited novelty."
+      },
+      {
+        "index": 4,
+        "probability": 0.5,
+        "reason": "Open source security tooling with practical use case and detailed explanation likely attracts higher engagement."
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Question about replicating a popular system locally with privacy focus has moderate appeal."
+      },
+      {
+        "index": 6,
+        "probability": 0.2,
+        "reason": "Specific hardware question with limited general interest."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Beginner tutorial request may get some attention but limited depth reduces high score chance."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:37.622781+00:00",
+    "tag": "tune_dev:classifier:E5b_few_shot:16",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "06d8abc8f9d65ae6d5d1c52163887a19a2b1b3edf3da8ed480e1ac754db504d6",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6000,
+    "output_tokens": 235,
+    "actual_cost_usd": 0.002776,
+    "token_price_estimate_usd": 0.002776,
+    "reserved_upper_usd": 0.0117388,
+    "budget_charge_usd": 0.002776,
+    "latency_seconds": 2.348814900004072,
+    "retry": 0,
+    "request_id": "gen-1791100715-bKt42PQj7WV8tbYfyUMI"
+  },
+  "raw_response": {
+    "id": "gen-1791100715-bKt42PQj7WV8tbYfyUMI",
+    "object": "chat.completion",
+    "created": 1791100715,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Detailed personal experience and strong opinions on a niche model suggest moderate engagement but mixed sentiment may limit high score.\"},{\"index\":1,\"probability\":0.2,\"reason\":\"Technical hardware comparison with limited broader appeal; likely lower engagement.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Revealing a benchmark hack is relevant and potentially impactful, increasing interest.\"},{\"index\":3,\"probability\":0.25,\"reason\":\"Short discussion on distributed inference with moderate technical interest but limited novelty.\"},{\"index\":4,\"probability\":0.5,\"reason\":\"Open source security tooling with practical use case and detailed explanation likely attracts higher engagement.\"},{\"index\":5,\"probability\":0.35,\"reason\":\"Question about replicating a popular system locally with privacy focus has moderate appeal.\"},{\"index\":6,\"probability\":0.2,\"reason\":\"Specific hardware question with limited general interest.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Beginner tutorial request may get some attention but limited depth reduces high score chance.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6000,
+      "completion_tokens": 235,
+      "total_tokens": 6235,
+      "cost": 0.002776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002776,
+        "upstream_inference_prompt_cost": 0.0024,
+        "upstream_inference_completions_cost": 0.000376
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

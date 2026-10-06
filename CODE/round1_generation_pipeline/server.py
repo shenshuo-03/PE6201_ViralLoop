@@ -35,18 +35,18 @@ class Handler(BaseHTTPRequestHandler):
             body=json.loads(self.rfile.read(length));path=urlparse(self.path).path
             if path=='/api/human-review':
                 responses=body.get('responses',[])
-                if not body.get('rater_name') or not responses:return self.send_json({'error':'需要填写真实评审姓名与回答'},400)
+                if not body.get('rater_name') or not responses:return self.send_json({'error':'A real reviewer name and answers are required'},400)
                 p=ROOT/'evals/human_review_submissions';p.mkdir(exist_ok=True)
                 write_json(p/f'{int(time.time())}.json',{'submitted_at':now(),'source':'browser user submission, self-declared real person','rater_name':body['rater_name'],'responses':responses})
-                return self.send_json({'saved':True,'responses':len(responses),'note':'提交结果已保存，需解盲汇总；未自动当作实验结论'})
+                return self.send_json({'saved':True,'responses':len(responses),'note':'Submission saved. It must be unblinded and aggregated, and is not automatically treated as an experimental result.'})
             if path=='/api/generate':
                 state=json.loads((ROOT/'results/RUN_STATE.json').read_text(encoding='utf-8'))
-                if state.get('status')!='automated_experiments_completed':return self.send_json({'error':'自动实验还在运行，先查看证据回放；稍后才能实时生成。'},409)
+                if state.get('status')!='automated_experiments_completed':return self.send_json({'error':'Automated experiments are still running. Review the evidence replay first; live generation becomes available later.'},409)
                 from generator import generate,optimize,diagnostics
                 from retrieval import Retriever
                 from harness import assess
                 facts=body.get('facts',[])
-                if not facts or not body.get('topic'):return self.send_json({'error':'主题和事实不能为空'},400)
+                if not facts or not body.get('topic'):return self.send_json({'error':'Topic and facts cannot be empty'},400)
                 brief={'id':'LIVE_'+str(int(time.time())),'split':'live','topic':body['topic'],'audience':body.get('audience','r/LocalLLaMA readers'),'content_type':body.get('content_type','Discussion / Opinion'),'style':'restrained technical English','scenario_status':'Hypothetical example input. Do not turn it into personal experience or real test results.','facts':[{'id':f'F{i+1}','text':str(x),'status':'user-provided scenario'} for i,x in enumerate(facts)]}
                 config=json.loads((ROOT/'configs/generator_freeze.json').read_text(encoding='utf-8'))
                 variant=body.get('variant') or config['best_practical_selection']
@@ -55,7 +55,7 @@ class Handler(BaseHTTPRequestHandler):
                 retriever=Retriever();before=spent();drafts,examples,cards,usage,prompt=generate(brief,variant,retriever,brief['id']+':initial')
                 assessed,parent,ju=assess(drafts,brief,examples,brief['id']+':quality')
                 if parent is None:
-                    result={'brief':brief,'initial_candidates':assessed,'abstention':True,'reason':'没有通过质量约束的候选；未继续追分。','additional_budget_charge':spent()-before}
+                    result={'brief':brief,'initial_candidates':assessed,'abstention':True,'reason':'No candidate passed the quality constraints; no further score chasing was attempted.','additional_budget_charge':spent()-before}
                 elif not body.get('optimize',False):
                     result={'brief':brief,'variant':variant,'initial_candidates':assessed,'initial':parent,'final':parent,'original_retained':True,'optimization_requested':False,'additional_budget_charge':spent()-before,'boundary':'local model score, not observed reader performance'}
                 else:
@@ -65,7 +65,7 @@ class Handler(BaseHTTPRequestHandler):
                     result={'brief':brief,'variant':variant,'initial_candidates':assessed,'initial':parent,'revisions':revised,'final':best,'original_retained':best is parent,'optimization_requested':True,'additional_budget_charge':spent()-before,'boundary':'model-relative improvement only, no real platform performance observed'}
                 write_json(ROOT/'results/live_runs'/f"{brief['id']}.json",result);return self.send_json(result)
             self.send_json({'error':'not_found'},404)
-        except Exception as e:self.send_json({'error_type':type(e).__name__,'message':'请求失败，已记录调用成本；检查日志或重试。'},500)
+        except Exception as e:self.send_json({'error_type':type(e).__name__,'message':'Request failed; the call cost has been recorded. Check the log or retry.'},500)
     def log_message(self,fmt,*args):print(now(),fmt%args,flush=True)
 if __name__=='__main__':
     server=HTTPServer(('127.0.0.1',8877),Handler)

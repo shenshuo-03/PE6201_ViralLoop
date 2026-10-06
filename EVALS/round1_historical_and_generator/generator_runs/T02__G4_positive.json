@@ -1,0 +1,311 @@
+{
+  "at": "2026-10-04T08:08:00.282780+00:00",
+  "topic": {
+    "id": "T02",
+    "split": "final_test",
+    "topic": "A hypothetical context length memory experiment",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "In a hypothetical run, context length 2048 uses 7 GB and 8192 uses 11 GB.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Model, runtime and hardware are held fixed.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No output quality or throughput results were collected.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G4_positive",
+  "generation_usage": {
+    "at": "2026-10-04T08:07:57.206149+00:00",
+    "tag": "final_test:T02:G4_positive",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "332a72eda3d6aa72df248afe5123c83f3901bdc2cd3a0c79a627ad5cc3cd5e7a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3398,
+    "output_tokens": 687,
+    "actual_cost_usd": 0.0006146,
+    "token_price_estimate_usd": 0.0006146,
+    "reserved_upper_usd": 0.0018375,
+    "budget_charge_usd": 0.0006146,
+    "latency_seconds": 3.125780100002885,
+    "retry": 0,
+    "request_id": "gen-1791101274-hCD9KF3CHeANo8a95zF0"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:08:00.275212+00:00",
+    "tag": "final_test:T02:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "269bd3b80ad24196f6922533edd3afd6b9d96fb3c57c2b0944c0551c75bca32e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1066,
+    "output_tokens": 394,
+    "actual_cost_usd": 0.0010568,
+    "token_price_estimate_usd": 0.0010567999999999999,
+    "reserved_upper_usd": 0.005033599999999999,
+    "budget_charge_usd": 0.0010568,
+    "latency_seconds": 3.032692600012524,
+    "retry": 0,
+    "request_id": "gen-1791101277-dxF7LZhOPIWDiUroHR9i"
+  },
+  "retrieved_ids": [
+    "1iq6ngx",
+    "1lbimsz",
+    "1kalkgi",
+    "1jpohf2",
+    "1i2gvcg"
+  ],
+  "pattern_ids": [
+    "concrete_title__Experience / Benchmark",
+    "numbers_early__Experience / Benchmark",
+    "link_present__Experience / Benchmark"
+  ],
+  "prompt_sha256": "a59c632757c8d77ed1619ed0bfc9e3812bdc76451146c9bcf7730b1826298dae",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Memory Experiment: Context Length vs. VRAM Usage",
+        "body": "This post outlines a hypothetical experiment to understand the relationship between context length and VRAM consumption in local LLMs. The core scenario is that a specific model, runtime, and hardware configuration are held constant throughout the tests. The objective is to observe memory usage at different context lengths without collecting any data on output quality or inference speed.\n\nSpecifically, the hypothetical data suggests that a context length of 2048 tokens might require approximately 7 GB of VRAM, while extending this to 8192 tokens could increase the requirement to around 11 GB. It's crucial to reiterate that these are purely hypothetical figures from a planned, not executed, experiment. No actual benchmarks or performance metrics were gathered.\n\nThis is intended to frame a discussion on resource planning for larger context windows. What are others' experiences with memory scaling, even if qualitative, when exploring longer contexts?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to present a hypothetical experiment's memory usage figures for different context lengths. Explicitly state the hypothetical nature and the absence of quality/speed metrics. Use the provided memory figures (2048 tokens ~7GB, 8192 tokens ~11GB). Mention that model, runtime, and hardware are fixed. Conclude by inviting discussion on resource planning for context length, framed by the hypothetical data."
+      },
+      "performance_score": 0.23823020068873743,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the absence of actual measurements or quality/speed metrics, preserving scenario status and necessary caveats. The title matches the content well. The explanation is clear and technical, suitable for the target audience. The post provides actionable value by framing a discussion on resource planning, though it does not provide new data or conclusions. Credibility is high due to careful caveat inclusion and no unsupported claims. Clickbait is minimal, with a restrained and factual title.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 143,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Exploring Hypothetical VRAM Scaling with Increased Context Length",
+        "body": "We are exploring a hypothetical scenario to investigate how VRAM requirements scale with increasing context length for local language models. The setup assumes a fixed model, runtime environment, and hardware configuration to isolate the impact of context size. No actual performance or quality metrics are being measured in this theoretical exercise.\n\nThe hypothetical data points suggest a significant increase in memory footprint as context length grows. For instance, a context of 2048 tokens is projected to use around 7 GB of VRAM, whereas a jump to 8192 tokens is hypothetically estimated to require approximately 11 GB. These numbers are strictly for illustrative purposes within this hypothetical framework and do not represent measured results.\n\nThis thought experiment aims to gauge community understanding of memory scaling. What factors typically influence VRAM usage when extending context length, beyond the raw token count? Are there common patterns observed when planning for longer contexts, even without specific benchmark data?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to describe a hypothetical experiment focusing on VRAM scaling with context length. Emphasize that this is a theoretical exercise with no actual measurements. Use the provided hypothetical VRAM figures for 2048 and 8192 token contexts. State that the model, runtime, and hardware are constant. Frame the discussion around general factors influencing VRAM usage for context length, given the hypothetical data."
+      },
+      "performance_score": 0.2399230164770542,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly communicates the hypothetical nature and lack of actual measurements, preserving all necessary caveats. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It invites community discussion on factors influencing VRAM usage, providing moderate actionable value. No unsupported claims are made, and credibility is maintained by explicit disclaimers. The title is factual and not clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 154,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Exploring Hypothetical VRAM Scaling with Increased Context Length",
+      "body": "We are exploring a hypothetical scenario to investigate how VRAM requirements scale with increasing context length for local language models. The setup assumes a fixed model, runtime environment, and hardware configuration to isolate the impact of context size. No actual performance or quality metrics are being measured in this theoretical exercise.\n\nThe hypothetical data points suggest a significant increase in memory footprint as context length grows. For instance, a context of 2048 tokens is projected to use around 7 GB of VRAM, whereas a jump to 8192 tokens is hypothetically estimated to require approximately 11 GB. These numbers are strictly for illustrative purposes within this hypothetical framework and do not represent measured results.\n\nThis thought experiment aims to gauge community understanding of memory scaling. What factors typically influence VRAM usage when extending context length, beyond the raw token count? Are there common patterns observed when planning for longer contexts, even without specific benchmark data?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "The plan is to describe a hypothetical experiment focusing on VRAM scaling with context length. Emphasize that this is a theoretical exercise with no actual measurements. Use the provided hypothetical VRAM figures for 2048 and 8192 token contexts. State that the model, runtime, and hardware are constant. Frame the discussion around general factors influencing VRAM usage for context length, given the hypothetical data."
+    },
+    "performance_score": 0.2399230164770542,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also clearly communicates the hypothetical nature and lack of actual measurements, preserving all necessary caveats. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It invites community discussion on factors influencing VRAM usage, providing moderate actionable value. No unsupported claims are made, and credibility is maintained by explicit disclaimers. The title is factual and not clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 154,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

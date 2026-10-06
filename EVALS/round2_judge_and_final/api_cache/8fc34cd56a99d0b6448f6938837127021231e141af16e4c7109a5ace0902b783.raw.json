@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109875-mmjRl6Ptw0XWKGKSjwGi",
+  "object": "chat.completion",
+  "created": 1791109875,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Draft A is severely underdeveloped for the stated audience and goal. It mentions LettuceDetect only generically ('supports long input sequences,' 'available under an open license') without concrete technical details that local LLM enthusiasts need to evaluate or use the tool. Draft B provides specific, actionable facts: ModernBERT architecture, 4K token capacity, 79.22% F1 benchmark, MIT license, and concrete deliverables (Python packages, pretrained models, Hugging Face demo). Both correctly attribute claims to source-author reports and avoid forbidden claims (personal testing, guarantees, exclusivity). However, Draft B directly addresses community_fit by naming specialized domains (medicine, law) and explicitly inviting feedback on 'real-time detection in local RAG setups'—matching the brief's motivation. Draft A's vague phrasing ('feedback on its use') and omission of technical specifics (no mention of ModernBERT, token limit, or benchmark) make it less useful for a technical community deciding whether to adopt or contribute. Both cite F1 but B integrates F2–F7 appropriately without inventing unsupported claims. Credibility is tied because both correctly ground claims in the source and avoid the reader claiming personal verification. Draft B is more worth posting because it preserves the factual distinctions (encoder-based, no LLM required, specific performance metric) that enable genuine community response.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2251,
+    "completion_tokens": 396,
+    "total_tokens": 2647,
+    "cost": 0.004231,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004231,
+      "upstream_inference_prompt_cost": 0.002251,
+      "upstream_inference_completions_cost": 0.00198
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

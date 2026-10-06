@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not claim any model superiority, aligning well with the facts. It explains why leaderboard scores may not reflect latency or offline usability, which matches the scenario's key points. The language is clear and technical, suitable for the target audience. It invites discussion on alternative evaluation methods, providing actionable value. The title accurately reflects the content without exaggeration or misleading claims."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and does not assert any model is better, consistent with the facts. It clearly explains the limitations of leaderboard metrics regarding latency and offline use, preserving necessary caveats. The writing is clear and technical, appropriate for the audience. The title matches the body content and is restrained, avoiding clickbait. The post encourages community input on practical evaluation approaches, enhancing usefulness."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:13:47.494098+00:00",
+    "tag": "final_test:T08:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "4c1d2dabb0452c1685a77b0093bc18b79767618ae0abd824a7a72ac4bb4184bd",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1086,
+    "output_tokens": 375,
+    "actual_cost_usd": 0.0010344,
+    "token_price_estimate_usd": 0.0010344,
+    "reserved_upper_usd": 0.005212,
+    "budget_charge_usd": 0.0010344,
+    "latency_seconds": 3.007056000002194,
+    "retry": 0,
+    "request_id": "gen-1791101624-LJgxoVz6FXmoKugZrssP"
+  },
+  "raw_response": {
+    "id": "gen-1791101624-LJgxoVz6FXmoKugZrssP",
+    "object": "chat.completion",
+    "created": 1791101624,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not claim any model superiority, aligning well with the facts. It explains why leaderboard scores may not reflect latency or offline usability, which matches the scenario's key points. The language is clear and technical, suitable for the target audience. It invites discussion on alternative evaluation methods, providing actionable value. The title accurately reflects the content without exaggeration or misleading claims.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical framing and does not assert any model is better, consistent with the facts. It clearly explains the limitations of leaderboard metrics regarding latency and offline use, preserving necessary caveats. The writing is clear and technical, appropriate for the audience. The title matches the body content and is restrained, avoiding clickbait. The post encourages community input on practical evaluation approaches, enhancing usefulness.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1086,
+      "completion_tokens": 375,
+      "total_tokens": 1461,
+      "cost": 0.0010344,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010344,
+        "upstream_inference_prompt_cost": 0.0004344,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

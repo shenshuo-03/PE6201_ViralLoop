@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and does not claim any model superiority, aligning well with the facts. It explains why leaderboard scores may not capture latency and offline needs, which is relevant and useful for the audience. The language is clear and technical without exaggeration, maintaining credibility and avoiding clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also preserves the hypothetical scenario and explicitly states no model comparisons or claims. It clearly discusses the limitations of leaderboard scores for latency and offline use, which is relevant and useful. The tone is restrained and technical, supporting credibility and avoiding clickbait."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains the hypothetical framing and does not claim any model outperformance. It clearly questions the adequacy of leaderboard scores for local low-latency and offline needs, which is relevant and useful. The language is clear and technical, with no exaggeration or unsupported claims, preserving credibility and avoiding clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:14:24.764470+00:00",
+    "tag": "final_test:T08:O1_resample:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "42b2f94f2125d52c9b5736890d2e3640a7253c7499fe18e2c53472d281e3767b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1170,
+    "output_tokens": 486,
+    "actual_cost_usd": 0.0012456,
+    "token_price_estimate_usd": 0.0012456,
+    "reserved_upper_usd": 0.0053852,
+    "budget_charge_usd": 0.0012456,
+    "latency_seconds": 3.518248999986099,
+    "retry": 0,
+    "request_id": "gen-1791101661-EtBw4pLIZDfMcbbMZUBO"
+  },
+  "raw_response": {
+    "id": "gen-1791101661-EtBw4pLIZDfMcbbMZUBO",
+    "object": "chat.completion",
+    "created": 1791101661,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and does not claim any model superiority, aligning well with the facts. It explains why leaderboard scores may not capture latency and offline needs, which is relevant and useful for the audience. The language is clear and technical without exaggeration, maintaining credibility and avoiding clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also preserves the hypothetical scenario and explicitly states no model comparisons or claims. It clearly discusses the limitations of leaderboard scores for latency and offline use, which is relevant and useful. The tone is restrained and technical, supporting credibility and avoiding clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains the hypothetical framing and does not claim any model outperformance. It clearly questions the adequacy of leaderboard scores for local low-latency and offline needs, which is relevant and useful. The language is clear and technical, with no exaggeration or unsupported claims, preserving credibility and avoiding clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1170,
+      "completion_tokens": 486,
+      "total_tokens": 1656,
+      "cost": 0.0012456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012456,
+        "upstream_inference_prompt_cost": 0.000468,
+        "upstream_inference_completions_cost": 0.0007776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

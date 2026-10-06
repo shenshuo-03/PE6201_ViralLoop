@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "B",
+    "usefulness": "B",
+    "credibility": "Tie",
+    "overall": "B"
+  },
+  "evidence": "Both posts accurately ground claims in provided facts and avoid forbidden claims. A is more concise and directly frames the core problem (stall with thinking enabled) as a focused question for community troubleshooting. B includes all five facts, providing fuller context: the 8.0 gguf quant detail (F1), the docker setup, and crucially the cross-frontend success (F5), which strengthens the diagnostic framing by narrowing the issue to Open WebUI specifically rather than the model itself. B also explicitly acknowledges missing information (Open WebUI version, server specs, config), which increases credibility and guides potential responders. A omits F1, F4, and F5, losing the comparative evidence that the model works elsewhere—a key diagnostic signal for the local LLM community. B's longer form better serves the audience's need to understand scope and constraints before offering solutions. A's brevity sacrifices diagnostic power; B's completeness and transparent limitation-flagging make it more actionable for troubleshooting-focused readers."
+}

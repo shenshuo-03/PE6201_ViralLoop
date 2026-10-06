@@ -1,0 +1,45 @@
+{
+  "run_id": "v002-r0482",
+  "loop_version": "v002",
+  "cycle_id": "v002",
+  "phase": "final",
+  "variant_id": "translate",
+  "contract_id": "ViralLoop-v002-focused-generation",
+  "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e",
+  "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "579006fdbbe3010bdd873b6019f06d0850e3b6c51cb58461c7568df0339ac37a",
+  "config_hash": "ab66cef6bc4ab7ae6066fa47e0e0327aa1da570333aee1763cd24b4d61aee797",
+  "code_hash": "0e29118459cccf19663fa7ae9528858f84e803c588d885ff9eb9b0058d2630e4",
+  "input_hash": "c086ce2db40f3e105e3cfa68343dbe37d4f6062b3afda06b92b63f58ba926d01",
+  "output_hash": "59bb1d2baa9e62a04b48063e1d6631e0306a427dc7200d540be0e25a33b06b27",
+  "scores_hash": "59bb1d2baa9e62a04b48063e1d6631e0306a427dc7200d540be0e25a33b06b27",
+  "primary_metric_hash": "e66572f0e06f824a569f9d0dca1cc7534e38d4620f5447e8377308f87903c229",
+  "evaluator_hash": "aa393677798a6e7974acacc756412b723245d9d99cddf89d89e2dbf8dacce22c",
+  "candidate_count": 0,
+  "tokens": 1105,
+  "api_calls": 1,
+  "cost": 0.0002638,
+  "currency": "USD",
+  "latency_seconds": 2.5076009000185877,
+  "retry_count": 0,
+  "access_events": [
+    {
+      "split": "final",
+      "purpose": "generate_or_judge",
+      "time": "2026-10-04T11:24:11.011375+00:00",
+      "evidence": "C:\\Users\\19139\\Documents\\Codex\\2026-10-04\\zhe-g\\experiment_1_1\\loops\\v002\\runs\\v002-r0482\\prompt.txt"
+    }
+  ],
+  "integrity_checks": {
+    "artifact_hashes_verified": true,
+    "split_integrity": true,
+    "billing_ledger_complete": true,
+    "project_budget_verified": true
+  },
+  "model": "google/gemini-2.5-flash-lite",
+  "freeze_verified": true,
+  "final_unexposed_before_run": true,
+  "late_audit_at": "2026-10-04T11:38:02.959967+00:00",
+  "original_manifest_sha256": "146068433768d0fe3ffae4984781fc98b31b3744671747634a62d8ed9268f14c",
+  "annotation_note": "Freeze evidence verified after run from immutable freeze/code hashes and actual source access log; not contemporaneous original fields"
+}

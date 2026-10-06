@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and references the key fact that prompts remain local (F1). It correctly notes that prompt containment alone is insufficient and explicitly mentions the lack of formal audits (F3). The title matches the content well. The post invites further discussion without making unsupported claims. The language is clear and technical, suitable for the audience. However, it could be more actionable by suggesting specific verification steps beyond prompt containment."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft expands the hypothetical scenario to include logs and network connections (F2), correctly referencing all relevant facts (F1, F2, F3). It maintains the hypothetical framing and caveats. The title accurately reflects the broader scope. The post is clear, relevant to the audience, and provides more actionable guidance by highlighting specific data pathways to check. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft offers a structured, checklist-style approach integrating all key facts (F1, F2, F3) and emphasizing the hypothetical nature. It clearly states the need to verify prompt locality, logs, and network traffic. The title matches the content well. The language is clear and technical, providing useful guidance for the audience. It avoids unsupported claims and maintains necessary caveats. The post is relevant and credible without clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:03:09.095891+00:00",
+    "tag": "selection_dev:S02:O1_resample:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a7344e4f910ab1925614d8fb9bdfbc332c0311038d538c91d1afe6766e8c28f9",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1292,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0014224,
+    "token_price_estimate_usd": 0.0014223999999999999,
+    "reserved_upper_usd": 0.005584799999999999,
+    "budget_charge_usd": 0.0014224,
+    "latency_seconds": 4.4039050999999745,
+    "retry": 0,
+    "request_id": "gen-1791100984-OKv5egfNSa15Wl4zcYw6"
+  },
+  "raw_response": {
+    "id": "gen-1791100984-OKv5egfNSa15Wl4zcYw6",
+    "object": "chat.completion",
+    "created": 1791100984,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and references the key fact that prompts remain local (F1). It correctly notes that prompt containment alone is insufficient and explicitly mentions the lack of formal audits (F3). The title matches the content well. The post invites further discussion without making unsupported claims. The language is clear and technical, suitable for the audience. However, it could be more actionable by suggesting specific verification steps beyond prompt containment.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft expands the hypothetical scenario to include logs and network connections (F2), correctly referencing all relevant facts (F1, F2, F3). It maintains the hypothetical framing and caveats. The title accurately reflects the broader scope. The post is clear, relevant to the audience, and provides more actionable guidance by highlighting specific data pathways to check. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft offers a structured, checklist-style approach integrating all key facts (F1, F2, F3) and emphasizing the hypothetical nature. It clearly states the need to verify prompt locality, logs, and network traffic. The title matches the content well. The language is clear and technical, providing useful guidance for the audience. It avoids unsupported claims and maintains necessary caveats. The post is relevant and credible without clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1292,
+      "completion_tokens": 566,
+      "total_tokens": 1858,
+      "cost": 0.0014224,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014224,
+        "upstream_inference_prompt_cost": 0.0005168,
+        "upstream_inference_completions_cost": 0.0009056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

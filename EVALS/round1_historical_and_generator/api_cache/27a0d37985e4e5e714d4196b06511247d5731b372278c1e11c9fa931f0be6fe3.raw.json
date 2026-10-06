@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102710-ewUID7zH3OMVmAIB9FcR",
+  "object": "chat.completion",
+  "created": 1791102710,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"id\": \"H05\", \"topic_id\": \"T05\", \"topic\": \"用于假设的离线本地模型测试的清单\", \"facts\": [{\"id\": \"F1\", \"text\": \"该场景允许在断开连接之前下载模型。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"离线检查必须包括生成和检查网络请求。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"尚未进行实际的离线测试。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"定义本地模型的假设离线测试：生成和网络隔离\", \"body\": \"本指南详细介绍了一种在离线环境中测试本地语言模型（LLM）的假设方法。前提是允许在启动离线阶段之前预先下载模型。\\n\\n提出的测试协议侧重于两个关键的验证点：\\n\\n*   **功能生成：** 确认LLM在完全断开任何网络连接的情况下能够持续生成文本输出。这需要确保所有模型资产和推理依赖项都存储在本地并且可访问。\\n*   **网络出口验证：** 建立一种方法来主动监控并确认在离线测试期间没有任何传出的网络通信。这涉及到对任何意外数据传输的细致检查。\\n\\n需要强调的是，这个框架纯属假设。在此场景中尚未进行实际的离线测试。目标是为验证离线LLM性能和安全性建立一个清晰但理论上的程序。我们试图确定此类设置的潜在挑战和最佳实践。欢迎对这种假设的测试方法提出反馈。\"}, \"B\": {\"title\": \"规划假设的离线LLM测试：一个清单\", \"body\": \"我们正在概述一种假设的方法来测试本地LLM在完全离线时的功能。理解尚未进行实际的离线测试至关重要；这纯粹是一个规划练习（事实F3）。在此假设场景中，初始步骤包括在仍连接到互联网时下载所需的模型，如事实F1所述。下载完成后，断开所有网络访问。后续阶段要求模型对提示生成响应。同时，您必须实施一种方法来检测和记录在此生成过程中系统发出的任何网络请求。这是测试的一个关键组成部分，如事实F2所述，以确认没有任何外部通信。此清单作为未来潜在实验的蓝图，而不是观察结果的报告。\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 672,
+    "completion_tokens": 515,
+    "total_tokens": 1187,
+    "cost": 0.0002732,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002732,
+      "upstream_inference_prompt_cost": 6.72e-05,
+      "upstream_inference_completions_cost": 0.000206
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

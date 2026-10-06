@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112349-ePmjj8bj4o0BQEZ7WU2E",
+  "object": "chat.completion",
+  "created": 1791112349,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": false,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source and brief, posing a relevant question to the community. It correctly states the user's problem and their attempts with Weaviate and Milvus without claiming personal experience. The question about workarounds and hybrid approaches is specific and useful. The copy check flagged a phrase that is not a direct copy of the source, but rather a rephrasing of the problem statement.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": false,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 also accurately represents the source and brief. It poses a specific and relevant question to the community about configuration tweaks or hybrid solutions. The speaker correctly avoids claiming personal experience. The copy check flagged a phrase that is not a direct copy of the source, but rather a rephrasing of the problem statement.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2547,
+    "completion_tokens": 435,
+    "total_tokens": 2982,
+    "cost": 0.0004287,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004287,
+      "upstream_inference_prompt_cost": 0.0002547,
+      "upstream_inference_completions_cost": 0.000174
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

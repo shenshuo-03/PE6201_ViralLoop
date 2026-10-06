@@ -1,0 +1,299 @@
+{
+  "at": "2026-10-04T08:01:16.832455+00:00",
+  "topic": {
+    "id": "D02",
+    "split": "tune_dev",
+    "topic": "A hypothetical time-to-first-token comparison",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "A hypothetical setup A has time-to-first-token of 1.2 seconds and setup B 2.4 seconds.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Both hypothetical runs use the same prompt and hardware.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No throughput, accuracy, or statistical uncertainty measurements were supplied.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T07:47:40.743539+00:00",
+    "tag": "tune_dev:D02:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "2c20d679bab7992ad730013c9cabb6663ad6e1f8be37763f2efd0db64ad6cb58",
+    "status": "success",
+    "input_tokens": 377,
+    "output_tokens": 537,
+    "actual_cost_usd": 0.0002525,
+    "token_price_estimate_usd": 0.0002525,
+    "reserved_upper_usd": 0.0009925,
+    "budget_charge_usd": 0.0002525,
+    "latency_seconds": 2.5041541999962647,
+    "retry": 0,
+    "request_id": "gen-1791100058-TEX9xrQUcEHvKROBSyNm"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:47:43.689121+00:00",
+    "tag": "tune_dev:D02:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7db2b39276934d4bf16008c2184dde6442f06041ed1772112ab7de5351bb183e",
+    "status": "success",
+    "input_tokens": 960,
+    "output_tokens": 377,
+    "actual_cost_usd": 0.0009872,
+    "token_price_estimate_usd": 0.0009872000000000001,
+    "reserved_upper_usd": 0.004786,
+    "budget_charge_usd": 0.0009872,
+    "latency_seconds": 2.8729647000000114,
+    "retry": 0,
+    "request_id": "gen-1791100061-rtE4tI0ZNQ4eKioXCogj"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "a3c4dd003a9b8e2e3adc327606b4da6b3f1052df018907ac17461fdad9188824",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Time-to-First-Token Comparison: Setup A vs. Setup B",
+        "body": "This post discusses a hypothetical time-to-first-token (TTFT) comparison between two local LLM setups, labeled A and B. The hypothetical experiment suggests Setup A achieves a TTFT of 1.2 seconds, while Setup B hypothetically takes 2.4 seconds. Crucially, both hypothetical runs are stated to use identical prompts and hardware configurations, aiming to isolate the TTFT variable. It's important to note that this is purely a hypothetical scenario based on provided synthetic experimental input. No actual measurements for throughput, accuracy, or statistical uncertainty were part of the hypothetical data. Therefore, these figures should not be interpreted as real-world benchmarks or personal experiences. The focus remains strictly on the reported hypothetical TTFT difference under controlled, albeit simulated, conditions.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Focus on presenting the hypothetical TTFT values and the controlled conditions. Emphasize the hypothetical nature and lack of other metrics. Keep it concise and technical."
+      },
+      "performance_score": 0.2353418869085552,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly and accurately presents the hypothetical TTFT values and explicitly states the scenario is hypothetical with no real measurements. It preserves all necessary caveats about the lack of throughput, accuracy, and statistical data. The language is technical and restrained, suitable for the target audience. The title matches the body content well. The post is relevant and credible given the scenario, though usefulness is moderate since it only presents synthetic data without actionable insights.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 115,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical TTFT Analysis: Setup A (1.2s) vs. Setup B (2.4s) - Same Prompt & Hardware",
+        "body": "Exploring a hypothetical scenario involving two distinct local LLM configurations, Setup A and Setup B. Within this hypothetical framework, Setup A demonstrates a time-to-first-token (TTFT) of 1.2 seconds. In contrast, the hypothetical Setup B yields a TTFT of 2.4 seconds. Both hypothetical runs were conducted using the exact same prompt and identical hardware specifications, as per the synthetic experimental input. This controlled hypothetical comparison isolates the TTFT as the primary point of interest. It is vital to reiterate that this analysis is based entirely on hypothetical data and does not represent actual measured results. No information regarding throughput, accuracy, or statistical significance was provided or considered. Consequently, these numbers serve solely as a hypothetical illustration and should not be treated as definitive benchmarks or personal findings.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Clearly state the hypothetical nature upfront. Present the TTFT figures for both setups. Mention the shared prompt and hardware. Explicitly mention the absence of throughput, accuracy, and uncertainty data. Avoid any language suggesting real-world application or validation."
+      },
+      "performance_score": 0.22861623088153207,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all required caveats about the synthetic nature of the data and absence of other metrics. The title is consistent with the body and clearly states the key parameters. The writing is clear and technical, appropriate for the audience. Like the first draft, it is relevant and credible but only moderately useful due to the lack of real data or actionable conclusions.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 126,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Time-to-First-Token Comparison: Setup A vs. Setup B",
+      "body": "This post discusses a hypothetical time-to-first-token (TTFT) comparison between two local LLM setups, labeled A and B. The hypothetical experiment suggests Setup A achieves a TTFT of 1.2 seconds, while Setup B hypothetically takes 2.4 seconds. Crucially, both hypothetical runs are stated to use identical prompts and hardware configurations, aiming to isolate the TTFT variable. It's important to note that this is purely a hypothetical scenario based on provided synthetic experimental input. No actual measurements for throughput, accuracy, or statistical uncertainty were part of the hypothetical data. Therefore, these figures should not be interpreted as real-world benchmarks or personal experiences. The focus remains strictly on the reported hypothetical TTFT difference under controlled, albeit simulated, conditions.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Focus on presenting the hypothetical TTFT values and the controlled conditions. Emphasize the hypothetical nature and lack of other metrics. Keep it concise and technical."
+    },
+    "performance_score": 0.2353418869085552,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly and accurately presents the hypothetical TTFT values and explicitly states the scenario is hypothetical with no real measurements. It preserves all necessary caveats about the lack of throughput, accuracy, and statistical data. The language is technical and restrained, suitable for the target audience. The title matches the body content well. The post is relevant and credible given the scenario, though usefulness is moderate since it only presents synthetic data without actionable insights.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 115,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Draft A is report-like and generic, listing facts without actionable framing or concrete motivation for community engagement. It omits key specifics (ModernBERT, 4K tokens, 79.22% F1, benchmark name) that would help local LLM enthusiasts evaluate relevance to their work. Draft B preserves all supplied facts with proper attribution to source-author reports, directly addresses the audience (local RAG setups, real-time detection), and frames the problem as a concrete tradeoff (encoder-based efficiency vs. LLM-based approaches). Both stay within allowed claims and avoid forbidden ones. B's specificity—naming the model architecture, token limit, exact benchmark score, and license—gives readers concrete criteria to assess fit for their use case. A's vagueness ('long inputs,' 'open license') reduces actionability. B's closing explicitly invites the desired response type (feedback on applications and real-time detection ideas), matching the brief's motivation. Both correctly attribute facts to source-author reports without personal verification claims, preserving credibility. B is more worth posting for this community because it provides the detail needed for informed discussion while maintaining factual restraint."
+  },
+  "usage": {
+    "run_id": "v002-r0182",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:31:02.125046+00:00",
+    "tag": "judge_validation:HP10:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "fae97fda8e262baf2acda381ffe1a205a24233174469d392840ba4c652077d76",
+    "actual_cost_usd": 0.003917,
+    "budget_charge_usd": 0.003917,
+    "reserved_upper_usd": 0.012403999999999998,
+    "input_tokens": 2237,
+    "output_tokens": 336,
+    "latency_seconds": 5.374292299995432,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109856-2lngInTCM5V9LCyckJJQ",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

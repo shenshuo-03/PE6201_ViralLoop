@@ -1,161 +1,161 @@
-# PE6201 ViralLoop 第三轮实验执行方案 v1.2
+# PE6201 ViralLoop Round 3 Experiment Execution Plan v1.2
 
-> 定位：真人校准的轻量内容优化实验。
-> 核心产品：根据主题、目标读者和真实素材，生成自然、可信、值得发布的社区帖子。
-> 本轮任务：检验动机规划和标题优化是否改善发布价值，并检验自动选择器能否辅助候选排序。
-> 状态：待执行方案，本文中的数量、门槛和成本均为预设，不是已取得的结果。
-> 本文不启动实验或新增支出；执行时沿用项目既有US$5总授权，并核对实际剩余预算。
+> Positioning: a lightweight, human-calibrated content optimization experiment.
+> Core product: from a topic, target readers and real material, generate natural, credible community posts worth publishing.
+> This round's task: test whether motivation planning and title optimization improve publishing value, and whether an automatic selector can assist candidate ranking.
+> Status: a plan to be executed; all quantities, thresholds and costs in this document are presets, not results already obtained.
+> This document does not start the experiment or add spending; execution reuses the project's existing US$5 total authorization and checks the actual remaining budget.
 
-## 本次更新说明
+## Notes on this update
 
-v1.2是本轮最新方案，保留v1.1的样本、版本、真人标题验收、选择器准入和预算规则，只增加三项修正：
+v1.2 is the latest plan for this round. It keeps v1.1's samples, versions, human title acceptance, selector admission and budget rules, and adds only three corrections:
 
-1. 明确“当前用户任务”与“历史证据材料”两层输入；历史帖子不自动充当发帖动机。
-2. 将Selector结果称为“新任务泛化检查”，不称独立选择器准确率验证。
-3. 增加轻量用量告警和任务异常监测；不设置750k累计Token自动暂停。
+1. Make explicit the two input layers, "current user task" and "historical evidence material"; historical posts do not automatically serve as posting motivation.
+2. Call the Selector result a "new-task generalization check", not an independent selector accuracy validation.
+3. Add lightweight usage warnings and task anomaly monitoring; do not set a 750k cumulative-token automatic pause.
 
-仍只执行G0/G1与可选标题模块；不扩展GEPA、RAG或Agent。本文是完整替代方案，旧v1/v1.1保留供追溯，不混用版本。
+Only G0/G1 and the optional title module are still executed; GEPA, RAG or an agent are not expanded. This document is the complete replacement plan; the old v1/v1.1 are retained for traceability and versions are not mixed.
 
-## 1. 最重要的判断
+## 1. The most important judgment
 
-第三轮不继续增加RAG、反馈循环或Agent。先解决两个问题：
+Round 3 does not keep adding RAG, feedback loops or agents. It first solves two problems:
 
-1. 生成的帖子是否像真实用户为了一个明确目的发出的内容？
-2. 自动选择器的判断是否接近用户本人的发布偏好？
+1. Does the generated post look like content a real user posted for a clear purpose?
+2. Does the automatic selector's judgment come close to the user's own publishing preference?
 
-只保留有增量价值的组件。简单基线可以最终获胜；负面结果也应完整记录。
+Keep only components that add value. A simple baseline may win in the end; negative results should also be recorded in full.
 
-本轮可支持的结论是“离线发布偏好改善”或“自动选择器初步可用”。不能据此宣称真实爆款率、点赞率、评论率或社区认可度提高。
+Conclusions this round can support are "offline publishing-preference improvement" or "the automatic selector is preliminarily usable". They cannot be used to claim a higher real viral rate, upvote rate, comment rate or community recognition.
 
-## 2. 前两轮证据与本轮假设
+## 2. Evidence from the first two rounds and this round's hypotheses
 
-### 2.1 已有观察
+### 2.1 Existing observations
 
-- 第一轮有2,336条清洗后的历史数据和E2/E4历史关联模型。
-- 第二轮V1同时加入聚焦提示并缩减事实，不能把结果单独归因于提示调优。
-- 第二轮外部比较：V1/V0为1胜、7负、3不确定、1失败；V2/V1为3胜、2负、7不确定。
-- 第二轮内部评测器未通过信息价值准入，因此反馈版本没有执行。
-- O1实际保留原稿，不能用身份Tie证明多采样本身无效。
-- 自动质量分与少量真人自然度反馈出现错位，但尚没有完整真人Final结果。
-- 第二轮Token预算阻断失效，已知累计1,225,228 Token超过原内部限额。第三轮必须在请求前预留预算并阻断超限。
+- Round 1 has 2,336 cleaned historical records and the E2/E4 historical association models.
+- Round 2 V1 added a focusing prompt and reduced facts at the same time, so the result cannot be attributed to prompt tuning alone.
+- Round 2 external comparison: V1/V0 was 1 win, 7 losses, 3 uncertain, 1 failure; V2/V1 was 3 wins, 2 losses, 7 uncertain.
+- The Round 2 internal evaluator did not pass the information-value admission, so the feedback version was not executed.
+- O1 actually retained the original, so identity Ties cannot prove that multi-sampling itself is ineffective.
+- The automated quality score and a small amount of genuine naturalness feedback were misaligned, but there is still no complete genuine human Final result.
+- Round 2's token-budget block failed, with a known cumulative 1,225,228 tokens exceeding the original internal limit. Round 3 must reserve budget before requests and block overruns.
 
-以上均保留原证据，不重写前两轮结果。不能预设“强LLM已经接近最优”或“动机就是主要原因”；它们是待检验的判断。
+All of the above retain the original evidence; the first two rounds' results are not rewritten. It must not be presupposed that "a strong LLM is already near-optimal" or that "motivation is the main cause"; these are judgments to be tested.
 
-### 2.2 本轮只检验三个假设
+### 2.2 Only three hypotheses are tested this round
 
-| 假设 | 比较 | 能回答什么 |
+| Hypothesis | Comparison | What it can answer |
 | --- | --- | --- |
-| H1：自动选择器有初步可用性 | 机器判断与真人标签 | 能否在本轮范围内辅助选稿 |
-| H2：动机规划有增益 | G1 vs G0 | 完整素材不变时，明确发帖目的是否改善内容 |
-| H3：标题优化有增益 | 同一正文，优化标题 vs 原标题 | 只改标题是否值得增加成本 |
+| H1: the automatic selector is preliminarily usable | machine judgment vs human labels | whether it can assist draft selection within this round's scope |
+| H2: motivation planning adds value | G1 vs G0 | with the same full material, whether an explicit posting purpose improves the content |
+| H3: title optimization adds value | same body, optimized title vs original title | whether changing only the title is worth the extra cost |
 
-GEPA、RAG、反馈改写、多Agent、大规模模型搜索均不进入本轮。后续出现明确瓶颈再另立实验。
+GEPA, RAG, feedback rewriting, multi-agent and large-scale model search are all excluded from this round. Future explicit bottlenecks warrant a separate experiment.
 
-## 3. 数据与阶段隔离
+## 3. Data and stage isolation
 
-### 3.1 数据来源
+### 3.1 Data source
 
-继续使用r/LocalLLaMA历史素材及已有来源组隔离工具。复用数据和工具，不把旧评测结果作为本轮的新证据。
+Continue using r/LocalLLaMA historical material and the existing source-group isolation tooling. Reuse the data and tools, but do not use old evaluation results as new evidence for this round.
 
-从未进入前两轮开发、Selection、Final、评测器受控题、真人预览或人工改稿的来源组中，抽取：
+From source groups that never entered the first two rounds' development, Selection, Final, controlled evaluator items, human previews or manual edits, draw:
 
-- 8个新Dev来源组：真人校准与组件探索。
-- 6个新Final来源组：冻结产品后的独立比较。
+- 8 new Dev source groups: human calibration and component exploration.
+- 6 new Final source groups: independent comparison after the product freeze.
 
-本轮8个Dev同时用于选择器筛选和生成器开发，明确属于探索数据，不宣称独立验证。没有额外独立Selection集；选择偏差由新Final及保守结论约束。
+This round's 8 Dev groups are used both for selector screening and generator development and are explicitly exploratory data, not claimed as independent validation. There is no extra independent Selection set; selection bias is constrained by the new Final and conservative conclusions.
 
-### 3.2 分配规则
+### 3.2 Allocation rules
 
-- 使用固定随机种子和事先记录的资格筛选规则，不按点赞、预测分或某方法表现挑任务。
-- 按相近原帖、同一项目/事件、近重复内容进行来源组排除，不只检查帖子ID。
-- Final预留三类各2题：故障求助、经验/测试讨论、观点/决策讨论。
-- Dev尽量覆盖这三类，不把全部任务集中在一种写法。
-- 冻结前可做资格和分组核验；Final正文、Brief和生成结果不进入设计、示例、检索、调参或人工预览。用于资格核验的内容访问单独记录。
-- 某来源需要排除时保留原因，按预定候补顺序替补；不得因生成效果差而排除。
+- Use a fixed random seed and pre-recorded eligibility rules; do not pick tasks by upvotes, predicted score or a method's performance.
+- Exclude source groups by similar original post, same project/event, or near-duplicate content, not just by post ID.
+- Final reserves 2 tasks in each of three categories: troubleshooting help, experience/test discussion, opinion/decision discussion.
+- Dev should cover these three categories as much as possible, not concentrate all tasks in one writing style.
+- Before freezing, eligibility and grouping may be verified; Final bodies, briefs and generation results do not enter design, examples, retrieval, tuning or human previews. Content access used for eligibility verification is recorded separately.
+- When a source needs exclusion, keep the reason and substitute in the predetermined backup order; do not exclude it because generation performed poorly.
 
-### 3.3 Brief字段
+### 3.3 Brief fields
 
-每题生成同一份、各版本共享的完整Brief，分为两层。
+Each task generates the same full brief shared by all versions, in two layers.
 
-**第一层：当前用户任务。**
+**Layer 1: current user task.**
 
-- current_user_goal：用户希望完成什么。
-- current_decision：正在考虑的具体决策或问题。
-- desired_help：希望社区提供怎样的帮助。
-- scenario_origin：real_user_input或controlled_hypothetical。
-- experimental_user_scenario：受控实验场景描述；真实用户输入时不补造场景。
-- scenario_id、scenario_version：场景身份与版本。
+- current_user_goal: what the user hopes to accomplish.
+- current_decision: the specific decision or problem under consideration.
+- desired_help: what kind of help the user wants from the community.
+- scenario_origin: real_user_input or controlled_hypothetical.
+- experimental_user_scenario: controlled experimental scenario description; do not fabricate a scenario when it is real user input.
+- scenario_id, scenario_version: scenario identity and version.
 
-**第二层：历史证据及约束。** 原有事实账本保留，并以source_facts明确区分于场景设定：
+**Layer 2: historical evidence and constraints.** The existing fact ledger is retained, with source_facts clearly distinguished from the scenario setup:
 
-- topic：主题。
-- audience：目标读者。
-- posting_intent：求助、讨论、分享、决策等。
-- speaker_role：发帖者身份与资料所有权。
-- problem_or_goal：实际问题。
-- context：必要背景。
-- source_facts：带ID的真实历史事实账本；工程可保留facts兼容字段，但两者内容与ID必须完全一致。
-- source_url、source_date：出处与日期。
-- limitations：样本、适用范围、不确定性。
-- allowed_claims：允许表达的判断。
-- forbidden_claims：不得编造的身份、经历、成果或当前性。
+- topic: the topic.
+- audience: target readers.
+- posting_intent: help-seeking, discussion, sharing, decision, etc.
+- speaker_role: poster identity and material ownership.
+- problem_or_goal: the actual problem.
+- context: necessary background.
+- source_facts: a real historical fact ledger with IDs; engineering may keep the facts-compatible field, but the content and IDs of the two must be exactly identical.
+- source_url, source_date: provenance and date.
+- limitations: sample, scope of applicability, uncertainty.
+- allowed_claims: judgments that may be expressed.
+- forbidden_claims: identities, experiences, results or currency that must not be fabricated.
 
-互动结果只用于历史审计，不输入生成器或选稿器。源文本与Brief必须核对；自动抽取的事实并不天然正确。
+Interaction outcomes are used only for historical auditing and are not fed into the generator or the draft selector. Source text and brief must be checked against each other; automatically extracted facts are not inherently correct.
 
-### 3.4 用户场景的构造与冻结
+### 3.4 Construction and freezing of the user scenario
 
-本轮没有真实用户需求时，使用受控假设产品输入，并明确标识。AI从预先锁定的任务模板与材料适用范围构造场景，不根据G0/G1输出、偏好标签或历史热度修改场景。
+When there is no real user need this round, use a controlled hypothetical product input and label it clearly. The AI constructs the scenario from pre-locked task templates and material scope, and does not modify the scenario based on G0/G1 outputs, preference labels or historical popularity.
 
-- Dev场景在任何生成请求前锁定，G0/G1输入完全相同。
-- Final场景构造规则、模板和资格条件在产品冻结前锁定；具体场景在冻结后打开新来源时构造并锁定，再生成两系统输出。不得为某方法定制场景。
-- 场景可以设定“正在比较部署方案”“需要排查某类问题”，不能编造已有测试、购买、职位、硬件所有权或成果。
-- 需要设备或预算参数时，明确标为假设参数，而非用户事实；不引用为历史证据。
-- 同一场景和材料提供给生成器、事实审核、Selector、翻译和真人背景卡，保持任务定义一致。
-- 历史数据能否帮助当前决策是待讨论问题；不能把旧结果自动推断成当前模型、版本或硬件表现。
+- Dev scenarios are locked before any generation request, and G0/G1 inputs are exactly identical.
+- Final scenario construction rules, templates and eligibility conditions are locked before the product freeze; the concrete scenario is constructed and locked when the new sources are opened after the freeze, and then both systems' outputs are generated. Scenarios must not be tailored to a method.
+- A scenario may set "currently comparing deployment options" or "needs to troubleshoot a certain class of problem", but must not fabricate existing tests, purchases, job titles, hardware ownership or results.
+- When device or budget parameters are needed, label them explicitly as hypothetical parameters rather than user facts, and do not cite them as historical evidence.
+- The same scenario and material are given to the generator, fact checker, Selector, translation and human background card so that the task definition stays consistent.
+- Whether historical data can help a current decision is an open question; old results must not be automatically inferred to be the current model's, version's or hardware's performance.
 
-报告使用：Current user goals are controlled hypothetical product inputs, while factual claims remain grounded in archived sources.
+Report usage: Current user goals are controlled hypothetical product inputs, while factual claims remain grounded in archived sources.
 
-这改善产品任务的真实性，但不能证明需求已经由真实目标用户验证。场景设计、单一用户偏好及历史证据时效性仍是局限。
+This improves the realism of the product task but cannot prove the need has been validated by real target users. Scenario design, single-user preference and the timeliness of historical evidence remain limitations.
 
-## 4. 发帖身份：本轮必须解决的现实问题
+## 4. Posting identity: a real problem this round must solve
 
-历史帖子是别人的经历，不能直接冒充新发帖者亲测。
+Historical posts are other people's experiences and cannot be passed off directly as the new poster's first-hand testing.
 
-设置两种清楚的输入模式：
+Two clear input modes:
 
-1. **用户自有素材**：用户明确提供自己的经历、数据和身份，可在范围内第一人称表述。
-2. **历史第三方素材**：只能以讨论、引用或提出问题的身份写作；保留必要归属，不把2025年的测试写成当前亲测。
+1. **User's own material**: the user explicitly provides their own experience, data and identity, and first-person expression is allowed within scope.
+2. **Historical third-party material**: writing may only be done as discussion, quotation or posing a question; necessary attribution is retained and a 2025 test is not written up as current first-hand testing.
 
-本轮历史数据实验默认第二种，但发帖目的由current_user_goal/current_decision/desired_help决定，不能自动写成“读到旧帖所以讨论一下”。历史材料是决策证据，未必是发帖理由。
+This round's historical-data experiment defaults to the second mode, but the posting purpose is determined by current_user_goal/current_decision/desired_help and must not automatically become "I read an old post so let's discuss it". Historical material is decision evidence, not necessarily a posting reason.
 
-例如：
+For example:
 
-- 历史事实：某位作者在2025年的特定硬件与配置下报告Qwen3-8B速度较慢。
-- 受控用户任务：假设用户正在比较本地文档问答方案，希望了解不同配置的速度预期与排查方法。
-- 希望获得的帮助：社区提供相近配置的可比较数据、需要核对的设置和适用限制。
-- 禁止：将假设用户写成已经亲测该硬件，或把旧测试宣称为当前普遍结论。
+- Historical fact: a certain author reported in 2025 that Qwen3-8B was slower under specific hardware and configuration.
+- Controlled user task: assume the user is comparing local document Q&A options and wants to understand the expected speed and troubleshooting methods for different configurations.
+- Help wanted: comparable data from the community for similar configurations, settings that need checking, and applicability limits.
+- Forbidden: writing the hypothetical user as having already tested that hardware first-hand, or claiming an old test as a current general conclusion.
 
-生成稿是带明确任务的假设产品草稿，不是真实用户已经发布的帖子，也不是当前新闻。第一人称需求表达仅限明确给定的假设目标；不得虚构第一人称经历。
+The generated draft is a hypothetical product draft with a clear task, not a post a real user has already published, nor current news. First-person need expression is limited to the explicitly given hypothetical goal; first-person experience must not be fabricated.
 
-允许自然地写“看到一项小样本测试，想讨论其适用范围”；不要求每段都说“The source reports”。但是不能为了自然而删除来源、日期、关键限制，也不能凭空编造“昨天我试了”。
+It is allowed to write naturally "saw a small-sample test, want to discuss its scope of applicability"; it is not required to say "The source reports" in every paragraph. But sources, dates and key limitations must not be deleted for the sake of naturalness, and "I tried it yesterday" must not be invented out of thin air.
 
-## 5. 生成器版本
+## 5. Generator versions
 
-### 5.1 共同设置
+### 5.1 Shared settings
 
-- 生成模型沿用第二轮GPT-4.1-mini；执行前核验准确模型ID、可用性、价格和上下文限制并锁定。
-- 相同来源、完整Brief、身份规则、事实审核规则。
-- 正文目标90–180英文词，最多220词；标题最多160字符。超限属于输出格式失败，不能事后只删某版本的长稿。
-- temperature默认0.5；规划、事实检查和选择器默认0。
-- Dev每版本每题生成1篇；Final每版本每题生成2个候选，同一请求返回两篇。
-- 候选数相同，但G1规划和标题组件会增加成本；记录每个额外请求，不宣称完全等成本比较。
-- 不逐篇人工润色，不看Final结果重跑挑好稿。
+- The generation model continues to be Round 2's GPT-4.1-mini; before execution verify the exact model ID, availability, price and context limit and lock them.
+- Same sources, full brief, identity rules and fact-check rules.
+- Body target 90-180 English words, up to 220 words; title up to 160 characters. Overrunning is an output-format failure, and a long draft of one version must not be trimmed after the fact.
+- temperature defaults to 0.5; planning, fact checking and the selector default to 0.
+- Dev generates 1 draft per task per version; Final generates 2 candidates per task per version, with both drafts returned in the same request.
+- The candidate count is the same, but G1's planning and title components add cost; record every extra request and do not claim a fully cost-matched comparison.
+- No per-draft human polishing, and no rerunning after seeing Final results to pick a good draft.
 
-### 5.2 G0：最小安全基线（Minimum Safe Baseline）
+### 5.2 G0: Minimum Safe Baseline
 
-沿用第二轮V0基础提示，并统一本轮共享的身份、长度和事实规则。记录与旧V0的差异；本轮G0不是旧输出的直接重用。
+Reuse Round 2's V0 base prompt and unify this round's shared identity, length and fact rules. Record the differences from the old V0; this round's G0 is not a direct reuse of the old output.
 
-核心提示：
+Core prompt:
 
 ```text
 Write a natural r/LocalLLaMA post for the specified audience and posting intent.
@@ -169,13 +169,13 @@ Do not invent personal experience, measurements or unsupported claims.
 Return title, body and fact_refs.
 ```
 
-G0没有额外动机规划步骤，也没有RAG和反馈改写。它是具备事实、身份和格式约束的最低可用系统，不称raw LLM或“裸LLM”。
+G0 has no extra motivation-planning step and no RAG or feedback rewriting. It is the minimum usable system with fact, identity and format constraints, and is not called a raw LLM or "bare LLM".
 
-### 5.3 G1：完整素材＋有依据的动机规划
+### 5.3 G1: full material plus grounded motivation planning
 
-不删除Brief字段，不设Top-2 Facts，不强制只引用两条事实。
+Do not delete brief fields, do not set Top-2 Facts, and do not force only two facts to be cited.
 
-新增一次短规划请求：
+Add one short planning request:
 
 ```text
 Who can legitimately be posting this, given speaker_role and scenario_origin?
@@ -189,310 +189,310 @@ Which facts are necessary, and which are optional?
 Which proposed motivations or experiences lack evidence and must not be used?
 ```
 
-结构化输出：身份、场景来源、明确给定的当前目标、一个中心目的、希望获得的回应、相关历史证据、必须保留信息、禁止新增内容。规划不能更换给定目标或补造“更有戏剧性”的经历。
+Structured output: identity, scenario origin, the explicitly given current goal, one central purpose, the desired response, relevant historical evidence, information that must be preserved, and content additions that are forbidden. Planning must not replace the given goal or fabricate a "more dramatic" experience.
 
-写作请求同时读取完整Brief与规划结果。规划只提供组织建议，不能修改事实账本或授权第一人称经历。若规划与来源冲突，本题G1记失败，不由人工补写成成功样本。
+The writing request reads both the full brief and the planning result. Planning only offers organizational advice; it cannot modify the fact ledger or authorize first-person experience. If planning conflicts with the sources, that task's G1 is recorded as a failure and is not quietly rewritten by a human into a success sample.
 
-这是“增加动机规划步骤”的组件实验。不能进一步声称已区分“多一次调用”和“规划语义”的因果贡献；本轮不额外增加无关规划对照。
+This is a component experiment of "adding a motivation-planning step". It cannot further claim to have separated the causal contribution of "one extra call" from "planning semantics"; this round adds no extra irrelevant planning control.
 
-### 5.4 T：独立标题模块
+### 5.4 T: independent title module
 
-- 正文逐字保持一致，用正文哈希核验。
-- 每篇生成最多2个新标题，加原标题组成最多3候选。
-- 不新增事实、亲测暗示、夸大结果或改变帖子目的。
-- 选择器对原标题与两个新标题逐一比较，AB/BA交换；最多保留一个明确胜过原题的候选。
-- 两个新标题均胜过原题时，按预先固定的候选顺序选第一个，不额外反复比赛。
-- Tie、Uncertain或拒绝均保留原标题；无选择器准入则关闭标题模块。
+- The body stays verbatim identical, verified by a body hash.
+- Each draft generates at most 2 new titles, forming at most 3 candidates together with the original title.
+- No new facts, first-hand implications, exaggerated results or change of the post's purpose.
+- The selector compares the original title with each of the two new titles one by one with AB/BA swapped; at most one candidate that clearly beats the original is kept.
+- If both new titles beat the original, pick the first by a pre-fixed candidate order, with no extra repeated contest.
+- Tie, Uncertain or rejection all keep the original title; without selector admission the title module is switched off.
 
-标题比较给出完整同正文，不让模型只比较脱离语境的标题。每次AB请求同时返回“原题/T1”和“原题/T2”两个独立结果，BA请求分别反向映射；不是直接做未经交换的三选一排名。事实或误导检查不通过的新标题不进入选择。
+The title comparison supplies the full same body so the model does not compare titles out of context. Each AB request returns two independent results, "original/T1" and "original/T2", and the BA request maps them back separately; this is not a direct swapped-free three-way ranking. New titles that fail the fact or misleading check do not enter selection.
 
-整篇校准不能证明标题选择能力。Dev真人验证的是“生成标题＋机器选标题”整个模块，而不是让真人代替机器选出最佳标题。Final保持同一套机器规则，再由真人验证整篇产品效果；不宣称提高点击率。
+Whole-post calibration cannot prove title-selection ability. The Dev human verification is of the whole "generated titles plus machine title selection" module, not of the human standing in for the machine to pick the best title. Final keeps the same machine rules and then has humans verify the whole product effect; no claim of improved click-through rate is made.
 
-## 6. 事实与质量检查
+## 6. Fact and quality checks
 
-复用现有检查代码，但本轮将“程序能直接检查的条件”和“模型辅助判断”分开报告。
+Reuse the existing check code, but this round reports "conditions the program can check directly" and "model-assisted judgment" separately.
 
-### 6.1 程序检查
+### 6.1 Programmatic checks
 
-- JSON和必填字段有效。
-- fact_refs存在于账本。
-- 标题及正文长度符合约定。
-- 标题实验正文哈希不变。
-- 来源、版本、生成候选、费用、原始响应均有记录。
-- 现有机械复制检测按冻结规则执行。
+- JSON and required fields valid.
+- fact_refs exist in the ledger.
+- Title and body lengths conform to the agreement.
+- The title-experiment body hash is unchanged.
+- Source, version, generated candidate, cost and raw response are all recorded.
+- The existing mechanical copy detection runs under the frozen rules.
 
-### 6.2 模型辅助事实审核
+### 6.2 Model-assisted fact review
 
-读取完整来源与Brief，检查：
+Read the full source and brief, and check for:
 
-- 无依据事实或数字。
-- 虚构亲测、身份、经历。
-- 历史结果被写成当前结果。
-- 关键限制或背景被删掉。
-- 标题与正文矛盾、误导或夸大。
+- Unsupported facts or numbers.
+- Fabricated first-hand testing, identity or experience.
+- Historical results written as current results.
+- Deleted key limitations or background.
+- Title-body contradiction, misleading or exaggeration.
 
-上述审核不是事实认证。禁止继续把Gemini 4/5当独立质量证据。模型拒绝稿保留原稿和拒绝原因。
+The above review is not fact certification. Do not continue to treat Gemini 4/5 as independent quality evidence. Model-rejected drafts keep the original and the rejection reason.
 
-### 6.3 人工事实核对
+### 6.3 Human fact verification
 
-AI助手对Final最终选中稿逐条核对来源与事实引用，出具可复核表；这属于助手来源审核，不标成独立人类专家认证。技术争议无法核清时记Unverified，不强判正确。
+The AI assistant checks the Final selected drafts one by one against sources and fact references and produces a reviewable table; this is assistant source review, not labelled as independent human expert certification. When a technical dispute cannot be resolved, record Unverified rather than forcing a verdict.
 
-用户主要评自然性和发布价值，不要求其判断技术事实。
+The user mainly evaluates naturalness and publishing value and is not required to judge technical facts.
 
-## 7. 真人Dev评测
+## 7. Human Dev evaluation
 
-8个任务，每题G0/G1各1篇，共16篇、8对。
+8 tasks, 1 G0 and 1 G1 draft each, 16 drafts and 8 pairs in total.
 
-- 匿名随机A/B，隐藏模型、版本、分数和系统描述。
-- 两篇使用同一事实背景卡，说明来源日期及发帖者身份。
-- 统一忠实翻译，保持语气、段落、数字和不确定性；不趁翻译润色。
-- 默认中文，英文可展开。
-- 翻译完成后检查事实、数字和身份一致性；错误只修翻译，不改英文稿。
+- Anonymous randomized A/B, hiding model, version, score and system description.
+- Both drafts use the same fact background card, stating source dates and poster identity.
+- Faithful consistent translation, keeping tone, paragraphs, numbers and uncertainty; no polishing during translation.
+- Chinese by default, English expandable.
+- After translation, check fact, number and identity consistency; errors fix only the translation, not the English draft.
 
-### 7.1 主要标签
+### 7.1 Primary label
 
-“如果只能发一个，你会如何选择？”
+"If you could publish only one, how would you choose?"
 
-- A更值得发。
-- B更值得发。
-- Tie：两篇差不多。
-- Both unacceptable：两个都不值得发。
-- Uncertain：缺背景、看不懂或无法判断。
+- A is more worth publishing.
+- B is more worth publishing.
+- Tie: the two are about the same.
+- Both unacceptable: neither is worth publishing.
+- Uncertain: missing background, incomprehensible, or cannot judge.
 
-每篇另记“可发／不可发／无法判断”，避免把“两篇中较好”误写成“已经可用”。
+Also record separately for each draft "publishable / not publishable / cannot judge", to avoid mistaking "the better of the two" for "already usable".
 
-### 7.2 辅助问题
+### 7.2 Supplementary questions
 
-- 哪篇更自然？
-- 哪篇更清楚地表达发帖目的？
-- 哪篇更值得读或回复？
-- 是否像资料总结、过于啰嗦、背景不足、问题不清楚？
-- 可选一句最主要问题。
+- Which is more natural?
+- Which expresses the posting purpose more clearly?
+- Which is more worth reading or replying to?
+- Does it read like a material summary, seem too verbose, lack background, or have an unclear question?
+- Optionally, one sentence on the main problem.
 
-结论准确表述为“该用户在中文译文呈现下的偏好”。单个评审者、中文翻译和技术背景限制都要披露，不能替代英文社区受众证据。
+State the conclusion accurately as "this user's preference as presented in the Chinese translation". The single reviewer, the Chinese translation and the technical-background limitation must all be disclosed and cannot substitute for English-community audience evidence.
 
-## 8. 自动Selector校准与冻结
+## 8. Automatic Selector calibration and freeze
 
-### 8.1 候选限制
+### 8.1 Candidate limit
 
-主候选使用第二轮外部Claude模型的确切锁定ID，不启动大规模搜索。
+The main candidate uses the exact locked ID of Round 2's external Claude model; no large-scale search is started.
 
-Jev只允许一次不超过15分钟的接入预检：必须有可用授权、稳定接口、明确输出及可上界的费用。否则关闭。最多两个候选，不继续找第三个。
+Jev is allowed only one connection pre-check of no more than 15 minutes: there must be usable authorization, a stable interface, clear output and an upper-bounded cost. Otherwise it is closed. At most two candidates; no searching for a third.
 
-预检不是接入成功证据；失败和发生的费用照实记录。
+The pre-check is not evidence of successful integration; failures and costs incurred are recorded as they are.
 
-### 8.2 同一批8对真人题
+### 8.2 The same 8 human pairs
 
-- 候选Judge各做AB/BA，共16请求/模型。
-- 不把真人答案或版本身份放进机器提示。
-- 不逐题根据真人答案修Judge提示；只比较预先锁定的候选。
-- 同样支持A、B、Tie、Both unacceptable、Uncertain。
-- AB/BA映射回同一内容后冲突，合并为Uncertain；请求失败另记Failure。
+- Each candidate judge does AB/BA, 16 requests per model in total.
+- Do not put human answers or version identity into the machine prompt.
+- Do not modify the judge prompt per task based on human answers; compare only the pre-locked candidates.
+- Also support A, B, Tie, Both unacceptable, Uncertain.
+- Conflicts after AB/BA mapping back to the same content are merged into Uncertain; request failures are recorded separately as Failure.
 
-### 8.3 工程准入
+### 8.3 Engineering admission
 
-同时检查：
+Check simultaneously:
 
-1. 8题全标签一致至少6题。
-2. 真人有明确A/B偏好的题至少4题；不足则本轮不能验证排序能力。
-3. 在这些真人明确题上，机器给出一致A/B至少75%；弃权和失败不当正确。
-4. AB/BA内容映射一致至少7/8；同时报告决定性覆盖率，不能靠全部弃权通过。
-5. 展示偏长、偏位置等检查，但8题不能证明不存在系统偏差。
+1. At least 6 of 8 tasks with fully consistent labels.
+2. At least 4 tasks where the human has a clear A/B preference; otherwise ranking ability cannot be validated this round.
+3. On these human-clear tasks, the machine gives a consistent A/B at least 75% of the time; abstentions and failures do not count as correct.
+4. AB/BA content mapping consistent on at least 7/8; also report decisive coverage, since passing by abstaining on everything is not allowed.
+5. Display length-bias, position-bias and similar checks, but 8 tasks cannot prove the absence of systematic bias.
 
-准入只是本轮有限范围的初步门槛，不代表稳定替代人工。两个候选都通过时，6/8与7/8不能用于精确优劣排名。预先固定选择顺序：
+Admission is only a preliminary threshold for this round's limited scope and does not mean a stable replacement for humans. When both candidates pass, 6/8 and 7/8 cannot be used for a precise ranking. Pre-fix the selection order:
 
-1. 先排除接口不稳定、价格无法可靠上界或结构化结果不可用的候选。
-2. 在均稳定可用的候选中，优先真人明确题上的机器决定性覆盖率较高者；同时列出错判数量，覆盖率不代表准确率。
-3. 覆盖率相同则选择相同输入规模下预估调用成本更低者；成本相同则选择已有接入、依赖更少者。
-4. 仍并列则使用预先固定的主候选Claude，不增加模型搜索。
+1. First exclude candidates with an unstable interface, an unreliable price upper bound, or unusable structured results.
+2. Among the remaining stable and usable candidates, prefer the one with higher machine decisive coverage on human-clear tasks; also list the number of misjudgments, since coverage is not accuracy.
+3. If coverage is equal, choose the one with the lower estimated call cost at the same input scale; if cost is also equal, choose the one already integrated with fewer dependencies.
+4. If still tied, use the pre-fixed main candidate Claude without adding model search.
 
-这些只是工程选型规则，不构成模型可靠性排名。冻结前写入合同，不能看到Final再更换。
+These are engineering selection rules only and do not constitute a model reliability ranking. Write them into the contract before the freeze; do not change them after seeing Final.
 
-均失败则关闭关键自动排序、标题组件，Final采用固定候选规则和真人评价，不继续修Judge直到通过。
+If all fail, switch off the key automatic ranking and title module, and Final uses fixed candidate rules and human evaluation, without continuing to fix the judge until it passes.
 
-## 9. Dev组件筛选与产品冻结
+## 9. Dev component screening and product freeze
 
-### 9.1 G1保留规则
+### 9.1 G1 retention rule
 
-以8对真人Dev标签为依据：
+Based on the 8 human Dev pairs:
 
-- G1至少5题获明确偏好。
-- 没有新增确认的严重事实或身份错误。
-- 不以某单一内容类型的效果代替全域结论。
-- 报告可发布比例、Tie、拒绝、弃权和额外成本。
+- G1 gets a clear preference on at least 5 tasks.
+- No newly confirmed serious fact or identity error.
+- Do not substitute one content type's effect for an all-domain conclusion.
+- Report the publishable rate, Tie, rejection, abstention and extra cost.
 
-这是方向性开发门槛，不是统计显著性。未达到则基线B=G0；达到则B=G1。
+This is a directional development threshold, not statistical significance. If not met, baseline B = G0; if met, B = G1.
 
-### 9.2 标题探索
+### 9.2 Title exploration
 
-选择器准入后，在预先划定的4个Dev题测试B+T。4题覆盖已有三类，不按G1获胜与否挑题。
+After selector admission, test B+T on 4 pre-designated Dev tasks. The 4 tasks cover the existing three categories and are not chosen by whether G1 won.
 
-至多4篇、每篇2个新标题。机械和模型检查均保留记录。机器使用第5.4节冻结的规则选出一个标题；若原题保留，也保留该结果，不换题凑齐4个“优化成功”案例。
+At most 4 drafts, 2 new titles each. Both mechanical and model checks are recorded. The machine picks one title using the rules frozen in 5.4; if the original is retained, that result is also kept, and tasks are not swapped to assemble 4 "optimization success" cases.
 
-随后新增**4组真人标题盲评**：
+Then add **4 human title blind-review pairs**:
 
-- 匿名展示原标题和机器最终选题，A/B随机，隐藏版本身份。
-- 两标题下方共享同一份正文或准确中文背景，不能脱离正文只评哪个更吸睛；需要时展开完整正文。
-- 忠实翻译，不润色标题；英文可查看。
-- 标签为A更好/B更好/Tie/两个都不合适/无法判断；补充是否夸大、误导或不匹配正文。
-- 真人只验收机器已选出的结果，不从两个新标题中另选一个。
-- 相同标题记Identity Tie，不算优化胜利；真人答案未收到时不得自动进入Final。
+- Anonymously show the original title and the machine's final pick, A/B randomized, version identity hidden.
+- Both titles share the same body or accurate Chinese background beneath them, so the judgment is not made out of context on which is more eye-catching; expand the full body when needed.
+- Faithful translation, no title polishing; English viewable.
+- Labels are A better / B better / Tie / both unsuitable / cannot judge; plus whether it is exaggerated, misleading or mismatched with the body.
+- The human only accepts the machine's already-chosen result, and does not pick a different one from the two new titles.
+- Identical titles are recorded as Identity Tie and are not counted as an optimization win; tasks whose human answer has not been received must not automatically enter Final.
 
-至少3/4题真人明确偏好机器选出的新标题、没有新增确认事实或误导问题，才把B+T作为Final挑战产品。按全部4题计算，不删除弃权、失败或保留原题的任务。
+Only if at least 3/4 tasks show a clear human preference for the machine-chosen new title, with no newly confirmed fact or misleading problem, does B+T become the Final challenger product. The calculation is over all 4 tasks; tasks with abstention, failure or a retained original title are not deleted.
 
-这验证的是标题模块在开发任务上的初步价值，不代表标题Judge独立通过全面验证，也不代表点击率改善。Final严格复用同一机器选题规则，不让真人参与选题，避免更换了系统。
+This validates the title module's preliminary value on development tasks; it does not mean the title judge independently passed comprehensive validation, nor does it mean an improved click-through rate. Final strictly reuses the same machine title-selection rule and does not let humans take part in title selection, avoiding swapping the system.
 
-### 9.3 最终产品P*
+### 9.3 Final product P*
 
-- B=G1，标题通过：P*=G1+T。
-- B=G1，标题未通过或关闭：P*=G1。
-- B=G0，标题通过：P*=G0+T。
-- B=G0，标题未通过或关闭：P*=G0。
+- B = G1, title passes: P* = G1+T.
+- B = G1, title fails or is off: P* = G1.
+- B = G0, title passes: P* = G0+T.
+- B = G0, title fails or is off: P* = G0.
 
-若P*=G0，结论是“本轮未找到值得加入的增强组件”，不是“已证明G0最好或接近最优”。与基线完全相同，则停止“改善效果”Final比较；不重复生成两套相同系统并利用随机差异宣称提升。可以另行做单系统可用性检查，但不充当原计划对照。
+If P* = G0, the conclusion is "this round found no enhancement component worth adding", not "G0 is proven best or near-optimal". If it is exactly the same as the baseline, stop the "improvement effect" Final comparison; do not generate two identical systems and exploit random differences to claim improvement. A separate single-system usability check may be run, but it does not serve as the planned comparison.
 
-冻结：代码、模型、全部提示、生成参数、Selector、标签、候选预算、事实规则、翻译流程、Final任务分配、失败处理和报告指标。保存哈希和时间。
+Freeze: code, model, all prompts, generation parameters, selector, labels, candidate budget, fact rules, translation pipeline, Final task allocation, failure handling and reporting metrics. Save hashes and times.
 
-## 10. Final：6个新任务
+## 10. Final: 6 new tasks
 
-### 10.1 固定比较
+### 10.1 Fixed comparison
 
-G0基线 vs 冻结P*，不再测试完整组件矩阵。
+G0 baseline vs frozen P*, without testing the full component matrix.
 
-6任务×2系统×2候选=24篇基础候选。标题模块只修改选中的产品稿标题，不额外生成正文。
+6 tasks x 2 systems x 2 candidates = 24 base candidates. The title module only changes the title of the selected product draft and does not generate extra bodies.
 
-### 10.2 候选选择
+### 10.2 Candidate selection
 
-- 先事实和格式检查，再从合格稿中选。
-- Selector准入：对同一系统的两篇合格候选做AB/BA，明确胜者选中。
-- Tie或Uncertain：选固定顺序第一个合格稿。Both unacceptable则记选稿器拒绝并停止该系统本题输出，不能把拒绝自动降级成Tie后强行选稿。
-- Selector未准入：固定顺序第一个合格稿。
-- 只有1篇合格则选它；0篇合格记系统失败，不临时重写成成功。
+- Fact and format checks first, then select from qualified drafts.
+- Selector admitted: do AB/BA on the two qualified candidates of the same system, and the clear winner is selected.
+- Tie or Uncertain: select the first qualified draft in the fixed order. Both unacceptable is recorded as a selector rejection and this system's output for that task stops; a rejection must not be automatically downgraded to a Tie and then forced into a selection.
+- Selector not admitted: the first qualified draft in the fixed order.
+- If only 1 is qualified, select it; 0 qualified is recorded as a system failure and is not rewritten on the spot into a success.
 
-系统间比较候选数量一致。选择器、规划及标题请求全部计入产品总费用和延迟。
+The candidate counts compared between systems are the same. Selector, planning and title requests are all counted in the product's total cost and latency.
 
-### 10.3 机器Final
+### 10.3 Machine Final
 
-若已准入，Selector对P*/G0做AB/BA，共12请求。
+If admitted, the Selector does AB/BA on P*/G0, 12 requests in total.
 
-它已经参与产品选择，不能作为独立生成效果裁判。这里用于分析与真人的一致性、弃权和偏好差异。
+It has already taken part in product selection, so it cannot serve as an independent generation-effect judge. Here it is used to analyse consistency with humans, abstentions and preference differences.
 
-未准入的Judge可保留“诊断参考”身份，但不称有效Selector，不据其结果保留产品；为省预算可以不运行。
+A judge that is not admitted may keep a "diagnostic reference" status, but is not called an effective Selector and its results do not retain the product; it may be skipped to save budget.
 
-### 10.4 真人Final
+### 10.4 Human Final
 
-6题、12篇，沿用匿名、统一翻译和同一背景卡。全轮最多需要用户看28篇中文帖子，加4组标题比较（8个标题；正文为已看过的Dev材料，可按需展开）。新增标题验证不要求再读8篇新正文。
+6 tasks, 12 drafts, reusing anonymity, consistent translation and the same background card. Across the whole round the user needs to read at most 28 Chinese posts, plus 4 title comparisons (8 titles; the bodies are already-seen Dev material and can be expanded on demand). The added title validation does not require reading 8 new bodies.
 
-若标题模块未运行，只有8对Dev和6对Final；若P*=G0而停止改善对照，则不强行增加6对同系统Final。
+If the title module did not run, there are only 8 Dev pairs and 6 Final pairs; if P* = G0 and the improvement comparison stops, do not force an extra 6 same-system Final pairs.
 
-沿用A/B/Tie/Both unacceptable/Uncertain和每篇发布资格标签。
+Reuse A/B/Tie/Both unacceptable/Uncertain and the per-draft publication-eligibility label.
 
-Final答案只用于验证与报告，不反向改提示、替换Judge、重选产品或重跑挑稿。
+Final answers are used only for validation and reporting, and do not retroactively change prompts, swap the judge, re-choose the product or rerun draft selection.
 
-## 11. 指标、门槛与结论
+## 11. Metrics, thresholds and conclusions
 
-### 11.1 主要生成器指标
+### 11.1 Primary generator metrics
 
-- W/L/Tie/Both unacceptable/Uncertain/Failure原始数量。
-- 全任务获明确偏好比例W/6。
-- 决定性胜率W/(W+L)，同时给出决定性覆盖率(W+L)/6。
-- 各版本可发布任务比例、确认事实错误、未核清事实数量。
-- 若某系统无合格稿，记录为系统失败；不只对剩下的成功任务报告效果。
+- Raw counts of W/L/Tie/Both unacceptable/Uncertain/Failure.
+- The proportion of all tasks obtaining a clear preference, W/6.
+- Decisive win rate W/(W+L), together with decisive coverage (W+L)/6.
+- Each version's publishable-task proportion, confirmed fact errors, and number of unresolved facts.
+- If a system has no qualified draft, record it as a system failure; report the effect not only on the remaining successful tasks.
 
-不能把Uncertain计半胜。报告小样本区间和数量，不用小数制造精确感。
+Uncertain must not be counted as half a win. Report small-sample intervals and counts, and do not use decimals to manufacture a sense of precision.
 
-### 11.2 工程正向信号
+### 11.2 Engineering positive signal
 
-P*至少4/6题获明确真人偏好、确认严重事实/身份错误为0，且至少4/6题被用户判断可发布。
+P* obtains a clear human preference on at least 4/6 tasks, with 0 confirmed serious fact/identity errors, and at least 4/6 tasks judged publishable by the user.
 
-满足只能写“本轮6题中观察到初步正向信号”。未满足则写未证明增益；不能通过删除弃权题或替换主题改变门槛。
+If met, the write-up is only "preliminary positive signal observed in this round's 6 tasks". If not met, write that no gain was proven; the threshold must not be changed by deleting abstention tasks or swapping topics.
 
-产品成本超过G0约2倍且仅有微弱增益时，默认继续使用简单基线。该判断规则在冻结前写清，Final后不重新搜索产品。
+If the product cost exceeds G0 by about 2x with only a weak gain, continue to use the simple baseline by default. This decision rule is written down before the freeze, and the product is not re-searched after Final.
 
-### 11.3 Selector新任务泛化检查（Final Generalization Check）
+### 11.3 Selector new-task generalization check (Final Generalization Check)
 
-用6个新Final真人标签报告：全标签一致数、真人明确题的一致率、机器决定性覆盖率、AB/BA一致率、拒绝与弃权差异。
+Using the 6 new Final human labels, report: the number of fully consistent labels, the consistency rate on human-clear tasks, machine decisive coverage, AB/BA consistency, and rejection/abstention differences.
 
-Final稿件已部分经过该Selector筛选，所以这是新任务上系统级偏好与真人的一致性检查，不是独立、无筛选偏差的Selector benchmark。准确写作“在新Final任务的系统输出上，与真人标签X/6一致”，不写“外部验证证明Selector准确率为X%”。
+The Final drafts have partly been filtered by this Selector, so this is a check of system-level preference versus humans on new tasks, not an independent, filter-unbiased Selector benchmark. Write it accurately as "on the system outputs for the new Final tasks, X/6 consistent with human labels", not "external validation proves the Selector's accuracy is X%".
 
-总体一致至少4/6且不依赖大量弃权，可作为初步支持；明确题太少则结论为信息不足。与被选稿之间的一致性不能外推到所有未筛选候选，更不能声称社区判断准确率。
+An overall consistency of at least 4/6 that does not rely on many abstentions can count as preliminary support; if there are too few clear tasks, the conclusion is insufficient information. Consistency with the selected drafts cannot be extrapolated to all unfiltered candidates, let alone claimed as community-judgment accuracy.
 
-### 11.4 其他结果
+### 11.4 Other results
 
-- 自然性、动机清晰度、值得回复程度：诊断结果。
-- API请求、全部Token、费用、重试、端到端延迟、模型服务时间：可操作性。
-- E2/E4：只做历史关联审计，不用于生成、筛选或奖励，不称爆款概率；非必要嵌入请求优先关闭。
+- Naturalness, motivation clarity, reply-worthiness: diagnostic results.
+- API requests, all tokens, cost, retries, end-to-end latency, model service time: operability.
+- E2/E4: historical association audit only, not used for generation, screening or reward, and not called viral probability; unnecessary embedding requests are switched off by preference.
 
-## 12. 调用与预算：先算清楚再执行
+## 12. Calls and budget: calculate clearly before executing
 
-本轮不沿用未经核算的“主线≤120请求”。下表是逐阶段上界计划，实际须结合现有批处理能力和缓存核验。
+This round does not reuse the unaccounted "main line <= 120 requests". The table below is a per-stage upper-bound plan, and the actual must be verified against existing batch-processing capacity and caching.
 
-| 阶段 | 请求上界 | 说明 |
+| Stage | Request upper bound | Note |
 | --- | ---: | --- |
-| 14个新Brief提取和来源核对 | 28 | 每来源最多2次，Final阶段冻结后进行 |
-| Dev G0/G1生成 | 16 | 8题×2版本 |
-| Dev G1动机规划 | 8 | 每题一次 |
-| Dev事实检查 | 8 | 同题两稿批处理 |
-| Dev中文翻译 | 8 | 同题两稿批处理 |
-| 主Selector挑战 | 16 | 8对×AB/BA |
-| 4题标题探索 | 16 | 每题1生成、2交换比较、1事实检查；一次比较请求可对两个新标题分别返回结构化结果 |
-| Dev标题忠实翻译 | 4 | 每题原题和机器选题批处理，用于新增真人验证 |
-| Final两系统正文生成 | 12 | 每次返回2候选 |
-| Final动机规划 | 6 | P*含G1才调用 |
-| Final候选事实检查 | 12 | 每系统2候选批处理 |
-| Final内部选稿 | 24 | 6题×2系统×AB/BA |
-| Final标题生成、选题、检查 | 24 | P*含T才调用，每题4次 |
-| Final选中稿翻译 | 6 | 每题两稿批处理 |
-| Final机器比较 | 12 | 6题×AB/BA |
-| **最大主线合计** | **200** | 不是全部路径必然发生的调用量 |
+| 14 new brief extraction and source verification | 28 | at most 2 per source, after the Final-stage freeze |
+| Dev G0/G1 generation | 16 | 8 tasks x 2 versions |
+| Dev G1 motivation planning | 8 | once per task |
+| Dev fact check | 8 | batch both drafts of a task |
+| Dev Chinese translation | 8 | batch both drafts of a task |
+| Main Selector challenge | 16 | 8 pairs x AB/BA |
+| 4-task title exploration | 16 | 1 generation, 2 swapped comparisons, 1 fact check per task; one comparison request can return structured results for both new titles separately |
+| Dev faithful title translation | 4 | batch the original and the machine selection per task, for the added human validation |
+| Final two-system body generation | 12 | returns 2 candidates per request |
+| Final motivation planning | 6 | called only when P* includes G1 |
+| Final candidate fact check | 12 | batch 2 candidates per system |
+| Final internal draft selection | 24 | 6 tasks x 2 systems x AB/BA |
+| Final title generation, selection, check | 24 | called only when P* includes T, 4 times per task |
+| Final selected-draft translation | 6 | batch two drafts per task |
+| Final machine comparison | 12 | 6 tasks x AB/BA |
+| **Maximum main-line total** | **200** | not the number of calls every path necessarily makes |
 
-第二个Selector最多再16次；预检、嵌入、格式修复和失败重试也计入额度，不能漏记。
+A second Selector adds at most 16 more; pre-checks, embeddings, format repairs and failure retries also count against the quota and must not be missed.
 
-如果现有接口无法按上表批处理，则必须重新核算，不能假装一次完成。不新增复杂框架只为压缩请求次数。
+If the existing interface cannot batch as in the table above, it must be recalculated rather than pretending to finish in one go. No complex new framework is added just to compress the number of requests.
 
-### 12.1 本轮限额
+### 12.1 This round's limits
 
-- 主线请求预算上限220次，最多两个Selector时240次；不因重试自动加额度。
-- Token继续预估、记录全部失败、翻译、审核和重试，但按用户最新意见，本轮不设500k累计Token硬停止，也不为降低Token省略必要检查。每次请求仍有模型上下文和最大输出限制，费用按安全上界预留；已冻结的前轮Token限额不追溯修改。
-- 本轮费用软目标US$0.75、硬上限US$1.25。
-- 项目US$5总上限继续有效；执行前查最新流水，不将第二轮报告中的旧累计金额直接视为当前余额。
-- 请求次数和美元硬上限任意一个先触达即停止；Token作为诊断量和费用预估依据，不另设本轮累计硬停止。
+- Main-line request budget cap 220, or 240 with at most two Selectors; retries do not automatically add quota.
+- Tokens continue to be estimated, with all failures, translations, reviews and retries recorded, but per the user's latest view this round sets no 500k cumulative-token hard stop, and necessary checks are not skipped to reduce tokens. Each request still has a model context and maximum-output limit, cost is reserved at a safe upper bound, and the already-frozen previous-round token limit is not retroactively modified.
+- This round's cost soft target is US$0.75 and the hard cap is US$1.25.
+- The project's US$5 total cap remains in force; check the latest ledger before execution and do not treat the old cumulative amount in the Round 2 report as the current balance.
+- Execution stops when either the request-count or the dollar hard cap is reached first; tokens serve as a diagnostic and cost-estimation basis, without a separate cumulative hard stop this round.
 
-US$1.25只是限制，不保证所有主线调用都能完成。先按冻结模型价格和实际输入Token核算；不足则在执行前取消Jev、标题探索或非必要历史审计，保留核心G0/G1与真人Final。不得执行半途偷改阈值或削减某一版本候选。
+US$1.25 is only a limit and does not guarantee that all main-line calls can complete. Calculate first using frozen model prices and actual input tokens; if insufficient, cancel Jev, title exploration or unnecessary historical audits before execution, keeping core G0/G1 and the human Final. Do not secretly change thresholds midway or cut one version's candidates.
 
-### 12.2 并发与预算预留
+### 12.2 Concurrency and budget reservation
 
-- 最大4个API worker；服务限流时降并发，不为了速度无限重试。
-- 不同来源可并行；规划→生成→审核→选稿→标题的依赖顺序保持。
-- 每次请求前，在同一原子预算账本预留调用数和费用上界；同时估算输入Token安全上界和最大输出Token，用于核算费用与上下文可行性。
-- 已支出＋在途预留＋Final保留预算不得超过请求数和美元硬上限；不要把Token充足当成费用可以无限增加。
-- 获得真实用量后结算；用量未知保留保守预留，不计零费用。
-- 超时请求可能已计费，按真实或保守成本入账；重试先重新申请额度。
-- 每请求最多1次重试，格式失败可计费修复一次，但仍受总额度限制。
+- At most 4 API workers; reduce concurrency when the service rate-limits, and do not retry endlessly for speed.
+- Different sources may run in parallel; the dependency order of planning -> generation -> review -> draft selection -> title is kept.
+- Before each request, reserve the call count and cost upper bound in the same atomic budget ledger; also estimate the input-token safe upper bound and maximum output tokens, for cost and context feasibility.
+- Spent + in-flight reserved + Final-reserved budget must not exceed the request-count or dollar hard cap; do not treat a healthy token balance as if cost could grow without limit.
+- Settle after real usage is obtained; keep a conservative reservation when usage is unknown and do not charge it as zero.
+- A timed-out request may already be billed; book it at real or conservative cost, and re-apply for quota before retrying.
+- At most 1 retry per request; a format failure may be repaired once for a charge, but it is still subject to the total quota.
 
-Final预算提前单列保留，Dev不能透支。预算阻断必须先通过本地模拟：并发临界余额、未知用量、失败重试、超限拒绝；验证通过才开始付费请求。
+The Final budget is reserved separately in advance and Dev must not overdraw it. The budget block must first pass a local simulation: concurrency-critical balance, unknown usage, failure retries, overrun rejection; verified before paid requests begin.
 
-### 12.3 轻量异常监测
+### 12.3 Lightweight anomaly monitoring
 
-累计Token达到500k时记录一次告警，由AI核对用量和任务进度；正常增长继续运行，不要求用户反复确认。750k或更高累计用量不自动触发新的硬停止。费用和调用上限仍照常阻断。
+When cumulative tokens reach 500k, log one warning and have the AI check usage and task progress; normal growth continues running without asking the user to confirm repeatedly. A cumulative usage of 750k or higher does not automatically trigger a new hard stop. Cost and call caps still block as usual.
 
-执行前在配置中锁定下列检查：
+Before execution, lock the following checks in the configuration:
 
-- 请求键包含来源、阶段、版本、候选和尝试编号；已完成请求不得意外重发，允许重试单独记账。
-- 单请求最多一次重试；格式修复不得套娃重试。
-- 一个阶段实际调用数超过预设最大工作量，暂停相关任务并检查是否循环。
-- 请求耗时超过预设超时或完成任务数长时间不增长，记录诊断；超时先核清计费和在途状态，不立即多次重发。
-- 单次Token明显超出输入估算，或相同长度任务用量异常，记录估计/实际偏差并检查；不得只因复杂材料更长就判Bug。
+- The request key includes source, stage, version, candidate and attempt number; a completed request must not be accidentally re-sent, and retries are allowed separate accounting.
+- At most one retry per request; format repair must not retry recursively.
+- If a stage's actual call count exceeds the preset maximum workload, pause the related tasks and check for a loop.
+- If a request exceeds the preset timeout, or the completed-task count does not grow for a long time, log a diagnostic; for a timeout, first clarify billing and in-flight status rather than immediately re-sending many times.
+- If a single request's tokens clearly exceed the input estimate, or usage is abnormal for tasks of the same length, record the estimated/actual deviation and check it; do not judge it a bug merely because complex material is longer.
 
-异常优先暂停受影响任务，AI在已有范围内修复、保留失败证据并恢复；预算不足、需要改实验含义或需要用户权限时才找用户。不能把真实异常静默忽略，也不能把正常累计Token增长变成新的人工审批环节。
+Prefer to pause the affected tasks on an anomaly, have the AI repair within the existing scope, preserve the failure evidence and resume; only go to the user for insufficient budget, a change in experimental meaning, or a need for user permission. Real anomalies must not be silently ignored, and normal cumulative token growth must not become a new manual approval step.
 
-## 13. 工程范围与档案
+## 13. Engineering scope and archive
 
-复用已有Harness、Brief、事实审核、翻译和盲评页面。新增配置与轻量runner即可；不重建UI、数据库或Agent框架。
+Reuse the existing harness, brief, fact review, translation and blind-review pages. New configuration and a lightweight runner are enough; the UI, database or agent framework are not rebuilt.
 
-“少写代码”是范围原则，不是限制必要修复的patch次数。预算、事实、日志和分组Bug必须修复，不能因为已经修改三次而带病执行。
+"Write less code" is a scope principle, not a limit on the number of patches for necessary fixes. Budget, fact, logging and grouping bugs must be fixed, and execution must not proceed while broken just because it has already been edited three times.
 
-执行时创建下一轮loops/v003，保留v001/v002原样。至少保存：
+At execution, create the next round's loops/v003 and keep v001/v002 as they are. Save at least:
 
 ```text
 loops/v003/
@@ -510,56 +510,56 @@ loops/v003/
   decision_v003.md
 ```
 
-本文是方案，不替代已解析的执行合同。开始前须锁定真实来源ID、模型ID、价格、提示、代码与输入哈希及预算。不得创建一份含占位字段的合同后声称已预注册。
+This document is a plan and does not replace the resolved execution contract. Before starting, lock the real source ID, model ID, price, prompts, code and input hashes, and the budget. Do not create a contract with placeholder fields and then claim it is pre-registered.
 
-每次记录原始响应、结构化输出、错误、重试、模型/提示版本、耗时、实际用量、费用、缓存命中与合同哈希。每阶段记录计划与实际差异。闭环结束做一次集中完整性审核，不伪造缺失日志。
+Record the raw response, structured output, error, retry, model/prompt version, duration, actual usage, cost, cache hit and contract hash every time. Record the planned-versus-actual difference per stage. Do one consolidated integrity review at the end of the loop; do not fabricate missing logs.
 
-## 14. 执行顺序与完成标准
+## 14. Execution order and completion criteria
 
-1. **准备**：核对旧资产、排除已暴露来源、预分组、锁定场景模板与Dev当前用户任务、模型价格和预算；预算控制模拟通过。
-2. **Dev**：生成8题G0/G1，来源审核与忠实翻译，交给用户完成8对真人标签。
-3. **Selector**：最多两个锁定候选做挑战；通过则冻结，否则关闭。
-4. **组件选择**：按Dev真人结果选G0/G1；有合格Selector才做4题标题探索，再由用户完成4组标题验收，按3/4规则决定是否加入。
-5. **冻结**：记录P*和全部协议。若P*=G0，结束改善对照路线，如实交付无增益结论。
-6. **Final**：冻结后打开6题新素材，按已锁定模板构造并冻结当前用户场景，生成24篇候选，固定规则选稿与审核，准备6对真人盲评。
-7. **关闭**：计算结果和Selector一致性、成本、错误、预算与档案审核，形成报告和产品决策。
+1. **Prepare**: verify old assets, exclude already-exposed sources, pre-group, lock scenario templates and Dev current-user tasks, model prices and budget; pass the budget-control simulation.
+2. **Dev**: generate 8 tasks of G0/G1, source review and faithful translation, hand to the user for 8 human label pairs.
+3. **Selector**: up to two locked candidates take the challenge; freeze if it passes, otherwise switch off.
+4. **Component selection**: choose G0/G1 from the Dev human results; only with a qualified Selector do the 4-task title exploration, then have the user complete 4 title acceptances, deciding by the 3/4 rule whether to include it.
+5. **Freeze**: record P* and the whole protocol. If P* = G0, end the improvement-comparison route and honestly deliver a no-gain conclusion.
+6. **Final**: after the freeze, open the 6 new material tasks, construct and freeze the current-user scenarios from the locked templates, generate 24 candidates, use fixed draft-selection and review rules, and prepare 6 human blind-review pairs.
+7. **Close**: compute results and Selector consistency, cost, errors, budget and archive review, and form the report and product decision.
 
-本轮完成标准：真实输出、真实真人标签、可复核来源、完整预算记录、冻结与Final隔离证据，以及一个明确的保留/关闭决定。若真人标签尚未收到，状态为HUMAN_PENDING，不标实验完成。
+Completion criteria for this round: real outputs, real human labels, reviewable sources, complete budget records, freeze and Final isolation evidence, and a clear keep/close decision. If human labels have not yet been received, the status is HUMAN_PENDING and the experiment is not marked complete.
 
-## 15. 停止条件
+## 15. Stop conditions
 
-- 来源不足或Final暴露：更换预定候补；无法获得独立题则停止确认性结论。
-- Selector失败：关闭关键排序和标题模块，不继续搜模型。
-- G1没有增益：保留G0；标题可独立探索，不继续复杂化正文。
-- 标题无增益：关闭。
-- 两版本都不值得发：记真实失败，不把相对偏好当成功。
-- 发现事实或身份编造：拒绝该稿并记录，不由人工悄悄改成模型成功。
-- 触达请求或金额硬上限：停止，报告未完成阶段；累计Token持续记录，不沿用本轮已取消的500k硬停止。
-- Final后想调整：另开开发轮次，旧Final保持已暴露状态。
+- Insufficient sources or Final exposure: switch to the designated backups; if independent tasks cannot be obtained, stop the confirmatory conclusion.
+- Selector failure: switch off the key ranking and title module and stop searching for models.
+- G1 has no gain: keep G0; the title may be explored independently, and the body is not further complicated.
+- Title has no gain: switch off.
+- Neither version is worth publishing: record the real failure and do not treat a relative preference as a success.
+- A fabricated fact or identity is found: reject that draft and record it; do not quietly rewrite it by hand into a model success.
+- The request or dollar hard cap is reached: stop and report the incomplete stage; cumulative tokens continue to be recorded, without reusing this round's cancelled 500k hard stop.
+- Wanting to adjust after Final: open a separate development round and keep the old Final in its exposed state.
 
-## 16. 最终交付
+## 16. Final deliverables
 
-- 可运行的简单生成器：G0、G1或其标题增强版本之一。
-- 本轮完整实验报告，逐版本提示、主题、真实示例和质量审核。
-- 真人原始标签、匿名映射、机器AB/BA输出与一致性结果。
-- 候选全集、失败稿、费用/Token/调用流水和完整性审核。
-- 简短产品说明：输入、输出、身份限制、适用场景和当前证据边界。
+- A runnable simple generator: one of G0, G1 or its title-enhanced version.
+- This round's full experiment report, with per-version prompts, topics, real examples and quality review.
+- Raw human labels, anonymous mappings, machine AB/BA outputs and consistency results.
+- The full candidate set, failed drafts, cost/token/call ledger and integrity review.
+- A short product description: input, output, identity limits, applicable scenarios and current evidence boundaries.
 
-最终研究故事不预先写成“成功”：
+The final research story is not pre-written as a "success":
 
-> 本轮检验了完整事实约束下的动机规划与标题优化，使用项目用户偏好选择轻量组件，并在新任务上验证冻结产品；结论范围限于本次离线测试，不代表真实社区传播效果。
+> This round tested motivation planning and title optimization under full fact constraints, selected lightweight components using the project user's preference, and validated the frozen product on new tasks; the conclusions are limited to this offline test and do not represent real community propagation effects.
 
-当前已经达到执行阈值。下一步不是添加更多模块，而是先跑8个Dev任务，取得第一批真实偏好。
+The execution threshold has now been reached. The next step is not to add more modules, but to run the 8 Dev tasks first and obtain the first batch of real preferences.
 
-## 17. 快速对齐：本轮人和AI各做什么
+## 17. Quick alignment: what humans and AI each do this round
 
-| 阶段 | AI负责 | 用户负责 | 完成标准 |
+| Stage | AI responsible for | User responsible for | Completion criteria |
 | --- | --- | --- | --- |
-| 准备 | 来源筛选、分组、完整Brief、费用核算、日志与检查 | 无需额外研究 | 真实来源与执行合同可核验 |
-| Dev正文 | 生成、来源核对、忠实翻译、匿名展示 | 8对帖子盲评 | 收到真实标签，不伪造 |
-| Selector | 最多两个候选挑战、按固定规则选型并冻结 | 无需挑模型 | 准入通过或关闭，结果完整 |
-| 标题探索 | 生成并机器选题、翻译、匿名展示 | 4组标题比较（仅模块运行时） | 全部4题中至少3题明确偏好新标题且无误导 |
-| Final | 冻结产品、新题生成、选稿、来源核对、翻译 | 6对最终帖子盲评（有不同P*时） | 不按结果改产品或挑主题 |
-| 收尾 | 完整报告、费用与完整性审核、可运行产品 | 最终使用与验收 | 结论有依据，未完成项明确标出 |
+| Prepare | source screening, grouping, full brief, cost accounting, logging and checks | no extra research needed | real sources and execution contract verifiable |
+| Dev bodies | generation, source verification, faithful translation, anonymous display | 8 post blind-review pairs | real labels received, not fabricated |
+| Selector | up to two candidate challenges, selection by fixed rules and freeze | no model picking | admitted or switched off, results complete |
+| Title exploration | generate and machine-select titles, translate, display anonymously | 4 title comparisons (only if the module runs) | at least 3 of all 4 tasks clearly prefer the new title with no misleading content |
+| Final | freeze product, new-task generation, draft selection, source verification, translation | 6 final post blind-review pairs (when P* differs) | do not change the product or swap topics based on results |
+| Wrap-up | full report, cost and integrity review, runnable product | final use and acceptance | conclusions are grounded, unfinished items clearly marked |
 
-这份v1.2是方案更新，不代表第三轮已开始运行，也不代表标题或Selector已经有效。
+This v1.2 is a plan update and does not mean Round 3 has started running, nor that the title or Selector is already effective.

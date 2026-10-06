@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "How does llama.cpp’s file upload button actually combine uploaded files with prompts in the HTTP server?",
+      "body": "I’ve been reading a 2025 Reddit post about llama.cpp’s HTTP server file upload feature and how it interacts with prompts. The original poster wonders whether the uploaded file content is simply concatenated with the direct prompt text before being sent to the model. They noticed inconsistent answers when asking questions about the uploaded file’s content, which raises questions about how the input is constructed internally.\n\nSince the exact mechanism isn’t clearly documented or confirmed, I’m curious if anyone here has insight or experience with how the file upload and prompt are combined under the hood. Could the inconsistent responses be due to how the server merges the file and prompt, or might there be other factors at play? \n\nUnderstanding this could help clarify how best to format inputs when using this feature, especially with models like llama 3.2 3B Q4_K_S as referenced in the original discussion.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Inconsistent answers from llama.cpp’s HTTP server file upload—what’s the cause?",
+      "body": "A user running llama.cpp 3.2 3B Q4_K_S reported that when using the HTTP server’s file upload button, the model sometimes gives inconsistent answers about the uploaded file’s content. The user speculated that the server might just concatenate the file content with their prompt, treating the combination as a single prompt string. However, this is not confirmed and could explain the irregular behavior.\n\nHas anyone else observed this or figured out exactly how the file upload input is merged with the prompt? Could the inconsistencies be due to prompt length limits, tokenization issues, or the way the server processes the combined input? \n\nClarifying this would be useful for anyone trying to reliably query uploaded documents through the HTTP interface rather than the CLI.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

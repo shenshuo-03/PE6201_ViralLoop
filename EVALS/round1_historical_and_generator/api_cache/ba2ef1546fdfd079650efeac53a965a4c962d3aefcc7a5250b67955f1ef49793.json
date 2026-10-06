@@ -1,0 +1,95 @@
+{
+  "value": {
+    "id": "H09",
+    "topic_id": "T07",
+    "topic": "一个假设的检索失败：首先检查什么",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "该场景有40个文档和一个查询，已知答案在一个文档中。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "在假设的失败中，相关文档不在检索到的段落中。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "没有证据表明是分块、索引或查询措辞导致了这种情况。",
+        "status": "synthetic experimental input"
+      }
+    ],
+    "A": {
+      "title": "假设的RAG检索失败：调试分块、索引和查询问题",
+      "body": "我们正在探讨一个假设的RAG检索失败：在一个包含40个文档的测试中，一个已知答案在一个文档中的查询未能检索到该文档。这种情况纯属假设，并非基于测量结果。\n\n核心问题是目标文档完全被检索机制遗漏了。在没有具体错误日志的情况下，系统化的方法将首先检查RAG管道的核心阶段：\n\n*   **文档分块**：评估文档分割。块是否太细、太粗，或者是否无意中分割了关键信息，使其无法匹配？\n*   **嵌入和索引**：考虑嵌入模型的有效性和向量索引的完整性。语义关系是否可能表示不当，或者索引是否已损坏？\n*   **查询措辞/处理**：分析查询如何转换为可搜索格式。查询嵌入是否准确反映了用户的意图，或者其生成是否存在问题？\n\n这个假设的案例为讨论有条理的调试提供了基础。对于完全检索遗漏，你首先会考虑哪些诊断方法？"
+    },
+    "B": {
+      "title": "调查假设的RAG检索差距：从哪里开始？",
+      "body": "在一个假设的测试案例中，一个RAG系统收到一个查询，已知该查询的答案来自40个文档中的一个。然而，检索机制未能在此类相关段落中返回该特定文档。这种情况纯属假设，并不反映实际的测量结果。\n\n在没有预先存在的数据表明根本原因的情况下，初步的诊断重点应放在RAG管道的基本组成部分上。目标是识别可能导致文档完全遗漏的潜在故障点。需要考虑的关键领域包括：\n\n*   **文档分块**：源文档的初始分割。块是否太小、太大，或者是否将关键信息分割到了边界之外？\n*   **嵌入和索引**：为文档块和查询生成的嵌入的质量，以及向量索引本身的完整性。嵌入模型是否可能未能捕捉到语义相似性？\n*   **查询构建**：用户自然语言查询被转换为适合向量搜索的格式的过程。查询本身的翻译或嵌入是否存在问题？\n\n这个假设的失败提供了一个很好的机会来讨论系统化的调试方法。在调查这种检索不足时，你的优先事项是什么？"
+    }
+  },
+  "usage": {
+    "at": "2026-10-04T08:32:07.553988+00:00",
+    "tag": "human_blind_translation:H09",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "ba2ef1546fdfd079650efeac53a965a4c962d3aefcc7a5250b67955f1ef49793",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 836,
+    "output_tokens": 651,
+    "actual_cost_usd": 0.000344,
+    "token_price_estimate_usd": 0.000344,
+    "reserved_upper_usd": 0.0017163999999999999,
+    "budget_charge_usd": 0.000344,
+    "latency_seconds": 3.13637990001007,
+    "retry": 0,
+    "request_id": "gen-1791102724-MszNqdIy4QCQFYY5cmrG"
+  },
+  "raw_response": {
+    "id": "gen-1791102724-MszNqdIy4QCQFYY5cmrG",
+    "object": "chat.completion",
+    "created": 1791102724,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"id\": \"H09\", \"topic_id\": \"T07\", \"topic\": \"一个假设的检索失败：首先检查什么\", \"facts\": [{\"id\": \"F1\", \"text\": \"该场景有40个文档和一个查询，已知答案在一个文档中。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"在假设的失败中，相关文档不在检索到的段落中。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"没有证据表明是分块、索引或查询措辞导致了这种情况。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设的RAG检索失败：调试分块、索引和查询问题\", \"body\": \"我们正在探讨一个假设的RAG检索失败：在一个包含40个文档的测试中，一个已知答案在一个文档中的查询未能检索到该文档。这种情况纯属假设，并非基于测量结果。\\n\\n核心问题是目标文档完全被检索机制遗漏了。在没有具体错误日志的情况下，系统化的方法将首先检查RAG管道的核心阶段：\\n\\n*   **文档分块**：评估文档分割。块是否太细、太粗，或者是否无意中分割了关键信息，使其无法匹配？\\n*   **嵌入和索引**：考虑嵌入模型的有效性和向量索引的完整性。语义关系是否可能表示不当，或者索引是否已损坏？\\n*   **查询措辞/处理**：分析查询如何转换为可搜索格式。查询嵌入是否准确反映了用户的意图，或者其生成是否存在问题？\\n\\n这个假设的案例为讨论有条理的调试提供了基础。对于完全检索遗漏，你首先会考虑哪些诊断方法？\"}, \"B\": {\"title\": \"调查假设的RAG检索差距：从哪里开始？\", \"body\": \"在一个假设的测试案例中，一个RAG系统收到一个查询，已知该查询的答案来自40个文档中的一个。然而，检索机制未能在此类相关段落中返回该特定文档。这种情况纯属假设，并不反映实际的测量结果。\\n\\n在没有预先存在的数据表明根本原因的情况下，初步的诊断重点应放在RAG管道的基本组成部分上。目标是识别可能导致文档完全遗漏的潜在故障点。需要考虑的关键领域包括：\\n\\n*   **文档分块**：源文档的初始分割。块是否太小、太大，或者是否将关键信息分割到了边界之外？\\n*   **嵌入和索引**：为文档块和查询生成的嵌入的质量，以及向量索引本身的完整性。嵌入模型是否可能未能捕捉到语义相似性？\\n*   **查询构建**：用户自然语言查询被转换为适合向量搜索的格式的过程。查询本身的翻译或嵌入是否存在问题？\\n\\n这个假设的失败提供了一个很好的机会来讨论系统化的调试方法。在调查这种检索不足时，你的优先事项是什么？\"}}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 836,
+      "completion_tokens": 651,
+      "total_tokens": 1487,
+      "cost": 0.000344,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000344,
+        "upstream_inference_prompt_cost": 8.36e-05,
+        "upstream_inference_completions_cost": 0.0002604
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

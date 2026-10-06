@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Draft A strips the post to bare essentials, losing concrete decision points that the community can engage with. Draft B preserves the specific trade-offs the developer is weighing: API friction (login, costs, performance) versus local model friction (app size, deployment prep), and the concrete constraint (content filtering for game context). Both cite all six facts accurately, but B's specificity—naming the three API options, detailing what 'setup complexity' means in context (login/management), and framing fine-tuning as an open question rather than a generic concern—gives the community actionable ground to respond. A's phrasing 'user experience factors' and 'what is involved' are vaguer and less likely to surface targeted advice. B also better signals the developer's actual uncertainty (fine-tuning necessity, deployment steps, filtering methods) rather than summarizing their concerns. Neither makes forbidden claims or invents missing details; both stay within allowed scope. B's length serves community fit by showing the questioner has thought through the problem, inviting experienced responses rather than generic primers."
+  },
+  "usage": {
+    "run_id": "v002-r0174",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:30:24.693951+00:00",
+    "tag": "judge_validation:HP06:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "c1b208f439cca55de23961e71d50ce76d54cb266e8ee387aa0aa9e7e93852fc3",
+    "actual_cost_usd": 0.003742,
+    "budget_charge_usd": 0.003742,
+    "reserved_upper_usd": 0.012561,
+    "input_tokens": 2192,
+    "output_tokens": 310,
+    "latency_seconds": 4.716950899979565,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109819-oFu7KLvTm66o6kkQyUSh",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

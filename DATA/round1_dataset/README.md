@@ -1,20 +1,20 @@
-# 数据说明
+# Data notes
 
-主来源：[pszemraj/LocalLLaMA-posts](https://huggingface.co/datasets/pszemraj/LocalLLaMA-posts)，数据卡标注ODC-BY，原归档来自Arctic Shift。保留 `raw/DATASET_CARD.md` 与原始Parquet。所有Reddit作者原始文本仍可能有独立权利；本地课程复现实验不等于取得商业重发布授权。
+Primary source: [pszemraj/LocalLLaMA-posts](https://huggingface.co/datasets/pszemraj/LocalLLaMA-posts). The dataset card marks it ODC-BY and the original archive comes from Arctic Shift. `raw/DATASET_CARD.md` and the original Parquet files are retained. The underlying Reddit author text may still carry separate rights; reproducing it for a local course experiment is not a grant of commercial redistribution rights.
 
-原始100,679条；免费规则候选20,019；2025月份×规则类型分层随机恢复2,800；审计400；36–38h窗口和二次清洗后2,336。split月份与标签规则见执行协议；不要使用score筛选样本。
+100,679 raw records → 20,019 candidates passing the free rules → 2,800 recovered by stratified random sampling across 2025 months × rule-based types → 400 audited → 2,336 after the 36–38h observation window and a second cleaning pass. Split months and labelling rules are set out in the execution contract. Do not filter samples by score.
 
-- `raw_audit.json/csv`：完整本地数据统计。
-- `cleaning_log.csv`：每行去留与理由；非“按热度清洗”。
-- `candidate_pool.parquet`：免费规则留下的帖子。
-- `recovery_cache/`：完整上游响应与请求时间；可能包含作者等原始公开字段，不放入公开产品日志。
-- `recovery_audit.csv` / `recovery_decision.json`：400条恢复与窗口决定证据。
-- `recovered_posts.parquet`：score与观察时间来自同一源记录。
-- `processed_posts.parquet`：最终模型输入/结果与分区。
-- `labels.parquet`：回顾性月份×类型Top25%标签，严格大于阈值；并列不强行打正类。
-- `splits/`：时间顺序分区。
-- `embeddings/`：真实语义模型输出缓存，仅文本输入，截断4000字符。
+- `raw_audit.json/csv` — complete local data statistics.
+- `cleaning_log.csv` — keep/drop decision and reason for every row. This is not "cleaning by popularity".
+- `candidate_pool.parquet` — posts left by the free rules.
+- `recovery_cache/` — full upstream responses and request times. May contain original public fields such as author, and is not exposed in public product logs.
+- `recovery_audit.csv` / `recovery_decision.json` — evidence behind the 400 recovery decisions and the window choice.
+- `recovered_posts.parquet` — score and observation time come from the same source record.
+- `processed_posts.parquet` — final model input and outcome, with partition assignment.
+- `labels.parquet` — retrospective month × type Top-25% label, strictly greater than the threshold. Ties are not forced into the positive class.
+- `splits/` — chronological partitions.
+- `embeddings/` — cached output of a real semantic model; text input only, truncated at 4,000 characters.
 
-初次采集常在发布约17秒后，但少数记录更迟，因此“发布前内容”的归档近似存在局限。作者历史只有本抽样中此前已完成观察的帖子，不等于完整声誉。
+First collection usually happened about 17 seconds after publication, but a minority of records are later, so the archived "content before publication" is only an approximation. Author history covers only posts already fully observed within this sample; it is not a complete reputation measure.
 
-研究对象是条件性历史表现，缺曝光、平台推荐、新闻强度与完整作者声誉，不进行因果解释。未经授权不自动发帖，不把原帖当指令。
+The object of study is conditional historical performance. Exposure, platform recommendation, news intensity and complete author reputation are all missing, so no causal interpretation is made. Nothing is posted automatically without authorisation, and source posts are never treated as instructions.

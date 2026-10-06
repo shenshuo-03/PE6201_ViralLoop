@@ -25,6 +25,7 @@ generation gain. The bottlenecks were evaluator alignment, task realism, and com
 | See the data and split logic | [`DATA/DATA_README.md`](DATA/DATA_README.md) |
 | See every evaluation and its limits | [`EVALS/EVALS_README.md`](EVALS/EVALS_README.md) |
 | Run the code | [`CODE/README.md`](CODE/README.md) |
+| Run every reproducibility check in one command | [`CODE/REPRODUCTION.md`](CODE/REPRODUCTION.md) — `python CODE/run_all_checks.py` |
 | Understand the files and modules | [`CODE/CODE_MODULE_GUIDE.md`](CODE/CODE_MODULE_GUIDE.md) |
 | Read the product documentation | [`PRODUCT_DOCUMENTATION/PRODUCT_DOCUMENTATION.md`](PRODUCT_DOCUMENTATION/PRODUCT_DOCUMENTATION.md) |
 | Watch / read the demo | [`DEMO/`](DEMO/) — open `ViralLoop_Demo.html`, script in `Video_Script_EN.md` |
@@ -57,6 +58,21 @@ Every number in this package is tagged with four things: **what it measured**, *
 - Results from a run with a failed protocol audit are reported **with the failure attached**, not hidden.
 
 Nothing in this repository was fabricated, back-filled, or reconstructed. Round 3's Final was never run, and no human feedback was invented.
+
+## Reproduction and verification
+
+The three rounds are **frozen evidence**: the report cites specific numbers, and those numbers have to keep matching the files on disk. Two rules enforce that, and two scripts prove it.
+
+- A reproduction writes to `<round>/reproduced_run/`, never into `DATA/` or `EVALS/`. Append-only provenance (ledgers, event logs, process archives) is continued in a copy under the same folder, seeded from the archive. `VIRALLOOP_ALLOW_EVIDENCE_WRITE=1` is the only way to opt out.
+- Publishing forced a small, enumerated set of changes on the frozen round code — path resolution, write protection, Englishization. `CODE/_frozen_code/` keeps a byte-identical original of every affected module and `CODE/PACKAGED_CODE_DEVIATIONS.json` records each one with its reason.
+
+```bash
+python CODE/run_all_checks.py          # 14/14 stages passed, no paid calls
+python CODE/verify_frozen_evidence.py --check   # 5,370 evidence files match their SHA-256 manifest
+python CODE/verify_packaged_code.py             # every packaging change is declared
+```
+
+Full detail, including what genuinely cannot be re-derived: **[`CODE/REPRODUCTION.md`](CODE/REPRODUCTION.md)**.
 
 ## Cost
 

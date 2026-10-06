@@ -1,0 +1,45 @@
+{
+  "value": {
+    "task_zh": "根据用户报告的测试，讨论合并后的LLM（FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview）与另一模型（DeepSeek-R1-Distill-Qwen-32B）之间观察到的性能差异。",
+    "A": {
+      "title": "将DeepSeekR1、QwQ和SkyT1合并到FuseO1是否能提高日期计算的准确性，优于DeepSeek-R1-Distill-Qwen-32B？",
+      "body": "一篇2025年的Reddit帖子分享了一个名为FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview的融合模型，该模型合并了DeepSeekR1、QwQ和SkyT1的32B模型。用户使用ollama，在32k上下文和Q8_0 KV缓存下，将这个合并后的模型与DeepSeek-R1-Distill-Qwen-32B进行了测试。\n\n关键问题在于，将这些模型结合起来是否真的能提高日期计算等任务的准确性，或者合并是否会引入可能影响特定能力的权衡。由于测试环境细节有限，结果的可推广性尚不清楚。\n\n是否有人将像这样的合并模型与其基础组件在日期或时间相关的推理方面进行了比较？您在准确性或一致性方面观察到了哪些实际差异？",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "B": {
+      "title": "来自2025年用户报告的关于合并LLM性能的见解和问题",
+      "body": "一位用户在r/LocalLLaMA上分享了对一个合并LLM FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview与DeepSeek-R1-Distill-Qwen-32B的比较。据报道，合并模型在文件打包问题上表现出色，并正确计算了19,121天的日期差，而另一个模型给出了错误的结果。此外，合并模型以一次穿越解决了过河谜题，但DeepSeek-R1-Distill-Qwen-32B陷入了无限循环。测试环境使用了ollama，带有IQ4_XS量化和32k上下文窗口以及Q8_0 KV缓存。由于来源是2025年初一位用户的报告，这引发了关于合并模型如何影响推理和稳定性的问题。合并通常会提高逻辑一致性，还是可能引入意外行为？除了轶事测试之外，评估此类合并的最佳实践是什么？分享关于合并模型的经验或基准测试有助于阐明它们的实际好处和局限性。",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    }
+  },
+  "usage": {
+    "run_id": "v002-r0490",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:24:32.512992+00:00",
+    "tag": "translate:human_final:F11",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "13f30525eb765dd3f4247de99c3e0cd0374dff640a0b0cca3a4e52158cdb7bd3",
+    "actual_cost_usd": 0.0003377,
+    "budget_charge_usd": 0.0003377,
+    "reserved_upper_usd": 0.0013421,
+    "input_tokens": 705,
+    "output_tokens": 668,
+    "latency_seconds": 2.69958729998325,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791113069-0FM1e81V7wLs280DCgVz",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

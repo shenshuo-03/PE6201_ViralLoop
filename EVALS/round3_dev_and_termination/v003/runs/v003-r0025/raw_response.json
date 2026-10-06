@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118670-I8T6umkRogasmOvKOO4n",
+  "object": "chat.completion",
+  "created": 1791118670,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"The draft accurately reflects the source text and the brief's requirements. It poses a hypothetical question about the Nvidia M60's viability for LLM inference, comparing it to the M40, and correctly references the provided facts. The title and body are aligned with the user's goal and scenario.\"}, {\"index\": 1, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"This draft also accurately represents the source text and the brief. It frames the inquiry as hypothetical, discusses the M40 and M60 comparison, and correctly uses the provided facts. The title and body are consistent with the user's stated goal and scenario.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3194,
+    "completion_tokens": 233,
+    "total_tokens": 3427,
+    "cost": 0.0004126,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004126,
+      "upstream_inference_prompt_cost": 0.0003194,
+      "upstream_inference_completions_cost": 9.32e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "value": {
+    "baseline": {
+      "title": "Introducing LettuceDetect: A Lightweight Hallucination Detector for RAG Pipelines",
+      "body": "Hallucinations remain a significant challenge in retrieval-augmented generation (RAG) pipelines, especially in specialized domains like medicine and law. Existing detection methods often face limitations such as restricted context window sizes, particularly with encoder-only models, and high inference costs due to reliance on large language models (LLMs). LettuceDetect is an open-source, encoder-based framework designed to flag hallucinated spans in LLM-generated answers without requiring an LLM. Built on ModernBERT, it can handle inputs up to 4,000 tokens and achieves 79.22% F1 on the RAGTruth benchmark. Licensed under MIT, LettuceDetect includes Python packages, pretrained models, and a Hugging Face demo. Community feedback is sought to explore its potential applications and ideas for real-time hallucination detection in local RAG setups.",
+      "fact_refs": [
+        "F1"
+      ]
+    },
+    "alternatives": [
+      {
+        "dimension": "community_fit",
+        "draft": {
+          "title": "Overview of a New Hallucination Detection Tool",
+          "body": "Hallucinations are a known issue in RAG pipelines, particularly in complex fields. Some detection methods have limitations like small context windows and high inference costs. LettuceDetect is an open-source framework that flags hallucinated spans in generated answers without needing an LLM. It is based on an encoder model and can process long inputs. The tool is available with Python packages and pretrained models under an open license. Feedback on its use and potential improvements is welcome.",
+          "fact_refs": [
+            "F1"
+          ]
+        },
+        "design_reason": "This version removes the direct call for community engagement and specific references to the audience's interests, making it less purpose-driven and more informational."
+      },
+      {
+        "dimension": "specificity",
+        "draft": {
+          "title": "Introducing an Open-Source Hallucination Detector for RAG Pipelines",
+          "body": "Hallucinations are a major challenge in retrieval-augmented generation pipelines, especially in specialized domains. Current detection methods can be limited by context window size and incur high inference costs due to reliance on large language models. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It is built on a modern encoder model and can handle inputs up to several thousand tokens. The tool achieves strong benchmark performance and is available with Python packages, pretrained models, and an online demo under an open-source license. Community feedback is encouraged to explore its applications and real-time detection possibilities.",
+          "fact_refs": [
+            "F1"
+          ]
+        },
+        "design_reason": "This variant replaces exact identifiers like 'ModernBERT', '4K tokens', 'MIT license', and 'RAGTruth benchmark' with more general terms to reduce specificity while preserving factual content."
+      },
+      {
+        "dimension": "information_value",
+        "draft": {
+          "title": "LettuceDetect: A Tool for Detecting Hallucinations in RAG Pipelines",
+          "body": "Hallucinations are a significant problem in retrieval-augmented generation pipelines, especially in complex domains. Existing detection methods can be limited by context window size and high inference costs. LettuceDetect is an open-source, encoder-based framework that flags hallucinated spans in generated answers without requiring a large language model. It supports long input sequences and is available under an open license with accompanying software and models. Feedback on its use and potential for real-time detection is welcomed.",
+          "fact_refs": [
+            "F1"
+          ]
+        },
+        "design_reason": "This version removes specific performance metrics and detailed tool features, retaining only the core facts to reduce the information value while keeping the factual basis."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0076",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:27:08.070775+00:00",
+    "tag": "pair_builder:validation:H07:schema_repair",
+    "phase": "preflight",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e41481a7c5799c5247d54d093d4252aeff2bd608ec12d804f5478ba88bd88969",
+    "actual_cost_usd": 0.0019208,
+    "budget_charge_usd": 0.0019208,
+    "reserved_upper_usd": 0.007493999999999999,
+    "input_tokens": 1602,
+    "output_tokens": 800,
+    "latency_seconds": 5.718896499980474,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109622-0sto5ymRSHv8sdYMt684",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

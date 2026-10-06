@@ -1,0 +1,88 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical VRAM Planning for Local LLMs: Separating Allocations",
+        "body": "This post outlines a hypothetical checklist for VRAM planning when running LLMs locally. It's crucial to understand that no specific models or hardware were tested; this is purely a conceptual guide based on common allocation needs.\n\nThe core idea is to break down VRAM usage into distinct categories: model weights, KV cache, and other runtime overhead. For a hypothetical 12 GB GPU, this separation is vital for preventing Out-Of-Memory (OOM) errors.\n\nModel weights are typically the largest consumer. The KV cache size scales with context length and batch size, becoming significant for longer sequences. Other allocations include activations, optimizer states (during training/finetuning, though less relevant for inference-focused planning), and framework overhead. \n\nUnderstanding these components allows for more informed decisions about which models or configurations might fit within available VRAM. For instance, a smaller model with a large KV cache might consume more VRAM than a larger model with a small cache. This framework is intended to facilitate discussion on pre-computation VRAM budgeting.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+      },
+      {
+        "title": "Conceptual VRAM Breakdown for Local LLM Inference (12GB GPU Scenario)",
+        "body": "Considering a hypothetical 12 GB GPU, this guide proposes a structured approach to VRAM planning for local LLM inference. It is important to note that this is a theoretical exercise, and no actual models or hardware were evaluated.\n\nThe primary goal is to differentiate between key VRAM consumers: model weights, the Key-Value (KV) cache, and miscellaneous runtime allocations. This separation is essential for estimating feasibility and avoiding OOM errors.\n\nModel weights represent the static parameters of the LLM. The KV cache, however, is dynamic and grows with the sequence length and batch size, significantly impacting VRAM usage during inference. Other runtime allocations can include intermediate activations and framework overhead. \n\nBy conceptually separating these elements, users can better anticipate resource requirements. For example, a model requiring substantial KV cache due to long context windows might be unsuitable, even if its base weights are relatively small. This checklist aims to provide a framework for discussion on VRAM management strategies.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft will focus on a conceptual VRAM planning checklist for local LLMs, specifically addressing a hypothetical 12 GB GPU scenario. The content will explicitly state its hypothetical nature, as no actual tests were performed. The core of the post will be the separation of VRAM into model weights, KV cache, and other runtime allocations. The objective is to provide a clear, technical guide for discussion among technically informed users, avoiding any hype or unverified claims. The title will be restrained and informative."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:45:11.524237+00:00",
+    "tag": "tune_dev:D01:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "18c0340052b5d01c52cde3e14b852ac2ca369772c90911d497e251b5af736bff",
+    "status": "success",
+    "input_tokens": 2991,
+    "output_tokens": 749,
+    "actual_cost_usd": 0.0005987,
+    "token_price_estimate_usd": 0.0005987,
+    "reserved_upper_usd": 0.0017675,
+    "budget_charge_usd": 0.0005987,
+    "latency_seconds": 3.6005639000068186,
+    "retry": 0,
+    "request_id": "gen-1791099908-r839AH4ywxsj6d34AXaS"
+  },
+  "raw_response": {
+    "id": "gen-1791099908-r839AH4ywxsj6d34AXaS",
+    "object": "chat.completion",
+    "created": 1791099908,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical VRAM Planning for Local LLMs: Separating Allocations\",\n      \"body\": \"This post outlines a hypothetical checklist for VRAM planning when running LLMs locally. It's crucial to understand that no specific models or hardware were tested; this is purely a conceptual guide based on common allocation needs.\\n\\nThe core idea is to break down VRAM usage into distinct categories: model weights, KV cache, and other runtime overhead. For a hypothetical 12 GB GPU, this separation is vital for preventing Out-Of-Memory (OOM) errors.\\n\\nModel weights are typically the largest consumer. The KV cache size scales with context length and batch size, becoming significant for longer sequences. Other allocations include activations, optimizer states (during training/finetuning, though less relevant for inference-focused planning), and framework overhead. \\n\\nUnderstanding these components allows for more informed decisions about which models or configurations might fit within available VRAM. For instance, a smaller model with a large KV cache might consume more VRAM than a larger model with a small cache. This framework is intended to facilitate discussion on pre-computation VRAM budgeting.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions.\"\n    },\n    {\n      \"title\": \"Conceptual VRAM Breakdown for Local LLM Inference (12GB GPU Scenario)\",\n      \"body\": \"Considering a hypothetical 12 GB GPU, this guide proposes a structured approach to VRAM planning for local LLM inference. It is important to note that this is a theoretical exercise, and no actual models or hardware were evaluated.\\n\\nThe primary goal is to differentiate between key VRAM consumers: model weights, the Key-Value (KV) cache, and miscellaneous runtime allocations. This separation is essential for estimating feasibility and avoiding OOM errors.\\n\\nModel weights represent the static parameters of the LLM. The KV cache, however, is dynamic and grows with the sequence length and batch size, significantly impacting VRAM usage during inference. Other runtime allocations can include intermediate activations and framework overhead. \\n\\nBy conceptually separating these elements, users can better anticipate resource requirements. For example, a model requiring substantial KV cache due to long context windows might be unsuitable, even if its base weights are relatively small. This checklist aims to provide a framework for discussion on VRAM management strategies.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"This draft will focus on a conceptual VRAM planning checklist for local LLMs, specifically addressing a hypothetical 12 GB GPU scenario. The content will explicitly state its hypothetical nature, as no actual tests were performed. The core of the post will be the separation of VRAM into model weights, KV cache, and other runtime allocations. The objective is to provide a clear, technical guide for discussion among technically informed users, avoiding any hype or unverified claims. The title will be restrained and informative.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2991,
+      "completion_tokens": 749,
+      "total_tokens": 3740,
+      "cost": 0.0005987,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005987,
+        "upstream_inference_prompt_cost": 0.0002991,
+        "upstream_inference_completions_cost": 0.0002996
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

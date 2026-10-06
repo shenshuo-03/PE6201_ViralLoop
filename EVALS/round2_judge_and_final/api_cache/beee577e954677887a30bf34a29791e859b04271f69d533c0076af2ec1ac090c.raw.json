@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109627-cgNoOrCVQdo1o1zIgtzU",
+  "object": "chat.completion",
+  "created": 1791109627,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"MiniSearch capabilities and local LLM integration\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"To understand the features of MiniSearch and how it can be configured to work with local inference engines.\",\n  \"context\": \"A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.\",\n  \"motivation\": \"This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.\",\n  \"desired_response\": \"A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.\",\n  \"speaker_relationship_to_source\": \"Reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"MiniSearch has been updated to gather more textual and graphical results for grounded answers in follow-up questions.\",\n      \"evidence_quote\": \"every follow-up question gathers more textual and graphical results to provide grounded answers.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"The tool keeps a list of all collected links and images during a session.\",\n      \"evidence_quote\": \"All links and images collected during a session will keep being listed\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"The chat context is managed using a sliding window, keeping it under 4k tokens.\",\n      \"evidence_quote\": \"the chat runs on a sliding window where the context is always kept under 4k tokens.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"The web application is optimized for mobile browsers.\",\n      \"evidence_quote\": \"the web app is optimized to work on mobile browsers\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"MiniSearch can be run locally via Docker or through a public Hugging Face Space instance.\",\n      \"evidence_quote\": \"you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F6\",\n      \"text\": \"Users can select 'Remote server (API)' to use local inference engines or cloud servers.\",\n      \"evidence_quote\": \"select *\\\"Remote server (API)\\\"* in the *\\\"AI Processing Location\\\"* menu option\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"MiniSearch aims to improve web research by providing more comprehensive results.\",\n    \"The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.\",\n    \"Configuration for remote servers requires API Base URL, Access Key, and Model selection.\"\n  ],\n  \"forbidden_claims\": [\n    \"MiniSearch guarantees a specific level of research accuracy.\",\n    \"The tool has been tested for performance on all mobile devices.\",\n    \"Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.\",\n    \"The 4k token limit is a universal constraint for all LLM interactions.\"\n  ],\n  \"essential_limitations\": [\n    \"The exact system memory limit for the local instance is not specified.\",\n    \"Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.\",\n    \"The specific LLMs used by the default browser-based processing are not detailed.\"\n  ],\n  \"missing_information\": [\n    \"Details on the specific small LLMs used for default browser processing.\",\n    \"User experiences with the 'Remote server (API)' configuration for various local inference engines.\",\n    \"Information on the 'graphical results' mentioned in the update.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 994,
+    "completion_tokens": 970,
+    "total_tokens": 1964,
+    "cost": 0.0004874,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004874,
+      "upstream_inference_prompt_cost": 9.94e-05,
+      "upstream_inference_completions_cost": 0.000388
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791108837-Rd1NRtZPf1jedMqeWshl",
+  "object": "chat.completion",
+  "created": 1791108837,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Audiobook Creation with New TTS Support\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"Discussing the capabilities and potential of the recently updated Audiobook Creator application, specifically its integration with Orpheus TTS.\",\n  \"context\": \"A community member is sharing information about version 1.4 of an open-source audiobook creator application, highlighting new features like Orpheus TTS support and automatic emotion tag addition.\",\n  \"motivation\": \"This question is worth discussing to understand the practical implications and user experiences with the new Orpheus TTS integration and LLM-driven emotion tagging in audiobook creation.\",\n  \"desired_response\": \"Community members are invited to share their thoughts on the new features, discuss potential use cases, and provide feedback on the audiobook samples.\",\n  \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"The Audiobook Creator application has been updated to version 1.4, introducing support for Orpheus TTS alongside Kokoro.\",\n      \"evidence_quote\": \"I'm releasing a new version of my [audiobook creator app](https://github.com/prakharsr/audiobook-creator) which now supports Kokoro and Orpheus.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"Orpheus TTS is noted for supporting high-quality audio and more expressive speech.\",\n      \"evidence_quote\": \"This release adds support for [Orpheus TTS](https://github.com/canopyai/Orpheus-TTS) which supports high-quality audio and more expressive speech.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"The new version can automatically add emotion tags to text using an LLM, which Orpheus TTS supports.\",\n      \"evidence_quote\": \"This version also adds support for adding emotion tags automatically using an LLM.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"Audio generation with Orpheus TTS is facilitated through a dedicated FastAPI Server.\",\n      \"evidence_quote\": \"Audio generation using Orpheus is done using my dedicated [Orpheus TTS FastAPI Server](https://github.com/prakharsr/Orpheus-TTS-FastAPI) repository.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"The application can create M4B audiobooks with features like covers, metadata, and chapter timestamps.\",\n      \"evidence_quote\": \"Creates compatible audiobooks with covers, metadata, chapter timestamps etc. in M4B format.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F6\",\n      \"text\": \"The Audiobook Creator supports multiple input formats (EPUB, PDF) and various output audio formats.\",\n      \"evidence_quote\": \"Multi-Format Input Support: Converts books from various formats (EPUB, PDF, etc.) into plain text.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"The Audiobook Creator application supports Orpheus TTS.\",\n    \"The application can add emotion tags using an LLM.\",\n    \"The application generates M4B audiobooks.\",\n    \"The application supports multiple input and output formats.\"\n  ],\n  \"forbidden_claims\": [\n    \"The user has personally tested and verified the performance of Orpheus TTS.\",\n    \"The specific LLM used for emotion tagging is identified.\",\n    \"The exact performance improvements from async parallel processing are quantified.\",\n    \"User satisfaction with the generated audiobooks is universally high.\"\n  ],\n  \"essential_limitations\": [\n    \"The specific LLM model used for emotion tag addition is not explicitly stated.\",\n    \"Details on the hardware or specific configurations used for testing are not provided.\",\n    \"The exact nature of the 'advanced NLP techniques' for character identification is not elaborated upon.\"\n  ],\n  \"missing_information\": [\n    \"Specific examples of emotion tags and their impact on speech.\",\n    \"Details on the character identification accuracy.\",\n    \"User feedback on the quality of audiobooks generated with Orpheus TTS.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1198,
+    "completion_tokens": 1014,
+    "total_tokens": 2212,
+    "cost": 0.0005254,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005254,
+      "upstream_inference_prompt_cost": 0.0001198,
+      "upstream_inference_completions_cost": 0.0004056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

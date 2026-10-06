@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118689-3VJ6zQS81idqKqGPKTLo",
+  "object": "chat.completion",
+  "created": 1791118689,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"speaker\": \"community member seeking help with explicitly hypothetical product decision, not source author\",\n  \"scenario_origin\": \"controlled_hypothetical\",\n  \"current_goal\": \"To understand the trade-offs between different next-generation memory module technologies for potential future on-device AI products.\",\n  \"central_purpose\": \"Evaluate and gather community insights on the practical implications and potential adoption challenges of SOCAMM, LLW, and LPCAMM memory technologies for on-device AI applications.\",\n  \"desired_response\": \"Community members' insights on the practical implications and potential adoption challenges of SOCAMM, LLW, and LPCAMM for on-device AI applications, considering factors like bandwidth, latency, power consumption, and form factor.\",\n  \"relevant_evidence_ids\": [\n    \"F1\",\n    \"F2\",\n    \"F3\",\n    \"F4\",\n    \"F5\",\n    \"F6\",\n    \"F7\",\n    \"F8\"\n  ],\n  \"must_preserve\": [\n    \"The user goal to understand trade-offs between SOCAMM, LLW, and LPCAMM for hypothetical on-device AI products.\",\n    \"The context that SOCAMM integrates SoC and memory in a single package offering potential advantages in bandwidth, latency, power consumption, and form factor.\",\n    \"The fact that SOCAMM is not yet in full-scale adoption and that the source is a discussion/opinion piece, not a technical specification or benchmark report.\",\n    \"The user is seeking community input on hypothetical product development choices, not asserting real-world implementation or adoption status.\"\n  ],\n  \"must_not_invent\": [\n    \"Specific performance metrics such as exact bandwidth or latency numbers not present in the source.\",\n    \"Any personal experience or claims about real-world success or failure of SOCAMM, LLW, or LPCAMM.\",\n    \"Claims about current widespread commercial availability or adoption of these memory technologies.\",\n    \"Any new personal history or lived experience beyond the supplied source context.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2299,
+    "completion_tokens": 411,
+    "total_tokens": 2710,
+    "cost": 0.0015772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015772,
+      "upstream_inference_prompt_cost": 0.0009196,
+      "upstream_inference_completions_cost": 0.0006576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

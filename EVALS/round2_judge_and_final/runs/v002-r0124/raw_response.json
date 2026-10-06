@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109711-YnAAG64q1fiN27LUYGrB",
+  "object": "chat.completion",
+  "created": 1791109711,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"preferences\": {\"community_fit\": \"A\", \"specificity\": \"A\", \"information_value\": \"A\", \"usefulness\": \"A\", \"credibility\": \"A\", \"overall\": \"A\"}, \"evidence\": \"Draft A directly asks for community input on 'practical advice or heuristics' and 'patterns in when \\\"row\\\" or other modes help or hurt performance,' making it highly relevant and actionable for the target audience. It also explicitly mentions the mixed hardware setup (3090 and two 3060 GPUs) and the specific models, directly addressing the brief's context and problem. Draft B is more of a summary without a clear call to action or specific questions for the community, making it less engaging and less useful for fostering discussion. Draft A also organizes the evidence into a useful distinction (smaller models vs. larger models, and when 'row' mode helps or hurts), which is a key aspect of information value. Both drafts correctly attribute the source as an archived report, maintaining credibility.\"}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2387,
+    "completion_tokens": 210,
+    "total_tokens": 2597,
+    "cost": 0.0012411,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012411,
+      "upstream_inference_prompt_cost": 0.0007161,
+      "upstream_inference_completions_cost": 0.000525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

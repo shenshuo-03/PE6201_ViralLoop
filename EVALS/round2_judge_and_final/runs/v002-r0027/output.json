@@ -1,0 +1,17 @@
+{
+  "drafts": [
+    {
+      "title": "Exploring Audiobook Creator v1.4's Orpheus TTS Integration and LLM-Driven Emotion Tagging",
+      "body": "The recently released Audiobook Creator v1.4 introduces support for Orpheus TTS alongside Kokoro, aiming to produce higher-quality, more expressive speech. It also adds automatic emotion tagging to text via an LLM, which Orpheus can utilize to enhance narration. The app generates M4B audiobooks with covers, metadata, and chapter timestamps and accepts multiple input formats like EPUB and PDF. Audio generation with Orpheus is handled through a dedicated FastAPI server, and the whole project is open source under GPL v3. However, details such as which LLM is used for emotion tagging, examples of emotion tags, and user feedback on the actual speech quality remain unclear. Has anyone here experimented with Orpheus TTS in this setup or tested the emotion tagging feature? How noticeable and effective are the emotional cues in the audiobook output? Insights on character identification accuracy or practical tips for configuring the FastAPI server would also be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F8"
+      ]
+    }
+  ]
+}

@@ -2,20 +2,24 @@
 from pathlib import Path
 import json,os,hashlib,datetime,threading,time,urllib.request,urllib.error,re,sys
 from concurrent.futures import ThreadPoolExecutor,as_completed
-L=Path(__file__).resolve().parents[1];ROOT=L.parents[1];BASE=ROOT.parent
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from _packaged_paths import round3_v004_root, repo_paths, redirect_write, reproduction_copy
+L=round3_v004_root();ROOT=repo_paths();BASE=repo_paths()
 LOCK=threading.RLock();INFLIGHT={}
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
-def write(p,v):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='utf-8')
+def write(p,v):
+    # Never overwrite the frozen evidence: redirect any such write to reproduced_run/.
+    p=redirect_write(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='utf-8')
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def digest(x):return hashlib.sha256(x.encode()).hexdigest()
 def rows(p):return [json.loads(x) for x in p.read_text(encoding='utf-8').splitlines()] if p.exists() else []
 def event(stage,action,evidence):
  with LOCK:
-  x={'time':now(),'loop_version':'v004','stage':stage,'action':action,'evidence':evidence};p=L/'events_v004.jsonl'
+  x={'time':now(),'loop_version':'v004','stage':stage,'action':action,'evidence':evidence};p=reproduction_copy(L/'events_v004.jsonl',L.workdir)
   with p.open('a',encoding='utf-8') as f:f.write(json.dumps(x,ensure_ascii=False)+'\n')
-  with (L/'process_archive_v004.md').open('a',encoding='utf-8') as f:f.write('\n'+x['time']+' '+stage+' '+action+' '+json.dumps(evidence,ensure_ascii=False)+'\n')
-C=read(L/'experiment_contract_v004.yaml');MODELS=C['models'];PRICES=read(L/'configs/model_prices_v004.json')['models'];LEDGER=L/'results/api_ledger_v004.jsonl'
+  with reproduction_copy(L/'process_archive_v004.md',L.workdir).open('a',encoding='utf-8') as f:f.write('\n'+x['time']+' '+stage+' '+action+' '+json.dumps(evidence,ensure_ascii=False)+'\n')
+C=read(L/'experiment_contract_v004.yaml');MODELS=C['models'];PRICES=read(L/'configs/model_prices_v004.json')['models'];LEDGER=reproduction_copy(L/'results/api_ledger_v004.jsonl',L.workdir)
 def project_prior():
  return sum(x.get('budget_charge_usd',0) for p in [BASE/'experiment_1_0/results/api_ledger.jsonl',ROOT/'loops/v002/results/api_ledger_v002.jsonl',ROOT/'loops/v003/results/api_ledger_v003.jsonl'] for x in rows(p))
 def charge_total():return sum(x['budget_charge_usd'] for x in rows(LEDGER))
@@ -169,7 +173,7 @@ def dev():
    except Exception as e:failures.append({'brief_id':futures[f]['brief_id'],'error':str(e)});event('dev','task_failed',failures[-1])
  write(L/'results/dev_stage_v004.json',{'complete':len(cases),'failures':failures,'cost':charge_total(),'calls':len(rows(LEDGER))})
  if failures:raise RuntimeError('Incomplete Dev; preserve outputs and repair evidenced issue')
- prepare_blind(cases);(ROOT/'PROJECT_STATE.md').write_text('# 当前状态\n\nloop_version: v004\nstate: HUMAN_DEV_PENDING\n\n8对新开发盲评已准备；无效稿记录硬门槛失败，不参与Selector比较。等待真实评价，Final仍关闭。\n',encoding='utf-8')
+ prepare_blind(cases);(ROOT/'PROJECT_STATE.md').write_text('# Current state\n\nloop_version: v004\nstate: HUMAN_DEV_PENDING\n\n8 new development blind-review pairs are prepared; invalid drafts are recorded as hard-gate failures and excluded from selector comparison. Awaiting genuine feedback; Final remains closed.\n',encoding='utf-8')
 
 def offline_checks():
  checks={}

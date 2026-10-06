@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "A",
+    "overall": "A"
+  },
+  "evidence": "Draft A preserves concrete failure modes (Gemma missing 2/4 list items, Qwen confusing 10^9 vs 109) and explicitly flags missing context (hardware, document quality, model versions, source date May 2025). It frames the question as actionable for the community (\"what tradeoffs have you encountered\") while maintaining epistemic humility about unknowns. Draft B abstracts the same facts into vague language (\"trouble,\" \"missing parts,\" \"confusing similar numbers\") and omits the source date and acknowledged gaps entirely. This makes B appear more confident than warranted and less useful for readers trying to assess relevance to their own setups. A's specificity (exact model names, concrete examples, explicit uncertainty markers) directly serves the brief's goal of identifying \"smallest, most effective\" models—readers can calibrate their own tests against stated limitations. B's generalization (\"some popular OCR models\") weakens community_fit by obscuring which models actually failed and why, reducing the signal value of the post."
+}

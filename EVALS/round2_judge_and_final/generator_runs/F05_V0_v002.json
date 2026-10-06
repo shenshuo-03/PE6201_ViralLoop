@@ -1,0 +1,169 @@
+{
+  "at": "2026-10-04T11:14:11.576649+00:00",
+  "loop_version": "v002",
+  "brief_id": "F05",
+  "phase": "final",
+  "variant": "V0",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Seeking Advice on Best VRAM Backend & Config for Multi-GPU AMD LLM Inference (Gemma3:27b, Qwen3 32B)",
+        "body": "I'm working with a multi-GPU AMD setup (2x Radeon RX 7900 XTX + 1x RX 7800 XT, totaling 64GB VRAM) and want to optimize inference for Gemma3:27b and Qwen3 32B models. I've seen some older tests showing only minor speed differences between VLLM and llama.cpp backends, but those were on smaller or older models. Vulkan with llama.cpp seemed faster for some large Qwen3 variants in one report, but details were limited. I'm curious about what quantization methods (GPTQ, AWQ, GGUF) and bit depths others have found effective on similar AMD multi-GPU rigs. Also, how do you best distribute workloads across these GPUs? Any recommended inference frameworks or specific config tweaks to maximize throughput and speed? Would appreciate insights from anyone with recent experience or detailed setups that could help pinpoint the most performant backend and quantization strategy for this hardware and these models.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "An archived 2025 account must not be described as recent in this 2026 review"
+        ],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's hardware, model interests, and backend considerations. It correctly notes the user's previous inconclusive findings and seeks specific advice on backends, quantization, and multi-GPU strategies for AMD hardware. The draft maintains the persona of a reader seeking information and avoids making personal claims about running tests. It also highlights the lack of detailed information in existing reports, which aligns with the source's intent. The community fit is good as it directly asks for advice from users with similar setups. Specificity is high due to mentioning the exact hardware and models. Information value is good as it asks targeted questions about performance optimization. Clarity and usefulness are high as the post is well-structured and directly addresses the problem. Credibility is good as it relies on the source's reported experiences and seeks further data. Clickbait is low.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": false,
+        "quality_pass": false,
+        "body_words": 143,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Multi-GPU AMD LLM Inference: Optimal Backend, Quantization & Config Tips for Gemma3:27b and Qwen3 32B?",
+        "body": "Using an AMD multi-GPU rig (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total), I'm exploring inference options for Gemma3:27b and Qwen3 32B. Previous experiments with VLLM and llama.cpp backends on older models showed small token/s differences, so I’m looking for more targeted advice on what backend performs best now. Has anyone tested quantization methods like GPTQ, AWQ, or GGUF at 4-bit or 8-bit on similar AMD hardware? How do you handle multi-GPU utilization efficiently for these large models? Also interested in any preferred inference frameworks or configuration details that boost speed or throughput. Since available reports lack info on ROCm/driver versions and detailed setups, sharing your experience could really help clarify optimal approaches for this specific AMD multi-GPU environment.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately captures the essence of the source, including the hardware, models, and the user's prior inconclusive experiments. It effectively prompts for specific details on backends, quantization, and multi-GPU strategies for AMD systems. The draft adheres to the persona of a reader and avoids personal claims. It correctly identifies the need for more detailed information regarding ROCm/driver versions and setups, which is a key aspect of the original post. Community fit is good as it targets users with similar hardware. Specificity is high, mentioning exact hardware and models. Information value is good, asking relevant optimization questions. Clarity and usefulness are high due to the clear structure and directness. Credibility is good as it builds upon the source's reported experiences and seeks further data. Clickbait is low.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 123,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Multi-GPU AMD LLM Inference: Optimal Backend, Quantization & Config Tips for Gemma3:27b and Qwen3 32B?",
+      "body": "Using an AMD multi-GPU rig (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total), I'm exploring inference options for Gemma3:27b and Qwen3 32B. Previous experiments with VLLM and llama.cpp backends on older models showed small token/s differences, so I’m looking for more targeted advice on what backend performs best now. Has anyone tested quantization methods like GPTQ, AWQ, or GGUF at 4-bit or 8-bit on similar AMD hardware? How do you handle multi-GPU utilization efficiently for these large models? Also interested in any preferred inference frameworks or configuration details that boost speed or throughput. Since available reports lack info on ROCm/driver versions and detailed setups, sharing your experience could really help clarify optimal approaches for this specific AMD multi-GPU environment.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F6"
+      ]
+    },
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "This draft also accurately captures the essence of the source, including the hardware, models, and the user's prior inconclusive experiments. It effectively prompts for specific details on backends, quantization, and multi-GPU strategies for AMD systems. The draft adheres to the persona of a reader and avoids personal claims. It correctly identifies the need for more detailed information regarding ROCm/driver versions and setups, which is a key aspect of the original post. Community fit is good as it targets users with similar hardware. Specificity is high, mentioning exact hardware and models. Information value is good, asking relevant optimization questions. Clarity and usefulness are high due to the clear structure and directness. Credibility is good as it builds upon the source's reported experiences and seeks further data. Clickbait is low.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 123,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0339",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:14:08.621904+00:00",
+    "tag": "V0:F05",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "96fc73fe99ab793f3d25a923416a866c9936e1fbe704f9dca5606a41ab9d4fde",
+    "actual_cost_usd": 0.0014536,
+    "budget_charge_usd": 0.0014536,
+    "reserved_upper_usd": 0.0062364,
+    "input_tokens": 1642,
+    "output_tokens": 498,
+    "latency_seconds": 3.5050404999929015,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112444-isnCM7OI7jwqfahZnjk8",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0340",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:14:11.551927+00:00",
+    "tag": "quality:F05:V0",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "20311c6b66f3b6fd729c4e93d8b7cae428c304574c8769634bec45fc070f70ac",
+    "actual_cost_usd": 0.000585,
+    "budget_charge_usd": 0.000585,
+    "reserved_upper_usd": 0.0019771999999999997,
+    "input_tokens": 3370,
+    "output_tokens": 620,
+    "latency_seconds": 2.8999116999912076,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112448-BZxJD2rsbcPRVIac8DqA",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

@@ -1,0 +1,99 @@
+{
+  "brief": {
+    "topic": "Model Capabilities Trade-offs",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discuss the observed trade-off between world knowledge and problem-solving abilities in recent smaller LLMs.",
+    "context": "An archived Reddit post from 2025-05-02 discusses observations about the performance of various LLMs, specifically noting a potential decline in world knowledge despite improvements in coding and problem-solving benchmarks for newer, smaller models.",
+    "motivation": "Understanding if there's a general trend of sacrificing world knowledge for improved problem-solving in smaller LLMs is crucial for users selecting models for diverse tasks.",
+    "desired_response": "A discussion exploring the source author's observations, potential reasons for this trend, and whether other enthusiasts have noticed similar patterns or have strategies for evaluating these trade-offs.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The source author observed a trend where newer small models, despite higher benchmark scores and claims of equivalence to older, larger models, exhibit worse world knowledge than their larger predecessors and often worse than lower-benchmarking models of similar sizes.",
+        "evidence_quote": "I've noticed a trend where despite benchmark scores going up and companies claiming that their new small models are equivalent to older much bigger models, world knowledge of these new smaller models is worse than their larger predecessors, and often times worse than lower benchmarking models of similar sizes.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The source author uses a set of private test questions covering coding, engineering problem solving, system threat modelling, and specific knowledge questions on topics like radio protocols, technical standards, local geography, history, and landmarks.",
+        "evidence_quote": "I have a set of private test questions that exercise coding, engineering problem solving, system threat modelling, and also ask specific knowledge questions on a variety of topics ranging from radio protocols and technical standards to local geography, history, and landmarks.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "New models like Qwen 3 and GLM-4-0414 are described as vastly better at coding and problem solving than older models, but their knowledge is no better and sometimes worse than some other similar-sized older models.",
+        "evidence_quote": "New models like Qwen 3 and GLM-4-0414 are vastly better at coding and problem solving than older models, but their knowledge is no better than older models and actually worse than some other similar sized older models.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "Qwen 3 8B reportedly has considerably worse world knowledge in the author's tests than older models like Llama 3.1 8B and Gemma 2 9B.",
+        "evidence_quote": "For example, Qwen 3 8B has considerably worse world knowledge in my tests than old models like Llama 3.1 8B and Gemma 2 9B.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "Qwen 3 14B reportedly has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+        "evidence_quote": "Likewise, Qwen 3 14B has much worse world knowledge than older weaker benchmarking models like Phi 4 and Gemma 3 12B.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+        "evidence_quote": "On a similar note, Granite 3.3 has slightly better coding/problem solving but slightly worse knowledge than Granite 3.2.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F7",
+        "text": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and slightly better than DeepSeek V3 in the author's tests, but its coding and problem solving abilities are mediocre.",
+        "evidence_quote": "Llama 4 Maverick has superb world knowledge, much better than Qwen 3 235B-A22, and actually slightly better than DeepSeek V3 in my tests, but its coding and problem solving abilities are mediocre.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F8",
+        "text": "The source author guesses that the trade-off is due to training data for new models having more problem solving content and proportionately less knowledge-dense content.",
+        "evidence_quote": "My guess is that this is because the training data for new models has more problem solving content and so proportionately less knowledge dense content.",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "The source author observed a potential trade-off between world knowledge and problem-solving abilities in newer, smaller LLMs.",
+      "Specific models like Qwen 3 and GLM-4-0414 were mentioned as examples of this trend.",
+      "Gemma 3 and Llama 4 Maverick were noted as exceptions or counterpoints to the general trend.",
+      "The source author hypothesized about the cause being changes in training data composition."
+    ],
+    "forbidden_claims": [
+      "The source author's observations are universally true for all LLMs.",
+      "The specific benchmark scores or exact performance metrics mentioned are independently verified.",
+      "The models discussed are currently the absolute best or worst in any category.",
+      "The source author has personally conducted all mentioned tests on their own hardware.",
+      "The trend described is a permanent characteristic of LLM development."
+    ],
+    "essential_limitations": [
+      "The observations are based on the source author's private test questions and specific models tested.",
+      "The exact hardware, software versions, and detailed configurations used for testing are not provided.",
+      "The specific 'private test questions' are not detailed, making independent replication impossible.",
+      "The source date is 2025-05-02, meaning the information reflects the state of LLMs at that time."
+    ],
+    "missing_information": [
+      "Details of the source author's testing methodology and specific prompts.",
+      "Exact benchmark scores or quantitative data for knowledge and problem-solving.",
+      "Information on the training data composition for the models discussed.",
+      "Confirmation of these trends from other independent sources or benchmarks.",
+      "Specific model versions beyond what is mentioned (e.g., exact Qwen 3 version)."
+    ]
+  },
+  "corrections": [
+    "The `source_date` in the `context` field was updated to '2025-05-02' to match the provided `source_date`.",
+    "Fact F1 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F2 was added to include details about the author's private test questions, as this is a key piece of context for their observations.",
+    "Fact F3 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F4 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F5 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F6 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F7 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "Fact F8 was rephrased for conciseness and to more accurately reflect the contiguous evidence quote.",
+    "The `essential_limitations` were updated to include the `source_date` as a limitation, as per instructions."
+  ]
+}

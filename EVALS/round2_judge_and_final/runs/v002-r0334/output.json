@@ -1,0 +1,39 @@
+{
+  "drafts": [
+    {
+      "title": "Seeking In-Browser LLM Tools for JSON to Chart.js Config Generation with Small Models",
+      "body": "I'm exploring options for running small LLMs entirely in the browser to convert JSON data into valid Chart.js configurations. The goal is a fully client-side workflow without backend dependencies, ideally using models under 100MB. WebGPU or WASM support would be important for performance and compatibility across browsers. I've looked briefly at MLC.ai as a potential runtime but haven't tested it myself. Does anyone have experience with lightweight browser inference frameworks that handle structured output like Chart.js configs well? Also, are there particular models or prompting approaches that work reliably for transforming JSON into visualization specs? Understanding tradeoffs in model size, inference speed, and integration complexity would be helpful.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "title": "Lightweight Browser LLM Inference for JSON Visualization: Tools, Models, and Prompting Tips?",
+      "body": "I'm interested in running small quantized LLMs (<100MB) completely client-side in the browser to generate Chart.js configurations from JSON data and produce natural language summaries. The challenge is finding inference runtimes that support WebGPU or WASM to maintain reasonable performance across diverse hardware. I've started investigating MLC.ai but am curious if others have recommendations for frameworks or models optimized for structured JSON transformations. Additionally, any insights on effective prompting strategies to get accurate Chart.js configs would be valuable. What are the main tradeoffs you've encountered between model size, speed, and output reliability in this context?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "title": "What Are the Best In-Browser LLM Solutions for Small Models Doing JSON to Chart.js Conversion?",
+      "body": "For a project focused on converting JSON objects into valid Chart.js configs entirely inside the browser, I'm looking into lightweight inference tools that support small quantized models under 100MB. WebGPU or WASM support is a must for performance reasons. While MLC.ai seems promising, I haven't seen much community feedback on its effectiveness for this use case. Has anyone tried other runtimes or models that work well for structured data transformation and natural language data summaries in-browser? Also, any tips on prompt design to reliably produce Chart.js configurations from JSON input would be appreciated. What compromises in speed or accuracy should I expect with these lightweight browser-native approaches?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    }
+  ]
+}

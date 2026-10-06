@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112577-XPJJpph3Dmip8qIHbU8U",
+  "object": "chat.completion",
+  "created": 1791112577,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Why does Qwen3-8B Q6_K_L run so slowly and oddly on a TitanXP with LM Studio?\",\"body\":\"A user running Qwen3-8B Q6_K_L in LM Studio on a TitanXP (12GB VRAM) with 32GB RAM reports the model is \\\"incredibly slow,\\\" taking over 14 seconds to respond to simple prompts and sometimes performing unexpected math calculations even when not prompted. Interestingly, a larger Mistral Nemo Instruct 12B model with Q4_K_S quantization runs faster on the same hardware. Given this, could the Q6_K_L quantization or LM Studio’s handling of it be causing the bottleneck? Has anyone else seen similar slowdowns or unusual output patterns with Qwen3-8B on comparable GPUs? Also, are there known LM Studio settings or alternative quantizations that might improve responsiveness on older GPUs like the TitanXP?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},{\"title\":\"Qwen3-8B Q6_K_L very slow and behaving oddly in LM Studio on TitanXP—any tips or explanations?\",\"body\":\"Reportedly, Qwen3-8B quantized with Q6_K_L runs very slowly in LM Studio on a system with a TitanXP GPU and 32GB RAM, sometimes taking over 14 seconds to respond and even attempting to solve math problems when given simple greetings. Meanwhile, a larger Mistral Nemo Instruct 12B model with Q4_K_S quantization runs faster on the same setup. This suggests that the quantization format or LM Studio’s optimization for Qwen3-8B might be factors. Has anyone else experienced such performance or behavior issues with this model or quantization? What troubleshooting steps or configuration changes have helped improve speed or output relevance in similar cases?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},{\"title\":\"Comparing Qwen3-8B Q6_K_L and Mistral Nemo Instruct performance in LM Studio on TitanXP—why is Qwen3-8B lagging?\",\"body\":\"A user notes that Qwen3-8B Q6_K_L runs \\\"incredibly slow\\\" in LM Studio on a TitanXP (12GB VRAM) and 32GB RAM, with strange behavior like performing math on simple prompts. Conversely, a larger Mistral Nemo Instruct 12B model with Q4_K_S quantization runs faster on the same machine. Could this discrepancy be due to differences in quantization compatibility, GPU memory handling, or LM Studio optimization? Does anyone have experience tuning LM Studio or using alternative quantizations to improve Qwen3-8B’s performance on older GPUs? Any insights on why this model might behave differently from others in similar environments would be valuable.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2035,
+    "completion_tokens": 623,
+    "total_tokens": 2658,
+    "cost": 0.0018108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018108,
+      "upstream_inference_prompt_cost": 0.000814,
+      "upstream_inference_completions_cost": 0.0009968
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

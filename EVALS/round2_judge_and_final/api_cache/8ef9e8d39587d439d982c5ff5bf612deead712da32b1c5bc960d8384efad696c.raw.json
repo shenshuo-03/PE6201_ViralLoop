@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112851-Kpp6nym4YlNdaNewxH1l",
+  "object": "chat.completion",
+  "created": 1791112851,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"A\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Draft A frames the post as reporting on 'dated performance observations' and asks whether there is 'consensus or updated experience,' which correctly signals uncertainty but reads as a report-recap seeking validation rather than a genuine community question. It also uses passive framing ('A Reddit user...shared') that distances the poster from authentic engagement.\\n\\nDraft B directly acknowledges 'I came across' and 'their data is a bit dated and specific,' establishing honest speaker relationship and epistemic humility upfront. Critically, it reframes the ask: instead of 'is there consensus on old data,' it asks 'has anyone recently compared' and adds a concrete secondary angle ('how VRAM distribution across these cards influences the choice'), which gives responders multiple entry points and signals the poster understands the limitation of the source data.\\n\\nBoth preserve F1 and F2 accurately and avoid forbidden claims. However, A's phrasing ('Given the aged and narrowly scoped data, is there a consensus...') risks sounding like it's asking the community to validate inconclusive old benchmarks. B's 'hints at notable speed differences' is slightly softer on unsupported claims, and the follow-up questions ('which backend tends to handle these large models faster or more efficiently?') are more actionable for responders with recent experience.\\n\\nA scores higher on credibility for explicitly labeling data as 'dated' and 'narrowly scoped,' but B achieves similar credibility through conversational honesty while improving community fit and usefulness by reorienting toward fresh input and practical secondary questions.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2431,
+    "completion_tokens": 427,
+    "total_tokens": 2858,
+    "cost": 0.004566,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004566,
+      "upstream_inference_prompt_cost": 0.002431,
+      "upstream_inference_completions_cost": 0.002135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

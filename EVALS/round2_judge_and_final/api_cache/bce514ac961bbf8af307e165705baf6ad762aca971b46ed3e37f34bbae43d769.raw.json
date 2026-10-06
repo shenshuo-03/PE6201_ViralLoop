@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791113254-D8kjurTWfI5Tio0nqU02",
+  "object": "chat.completion",
+  "created": 1791113254,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"title_zh\":\"llama.cpp HTTP服务器的文件上传按钮如何影响提示输入和响应一致性？\",\"body_zh\":\"我偶然发现了一份2025年5月关于llama.cpp 3.2 3B Q4_K_S版本的HTTP服务器的用户存档咨询，特别是关于提示界面中的文件上传按钮。用户怀疑文件上传按钮可能只是将上传文件的内容与直接的提示文本连接起来，然后再发送给模型。这引发了一些疑问，因为连接可能会导致不可靠或不一致的答案，因为模型有时可能会响应文件内容本身，而不是用户的查询。用户进行了大约15次实验，看到了混合的结果——有时模型能正确回答关于文件的问题，有时它似乎误解了提示。一个关键的担忧是可复现性：当重新打开一个对话并使用相同的提示和文件上传时，用户希望得到一致的答案，但不确定在这种设置下是否可以实现。鉴于这些观察结果，有人能提供见解或经验来确切地阐明文件上传按钮在llama.cpp的HTTP服务器中如何与提示集成吗？另外，在使用这种方式查询文件内容时，是否有推荐的实践来提高答案的可靠性和可复现性？任何关于代码行为或配置选项的提示都将不胜感激。\",\"fact_refs\": [\"F1\", \"F3\", \"F4\", \"F5\"]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 291,
+    "total_tokens": 631,
+    "cost": 0.0001504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001504,
+      "upstream_inference_prompt_cost": 3.4e-05,
+      "upstream_inference_completions_cost": 0.0001164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical discussion on OCR vs VLM with dataset link; moderate engagement likely."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "Common technical question about WebSocket and agent tools; typical interest level."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Detailed benchmark and critique of models with specific performance data; likely higher interest."
+      },
+      {
+        "index": 3,
+        "probability": 0.35,
+        "reason": "Technical guide with hardware and software details; niche but valuable content."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Project update with new features and fixes; moderate community relevance."
+      },
+      {
+        "index": 5,
+        "probability": 0.4,
+        "reason": "Research-focused post on reasoning efficiency with quantitative insights; likely attracts expert attention."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Brief update on new software feature; moderate interest expected."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "User seeking model resources with hardware constraints; typical low engagement."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:22.722957+00:00",
+    "tag": "tune_dev:classifier:E5a_zero_shot:0",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "caca5374466510f993ee5a6b8c8325166628675126aee7bba58eaad846b39ffd",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1933,
+    "output_tokens": 226,
+    "actual_cost_usd": 0.0011348,
+    "token_price_estimate_usd": 0.0011348,
+    "reserved_upper_usd": 0.005742,
+    "budget_charge_usd": 0.0011348,
+    "latency_seconds": 2.0974941999884322,
+    "retry": 0,
+    "request_id": "gen-1791100700-0RdVegL3nyJPkkqz0m2s"
+  },
+  "raw_response": {
+    "id": "gen-1791100700-0RdVegL3nyJPkkqz0m2s",
+    "object": "chat.completion",
+    "created": 1791100700,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical discussion on OCR vs VLM with dataset link; moderate engagement likely.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"Common technical question about WebSocket and agent tools; typical interest level.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Detailed benchmark and critique of models with specific performance data; likely higher interest.\"},{\"index\":3,\"probability\":0.35,\"reason\":\"Technical guide with hardware and software details; niche but valuable content.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Project update with new features and fixes; moderate community relevance.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Research-focused post on reasoning efficiency with quantitative insights; likely attracts expert attention.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Brief update on new software feature; moderate interest expected.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"User seeking model resources with hardware constraints; typical low engagement.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1933,
+      "completion_tokens": 226,
+      "total_tokens": 2159,
+      "cost": 0.0011348,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011348,
+        "upstream_inference_prompt_cost": 0.0007732,
+        "upstream_inference_completions_cost": 0.0003616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

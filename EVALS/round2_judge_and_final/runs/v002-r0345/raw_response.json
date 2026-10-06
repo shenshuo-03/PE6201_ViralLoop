@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112462-AlaTTH66ItzUK5Qn9sHy",
+  "object": "chat.completion",
+  "created": 1791112462,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"The draft accurately reflects the source's request for information on VRAM backends for LLM inference on a specific AMD multi-GPU setup. It correctly identifies the models of interest (Gemma3:27b, Qwen3 32B) and the user's hardware configuration. The draft poses relevant questions about backend performance (VLLM vs. llama.cpp), optimizations, and quantization methods, directly addressing the source's goals. It also implicitly acknowledges the dated nature of the original report by asking for \\\"updated experience\\\" and \\\"recent insights.\\\" The community fit is good as it targets users with similar hardware. Specificity is high due to the mention of specific GPUs, models, and backends. Information value is good as it consolidates the user's needs into clear questions. Clarity and usefulness are high. Credibility is good as it relies on the source's reported information without making unsubstantiated claims. Clickbait is low.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"This draft also accurately captures the essence of the source post, focusing on the user's multi-GPU AMD setup and their need for backend recommendations for specific models (Gemma3:27b, Qwen3 32B). It highlights the user's reported performance observations and the need for updated information. The questions posed are relevant and directly address the user's stated goals. The draft maintains the persona of a reader seeking information from the community. Community fit is good as it targets users with similar hardware. Specificity is high due to the mention of specific GPUs, models, and backends. Information value is good as it consolidates the user's needs into clear questions. Clarity and usefulness are high. Credibility is good as it relies on the source's reported information without making unsubstantiated claims. Clickbait is low.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3261,
+    "completion_tokens": 588,
+    "total_tokens": 3849,
+    "cost": 0.0005613,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005613,
+      "upstream_inference_prompt_cost": 0.0003261,
+      "upstream_inference_completions_cost": 0.0002352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

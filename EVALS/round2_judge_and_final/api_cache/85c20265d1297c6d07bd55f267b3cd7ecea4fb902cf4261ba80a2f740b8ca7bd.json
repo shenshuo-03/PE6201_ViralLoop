@@ -1,0 +1,36 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Does this tiny perplexity test reveal anything meaningful about DeepSeek R1’s reasoning ability?",
+        "body": "A user shared a very short perplexity test on DeepSeek R1 models with different expert counts, plus some distilled models and Virtuoso-Medium-v2. Perplexity measures how well a model predicts text, but this test only ran on 8 blocks out of about 560 and used block size 512, so it’s far from comprehensive. The report also notes perplexity might not fairly assess chain-of-thought models since they don’t get to perform step-by-step reasoning in this setup. Interestingly, the full DeepSeek R1 (even quantized) seemed to outperform distills unless limited to 2 experts, with Virtuoso Medium V2 falling between 3 and 4 experts. Given these limits, can we really draw conclusions about DeepSeek’s actual reasoning skills from such a small perplexity test?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0193",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:01:02.421516+00:00",
+    "tag": "naturalness:D03:human_revision_01",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "85c20265d1297c6d07bd55f267b3cd7ecea4fb902cf4261ba80a2f740b8ca7bd",
+    "actual_cost_usd": 0.0015704,
+    "budget_charge_usd": 0.0015704,
+    "reserved_upper_usd": 0.0070624,
+    "input_tokens": 3066,
+    "output_tokens": 215,
+    "latency_seconds": 2.566210000019055,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111659-xMOfxydQ38MEOVHt3Pqr",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  }
+}

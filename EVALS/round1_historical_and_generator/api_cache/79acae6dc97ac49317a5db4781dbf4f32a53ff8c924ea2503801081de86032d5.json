@@ -1,0 +1,88 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical VRAM Allocation Strategy for Local LLMs on 12GB GPUs",
+        "body": "This post outlines a hypothetical VRAM planning strategy for running local LLMs on a system with a 12GB GPU. It's crucial to remember that no actual models or runtimes were tested; this is a theoretical framework. The goal is to manage VRAM efficiently by separating key components: model weights, the KV cache, and other runtime allocations.\n\nFor a 12GB GPU, a common challenge is fitting larger models or longer contexts. This hypothetical approach suggests pre-allocating a significant portion for model weights, depending on the model's size (e.g., 4-bit quantized models might use less). A substantial chunk should also be reserved for the KV cache, which scales with context length and batch size. The remaining VRAM would cover the inference engine, framework overhead, and any other dynamic allocations.\n\nThis is a conceptual guide. Actual VRAM usage can vary wildly based on the specific LLM architecture, quantization method, inference parameters (like temperature or top-p), and the underlying libraries used. Further discussion on practical VRAM budgeting for specific model families would be beneficial.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to create a hypothetical VRAM allocation checklist for a 12GB GPU, separating model weights, KV cache, and other runtime needs. It will explicitly state the hypothetical nature of the experiment and avoid any measured results or external facts. The content will be technical and suitable for r/LocalLLaMA readers, aiming to spark discussion on theoretical VRAM management."
+      },
+      {
+        "title": "Conceptual VRAM Checklist for 12GB GPU LLM Deployment (Hypothetical)",
+        "body": "Considering a hypothetical scenario for running local LLMs on a 12GB GPU, this checklist aims to provide a structured approach to VRAM planning. It's important to stress that this framework is entirely theoretical, and no specific models or runtimes were evaluated. The core idea is to categorize VRAM usage into distinct allocations: model weights, the KV cache, and miscellaneous runtime needs.\n\nFor a 12GB GPU, managing these components is key. The model weights themselves will consume a baseline amount, which can be reduced via quantization. The KV cache is dynamic and grows with sequence length and batch size, often requiring careful consideration to avoid out-of-memory errors. Other runtime allocations include the inference engine's memory footprint, CUDA context, and any temporary buffers. A prudent hypothetical allocation might reserve ~50-60% for weights, ~20-30% for the KV cache, and the remainder for overheads, but this is highly speculative.\n\nThis is a purely conceptual exercise to guide thinking about resource constraints. Real-world performance and VRAM usage will differ significantly based on the exact model, quantization, and inference settings. What are others' theoretical approaches to VRAM budgeting under similar constraints?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to draft a second, distinct Reddit post based on the same hypothetical scenario and facts. This post will also focus on a VRAM planning checklist for a 12GB GPU, separating model weights, KV cache, and other runtime allocations. It will reiterate the hypothetical nature and avoid real-world data. The tone will remain technical and cautious, inviting discussion on theoretical approaches."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:45:02.792721+00:00",
+    "tag": "tune_dev:D01:G4_positive",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "79acae6dc97ac49317a5db4781dbf4f32a53ff8c924ea2503801081de86032d5",
+    "status": "success",
+    "input_tokens": 2201,
+    "output_tokens": 793,
+    "actual_cost_usd": 0.0005373,
+    "token_price_estimate_usd": 0.0005373,
+    "reserved_upper_usd": 0.0015768,
+    "budget_charge_usd": 0.0005373,
+    "latency_seconds": 3.5176341000042157,
+    "retry": 0,
+    "request_id": "gen-1791099899-2ZWUpfaADFHXgxD3M6Ej"
+  },
+  "raw_response": {
+    "id": "gen-1791099899-2ZWUpfaADFHXgxD3M6Ej",
+    "object": "chat.completion",
+    "created": 1791099899,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical VRAM Allocation Strategy for Local LLMs on 12GB GPUs\",\n      \"body\": \"This post outlines a hypothetical VRAM planning strategy for running local LLMs on a system with a 12GB GPU. It's crucial to remember that no actual models or runtimes were tested; this is a theoretical framework. The goal is to manage VRAM efficiently by separating key components: model weights, the KV cache, and other runtime allocations.\\n\\nFor a 12GB GPU, a common challenge is fitting larger models or longer contexts. This hypothetical approach suggests pre-allocating a significant portion for model weights, depending on the model's size (e.g., 4-bit quantized models might use less). A substantial chunk should also be reserved for the KV cache, which scales with context length and batch size. The remaining VRAM would cover the inference engine, framework overhead, and any other dynamic allocations.\\n\\nThis is a conceptual guide. Actual VRAM usage can vary wildly based on the specific LLM architecture, quantization method, inference parameters (like temperature or top-p), and the underlying libraries used. Further discussion on practical VRAM budgeting for specific model families would be beneficial.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"The plan is to create a hypothetical VRAM allocation checklist for a 12GB GPU, separating model weights, KV cache, and other runtime needs. It will explicitly state the hypothetical nature of the experiment and avoid any measured results or external facts. The content will be technical and suitable for r/LocalLLaMA readers, aiming to spark discussion on theoretical VRAM management.\"\n    },\n    {\n      \"title\": \"Conceptual VRAM Checklist for 12GB GPU LLM Deployment (Hypothetical)\",\n      \"body\": \"Considering a hypothetical scenario for running local LLMs on a 12GB GPU, this checklist aims to provide a structured approach to VRAM planning. It's important to stress that this framework is entirely theoretical, and no specific models or runtimes were evaluated. The core idea is to categorize VRAM usage into distinct allocations: model weights, the KV cache, and miscellaneous runtime needs.\\n\\nFor a 12GB GPU, managing these components is key. The model weights themselves will consume a baseline amount, which can be reduced via quantization. The KV cache is dynamic and grows with sequence length and batch size, often requiring careful consideration to avoid out-of-memory errors. Other runtime allocations include the inference engine's memory footprint, CUDA context, and any temporary buffers. A prudent hypothetical allocation might reserve ~50-60% for weights, ~20-30% for the KV cache, and the remainder for overheads, but this is highly speculative.\\n\\nThis is a purely conceptual exercise to guide thinking about resource constraints. Real-world performance and VRAM usage will differ significantly based on the exact model, quantization, and inference settings. What are others' theoretical approaches to VRAM budgeting under similar constraints?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"The plan is to draft a second, distinct Reddit post based on the same hypothetical scenario and facts. This post will also focus on a VRAM planning checklist for a 12GB GPU, separating model weights, KV cache, and other runtime allocations. It will reiterate the hypothetical nature and avoid real-world data. The tone will remain technical and cautious, inviting discussion on theoretical approaches.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2201,
+      "completion_tokens": 793,
+      "total_tokens": 2994,
+      "cost": 0.0005373,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005373,
+        "upstream_inference_prompt_cost": 0.0002201,
+        "upstream_inference_completions_cost": 0.0003172
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

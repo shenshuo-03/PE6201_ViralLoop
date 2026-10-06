@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109795-00g35VT2ZXphduiovG34",
+  "object": "chat.completion",
+  "created": 1791109795,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A frames the archived observations as a genuine discussion prompt with concrete questions ('how do you weigh such personality traits', 'how consistent are these impressions') that invite community members to share their own experiences and validate/challenge the source author's claims. It positions the reader as a peer contributor, not a passive recipient. Draft B recaps the facts in report format ('reports that', 'are described as') without establishing why a local LLM enthusiast should engage—it reads as a summary of someone else's experience rather than an opening for dialogue. A preserves the subjective nature ('subjective impressions', 'in your experience') while B states observations more flatly ('are described as'). A acknowledges missing context ('no detailed task or environment information' is implicit in the open questions) and invites clarification; B explicitly lists limitations but offers no pathway for the community to address them. For a community discussion post, A's question-driven structure with specific prompts for comparison and consistency checks is substantially more actionable than B's descriptive recap.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2083,
+    "completion_tokens": 302,
+    "total_tokens": 2385,
+    "cost": 0.003593,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003593,
+      "upstream_inference_prompt_cost": 0.002083,
+      "upstream_inference_completions_cost": 0.00151
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

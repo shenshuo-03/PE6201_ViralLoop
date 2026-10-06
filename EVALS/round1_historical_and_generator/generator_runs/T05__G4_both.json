@@ -1,0 +1,312 @@
+{
+  "at": "2026-10-04T08:11:13.341938+00:00",
+  "topic": {
+    "id": "T05",
+    "split": "final_test",
+    "topic": "Checklist for a hypothetical offline local model test",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario allows downloading the model before disconnecting.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The offline check must include generation and checking for network requests.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No actual offline test has been run.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G4_both",
+  "generation_usage": {
+    "at": "2026-10-04T08:11:10.344469+00:00",
+    "tag": "final_test:T05:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "f12643fcf158b1819ff09dcbf3456eeb1351c5fc986d15267c8e2702cdbddeb0",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3253,
+    "output_tokens": 589,
+    "actual_cost_usd": 0.0005609,
+    "token_price_estimate_usd": 0.0005609,
+    "reserved_upper_usd": 0.0018073,
+    "budget_charge_usd": 0.0005609,
+    "latency_seconds": 3.1376329000049736,
+    "retry": 0,
+    "request_id": "gen-1791101467-U166o5viSTS56jaeqQ5f"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:11:13.333487+00:00",
+    "tag": "final_test:T05:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "fa3c0eae6de5ca1f6210c3e4f97adb378674fa20b546d380b21bab586c87266b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1006,
+    "output_tokens": 397,
+    "actual_cost_usd": 0.0010376,
+    "token_price_estimate_usd": 0.0010375999999999999,
+    "reserved_upper_usd": 0.005006,
+    "budget_charge_usd": 0.0010376,
+    "latency_seconds": 2.927354999992531,
+    "retry": 0,
+    "request_id": "gen-1791101470-DQ35qiNaQCQZXSyYcuUP"
+  },
+  "retrieved_ids": [
+    "1l65r2k",
+    "1ib80m9",
+    "1krr7hn",
+    "1hssc88",
+    "1inl2au"
+  ],
+  "pattern_ids": [
+    "concrete_title__Tutorial / Guide",
+    "question_title__Tutorial / Guide",
+    "personal_early__Tutorial / Guide",
+    "link_present__Tutorial / Guide"
+  ],
+  "prompt_sha256": "05a8fb85333e671d7a10a0d63700004e85af43361d1271eefe15a01afe214ace",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Checklist for Offline Local LLM Testing",
+        "body": "This post outlines a hypothetical checklist for testing local language models offline. The scenario assumes models can be downloaded prior to disconnection.\n\nThe core of the test involves two key components:\n\n1.  **Generation Capability:** Verifying that the model can produce coherent and relevant output without any network access. This means ensuring all necessary model weights and inference code are locally available and functional.\n2.  **Network Request Monitoring:** Implementing a method to rigorously check for any unintended network requests during the offline test. This could involve using network monitoring tools or analyzing application logs to confirm complete isolation.\n\nIt is crucial to reiterate that this is a hypothetical exercise; no actual offline tests have been performed in this scenario. The objective is to define a robust testing framework for future potential offline evaluations. We aim to identify any potential issues before attempting a real-world offline deployment. Discussion on refining these steps is welcome.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Outline a hypothetical testing procedure for offline local LLM functionality, emphasizing generation and network monitoring. Explicitly state the hypothetical nature of the test and the absence of actual results. Invite discussion on the proposed checklist."
+      },
+      "performance_score": 0.23644317133976203,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any unsupported claims. It aligns well with the title and preserves the scenario status and necessary caveats. The language is clear and technical, suitable for the target audience. The checklist is useful as a conceptual framework for future offline testing, though it lacks actionable measured results. The content is relevant to readers interested in local LLM offline testing. The credibility is strong due to explicit caveats and no fabrication. The title is accurate and not clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 152,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Defining a Hypothetical Offline Test for Local Models: Generation and Network Isolation",
+        "body": "This guide details a hypothetical approach for testing local language models (LLMs) in an offline environment. The premise allows for pre-downloading models before initiating the offline phase.\n\nThe proposed test protocol focuses on two critical verification points:\n\n*   **Functional Generation:** Confirming the LLM can generate text outputs consistently while completely disconnected from any network. This requires ensuring all model assets and inference dependencies are stored locally and accessible.\n*   **Network Egress Verification:** Establishing a method to actively monitor and confirm the absence of any outgoing network communication during the offline test. This involves meticulous checking for any unexpected data transmission.\n\nIt is important to emphasize that this framework is purely hypothetical. No actual offline testing has been conducted within this scenario. The goal is to establish a clear, albeit theoretical, procedure for validating offline LLM performance and security. We seek to identify potential challenges and best practices for such a setup. Feedback on this hypothetical testing methodology is encouraged.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Present a hypothetical methodology for offline local LLM testing. Detail the two main verification steps: generation capability and network request monitoring. Clearly state that this is a hypothetical scenario without actual test results. Encourage community input on the proposed testing framework."
+      },
+      "performance_score": 0.23978165922635966,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains factual accuracy and clearly states the hypothetical nature of the test. The title matches the content well, and the scenario status and caveats are preserved. The writing is clear and technical, appropriate for the audience. The guide provides a useful theoretical framework for offline testing, though it does not offer measured data or direct instructions. It is relevant and credible, with no exaggeration or clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 157,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Defining a Hypothetical Offline Test for Local Models: Generation and Network Isolation",
+      "body": "This guide details a hypothetical approach for testing local language models (LLMs) in an offline environment. The premise allows for pre-downloading models before initiating the offline phase.\n\nThe proposed test protocol focuses on two critical verification points:\n\n*   **Functional Generation:** Confirming the LLM can generate text outputs consistently while completely disconnected from any network. This requires ensuring all model assets and inference dependencies are stored locally and accessible.\n*   **Network Egress Verification:** Establishing a method to actively monitor and confirm the absence of any outgoing network communication during the offline test. This involves meticulous checking for any unexpected data transmission.\n\nIt is important to emphasize that this framework is purely hypothetical. No actual offline testing has been conducted within this scenario. The goal is to establish a clear, albeit theoretical, procedure for validating offline LLM performance and security. We seek to identify potential challenges and best practices for such a setup. Feedback on this hypothetical testing methodology is encouraged.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Present a hypothetical methodology for offline local LLM testing. Detail the two main verification steps: generation capability and network request monitoring. Clearly state that this is a hypothetical scenario without actual test results. Encourage community input on the proposed testing framework."
+    },
+    "performance_score": 0.23978165922635966,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also maintains factual accuracy and clearly states the hypothetical nature of the test. The title matches the content well, and the scenario status and caveats are preserved. The writing is clear and technical, appropriate for the audience. The guide provides a useful theoretical framework for offline testing, though it does not offer measured data or direct instructions. It is relevant and credible, with no exaggeration or clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 157,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

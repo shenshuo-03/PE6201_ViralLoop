@@ -1,0 +1,48 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Seeking Advice on Best VRAM Backend & Config for Multi-GPU AMD LLM Inference (Gemma3:27b, Qwen3 32B)",
+        "body": "I'm working with a multi-GPU AMD setup (2x Radeon RX 7900 XTX + 1x RX 7800 XT, totaling 64GB VRAM) and want to optimize inference for Gemma3:27b and Qwen3 32B models. I've seen some older tests showing only minor speed differences between VLLM and llama.cpp backends, but those were on smaller or older models. Vulkan with llama.cpp seemed faster for some large Qwen3 variants in one report, but details were limited. I'm curious about what quantization methods (GPTQ, AWQ, GGUF) and bit depths others have found effective on similar AMD multi-GPU rigs. Also, how do you best distribute workloads across these GPUs? Any recommended inference frameworks or specific config tweaks to maximize throughput and speed? Would appreciate insights from anyone with recent experience or detailed setups that could help pinpoint the most performant backend and quantization strategy for this hardware and these models.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Multi-GPU AMD LLM Inference: Optimal Backend, Quantization & Config Tips for Gemma3:27b and Qwen3 32B?",
+        "body": "Using an AMD multi-GPU rig (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total), I'm exploring inference options for Gemma3:27b and Qwen3 32B. Previous experiments with VLLM and llama.cpp backends on older models showed small token/s differences, so I’m looking for more targeted advice on what backend performs best now. Has anyone tested quantization methods like GPTQ, AWQ, or GGUF at 4-bit or 8-bit on similar AMD hardware? How do you handle multi-GPU utilization efficiently for these large models? Also interested in any preferred inference frameworks or configuration details that boost speed or throughput. Since available reports lack info on ROCm/driver versions and detailed setups, sharing your experience could really help clarify optimal approaches for this specific AMD multi-GPU environment.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0339",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:14:08.621904+00:00",
+    "tag": "V0:F05",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "96fc73fe99ab793f3d25a923416a866c9936e1fbe704f9dca5606a41ab9d4fde",
+    "actual_cost_usd": 0.0014536,
+    "budget_charge_usd": 0.0014536,
+    "reserved_upper_usd": 0.0062364,
+    "input_tokens": 1642,
+    "output_tokens": 498,
+    "latency_seconds": 3.5050404999929015,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112444-isnCM7OI7jwqfahZnjk8",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

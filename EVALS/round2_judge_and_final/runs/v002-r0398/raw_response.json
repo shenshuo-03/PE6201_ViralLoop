@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112630-l3e3jxjKVBEKIUGnLb00",
+  "object": "chat.completion",
+  "created": 1791112630,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Announce a new framework or tool release.\",\n  \"information_order\": [\n    \"Introduce the tool and its purpose.\",\n    \"List key features and capabilities.\",\n    \"Explain the benefits and use cases.\",\n    \"Mention licensing and community engagement.\"\n  ],\n  \"evidence_style\": \"Describe the tool's functionality and the problems it solves.\",\n  \"question_or_cta\": \"Encourage feedback and community contributions.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The tool's primary function.\",\n    \"The core components or technologies it integrates.\",\n    \"The main advantages it offers over existing solutions.\",\n    \"Its availability and licensing.\"\n  ],\n  \"common_weaknesses\": [\n    \"Issues with audio generation quality.\",\n    \"Problems with processing long text inputs.\",\n    \"Inefficiencies in processing speed.\",\n    \"Lack of robustness in handling errors.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 907,
+    "completion_tokens": 219,
+    "total_tokens": 1126,
+    "cost": 0.0001783,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001783,
+      "upstream_inference_prompt_cost": 9.07e-05,
+      "upstream_inference_completions_cost": 8.76e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

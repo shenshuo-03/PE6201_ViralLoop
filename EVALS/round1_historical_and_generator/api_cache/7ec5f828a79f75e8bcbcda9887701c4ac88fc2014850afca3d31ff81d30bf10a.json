@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical and illustrative nature of the data, preserving all necessary caveats. The title matches the content well, emphasizing the illustrative data. The explanation is clear and well-organized, making it accessible to the target audience. It avoids unsupported claims and does not overstate the findings. The post is relevant to readers interested in local LLM batching tradeoffs and credible given the explicit disclaimers. The clickbait score is low due to restrained, factual presentation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly states the synthetic and hypothetical nature upfront and maintains all necessary caveats. The title is consistent with the body and highlights the illustrative and hypothetical aspects. The text is clear and invites discussion with a concluding question, which adds engagement value. It avoids unsupported claims and maintains credibility. The post is relevant and useful for the intended audience, with a restrained tone and no clickbait."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This version concisely and clearly presents the hypothetical scenario and data, preserving all caveats and disclaimers. The title is clear and consistent with the body content. The concluding question invites practical discussion while emphasizing the illustrative nature. There are no unsupported claims, and the post is credible and relevant to the audience. The tone is restrained and factual, avoiding clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:10:28.400920+00:00",
+    "tag": "final_test:T04:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7ec5f828a79f75e8bcbcda9887701c4ac88fc2014850afca3d31ff81d30bf10a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1272,
+    "output_tokens": 560,
+    "actual_cost_usd": 0.0014048,
+    "token_price_estimate_usd": 0.0014047999999999999,
+    "reserved_upper_usd": 0.005426,
+    "budget_charge_usd": 0.0014048,
+    "latency_seconds": 3.7593157999945106,
+    "retry": 0,
+    "request_id": "gen-1791101424-CLTx2SDo1LdHhRNU0val"
+  },
+  "raw_response": {
+    "id": "gen-1791101424-CLTx2SDo1LdHhRNU0val",
+    "object": "chat.completion",
+    "created": 1791101424,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical and illustrative nature of the data, preserving all necessary caveats. The title matches the content well, emphasizing the illustrative data. The explanation is clear and well-organized, making it accessible to the target audience. It avoids unsupported claims and does not overstate the findings. The post is relevant to readers interested in local LLM batching tradeoffs and credible given the explicit disclaimers. The clickbait score is low due to restrained, factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly states the synthetic and hypothetical nature upfront and maintains all necessary caveats. The title is consistent with the body and highlights the illustrative and hypothetical aspects. The text is clear and invites discussion with a concluding question, which adds engagement value. It avoids unsupported claims and maintains credibility. The post is relevant and useful for the intended audience, with a restrained tone and no clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This version concisely and clearly presents the hypothetical scenario and data, preserving all caveats and disclaimers. The title is clear and consistent with the body content. The concluding question invites practical discussion while emphasizing the illustrative nature. There are no unsupported claims, and the post is credible and relevant to the audience. The tone is restrained and factual, avoiding clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1272,
+      "completion_tokens": 560,
+      "total_tokens": 1832,
+      "cost": 0.0014048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014048,
+        "upstream_inference_prompt_cost": 0.0005088,
+        "upstream_inference_completions_cost": 0.000896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

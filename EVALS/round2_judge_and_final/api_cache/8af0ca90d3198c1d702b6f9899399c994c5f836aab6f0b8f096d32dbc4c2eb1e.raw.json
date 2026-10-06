@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112786-K8cNWoAz1H1fSsMmSjew",
+  "object": "chat.completion",
+  "created": 1791112786,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts correctly ground themselves in F1–F2 and avoid forbidden claims. Draft A frames the question narrowly around \\\"reliably detect\\\" and \\\"best practice,\\\" which presumes solutions exist without acknowledging the core tension. Draft B explicitly names the design mismatch (\\\"not originally designed for reverse keyword search\\\") and directly invokes the order-preservation problem as a stated constraint, then asks for \\\"workarounds or hybrid approaches\\\"—a more honest framing that acknowledges vector DBs may be the wrong tool. Draft B also references the Reddit source date (\\\"mid-2025\\\") and lack of \\\"clear success metrics,\\\" preserving epistemic humility. Draft A's phrasing \\\"known approach or best practice\\\" risks inviting generic advice rather than genuine troubleshooting. Draft B's closing question (\\\"Are there known workarounds or hybrid approaches?\\\") is more actionable for a local LLM community—it signals openness to alternatives rather than assuming vector DBs are the solution. Neither post exploits F3–F6 (the AND/OR edge cases), which is appropriate given the brief's focus on the core use case, but Draft B's acknowledgment of design mismatch makes it more credible and community-fit for a group likely to explore unconventional solutions.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2090,
+    "completion_tokens": 360,
+    "total_tokens": 2450,
+    "cost": 0.00389,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00389,
+      "upstream_inference_prompt_cost": 0.00209,
+      "upstream_inference_completions_cost": 0.0018
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

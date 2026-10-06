@@ -1,0 +1,16 @@
+{
+  "drafts": [
+    {
+      "title": "Assessing llama.cpp Performance on Samsung Galaxy S22 Ultra: Is the Adreno GPU Being Utilized?",
+      "body": "A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and reported inference speeds of less than 2 tokens per second using the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model (f1, f2). For comparison, the same model ran at about 6 tokens per second on a GPU-less AMD machine (f3, f6). This discrepancy raises the question of whether the phone’s Adreno GPU is effectively engaged during inference (f4).\n\nThe user referenced a Qualcomm blog post describing an OpenCL GPU backend for llama.cpp targeting Adreno GPUs (f5), but it’s unclear if this backend was enabled or properly configured in their setup. Without detailed diagnostics—such as GPU utilization metrics, logs confirming OpenCL execution, or profiling data—it’s difficult to determine if the slow speed is due to lack of GPU acceleration or other bottlenecks.\n\nWhat specific diagnostics or tools would best verify whether the Adreno GPU is active during llama.cpp runs on mobile? Identifying this could help distinguish between configuration issues and inherent performance limits on the device.",
+      "fact_refs": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    }
+  ]
+}

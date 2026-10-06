@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the illustrative data and lack of latency measurements. The title matches the content well. The language is clear and technical, suitable for the target audience. The post invites discussion on evaluating tradeoffs, which is useful but limited by the absence of latency data. The credibility is good due to explicit disclaimers and no unsupported claims. The post is not clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and necessary caveats. The title accurately reflects the content. The writing is clear and technical, appropriate for the audience. It frames the scenario well and invites thoughtful discussion on throughput tradeoffs without latency data. No unsupported claims are made. The post is credible and not clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:09:48.680541+00:00",
+    "tag": "final_test:T04:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e325ee36a856ab37ef77943de680b4e4f1ef47188e7247829dec91e460164108",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1045,
+    "output_tokens": 365,
+    "actual_cost_usd": 0.001002,
+    "token_price_estimate_usd": 0.0010019999999999999,
+    "reserved_upper_usd": 0.0049868,
+    "budget_charge_usd": 0.001002,
+    "latency_seconds": 2.710603799991077,
+    "retry": 0,
+    "request_id": "gen-1791101386-p4IfKTDMhaQYOI6v1jOD"
+  },
+  "raw_response": {
+    "id": "gen-1791101386-p4IfKTDMhaQYOI6v1jOD",
+    "object": "chat.completion",
+    "created": 1791101386,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the illustrative data and lack of latency measurements. The title matches the content well. The language is clear and technical, suitable for the target audience. The post invites discussion on evaluating tradeoffs, which is useful but limited by the absence of latency data. The credibility is good due to explicit disclaimers and no unsupported claims. The post is not clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly preserves the hypothetical status and necessary caveats. The title accurately reflects the content. The writing is clear and technical, appropriate for the audience. It frames the scenario well and invites thoughtful discussion on throughput tradeoffs without latency data. No unsupported claims are made. The post is credible and not clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 365,
+      "total_tokens": 1410,
+      "cost": 0.001002,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001002,
+        "upstream_inference_prompt_cost": 0.000418,
+        "upstream_inference_completions_cost": 0.000584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118661-ZVfom2YEDOrFbD50F83B",
+  "object": "chat.completion",
+  "created": 1791118661,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"speaker\": \"community member seeking help with explicitly hypothetical product decision, not source author\",\n  \"scenario_origin\": \"controlled_hypothetical\",\n  \"current_goal\": \"To understand why llama.cpp might be performing significantly slower than EXL2 for long context tasks and to explore potential configuration options within llama.cpp to improve its performance.\",\n  \"central_purpose\": \"Seeking community advice on optimizing llama.cpp for long context performance, given observed differences with EXL2.\",\n  \"desired_response\": \"Guidance on specific llama.cpp settings or techniques that could improve its performance with long contexts, potentially avoiding layer offloading, or confirmation that EXL2 is the superior choice for this specific use case.\",\n  \"relevant_evidence_ids\": [\n    \"F1\",\n    \"F2\",\n    \"F3\",\n    \"F4\",\n    \"F5\",\n    \"F6\"\n  ],\n  \"must_preserve\": [\n    \"The user is experimenting with the RAPTOR example from Langchain modified to use Langchain's LlamaCpp.\",\n    \"The user is running the Phi-3-medium-128k-instruct model with a 50k context window.\",\n    \"The user observed that llama.cpp requires offloading 5 out of 41 layers on a 3090 GPU, resulting in a 20-hour runtime.\",\n    \"The user observed that ExLlamav2 completes the same task in 20 minutes using 19GB VRAM at 50k context.\",\n    \"The user is questioning if llama.cpp settings can be adjusted to prevent layer offloading.\",\n    \"The user is comparing performance between llama.cpp and ExLlamav2 for long context tasks.\",\n    \"The user is seeking configuration advice or confirmation about the better choice for this use case.\"\n  ],\n  \"must_not_invent\": [\n    \"Any specific hardware details beyond '3090' mention.\",\n    \"Any successful optimization or configuration changes made by the user.\",\n    \"Any definitive decision by the user to switch to ExLlamav2 or to continue with llama.cpp.\",\n    \"Any runtime targets or performance metrics not explicitly stated.\",\n    \"Any personal history or claims about ownership or expertise.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1760,
+    "completion_tokens": 450,
+    "total_tokens": 2210,
+    "cost": 0.001424,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001424,
+      "upstream_inference_prompt_cost": 0.000704,
+      "upstream_inference_completions_cost": 0.00072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112135-KgujMo5OLBcmqpzBTbmc",
+  "object": "chat.completion",
+  "created": 1791112135,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"The draft accurately reflects the source, focusing on the technical challenges and seeking community input on specific issues like handling media-heavy/SPA sites and optimizing batch processing. It correctly attributes the information to the original poster and avoids making personal claims. The community fit is good as it directly asks for advice relevant to the local LLM community. Specificity is high, referencing the models, tools, and specific problems mentioned in the source. Information value is good due to the focused questions. Clarity and usefulness are high, making it easy to understand and prompting relevant discussion. Credibility is good as it stays grounded in the source's reported findings and limitations.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"This draft accurately summarizes the source's project, highlighting the use of local LLMs for offline HTML-to-Markdown conversion and the challenges with dynamic content. It correctly attributes the information and maintains the persona of a reader seeking advice. The community fit is strong, as it poses specific questions about handling dynamic content and optimization relevant to the audience. Specificity is high, referencing the tools and limitations. Information value is good, as the questions are practical and invite detailed responses. Clarity and usefulness are excellent. Credibility is good, as it sticks to the reported findings and limitations.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"The draft accurately summarizes the source's project, focusing on the challenges of offline HTML-to-Markdown conversion with local LLMs, particularly regarding quality evaluation and handling complex sites. It correctly attributes the information and maintains the persona of a reader seeking advice. The community fit is excellent, as it directly asks for community input on evaluation strategies and optimization for complex content, which is highly relevant to the target audience. Specificity is high, referencing the models, tools, and specific problems. Information value is good, as the questions are focused and practical. Clarity and usefulness are excellent. Credibility is good, as it stays grounded in the source's reported findings and limitations.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3766,
+    "completion_tokens": 812,
+    "total_tokens": 4578,
+    "cost": 0.0007014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007014,
+      "upstream_inference_prompt_cost": 0.0003766,
+      "upstream_inference_completions_cost": 0.0003248
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

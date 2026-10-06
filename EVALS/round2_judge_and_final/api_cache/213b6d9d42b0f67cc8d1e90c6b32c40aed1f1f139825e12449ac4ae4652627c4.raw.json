@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109677-kz0nNZMitRGUy4FleoAu",
+  "object": "chat.completion",
+  "created": 1791109677,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is better because it asks more specific questions about the practical implications of the reported features (e.g., \\\"how does the large context window affect memory and speed in real-world scenarios\\\", \\\"how mature is the hybrid reasoning functionality\\\", \\\"how well do MistralRS’s multimodal and server features integrate\\\"), making it more likely to elicit a useful discussion from the target audience of local LLM enthusiasts. Post A is more general and less probing. Both posts accurately reflect the provided facts and their limitations.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1984,
+    "completion_tokens": 176,
+    "total_tokens": 2160,
+    "cost": 0.0002688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002688,
+      "upstream_inference_prompt_cost": 0.0001984,
+      "upstream_inference_completions_cost": 7.04e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

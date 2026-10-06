@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "Can Weaviate or Milvus reliably detect short keyword phrases while preserving word order?",
+      "body": "I'm exploring whether vector databases like Weaviate or Milvus can be used to identify very short keywords—like 1-2 word phrases such as \"hugging face\" or \"meta\"—within user input, while also preserving the order of those words. The challenge is that these databases are primarily designed for semantic similarity searches, not reverse keyword matching that respects word sequence.\n\nA user in a 2025 Reddit post mentioned trying these DBs for matching short keywords alongside semantically close sentences but didn't provide detailed configuration or results. Given that these tools focus on semantic embeddings, is there a known approach or best practice to reliably detect exact or near-exact short keyword matches without losing the original word order? Has anyone successfully adapted vector DBs for this kind of reverse keyword search?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Using vector DBs like Weaviate/Milvus for precise short keyword matching—any practical strategies?",
+      "body": "I read about someone attempting to use Weaviate and Milvus databases to match 1-2 word keywords from user input against a sentence database, alongside semantic matching. The main issue seems to be that these vector DBs aren't originally designed to preserve word order or perform reverse keyword searches effectively.\n\nSince the source didn't detail specific setups or success, I'm curious if there are known methods to configure or augment these vector databases to better handle short, ordered keyword matching? For example, would combining vector search with additional token-level indexing or filtering steps help overcome this limitation? Any insights or experiences with this kind of hybrid approach would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

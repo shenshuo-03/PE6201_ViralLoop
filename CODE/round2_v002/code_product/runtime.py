@@ -1,10 +1,11 @@
 """Round 1.1 runtime: immutable inputs, guarded real API, complete paid ledger."""
 import sys,json,hashlib,datetime,os,time,urllib.request,urllib.error,re
 from pathlib import Path
-LOOP=Path(__file__).resolve().parents[1]; ROOT=LOOP.parents[1]; BASE=ROOT.parent
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
+from _packaged_paths import round1_root, round2_root, repo_paths, redirect_write
+LOOP=round2_root(); ROOT=repo_paths(); BASE=repo_paths()
 sys.path.insert(0,str(BASE/'work/experiment_libs'));sys.path.insert(1,str(BASE/'work/audit_libs'))
-CONTRACT=LOOP/'product_contract_guarded_v002.yaml'; OLD=BASE/'experiment_1_0'
-if not OLD.exists():OLD=BASE/'实验1.0版'
+CONTRACT=LOOP/'product_contract_guarded_v002.yaml'; OLD=round1_root()
 sys.path.insert(2,str(OLD/'vendor_runtime'))
 # Product contract is prospective and separate from immutable experiment contracts.
 LEDGER=LOOP/'results/api_ledger_v002.jsonl';CACHE=LOOP/'results/api_cache';CACHE.mkdir(exist_ok=True)
@@ -13,7 +14,8 @@ def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def digest(x):return hashlib.sha256(x.encode('utf-8')).hexdigest()
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
-def write(p,x):p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2,default=str),encoding='utf-8')
+def write(p,x):
+    p=redirect_write(Path(p));p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2,default=str),encoding='utf-8')
 def rows(p):return [json.loads(s) for s in Path(p).read_text(encoding='utf-8').splitlines()] if Path(p).exists() else []
 def parse_json(text):
     try:return json.loads(text)

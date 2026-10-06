@@ -1,0 +1,49 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Seeking Recommendations for Lightweight In-Browser LLMs to Convert JSON into Chart.js Configs",
+        "body": "I'm exploring the feasibility of running small language models entirely within a web browser, aiming to transform JSON data into valid Chart.js configurations for visualization. Additionally, generating brief natural language summaries of the data is a secondary goal. Key requirements include support for small quantized models ideally under 100MB, and runtimes compatible with WebGPU or WASM for efficient client-side inference. I've started looking into MLC.ai as a promising option but haven't found detailed community feedback on its effectiveness for this specific task. Has anyone here experimented with in-browser LLM inference frameworks for structured data transformation or visualization generation? If so, what models and prompting approaches worked best? Also curious about alternative runtimes or tools that might better support these use cases, especially those optimized for lightweight, browser-native deployments.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "In-Browser LLMs for JSON to Chart.js and Data Summaries: Tools, Models, and Prompting Tips?",
+        "body": "I'm interested in client-side LLM inference that can take a JSON object and generate a valid Chart.js config to visualize it, plus produce concise natural language insights about the data. The goal is to avoid backend dependencies by running everything in-browser using small quantized models (<100MB), ideally with WebGPU or WASM support for performance. While MLC.ai seems like a promising runtime to explore, I haven't seen much discussion about its real-world use for these structured data tasks. Does anyone have experience with specific models suited for JSON-to-Chart.js transformation or effective prompting strategies to ensure accurate config generation? Also open to hearing about other inference frameworks or runtimes that might be better suited for these lightweight, browser-native AI applications.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0327",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:13:34.009755+00:00",
+    "tag": "V0:F04",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "5c255e4a93e0608e3fa5aa24a683200b531e38a2b5a116c42336d9c1649d4c50",
+    "actual_cost_usd": 0.0012116,
+    "budget_charge_usd": 0.0012116,
+    "reserved_upper_usd": 0.0060596,
+    "input_tokens": 1413,
+    "output_tokens": 404,
+    "latency_seconds": 3.147948700003326,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112410-A8H2Zy7vlSNVK8YUX9KO",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any measured results or personal experience, preserving necessary caveats. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations, consistent with the provided facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers planning VRAM allocation conceptually, relevant to local LLM deployment, and credible due to explicit disclaimers and no unsupported claims. The clickbait score is low as the title is restrained and informative."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also explicitly states the hypothetical nature and avoids unverified claims, preserving scenario status and necessary caveats. It correctly separates VRAM into model weights, KV cache, and other runtime allocations, consistent with the facts. The title matches the content well and is restrained. The writing is clear and technical, appropriate for the audience. The post is relevant and useful for conceptual VRAM planning for local LLM inference on a 12 GB GPU. Credibility is maintained by disclaimers and no unsupported claims. Clickbait is minimal due to the straightforward title."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:45:14.732517+00:00",
+    "tag": "tune_dev:D01:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "6ea8862ff0046131b6f642605c17425b2036e6b02d8f4826e725f2c5aaa08f47",
+    "status": "success",
+    "input_tokens": 1136,
+    "output_tokens": 440,
+    "actual_cost_usd": 0.0011584,
+    "token_price_estimate_usd": 0.0011584,
+    "reserved_upper_usd": 0.0051572,
+    "budget_charge_usd": 0.0011584,
+    "latency_seconds": 3.1720771999971475,
+    "retry": 0,
+    "request_id": "gen-1791099911-O7FNCPVZoEhqhpiF8Lku"
+  },
+  "raw_response": {
+    "id": "gen-1791099911-O7FNCPVZoEhqhpiF8Lku",
+    "object": "chat.completion",
+    "created": 1791099911,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present any measured results or personal experience, preserving necessary caveats. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations, consistent with the provided facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers planning VRAM allocation conceptually, relevant to local LLM deployment, and credible due to explicit disclaimers and no unsupported claims. The clickbait score is low as the title is restrained and informative.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also explicitly states the hypothetical nature and avoids unverified claims, preserving scenario status and necessary caveats. It correctly separates VRAM into model weights, KV cache, and other runtime allocations, consistent with the facts. The title matches the content well and is restrained. The writing is clear and technical, appropriate for the audience. The post is relevant and useful for conceptual VRAM planning for local LLM inference on a 12 GB GPU. Credibility is maintained by disclaimers and no unsupported claims. Clickbait is minimal due to the straightforward title.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1136,
+      "completion_tokens": 440,
+      "total_tokens": 1576,
+      "cost": 0.0011584,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011584,
+        "upstream_inference_prompt_cost": 0.0004544,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

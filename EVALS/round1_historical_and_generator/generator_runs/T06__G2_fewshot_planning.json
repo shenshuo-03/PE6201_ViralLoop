@@ -1,0 +1,312 @@
+{
+  "at": "2026-10-04T08:11:51.349718+00:00",
+  "topic": {
+    "id": "T06",
+    "split": "final_test",
+    "topic": "Designing a hypothetical prompt regression test",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has 12 fixed test prompts.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Compare the old and new prompts on the same model settings.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Include answerable and insufficient-information cases.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No improvement results are available yet.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:11:48.316196+00:00",
+    "tag": "final_test:T06:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "312f809b53e71b6d9de7beccd9b3d2d0c13c4f8e278a508d9e38bf84302db1ed",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1080,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0003344,
+    "token_price_estimate_usd": 0.0003344,
+    "reserved_upper_usd": 0.0012523,
+    "budget_charge_usd": 0.0003344,
+    "latency_seconds": 3.034006399990176,
+    "retry": 0,
+    "request_id": "gen-1791101505-gpnXwZLbu16qFQbfN5Qf"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:11:51.341598+00:00",
+    "tag": "final_test:T06:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "cee54bdf06e0e080bdb43d1a850467151246212bc6ec305212b260cc5a8ca267",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1001,
+    "output_tokens": 404,
+    "actual_cost_usd": 0.0010468,
+    "token_price_estimate_usd": 0.0010468,
+    "reserved_upper_usd": 0.004952399999999999,
+    "budget_charge_usd": 0.0010468,
+    "latency_seconds": 2.982256999996025,
+    "retry": 0,
+    "request_id": "gen-1791101508-lxbegUiFPYNRWktHASgL"
+  },
+  "retrieved_ids": [
+    "1ixj21d",
+    "1jlwpz9"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "459342e5c32758c8151b6e8ed1598d9fe216832f834ecbc25f07b07d056a0a2f",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Prompt Regression Test Design: Comparing Old vs. New Prompts",
+        "body": "This post outlines a hypothetical design for a prompt regression test. The goal is to compare the performance of an existing prompt set against a new set using a consistent model configuration. We will use a fixed suite of 12 test prompts, covering both cases where answers are expected and where the provided information is insufficient to form an answer. The comparison methodology involves running both the old and new prompt sets against the same model, using identical settings to isolate the prompt's impact. It's crucial to note that this is a hypothetical experiment, and no actual performance improvement results are available at this stage. The focus is on the methodology for setting up such a test. We aim to establish a baseline for future evaluation. The next step would be to execute these tests and analyze the outputs. Any insights on structuring such a regression test, especially concerning the handling of insufficient information cases, would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Outline a hypothetical prompt regression test. Detail the comparison method using fixed prompts and model settings. Explicitly state the hypothetical nature and lack of results. Invite discussion on methodology."
+      },
+      "performance_score": 0.23845914133507817,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly and accurately describes the hypothetical nature of the prompt regression test design, explicitly stating no actual results are available, which aligns with the scenario facts. It details the use of 12 fixed prompts, including answerable and insufficient-information cases, and the methodology of comparing old and new prompts on the same model settings. The language is clear and technical, suitable for the target audience. It invites discussion on methodology, adding actionable value. The title matches the body content well, and no unsupported claims or removed caveats are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 158,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Designing a Hypothetical Prompt Regression Test Framework",
+        "body": "I'm exploring the design for a hypothetical prompt regression test. The objective is to rigorously evaluate changes in prompt engineering by comparing a current set of prompts against a revised set. This hypothetical framework would utilize a fixed dataset of 12 test prompts, designed to include scenarios with clear answers and others where the information provided is insufficient for a definitive response. The core of the test involves running both prompt sets on the same model, maintaining identical model settings and parameters. This approach ensures that any observed differences can be attributed to the prompt variations themselves. It's important to emphasize that this is a conceptual exercise; no actual tests have been run, and therefore, no performance improvements or regressions have been measured or observed. The current stage is purely about defining the testing methodology. Future steps would involve execution and analysis. I'm interested in feedback on this proposed test design, particularly regarding the structure for handling insufficient information cases within a regression context.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Propose a hypothetical prompt regression test design. Emphasize the comparative methodology with fixed prompts and model settings. Clearly state the hypothetical nature and absence of measured results. Seek discussion on the test framework design."
+      },
+      "performance_score": 0.2342025369952613,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully represents the hypothetical scenario, emphasizing the conceptual nature and absence of measured results. It correctly references the fixed 12 test prompts with both answerable and insufficient-information cases and the consistent model settings for comparison. The writing is clear and technical, appropriate for the audience. The title accurately reflects the content. The post invites feedback on the test design, enhancing usefulness. No unsupported claims or missing caveats are found.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 164,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Prompt Regression Test Design: Comparing Old vs. New Prompts",
+      "body": "This post outlines a hypothetical design for a prompt regression test. The goal is to compare the performance of an existing prompt set against a new set using a consistent model configuration. We will use a fixed suite of 12 test prompts, covering both cases where answers are expected and where the provided information is insufficient to form an answer. The comparison methodology involves running both the old and new prompt sets against the same model, using identical settings to isolate the prompt's impact. It's crucial to note that this is a hypothetical experiment, and no actual performance improvement results are available at this stage. The focus is on the methodology for setting up such a test. We aim to establish a baseline for future evaluation. The next step would be to execute these tests and analyze the outputs. Any insights on structuring such a regression test, especially concerning the handling of insufficient information cases, would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Outline a hypothetical prompt regression test. Detail the comparison method using fixed prompts and model settings. Explicitly state the hypothetical nature and lack of results. Invite discussion on methodology."
+    },
+    "performance_score": 0.23845914133507817,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly and accurately describes the hypothetical nature of the prompt regression test design, explicitly stating no actual results are available, which aligns with the scenario facts. It details the use of 12 fixed prompts, including answerable and insufficient-information cases, and the methodology of comparing old and new prompts on the same model settings. The language is clear and technical, suitable for the target audience. It invites discussion on methodology, adding actionable value. The title matches the body content well, and no unsupported claims or removed caveats are present.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 158,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

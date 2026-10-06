@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "Uncertain",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": false,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Post A is better because it directly asks the community for feedback on the feasibility and practical challenges of the proposed standard in local LLM setups, aligning with the audience and desired response. Post B is more of a summary and lacks a direct call to action or specific questions for the community. Both posts accurately reflect the provided facts without adding unsupported claims, but Post A's framing makes it more suitable for community engagement."
+    },
+    "usage": {
+      "run_id": "v002-r0101",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:54.409813+00:00",
+      "tag": "judge_calibration:CP12:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "5ee3cbdc82e5d21bb7a5559405e40a4ecc7ad8ab69d88e5cc1c7b227e3e8e060",
+      "actual_cost_usd": 0.0002367,
+      "budget_charge_usd": 0.0002367,
+      "reserved_upper_usd": 0.0011228,
+      "input_tokens": 1747,
+      "output_tokens": 155,
+      "latency_seconds": 1.2212264999980107,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109673-dvOi3eBJgU23wgbxCgfH",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "B",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it directly asks the community for feedback on the validity and potential pitfalls of the proposed standard, aligning with the brief's desired response. It also poses specific, relevant questions about feasibility and practical challenges for local LLM enthusiasts, making it more engaging and useful for the target audience. Post A is more of a summary and less of a discussion starter. Post B's specificity is also higher by framing the core question around the practicality for local LLMs and explicitly mentioning the lack of implementation details as a point for discussion, whereas Post A simply states these limitations without framing them as discussion points. The credibility is also slightly better in B as it frames the claims as a proposal and asks for community input on feasibility, acknowledging the unverified nature of the proposal, while A presents the information more as a statement of fact about the proposal."
+    },
+    "usage": {
+      "run_id": "v002-r0102",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:56.078532+00:00",
+      "tag": "judge_calibration:CP12:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "f893bdcbbd1496380d474fa0ad094c036c98ff5eb972b828e74552cd8e75885c",
+      "actual_cost_usd": 0.0002719,
+      "budget_charge_usd": 0.0002719,
+      "reserved_upper_usd": 0.0011228,
+      "input_tokens": 1747,
+      "output_tokens": 243,
+      "latency_seconds": 1.6449082999897655,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109674-y7DV0HTDJXlWSDS3zvn1",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

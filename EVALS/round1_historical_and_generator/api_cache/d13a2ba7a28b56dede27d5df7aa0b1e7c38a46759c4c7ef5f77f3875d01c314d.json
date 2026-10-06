@@ -1,0 +1,91 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical RAG Sanity Check: Retrieval On vs. Off with Varied Questions",
+        "body": "This post outlines a hypothetical experiment to sanity-check a Retrieval Augmented Generation (RAG) setup. The core idea is to compare model responses to the same set of questions under two conditions: with the retrieval system active and with it deactivated. We'll use a collection of 30 local documents as the knowledge base. The questions posed will intentionally include some that have no direct answer within the provided documents, to test how the system handles unanswerable queries. \n\nIt is crucial to emphasize that this is a hypothetical scenario for discussion purposes. No actual measurements or results have been generated. The objective is to design a rigorous, yet simple, sanity check to understand the impact of retrieval on the model's output, particularly when faced with questions outside the document scope. \n\nHow would you structure such a comparison to gain meaningful insights into the RAG system's effectiveness and failure modes? What potential pitfalls should be considered in this hypothetical design?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Compare retrieval on/off. Use 30 local documents. Include questions with no answers. State hypothetical nature. Ask for discussion on structure and pitfalls."
+      },
+      {
+        "title": "Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness",
+        "body": "We are exploring a hypothetical RAG sanity check designed to evaluate retrieval effectiveness. The proposed method involves presenting a specific question set against a corpus of 30 local documents. The critical comparison point is running these same questions with retrieval enabled versus disabled. This allows for a direct assessment of whether the retrieved context improves or alters the model's response, or if the model relies solely on its internal knowledge.\n\nThis experimental setup is purely hypothetical and serves as a thought exercise. No actual performance metrics or accuracy data are available. A key aspect of the question set is the inclusion of queries for which no answer exists within the 30 documents. This is intended to probe the system's behavior when faced with information gaps.\n\nWhat are the primary considerations when designing such a hypothetical RAG evaluation? How can we best interpret the differences in output between the retrieval-on and retrieval-off conditions, especially when some questions are unanswerable?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Propose hypothetical RAG evaluation. Use 30 documents. Compare retrieval on/off. Include unanswerable questions. Emphasize hypothetical nature. Solicit discussion on design considerations and interpretation."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:56:30.879873+00:00",
+    "tag": "selection_dev:S01:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "d13a2ba7a28b56dede27d5df7aa0b1e7c38a46759c4c7ef5f77f3875d01c314d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3303,
+    "output_tokens": 590,
+    "actual_cost_usd": 0.0005663,
+    "token_price_estimate_usd": 0.0005663,
+    "reserved_upper_usd": 0.0018835,
+    "budget_charge_usd": 0.0005663,
+    "latency_seconds": 3.33818859999883,
+    "retry": 0,
+    "request_id": "gen-1791100587-XfvxafudoDzl2yyvMvtx"
+  },
+  "raw_response": {
+    "id": "gen-1791100587-XfvxafudoDzl2yyvMvtx",
+    "object": "chat.completion",
+    "created": 1791100587,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical RAG Sanity Check: Retrieval On vs. Off with Varied Questions\",\n    \"body\": \"This post outlines a hypothetical experiment to sanity-check a Retrieval Augmented Generation (RAG) setup. The core idea is to compare model responses to the same set of questions under two conditions: with the retrieval system active and with it deactivated. We'll use a collection of 30 local documents as the knowledge base. The questions posed will intentionally include some that have no direct answer within the provided documents, to test how the system handles unanswerable queries. \\n\\nIt is crucial to emphasize that this is a hypothetical scenario for discussion purposes. No actual measurements or results have been generated. The objective is to design a rigorous, yet simple, sanity check to understand the impact of retrieval on the model's output, particularly when faced with questions outside the document scope. \\n\\nHow would you structure such a comparison to gain meaningful insights into the RAG system's effectiveness and failure modes? What potential pitfalls should be considered in this hypothetical design?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Compare retrieval on/off. Use 30 local documents. Include questions with no answers. State hypothetical nature. Ask for discussion on structure and pitfalls.\"\n  },\n  {\n    \"title\": \"Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness\",\n    \"body\": \"We are exploring a hypothetical RAG sanity check designed to evaluate retrieval effectiveness. The proposed method involves presenting a specific question set against a corpus of 30 local documents. The critical comparison point is running these same questions with retrieval enabled versus disabled. This allows for a direct assessment of whether the retrieved context improves or alters the model's response, or if the model relies solely on its internal knowledge.\\n\\nThis experimental setup is purely hypothetical and serves as a thought exercise. No actual performance metrics or accuracy data are available. A key aspect of the question set is the inclusion of queries for which no answer exists within the 30 documents. This is intended to probe the system's behavior when faced with information gaps.\\n\\nWhat are the primary considerations when designing such a hypothetical RAG evaluation? How can we best interpret the differences in output between the retrieval-on and retrieval-off conditions, especially when some questions are unanswerable?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Propose hypothetical RAG evaluation. Use 30 documents. Compare retrieval on/off. Include unanswerable questions. Emphasize hypothetical nature. Solicit discussion on design considerations and interpretation.\"\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3303,
+      "completion_tokens": 590,
+      "total_tokens": 3893,
+      "cost": 0.0005663,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005663,
+        "upstream_inference_prompt_cost": 0.0003303,
+        "upstream_inference_completions_cost": 0.000236
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

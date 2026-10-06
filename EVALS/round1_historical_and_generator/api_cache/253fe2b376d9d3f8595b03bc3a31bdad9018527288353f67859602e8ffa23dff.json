@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Topic on open source benchmarks with some relevant examples, moderate similarity to a high-class example, likely moderate interest."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Detailed OCR benchmarking question with cost/accuracy tradeoff, similar to a high-class OCR model discussion, somewhat technical and practical."
+      },
+      {
+        "index": 2,
+        "probability": 0.25,
+        "reason": "General question about model comparisons with limited detail, examples mixed high and not high, low similarity to high-class example."
+      },
+      {
+        "index": 3,
+        "probability": 0.2,
+        "reason": "Basic hardware question about VRAM expansion, examples mostly not high, low technical depth, likely lower interest."
+      },
+      {
+        "index": 4,
+        "probability": 0.4,
+        "reason": "Opinion post on prompt engineering as technical debt, with detailed reasoning and open source tool, similar to a high-class example."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Discussion on prompt versioning and schema management, somewhat technical and niche, examples mixed, moderate interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Detailed experience post on running large models on specific hardware, with trial and error and optimization, similar to high-class examples."
+      },
+      {
+        "index": 7,
+        "probability": 0.35,
+        "reason": "Question about building local RAG for codebase, with relevant high-class example, practical and technical interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:03:28.875783+00:00",
+    "tag": "final_test:classifier:E5c_retrieval:48",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "253fe2b376d9d3f8595b03bc3a31bdad9018527288353f67859602e8ffa23dff",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5955,
+    "output_tokens": 299,
+    "actual_cost_usd": 0.0028604,
+    "token_price_estimate_usd": 0.0028604,
+    "reserved_upper_usd": 0.011514,
+    "budget_charge_usd": 0.0028604,
+    "latency_seconds": 2.527293600011035,
+    "retry": 0,
+    "request_id": "gen-1791101006-5kzU3ngp6jf3vsXdx3zu"
+  },
+  "raw_response": {
+    "id": "gen-1791101006-5kzU3ngp6jf3vsXdx3zu",
+    "object": "chat.completion",
+    "created": 1791101006,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Topic on open source benchmarks with some relevant examples, moderate similarity to a high-class example, likely moderate interest.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Detailed OCR benchmarking question with cost/accuracy tradeoff, similar to a high-class OCR model discussion, somewhat technical and practical.\"},{\"index\":2,\"probability\":0.25,\"reason\":\"General question about model comparisons with limited detail, examples mixed high and not high, low similarity to high-class example.\"},{\"index\":3,\"probability\":0.2,\"reason\":\"Basic hardware question about VRAM expansion, examples mostly not high, low technical depth, likely lower interest.\"},{\"index\":4,\"probability\":0.4,\"reason\":\"Opinion post on prompt engineering as technical debt, with detailed reasoning and open source tool, similar to a high-class example.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Discussion on prompt versioning and schema management, somewhat technical and niche, examples mixed, moderate interest.\"},{\"index\":6,\"probability\":0.4,\"reason\":\"Detailed experience post on running large models on specific hardware, with trial and error and optimization, similar to high-class examples.\"},{\"index\":7,\"probability\":0.35,\"reason\":\"Question about building local RAG for codebase, with relevant high-class example, practical and technical interest.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5955,
+      "completion_tokens": 299,
+      "total_tokens": 6254,
+      "cost": 0.0028604,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028604,
+        "upstream_inference_prompt_cost": 0.002382,
+        "upstream_inference_completions_cost": 0.0004784
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

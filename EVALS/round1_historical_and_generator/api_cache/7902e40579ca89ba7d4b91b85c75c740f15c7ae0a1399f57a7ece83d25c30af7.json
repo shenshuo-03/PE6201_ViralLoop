@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Detailed release notes with multiple features and bug fixes suggest moderate community interest but typical for a release post."
+      },
+      {
+        "index": 1,
+        "probability": 0.4,
+        "reason": "Research call for participation often attracts engaged users, but survey posts have mixed engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.25,
+        "reason": "Basic question from a new user with limited content; likely lower engagement."
+      },
+      {
+        "index": 3,
+        "probability": 0.6,
+        "reason": "Comprehensive benchmark summary with extensive data likely attracts high interest and discussion."
+      },
+      {
+        "index": 4,
+        "probability": 0.35,
+        "reason": "Community resource site announcement may get moderate attention but niche audience."
+      },
+      {
+        "index": 5,
+        "probability": 0.5,
+        "reason": "Personal experience with local LLMs and practical advice likely to engage readers interested in lightweight AI."
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Technical hardware cooling experience with detailed results appeals to niche but engaged audience."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Hardware build question with moderate urgency but non-critical workload suggests moderate interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:33.167586+00:00",
+    "tag": "final_test:classifier:E5a_zero_shot:56",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7902e40579ca89ba7d4b91b85c75c740f15c7ae0a1399f57a7ece83d25c30af7",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3346,
+    "output_tokens": 242,
+    "actual_cost_usd": 0.0017256,
+    "token_price_estimate_usd": 0.0017255999999999999,
+    "reserved_upper_usd": 0.0071508,
+    "budget_charge_usd": 0.0017256,
+    "latency_seconds": 2.199732599998242,
+    "retry": 0,
+    "request_id": "gen-1791100891-CM6WixhAdmtiSQptP3YR"
+  },
+  "raw_response": {
+    "id": "gen-1791100891-CM6WixhAdmtiSQptP3YR",
+    "object": "chat.completion",
+    "created": 1791100891,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Detailed release notes with multiple features and bug fixes suggest moderate community interest but typical for a release post.\"},{\"index\":1,\"probability\":0.4,\"reason\":\"Research call for participation often attracts engaged users, but survey posts have mixed engagement.\"},{\"index\":2,\"probability\":0.25,\"reason\":\"Basic question from a new user with limited content; likely lower engagement.\"},{\"index\":3,\"probability\":0.6,\"reason\":\"Comprehensive benchmark summary with extensive data likely attracts high interest and discussion.\"},{\"index\":4,\"probability\":0.35,\"reason\":\"Community resource site announcement may get moderate attention but niche audience.\"},{\"index\":5,\"probability\":0.5,\"reason\":\"Personal experience with local LLMs and practical advice likely to engage readers interested in lightweight AI.\"},{\"index\":6,\"probability\":0.4,\"reason\":\"Technical hardware cooling experience with detailed results appeals to niche but engaged audience.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Hardware build question with moderate urgency but non-critical workload suggests moderate interest.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3346,
+      "completion_tokens": 242,
+      "total_tokens": 3588,
+      "cost": 0.0017256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0017256,
+        "upstream_inference_prompt_cost": 0.0013384,
+        "upstream_inference_completions_cost": 0.0003872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

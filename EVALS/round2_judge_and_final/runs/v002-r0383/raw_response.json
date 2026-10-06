@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112582-nYShsuwTYKM8COdUJKOe",
+  "object": "chat.completion",
+  "created": 1791112582,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source and brief, posing specific questions about quantization and LM Studio settings relevant to the user's hardware (TitanXP). It correctly avoids claiming personal experience and highlights the comparison with Mistral Nemo Instruct. The community fit is good due to the specific technical questions asked.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 is a solid summary of the source and brief. It maintains the user's perspective and asks targeted questions about quantization and LM Studio configuration, directly addressing the user's hardware and observed issues. The specificity and community fit are strong.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 3 effectively captures the essence of the source and brief, focusing on the performance discrepancy between Qwen3-8B and Mistral Nemo Instruct on the user's specific hardware. It poses relevant questions about quantization, GPU memory, and LM Studio optimization, making it highly specific and suitable for community engagement.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2937,
+    "completion_tokens": 604,
+    "total_tokens": 3541,
+    "cost": 0.0005353,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005353,
+      "upstream_inference_prompt_cost": 0.0002937,
+      "upstream_inference_completions_cost": 0.0002416
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Challenges in Offline HTML-to-Markdown Extraction for Media-Heavy Sites Using Local LLMs",
+        "body": "A project reported in mid-2025 explores using local LLMs like Qwen2.5-7B/8B with llama.cpp to convert HTML pages into Markdown offline, aiming to surpass traditional tools on complex sites. The approach analyzes site structure and uses AI-generated extraction strategies to improve quality on text-focused content.\n\nHowever, the author notes significant struggles with media-heavy or JavaScript-driven websites without browser rendering support. Given the limitations of offline parsing, how do others handle dynamic content or embedded media in local HTML-to-Markdown workflows? Are there effective heuristics or preprocessing steps that can bridge this gap without resorting to cloud APIs or full browser engines?\n\nUnderstanding practical ways to improve extraction quality on these challenging sites while maintaining offline operation would be valuable for anyone working on local content processing tools.",
+        "fact_refs": [
+          "F1",
+          "F6"
+        ]
+      },
+      {
+        "title": "Balancing Quality and Speed in Local LLM-Based HTML-to-Markdown Conversion",
+        "body": "An offline HTML-to-Markdown converter using local LLMs reportedly achieves good to excellent extraction quality on standard article pages, with AI scoring between 7 and 9 out of 10. It uses structural heuristics and generates JSON extraction strategies per page.\n\nYet, the process takes around 10–20 seconds per page on consumer GPUs, and batch processing hundreds of pages could be faster. For those running similar local LLM pipelines, what optimization techniques or workflow adjustments have you found effective to improve throughput without sacrificing extraction quality? Are there tradeoffs in model size or quantization that significantly impact speed or accuracy in this context?\n\nInsights on balancing performance and content fidelity would help guide development for practical offline HTML extraction tools.",
+        "fact_refs": [
+          "F1",
+          "F5",
+          "F7"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0229",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:57.302939+00:00",
+    "tag": "V1:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "25e4c30f325129ea5cc7828732954abedc53bff2c4ab39ca9616b7fc4ba485a5",
+    "actual_cost_usd": 0.001438,
+    "budget_charge_usd": 0.001438,
+    "reserved_upper_usd": 0.007139599999999999,
+    "input_tokens": 2059,
+    "output_tokens": 384,
+    "latency_seconds": 3.244042200007243,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112013-zKW7X4Jz47qaBVvdrmV2",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  }
+}

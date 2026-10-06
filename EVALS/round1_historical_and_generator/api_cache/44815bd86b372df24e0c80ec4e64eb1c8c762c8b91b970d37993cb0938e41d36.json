@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Clear technical question on model size tradeoffs, likely relevant to many users."
+      },
+      {
+        "index": 1,
+        "probability": 0.5,
+        "reason": "Detailed, well-written product introduction with community engagement and novel AI tool."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Practical tutorial on privacy-preserving data anonymization, useful and actionable content."
+      },
+      {
+        "index": 3,
+        "probability": 0.35,
+        "reason": "Technical update on model analysis with some domain-specific insights but limited broad appeal."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Reflective opinion post with uncertain direction, less likely to attract high score."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Straightforward question about state-of-the-art models, moderate interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.2,
+        "reason": "Help request with low technical detail and poor formatting, less likely to score high."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Discussion of troubleshooting local AI setups, somewhat niche but relevant to some users."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:38.492649+00:00",
+    "tag": "final_test:classifier:E5a_zero_shot:72",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "44815bd86b372df24e0c80ec4e64eb1c8c762c8b91b970d37993cb0938e41d36",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2074,
+    "output_tokens": 338,
+    "actual_cost_usd": 0.0013704,
+    "token_price_estimate_usd": 0.0013704,
+    "reserved_upper_usd": 0.0059524,
+    "budget_charge_usd": 0.0013704,
+    "latency_seconds": 3.177077800006373,
+    "retry": 0,
+    "request_id": "gen-1791100895-3h4cDStCS11jTbiTkfYt"
+  },
+  "raw_response": {
+    "id": "gen-1791100895-3h4cDStCS11jTbiTkfYt",
+    "object": "chat.completion",
+    "created": 1791100895,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Clear technical question on model size tradeoffs, likely relevant to many users.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.5,\n      \"reason\": \"Detailed, well-written product introduction with community engagement and novel AI tool.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.4,\n      \"reason\": \"Practical tutorial on privacy-preserving data anonymization, useful and actionable content.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.35,\n      \"reason\": \"Technical update on model analysis with some domain-specific insights but limited broad appeal.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.25,\n      \"reason\": \"Reflective opinion post with uncertain direction, less likely to attract high score.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Straightforward question about state-of-the-art models, moderate interest.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.2,\n      \"reason\": \"Help request with low technical detail and poor formatting, less likely to score high.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.3,\n      \"reason\": \"Discussion of troubleshooting local AI setups, somewhat niche but relevant to some users.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2074,
+      "completion_tokens": 338,
+      "total_tokens": 2412,
+      "cost": 0.0013704,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013704,
+        "upstream_inference_prompt_cost": 0.0008296,
+        "upstream_inference_completions_cost": 0.0005408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

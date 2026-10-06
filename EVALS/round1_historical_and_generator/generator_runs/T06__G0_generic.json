@@ -1,0 +1,309 @@
+{
+  "at": "2026-10-04T08:11:38.427307+00:00",
+  "topic": {
+    "id": "T06",
+    "split": "final_test",
+    "topic": "Designing a hypothetical prompt regression test",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has 12 fixed test prompts.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Compare the old and new prompts on the same model settings.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Include answerable and insufficient-information cases.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No improvement results are available yet.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T08:11:35.392821+00:00",
+    "tag": "final_test:T06:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "89bb5bbe1605d68b721071b11f2f37769787870076d6ea325d4099b90a976e0e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 381,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0002645,
+    "token_price_estimate_usd": 0.0002645,
+    "reserved_upper_usd": 0.0009962999999999999,
+    "budget_charge_usd": 0.0002645,
+    "latency_seconds": 2.595274099992821,
+    "retry": 0,
+    "request_id": "gen-1791101493-LX6Nevwc5pcBix2JQtGr"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:11:38.419684+00:00",
+    "tag": "final_test:T06:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "257044da76a3fea0d540a096a62fa68b445f57f56216f80562113f753732692b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1008,
+    "output_tokens": 359,
+    "actual_cost_usd": 0.0009776,
+    "token_price_estimate_usd": 0.0009776,
+    "reserved_upper_usd": 0.0048892,
+    "budget_charge_usd": 0.0009776,
+    "latency_seconds": 2.9642415000125766,
+    "retry": 0,
+    "request_id": "gen-1791101495-9m6ssYGYRWsBWPmAlHvW"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "32134f72310aafd4addee63fde54320716288f0e4289adcaaf8e708824304b7a",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Prompt Regression Testing for Local LLMs: A Structured Approach",
+        "body": "This post outlines a hypothetical framework for prompt regression testing when evaluating changes to prompts for local language models. The core idea is to establish a consistent method for assessing if new prompt versions negatively impact model performance on existing tasks. We propose using a fixed set of 12 test prompts [F1] to ensure comparability. These prompts should cover a range of scenarios, including those with sufficient information for a clear answer and those where the provided information is insufficient [F3]. The evaluation process involves running both the old and new prompt versions against the same model configuration and settings [F2]. This direct comparison is crucial for isolating the effect of the prompt change itself. It's important to note that this is a hypothetical experiment, and no actual improvement results are available at this stage [F4]. The goal is to set up a repeatable process for future analysis.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Outline a hypothetical prompt regression testing strategy. Use a fixed set of test prompts. Compare old vs. new prompts on identical model settings. Include diverse prompt types. Emphasize the hypothetical nature and lack of results."
+      },
+      "performance_score": 0.2384873671934928,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly and accurately describes the hypothetical prompt regression testing framework, referencing all provided facts (F1-F4). It maintains the hypothetical status and does not claim any measured results. The language is technical yet accessible, suitable for the target audience. The content is relevant and useful for readers interested in designing prompt regression tests for local LLMs. The title matches the body content well, and there is no exaggeration or clickbait.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 148,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Setting Up a Hypothetical Prompt Regression Test for Local LLMs (r/LocalLLaMA)",
+        "body": "This guide details a hypothetical method for setting up prompt regression tests for local language models. The objective is to create a reproducible test suite that can verify prompt integrity. We start with a defined set of 12 fixed test prompts [F1] that serve as our baseline. These prompts are designed to include both cases where an answer can be clearly derived and cases where the information is insufficient [F3]. To conduct the test, we would compare the output generated by the old prompt version against the output from the new version, using the exact same model and inference parameters [F2]. This controlled comparison is essential for identifying any regressions introduced by prompt modifications. We must explicitly state that this is a hypothetical experiment; no performance data or measured outcomes are available yet [F4]. The focus is on establishing the testing methodology itself.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Describe a hypothetical prompt regression test setup. Utilize a fixed set of 12 prompts. Ensure identical model settings for old/new prompt comparisons. Cover both answerable and insufficient-information prompt types. Explicitly mention the hypothetical status and absence of results."
+      },
+      "performance_score": 0.24048044082924686,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully follows the provided facts and clearly states the hypothetical nature of the experiment. It explains the test setup and rationale in a straightforward manner, making it useful and relevant for the intended audience. The title accurately reflects the content, and the tone is restrained and technical without any misleading claims.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 143,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Setting Up a Hypothetical Prompt Regression Test for Local LLMs (r/LocalLLaMA)",
+      "body": "This guide details a hypothetical method for setting up prompt regression tests for local language models. The objective is to create a reproducible test suite that can verify prompt integrity. We start with a defined set of 12 fixed test prompts [F1] that serve as our baseline. These prompts are designed to include both cases where an answer can be clearly derived and cases where the information is insufficient [F3]. To conduct the test, we would compare the output generated by the old prompt version against the output from the new version, using the exact same model and inference parameters [F2]. This controlled comparison is essential for identifying any regressions introduced by prompt modifications. We must explicitly state that this is a hypothetical experiment; no performance data or measured outcomes are available yet [F4]. The focus is on establishing the testing methodology itself.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Describe a hypothetical prompt regression test setup. Utilize a fixed set of 12 prompts. Ensure identical model settings for old/new prompt comparisons. Cover both answerable and insufficient-information prompt types. Explicitly mention the hypothetical status and absence of results."
+    },
+    "performance_score": 0.24048044082924686,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also faithfully follows the provided facts and clearly states the hypothetical nature of the experiment. It explains the test setup and rationale in a straightforward manner, making it useful and relevant for the intended audience. The title accurately reflects the content, and the tone is restrained and technical without any misleading claims.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 143,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112771-ajufPe46JCNn1ZSKPTbZ",
+  "object": "chat.completion",
+  "created": 1791112771,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"B\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly grounds the community question in the concrete problem: multi-word keyword matching failures (F5, F6 show AND/OR logic producing false positives). It names the specific edge case ('face hugging aliens' vs 'hugging face') and asks for actionable hybrid strategies, making it immediately relevant to local LLM enthusiasts troubleshooting similar constraints. Draft B mentions the same databases and general challenge but omits the specific failure modes (F5, F6) that would help readers recognize their own problems and contribute solutions. A preserves all six facts with precision; B references only F1 and F2, losing the diagnostic detail that makes the post answerable. A's credibility is slightly lower because it attributes the Reddit source to 'mid-2025' (source_date is 2025-07-04, a minor dating imprecision), while B correctly avoids over-specifying the date. However, A's superior community fit, specificity to the actual edge cases, and information value (organizing evidence into concrete failure patterns rather than generic limitations) outweigh this minor credibility gap. A treats the post as a troubleshooting question with learnable distinctions; B frames it as a general capability inquiry.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2148,
+    "completion_tokens": 345,
+    "total_tokens": 2493,
+    "cost": 0.003873,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003873,
+      "upstream_inference_prompt_cost": 0.002148,
+      "upstream_inference_completions_cost": 0.001725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

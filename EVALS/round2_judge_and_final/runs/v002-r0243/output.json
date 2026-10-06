@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "How reliable are perplexity comparisons for DeepSeek R1 models with varying expert counts given limited test data?",
+      "body": "I came across a perplexity test from early 2025 comparing DeepSeek R1 models with different numbers of experts. However, the test only ran on 8 blocks out of roughly 560, which the original poster cautioned should be taken with a massive grain of salt. Additionally, perplexity might not be the best metric for chain-of-thought models since they don't get to perform their reasoning during such tests.\n\nGiven these limitations, how much confidence can we place in using these perplexity results to compare DeepSeek R1 variants? Is there a better way to evaluate these models’ performance differences in practice, especially when chain-of-thought reasoning is involved?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Does a tiny sample size and perplexity’s limits undermine DeepSeek R1 expert count comparisons?",
+      "body": "A perplexity test from January 2025 on DeepSeek R1 models with different expert counts ran on just 8 blocks out of about 560, which the source author noted is a very small sample size. They also pointed out perplexity probably isn’t a fair test for chain-of-thought models since such tests don’t allow the model to actually do any thinking.\n\nGiven these constraints, can we really trust perplexity scores to distinguish between DeepSeek R1 models with varying expert configurations? For those of us interested in local LLMs, what alternative benchmarks or evaluation methods might better capture real-world differences, especially for chain-of-thought capabilities?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101729-l04U2ak4lA0B0KxoPHsJ",
+  "object": "chat.completion",
+  "created": 1791101729,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly references the synthetic facts (F1-F3). It maintains a restrained, technical tone appropriate for the audience. The title matches the body content well. The discussion is relevant and useful for readers interested in reproducibility in local LLM benchmarking. The caveats about no actual experiments or results are preserved, avoiding unsupported claims. The clarity is high though some phrasing could be slightly more concise. Credibility is strong given the explicit caveats and no overstatements. Clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 5,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft is very clear and well-structured, explicitly framing the post as a hypothetical experiment design. It carefully states the facts and caveats, preserving the scenario status. The title accurately reflects the content. The post is relevant and useful for the target audience, focusing on reproducibility factors. The tone is restrained and technical, supporting credibility. No unsupported claims or clickbait elements are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft is concise and direct, clearly stating the hypothetical nature and referencing the synthetic facts. The title matches the body content. It maintains necessary caveats and avoids unsupported claims. The post is relevant and useful for the audience interested in reproducibility in local LLM testing. The tone is technical and restrained, supporting credibility. Minor improvements in phrasing could enhance clarity slightly.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1094,
+    "completion_tokens": 576,
+    "total_tokens": 1670,
+    "cost": 0.0013592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013592,
+      "upstream_inference_prompt_cost": 0.0004376,
+      "upstream_inference_completions_cost": 0.0009216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

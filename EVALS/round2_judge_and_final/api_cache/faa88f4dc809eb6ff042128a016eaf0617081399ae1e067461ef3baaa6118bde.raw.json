@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109852-WQJvnJRltjhpwsoM08CQ",
+  "object": "chat.completion",
+  "created": 1791109852,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly frames the problem as a community question ('are there any compact models known to handle...?') with concrete failure modes (missing list items, 10^9 vs 109 confusion) that invite experiential responses from local LLM users. It acknowledges uncertainty ('unclear what alternatives might exist') and explicitly invites tradeoff discussion relevant to the audience. Draft B recasts the same facts as a passive report ('A source from May 2025 noted...'), removes the specific failure examples from the narrative flow, and ends with a summary statement rather than a genuine question. For a community seeking recommendations and discussion, A preserves the motivating problem and creates actionable engagement; B reads as documentation of a problem rather than an invitation to solve it. Both respect the forbidden claims and source limitations, but A's framing ('For those experienced with local OCR models...') directly addresses community_fit and usefulness by positioning readers as potential contributors rather than passive recipients of a recap.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2045,
+    "completion_tokens": 287,
+    "total_tokens": 2332,
+    "cost": 0.00348,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00348,
+      "upstream_inference_prompt_cost": 0.002045,
+      "upstream_inference_completions_cost": 0.001435
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

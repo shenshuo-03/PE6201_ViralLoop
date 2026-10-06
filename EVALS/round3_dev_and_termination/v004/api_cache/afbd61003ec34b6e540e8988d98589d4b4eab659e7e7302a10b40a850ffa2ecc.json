@@ -1,0 +1,23 @@
+{
+  "value": {
+    "task_zh": {
+      "content_archetype": "D",
+      "posting_intent": "分享资源",
+      "current_context": "分享一个关于使用MCP进行本地编码辅助的历史配置资源；区分一个有用的路径与已验证的当前兼容性。",
+      "core_value": "使开发者能够在本地使用AI编码助手，而无需依赖远程API。",
+      "source_date": "2025-06-16",
+      "scenario_note": "受控产品输入，来源为第三方存档证据。"
+    },
+    "drafts": [
+      {
+        "title": "使用Continue和MCP集成在VS Code中设置完全本地的AI编码助手",
+        "body": "对于有兴趣使用本地AI编码助手且不依赖远程API的开发者，有一个有用的存档资源概述了如何配置VS Code与Continue扩展及MCP集成。该设置允许您通过像Llama.cpp或LmStudio这样的OpenAI兼容服务器来服务本地语言模型，实现完全在您机器上的编码副驾驶体验。要将Continue连接到您的本地Ollama模型，您需要在项目中创建一个`.continue/models/llama-max.yaml`配置文件。此外，可以通过添加`.continue/mcpServers/playwright-mcp.yaml`文件来集成Playwright浏览器自动化等工具。虽然该教程假设具备一定技术背景且不保证具体性能，但它提供了逐步入门指南。完整教程托管在Hugging Face，链接为：https://huggingface.co/learn/mcp-course/unit2/continue-client。此方法为希望本地控制其编码副驾驶环境的开发者提供了一个有前景的路径。"
+      },
+      {
+        "title": "使用Continue和MCP集成在VS Code中设置完全本地的AI编码助手",
+        "body": "对于有兴趣使用本地AI编码助手的开发者，有一份详细的存档教程（日期为2025-06-16）说明了如何使用VS Code、Continue扩展和MCP集成配置完全本地的IDE环境。该设置允许您运行AI编码助手而无需依赖远程API，增强了对编码工作流程的隐私和控制。来自VS Code市场的Continue扩展作为您本地LLM服务器的接口，该服务器可使用Llama.cpp或LmStudio等OpenAI兼容服务器托管。配置涉及添加诸如`.continue/models/llama-max.yaml`的文件以连接Continue到本地Ollama模型，以及`.continue/mcpServers/playwright-mcp.yaml`以将Playwright浏览器自动化工具等集成到您的助手中。虽然教程假设具备技术背景以跟随步骤，但它为希望本地掌控编码副驾驶的用户提供了全面指南。完整设置说明请参见教程：https://huggingface.co/learn/mcp-course/unit2/continue-client"
+      }
+    ]
+  },
+  "run_id": "v004-r0064"
+}

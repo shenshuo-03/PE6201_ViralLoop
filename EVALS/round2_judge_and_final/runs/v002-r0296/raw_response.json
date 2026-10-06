@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112321-snUS6f9wefch6oGDQ8JI",
+  "object": "chat.completion",
+  "created": 1791112321,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 3, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 effectively summarizes the source's concerns about centralization and the proposed solution of moving to the Fediverse. It accurately reflects the author's sentiment without adding personal claims or unsupported facts. The questions posed are relevant to the community's potential migration and explore practical challenges and existing examples of decentralized moderation, aligning well with the brief's goal of fostering discussion. Specificity is good, referencing the source's concerns and proposing the Fediverse. Information value is high due to the well-structured questions that invite detailed community input. Clarity and usefulness are excellent, making the post easy to understand and directly relevant to the topic. Credibility is maintained by sticking to the source's reported issues and posing open-ended questions. Community fit is good as it directly addresses the core issue of platform control and potential solutions for the LocalLLaMA community.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 3, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 also accurately captures the essence of the source, focusing on the author's concerns about centralized control and the proposal for the Fediverse. It avoids personal claims and unsupported assertions, adhering to the brief's requirements. The questions are well-formulated, probing the effectiveness of decentralization and potential drawbacks, which directly supports the brief's goal of exploring feasibility and desirability. Specificity is good, referencing the source's core arguments and the proposed solution. Information value is high, as it prompts a discussion on the practicalities and trade-offs of decentralization. Clarity and usefulness are excellent, making the post easily digestible and directly relevant. Credibility is strong, as it relies on the source's reported issues and poses thoughtful questions. Community fit is good, as it addresses the central theme of platform migration and control for the LocalLLaMA community.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2559,
+    "completion_tokens": 567,
+    "total_tokens": 3126,
+    "cost": 0.0004827,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004827,
+      "upstream_inference_prompt_cost": 0.0002559,
+      "upstream_inference_completions_cost": 0.0002268
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

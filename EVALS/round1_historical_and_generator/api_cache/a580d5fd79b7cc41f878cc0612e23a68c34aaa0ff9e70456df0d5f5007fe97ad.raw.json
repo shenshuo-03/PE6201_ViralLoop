@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100362-b6RcsfWDIpISP2srcWnF",
+  "object": "chat.completion",
+  "created": 1791100362,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and includes all necessary caveats about lack of throughput, accuracy, and statistical validation. The title matches the content well. The language is clear and technical, suitable for the target audience. It provides a useful starting point for discussion about TTFT differences, though it does not offer actionable conclusions due to the hypothetical status. The post is relevant to local LLaMA users interested in latency. No unsupported claims or exaggerations are present, and the clickbait score is low.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly frames the scenario as hypothetical and includes all necessary caveats. The title accurately reflects the content, which focuses on exploring possible software or configuration causes for TTFT differences. The language is clear and technical, appropriate for the audience. It is relevant and credible, with no unsupported claims or misleading statements. The post invites discussion without overstating the data, maintaining a low clickbait score.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 968,
+    "completion_tokens": 397,
+    "total_tokens": 1365,
+    "cost": 0.0010224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010224,
+      "upstream_inference_prompt_cost": 0.0003872,
+      "upstream_inference_completions_cost": 0.0006352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

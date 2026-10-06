@@ -1,0 +1,309 @@
+{
+  "at": "2026-10-04T08:09:35.171924+00:00",
+  "topic": {
+    "id": "T04",
+    "split": "final_test",
+    "topic": "A hypothetical batching tradeoff",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Hypothetical batch size 1 produces 22 tokens per second in total; batch size 4 produces 55 in total.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "These are aggregate rates, not per-user rates.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Per-request latency was not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The values are illustrative, not real test results.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T08:09:32.400979+00:00",
+    "tag": "final_test:T04:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "065733b1c114ac36008901b884ab959327777c632e68beabd9636b541a3499ce",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 399,
+    "output_tokens": 554,
+    "actual_cost_usd": 0.0002615,
+    "token_price_estimate_usd": 0.0002615,
+    "reserved_upper_usd": 0.0009995,
+    "budget_charge_usd": 0.0002615,
+    "latency_seconds": 2.6863044000056107,
+    "retry": 0,
+    "request_id": "gen-1791101369-CLyXvEWfVU8tY9EHoD1Q"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:09:35.165316+00:00",
+    "tag": "final_test:T04:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f3e5986a6c76117b3210c011650d1b988dd8bd912cc19c42e28a290d674de19e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 999,
+    "output_tokens": 351,
+    "actual_cost_usd": 0.0009612,
+    "token_price_estimate_usd": 0.0009611999999999999,
+    "reserved_upper_usd": 0.0048784,
+    "budget_charge_usd": 0.0009612,
+    "latency_seconds": 2.71543450000172,
+    "retry": 0,
+    "request_id": "gen-1791101372-U6s8OaDR4et6Ma1t9fE6"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "1a8a7fabe2d84d0b3b0b3ac835e303ec1667061a7e6c5aa48cbeef978dd7acd1",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Batching Tradeoff: Throughput vs. Latency in Local LLM Inference",
+        "body": "This post explores a hypothetical scenario regarding batching strategies for local LLM inference. We're examining an experiment where a batch size of 1 yielded an aggregate throughput of 22 tokens per second. In contrast, increasing the batch size to 4 hypothetically resulted in a higher aggregate throughput of 55 tokens per second (F1, F2). It's crucial to understand that these figures are purely illustrative and not actual measured results (F4). Furthermore, the experiment did not measure per-request latency, focusing solely on aggregate throughput (F3). This suggests a potential tradeoff: larger batches may increase overall system capacity but could also impact the responsiveness for individual requests, though this latency aspect was not directly evaluated here. Further investigation would be needed to confirm these hypothetical observations and measure latency.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F4",
+          "F3"
+        ],
+        "plan": "This draft focuses on presenting the hypothetical batching tradeoff, emphasizing the aggregate throughput increase with larger batch sizes while clearly stating the limitations regarding per-request latency and the synthetic nature of the data."
+      },
+      "performance_score": 0.24348051904970933,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and includes all necessary caveats about the illustrative data and lack of latency measurements. The title accurately reflects the content. The explanation is clear and technical, suitable for the target audience. It provides actionable insight about throughput tradeoffs while cautioning about unmeasured latency, making it relevant and credible without exaggeration.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 127,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Exploring Hypothetical LLM Batching: Aggregate Throughput Gains and Unmeasured Latency",
+        "body": "We are considering a hypothetical experiment investigating the impact of batch size on local LLM inference performance. The scenario posits that a batch size of 1 achieved an aggregate throughput of 22 tokens per second. When this batch size was hypothetically increased to 4, the aggregate throughput rose to 55 tokens per second (F1, F2). It is important to note that these numbers are for illustrative purposes only and do not represent real-world test results (F4). This hypothetical experiment did not include measurements for per-request latency (F3). The observed increase in aggregate throughput with larger batches suggests a potential benefit for high-load scenarios. However, the lack of latency measurements means we cannot infer how this batching strategy might affect the responsiveness for individual inference requests. These are hypothetical findings, and actual performance may vary.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F4",
+          "F3"
+        ],
+        "plan": "This draft emphasizes the hypothetical nature of the experiment and the observed increase in aggregate throughput with larger batch sizes. It clearly states that per-request latency was not measured and that the figures are illustrative, aligning with the brief's constraints."
+      },
+      "performance_score": 0.2440060115602617,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical scenario and necessary caveats. The title matches the content well. The language is clear and restrained, emphasizing the illustrative nature of the data and the absence of latency measurements. It highlights the potential throughput benefits and the uncertainty about latency impact, providing balanced, relevant, and credible information for the audience.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 134,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Exploring Hypothetical LLM Batching: Aggregate Throughput Gains and Unmeasured Latency",
+      "body": "We are considering a hypothetical experiment investigating the impact of batch size on local LLM inference performance. The scenario posits that a batch size of 1 achieved an aggregate throughput of 22 tokens per second. When this batch size was hypothetically increased to 4, the aggregate throughput rose to 55 tokens per second (F1, F2). It is important to note that these numbers are for illustrative purposes only and do not represent real-world test results (F4). This hypothetical experiment did not include measurements for per-request latency (F3). The observed increase in aggregate throughput with larger batches suggests a potential benefit for high-load scenarios. However, the lack of latency measurements means we cannot infer how this batching strategy might affect the responsiveness for individual inference requests. These are hypothetical findings, and actual performance may vary.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F3"
+      ],
+      "plan": "This draft emphasizes the hypothetical nature of the experiment and the observed increase in aggregate throughput with larger batch sizes. It clearly states that per-request latency was not measured and that the figures are illustrative, aligning with the brief's constraints."
+    },
+    "performance_score": 0.2440060115602617,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also faithfully preserves the hypothetical scenario and necessary caveats. The title matches the content well. The language is clear and restrained, emphasizing the illustrative nature of the data and the absence of latency measurements. It highlights the potential throughput benefits and the uncertainty about latency impact, providing balanced, relevant, and credible information for the audience.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 134,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

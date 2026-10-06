@@ -1,0 +1,193 @@
+{
+  "contract_id": "ViralLoop-v002-preflight-naturalness-and-evaluator",
+  "loop_version": "v002",
+  "cycle_id": "v002",
+  "parent_contract_hash": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304",
+  "created_at": "2026-10-04T10:03:39.245907+00:00",
+  "design": {
+    "research_question": "Can real sourced writing tasks produce useful natural posts; can validated independent instruments measure incremental generation improvement?",
+    "evidence_boundary": "Offline writing preference, not causal real-platform virality",
+    "mode": "Standard",
+    "data": {
+      "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+      "split_hash": "adabf4421c619d8c32927968d06464e2deee883a0f881ca2ec5d88026255bbf6",
+      "roles": {
+        "train": "source preparation and retrieval excluding all assigned source groups",
+        "tune": "4 generator briefs",
+        "selection": "2 generator briefs, internal only",
+        "final": "12 sealed generator briefs after freeze",
+        "calibration": "15 pairs, grouped sources",
+        "validation": "15 held-out pairs"
+      }
+    },
+    "baseline": "V0 complete brief simple prompt",
+    "variants": [
+      "V0",
+      "V1",
+      "V2",
+      "O1",
+      "O2"
+    ],
+    "metrics": {
+      "primary": "W/L/T/U/F counts; decisive W/(W+L); decisive coverage denominator all topics",
+      "direction": "higher wins with preserved facts",
+      "secondary": [
+        "fit",
+        "specificity",
+        "information_value",
+        "cost",
+        "latency"
+      ],
+      "hard_quality_checks": [
+        "source support",
+        "no invented experience",
+        "no copying",
+        "no critical contradiction"
+      ]
+    },
+    "controls": {
+      "candidate_count": {
+        "V0": 2,
+        "V1": 2,
+        "V2": 2,
+        "O1": 3,
+        "O2": 3,
+        "naturalness": 1
+      },
+      "equal_budget_comparator": "O1/O2 same V2 parent, same model and 3 candidates, retain original"
+    },
+    "budgets": {
+      "currency": "USD",
+      "money": 2,
+      "project_cap": 5,
+      "prior_actual": 0.34422535,
+      "tokens": 1000000,
+      "api_calls": 700,
+      "wall_time_seconds": 14400,
+      "max_retries": 2,
+      "final_reserve": 0.75,
+      "soft_stop": 1.5
+    },
+    "stop_rules": [
+      "No model shopping after calibration",
+      "No feedback before evaluator admission",
+      "No formal generator experiment before human naturalness acceptance",
+      "No final evaluator reads of generator tune/selection",
+      "Final after full frozen config only"
+    ],
+    "final_test": {
+      "requires_freeze": true,
+      "tuning_forbidden": true,
+      "exposure_protocol": "one-shot after freeze; cached retry resumes incomplete calls"
+    },
+    "autonomy": {
+      "authorized_cycles": "Second round v4.1 authorized by user",
+      "allowed_changes": [
+        "routine engineering repairs with logs",
+        "2 tune iterations"
+      ],
+      "meaning_changing_changes": [
+        "new models after freeze",
+        "new outcomes",
+        "overspend",
+        "source contamination"
+      ]
+    }
+  },
+  "audit": {
+    "expected": {
+      "contract_id": "ViralLoop-v002-preflight-naturalness-and-evaluator",
+      "cycle_id": "v002",
+      "loop_version": "v002",
+      "currency": "USD"
+    },
+    "required_fields": [
+      "run_id",
+      "cycle_id",
+      "phase",
+      "variant_id",
+      "contract_id",
+      "contract_sha256",
+      "dataset_hash",
+      "split_hash",
+      "config_hash",
+      "code_hash",
+      "input_hash",
+      "output_hash",
+      "scores_hash",
+      "primary_metric_hash",
+      "evaluator_hash",
+      "candidate_count",
+      "tokens",
+      "api_calls",
+      "cost",
+      "currency",
+      "latency_seconds",
+      "retry_count",
+      "access_events",
+      "integrity_checks"
+    ],
+    "required_checks": [
+      "artifact_hashes_verified",
+      "split_integrity",
+      "billing_ledger_complete",
+      "project_budget_verified"
+    ],
+    "allowed_phases": [
+      "preflight",
+      "naturalness",
+      "calibration",
+      "validation",
+      "tune",
+      "selection",
+      "final"
+    ],
+    "allowed_variants": [
+      "brief_builder",
+      "naturalness",
+      "judge_calibration",
+      "judge_validation",
+      "V0",
+      "V1",
+      "V2",
+      "O1",
+      "O2",
+      "pair_builder",
+      "quality",
+      "translate"
+    ],
+    "forbidden_splits": [
+      "historical_final"
+    ],
+    "forbidden_purposes_by_split": {
+      "final": [
+        "fit",
+        "tune",
+        "retrieve",
+        "few_shot",
+        "pattern_mining"
+      ],
+      "selection": [
+        "fit",
+        "tune"
+      ],
+      "generator_tune": [
+        "external_judge"
+      ],
+      "generator_selection": [
+        "external_judge"
+      ]
+    },
+    "per_run_limits": {
+      "api_calls": 50,
+      "cost": 0.3,
+      "retry_count": 2
+    },
+    "cycle_limits": {
+      "api_calls": 700,
+      "cost": 2,
+      "tokens": 1000000
+    },
+    "final_split": "final"
+  }
+}

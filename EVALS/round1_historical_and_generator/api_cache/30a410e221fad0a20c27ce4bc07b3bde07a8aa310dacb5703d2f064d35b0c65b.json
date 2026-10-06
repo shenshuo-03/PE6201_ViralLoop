@@ -1,0 +1,91 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical RAG Sanity Check: Retrieval On vs. Off for Local Documents",
+        "body": "This post outlines a hypothetical experiment for evaluating Retrieval-Augmented Generation (RAG) performance in a local LLM context. The core idea is to establish a baseline sanity check by comparing model responses with RAG enabled versus disabled.\n\nWe'll consider a scenario involving a set of 30 local documents (F1). The test methodology involves posing a series of questions to the LLM. For each question, we will record the response generated when RAG is active and then again when RAG is turned off, using the exact same question and model configuration (F2). This direct comparison aims to isolate the impact of the retrieval component.\n\nCrucially, this is a hypothetical design. Some questions are intentionally crafted to have no answer within the provided document set (F3), allowing us to observe how the model handles unanswerable queries in both RAG states. No actual performance metrics or accuracy results are being presented or measured (F4).\n\nWhat are the key considerations for designing such a comparative sanity check, especially regarding the interpretation of responses when answers are absent?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Propose a hypothetical RAG sanity check methodology. Detail the comparison between RAG on/off using a fixed set of local documents and questions. Highlight the hypothetical nature and lack of actual results. Ask for discussion on designing such a check."
+      },
+      {
+        "title": "Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness with Local Docs",
+        "body": "This is a hypothetical exploration into designing a basic sanity check for Retrieval-Augmented Generation (RAG) systems running locally. The objective is to understand the fundamental impact of the retrieval step itself, without relying on pre-existing performance data.\n\nThe proposed experiment involves a corpus of 30 local documents (F1). We would formulate a set of questions and query the LLM twice for each: once with RAG enabled, and once with the retrieval mechanism completely bypassed (F2). This setup allows for a direct, albeit hypothetical, comparison of output quality attributable solely to the retrieval component.\n\nIt’s important to emphasize that this scenario is purely theoretical. We acknowledge that some questions within the test set will not have answers present in the document collection (F3). Furthermore, no actual measurements, benchmarks, or accuracy figures are available or implied (F4). The focus is on the experimental design itself.\n\nWhat are the critical aspects to consider when designing this type of comparative test, particularly when evaluating the model's handling of queries lacking direct answers in the retrieved context?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Outline a hypothetical RAG evaluation strategy. Describe the process of comparing RAG active vs. inactive states using local documents. Explicitly state the hypothetical nature and absence of real data. Solicit discussion on the design principles, especially for unanswerable questions."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:56:23.817593+00:00",
+    "tag": "selection_dev:S01:G4_positive",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "30a410e221fad0a20c27ce4bc07b3bde07a8aa310dacb5703d2f064d35b0c65b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2513,
+    "output_tokens": 709,
+    "actual_cost_usd": 0.0005349,
+    "token_price_estimate_usd": 0.0005349,
+    "reserved_upper_usd": 0.0016928,
+    "budget_charge_usd": 0.0005349,
+    "latency_seconds": 3.179517999989912,
+    "retry": 0,
+    "request_id": "gen-1791100580-x7JN7VgmI9tBSJBHwo3e"
+  },
+  "raw_response": {
+    "id": "gen-1791100580-x7JN7VgmI9tBSJBHwo3e",
+    "object": "chat.completion",
+    "created": 1791100580,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical RAG Sanity Check: Retrieval On vs. Off for Local Documents\",\n      \"body\": \"This post outlines a hypothetical experiment for evaluating Retrieval-Augmented Generation (RAG) performance in a local LLM context. The core idea is to establish a baseline sanity check by comparing model responses with RAG enabled versus disabled.\\n\\nWe'll consider a scenario involving a set of 30 local documents (F1). The test methodology involves posing a series of questions to the LLM. For each question, we will record the response generated when RAG is active and then again when RAG is turned off, using the exact same question and model configuration (F2). This direct comparison aims to isolate the impact of the retrieval component.\\n\\nCrucially, this is a hypothetical design. Some questions are intentionally crafted to have no answer within the provided document set (F3), allowing us to observe how the model handles unanswerable queries in both RAG states. No actual performance metrics or accuracy results are being presented or measured (F4).\\n\\nWhat are the key considerations for designing such a comparative sanity check, especially regarding the interpretation of responses when answers are absent?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Propose a hypothetical RAG sanity check methodology. Detail the comparison between RAG on/off using a fixed set of local documents and questions. Highlight the hypothetical nature and lack of actual results. Ask for discussion on designing such a check.\"\n    },\n    {\n      \"title\": \"Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness with Local Docs\",\n      \"body\": \"This is a hypothetical exploration into designing a basic sanity check for Retrieval-Augmented Generation (RAG) systems running locally. The objective is to understand the fundamental impact of the retrieval step itself, without relying on pre-existing performance data.\\n\\nThe proposed experiment involves a corpus of 30 local documents (F1). We would formulate a set of questions and query the LLM twice for each: once with RAG enabled, and once with the retrieval mechanism completely bypassed (F2). This setup allows for a direct, albeit hypothetical, comparison of output quality attributable solely to the retrieval component.\\n\\nIt’s important to emphasize that this scenario is purely theoretical. We acknowledge that some questions within the test set will not have answers present in the document collection (F3). Furthermore, no actual measurements, benchmarks, or accuracy figures are available or implied (F4). The focus is on the experimental design itself.\\n\\nWhat are the critical aspects to consider when designing this type of comparative test, particularly when evaluating the model's handling of queries lacking direct answers in the retrieved context?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Outline a hypothetical RAG evaluation strategy. Describe the process of comparing RAG active vs. inactive states using local documents. Explicitly state the hypothetical nature and absence of real data. Solicit discussion on the design principles, especially for unanswerable questions.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2513,
+      "completion_tokens": 709,
+      "total_tokens": 3222,
+      "cost": 0.0005349,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005349,
+        "upstream_inference_prompt_cost": 0.0002513,
+        "upstream_inference_completions_cost": 0.0002836
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

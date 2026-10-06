@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical troubleshooting with detailed context and code, likely to engage niche audience but limited broad appeal."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "Common beginner question with some spelling errors and informal style, typical of average engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "In-depth hardware discussion with practical cost considerations, likely to attract specialized interest."
+      },
+      {
+        "index": 3,
+        "probability": 0.2,
+        "reason": "Strong opinion on UI design but short and somewhat negative tone, may limit wider engagement."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Practical hardware setup question with some technical detail, moderate interest expected."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Request for benchmarks on GPU PCIe speeds, relevant to enthusiasts but somewhat niche."
+      },
+      {
+        "index": 6,
+        "probability": 0.25,
+        "reason": "User frustration post about delayed hardware order, likely average engagement due to specificity."
+      },
+      {
+        "index": 7,
+        "probability": 0.4,
+        "reason": "Announcement of a large language model with unique features, likely to attract higher interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:29.644345+00:00",
+    "tag": "tune_dev:classifier:E5a_zero_shot:24",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "9636b9b1e5eb879e56744c15f06f04b7d1a38205ae3569f31c16c0b41c9a6c7c",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2370,
+    "output_tokens": 346,
+    "actual_cost_usd": 0.0015016,
+    "token_price_estimate_usd": 0.0015016,
+    "reserved_upper_usd": 0.006208,
+    "budget_charge_usd": 0.0015016,
+    "latency_seconds": 2.529621699999552,
+    "retry": 0,
+    "request_id": "gen-1791100707-iaQpWsm8kqwwlj24PDBk"
+  },
+  "raw_response": {
+    "id": "gen-1791100707-iaQpWsm8kqwwlj24PDBk",
+    "object": "chat.completion",
+    "created": 1791100707,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Technical troubleshooting with detailed context and code, likely to engage niche audience but limited broad appeal.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.25,\n      \"reason\": \"Common beginner question with some spelling errors and informal style, typical of average engagement.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"In-depth hardware discussion with practical cost considerations, likely to attract specialized interest.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.2,\n      \"reason\": \"Strong opinion on UI design but short and somewhat negative tone, may limit wider engagement.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.3,\n      \"reason\": \"Practical hardware setup question with some technical detail, moderate interest expected.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Request for benchmarks on GPU PCIe speeds, relevant to enthusiasts but somewhat niche.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.25,\n      \"reason\": \"User frustration post about delayed hardware order, likely average engagement due to specificity.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.4,\n      \"reason\": \"Announcement of a large language model with unique features, likely to attract higher interest.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2370,
+      "completion_tokens": 346,
+      "total_tokens": 2716,
+      "cost": 0.0015016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015016,
+        "upstream_inference_prompt_cost": 0.000948,
+        "upstream_inference_completions_cost": 0.0005536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

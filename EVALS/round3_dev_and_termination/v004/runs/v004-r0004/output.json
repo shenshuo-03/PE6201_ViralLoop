@@ -1,0 +1,86 @@
+{
+  "topic": "Local LLM performance on MacBook Air M1 (8GB RAM)",
+  "audience": "Users interested in running LLMs on low-spec hardware, AI enthusiasts, developers",
+  "content_archetype": "B",
+  "speaker_role": "community analyst or resource curator; not original author",
+  "source_relationship": "third_party_archive",
+  "source_date": "2025-06-28",
+  "posting_intent": "Informational, sharing benchmark results",
+  "current_context": "The user is seeking to understand the practical performance of various LLMs when run locally on a MacBook Air with 8GB of RAM, based on a third-party benchmark.",
+  "core_value": "Identifying which LLMs perform best and worst on resource-constrained hardware.",
+  "core_hook": {
+    "text": "Discover which LLMs actually work well on a MacBook Air M1 with only 8GB of RAM, as one model took 8 minutes to write a single question.",
+    "fact_refs": [
+      "f1",
+      "f4"
+    ]
+  },
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The benchmark tested 10 LLMs locally on a MacBook Air M1 with 8GB RAM.",
+      "evidence_quote": "I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!)",
+      "status": "author_report"
+    },
+    {
+      "id": "f2",
+      "text": "Quantized versions of models were used with specific Ollama environment variables set.",
+      "evidence_quote": "(All models run with quantized versions, via: os.environ[\"OLLAMA_CONTEXT_LENGTH\"] = \"4096\" and os.environ[\"OLLAMA_KV_CACHE_TYPE\"] = \"q4_0\")",
+      "status": "author_report"
+    },
+    {
+      "id": "f3",
+      "text": "The methodology involved generating questions, answering them, and evaluating the answers across 5 topics.",
+      "evidence_quote": "Each model:\n\n1. Generated 1 question on 5 topics: *Math, Writing, Coding, Psychology, History*\n2. Answered all 50 questions (5 x 10)\n3. Evaluated every answer (including their own)",
+      "status": "author_report"
+    },
+    {
+      "id": "f4",
+      "text": "One model, Qwen3 4B, took 486 seconds (over 8 minutes) to generate a single math question.",
+      "evidence_quote": "Qwen3 4B took 486s (8+ mins) to generate a single Math question!",
+      "status": "author_report"
+    },
+    {
+      "id": "f5",
+      "text": "Gemma3:latest was identified as the best scorer for evaluations, being consistent, numerical, and unbiased.",
+      "evidence_quote": "Best scorer: Gemma3:latest – consistent, numerical, no bias",
+      "status": "author_report"
+    },
+    {
+      "id": "f6",
+      "text": "Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, were noted to overrate their own answers.",
+      "evidence_quote": "Score inflation is real: Mistral, Qwen3, and LLaMA 3.1 8B overrate themselves",
+      "status": "author_report"
+    },
+    {
+      "id": "f7",
+      "text": "Model size does not directly correlate with performance; larger models are not always better.",
+      "evidence_quote": "Model size ≠ performance. Bigger isn't always better.",
+      "status": "author_report"
+    }
+  ],
+  "limitations": [
+    "The benchmark was conducted on a specific hardware configuration (MacBook Air M1, 8GB RAM).",
+    "Results are based on a single user's testing and may not be universally applicable.",
+    "The evaluation of 'quality' is subjective to the author's assessment.",
+    "Specific quantized versions were used, which might differ from other quantization methods."
+  ],
+  "allowed_claims": [
+    "LLMs can be run locally on an M1 MacBook Air with 8GB RAM.",
+    "Performance varies significantly between different LLMs.",
+    "Some models are faster at question generation than others.",
+    "Some models are faster at answer generation than others.",
+    "Model evaluation quality and consistency differ.",
+    "Self-bias in answer evaluation was observed in several models.",
+    "Model size is not the sole determinant of performance."
+  ],
+  "forbidden_claims": [
+    "Claims of personal ownership or direct experience with the tested LLMs.",
+    "Claims that these results are definitive for all hardware or all users.",
+    "Invented usage scenarios or equipment not mentioned in the source.",
+    "Claims of independent verification beyond the author's report.",
+    "Claims about the creator identity of the LLMs or the benchmark author."
+  ],
+  "decision": null,
+  "desired_help": null
+}

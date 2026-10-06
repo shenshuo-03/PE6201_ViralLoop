@@ -5,7 +5,7 @@ semantic scoring; no generator or selection changes may follow this audit.
 """
 from common import *
 from semantic_evaluator import embeddings
-from performance_evaluator import MODEL_DIR
+from performance_evaluator import MODEL_DIR, model_path
 import pandas as pd,numpy as np,pickle
 def main():
     write_json(ROOT/'configs/independent_generation_audit.json',{'at':now(),'auditor':'frozen E4_semantic','purpose':'post-hoc exploratory proxy disagreement check','optimization_feedback_allowed':False,'generator_tuning_allowed':False,'boundary':'second historical model, not true reader feedback'})
@@ -14,7 +14,7 @@ def main():
         for x in r['results']+([r['selected']] if r['selected'] else []):
             draft=x['draft'];k=digest(draft['title']+'\n'+draft['body']);unique[k]={'id':k,'title':draft['title'],'selftext':draft['body']}
     df=pd.DataFrame(unique.values());vectors=embeddings(df)
-    with (MODEL_DIR/'E4_semantic.pkl').open('rb') as f:model=pickle.load(f)
+    with model_path('E4_semantic').open('rb') as f:model=pickle.load(f)
     ps=model.predict_proba(vectors)[:,1];scores=dict(zip(df.id,ps));rows=[];selected=[]
     for r in records:
         for x in r['results']:

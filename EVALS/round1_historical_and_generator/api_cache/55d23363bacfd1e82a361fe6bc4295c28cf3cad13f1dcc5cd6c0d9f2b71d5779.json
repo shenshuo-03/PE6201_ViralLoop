@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.4,
+        "reason": "Technical benchmarking posts with some community interest and practical relevance tend to have moderate engagement; this post is detailed and invites discussion."
+      },
+      {
+        "index": 1,
+        "probability": 0.45,
+        "reason": "Detailed benchmarking and cost/accuracy tradeoff questions on a large OCR project likely attract niche but engaged audience, slightly above average interest."
+      },
+      {
+        "index": 2,
+        "probability": 0.3,
+        "reason": "General discussion about model comparisons without strong novelty or controversy; moderate interest expected."
+      },
+      {
+        "index": 3,
+        "probability": 0.25,
+        "reason": "Simple hardware question with limited scope and less technical depth, likely average engagement."
+      },
+      {
+        "index": 4,
+        "probability": 0.6,
+        "reason": "Opinion post discussing prompt engineering as technical debt with a novel framework and open source tool; likely to attract higher engagement."
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Experience sharing on prompt versioning and schema management is moderately technical but less broadly appealing."
+      },
+      {
+        "index": 6,
+        "probability": 0.5,
+        "reason": "In-depth technical post about optimizing large model setups with detailed script and experimentation; likely to engage technical audience well."
+      },
+      {
+        "index": 7,
+        "probability": 0.4,
+        "reason": "Tutorial-style question about building RAG for codebases is practical and useful, likely to get moderate attention."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:59.898401+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:48",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "55d23363bacfd1e82a361fe6bc4295c28cf3cad13f1dcc5cd6c0d9f2b71d5779",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6180,
+    "output_tokens": 382,
+    "actual_cost_usd": 0.0030832,
+    "token_price_estimate_usd": 0.0030832,
+    "reserved_upper_usd": 0.0119516,
+    "budget_charge_usd": 0.0030832,
+    "latency_seconds": 3.250013199998648,
+    "retry": 0,
+    "request_id": "gen-1791100916-DRnLEnrIWW5xAtywZhLR"
+  },
+  "raw_response": {
+    "id": "gen-1791100916-DRnLEnrIWW5xAtywZhLR",
+    "object": "chat.completion",
+    "created": 1791100916,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.4,\n      \"reason\": \"Technical benchmarking posts with some community interest and practical relevance tend to have moderate engagement; this post is detailed and invites discussion.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.45,\n      \"reason\": \"Detailed benchmarking and cost/accuracy tradeoff questions on a large OCR project likely attract niche but engaged audience, slightly above average interest.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.3,\n      \"reason\": \"General discussion about model comparisons without strong novelty or controversy; moderate interest expected.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.25,\n      \"reason\": \"Simple hardware question with limited scope and less technical depth, likely average engagement.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.6,\n      \"reason\": \"Opinion post discussing prompt engineering as technical debt with a novel framework and open source tool; likely to attract higher engagement.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.35,\n      \"reason\": \"Experience sharing on prompt versioning and schema management is moderately technical but less broadly appealing.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.5,\n      \"reason\": \"In-depth technical post about optimizing large model setups with detailed script and experimentation; likely to engage technical audience well.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.4,\n      \"reason\": \"Tutorial-style question about building RAG for codebases is practical and useful, likely to get moderate attention.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6180,
+      "completion_tokens": 382,
+      "total_tokens": 6562,
+      "cost": 0.0030832,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030832,
+        "upstream_inference_prompt_cost": 0.002472,
+        "upstream_inference_completions_cost": 0.0006112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

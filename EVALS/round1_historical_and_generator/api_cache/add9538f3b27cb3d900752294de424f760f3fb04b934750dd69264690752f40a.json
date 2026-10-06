@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references all key facts (F1-F4). The title matches the content well. The explanation is clear and technical, suitable for the target audience. It preserves the scenario status and necessary caveats about no actual results. The draft is relevant and useful for readers interested in prompt regression testing methodology. The credibility is strong due to explicit caveats and no unsupported claims. The clickbait score is low as the title and body are restrained and factual."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects all provided facts and clearly states the hypothetical nature of the scenario. The title aligns well with the content. The language is clear and technical, appropriate for the audience. It preserves all necessary caveats and does not introduce unsupported claims. The draft is relevant and useful for readers considering prompt regression testing frameworks. The credibility is good due to explicit disclaimers. The clickbait score is minimal as the draft is straightforward and restrained."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft faithfully represents the hypothetical experiment facts and clearly states the absence of measured results. The title matches the body content well. The explanation is clear, technical, and suitable for the intended audience. It preserves the scenario status and necessary caveats. No unsupported claims are made. The draft is relevant and useful for readers interested in prompt regression testing methodology. Credibility is maintained by explicit disclaimers. The clickbait score is low due to restrained and factual presentation."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:12:21.374622+00:00",
+    "tag": "final_test:T06:O1_resample:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "add9538f3b27cb3d900752294de424f760f3fb04b934750dd69264690752f40a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1212,
+    "output_tokens": 596,
+    "actual_cost_usd": 0.0014384,
+    "token_price_estimate_usd": 0.0014383999999999998,
+    "reserved_upper_usd": 0.0053284,
+    "budget_charge_usd": 0.0014384,
+    "latency_seconds": 4.4552048000041395,
+    "retry": 0,
+    "request_id": "gen-1791101537-D0d8oZOZUhFTzDYrQ6YC"
+  },
+  "raw_response": {
+    "id": "gen-1791101537-D0d8oZOZUhFTzDYrQ6YC",
+    "object": "chat.completion",
+    "created": 1791101537,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly references all key facts (F1-F4). The title matches the content well. The explanation is clear and technical, suitable for the target audience. It preserves the scenario status and necessary caveats about no actual results. The draft is relevant and useful for readers interested in prompt regression testing methodology. The credibility is strong due to explicit caveats and no unsupported claims. The clickbait score is low as the title and body are restrained and factual.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects all provided facts and clearly states the hypothetical nature of the scenario. The title aligns well with the content. The language is clear and technical, appropriate for the audience. It preserves all necessary caveats and does not introduce unsupported claims. The draft is relevant and useful for readers considering prompt regression testing frameworks. The credibility is good due to explicit disclaimers. The clickbait score is minimal as the draft is straightforward and restrained.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft faithfully represents the hypothetical experiment facts and clearly states the absence of measured results. The title matches the body content well. The explanation is clear, technical, and suitable for the intended audience. It preserves the scenario status and necessary caveats. No unsupported claims are made. The draft is relevant and useful for readers interested in prompt regression testing methodology. Credibility is maintained by explicit disclaimers. The clickbait score is low due to restrained and factual presentation.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1212,
+      "completion_tokens": 596,
+      "total_tokens": 1808,
+      "cost": 0.0014384,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014384,
+        "upstream_inference_prompt_cost": 0.0004848,
+        "upstream_inference_completions_cost": 0.0009536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112871-v0x6pXBjUM8Xf0D5dWEE",
+  "object": "chat.completion",
+  "created": 1791112871,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts correctly ground themselves in F1–F2 and acknowledge uncertainty appropriately. Draft A frames the discussion around a 'tradeoff' between integrated vs. modular approaches but doesn't substantiate this distinction from the brief—it's interpretive framing not grounded in the source author's stated reasoning. Draft B stays closer to the source: it reports the transition as 'quicker and easier than expected' (directly from F1) and explicitly flags the missing hardware/performance data as a limitation before asking for community input. Draft B's closing question ('stability, ease of model management, inference speed') maps more directly to what the community could actually discuss based on the source (model management via llama-swap per F3, frontend configuration per F4), whereas Draft A's 'setup complexity and model compatibility' are broader and less anchored to the reported experience. Both avoid forbidden claims, but Draft B better preserves the source author's actual observation (ease of transition) rather than introducing an unsupported 'tradeoff' framing. Neither references F3–F5, which limits both, but Draft B's tighter adherence to stated facts and more concrete question design makes it more likely to elicit relevant community responses.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2068,
+    "completion_tokens": 342,
+    "total_tokens": 2410,
+    "cost": 0.003778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003778,
+      "upstream_inference_prompt_cost": 0.002068,
+      "upstream_inference_completions_cost": 0.00171
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

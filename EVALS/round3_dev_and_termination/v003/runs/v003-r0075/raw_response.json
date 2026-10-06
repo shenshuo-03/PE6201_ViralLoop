@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118958-Kaog1eqRK2Zd2K7SLOgy",
+  "object": "chat.completion",
+  "created": 1791118958,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A flows more naturally with concrete framing ('slight NER edge', 'negligible considering gaps') and stronger rhetorical momentum. Draft B repeats 'hypothetical' excessively and adds redundant clarification ('controlled hypothetical evaluation') that weakens community voice. Both are factually sound and publishable, but A better serves r/LocalLLaMA's preference for direct, pragmatic decision-framing.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3209,
+    "completion_tokens": 166,
+    "total_tokens": 3375,
+    "cost": 0.004039,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004039,
+      "upstream_inference_prompt_cost": 0.003209,
+      "upstream_inference_completions_cost": 0.00083
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

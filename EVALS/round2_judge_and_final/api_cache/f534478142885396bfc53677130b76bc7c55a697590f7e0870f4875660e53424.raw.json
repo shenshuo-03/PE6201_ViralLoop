@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112524-w2a7oupulwyV7kzeYKHr",
+  "object": "chat.completion",
+  "created": 1791112524,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 0 accurately reflects the source and brief. It correctly states the benchmark's purpose, methodology, and initial findings, including the leading model (Gemini 2.5 Pro). It also appropriately includes essential caveats about the preliminary nature of the tests and potential limitations, such as suboptimal parameters. The draft poses relevant questions for the community, enhancing its fit and usefulness. Specificity is good, referencing the benchmark, models, and context size. Information value is high due to the organized presentation and relevant questions. Clarity and usefulness are excellent. Credibility is good as it sticks to reported data and acknowledges limitations. Clickbait is minimal.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 is a strong summary of the source and brief. It accurately describes FamilyBench, its testing methodology, and initial results, highlighting Gemini 2.5 Pro's performance. Crucially, it incorporates essential caveats regarding the testing parameters and the preliminary nature of the benchmark. The draft poses pertinent questions to the community about performance factors and benchmark evolution, aligning well with the brief's goals. Specificity is good, mentioning the benchmark, models, and context. Information value is high due to the structured discussion and community-focused questions. Clarity and usefulness are excellent. Credibility is good as it relies on source data and acknowledges limitations. Clickbait is minimal.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3728,
+    "completion_tokens": 552,
+    "total_tokens": 4280,
+    "cost": 0.0005936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005936,
+      "upstream_inference_prompt_cost": 0.0003728,
+      "upstream_inference_completions_cost": 0.0002208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

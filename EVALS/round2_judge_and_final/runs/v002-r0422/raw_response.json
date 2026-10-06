@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112703-Keh5LhkXTqSLT1fCaz5U",
+  "object": "chat.completion",
+  "created": 1791112703,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Introduce the topic of advanced model architectures and their local execution.\",\n  \"information_order\": [\n    \"Discuss the structural differences and similarities between various model types, focusing on their component arrangements.\",\n    \"Explain how these architectural choices influence resource utilization and performance characteristics.\",\n    \"Address the practical challenges of deploying and running these models on local hardware.\",\n    \"Inquire about methods for estimating resource needs and optimizing model selection for specific tasks.\"\n  ],\n  \"evidence_style\": \"Comparative analysis of architectural features and observed resource usage.\",\n  \"question_or_cta\": \"Seek advice on estimating model memory requirements and optimizing local execution strategies.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The presence and arrangement of specialized processing units.\",\n    \"The concept of shared versus distinct components.\",\n    \"The impact of architectural design on memory and processing demands.\"\n  ],\n  \"common_weaknesses\": [\n    \"Difficulty in accurately predicting memory consumption based solely on model size.\",\n    \"Performance limitations when exceeding available dedicated hardware resources.\",\n    \"Uncertainty regarding the optimal configuration for specific use cases.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1829,
+    "completion_tokens": 258,
+    "total_tokens": 2087,
+    "cost": 0.0002861,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002861,
+      "upstream_inference_prompt_cost": 0.0001829,
+      "upstream_inference_completions_cost": 0.0001032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

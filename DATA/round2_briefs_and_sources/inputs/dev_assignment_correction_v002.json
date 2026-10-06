@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-04T10:36:27.594178+00:00",
+  "reason": "S01/S02 were exposed as naturalness previews; no longer untouched Selection. Repair before any formal generator comparison and without opening sealed Final.",
+  "naturalness_only": [
+    "D02",
+    "S02"
+  ],
+  "tune_ids": [
+    "D01",
+    "D03",
+    "D04",
+    "S01"
+  ],
+  "new_selection": [
+    {
+      "brief_id": "S03",
+      "source_group_id": "reddit:1khsinw",
+      "id": "1khsinw",
+      "split": "selection",
+      "content_type": "Question / Troubleshooting",
+      "source_date": "1746717075",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/",
+      "prepared_at": "2026-10-04T10:36:27.588175+00:00",
+      "historical_split": "train",
+      "source_hash": "f24def43fceeead5a8ca5f8a68450c69c6ed9477e40af43f33453413c2552b97"
+    },
+    {
+      "brief_id": "S04",
+      "source_group_id": "reddit:1lkbit7",
+      "id": "1lkbit7",
+      "split": "selection",
+      "content_type": "Discussion / Opinion",
+      "source_date": "1750871632",
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lkbit7/tts_for_short_dialogs/",
+      "prepared_at": "2026-10-04T10:36:27.594178+00:00",
+      "historical_split": "train",
+      "source_hash": "8b739be5d4ebdc910d6c9922ea406438c64f4a5c5a852fd6a6da51340edb8356"
+    }
+  ],
+  "formal_dev_count": 6,
+  "additional_naturalness_only_count": 2,
+  "final_unchanged": true
+}

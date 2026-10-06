@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112420-ehezZaNUbSnJyAtsEB46",
+  "object": "chat.completion",
+  "created": 1791112420,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"The draft accurately reflects the source's intent and constraints, focusing on in-browser LLM inference for JSON to Chart.js configuration. It correctly identifies the core problem and seeks community input without making unsupported claims. The specificity is good, mentioning the core task and the desire for lightweight, client-side solutions. The information value is high as it directly asks for practical advice relevant to the source's query. Clarity and usefulness are excellent, and credibility is maintained by adhering to the source's information and limitations.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"This draft also accurately captures the essence of the source, focusing on in-browser LLM inference for Chart.js config generation from JSON. It highlights the key constraints and seeks practical advice from the community. The specificity is good, mentioning the task and the need for lightweight, client-side tools. The information value is high, as it directly asks for relevant experiences and recommendations. Clarity, usefulness, and credibility are all strong, adhering well to the source's original query and limitations.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2703,
+    "completion_tokens": 421,
+    "total_tokens": 3124,
+    "cost": 0.0004387,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004387,
+      "upstream_inference_prompt_cost": 0.0002703,
+      "upstream_inference_completions_cost": 0.0001684
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

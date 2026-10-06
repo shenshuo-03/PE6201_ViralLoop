@@ -1,0 +1,34 @@
+{
+  "drafts": [
+    {
+      "title": "Handling Media-Heavy and JavaScript-Only Sites in Offline HTML-to-Markdown with Local LLMs",
+      "body": "A mid-2025 project uses local LLMs (Qwen2.5-7B/8B with llama.cpp) to convert HTML pages to Markdown offline, aiming to outperform tools like Readability. The approach analyzes a page’s content type and structure using BeautifulSoup, then generates tailored extraction strategies with the LLM. While this works well on typical article or blog pages, it struggles with media-heavy or JavaScript-only sites without browser rendering. Given these limitations, what practical methods have others found to improve extraction quality for such complex sites in a fully offline environment? Is it feasible to enhance content capture without embedding a browser engine, or does offline processing inherently require some hybrid approach? Insights on balancing offline constraints with extraction fidelity would be helpful.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F6"
+      ]
+    },
+    {
+      "title": "Optimizing Offline HTML-to-Markdown Extraction with Local LLMs: Strategies for Difficult Web Content?",
+      "body": "An archived 2025 effort uses local LLMs on consumer GPUs to convert HTML to Markdown offline, leveraging structural heuristics and AI-generated extraction rules. The tool scores well on standard text-focused pages but faces challenges with media-heavy or SPA-driven sites due to lack of browser rendering. The script uses BeautifulSoup to identify key content and framework fingerprints before the LLM proposes JSON extraction strategies. What approaches might help improve handling of dynamic or media-centric content without sacrificing offline operation? Are there known heuristics or preprocessing steps that can better approximate rendered content for the LLM to work from? Practical tips on enhancing extraction quality or evaluation methods beyond AI scoring would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F6"
+      ]
+    },
+    {
+      "title": "Improving Offline HTML-to-Markdown Conversion Using Local LLMs: Addressing Performance and Content Challenges",
+      "body": "A 2025 project runs local LLMs like Qwen2.5-7B/8B via llama.cpp on GPUs to convert HTML pages offline into Markdown. It uses BeautifulSoup to analyze page structure and content type, then the LLM generates extraction strategies and scores output quality. While it achieves good results on typical articles, it struggles with media-heavy or JavaScript-only pages without browser rendering. Additionally, batch processing speed could be improved for large-scale use. For those working with local LLMs on similar tasks, what are effective ways to optimize throughput and improve extraction on complex sites? Are there tradeoffs in model size, quantization, or pre-extraction heuristics that significantly impact quality or speed?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F6",
+        "F7"
+      ]
+    }
+  ]
+}

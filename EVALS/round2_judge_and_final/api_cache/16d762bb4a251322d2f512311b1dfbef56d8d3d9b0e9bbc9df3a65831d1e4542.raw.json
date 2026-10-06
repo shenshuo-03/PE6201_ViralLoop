@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791113053-Wqxe1iJsI01vXGLPlkQl",
+  "object": "chat.completion",
+  "created": 1791113053,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"task_zh\": \"为在多 GPU AMD 设置上运行大型语言模型的最高效 VRAM 后端和最佳配置寻求建议，以最大化输出速度/吞吐量。\",\n  \"A\": {\n    \"title\": \"多 GPU AMD LLM 推理：Gemma3:27b 和 Qwen3 32B 的最佳后端、量化和配置技巧？\",\n    \"body\": \"我正在使用一个 AMD 多 GPU 配置（2x RX 7900 XTX + 1x RX 7800 XT，总共 64GB VRAM），探索 Gemma3:27b 和 Qwen3 32B 的推理选项。之前在较旧模型上使用 VLLM 和 llama.cpp 后端进行的实验显示每秒 token 数差异很小，因此我正在寻找关于哪个后端现在表现最佳的更具针对性的建议。有人在类似的 AMD 硬件上测试过 4 位或 8 位量化方法（如 GPTQ、AWQ 或 GGUF）吗？如何有效地处理这些大型模型的多 GPU 利用率？也对任何能提高速度或吞吐量的首选推理框架或配置细节感兴趣。由于现有报告缺乏 ROCm/驱动程序版本和详细设置的信息，分享您的经验可以真正帮助阐明此特定 AMD 多 GPU 环境的最佳方法。\",\n    \"fact_refs\": [\n      \"F1\",\n      \"F2\",\n      \"F3\",\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"B\": {\n    \"title\": \"在多 GPU AMD 设置上，Gemma3:27b 和 Qwen3 32B 的 VLLM 和 llama.cpp 之间如何选择？\",\n    \"body\": \"我偶然发现了一篇 2025 年的 Reddit 帖子，其中一位用户拥有两块 RX 7900 XTX 和一块 RX 7800 XT（总共约 64GB VRAM），使用 VLLM 和 llama.cpp 后端测试了 Gemma3:27b 和 Qwen3 32B 的推理速度。他们的数据有点过时，并且特定于他们的设置，但它暗示了这些后端在 AMD 硬件上的显著速度差异。\\n\\n考虑到性能可能因模型大小、GPU 架构和后端优化而异，最近有人在类似的 AMD 多 GPU 配置上比较过 VLLM 和 llama.cpp 吗？具体来说，哪个后端处理这些大型模型更快或更有效？关于 VRAM 在这些卡之间的分布如何影响选择的任何见解都会有帮助。\",\n    \"fact_refs\": [\n      \"F1\",\n      \"F2\"\n    ]\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 622,
+    "completion_tokens": 598,
+    "total_tokens": 1220,
+    "cost": 0.0003014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003014,
+      "upstream_inference_prompt_cost": 6.22e-05,
+      "upstream_inference_completions_cost": 0.0002392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

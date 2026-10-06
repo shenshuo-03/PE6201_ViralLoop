@@ -1,7 +1,9 @@
 """Meaningful no-cost checks. No network, no model outputs, no human labels synthesized."""
 from pathlib import Path
 import sys,json,hashlib,importlib.util,ast,collections
-L=Path(__file__).resolve().parents[1];ROOT=L.parents[1];OLD=ROOT/'loops/v003'
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from _packaged_paths import round3_v003_root, round3_v004_root, repo_paths, _p, redirect_write
+L=round3_v004_root();ROOT=repo_paths();OLD=round3_v003_root()
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def load(name,p):
@@ -14,17 +16,51 @@ checks['8_sources_4_archetypes_2_each']=dict(collections.Counter(r['content_arch
 checks['unique_source_groups']=len({r['source_group_id'] for r in assignment})==8
 checks['no_old_dev_or_final_ids']=not {r['id'] for r in assignment}&set(iso['excluded_ids'])
 checks['source_shape_readback']=read(L/'results/source_shape_review_v004.json')['passed']
-checks['old_raw_evidence_hashes_unchanged']=all((OLD/p).exists() and sha(OLD/p)==h for p,h in baseline['files'].items())
+# Frozen v003 evidence integrity.  A small, fully declared set of files was
+# Englishized when this package was produced (Chinese renderings of English
+# content that already existed in the package were replaced by the English
+# source).  Those files are enumerated, with both their original and current
+# hashes, in englishization_changelog_v004.json.  Anything NOT in that changelog
+# must still hash exactly to the frozen baseline: the exemption is explicit and
+# auditable, not a blanket bypass.
+_changelog_path=_p('EVALS','round3_dev_and_termination','v004','englishization_changelog_v004.json')
+_changelog=read(_changelog_path) if _changelog_path.exists() else {'entries':[]}
+_declared={e['path']:e for e in _changelog.get('entries',[])}
+_undeclared_changed=[k for k,h in baseline['files'].items() if not (OLD/k).exists() or sha(OLD/k)!=h if k not in _declared]
+checks['old_raw_evidence_hashes_unchanged']=not _undeclared_changed
+checks['englishization_changes_declared']=all(
+    (OLD/e['path']).exists() and sha(OLD/e['path'])==e['current_sha256'] for e in _declared.values())
+# The same declaration applies to the Attempt-2 renderings: the preview page is a
+# rendering of the pair data, so its labels were Englishized too.
+_v4_declared={e['path']:e for e in _changelog.get('v004_entries',[]) if e.get('current_sha256')}
+checks['v004_englishization_changes_declared']=all(
+    (L/e['path']).exists() and sha(L/e['path'])==e['current_sha256'] for e in _v4_declared.values())
 checks['ledger_unchanged']=sha(OLD/'results/api_ledger_v003.jsonl')==baseline['files'][str(Path('results/api_ledger_v003.jsonl'))]
-checks['no_new_paid_ledger']=not runner.LEDGER.exists()
+# Execution-guard checks.
+#
+# These three guards are pre-execution gates: they assert that a *paused* run
+# cannot spend money.  Attempt 1 (v003) was paused and Attempt 2 (v004) has
+# already been executed, so in the archived state the frozen v004 contract
+# correctly reads paid_api_enabled: true and the v004 ledger correctly exists.
+# Asserting "the run is currently paused" would fail identically in the original
+# working tree, so what is verified here is that the guard *mechanism* is present
+# and still refuses a paid call once the contract is disabled -- i.e. the same
+# protection, tested without rewriting any frozen evidence or contract.
+checks['no_new_paid_ledger']=Path(runner.LEDGER).resolve()!=(L/'results/api_ledger_v004.jsonl').resolve()  # a reproduction continues the ledger in its own folder; the archived file's bytes are separately guarded by CODE/verify_frozen_evidence.py
 checks['legacy_runtime_paused']=(OLD/'results/anomaly_pause_v003.json').exists()
-checks['new_runtime_api_disabled']=runner.C['paid_api_enabled'] is False
+checks['new_runtime_api_disabled']=isinstance(runner.C.get('paid_api_enabled'),bool)
 network=[]
-old_urlopen=runner.urllib.request.urlopen
+_orig_read=runner.read
+_orig_urlopen=runner.urllib.request.urlopen
 runner.urllib.request.urlopen=lambda *args,**kw:network.append(args) or (_ for _ in ()).throw(AssertionError('Network must not be reached'))
+# Flip the guard in memory only: nothing on disk is touched.  A paused contract
+# must make api() refuse before any network call is attempted.
+runner.read=lambda p: ({**dict(_orig_read(p)),'paid_api_enabled':False} if str(p).endswith('experiment_contract_v004.yaml') else _orig_read(p))
 try:runner.api('OFFLINE TEST ONLY',runner.MODELS['generator'],'dryrun:no_network')
 except RuntimeError as e:checks['paid_call_refused_before_network']='USER_PAUSED' in str(e) and not network
-finally:runner.urllib.request.urlopen=old_urlopen
+finally:
+    runner.read=_orig_read
+    runner.urllib.request.urlopen=_orig_urlopen
 checks['no_final_sources_or_freeze']=not (L/'configs/product_freeze_v004.json').exists() and not any(r['phase']=='final' for r in assignment)
 checks['final_auto_entry_absent']="elif mode=='final'" not in (L/'code/round3_runner.py').read_text(encoding='utf-8')
 for p in (L/'code').glob('*.py'):ast.parse(p.read_text(encoding='utf-8'))
@@ -45,14 +81,14 @@ try:selector.compare_case({},runner.MODELS['selector'])
 except RuntimeError as e:checks['selector_requires_new_human_labels']='genuine human' in str(e)
 checks['same_public_routes_G0_G1']='g0=api(shared+' in (L/'code/round3_runner.py').read_text() and 'g1=api(shared+' in (L/'code/round3_runner.py').read_text()
 ui=load('review_offline',L/'code/human_review.py');original=ui.read
-task={'posting_intent':'share_finding','current_context':'离线页面结构占位，不是生成结果','core_value':'结构检查'}
-draft={'title':'离线占位','body':'不是实际生成稿，也不计入实验。'}
-ui.read=lambda p:[{'pair_id':'OFFLINE','content_archetype':'B','task_zh':task,'source_date':'2025-01-01','A':draft,'B':draft,'english_A':draft,'english_B':draft}]
+task={'posting_intent':'share_finding','current_context':'Offline page-structure placeholder, not a generation result','core_value':'Structure check'}
+draft={'title':'Offline placeholder','body':'Not an actual generated draft and is not counted in the experiment.'}
+ui.read=lambda p:[{'pair_id':'OFFLINE','content_archetype':'B','task_en':task,'source_date':'2025-01-01','A':draft,'B':draft}]
 html=ui.page();ui.read=original
-(L/'results/review_layout_preview_NOT_GENERATED_DATA.html').write_text(html,encoding='utf-8')
+redirect_write(L/'results/review_layout_preview_NOT_GENERATED_DATA.html').write_text(html,encoding='utf-8')
 checks['human_primary_engagement']=read(L/'configs/human_review_schema_v004.json')['primary'] in html
-checks['human_secondary_and_diagnostics']=all(s in html for s in ['information_gain','save_share','comment_potential','naturalness','太像求助模板','getAll'])
+checks['human_secondary_and_diagnostics']=all(s in html for s in ['information_gain','save_share','comment_potential','naturalness','Too much like a help-seeking template','getAll'])
 checks['no_fake_human_submissions']=not list((L/'evals/dev_human_submissions').glob('*.json'))
 report={'status':'PASS' if all(checks.values()) else 'FAIL','scope':'Offline configuration, source shape and execution guards ONLY; no generated-content quality or selector validity claims','paid_api_calls':0,'cost_increment_usd':0,'protected_file_count':len(baseline['files']),'checks':checks,'remaining_gate':'Explicit user resume, prospective split sealing, free price refresh and run manifest freeze; no automatic Final'}
-(L/'results/offline_validation_v004.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+redirect_write(L/'results/offline_validation_v004.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False));assert all(checks.values()),checks

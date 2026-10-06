@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101254-vncKyQNOF1su564m8pWL",
+  "object": "chat.completion",
+  "created": 1791101254,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly references the synthetic facts (F1, F2, F3). It preserves the scenario status and necessary caveats about no actual measurements or quality/throughput data. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the explicit disclaimers, though usefulness is moderate since it only illustrates potential memory scaling without actionable benchmarks or guidance.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all necessary caveats about the lack of real measurements and quality/throughput data. The title aligns well with the body content. The writing is clear and restrained, appropriate for the technical audience. It is relevant and credible, but usefulness is moderate due to the absence of concrete results or actionable recommendations.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 949,
+    "completion_tokens": 378,
+    "total_tokens": 1327,
+    "cost": 0.0009844,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009844,
+      "upstream_inference_prompt_cost": 0.0003796,
+      "upstream_inference_completions_cost": 0.0006048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

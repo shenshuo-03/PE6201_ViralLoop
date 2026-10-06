@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Can local LLMs reliably convert HTML to Markdown offline using BeautifulSoup for content extraction?",
+        "body": "A user in a 2025 Reddit thread described a project that uses local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools especially on complex, text-heavy sites. The approach involves first analyzing whether a site is text-focused or media-centric and then using BeautifulSoup to extract key content areas like titles and headings before feeding that to the model.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this method handles modern web apps with dynamic or JavaScript-heavy content. Does the BeautifulSoup-based extraction limit the quality of Markdown output when the actual main content is loaded asynchronously? Has anyone experimented with combining offline LLMs and static HTML parsing to improve Markdown accuracy on such tricky sites?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "How effective is offline HTML-to-Markdown conversion using local LLMs and BeautifulSoup heuristics?",
+        "body": "A 2025 post shared a script that tries to convert HTML web pages to Markdown offline using local LLMs, with a preliminary step that classifies sites as text- or media-focused. It uses BeautifulSoup to identify candidate content areas and headings before passing them to the model, aiming to outperform traditional tools on complex sites.\n\nSince this relies on static HTML analysis without browser rendering, it seems limited on sites that load content dynamically or emphasize media. For those interested in offline workflows, is this approach practical for reliably extracting main text content? How do others handle the challenge of sites where the HTML source alone doesn’t reflect the fully rendered content?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0259",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:49.160680+00:00",
+    "tag": "V2:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d653912e10ae1ffe1987b017c80ead7122d06471543e45f3a30c3a7a13b27d6d",
+    "actual_cost_usd": 0.0010948,
+    "budget_charge_usd": 0.0010948,
+    "reserved_upper_usd": 0.0059592,
+    "input_tokens": 1297,
+    "output_tokens": 360,
+    "latency_seconds": 4.95760560000781,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112124-qBVgdr1CgD9JVj25nd8z",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

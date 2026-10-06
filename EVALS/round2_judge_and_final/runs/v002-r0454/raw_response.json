@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112867-xk8MBpVbotGWZKRlXKxC",
+  "object": "chat.completion",
+  "created": 1791112867,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts accurately cite F1 and F2 without inventing details. Draft A frames the question narrowly around viability as a replacement, asking for comparative insights on stability/speed/model management. Draft B explicitly names the tradeoff (integrated vs. modular) and positions the question around practical challenges and compatibility—directly addressing the brief's goal of understanding \\\"concrete issues and benefits.\\\" Draft B's framing of \\\"main tradeoff\\\" provides more actionable context for community discussion, whereas Draft A's open-ended comparison questions are less anchored to the source author's actual reported experience (ease of transition, model location flexibility). Both acknowledge missing hardware/performance data appropriately. Draft B better motivates why the community should engage by surfacing the architectural difference, making it more concrete for local LLM enthusiasts evaluating alternatives.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2068,
+    "completion_tokens": 258,
+    "total_tokens": 2326,
+    "cost": 0.003358,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003358,
+      "upstream_inference_prompt_cost": 0.002068,
+      "upstream_inference_completions_cost": 0.00129
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

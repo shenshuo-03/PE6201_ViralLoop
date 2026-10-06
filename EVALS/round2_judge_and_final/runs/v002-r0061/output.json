@@ -1,0 +1,75 @@
+{
+  "brief": {
+    "topic": "SmolLM3 Model Performance and MistralRS Integration",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discuss the capabilities and integration of the SmolLM3 model with the MistralRS framework, based on archived user observations.",
+    "context": "An archived Reddit post from July 8, 2025, announces day-0 support for the SmolLM3 model within the MistralRS framework. The post details the model's specifications and MistralRS features.",
+    "motivation": "Understanding the reported performance and features of new models like SmolLM3 when integrated with frameworks like MistralRS is valuable for enthusiasts exploring local LLM deployments.",
+    "desired_response": "A discussion about the reported 'SoTA 3B model' status, its reasoning capabilities, context window, and performance metrics, as well as the features offered by MistralRS for running such models.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The SmolLM3 model is described as a state-of-the-art 3 billion parameter model.",
+        "evidence_quote": "It's a **SoTA 3B model**",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "SmolLM3 is noted for its hybrid reasoning capabilities.",
+        "evidence_quote": "hybrid **reasoning**",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "The model reportedly supports a 128,000 token context window.",
+        "evidence_quote": "128k context",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "The source author observed a performance of 105 tokens per second with AFQ4 on an M3 Max.",
+        "evidence_quote": "Hits ⚡105 T/s withAFQ4 @ M3 Max.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "MistralRS includes features such as a built-in MCP client and an OpenAI HTTP server.",
+        "evidence_quote": "Builtin MCP client\n* OpenAI HTTP server",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "MistralRS offers full multimodal inference capabilities for image, audio, and text.",
+        "evidence_quote": "Full multimodal inference engine (**in**: image, audio, text in, **out:** image, audio, text).",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "SmolLM3 is a 3B parameter model.",
+      "SmolLM3 has hybrid reasoning.",
+      "SmolLM3 supports a 128k context window.",
+      "MistralRS offers multimodal inference.",
+      "MistralRS provides an OpenAI HTTP server."
+    ],
+    "forbidden_claims": [
+      "The performance metrics are independently verified.",
+      "The model's reasoning capabilities are universally proven.",
+      "The context window size is guaranteed across all hardware.",
+      "MistralRS is the only framework supporting SmolLM3.",
+      "The user personally ran these tests."
+    ],
+    "essential_limitations": [
+      "The specific hardware configuration for the observed 105 T/s is mentioned (M3 Max with AFQ4), but actual user hardware may vary.",
+      "The 'day-0 support' implies immediate availability upon release, but actual implementation stability may evolve.",
+      "The multimodal capabilities are stated but not detailed in terms of specific performance or limitations."
+    ],
+    "missing_information": [
+      "Details on the specific implementation of 'hybrid reasoning'.",
+      "Information on the training data or methodology for SmolLM3.",
+      "Further benchmarks or comparisons with other models.",
+      "Specifics on the 'multi-device backend' mentioned for future MistralRS development."
+    ]
+  },
+  "corrections": []
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical question on hardware for OCR AI with moderate similarity to a high-class example; likely niche but practical interest."
+      },
+      {
+        "index": 1,
+        "probability": 0.4,
+        "reason": "Discussion about a novel open-source AI-native workflow tool with some similarity to a high-class example about minimal LLM frameworks; likely to attract interest."
+      },
+      {
+        "index": 2,
+        "probability": 0.25,
+        "reason": "General discussion on local LLMs for creative writing, similar to a high-class research app post but less technical; moderate interest expected."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "Discussion about hardware setup for local LLMs with some similarity to a high-class post on laptop LLM performance; practical but niche."
+      },
+      {
+        "index": 4,
+        "probability": 0.35,
+        "reason": "Technical question on quantization effects in specific models, similar to a high-class post on hardware investment regret; likely moderate interest."
+      },
+      {
+        "index": 5,
+        "probability": 0.45,
+        "reason": "Guide on running LLMs everywhere with zero conversion, similar to a high-class beginner walkthrough; likely to be well received."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Experience post on voice AI evaluation challenges, with some similarity to a high-class technical issue post; niche but valuable."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Technical question on configuring hardware for high-performance LLM quantization, similar to a high-class post on llama.cpp optimization; niche technical interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:02:30.970899+00:00",
+    "tag": "final_test:classifier:E5c_retrieval:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "834863fac8111b1ad18b3b4777629029c2b869289bd962a5821a6bec44152cee",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5656,
+    "output_tokens": 425,
+    "actual_cost_usd": 0.0029424,
+    "token_price_estimate_usd": 0.0029424,
+    "reserved_upper_usd": 0.0112448,
+    "budget_charge_usd": 0.0029424,
+    "latency_seconds": 3.139466699998593,
+    "retry": 0,
+    "request_id": "gen-1791100948-Er2XhrKog11XwGasz68f"
+  },
+  "raw_response": {
+    "id": "gen-1791100948-Er2XhrKog11XwGasz68f",
+    "object": "chat.completion",
+    "created": 1791100948,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Technical question on hardware for OCR AI with moderate similarity to a high-class example; likely niche but practical interest.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.4,\n      \"reason\": \"Discussion about a novel open-source AI-native workflow tool with some similarity to a high-class example about minimal LLM frameworks; likely to attract interest.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.25,\n      \"reason\": \"General discussion on local LLMs for creative writing, similar to a high-class research app post but less technical; moderate interest expected.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.3,\n      \"reason\": \"Discussion about hardware setup for local LLMs with some similarity to a high-class post on laptop LLM performance; practical but niche.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.35,\n      \"reason\": \"Technical question on quantization effects in specific models, similar to a high-class post on hardware investment regret; likely moderate interest.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.45,\n      \"reason\": \"Guide on running LLMs everywhere with zero conversion, similar to a high-class beginner walkthrough; likely to be well received.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.3,\n      \"reason\": \"Experience post on voice AI evaluation challenges, with some similarity to a high-class technical issue post; niche but valuable.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.3,\n      \"reason\": \"Technical question on configuring hardware for high-performance LLM quantization, similar to a high-class post on llama.cpp optimization; niche technical interest.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5656,
+      "completion_tokens": 425,
+      "total_tokens": 6081,
+      "cost": 0.0029424,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029424,
+        "upstream_inference_prompt_cost": 0.0022624,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

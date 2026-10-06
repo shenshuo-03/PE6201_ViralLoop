@@ -1,0 +1,324 @@
+{
+  "at": "2026-10-04T08:09:08.191944+00:00",
+  "topic": {
+    "id": "T03",
+    "split": "final_test",
+    "topic": "Hypothetical local inference speed: what the numbers do not show",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Two hypothetical runtimes achieve 18 and 24 tokens per second.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The hypothetical test uses one prompt on the same machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Time to first token and answer quality were not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The sample does not establish a universal winner.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G4_both",
+  "generation_usage": {
+    "at": "2026-10-04T08:09:04.662635+00:00",
+    "tag": "final_test:T03:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "eaf708a4cf341923c6bcc87d97367c9e0efc0ba81b58df7180a42a7045af8655",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3710,
+    "output_tokens": 636,
+    "actual_cost_usd": 0.0006254,
+    "token_price_estimate_usd": 0.0006253999999999999,
+    "reserved_upper_usd": 0.0019401999999999998,
+    "budget_charge_usd": 0.0006254,
+    "latency_seconds": 3.496691099993768,
+    "retry": 0,
+    "request_id": "gen-1791101341-mcHIbdvBjhkGNNCeDOsE"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:09:08.179738+00:00",
+    "tag": "final_test:T03:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "14486a8003de3e5091f04d961a0ff6cf1e78448ae4a8f9101e87d065924cdd6e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1066,
+    "output_tokens": 428,
+    "actual_cost_usd": 0.0011112,
+    "token_price_estimate_usd": 0.0011112,
+    "reserved_upper_usd": 0.0049851999999999995,
+    "budget_charge_usd": 0.0011112,
+    "latency_seconds": 3.474592799990205,
+    "retry": 0,
+    "request_id": "gen-1791101344-vnRNJy1MesBbGme5Kp88"
+  },
+  "retrieved_ids": [
+    "1iva9w5",
+    "1lreu44",
+    "1ijxefw",
+    "1megdy9",
+    "1jpohf2"
+  ],
+  "pattern_ids": [
+    "concrete_title__Experience / Benchmark",
+    "numbers_early__Experience / Benchmark",
+    "personal_early__Experience / Benchmark",
+    "link_present__Experience / Benchmark"
+  ],
+  "prompt_sha256": "d411852558d61d7232e3c2c9502ba9c1fa15f0a78326fb40d14429dfb263dda2",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Local Inference Speed: Beyond Raw Tokens/Second",
+        "body": "This post discusses a hypothetical local inference scenario involving two configurations, achieving 18 and 24 tokens per second (t/s) respectively on the same machine with a single prompt. While these numbers offer a basic performance indicator, they represent only one facet of practical usability. Crucially, this hypothetical test did not measure time to first token (TTFT) or the quality of the generated answers. A model with higher t/s might still feel sluggish if TTFT is high, or if the output requires significant revision due to poor quality. Furthermore, the observed difference does not establish a universal winner; performance can vary greatly with different prompts, system loads, and model architectures. These synthetic figures are intended to highlight the limitations of raw t/s metrics and prompt a discussion on what other factors users consider essential for a responsive local LLM experience.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Discuss hypothetical inference speeds, emphasizing limitations beyond raw t/s. Highlight that TTFT and answer quality were not measured in this hypothetical scenario. Conclude by noting this doesn't establish a universal winner and invite discussion on other important performance factors."
+      },
+      "performance_score": 0.2397010318596229,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references the synthetic token per second figures accurately. It explicitly notes that time to first token and answer quality were not measured, preserving necessary caveats. The title matches the body content well, focusing on limitations beyond raw tokens/second. The language is clear and technical, suitable for the target audience. It avoids unsupported claims and does not overstate conclusions, maintaining credibility. The post is relevant and useful for readers interested in local LLM performance metrics. The clickbait score is low as the title is restrained and descriptive.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 139,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Interpreting Hypothetical Local LLM Speeds: What 18 vs. 24 Tokens/Second Might Mean (and Not Mean)",
+        "body": "We're examining a hypothetical local inference test that yielded 18 tokens per second (t/s) on one setup and 24 t/s on another, using identical hardware and a single prompt. While a 33% increase in t/s is notable, it's vital to understand the constraints of this hypothetical data. This specific test did not capture the time until the first token was generated, nor did it assess the semantic quality or coherence of the responses. A faster generation rate doesn't automatically equate to a better user experience if the initial wait is long or the output is unsatisfactory. Moreover, this isolated test cannot be generalized; different prompts, system configurations, and model types could yield different results. The aim here is not to declare a winner but to underscore that raw throughput figures, especially from a limited hypothetical test, don't tell the whole story. What other metrics or qualitative aspects are crucial for assessing local LLM performance in your experience?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Present hypothetical token/second figures (18 and 24 t/s) from a single-prompt test on the same machine. Explicitly state that time-to-first-token and answer quality were not measured. Emphasize that this hypothetical scenario does not determine a universal winner. Pose a question to the community about other critical performance factors beyond raw speed."
+      },
+      "performance_score": 0.24142387930936554,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical data and includes all necessary caveats about the lack of time to first token and quality measurements. The title is consistent with the body, emphasizing what the token/second numbers might mean and their limitations. The language is clear and accessible while remaining technical and appropriate for the audience. It avoids unsupported claims and does not generalize beyond the synthetic scenario. The post invites community engagement, enhancing usefulness and relevance. The clickbait score is low due to the restrained, informative title.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": false,
+        "hard_rule_failures": [
+          "new_numbers:33"
+        ],
+        "body_words": 157,
+        "novel_numbers": [
+          "33"
+        ],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": false,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Local Inference Speed: Beyond Raw Tokens/Second",
+      "body": "This post discusses a hypothetical local inference scenario involving two configurations, achieving 18 and 24 tokens per second (t/s) respectively on the same machine with a single prompt. While these numbers offer a basic performance indicator, they represent only one facet of practical usability. Crucially, this hypothetical test did not measure time to first token (TTFT) or the quality of the generated answers. A model with higher t/s might still feel sluggish if TTFT is high, or if the output requires significant revision due to poor quality. Furthermore, the observed difference does not establish a universal winner; performance can vary greatly with different prompts, system loads, and model architectures. These synthetic figures are intended to highlight the limitations of raw t/s metrics and prompt a discussion on what other factors users consider essential for a responsive local LLM experience.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Discuss hypothetical inference speeds, emphasizing limitations beyond raw t/s. Highlight that TTFT and answer quality were not measured in this hypothetical scenario. Conclude by noting this doesn't establish a universal winner and invite discussion on other important performance factors."
+    },
+    "performance_score": 0.2397010318596229,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and references the synthetic token per second figures accurately. It explicitly notes that time to first token and answer quality were not measured, preserving necessary caveats. The title matches the body content well, focusing on limitations beyond raw tokens/second. The language is clear and technical, suitable for the target audience. It avoids unsupported claims and does not overstate conclusions, maintaining credibility. The post is relevant and useful for readers interested in local LLM performance metrics. The clickbait score is low as the title is restrained and descriptive.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 139,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

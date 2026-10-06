@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:08:08.663509+00:00",
+  "loop_version": "v002",
+  "brief_id": "D03",
+  "phase": "tune",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+        "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 3,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source's limitations regarding the small number of blocks tested and the potential unfairness of perplexity for CoT models. It poses a relevant question about the reliability of such limited tests for decision-making. Specificity is adequate, referencing DeepSeek R1 and perplexity. Information value is good, as it highlights key limitations and prompts further discussion. Community fit is good, as it directly addresses a technical concern relevant to local LLM enthusiasts. The speaker correctly avoids claiming personal experience.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 125,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Considering the limited perplexity test on DeepSeek R1, what’s the best way to evaluate chain-of-thought models locally?",
+        "body": "An archived perplexity test from early 2025 ran on only 8 blocks out of about 560 for DeepSeek R1 models, so its results are very limited. The tester also pointed out that perplexity might not fairly assess chain-of-thought models since they can’t perform multi-step reasoning in this setup.\n\nThis raises a practical issue: if perplexity isn’t reliable here, especially with such a small sample size, what alternatives exist for comparing models with varying expert counts that use chain-of-thought reasoning? How can local LLM enthusiasts effectively evaluate these models’ real-world performance without extensive resources?\n\nHas anyone found or developed lightweight benchmarks or practical tests that better capture the strengths of chain-of-thought models on local hardware?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 5,
+        "specificity": 4,
+        "information_value": 5,
+        "clarity": 5,
+        "usefulness": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reason": "Draft 2 effectively synthesizes the source's limitations (small block count, perplexity suitability for CoT) and pivots to a practical, community-relevant question about alternative evaluation methods for CoT models locally. It is highly specific, referencing DeepSeek R1, expert counts, and CoT. Information value is exceptional, offering a clear problem and seeking actionable solutions. Community fit is exceptional, directly addressing a common challenge for the audience. The speaker correctly avoids claiming personal experience.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 114,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+      "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 3,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's limitations regarding the small number of blocks tested and the potential unfairness of perplexity for CoT models. It poses a relevant question about the reliability of such limited tests for decision-making. Specificity is adequate, referencing DeepSeek R1 and perplexity. Information value is good, as it highlights key limitations and prompts further discussion. Community fit is good, as it directly addresses a technical concern relevant to local LLM enthusiasts. The speaker correctly avoids claiming personal experience.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 125,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0245",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:06.588827+00:00",
+    "tag": "V2:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "59cce32181aeafdcb00616c773c36299db986ecda8c7707bdf1bf6215181b3b9",
+    "actual_cost_usd": 0.0010972,
+    "budget_charge_usd": 0.0010972,
+    "reserved_upper_usd": 0.0057236,
+    "input_tokens": 1187,
+    "output_tokens": 389,
+    "latency_seconds": 2.780213799997,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112083-1OvrFdlp4eZR7DEx6T0Q",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0246",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:08.641960+00:00",
+    "tag": "quality:D03:V2",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "935f9d7b411739eaf5a978c3e8b7125003cf75b65660c249236c67cc702326b1",
+    "actual_cost_usd": 0.0005577,
+    "budget_charge_usd": 0.0005577,
+    "reserved_upper_usd": 0.0019795999999999998,
+    "input_tokens": 3621,
+    "output_tokens": 489,
+    "latency_seconds": 2.023352399992291,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112086-oXvXXfKFqFI7gB463dv7",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1j49sbd",
+    "1i8w7ra",
+    "1ll62i4"
+  ],
+  "external_judge_used": false
+}

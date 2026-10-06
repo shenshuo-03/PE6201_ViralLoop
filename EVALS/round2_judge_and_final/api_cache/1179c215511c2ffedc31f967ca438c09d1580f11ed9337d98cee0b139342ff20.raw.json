@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112684-vOLJnUDW4qSVXBw9vTJL",
+  "object": "chat.completion",
+  "created": 1791112684,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 focuses on the date calculation aspect of the source, directly addressing the brief's goal of discussing performance differences. It correctly identifies the merged model and the test setup, and poses relevant questions about accuracy and tradeoffs. The community fit is good because it asks for user experiences with similar models. Specificity is high by mentioning the models and task. Information value is good as it synthesizes the source and asks for further insights. Clarity and usefulness are high. Credibility is good as it adheres to the source and brief. Clickbait is low.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 also effectively addresses the brief by focusing on the performance comparison and potential tradeoffs of the merged model. It correctly references the source's details about the merged model and test setup. The questions posed are relevant to the audience and the problem. Community fit is good as it seeks user insights. Specificity is high. Information value is good. Clarity and usefulness are high. Credibility is good. Clickbait is low.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4309,
+    "completion_tokens": 416,
+    "total_tokens": 4725,
+    "cost": 0.0005973,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005973,
+      "upstream_inference_prompt_cost": 0.0004309,
+      "upstream_inference_completions_cost": 0.0001664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

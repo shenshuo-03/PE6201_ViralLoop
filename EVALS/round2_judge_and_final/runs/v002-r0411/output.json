@@ -1,0 +1,30 @@
+{
+  "drafts": [
+    {
+      "title": "Observations on FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview vs DeepSeek-R1-Distill-Qwen-32B for Task Accuracy",
+      "body": "A recent post on r/LocalLLaMA shared user tests comparing a merged model, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, against DeepSeek-R1-Distill-Qwen-32B. The merged model, which combines DeepSeekR1, QwQ, and SkyT1 32B models, reportedly solved a file-packing problem with four correct answers, something the user found notable. It also correctly calculated the number of days between December 12, 1971, and April 18, 2024, as 19,121 days, whereas DeepSeek-R1-Distill-Qwen-32B gave an incorrect 19,486. For a river crossing riddle, the merged model provided a single-trip solution, while the other model fell into an infinite loop. The user’s setup involved ollama with IQ4_XS quantization and a 32k context window using Q8_0 KV Cache. Given these observations, how consistent might merged models like FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview be across diverse tasks? Are there known trade-offs in merging that could explain such improvements or failures? It’d be useful to hear if others have tested similar merges and what their experience has been regarding stability and accuracy.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    {
+      "title": "Insights and Questions on Merged LLM Performance from a 2025 User Report",
+      "body": "A user shared a comparison between a merged LLM, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, and DeepSeek-R1-Distill-Qwen-32B on r/LocalLLaMA. The merged model reportedly excelled at a file-packing problem and correctly computed a date difference of 19,121 days, while the other model gave a wrong result. Additionally, the merged model solved a river crossing riddle with a single crossing, but DeepSeek-R1-Distill-Qwen-32B got stuck in an infinite loop. The test environment used ollama with IQ4_XS quantization and a 32k context window with Q8_0 KV Cache. Since the source is a single user’s report from early 2025, it raises questions about how merging models affects reasoning and stability. Does merging generally improve logical consistency, or might it introduce unexpected behaviors? What are the best practices to evaluate such merges beyond anecdotal tests? Sharing experiences or benchmarks on merged models could help clarify their practical benefits and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    }
+  ]
+}

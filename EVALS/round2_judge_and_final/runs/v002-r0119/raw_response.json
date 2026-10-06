@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109702-X8GqY1YYLXuhZZMU2sgA",
+  "object": "chat.completion",
+  "created": 1791109702,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A provides more specific details from the source material, including model names, specific performance numbers, and the nuanced outcomes of different split modes (e.g., 'sm' mode sometimes decreasing performance). This level of detail directly supports the community's ability to engage with the specific observations and contribute relevant experiences. Draft B is more generic in its summary of the findings, reducing its specificity and information value. Both drafts correctly attribute the source and frame the discussion as a reader of an archived account.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2370,
+    "completion_tokens": 171,
+    "total_tokens": 2541,
+    "cost": 0.0011385,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011385,
+      "upstream_inference_prompt_cost": 0.000711,
+      "upstream_inference_completions_cost": 0.0004275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

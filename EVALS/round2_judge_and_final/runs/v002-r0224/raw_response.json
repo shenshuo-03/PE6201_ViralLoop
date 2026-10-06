@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111998-IihmbAMgzaaeQGGdVQSZ",
+  "object": "chat.completion",
+  "created": 1791111998,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Has Anyone Seen Smaller LLMs Sacrifice World Knowledge for Coding Skills?\",\"body\":\"An archived Reddit post from May 2025 highlights an intriguing pattern in newer small models like Qwen 3 and GLM-4-0414. According to the author, these models excel at coding and problem solving compared to older counterparts but show noticeably worse world knowledge—even lagging behind some older models with lower benchmark scores. For example, Qwen 3 8B reportedly underperforms older models like Llama 3.1 8B in knowledge, despite better coding skills. The author suspects this trade-off stems from training data focusing more on problem-solving content at the expense of knowledge density. Given these observations, has anyone else noticed a similar split in capabilities? How do you evaluate or prioritize models when you need both strong factual knowledge and problem-solving abilities? Any practical strategies to detect or balance this trade-off would be helpful.\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F8\"]},{\"title\":\"Trade-off Between World Knowledge and Problem Solving in Newer Small LLMs: Experiences?\",\"body\":\"A May 2025 Reddit report suggests newer smaller LLMs, such as Qwen 3 and GLM-4-0414, might be trading off world knowledge for stronger coding and problem-solving performance. The author’s private tests indicated these newer models often have worse knowledge recall than older, sometimes weaker benchmarking models of similar size. For instance, Qwen 3 14B reportedly has much poorer knowledge than older models like Phi 4 and Gemma 3 12B. The hypothesis is that newer training data emphasizes problem-solving content more heavily, reducing knowledge-dense material. Has anyone else observed this trend in their local testing or benchmarks? How do you approach selecting models when you want a good balance of knowledge and problem-solving? Are there known evaluation methods to quantify or mitigate this trade-off?\",\"fact_refs\":[\"F1\",\"F3\",\"F5\",\"F8\"]},{\"title\":\"Balancing World Knowledge and Problem-Solving in Small LLMs: Insights from 2025 Reddit Observations\",\"body\":\"According to a 2025 Reddit post, newer smaller LLMs like Qwen 3 and GLM-4-0414 show improved coding and problem-solving skills but worse world knowledge compared to older models. The author’s private tests found Qwen 3 8B and 14B models underperforming older models like Llama 3.1 8B and Gemma 3 12B on knowledge questions, despite their better problem-solving benchmarks. Llama 4 Maverick was noted as an exception with strong knowledge but mediocre problem-solving. The proposed cause is a shift in training data composition favoring problem-solving content over knowledge density. Has anyone else seen this kind of trade-off? What evaluation approaches or model choices do you use to handle tasks requiring both deep knowledge and strong reasoning?\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F7\",\"F8\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2568,
+    "completion_tokens": 628,
+    "total_tokens": 3196,
+    "cost": 0.002032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002032,
+      "upstream_inference_prompt_cost": 0.0010272,
+      "upstream_inference_completions_cost": 0.0010048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

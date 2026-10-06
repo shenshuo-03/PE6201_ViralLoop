@@ -1,0 +1,66 @@
+{
+  "topic": "Local Text-to-Speech (TTS) Engine Development",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "To discuss the development and potential of a new, local, cross-platform TTS engine.",
+  "context": "A community member is sharing information about a newly released local TTS engine called KokoroSharp, written in C#, which is available as a NuGet package and has open-source code.",
+  "motivation": "This question is worth discussing to understand the capabilities and potential applications of local TTS solutions for LLM enthusiasts who might be interested in offline AI voice chat or other speech synthesis projects.",
+  "desired_response": "A discussion about the technical aspects, potential use cases, and community reception of the KokoroSharp TTS engine.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The author was working on an offline AI voice chat app before shifting focus to a new TTS engine.",
+      "evidence_quote": "So, to start with, I am working on a fully offline AI voice chat app, and while it's about 90% ready to release, a specific new, high-performance audio model came out",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "A new, high-performance audio model prompted the author to develop a local TTS engine.",
+      "evidence_quote": "a specific new, high-performance audio model came out (\\*stares at Kokoro\\*). What did I do? I dropped everything to build a local, cross-platform TTS engine!",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "The new TTS engine is described as beginner-friendly yet flexible.",
+      "evidence_quote": "Beginner-friendly yet flexible.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "The KokoroSharp TTS engine is available via a NuGet package.",
+      "evidence_quote": "It's available on [NuGet](https://www.nuget.org/packages/KokoroSharp/)! Just install the package and you're ready!",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "The source code for KokoroSharp is publicly available.",
+      "evidence_quote": "And, of course, the source is open: [https://github.com/Lyrcaxis/KokoroSharp](https://github.com/Lyrcaxis/KokoroSharp)",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "KokoroSharp is a local TTS engine.",
+    "KokoroSharp is written in C#.",
+    "KokoroSharp is cross-platform.",
+    "KokoroSharp is available on NuGet.",
+    "KokoroSharp has open-source code."
+  ],
+  "forbidden_claims": [
+    "The engine has been tested for performance benchmarks.",
+    "The engine is guaranteed to be bug-free.",
+    "The author has personally used the engine in a production application.",
+    "Specific hardware requirements for the engine.",
+    "Details on the 'af_heart' voice model's performance."
+  ],
+  "essential_limitations": [
+    "The exact performance characteristics of the TTS engine are not detailed.",
+    "No information is provided on the specific audio models supported beyond the example.",
+    "The '90% ready' status of the previous app is dated context."
+  ],
+  "missing_information": [
+    "Specific hardware requirements for running KokoroSharp.",
+    "Detailed performance metrics or benchmarks.",
+    "Information on the training data or architecture of the audio models used.",
+    "User reviews or community feedback on the engine's stability and quality."
+  ]
+}

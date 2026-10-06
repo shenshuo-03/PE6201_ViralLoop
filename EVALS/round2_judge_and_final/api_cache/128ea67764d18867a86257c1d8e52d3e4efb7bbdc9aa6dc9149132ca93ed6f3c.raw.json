@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109805-5rY2XZvRLFXf4qzxqg0V",
+  "object": "chat.completion",
+  "created": 1791109805,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A preserves the concrete decision framework the developer is actually working through: API friction points (login, costs, performance) vs. local model friction (app size, performance), plus specific actionable questions (fine-tuning necessity, content filtering methods). Draft B abstracts these into vague \\\"experiences or considerations\\\" and \\\"deployment challenges\\\"—language that invites generic responses rather than targeted community expertise. For a local LLM enthusiast community, A's specificity about the trade-off structure (F3, F4) and explicit questions (F5, F6) creates genuine hooks for knowledgeable contributors. B's \\\"would like to hear experiences\\\" is report-like and passive. Both cite the same facts, so credibility is equivalent. A's detail density (character generation use case, model names, specific concerns) directly matches the brief's goal of exploring feasibility and best practices; B's vagueness risks responses that don't address the iOS developer's actual constraints.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2176,
+    "completion_tokens": 288,
+    "total_tokens": 2464,
+    "cost": 0.003616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003616,
+      "upstream_inference_prompt_cost": 0.002176,
+      "upstream_inference_completions_cost": 0.00144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "v002-r0030",
+  "loop_version": "v002",
+  "cycle_id": "v002",
+  "phase": "naturalness",
+  "variant_id": "quality",
+  "contract_id": "ViralLoop-v002-preflight-naturalness-and-evaluator",
+  "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9",
+  "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "adabf4421c619d8c32927968d06464e2deee883a0f881ca2ec5d88026255bbf6",
+  "config_hash": "ab66cef6bc4ab7ae6066fa47e0e0327aa1da570333aee1763cd24b4d61aee797",
+  "code_hash": "9b9af9437df115eb29e4a6032c5b4e82be16380f5b55f9de409909348d2b4df9",
+  "input_hash": "741049c8e9ba78c2897f69f74e9f24f726f2ebbe35fcfe54e2afb0566eef28a1",
+  "output_hash": "05163e3f96bbe31671316ccc5b52eb57eb719573600957cfafa1850eed0c5cb0",
+  "scores_hash": "05163e3f96bbe31671316ccc5b52eb57eb719573600957cfafa1850eed0c5cb0",
+  "primary_metric_hash": "e66572f0e06f824a569f9d0dca1cc7534e38d4620f5447e8377308f87903c229",
+  "evaluator_hash": "aa393677798a6e7974acacc756412b723245d9d99cddf89d89e2dbf8dacce22c",
+  "candidate_count": 0,
+  "tokens": 3687,
+  "api_calls": 1,
+  "cost": 0.0004332,
+  "currency": "USD",
+  "latency_seconds": 1.4058184000023175,
+  "retry_count": 0,
+  "access_events": [
+    {
+      "split": "naturalness",
+      "purpose": "generate_or_judge",
+      "time": "2026-10-04T10:15:52.218000+00:00",
+      "evidence": "C:\\Users\\19139\\Documents\\Codex\\2026-10-04\\zhe-g\\experiment_1_1\\loops\\v002\\runs\\v002-r0030\\prompt.txt"
+    }
+  ],
+  "integrity_checks": {
+    "artifact_hashes_verified": true,
+    "split_integrity": true,
+    "billing_ledger_complete": true,
+    "project_budget_verified": true
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

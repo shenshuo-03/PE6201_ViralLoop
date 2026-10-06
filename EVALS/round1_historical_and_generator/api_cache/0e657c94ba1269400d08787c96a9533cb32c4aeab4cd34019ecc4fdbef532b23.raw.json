@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101775-KIneQDgbTL2HaaZ5942c",
+  "object": "chat.completion",
+  "created": 1791101775,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all provided facts explicitly. It avoids speculation beyond the scenario and asks focused, relevant technical questions about attention scaling and KV cache management on a 16GB GPU. The title accurately reflects the content without exaggeration. The language is clear and technical, suitable for the target audience, and the caveats about missing model/runtime details and lack of evidence for other issues are preserved.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains all factual constraints and clearly marks the scenario as hypothetical. It uses precise language and technical framing, focusing on computational complexity and memory caching as potential causes. The title matches the body content well and is appropriately restrained. The caveats about missing model/runtime info and no evidence of other issues are explicitly stated, preserving scenario integrity.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft faithfully preserves the hypothetical status and all facts. It clearly explains the scenario and asks about plausible technical explanations, emphasizing transformer architecture and memory allocation patterns. The title is consistent and descriptive without exaggeration. The necessary caveats about missing details and lack of evidence for other issues are maintained. The language is clear and appropriate for the audience.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1268,
+    "completion_tokens": 536,
+    "total_tokens": 1804,
+    "cost": 0.0013648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013648,
+      "upstream_inference_prompt_cost": 0.0005072,
+      "upstream_inference_completions_cost": 0.0008576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

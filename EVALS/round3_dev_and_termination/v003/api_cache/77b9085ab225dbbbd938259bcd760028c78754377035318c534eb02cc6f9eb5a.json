@@ -1,0 +1,19 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Choosing Between Qwen3-32b and Qwen3-235b-a22b for Multilingual NER and SQL: Benchmark Insights Needed",
+        "body": "I'm evaluating Qwen3 models for a hypothetical project requiring strong Named Entity Recognition (NER) across European languages and accurate SQL query generation. The benchmark data shows Qwen3-32b leads in Retrieval Augmented Generation (RAG) with a 92.5 score and matches Qwen3-235b-a22b's perfect 100 in SQL generation. Meanwhile, Qwen3-235b-a22b excels in SQL but scores slightly lower in NER compared to Qwen3-32b. Both models share challenges handling non-English languages, especially Nordic ones in NER, and tend to respond in English rather than the source language in RAG scenarios. Given that excluding non-English questions can boost scores by 5–10 points, how should I interpret these multilingual limitations for a use case focused on European languages? Would the slight NER edge of Qwen3-32b outweigh the SQL strengths of Qwen3-235b-a22b, or are these differences negligible considering the multilingual gaps? Any insights on balancing these trade-offs for a multilingual text and coding task would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F4",
+          "F5",
+          "F8",
+          "F9"
+        ]
+      }
+    ]
+  },
+  "run_id": "v003-r0053"
+}

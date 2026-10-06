@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109856-2lngInTCM5V9LCyckJJQ",
+  "object": "chat.completion",
+  "created": 1791109856,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Draft A is report-like and generic, listing facts without actionable framing or concrete motivation for community engagement. It omits key specifics (ModernBERT, 4K tokens, 79.22% F1, benchmark name) that would help local LLM enthusiasts evaluate relevance to their work. Draft B preserves all supplied facts with proper attribution to source-author reports, directly addresses the audience (local RAG setups, real-time detection), and frames the problem as a concrete tradeoff (encoder-based efficiency vs. LLM-based approaches). Both stay within allowed claims and avoid forbidden ones. B's specificity—naming the model architecture, token limit, exact benchmark score, and license—gives readers concrete criteria to assess fit for their use case. A's vagueness ('long inputs,' 'open license') reduces actionability. B's closing explicitly invites the desired response type (feedback on applications and real-time detection ideas), matching the brief's motivation. Both correctly attribute facts to source-author reports without personal verification claims, preserving credibility. B is more worth posting for this community because it provides the detail needed for informed discussion while maintaining factual restraint.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2237,
+    "completion_tokens": 336,
+    "total_tokens": 2573,
+    "cost": 0.003917,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003917,
+      "upstream_inference_prompt_cost": 0.002237,
+      "upstream_inference_completions_cost": 0.00168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

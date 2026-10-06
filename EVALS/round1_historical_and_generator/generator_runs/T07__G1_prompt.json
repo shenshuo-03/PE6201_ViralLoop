@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T08:12:42.861093+00:00",
+  "topic": {
+    "id": "T07",
+    "split": "final_test",
+    "topic": "A hypothetical retrieval failure: what to inspect first",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has 40 documents and a query with a known answer in one document.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The relevant document was not among the retrieved passages in the hypothetical failure.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No evidence identifies whether chunking, indexing or query wording caused it.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T08:12:39.929049+00:00",
+    "tag": "final_test:T07:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "c669c87588678a1c2025db4b1d71f42b2b8bf7b2913d9023c3d4e420fe7f12c5",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 438,
+    "output_tokens": 579,
+    "actual_cost_usd": 0.0002754,
+    "token_price_estimate_usd": 0.00027539999999999997,
+    "reserved_upper_usd": 0.0010301,
+    "budget_charge_usd": 0.0002754,
+    "latency_seconds": 2.752815699990606,
+    "retry": 0,
+    "request_id": "gen-1791101557-5RtfqvFYGZz75AsGTV5R"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:12:42.855099+00:00",
+    "tag": "final_test:T07:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "60b38f8be02fa3671c10b2afd4c61d5ddfca9cea7b9ce9de07a2d6dfdcb28c1e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1007,
+    "output_tokens": 382,
+    "actual_cost_usd": 0.001014,
+    "token_price_estimate_usd": 0.001014,
+    "reserved_upper_usd": 0.0049564,
+    "budget_charge_usd": 0.001014,
+    "latency_seconds": 2.8897142999921925,
+    "retry": 0,
+    "request_id": "gen-1791101560-skXigTDAfy5M3ygHa39z"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "d27fb1c6a140d1d3e4d57fc842fb7ffd981b4ff95a8eab746f4c3380fa66e66a",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical RAG Retrieval Failure: Initial Debugging Steps",
+        "body": "This post outlines a hypothetical scenario where a Retrieval Augmented Generation (RAG) system fails to retrieve a relevant document despite its presence. The scenario involves 40 documents, and a query with a known answer within a single document. In this hypothetical failure, the document containing the answer was not retrieved. Crucially, we don't yet know if the issue stems from the initial document chunking strategy, the indexing process, or the specific wording of the query itself. This is a hypothetical experiment brief, not a report of measured results. Before diving into complex re-indexing or model adjustments, what are the first logical inspection points? Should one prioritize examining the raw chunks for the target document, reviewing the embedding generation process, or analyzing the similarity search parameters? Let's discuss the most efficient initial diagnostic steps.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft focuses on the initial debugging steps for a hypothetical RAG retrieval failure. It clearly states the hypothetical nature of the scenario and the unknown root cause. The body outlines the core problem and asks for community input on the most logical first inspection points, guiding the discussion towards practical troubleshooting without making assumptions about measured results."
+      },
+      "performance_score": 0.24798389469187915,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and accurately reflects the supplied facts (40 documents, known answer in one, failure to retrieve that document, unknown root cause). It avoids unsupported claims and maintains necessary caveats. The title matches the body content well. The language is clear and technical, suitable for the target audience. It offers actionable suggestions for initial debugging steps, making it useful and relevant. The tone is credible and restrained, with no clickbait elements.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 133,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Debugging a Hypothetical RAG Failure: Where to Start?",
+        "body": "Consider a hypothetical RAG retrieval failure: a system with 40 documents is queried, and the answer exists in a single, known document. However, in this hypothetical test, that specific document was not found among the retrieved passages. We have no data yet indicating whether the root cause lies in the document chunking, the index creation, or the query phrasing. This is a hypothetical experimental brief, and these are not measured results. Given this scenario, what are the most prudent first steps for diagnosis? Without knowing the specific failure point (chunking, indexing, or query), what is the most systematic approach to isolate the problem? Should we first verify the integrity of the embeddings for the target document's chunks, or perhaps examine the query's vector representation against the index? The objective is to identify the most effective initial checks.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft presents the same hypothetical RAG retrieval failure but frames the debugging question slightly differently, focusing on the systematic approach to problem isolation. It maintains the hypothetical status and avoids any claims of measured results. The body emphasizes the lack of information about the root cause and prompts a discussion on the most systematic diagnostic approach, encouraging focused technical advice."
+      },
+      "performance_score": 0.2381096347602894,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical scenario and all key facts without unsupported claims. The title aligns well with the body, which emphasizes a systematic approach to diagnosis. The language is clear and technical, appropriate for the audience. It invites focused technical discussion on initial diagnostic steps, providing actionable value. The scenario status and caveats are explicitly stated, maintaining credibility and avoiding clickbait.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 137,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical RAG Retrieval Failure: Initial Debugging Steps",
+      "body": "This post outlines a hypothetical scenario where a Retrieval Augmented Generation (RAG) system fails to retrieve a relevant document despite its presence. The scenario involves 40 documents, and a query with a known answer within a single document. In this hypothetical failure, the document containing the answer was not retrieved. Crucially, we don't yet know if the issue stems from the initial document chunking strategy, the indexing process, or the specific wording of the query itself. This is a hypothetical experiment brief, not a report of measured results. Before diving into complex re-indexing or model adjustments, what are the first logical inspection points? Should one prioritize examining the raw chunks for the target document, reviewing the embedding generation process, or analyzing the similarity search parameters? Let's discuss the most efficient initial diagnostic steps.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "This draft focuses on the initial debugging steps for a hypothetical RAG retrieval failure. It clearly states the hypothetical nature of the scenario and the unknown root cause. The body outlines the core problem and asks for community input on the most logical first inspection points, guiding the discussion towards practical troubleshooting without making assumptions about measured results."
+    },
+    "performance_score": 0.24798389469187915,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and accurately reflects the supplied facts (40 documents, known answer in one, failure to retrieve that document, unknown root cause). It avoids unsupported claims and maintains necessary caveats. The title matches the body content well. The language is clear and technical, suitable for the target audience. It offers actionable suggestions for initial debugging steps, making it useful and relevant. The tone is credible and restrained, with no clickbait elements.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 133,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

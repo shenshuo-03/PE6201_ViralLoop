@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112327-t3tDIZVvTDnvUlH6IVTh",
+  "object": "chat.completion",
+  "created": 1791112327,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": false, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 0 accurately reflects the source and brief, posing relevant questions about feasibility, moderation, and discoverability in a decentralized environment. It avoids unsupported claims and adheres to the persona. The copy_pass is false due to the phrase 'centralized control over our community' which is a close paraphrase of the source's 'centralized platforms' and 'decide how a broad mass of tens of thousands or hundreds of thousands communicate'.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": false, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 effectively summarizes the source's concerns and proposes relevant questions about practical implications, moderation, and user experience on decentralized platforms. It adheres to the persona and avoids unsupported claims. The copy_pass is false due to the phrase 'centralized platform control, where a few moderators might disproportionately influence communication and content' which is a close paraphrase of the source's 'a few people have the power to decide how a broad mass of tens of thousands or hundreds of thousands communicate'.\"}, {\"index\": 2, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": false, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 accurately captures the essence of the source and brief, focusing on the tradeoffs of migration and posing pertinent questions about moderation, cohesion, and infrastructure. It maintains the persona and avoids unsupported claims. The copy_pass is false due to the phrase 'dissatisfaction with the current centralized LocalLLaMA subreddit, arguing that concentrated control risks stifling broad communication' which is a close paraphrase of the source's 'I'm not a fan of centralized platforms' and 'it should not be the case that a few people have the power to decide how a broad mass of tens of thousands or hundreds of thousands communicate'.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2737,
+    "completion_tokens": 639,
+    "total_tokens": 3376,
+    "cost": 0.0005293,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005293,
+      "upstream_inference_prompt_cost": 0.0002737,
+      "upstream_inference_completions_cost": 0.0002556
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109754-YqmSKjR52YeuXZEonLPR",
+  "object": "chat.completion",
+  "created": 1791109754,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Post A is better because it directly asks for recommendations for smaller OCR models that perform better than the mentioned Gemma and Qwen models, explicitly referencing the user's desire for accuracy in math and code. It also includes a direct question about tradeoffs, which is more engaging for the community. Post B is more general and less direct in its call to action. Both posts accurately reflect the facts and limitations provided in the brief. Post A's specificity in mentioning the user's exact problem and desired outcome makes it more community-fit and useful.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1890,
+    "completion_tokens": 181,
+    "total_tokens": 2071,
+    "cost": 0.0002614,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002614,
+      "upstream_inference_prompt_cost": 0.000189,
+      "upstream_inference_completions_cost": 7.24e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Clear, specific question about hardware for OCR AI; niche but practical interest may drive engagement."
+      },
+      {
+        "index": 1,
+        "probability": 0.6,
+        "reason": "Announces a novel open-source tool with detailed features; likely to attract high interest and discussion."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Discussion on creative writing LLMs; moderate niche but relevant topic with some engagement potential."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "Beginners seeking advice on local LLMs and server management; useful but less likely to reach high score."
+      },
+      {
+        "index": 4,
+        "probability": 0.4,
+        "reason": "Technical question on model quantization; appeals to specialized audience, moderate engagement expected."
+      },
+      {
+        "index": 5,
+        "probability": 0.55,
+        "reason": "Guide on running LLMs everywhere with zero conversion; practical and broad appeal in local AI community."
+      },
+      {
+        "index": 6,
+        "probability": 0.5,
+        "reason": "Insightful experience post on voice AI evaluation challenges; valuable content likely to engage readers."
+      },
+      {
+        "index": 7,
+        "probability": 0.35,
+        "reason": "Technical guide request on workstation configuration for specific LLM benchmarks; niche but useful."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:17.650374+00:00",
+    "tag": "final_test:classifier:E5a_zero_shot:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ff73cbb2341377261e2a52cf06a38fc39dcc3694222b14b2d879f990d4409b12",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1967,
+    "output_tokens": 365,
+    "actual_cost_usd": 0.0013708,
+    "token_price_estimate_usd": 0.0013708,
+    "reserved_upper_usd": 0.005762,
+    "budget_charge_usd": 0.0013708,
+    "latency_seconds": 2.785619999995106,
+    "retry": 0,
+    "request_id": "gen-1791100875-H25goIExwKfkcYJMEDge"
+  },
+  "raw_response": {
+    "id": "gen-1791100875-H25goIExwKfkcYJMEDge",
+    "object": "chat.completion",
+    "created": 1791100875,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Clear, specific question about hardware for OCR AI; niche but practical interest may drive engagement.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.6,\n      \"reason\": \"Announces a novel open-source tool with detailed features; likely to attract high interest and discussion.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"Discussion on creative writing LLMs; moderate niche but relevant topic with some engagement potential.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.3,\n      \"reason\": \"Beginners seeking advice on local LLMs and server management; useful but less likely to reach high score.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.4,\n      \"reason\": \"Technical question on model quantization; appeals to specialized audience, moderate engagement expected.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.55,\n      \"reason\": \"Guide on running LLMs everywhere with zero conversion; practical and broad appeal in local AI community.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.5,\n      \"reason\": \"Insightful experience post on voice AI evaluation challenges; valuable content likely to engage readers.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.35,\n      \"reason\": \"Technical guide request on workstation configuration for specific LLM benchmarks; niche but useful.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1967,
+      "completion_tokens": 365,
+      "total_tokens": 2332,
+      "cost": 0.0013708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013708,
+        "upstream_inference_prompt_cost": 0.0007868,
+        "upstream_inference_completions_cost": 0.000584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

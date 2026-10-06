@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-04T11:16:12.038003+00:00",
+  "loop_version": "v002",
+  "brief_id": "F08",
+  "phase": "final",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Why does Qwen3-8B Q6_K_L run slowly on a TitanXP with 32GB RAM in LM Studio?",
+        "body": "I've come across a report from May 2025 where a user ran Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB of RAM, but experienced very slow and odd behavior. Given that 12GB VRAM is somewhat limited for larger quantized models, I wonder if the bottleneck might be related to VRAM constraints or how LM Studio handles this quantization type.\n\nHas anyone else tried running Qwen3-8B Q6_K_L on similar hardware and noticed performance issues? Are there known quirks with LM Studio's support for Q6_K_L quantization that could cause slowdowns or instability on GPUs like the TitanXP? Any practical advice on settings or workarounds would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 asks a specific question about Qwen3-8B performance on TitanXP with 12GB VRAM in LM Studio, referencing the source's hardware and model details. It correctly avoids claiming personal experience and focuses on community insights regarding VRAM constraints and quantization. The question is relevant to the brief's goal of understanding performance issues and comparing models.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 113,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Possible causes for slow Qwen3-8B Q6_K_L performance on TitanXP + 32GB RAM in LM Studio?",
+        "body": "A user report from May 2025 describes very slow and odd behavior when running Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU and 32GB RAM. Since the TitanXP has 12GB of VRAM, I’m curious if memory limitations or LM Studio’s handling of Q6_K_L quantization could be factors here.\n\nDoes anyone have insights into how LM Studio manages this model and quantization on mid-tier GPUs? Could the slowdowns be related to model loading strategies, VRAM swapping, or compatibility issues with this quantization format? Understanding these tradeoffs might help others facing similar setups.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 also asks a specific question about Qwen3-8B performance on TitanXP with 12GB VRAM in LM Studio, directly referencing the source's hardware and model. It adheres to the persona by not claiming personal experience and seeks community input on potential causes like memory limitations and LM Studio's handling of quantization. The question is well-aligned with the brief's objective.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 95,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Why does Qwen3-8B Q6_K_L run slowly on a TitanXP with 32GB RAM in LM Studio?",
+      "body": "I've come across a report from May 2025 where a user ran Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB of RAM, but experienced very slow and odd behavior. Given that 12GB VRAM is somewhat limited for larger quantized models, I wonder if the bottleneck might be related to VRAM constraints or how LM Studio handles this quantization type.\n\nHas anyone else tried running Qwen3-8B Q6_K_L on similar hardware and noticed performance issues? Are there known quirks with LM Studio's support for Q6_K_L quantization that could cause slowdowns or instability on GPUs like the TitanXP? Any practical advice on settings or workarounds would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 asks a specific question about Qwen3-8B performance on TitanXP with 12GB VRAM in LM Studio, referencing the source's hardware and model details. It correctly avoids claiming personal experience and focuses on community insights regarding VRAM constraints and quantization. The question is relevant to the brief's goal of understanding performance issues and comparing models.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 113,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0378",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:16:10.133766+00:00",
+    "tag": "V1:F08",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1be85555f13c5389de1c6e52766607b83bf3a8e3b82654d286a85d557ac4eeba",
+    "actual_cost_usd": 0.0010048,
+    "budget_charge_usd": 0.0010048,
+    "reserved_upper_usd": 0.0050992,
+    "input_tokens": 956,
+    "output_tokens": 389,
+    "latency_seconds": 3.2583624999970198,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112566-PzrywRReBGu3ob9r069a",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0379",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:16:12.015634+00:00",
+    "tag": "quality:F08:V1",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "821c0363e3daeb56f045bff12894310308d41b8caa97d5cc9b240def60065ed6",
+    "actual_cost_usd": 0.0004482,
+    "budget_charge_usd": 0.0004482,
+    "reserved_upper_usd": 0.0017123999999999998,
+    "input_tokens": 2698,
+    "output_tokens": 446,
+    "latency_seconds": 1.8500052000163123,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112570-cfyVWVCdZcbwy9v2qdkb",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

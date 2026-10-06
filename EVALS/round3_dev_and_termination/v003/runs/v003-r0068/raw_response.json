@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118952-mFfCqOOlp6qKLIYEP3Fh",
+  "object": "chat.completion",
+  "created": 1791118952,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A reads as authentic community voice with natural flow and conversational tone; Draft B's explicit fact references (F1, F2, etc.) break immersion and feel artificially constructed for a Reddit post, reducing credibility despite covering identical content.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2206,
+    "completion_tokens": 126,
+    "total_tokens": 2332,
+    "cost": 0.002836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002836,
+      "upstream_inference_prompt_cost": 0.002206,
+      "upstream_inference_completions_cost": 0.00063
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

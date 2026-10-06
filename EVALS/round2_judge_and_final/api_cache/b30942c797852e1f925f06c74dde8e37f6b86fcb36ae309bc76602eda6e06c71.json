@@ -1,0 +1,48 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Exploring KokoroSharp: A New Local, Cross-Platform TTS Engine in C#",
+        "body": "I came across a post from early 2025 about KokoroSharp, a local text-to-speech engine written in C# that's cross-platform and available via NuGet. The author was motivated by a new high-performance audio model called Kokoro and developed this TTS engine, describing it as beginner-friendly yet flexible. The source code is open on GitHub, and example usage includes loading a model and selecting a voice named \"af_heart.\" While the original poster was also working on an offline AI voice chat app nearing release, detailed performance metrics or hardware requirements for KokoroSharp weren't provided. For those interested in offline speech synthesis or integrating TTS with local LLMs, what do you think are the practical challenges or opportunities with this engine? Has anyone explored KokoroSharp or similar local TTS solutions in C# or other languages?",
+        "fact_refs": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "KokoroSharp TTS Engine in C#: Potential and Questions for Local LLM Use",
+        "body": "A community member shared about KokoroSharp, a local, cross-platform TTS engine built in C# and released as a NuGet package. The project was inspired by a new audio model named Kokoro, and the author aimed to create something both beginner-friendly and flexible. The code is open source on GitHub, with example code showing how to load the model and obtain a voice called \"af_heart.\" Although the author mentioned working on an offline AI voice chat app that was nearly ready, specifics about KokoroSharp’s performance, supported audio models, and hardware needs remain unclear. For those experimenting with local LLMs and offline voice applications, what features or improvements would you want from a local TTS engine like KokoroSharp? Are there known limitations or integration challenges you’ve encountered with similar tools?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0399",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:14.645232+00:00",
+    "tag": "V0:F10",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b30942c797852e1f925f06c74dde8e37f6b86fcb36ae309bc76602eda6e06c71",
+    "actual_cost_usd": 0.0012664,
+    "budget_charge_usd": 0.0012664,
+    "reserved_upper_usd": 0.0058724,
+    "input_tokens": 1446,
+    "output_tokens": 430,
+    "latency_seconds": 2.9571655000036117,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112631-duzqyLLTmEMLRAvZeWQ1",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Clarifying llama.cpp HTTP server's file upload behavior and reproducibility challenges",
+        "body": "I've come across a 2025 Reddit post discussing the file upload button in llama.cpp's HTTP server and its interaction with prompts. The author wonders if uploading a file simply concatenates its contents with the direct prompt, but this isn't confirmed. They report mixed results when querying the file's contents—sometimes the model answers questions correctly, other times it seems to interpret the file content itself rather than the query. They used llama 3.2 3B Q4_K_S and aimed for reproducible outputs, meaning consistent answers when restarting conversations with the same prompts. However, reproducibility was inconsistent. Given these observations, does anyone have insights into how exactly the file upload feature integrates with the prompt? Also, are there recommended strategies or settings to improve reproducibility when querying uploaded files through the HTTP server? Any practical tips or explanations would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5",
+          "F2"
+        ],
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+      },
+      {
+        "title": "Understanding and troubleshooting file upload prompts in llama.cpp's HTTP server",
+        "body": "A user shared experiences with llama.cpp's HTTP server file upload feature, trying to ask questions about uploaded file contents. They speculate the file might be concatenated with the prompt, but this isn't confirmed. In 15 tests, sometimes the model correctly answered questions about the file, but other times it seemed to respond based on the file contents themselves rather than the query. They used llama 3.2 3B Q4_K_S and sought reproducible answers across new conversations, but results varied. Given this, what is known about how the file upload button actually works under the hood? Are there ways to ensure or improve reproducibility when querying file contents via the HTTP server? Any shared experiences or suggestions for achieving more consistent behavior would help clarify this feature's utility.",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5",
+          "F2"
+        ],
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0200",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:05:30.364086+00:00",
+    "tag": "V0:D01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "aecdb9d211a9781b8baa6067e2a79d0ceb8093ec7c7040fe32e4ea51f4a16e4e",
+    "actual_cost_usd": 0.0012932,
+    "budget_charge_usd": 0.0012932,
+    "reserved_upper_usd": 0.0058904,
+    "input_tokens": 1325,
+    "output_tokens": 477,
+    "latency_seconds": 3.9431188000016846,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111926-A601OxVskDN7p0Ylp5it",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  }
+}

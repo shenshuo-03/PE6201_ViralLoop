@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112896-FinWS6KcNCbpnbAz7srP",
+  "object": "chat.completion",
+  "created": 1791112896,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"B\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A grounds the post in concrete observed symptoms (14+ second latency, unsolicited math solving, comparative speed with Mistral Nemo) and frames them as a diagnostic puzzle for the community to help troubleshoot. It preserves all six facts and invites targeted responses about quantization, configuration, and hardware interaction. Draft B reduces specificity by omitting the unusual math behavior (F4) and the critical performance comparison (F6), instead introducing unsupported speculation ('12GB VRAM is somewhat limited for larger quantized models') that exceeds the brief's allowed claims and essential limitations. Draft B's framing shifts toward generic VRAM constraint theory rather than the user's actual reported anomalies. Both stay within credibility bounds by attributing claims to the source report, but A's richer factual grounding makes it more actionable for community diagnosis, while B's omissions and added inference reduce information value despite a cleaner structure.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2401,
+    "completion_tokens": 282,
+    "total_tokens": 2683,
+    "cost": 0.003811,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003811,
+      "upstream_inference_prompt_cost": 0.002401,
+      "upstream_inference_completions_cost": 0.00141
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112456-eWCvP4QxylfIKJbvEg0c",
+  "object": "chat.completion",
+  "created": 1791112456,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 accurately reflects the source's hardware and model interests, posing a direct question to the community about backend performance on similar AMD setups. It correctly frames the source's data as dated and specific, avoiding personal claims. The question about VRAM distribution adds relevant specificity.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 correctly summarizes the source's hardware and model interests, framing the original data as dated. It asks a relevant community question about backend performance on similar AMD setups and touches upon other factors like quantization, which aligns with the source's broader inquiry. The specificity regarding hardware and models is good.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3256,
+    "completion_tokens": 336,
+    "total_tokens": 3592,
+    "cost": 0.00046,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00046,
+      "upstream_inference_prompt_cost": 0.0003256,
+      "upstream_inference_completions_cost": 0.0001344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

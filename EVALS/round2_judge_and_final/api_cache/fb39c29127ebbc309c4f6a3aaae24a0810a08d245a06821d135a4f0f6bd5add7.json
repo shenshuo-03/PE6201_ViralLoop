@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "evidence": "Draft A directly references the specific GPU models (3090, 3060) and model names (Qwen3 8B, Qwen3 14B, Qwen3 32B, Nemotron 49B, DeepSeek-R1-Distill-Llama-70B, Gemma3 27B, Mistral Small 24B) from the brief, providing concrete examples and asking for community input based on these specifics. Draft B generalizes these details ('one high-end GPU and two mid-tier GPUs', 'smaller models', 'larger models'), making its questions less grounded and less specific to the provided facts. Draft A's questions are more focused on the observed patterns and specific modes ('row', 'sm'), directly building on the detailed evidence, whereas Draft B's questions are more general. Both drafts correctly attribute the source as an archived report and avoid making claims beyond the provided facts."
+  },
+  "usage": {
+    "run_id": "v002-r0121",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:28:27.962484+00:00",
+    "tag": "judge_calibration:CP08:AB",
+    "phase": "calibration",
+    "model": "google/gemini-2.5-flash",
+    "cache_key": "fb39c29127ebbc309c4f6a3aaae24a0810a08d245a06821d135a4f0f6bd5add7",
+    "actual_cost_usd": 0.0013307,
+    "budget_charge_usd": 0.0013307,
+    "reserved_upper_usd": 0.0042366999999999995,
+    "input_tokens": 2369,
+    "output_tokens": 248,
+    "latency_seconds": 2.518262700003106,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109705-fvoqZJ3lFjnga3a86zWp",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

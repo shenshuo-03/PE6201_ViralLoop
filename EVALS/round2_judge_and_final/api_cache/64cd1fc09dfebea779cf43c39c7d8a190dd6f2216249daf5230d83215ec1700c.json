@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts accurately cite the same facts and avoid forbidden claims. Draft A opens with a generic framing ('A web research tool has been updated') and closes with a vague single question disconnected from the audience's actual setup concerns. Draft B names MiniSearch explicitly, specifies the exact local inference engines mentioned in the brief (LM Studio, Ollama, vLLM), and asks concrete follow-up questions directly relevant to the local LLM community: setup complexity, latency, reliability, and graphical results performance. Draft B's title also signals the practical integration question upfront, whereas Draft A's title is descriptive but doesn't invite discussion. Both handle uncertainty appropriately ('probably,' 'aiming to'), but Draft B's specificity and targeted questions create genuine community engagement hooks—asking what readers have *actually tried*—rather than A's generic invitation. Draft B better matches the brief's desired response about 'user experience of integrating it with local LLM inference engines.'"
+  },
+  "usage": {
+    "run_id": "v002-r0190",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:31:38.582644+00:00",
+    "tag": "judge_validation:HP14:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "64cd1fc09dfebea779cf43c39c7d8a190dd6f2216249daf5230d83215ec1700c",
+    "actual_cost_usd": 0.003991,
+    "budget_charge_usd": 0.003991,
+    "reserved_upper_usd": 0.013801,
+    "input_tokens": 2531,
+    "output_tokens": 292,
+    "latency_seconds": 4.213636099972064,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109894-hbowsBIWXw6oz24i56uo",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

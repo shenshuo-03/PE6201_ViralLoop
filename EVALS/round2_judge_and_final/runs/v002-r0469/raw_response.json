@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112941-MZPPODOJN2EattxqLbMf",
+  "object": "chat.completion",
+  "created": 1791112941,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"B\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A frames a concrete, answerable question grounded in the stated motivation: whether KokoroSharp is mature enough for offline voice chat, directly inviting community testing feedback on real-world trade-offs (latency, quality, compatibility). This aligns with the brief's desired response about technical aspects and use cases. Draft B recaps the facts more comprehensively (F2–F6 vs. F1–F2) but dilutes focus by listing features (NuGet availability, GitHub link, example code) without organizing them into a specific problem or distinction the community can act on. Both stay within allowed claims and avoid forbidden ones. A's credibility is slightly stronger because it explicitly flags missing performance data as a gap motivating the question, whereas B mentions missing metrics parenthetically without centering them. A's narrower scope (offline voice chat readiness) creates higher community_fit and usefulness for the stated audience; B's broader \\\"what do you think\\\" invitation is less actionable. Equal specificity in naming KokoroSharp, C#, cross-platform, and Kokoro model, but A's focus on the 90% app context (F1) creates tighter narrative coherence with the motivation.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2218,
+    "completion_tokens": 343,
+    "total_tokens": 2561,
+    "cost": 0.003933,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003933,
+      "upstream_inference_prompt_cost": 0.002218,
+      "upstream_inference_completions_cost": 0.001715
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "at": "2026-10-04T07:47:49.159650+00:00",
+  "topic": {
+    "id": "D02",
+    "split": "tune_dev",
+    "topic": "A hypothetical time-to-first-token comparison",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "A hypothetical setup A has time-to-first-token of 1.2 seconds and setup B 2.4 seconds.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Both hypothetical runs use the same prompt and hardware.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No throughput, accuracy, or statistical uncertainty measurements were supplied.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T07:47:46.182600+00:00",
+    "tag": "tune_dev:D02:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "a519d6cf26cf7cfd016aa54ebc9aa3a6cea6d6135a9ccd90aac0316de67dc21d",
+    "status": "success",
+    "input_tokens": 442,
+    "output_tokens": 512,
+    "actual_cost_usd": 0.000249,
+    "token_price_estimate_usd": 0.000249,
+    "reserved_upper_usd": 0.0010274,
+    "budget_charge_usd": 0.000249,
+    "latency_seconds": 2.4592992999969283,
+    "retry": 0,
+    "request_id": "gen-1791100063-M09SoBDieZEgRHeR9G4K"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:47:49.152072+00:00",
+    "tag": "tune_dev:D02:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a6736762b69a635b97a8214735ed5f9bf2e596b4979bae522354340cd26501d5",
+    "status": "success",
+    "input_tokens": 939,
+    "output_tokens": 410,
+    "actual_cost_usd": 0.0010316,
+    "token_price_estimate_usd": 0.0010316,
+    "reserved_upper_usd": 0.004748799999999999,
+    "budget_charge_usd": 0.0010316,
+    "latency_seconds": 2.9358863000088604,
+    "retry": 0,
+    "request_id": "gen-1791100066-GzE7BibdujRWq507HtFI"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "31d33c3b435db4c955d2d73516e59e43f1c01d653aa875ee03f3c7aee3acbb8e",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Time-to-First-Token Comparison: Setup A vs. Setup B",
+        "body": "This post outlines a hypothetical time-to-first-token (TTFT) comparison between two setups, A and B, based on synthetic experimental input. In this hypothetical scenario, Setup A achieved a TTFT of 1.2 seconds, while Setup B recorded 2.4 seconds. Crucially, both hypothetical runs were conducted using identical prompts and hardware configurations. It is important to note that this comparison is purely theoretical and does not reflect actual measured results. No data regarding throughput, accuracy, or statistical uncertainty was provided for these hypothetical runs. The objective is to initiate a technical discussion on factors that might contribute to such a divergence in TTFT under these specific, albeit hypothetical, conditions. What architectural or configuration differences could plausibly lead to a doubling of TTFT, assuming identical hardware and prompts?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Present hypothetical TTFT data, state limitations clearly, and ask for technical explanations for the observed difference."
+      },
+      "performance_score": 0.23676358180351972,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the lack of measured data and statistical uncertainty. It accurately references the synthetic inputs and does not introduce unsupported claims. The title matches the body content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in discussing potential causes of TTFT differences under controlled conditions. The credibility is strong given the explicit disclaimers and restrained tone. There is no clickbait or exaggeration.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 124,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Analyzing a Hypothetical Time-to-First-Token Discrepancy (1.2s vs 2.4s)",
+        "body": "We are examining a hypothetical scenario involving two distinct model execution setups, designated A and B, with differing time-to-first-token (TTFT) metrics. According to the synthetic experimental input, Setup A hypothetically achieved a TTFT of 1.2 seconds, whereas Setup B hypothetically took 2.4 seconds. Both hypothetical runs are stated to have utilized the same prompt and the same underlying hardware. This information is presented as a hypothetical brief and does not represent measured outcomes or personal experience. Furthermore, the provided hypothetical data does not include any measurements for throughput, accuracy, or statistical significance. Given these constraints, the focus is on understanding potential underlying causes for this hypothetical TTFT difference. What factors, beyond prompt and hardware, might be hypothesized to cause such a significant, hypothetical increase in the time taken to generate the initial token?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Detail hypothetical TTFT results, emphasize the hypothetical nature and missing data, and solicit theoretical explanations for the discrepancy."
+      },
+      "performance_score": 0.23330648083144032,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains a clear and consistent presentation of the hypothetical scenario, explicitly stating the synthetic nature of the data and the absence of throughput, accuracy, or statistical measurements. The title accurately reflects the content. The language is clear and technical, appropriate for the intended audience. The post is relevant and useful for stimulating technical discussion on possible causes of TTFT differences. The credibility is preserved by the explicit caveats and lack of unsupported claims. No clickbait elements are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 133,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Time-to-First-Token Comparison: Setup A vs. Setup B",
+      "body": "This post outlines a hypothetical time-to-first-token (TTFT) comparison between two setups, A and B, based on synthetic experimental input. In this hypothetical scenario, Setup A achieved a TTFT of 1.2 seconds, while Setup B recorded 2.4 seconds. Crucially, both hypothetical runs were conducted using identical prompts and hardware configurations. It is important to note that this comparison is purely theoretical and does not reflect actual measured results. No data regarding throughput, accuracy, or statistical uncertainty was provided for these hypothetical runs. The objective is to initiate a technical discussion on factors that might contribute to such a divergence in TTFT under these specific, albeit hypothetical, conditions. What architectural or configuration differences could plausibly lead to a doubling of TTFT, assuming identical hardware and prompts?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Present hypothetical TTFT data, state limitations clearly, and ask for technical explanations for the observed difference."
+    },
+    "performance_score": 0.23676358180351972,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the lack of measured data and statistical uncertainty. It accurately references the synthetic inputs and does not introduce unsupported claims. The title matches the body content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in discussing potential causes of TTFT differences under controlled conditions. The credibility is strong given the explicit disclaimers and restrained tone. There is no clickbait or exaggeration.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 124,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

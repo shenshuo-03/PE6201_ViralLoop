@@ -1,0 +1,61 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How to reliably detect short keyword phrases with order preservation using vector DBs like Weaviate or Milvus?",
+        "body": "A 2025 Reddit post describes trying Weaviate and Milvus to identify short keywords (1-2 word phrases like \"hugging face\" or \"meta\") within user input, alongside retrieving semantically closest sentences. The challenge is that vector databases mainly handle semantic similarity, not reverse keyword search that preserves word order. The author notes that standard approaches with AND/OR logic for multi-word keywords lead to false positives, such as matching \"face hugging\" when searching for \"hugging face\". Given these limitations and the lack of detailed configs, has anyone found effective strategies or hybrid methods to accurately detect such short keyword phrases with order sensitivity in vector DBs? Are there known workarounds to handle phrase edge cases without losing semantic matching benefits?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Can vector databases be adapted for reverse keyword search that respects phrase order?",
+        "body": "The use case involves matching short keywords (1-2 words) and semantically closest sentences from a database based on user input. A Reddit user reported attempts with Weaviate and Milvus but highlighted that vector DBs are not inherently designed for reverse keyword search. Particularly, handling multi-word keywords like \"hugging face\" is tricky because using AND or OR logic for phrase matching results in incorrect matches (e.g., \"face hugging\" or partial hits). Given these known limitations, what practical approaches exist to implement reverse keyword search that preserves word order and minimizes false hits? Would combining vector similarity with traditional text search or custom tokenization be a viable path?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Seeking methods to perform reverse keyword search with order preservation in vector DBs",
+        "body": "A 2025 source discusses trying Weaviate and Milvus vector databases to identify specific 1-2 word keywords within user input, alongside semantically closest sentences. The main issue is that vector DBs focus on semantic similarity, not exact or order-preserving keyword matching. Attempts to use AND/OR phrase logic for multi-word keywords like \"hugging face\" led to false positives such as matching \"face hugging\" or partial keyword hits. Without detailed implementation info, how can one effectively combine semantic search and precise phrase detection that respects word order? Are there recommended techniques or hybrid solutions to mitigate these edge cases in a local LLM environment?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0309",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:12:41.491952+00:00",
+    "tag": "O1:F02",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "43e5ec68e52e05fbf24e62cb78983ad1d577e2cfca31eb6ce0350caf9f189a11",
+    "actual_cost_usd": 0.0016236,
+    "budget_charge_usd": 0.0016236,
+    "reserved_upper_usd": 0.0083812,
+    "input_tokens": 1843,
+    "output_tokens": 554,
+    "latency_seconds": 4.218754100002116,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112357-dPLuJ5VPUInluou8eakg",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

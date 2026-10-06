@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical discussion with clear problem and dataset reference, moderate similarity to a high-score example."
+      },
+      {
+        "index": 1,
+        "probability": 0.28,
+        "reason": "Agentic workflow with tool use is a niche topic; examples show mixed historical class but some high-score similarity."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Detailed benchmark and experience post with specific model performance data, similar to high-score benchmark examples."
+      },
+      {
+        "index": 3,
+        "probability": 0.32,
+        "reason": "Technical guide with detailed setup and performance metrics, similar to high-score tutorial examples."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Project update with new features and fixes, similar to discussion posts with moderate historical high-score rate."
+      },
+      {
+        "index": 5,
+        "probability": 0.33,
+        "reason": "Benchmarking and reasoning efficiency topic, aligns with high-score experience/benchmark examples."
+      },
+      {
+        "index": 6,
+        "probability": 0.27,
+        "reason": "Short update on new feature in software, similar to discussion posts with lower high-score likelihood."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "Request for resources and model recommendations, similar to examples with lower historical high-score rates."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:51.889456+00:00",
+    "tag": "tune_dev:classifier:E5c_retrieval:0",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ce15657175095e2da1e89a39e1a4c833df042cce3d5a9f26c07f144bbf44eeec",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5323,
+    "output_tokens": 262,
+    "actual_cost_usd": 0.0025484,
+    "token_price_estimate_usd": 0.0025484,
+    "reserved_upper_usd": 0.0107836,
+    "budget_charge_usd": 0.0025484,
+    "latency_seconds": 2.295801999993273,
+    "retry": 0,
+    "request_id": "gen-1791100729-aRUUpnZfjFMaJbn2oGCt"
+  },
+  "raw_response": {
+    "id": "gen-1791100729-aRUUpnZfjFMaJbn2oGCt",
+    "object": "chat.completion",
+    "created": 1791100729,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical discussion with clear problem and dataset reference, moderate similarity to a high-score example.\"},{\"index\":1,\"probability\":0.28,\"reason\":\"Agentic workflow with tool use is a niche topic; examples show mixed historical class but some high-score similarity.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Detailed benchmark and experience post with specific model performance data, similar to high-score benchmark examples.\"},{\"index\":3,\"probability\":0.32,\"reason\":\"Technical guide with detailed setup and performance metrics, similar to high-score tutorial examples.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Project update with new features and fixes, similar to discussion posts with moderate historical high-score rate.\"},{\"index\":5,\"probability\":0.33,\"reason\":\"Benchmarking and reasoning efficiency topic, aligns with high-score experience/benchmark examples.\"},{\"index\":6,\"probability\":0.27,\"reason\":\"Short update on new feature in software, similar to discussion posts with lower high-score likelihood.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"Request for resources and model recommendations, similar to examples with lower historical high-score rates.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5323,
+      "completion_tokens": 262,
+      "total_tokens": 5585,
+      "cost": 0.0025484,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0025484,
+        "upstream_inference_prompt_cost": 0.0021292,
+        "upstream_inference_completions_cost": 0.0004192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

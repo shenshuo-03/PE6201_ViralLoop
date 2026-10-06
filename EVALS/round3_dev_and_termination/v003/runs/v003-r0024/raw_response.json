@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118669-zF0Ofo95nKfYnR65DfE8",
+  "object": "chat.completion",
+  "created": 1791118669,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"speaker_pass\": true,\n    \"essential_context_pass\": true,\n    \"title_body_pass\": true,\n    \"unsupported_claims\": [],\n    \"unverified_claims\": [],\n    \"reason\": \"Draft 0 accurately reflects the source text and adheres to the brief's constraints. It correctly presents the user's hypothetical scenario, their observations about llama.cpp and ExLlamav2 performance with the Phi-3-medium model at 50k context, and their request for advice on optimizing llama.cpp. All facts are properly referenced and no forbidden claims are made.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"speaker_pass\": true,\n    \"essential_context_pass\": true,\n    \"title_body_pass\": true,\n    \"unsupported_claims\": [],\n    \"unverified_claims\": [],\n    \"reason\": \"Draft 1 also accurately reflects the source text and adheres to the brief. It correctly frames the user's hypothetical situation, their performance observations with llama.cpp and ExLlamav2, and their request for guidance. The inclusion of 'On my 3090 GPU setup' is permissible as it's presented as part of the hypothetical scenario's context, not a personal claim of ownership. All facts are referenced, and no forbidden claims are made.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2995,
+    "completion_tokens": 336,
+    "total_tokens": 3331,
+    "cost": 0.0004339,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004339,
+      "upstream_inference_prompt_cost": 0.0002995,
+      "upstream_inference_completions_cost": 0.0001344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

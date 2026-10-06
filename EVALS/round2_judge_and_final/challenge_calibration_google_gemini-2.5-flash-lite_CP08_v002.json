@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is superior because it directly references the specific hardware (3090 and 3060 GPUs) and the llama.cpp software mentioned in the brief, aligning better with the specificity requirement. It also poses a more concrete question about practical advice and heuristics for configuring tensor splits and split modes on heterogeneous multi-GPU rigs, making it more relevant to the community's goal of understanding these techniques. Post B is more generic, referring to 'one high-end GPU and two mid-tier GPUs' and 'a local LLM inference engine' without naming them, which reduces its specificity and direct relevance to the brief's context. Both posts effectively summarize the provided facts and their limitations, but Post A's framing of the question makes it more useful and community-fitting."
+    },
+    "usage": {
+      "run_id": "v002-r0093",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:44.274764+00:00",
+      "tag": "judge_calibration:CP08:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "012e03321a5dbda37149b2bdc2d0b66dfe7de14da61b96404460caa2c9c0d741",
+      "actual_cost_usd": 0.0003297,
+      "budget_charge_usd": 0.0003297,
+      "reserved_upper_usd": 0.0012259,
+      "input_tokens": 2369,
+      "output_tokens": 232,
+      "latency_seconds": 1.5541084999858867,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109662-1OeeVD9thDJgfWPFcDhf",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it directly asks a question that the community can answer, rather than making a general statement like Post A. Post B also provides more specific details from the source, such as the exact token-per-second improvements for different models, which makes it more informative and useful for the audience. Post A is too general and doesn't leverage the specific data from the source as effectively."
+    },
+    "usage": {
+      "run_id": "v002-r0094",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:45.585144+00:00",
+      "tag": "judge_calibration:CP08:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "ab929e64fbbd6a28f205d901e5e38d7ab72dc06c77b69aa730050843f61fc208",
+      "actual_cost_usd": 0.0002981,
+      "budget_charge_usd": 0.0002981,
+      "reserved_upper_usd": 0.0012259,
+      "input_tokens": 2369,
+      "output_tokens": 153,
+      "latency_seconds": 1.2851340000052005,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109664-8YDn8HJeO3zspUrXev5o",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

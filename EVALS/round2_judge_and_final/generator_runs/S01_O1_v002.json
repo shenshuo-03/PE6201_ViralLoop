@@ -1,0 +1,237 @@
+{
+  "at": "2026-10-04T11:08:58.468034+00:00",
+  "loop_version": "v002",
+  "brief_id": "S01",
+  "phase": "tune",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Challenges and Strategies for Offline HTML-to-Markdown Conversion Using Local LLMs and BeautifulSoup",
+        "body": "A 2025 project shared on r/LocalLLaMA explores converting HTML pages to Markdown offline with local LLMs (Qwen2.5-7B/8B via llama.cpp) running on consumer GPUs. The method first classifies sites as text- or media-focused and uses BeautifulSoup to extract candidate content like titles and headings before the LLM generates extraction strategies and scores output quality. While this approach reportedly yields good results on standard articles, it struggles with media-heavy or JavaScript-rendered content due to lack of browser rendering. Performance per page is reasonable, but batch processing speed might need improvement. Given these constraints, how have others handled dynamic or SPA sites offline? Are there practical ways to enhance static HTML parsing or combine it with local LLMs to better capture asynchronously loaded content without sacrificing offline operation? Insights on balancing extraction accuracy, speed, and complexity would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source, focusing on the technical challenges and seeking community input on specific issues like handling media-heavy/SPA sites and optimizing batch processing. It correctly attributes the information to the original poster and avoids making personal claims. The community fit is good as it directly asks for advice relevant to the local LLM community. Specificity is high, referencing the models, tools, and specific problems mentioned in the source. Information value is good due to the focused questions. Clarity and usefulness are high, making it easy to understand and prompting relevant discussion. Credibility is good as it stays grounded in the source's reported findings and limitations.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 136,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Improving Content Extraction for Media-Rich and SPA Websites with Local LLMs: Offline Approaches?",
+        "body": "The described project uses local LLMs with BeautifulSoup-based HTML analysis to convert web pages to Markdown offline, aiming to outperform classic tools on tricky sites like SPAs or noisy blogs. It detects if a site is text- or media-centric and extracts structural elements before the LLM refines extraction and rates quality. However, without browser rendering, media-heavy and JavaScript-only sites remain challenging. The process runs on GPUs like the 4070 and yields decent per-page speed but may slow with large batches. For those working fully offline, what methods or heuristics have you found effective to better handle dynamic content or media-heavy pages? Could integrating partial rendering, caching strategies, or enhanced static heuristics improve extraction quality without cloud dependencies? What are the tradeoffs you've encountered between complexity, speed, and Markdown fidelity?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft accurately summarizes the source's project, highlighting the use of local LLMs for offline HTML-to-Markdown conversion and the challenges with dynamic content. It correctly attributes the information and maintains the persona of a reader seeking advice. The community fit is strong, as it poses specific questions about handling dynamic content and optimization relevant to the audience. Specificity is high, referencing the tools and limitations. Information value is good, as the questions are practical and invite detailed responses. Clarity and usefulness are excellent. Credibility is good, as it sticks to the reported findings and limitations.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 129,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Seeking Advice on Offline HTML-to-Markdown Extraction Quality and Evaluation Using Local LLMs",
+        "body": "A community member’s 2025 effort uses local LLMs (Qwen2.5-7B/8B) with BeautifulSoup to convert HTML to high-quality Markdown offline, scoring extracted content for completeness and readability. While the approach reportedly achieves good to excellent quality on typical articles, it faces difficulties with media-heavy or JavaScript-dependent sites and could benefit from faster batch processing. Evaluation relies on AI scoring and manual review but lacks established benchmarks. How do others evaluate extraction quality effectively in offline setups? Are there recommended strategies or tools to benchmark Markdown output from local LLMs, especially on complex or dynamic web content? Additionally, any tips on optimizing extraction rules or improving handling of framework fingerprints without cloud APIs would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately summarizes the source's project, focusing on the challenges of offline HTML-to-Markdown conversion with local LLMs, particularly regarding quality evaluation and handling complex sites. It correctly attributes the information and maintains the persona of a reader seeking advice. The community fit is excellent, as it directly asks for community input on evaluation strategies and optimization for complex content, which is highly relevant to the target audience. Specificity is high, referencing the models, tools, and specific problems. Information value is good, as the questions are focused and practical. Clarity and usefulness are excellent. Credibility is good, as it stays grounded in the source's reported findings and limitations.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 113,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Can local LLMs reliably convert HTML to Markdown offline using BeautifulSoup for content extraction?",
+      "body": "A user in a 2025 Reddit thread described a project that uses local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools especially on complex, text-heavy sites. The approach involves first analyzing whether a site is text-focused or media-centric and then using BeautifulSoup to extract key content areas like titles and headings before feeding that to the model.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this method handles modern web apps with dynamic or JavaScript-heavy content. Does the BeautifulSoup-based extraction limit the quality of Markdown output when the actual main content is loaded asynchronously? Has anyone experimented with combining offline LLMs and static HTML parsing to improve Markdown accuracy on such tricky sites?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's core idea and technical approach, focusing on the use of local LLMs and BeautifulSoup for HTML-to-Markdown conversion. It correctly identifies the limitations regarding dynamic content and browser rendering, posing relevant questions to the community. The specificity is good, mentioning the tools and the problem. The community fit is strong as it directly asks for advice on a technical challenge within the scope of the subreddit.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 127,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Can local LLMs reliably convert HTML to Markdown offline using BeautifulSoup for content extraction?",
+      "body": "A user in a 2025 Reddit thread described a project that uses local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools especially on complex, text-heavy sites. The approach involves first analyzing whether a site is text-focused or media-centric and then using BeautifulSoup to extract key content areas like titles and headings before feeding that to the model.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this method handles modern web apps with dynamic or JavaScript-heavy content. Does the BeautifulSoup-based extraction limit the quality of Markdown output when the actual main content is loaded asynchronously? Has anyone experimented with combining offline LLMs and static HTML parsing to improve Markdown accuracy on such tricky sites?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's core idea and technical approach, focusing on the use of local LLMs and BeautifulSoup for HTML-to-Markdown conversion. It correctly identifies the limitations regarding dynamic content and browser rendering, posing relevant questions to the community. The specificity is good, mentioning the tools and the problem. The community fit is strong as it directly asks for advice on a technical challenge within the scope of the subreddit.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 127,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0261",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:55.332214+00:00",
+    "tag": "O1:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "62ad29656a75641776db482042e285205279f5dd4ac0f7b15a3f76e4752ef59d",
+    "actual_cost_usd": 0.0019456,
+    "budget_charge_usd": 0.0019456,
+    "reserved_upper_usd": 0.009194,
+    "input_tokens": 2332,
+    "output_tokens": 633,
+    "latency_seconds": 4.098230900010094,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112131-jRpbWpJS3Z2pKPjKvR3i",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0262",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:58.443474+00:00",
+    "tag": "quality:S01:O1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "8495e678b0fac908b2063a91c6aa125ce8cd7ceb13b465cce00281e51bff0ce6",
+    "actual_cost_usd": 0.0007014,
+    "budget_charge_usd": 0.0007014,
+    "reserved_upper_usd": 0.0022748,
+    "input_tokens": 3766,
+    "output_tokens": 812,
+    "latency_seconds": 3.0798173999937717,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112135-KgujMo5OLBcmqpzBTbmc",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112637-MmbQEJKXWlb9KqhDjJhF",
+  "object": "chat.completion",
+  "created": 1791112637,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Is KokoroSharp TTS Ready for Fully Offline AI Voice Chat Projects?\",\"body\":\"I came across a post from early 2025 where the author was nearly finished (about 90%) with a fully offline AI voice chat app. They pivoted to build KokoroSharp, a local, cross-platform TTS engine, after a new high-performance audio model called Kokoro was released. \\n\\nThe question that comes to mind is whether KokoroSharp, given its development context and near-completion status, is mature enough for offline AI voice chat projects. The source doesn’t provide detailed performance metrics or stability info, so it’s unclear how well it integrates or runs in real-world offline scenarios.\\n\\nHas anyone experimented with KokoroSharp in offline voice chat setups? What are the practical trade-offs or limitations you encountered, especially regarding latency, voice quality, or platform compatibility?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Considering KokoroSharp for Offline TTS: What Are the Real-World Drawbacks?\",\"body\":\"According to a 2025 Reddit post, the KokoroSharp TTS engine was created quickly in response to a new high-performance audio model, with the developer’s offline AI voice chat app about 90% done. This suggests KokoroSharp might be promising for offline voice chat projects, but the details on its actual readiness and performance remain vague.\\n\\nGiven the lack of concrete performance data and the fact that the engine was developed rapidly, what are the known or potential limitations when using KokoroSharp locally? For those who have tried it, how does it handle offline constraints like CPU usage, voice naturalness, or integration complexity?\\n\\nIs it advisable to adopt KokoroSharp now, or should we expect more development before it’s truly viable for offline AI voice chat?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1018,
+    "completion_tokens": 390,
+    "total_tokens": 1408,
+    "cost": 0.0010312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010312,
+      "upstream_inference_prompt_cost": 0.0004072,
+      "upstream_inference_completions_cost": 0.000624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Qwen3 30B A3B model stalls with 'thinking' enabled in Open WebUI—any workarounds?",
+        "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send requests normally. However, enabling the 'thinking' feature caused the model to freeze mid-generation, with the progress indicator stuck indefinitely. Without 'thinking' enabled, the model worked fine.\n\nThis raises the question of whether the 'thinking' feature's implementation might be incompatible or unstable with this model version, or if resource constraints during incremental generation could be a factor. Has anyone else experienced this kind of hang when using 'thinking' with large models like Qwen3 30B A3B in Open WebUI? Are there known tweaks or config changes that help avoid these stalls?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      },
+      {
+        "title": "Why does Qwen3 30B A3B freeze mid-sentence with 'thinking' on in Open WebUI?",
+        "body": "A user report from May 2025 describes that while the Qwen3 30B A3B model connects and responds fine in Open WebUI, enabling the 'thinking' progress feature causes generation to halt mid-sentence indefinitely. The model otherwise runs normally without this feature.\n\nThis suggests a possible interaction issue between the model's generation process and the 'thinking' mechanism in Open WebUI. Since the exact Open WebUI version isn't specified, it's unclear if this is a compatibility problem or a resource bottleneck during streaming output.\n\nHas anyone found reliable ways to diagnose or prevent this kind of generation freeze when using 'thinking' with large models? Would disabling partial output buffering or adjusting timeouts help?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0428",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:41.155276+00:00",
+    "tag": "V2:F12",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1c1eb5a3a0c911676d2232cdb1b45377ec53e1d2b44b2471590d0be85027298c",
+    "actual_cost_usd": 0.0011224,
+    "budget_charge_usd": 0.0011224,
+    "reserved_upper_usd": 0.0058972,
+    "input_tokens": 1262,
+    "output_tokens": 386,
+    "latency_seconds": 2.892844599991804,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112718-zm4U0jjLfRBmg1Bu94cA",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,19 +1,24 @@
 """Round 1.1 runtime: immutable inputs, guarded real API, complete paid ledger."""
 import sys,json,hashlib,datetime,os,time,urllib.request,urllib.error,re
 from pathlib import Path
-LOOP=Path(__file__).resolve().parents[1]; ROOT=LOOP.parents[1]; BASE=ROOT.parent
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from _packaged_paths import round1_root, round2_root, repo_paths, redirect_write, reproduction_copy
+LOOP=round2_root(); ROOT=repo_paths(); BASE=repo_paths()
 sys.path.insert(0,str(BASE/'work/experiment_libs'));sys.path.insert(1,str(BASE/'work/audit_libs'))
-CONTRACT=LOOP/'experiment_contract_v002.yaml'; OLD=BASE/'experiment_1_0'
-if not OLD.exists():OLD=BASE/'实验1.0版'
+CONTRACT=LOOP/'experiment_contract_v002.yaml'; OLD=round1_root()
 sys.path.insert(2,str(OLD/'vendor_runtime'))
 if (LOOP/'configs/active_contract_v002.json').exists():CONTRACT=LOOP/json.loads((LOOP/'configs/active_contract_v002.json').read_text(encoding='utf-8'))['path']
-LEDGER=LOOP/'results/api_ledger_v002.jsonl';CACHE=LOOP/'results/api_cache';CACHE.mkdir(exist_ok=True)
+# Append-only provenance: a reproduction continues the archived ledger in its own
+# folder, seeded from the archive, so the submitted per-call record is never appended to.
+LEDGER=reproduction_copy(LOOP/'results/api_ledger_v002.jsonl',LOOP.workdir);CACHE=LOOP/'results/api_cache';CACHE.mkdir(exist_ok=True)
 GEN='openai/gpt-4.1-mini';INTERNALS=['google/gemini-2.5-flash-lite','google/gemini-2.5-flash'];EXTERNAL='anthropic/claude-haiku-4.5'
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def digest(x):return hashlib.sha256(x.encode('utf-8')).hexdigest()
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
-def write(p,x):p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2,default=str),encoding='utf-8')
+def write(p,x):
+    # Never overwrite the frozen evidence: redirect any such write to reproduced_run/.
+    p=redirect_write(Path(p));p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2,default=str),encoding='utf-8')
 def rows(p):return [json.loads(s) for s in Path(p).read_text(encoding='utf-8').splitlines()] if Path(p).exists() else []
 def parse_json(text):
     try:return json.loads(text)
@@ -25,8 +30,10 @@ def parse_json(text):
 def costs():return sum(x['budget_charge_usd'] for x in rows(OLD/'results/api_ledger.jsonl')),sum(x['budget_charge_usd'] for x in rows(LEDGER))
 def event(stage,action,evidence):
     rec={'event_id':str(time.time_ns()),'time':now(),'loop_version':'v002','stage':stage,'action':action,'evidence':evidence,'contract_hash':sha(CONTRACT)}
-    with (LOOP/'events_v002.jsonl').open('a',encoding='utf-8') as f:f.write(json.dumps(rec,ensure_ascii=False)+'\n')
-    with (LOOP/'process_archive_v002.md').open('a',encoding='utf-8') as f:f.write('\n'+now()+' '+stage+'：'+action+'；'+json.dumps(evidence,ensure_ascii=False)+'\n')
+    # Event log and process archive are append-only provenance: continue them in
+    # the reproduction's own folder rather than appending to the archived run.
+    with reproduction_copy(LOOP/'events_v002.jsonl',LOOP.workdir).open('a',encoding='utf-8') as f:f.write(json.dumps(rec,ensure_ascii=False)+'\n')
+    with reproduction_copy(LOOP/'process_archive_v002.md',LOOP.workdir).open('a',encoding='utf-8') as f:f.write('\n'+now()+' '+stage+' - '+action+'; '+json.dumps(evidence,ensure_ascii=False)+'\n')
 def access(split,purpose,path):event('access',purpose,{'split':split,'purpose':purpose,'time':now(),'evidence':str(path),'sha256':sha(path)})
 def complete(prompt,model,tag,max_tokens=1200,phase='calibration',temperature=0,_retry=0):
     if model==EXTERNAL and phase not in ['preflight','validation','final']:raise RuntimeError('External judge forbidden on generator development/selection')

@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:09:39.936970+00:00",
+  "loop_version": "v002",
+  "brief_id": "S03",
+  "phase": "selection",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Prompt Engineering Tips for Binary Classification with LLaMA 3.1 8B Locally?",
+        "body": "I'm looking into improving classification accuracy and consistency when using LLaMA 3.1 8B locally for a binary task distinguishing related versus unrelated prompts. The model is run entirely offline, but details on prompt engineering or system prompt tweaks that might help are scarce. \n\nGiven that the classification is strictly semantic, has anyone found effective prompt structures or system prompt adjustments that reliably boost performance in this scenario? Are there particular ways to phrase or format prompts that reduce ambiguity or improve the model’s confidence in related/unrelated decisions? \n\nSince the original report was from 2025 and didn’t specify hardware or prompt details, practical advice on prompt design or system prompt strategies for this exact use case would be really helpful.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 directly addresses the user's problem and seeks specific advice on prompt engineering and system prompts for local LLM classification, aligning well with the brief. It correctly references the model and task type. The community fit is good as it asks a relevant question to the subreddit. Specificity is high by mentioning the model and task. Information value is good by focusing on actionable advice. Clarity and usefulness are high. Credibility is good as it accurately reflects the source and brief. Clickbait is low.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 119,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "How to Enhance Consistency in Local LLaMA 3.1 8B Binary Classification?",
+        "body": "A user reported running LLaMA 3.1 8B locally to classify prompts as related or unrelated, but without sharing specific prompt engineering techniques or system prompt tweaks they used. The task is binary classification, fully offline, and the source dates from May 2025. \n\nThe core challenge seems to be improving accuracy and consistency in this binary semantic classification. Has anyone experimented with system prompt modifications or prompt phrasing strategies that noticeably improve classification reliability in similar setups? \n\nGiven the limited info on hardware or prompt templates, I’m curious whether certain prompt engineering approaches stand out for this kind of task, or if system prompt tweaks can meaningfully guide the model’s behavior toward more consistent outputs.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 effectively summarizes the original problem and seeks advice on prompt engineering and system prompt strategies for local LLM classification. It correctly identifies the model and task. The community fit is good as it poses a relevant question. Specificity is high by mentioning the model and task. Information value is good by focusing on actionable advice. Clarity and usefulness are high. Credibility is good as it accurately reflects the source and brief. Clickbait is low.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 114,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Prompt Engineering Tips for Binary Classification with LLaMA 3.1 8B Locally?",
+      "body": "I'm looking into improving classification accuracy and consistency when using LLaMA 3.1 8B locally for a binary task distinguishing related versus unrelated prompts. The model is run entirely offline, but details on prompt engineering or system prompt tweaks that might help are scarce. \n\nGiven that the classification is strictly semantic, has anyone found effective prompt structures or system prompt adjustments that reliably boost performance in this scenario? Are there particular ways to phrase or format prompts that reduce ambiguity or improve the model’s confidence in related/unrelated decisions? \n\nSince the original report was from 2025 and didn’t specify hardware or prompt details, practical advice on prompt design or system prompt strategies for this exact use case would be really helpful.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 directly addresses the user's problem and seeks specific advice on prompt engineering and system prompts for local LLM classification, aligning well with the brief. It correctly references the model and task type. The community fit is good as it asks a relevant question to the subreddit. Specificity is high by mentioning the model and task. Information value is good by focusing on actionable advice. Clarity and usefulness are high. Credibility is good as it accurately reflects the source and brief. Clickbait is low.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 119,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0271",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:37.947566+00:00",
+    "tag": "V2:S03",
+    "phase": "selection",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c66acc9974de265e72b12a86c0adcc9f62b94e0b6c6f6c79e049cd918a75b2a4",
+    "actual_cost_usd": 0.0010788,
+    "budget_charge_usd": 0.0010788,
+    "reserved_upper_usd": 0.005901999999999999,
+    "input_tokens": 1233,
+    "output_tokens": 366,
+    "latency_seconds": 2.8717399000015575,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112174-H2loKQZvsQq0PtaGVl1O",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0272",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:39.913410+00:00",
+    "tag": "quality:S03:V2",
+    "phase": "selection",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "5890f36d99349daf101eb1ecf8e2d51ebe25cb68979bc5d6950a7054f362c8cb",
+    "actual_cost_usd": 0.000403,
+    "budget_charge_usd": 0.000403,
+    "reserved_upper_usd": 0.0017223,
+    "input_tokens": 2394,
+    "output_tokens": 409,
+    "latency_seconds": 1.9381538000016008,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112177-gOPdhpQXbfqIB2baR9ex",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1i2nkui",
+    "1lp6def",
+    "1jllmq5"
+  ],
+  "external_judge_used": false
+}

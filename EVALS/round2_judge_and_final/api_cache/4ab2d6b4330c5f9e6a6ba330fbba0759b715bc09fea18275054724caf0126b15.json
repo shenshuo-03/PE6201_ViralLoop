@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "Tie",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts accurately ground themselves in F1–F2 and acknowledge the core tension: vector DBs prioritize semantics over order/exact matching. Draft B more directly frames the actionable question for the community—'is there a known approach or best practice'—and avoids the softer framing in A ('I'm wondering if anyone has experience'). A introduces 'reverse keyword search' terminology and mentions 'hybrid approaches' without grounding these in the brief's facts, diluting focus. B stays tighter to the stated problem: short phrases + order preservation + vector DB limitations. Both cite the 2025 Reddit source appropriately and avoid forbidden claims. Neither leverages F3–F6 (the specific AND/OR edge cases), which represent the most concrete troubleshooting detail available; this is a missed opportunity in both, but B's sharper question structure makes it more likely to elicit targeted community responses. A's 'fidelity' language and broader 'workarounds' framing are less precise than B's direct 'known approach or best practice' ask."
+  },
+  "usage": {
+    "run_id": "v002-r0438",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:19:46.568912+00:00",
+    "tag": "judge_final:F02:V2_vs_V1:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "4ab2d6b4330c5f9e6a6ba330fbba0759b715bc09fea18275054724caf0126b15",
+    "actual_cost_usd": 0.003665,
+    "budget_charge_usd": 0.003665,
+    "reserved_upper_usd": 0.012212,
+    "input_tokens": 2090,
+    "output_tokens": 315,
+    "latency_seconds": 4.511864300002344,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112781-rZ1AOebGF3UIYQLrK3Xb",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

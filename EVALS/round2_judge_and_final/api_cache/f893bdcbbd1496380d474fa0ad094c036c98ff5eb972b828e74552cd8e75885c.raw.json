@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109674-y7DV0HTDJXlWSDS3zvn1",
+  "object": "chat.completion",
+  "created": 1791109674,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"B\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is better because it directly asks the community for feedback on the validity and potential pitfalls of the proposed standard, aligning with the brief's desired response. It also poses specific, relevant questions about feasibility and practical challenges for local LLM enthusiasts, making it more engaging and useful for the target audience. Post A is more of a summary and less of a discussion starter. Post B's specificity is also higher by framing the core question around the practicality for local LLMs and explicitly mentioning the lack of implementation details as a point for discussion, whereas Post A simply states these limitations without framing them as discussion points. The credibility is also slightly better in B as it frames the claims as a proposal and asks for community input on feasibility, acknowledging the unverified nature of the proposal, while A presents the information more as a statement of fact about the proposal.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1747,
+    "completion_tokens": 243,
+    "total_tokens": 1990,
+    "cost": 0.0002719,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002719,
+      "upstream_inference_prompt_cost": 0.0001747,
+      "upstream_inference_completions_cost": 9.72e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

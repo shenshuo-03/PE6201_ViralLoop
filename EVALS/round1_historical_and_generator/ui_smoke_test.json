@@ -1,0 +1,603 @@
+{
+  "at": "2026-10-04T08:30:50.429564+00:00",
+  "source": "automated integration test; no human review submission",
+  "elapsed_seconds": 20.1422378999996,
+  "checks": {
+    "status_api": true,
+    "14_topics": true,
+    "80_final_result_cells": true,
+    "12_blind_pairs": true,
+    "live_real_response": true,
+    "live_complete_loop": true,
+    "live_final_qualified": true
+  },
+  "additional_budget_charge": 0.0035289000000000015,
+  "result": {
+    "brief": {
+      "id": "LIVE_1791102633",
+      "split": "live",
+      "topic": "A hypothetical local inference startup-delay comparison",
+      "audience": "r/LocalLLaMA readers",
+      "content_type": "Experience / Benchmark",
+      "style": "restrained technical English",
+      "scenario_status": "Hypothetical example input. Do not turn it into personal experience or real test results.",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "This is a hypothetical scenario, not an actual benchmark.",
+          "status": "user-provided scenario"
+        },
+        {
+          "id": "F2",
+          "text": "Setup A has illustrative time-to-first-token of 1.2 seconds and setup B 2.4 seconds.",
+          "status": "user-provided scenario"
+        },
+        {
+          "id": "F3",
+          "text": "Both hypothetical configurations use the same prompt and hardware.",
+          "status": "user-provided scenario"
+        },
+        {
+          "id": "F4",
+          "text": "Throughput, answer quality and statistical uncertainty have not been measured.",
+          "status": "user-provided scenario"
+        }
+      ]
+    },
+    "variant": "G4_both",
+    "initial_candidates": [
+      {
+        "index": 0,
+        "draft": {
+          "title": "Hypothetical Local Inference: Setup A (1.2s TTFT) vs. Setup B (2.4s TTFT)",
+          "body": "This post explores a hypothetical comparison between two local inference setups, A and B, focusing on time-to-first-token (TTFT). In this scenario, Setup A achieved an illustrative TTFT of 1.2 seconds, while Setup B took 2.4 seconds. It is crucial to note that this is a purely hypothetical example, not based on actual measurements or benchmarks. \n\nBoth configurations, in this thought experiment, utilized the identical prompt and ran on the same unspecified hardware. Key performance indicators such as throughput, the quality of the generated answers, and any statistical uncertainty were not evaluated in this hypothetical context. \n\nGiven these hypothetical figures, what factors might contribute to such a difference in initial response latency under otherwise identical conditions? This is intended purely for discussion, as no real-world data is presented here. F1, F2, F3, F4.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "plan": "Discuss hypothetical TTFT difference, emphasizing it's not a real benchmark. Invite discussion on potential causes for latency disparity under controlled hypothetical conditions."
+        },
+        "performance_score": 0.23832415244279181,
+        "quality": {
+          "index": 0,
+          "factual_pass": true,
+          "unsupported_claims": [],
+          "title_body_consistent": true,
+          "scenario_status_preserved": true,
+          "necessary_caveats_preserved": true,
+          "clarity": 4,
+          "usefulness": 3,
+          "relevance": 4,
+          "credibility": 4,
+          "clickbait": 1,
+          "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about lack of real measurements and unassessed metrics. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. It invites discussion on possible causes for latency differences, providing moderate actionable value. The post is relevant to local inference discussions and maintains credibility by avoiding unsupported claims or personal experience. The clickbait score is low as the title is restrained and descriptive.",
+          "quality_mean": 3.75,
+          "judge_hard_pass": true,
+          "quality_constraint_pass": true
+        },
+        "rules": {
+          "hard_rule_pass": true,
+          "hard_rule_failures": [],
+          "body_words": 132,
+          "novel_numbers": [],
+          "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+        },
+        "constraint_pass": true,
+        "diagnostics": [
+          {
+            "id": "concrete_title__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Mention an existing concrete result in the title; never invent one.",
+            "causal": false
+          },
+          {
+            "id": "numbers_early__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+            "causal": false
+          },
+          {
+            "id": "personal_early__Experience / Benchmark",
+            "direction": "negative",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+            "causal": false
+          },
+          {
+            "id": "link_present__Experience / Benchmark",
+            "direction": "positive",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Provide an available source link when relevant.",
+            "causal": false
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "draft": {
+          "title": "Considering Hypothetical Latency: 1.2s vs 2.4s TTFT in Local LLM Setups",
+          "body": "Let's consider a hypothetical scenario comparing two distinct local inference configurations, labeled A and B. The illustrative time-to-first-token (TTFT) for Setup A was 1.2 seconds, whereas Setup B exhibited a TTFT of 2.4 seconds. This comparison is strictly hypothetical and does not represent actual measured results or benchmarks. \n\nFor the purpose of this discussion, both hypothetical setups are assumed to have used the exact same input prompt and were run on identical hardware. Important metrics like measured throughput, answer quality, and statistical variance were not assessed and remain unknown within this hypothetical framework. \n\nThis setup is purely for conceptual exploration. What underlying architectural or software differences, if any, could theoretically account for a doubling of initial response time between two otherwise identical setups? We are not presenting any concrete data, only a hypothetical divergence for discussion. F1, F2, F3, F4.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "plan": "Present a hypothetical TTFT comparison (1.2s vs 2.4s) for two local LLM setups. Clearly state all facts are hypothetical and unmeasured. Prompt discussion on theoretical reasons for latency differences."
+        },
+        "performance_score": 0.23279099254076405,
+        "quality": {
+          "index": 1,
+          "factual_pass": true,
+          "unsupported_claims": [],
+          "title_body_consistent": true,
+          "scenario_status_preserved": true,
+          "necessary_caveats_preserved": true,
+          "clarity": 4,
+          "usefulness": 3,
+          "relevance": 4,
+          "credibility": 4,
+          "clickbait": 1,
+          "reasons": "This draft also clearly preserves the hypothetical scenario and necessary caveats, with no unsupported claims. The title matches the body content well. The writing is clear and accessible to the intended technical audience. It encourages conceptual discussion without presenting fabricated data. The post is relevant and credible, and the clickbait score is low due to the restrained, factual title.",
+          "quality_mean": 3.75,
+          "judge_hard_pass": true,
+          "quality_constraint_pass": true
+        },
+        "rules": {
+          "hard_rule_pass": true,
+          "hard_rule_failures": [],
+          "body_words": 140,
+          "novel_numbers": [],
+          "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+        },
+        "constraint_pass": true,
+        "diagnostics": [
+          {
+            "id": "concrete_title__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Mention an existing concrete result in the title; never invent one.",
+            "causal": false
+          },
+          {
+            "id": "numbers_early__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+            "causal": false
+          },
+          {
+            "id": "personal_early__Experience / Benchmark",
+            "direction": "negative",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+            "causal": false
+          },
+          {
+            "id": "link_present__Experience / Benchmark",
+            "direction": "positive",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Provide an available source link when relevant.",
+            "causal": false
+          }
+        ]
+      }
+    ],
+    "initial": {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Local Inference: Setup A (1.2s TTFT) vs. Setup B (2.4s TTFT)",
+        "body": "This post explores a hypothetical comparison between two local inference setups, A and B, focusing on time-to-first-token (TTFT). In this scenario, Setup A achieved an illustrative TTFT of 1.2 seconds, while Setup B took 2.4 seconds. It is crucial to note that this is a purely hypothetical example, not based on actual measurements or benchmarks. \n\nBoth configurations, in this thought experiment, utilized the identical prompt and ran on the same unspecified hardware. Key performance indicators such as throughput, the quality of the generated answers, and any statistical uncertainty were not evaluated in this hypothetical context. \n\nGiven these hypothetical figures, what factors might contribute to such a difference in initial response latency under otherwise identical conditions? This is intended purely for discussion, as no real-world data is presented here. F1, F2, F3, F4.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Discuss hypothetical TTFT difference, emphasizing it's not a real benchmark. Invite discussion on potential causes for latency disparity under controlled hypothetical conditions."
+      },
+      "performance_score": 0.23832415244279181,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about lack of real measurements and unassessed metrics. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. It invites discussion on possible causes for latency differences, providing moderate actionable value. The post is relevant to local inference discussions and maintains credibility by avoiding unsupported claims or personal experience. The clickbait score is low as the title is restrained and descriptive.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 132,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    "revisions": [
+      {
+        "index": 0,
+        "draft": {
+          "title": "Hypothetical TTFT: 1.2s vs 2.4s. What could explain the difference?",
+          "body": "Exploring a hypothetical scenario comparing two local inference setups, A and B. In this purely illustrative example, Setup A shows a time-to-first-token (TTFT) of 1.2 seconds, while Setup B has a TTFT of 2.4 seconds. It's crucial to remember this is not an actual benchmark; it's a hypothetical input for discussion.\n\nBoth setups, within this thought experiment, are assumed to use the exact same prompt and hardware. Importantly, metrics like throughput, answer quality, and any statistical uncertainty were not measured or considered here. \n\nGiven these hypothetical figures and identical conditions, what underlying factors might account for such a difference in initial response latency? This question is posed strictly for theoretical discussion, as no real-world data is presented. F1, F2, F3, F4.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "plan": "Revise title to be more direct about the hypothetical nature and the core question. Open the body by clearly stating the hypothetical nature and the specific metrics being discussed (TTFT)."
+        },
+        "performance_score": 0.23169009783570796,
+        "quality": {
+          "index": 0,
+          "factual_pass": true,
+          "unsupported_claims": [],
+          "title_body_consistent": true,
+          "scenario_status_preserved": true,
+          "necessary_caveats_preserved": true,
+          "clarity": 4,
+          "usefulness": 3,
+          "relevance": 4,
+          "credibility": 4,
+          "clickbait": 1,
+          "reasons": "The draft clearly states the hypothetical nature and includes all necessary caveats. It is well structured and readable, with a clear question posed for theoretical discussion. The title accurately reflects the content without exaggeration. The usefulness is moderate since it invites discussion but does not provide actionable insights beyond the hypothetical setup.",
+          "quality_mean": 3.75,
+          "judge_hard_pass": true,
+          "quality_constraint_pass": true
+        },
+        "rules": {
+          "hard_rule_pass": true,
+          "hard_rule_failures": [],
+          "body_words": 121,
+          "novel_numbers": [],
+          "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+        },
+        "constraint_pass": true,
+        "diagnostics": [
+          {
+            "id": "concrete_title__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Mention an existing concrete result in the title; never invent one.",
+            "causal": false
+          },
+          {
+            "id": "numbers_early__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+            "causal": false
+          },
+          {
+            "id": "personal_early__Experience / Benchmark",
+            "direction": "negative",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+            "causal": false
+          },
+          {
+            "id": "link_present__Experience / Benchmark",
+            "direction": "positive",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Provide an available source link when relevant.",
+            "causal": false
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "draft": {
+          "title": "Hypothetical Local LLM Latency: 1.2s vs 2.4s TTFT - Discussion Starter",
+          "body": "This post presents a hypothetical comparison between two local inference configurations, Setup A and Setup B, focusing on time-to-first-token (TTFT). For discussion purposes only, Setup A hypothetically achieves a TTFT of 1.2 seconds, whereas Setup B hypothetically takes 2.4 seconds. Please note that this scenario is entirely hypothetical and does not represent actual benchmark results. F1\n\nWithin this conceptual framework, both configurations are stipulated to employ the identical prompt and operate on the same hardware. Crucially, aspects such as inference throughput, the qualitative assessment of generated answers, and any measures of statistical uncertainty remain unquantified in this hypothetical example. F4\n\nConsidering these hypothetical values and the controlled conditions (same prompt, same hardware), what technical factors could plausibly lead to such a disparity in initial token generation speed? We aim to foster a theoretical discussion only. F2, F3",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "plan": "Refine the title to be more informative and less clickbaity. Reorganize the body to group related facts and limitations more concisely, ensuring clarity on the hypothetical nature early on."
+        },
+        "performance_score": 0.23463070115174414,
+        "quality": {
+          "index": 1,
+          "factual_pass": true,
+          "unsupported_claims": [],
+          "title_body_consistent": true,
+          "scenario_status_preserved": true,
+          "necessary_caveats_preserved": true,
+          "clarity": 5,
+          "usefulness": 3,
+          "relevance": 4,
+          "credibility": 4,
+          "clickbait": 1,
+          "reasons": "This draft is very clear and concise, grouping related facts and limitations effectively. The title is informative and restrained, accurately reflecting the hypothetical nature. The body maintains all caveats and does not overstate claims. It is well suited for the intended audience and purpose.",
+          "quality_mean": 4.0,
+          "judge_hard_pass": true,
+          "quality_constraint_pass": true
+        },
+        "rules": {
+          "hard_rule_pass": true,
+          "hard_rule_failures": [],
+          "body_words": 137,
+          "novel_numbers": [],
+          "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+        },
+        "constraint_pass": true,
+        "diagnostics": [
+          {
+            "id": "concrete_title__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Mention an existing concrete result in the title; never invent one.",
+            "causal": false
+          },
+          {
+            "id": "numbers_early__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+            "causal": false
+          },
+          {
+            "id": "personal_early__Experience / Benchmark",
+            "direction": "negative",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+            "causal": false
+          },
+          {
+            "id": "link_present__Experience / Benchmark",
+            "direction": "positive",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Provide an available source link when relevant.",
+            "causal": false
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "draft": {
+          "title": "Hypothetical Inference: Comparing 1.2s TTFT (Setup A) vs 2.4s TTFT (Setup B) on Identical Hypothetical Hardware",
+          "body": "We are examining a hypothetical scenario comparing two local inference setups, A and B, regarding their time-to-first-token (TTFT). In this illustrative thought experiment, Setup A hypothetically yields a TTFT of 1.2 seconds, while Setup B hypothetically shows a TTFT of 2.4 seconds. It is critical to emphasize that this is a hypothetical example, not an actual benchmark or measured result. F1\n\nFor the purposes of this discussion, both hypothetical configurations are assumed to use the exact same prompt and the same unspecified hardware. Furthermore, critical performance indicators such as throughput, the quality of the generated answers, and statistical uncertainty have not been measured or evaluated in this hypothetical context. F4\n\nGiven these hypothetical figures and the controlled conditions (identical prompt and hardware), what potential technical differences between the setups could account for this divergence in initial response latency? This discussion is purely theoretical. F2, F3",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4"
+          ],
+          "plan": "Adjust the title to be more descriptive of the core comparison and the hypothetical constraints. Modify the opening sentences to more strongly emphasize the hypothetical nature and the controlled variables before introducing the specific TTFT values."
+        },
+        "performance_score": 0.23862412216208165,
+        "quality": {
+          "index": 2,
+          "factual_pass": true,
+          "unsupported_claims": [],
+          "title_body_consistent": true,
+          "scenario_status_preserved": true,
+          "necessary_caveats_preserved": true,
+          "clarity": 4,
+          "usefulness": 3,
+          "relevance": 4,
+          "credibility": 4,
+          "clickbait": 1,
+          "reasons": "The draft preserves the hypothetical scenario and caveats well, with a descriptive and accurate title. The body is clear but slightly more formal and verbose than draft 1 and 2, which may reduce immediate readability. It remains credible and relevant, with no unsupported claims.",
+          "quality_mean": 3.75,
+          "judge_hard_pass": true,
+          "quality_constraint_pass": true
+        },
+        "rules": {
+          "hard_rule_pass": true,
+          "hard_rule_failures": [],
+          "body_words": 145,
+          "novel_numbers": [],
+          "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+        },
+        "constraint_pass": true,
+        "diagnostics": [
+          {
+            "id": "concrete_title__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Mention an existing concrete result in the title; never invent one.",
+            "causal": false
+          },
+          {
+            "id": "numbers_early__Experience / Benchmark",
+            "direction": "positive",
+            "present": true,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+            "causal": false
+          },
+          {
+            "id": "personal_early__Experience / Benchmark",
+            "direction": "negative",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+            "causal": false
+          },
+          {
+            "id": "link_present__Experience / Benchmark",
+            "direction": "positive",
+            "present": false,
+            "action": "keep",
+            "severity": "soft",
+            "suggestion": "Provide an available source link when relevant.",
+            "causal": false
+          }
+        ]
+      }
+    ],
+    "final": {
+      "index": 2,
+      "draft": {
+        "title": "Hypothetical Inference: Comparing 1.2s TTFT (Setup A) vs 2.4s TTFT (Setup B) on Identical Hypothetical Hardware",
+        "body": "We are examining a hypothetical scenario comparing two local inference setups, A and B, regarding their time-to-first-token (TTFT). In this illustrative thought experiment, Setup A hypothetically yields a TTFT of 1.2 seconds, while Setup B hypothetically shows a TTFT of 2.4 seconds. It is critical to emphasize that this is a hypothetical example, not an actual benchmark or measured result. F1\n\nFor the purposes of this discussion, both hypothetical configurations are assumed to use the exact same prompt and the same unspecified hardware. Furthermore, critical performance indicators such as throughput, the quality of the generated answers, and statistical uncertainty have not been measured or evaluated in this hypothetical context. F4\n\nGiven these hypothetical figures and the controlled conditions (identical prompt and hardware), what potential technical differences between the setups could account for this divergence in initial response latency? This discussion is purely theoretical. F2, F3",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Adjust the title to be more descriptive of the core comparison and the hypothetical constraints. Modify the opening sentences to more strongly emphasize the hypothetical nature and the controlled variables before introducing the specific TTFT values."
+      },
+      "performance_score": 0.23862412216208165,
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft preserves the hypothetical scenario and caveats well, with a descriptive and accurate title. The body is clear but slightly more formal and verbose than draft 1 and 2, which may reduce immediate readability. It remains credible and relevant, with no unsupported claims.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 145,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    "original_retained": false,
+    "optimization_requested": true,
+    "additional_budget_charge": 0.0035289000000000015,
+    "boundary": "model-relative improvement only, no real platform performance observed"
+  }
+}

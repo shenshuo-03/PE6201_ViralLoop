@@ -1,0 +1,15 @@
+EMBED 64 / 348
+EMBED 128 / 348
+EMBED 192 / 348
+EMBED 256 / 348
+EMBED 320 / 348
+EMBED 348 / 348
+FINAL TEST                 model  average_precision       f1    brier
+              E0_lazy           0.247126 0.000000 0.247126
+             E0_prior           0.247126 0.000000 0.186088
+      E1_context_only           0.305096 0.367521 0.184530
+E1b_context_structure           0.420252 0.463636 0.170479
+             E2_tfidf           0.551717 0.553191 0.179610
+      E3_text_context           0.500303 0.556604 0.159800
+               E4_lsa           0.539738 0.495726 0.153794
+          E4_semantic           0.585013 0.547945 0.148073

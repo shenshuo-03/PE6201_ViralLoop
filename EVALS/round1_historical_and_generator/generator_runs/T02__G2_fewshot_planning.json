@@ -1,0 +1,304 @@
+{
+  "at": "2026-10-04T08:07:46.623228+00:00",
+  "topic": {
+    "id": "T02",
+    "split": "final_test",
+    "topic": "A hypothetical context length memory experiment",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "In a hypothetical run, context length 2048 uses 7 GB and 8192 uses 11 GB.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Model, runtime and hardware are held fixed.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No output quality or throughput results were collected.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:07:43.847102+00:00",
+    "tag": "final_test:T02:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "72b8d2cd6c02eb2fb85d0157e2d8fcf2ec0e4a5d1e35c274cf456c651a922f25",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1198,
+    "output_tokens": 623,
+    "actual_cost_usd": 0.000369,
+    "token_price_estimate_usd": 0.00036899999999999997,
+    "reserved_upper_usd": 0.0012388999999999998,
+    "budget_charge_usd": 0.000369,
+    "latency_seconds": 2.9467753999924753,
+    "retry": 0,
+    "request_id": "gen-1791101261-LPNdWMsxQqBvJi8EIz5y"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:07:46.608793+00:00",
+    "tag": "final_test:T02:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "da18cdb13af2174aba949a7d9036600aed4af90e404dfb0bd4cb3180d8707459",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1002,
+    "output_tokens": 350,
+    "actual_cost_usd": 0.0009608,
+    "token_price_estimate_usd": 0.0009607999999999999,
+    "reserved_upper_usd": 0.0049624,
+    "budget_charge_usd": 0.0009608,
+    "latency_seconds": 2.7314233999932185,
+    "retry": 0,
+    "request_id": "gen-1791101264-ie7qkveYLFYWigV31wlh"
+  },
+  "retrieved_ids": [
+    "1iq6ngx",
+    "1lbimsz"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "9f4b122b050853ed02b128cc4196ff6db0669c9e8f323a7953293b60e4b85e88",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Memory Usage vs. Context Length in Local LLMs",
+        "body": "This post explores a hypothetical experiment investigating the relationship between context length and memory consumption for local language models. The scenario posits that with a fixed model, runtime, and hardware configuration, increasing the context length from 2048 to 8192 tokens resulted in a rise in memory usage from 7 GB to 11 GB. It's crucial to emphasize that this is a hypothetical observation and no actual measurements or performance metrics were collected. Specifically, no data on output quality or processing speed (throughput) was gathered in this conceptual exercise. The objective is to understand the potential memory overhead associated with longer contexts in a controlled, albeit theoretical, setting. Further discussion would be beneficial to explore how others might approach such an experiment or interpret these hypothetical figures within broader architectural considerations.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft a post outlining a hypothetical memory usage experiment related to context length. Explicitly state the hypothetical nature. Detail the memory figures for two context lengths (2048 and 8192), noting that model, runtime, and hardware were fixed. Crucially, mention that no quality or throughput data was collected. Conclude by inviting discussion on the hypothetical findings."
+      },
+      "performance_score": 0.2405485068593948,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and includes all relevant caveats about no actual measurements or performance data. The memory usage figures and fixed conditions are accurately reported. The language is clear and technical, suitable for the target audience. It invites discussion without making unsupported claims or causal conclusions. The title matches the content well and is not sensationalized.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 130,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Theoretical Memory Scaling with Context Length: A Hypothetical LLM Scenario",
+        "body": "Considering a hypothetical scenario for local LLM deployment, we're examining the potential memory scaling with context length. The premise is a fixed model architecture, runtime environment, and hardware setup. In this theoretical exploration, a context length of 2048 tokens was associated with approximately 7 GB of memory usage, while extending this to 8192 tokens hypothetically increased memory requirements to 11 GB. It is vital to reiterate that these figures are purely conceptual and do not represent measured results. No actual performance benchmarks, such as output quality assessments or tokens-per-second throughput, were conducted within this hypothetical framework. This thought experiment aims to highlight the potential memory implications of longer context windows. We welcome discussion on how such memory characteristics might be practically evaluated or what architectural factors could influence these hypothetical observations.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Create a Reddit post detailing a hypothetical context length memory experiment. Clearly state it's a hypothetical scenario. Present the given memory figures for 2048 and 8192 context lengths, emphasizing fixed model, runtime, and hardware. Explicitly state that no output quality or throughput data was gathered. Frame it as a theoretical consideration to invite discussion on practical evaluation methods or influencing factors."
+      },
+      "performance_score": 0.24903532972616266,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The memory usage data and fixed conditions are correctly presented. The writing is clear and technical, appropriate for the audience. The post invites discussion on practical evaluation and architectural factors without overstating the data. The title is consistent with the body and not clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 131,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Theoretical Memory Scaling with Context Length: A Hypothetical LLM Scenario",
+      "body": "Considering a hypothetical scenario for local LLM deployment, we're examining the potential memory scaling with context length. The premise is a fixed model architecture, runtime environment, and hardware setup. In this theoretical exploration, a context length of 2048 tokens was associated with approximately 7 GB of memory usage, while extending this to 8192 tokens hypothetically increased memory requirements to 11 GB. It is vital to reiterate that these figures are purely conceptual and do not represent measured results. No actual performance benchmarks, such as output quality assessments or tokens-per-second throughput, were conducted within this hypothetical framework. This thought experiment aims to highlight the potential memory implications of longer context windows. We welcome discussion on how such memory characteristics might be practically evaluated or what architectural factors could influence these hypothetical observations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Create a Reddit post detailing a hypothetical context length memory experiment. Clearly state it's a hypothetical scenario. Present the given memory figures for 2048 and 8192 context lengths, emphasizing fixed model, runtime, and hardware. Explicitly state that no output quality or throughput data was gathered. Frame it as a theoretical consideration to invite discussion on practical evaluation methods or influencing factors."
+    },
+    "performance_score": 0.24903532972616266,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The memory usage data and fixed conditions are correctly presented. The writing is clear and technical, appropriate for the audience. The post invites discussion on practical evaluation and architectural factors without overstating the data. The title is consistent with the body and not clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 131,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

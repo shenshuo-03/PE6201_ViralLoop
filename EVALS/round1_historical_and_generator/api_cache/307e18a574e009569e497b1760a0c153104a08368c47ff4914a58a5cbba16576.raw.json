@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100781-ejxY9trRusfBq28yG8MB",
+  "object": "chat.completion",
+  "created": 1791100781,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Discussion about VS Code alternatives with chat-based agent control is moderately niche but relevant, likely moderate interest.\"},{\"index\":1,\"probability\":0.7,\"reason\":\"Detailed benchmark update with new model results and leaderboard likely attracts high engagement in Experience/Benchmark category.\"},{\"index\":2,\"probability\":0.5,\"reason\":\"Technical tutorial on PyTorch to WebGPU model behavior is specialized but useful, moderate chance of high score.\"},{\"index\":3,\"probability\":0.35,\"reason\":\"Discussion on small parameter models for retrieval is somewhat niche, moderate-low interest expected.\"},{\"index\":4,\"probability\":0.4,\"reason\":\"CLI tool for scraping with browser fingerprinting is practical and developer-focused, moderate interest.\"},{\"index\":5,\"probability\":0.45,\"reason\":\"Beginner guide on optimizing local AI usage on limited hardware may attract moderate attention from similar users.\"},{\"index\":6,\"probability\":0.4,\"reason\":\"Discussion thread for users with specific GPU cards sharing model compatibility is niche but useful, moderate interest.\"},{\"index\":7,\"probability\":0.35,\"reason\":\"Seeking smallest efficient English model for linguistic reasoning is a focused discussion, moderate-low interest.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6057,
+    "completion_tokens": 267,
+    "total_tokens": 6324,
+    "cost": 0.00285,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00285,
+      "upstream_inference_prompt_cost": 0.0024228,
+      "upstream_inference_completions_cost": 0.0004272
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112652-QZAujwLMC1oPjR8u2CBj",
+  "object": "chat.completion",
+  "created": 1791112652,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source and brief, including the developer's reported motivation and the availability of the engine on NuGet and GitHub. It correctly identifies the lack of detailed performance metrics and poses relevant community questions about practical experience, stability, and output quality. The speaker's role as a reader of archived material is maintained.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 is factually accurate, adhering to the source and brief. It highlights the engine's features, availability, and the open-source nature, while also noting the scarcity of performance and quality details. The community questions are specific and relevant to the brief's goal of discussing potential use cases and technical aspects. Speaker compliance is maintained.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 3 successfully summarizes the source material and brief, accurately stating the engine's origin, features, and availability. It correctly points out the lack of community feedback and benchmarks. The questions posed to the community are specific and directly address the practical adoption and performance tradeoffs, aligning with the brief's objectives. Speaker compliance is maintained.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2794,
+    "completion_tokens": 635,
+    "total_tokens": 3429,
+    "cost": 0.0005334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005334,
+      "upstream_inference_prompt_cost": 0.0002794,
+      "upstream_inference_completions_cost": 0.000254
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

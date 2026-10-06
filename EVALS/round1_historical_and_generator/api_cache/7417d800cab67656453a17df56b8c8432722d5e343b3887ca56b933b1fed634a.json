@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of actual measurements, preserving scenario status and necessary caveats. The title accurately reflects the content and controlled variables. The body is well-structured and readable, with a clear focus on VRAM scaling with context length. The inclusion of a question about mitigation strategies adds actionable value for the audience. The post is relevant to readers interested in local LLM memory usage. No unsupported claims or exaggerations are present, and the tone is restrained and technical."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly states the hypothetical nature and lack of measured data, preserving scenario status and caveats. The title is clear and consistent with the body. The language is technical and restrained. The concluding question about architectural considerations is relevant but somewhat less directly actionable for the audience compared to mitigation strategies. Overall, it is clear and credible with no unsupported claims or clickbait."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains clear and explicit statements about the hypothetical nature and lack of actual benchmarks, preserving scenario status and caveats. The title is specific and consistent with the body content. The body presents the key hypothetical numbers early, improving clarity. The concluding question about practical implications for users with limited VRAM is relevant and actionable. The tone is technical and restrained, with no unsupported claims or clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:08:24.716212+00:00",
+    "tag": "final_test:T02:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7417d800cab67656453a17df56b8c8432722d5e343b3887ca56b933b1fed634a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1207,
+    "output_tokens": 571,
+    "actual_cost_usd": 0.0013964,
+    "token_price_estimate_usd": 0.0013964,
+    "reserved_upper_usd": 0.0052768,
+    "budget_charge_usd": 0.0013964,
+    "latency_seconds": 4.135599000001093,
+    "retry": 0,
+    "request_id": "gen-1791101300-AMGI0PnWnO6Sl624fiqN"
+  },
+  "raw_response": {
+    "id": "gen-1791101300-AMGI0PnWnO6Sl624fiqN",
+    "object": "chat.completion",
+    "created": 1791101300,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of actual measurements, preserving scenario status and necessary caveats. The title accurately reflects the content and controlled variables. The body is well-structured and readable, with a clear focus on VRAM scaling with context length. The inclusion of a question about mitigation strategies adds actionable value for the audience. The post is relevant to readers interested in local LLM memory usage. No unsupported claims or exaggerations are present, and the tone is restrained and technical.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly states the hypothetical nature and lack of measured data, preserving scenario status and caveats. The title is clear and consistent with the body. The language is technical and restrained. The concluding question about architectural considerations is relevant but somewhat less directly actionable for the audience compared to mitigation strategies. Overall, it is clear and credible with no unsupported claims or clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains clear and explicit statements about the hypothetical nature and lack of actual benchmarks, preserving scenario status and caveats. The title is specific and consistent with the body content. The body presents the key hypothetical numbers early, improving clarity. The concluding question about practical implications for users with limited VRAM is relevant and actionable. The tone is technical and restrained, with no unsupported claims or clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1207,
+      "completion_tokens": 571,
+      "total_tokens": 1778,
+      "cost": 0.0013964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013964,
+        "upstream_inference_prompt_cost": 0.0004828,
+        "upstream_inference_completions_cost": 0.0009136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

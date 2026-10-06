@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100393-iKMfkDDR19eE4KhHVqNW",
+  "object": "chat.completion",
+  "created": 1791100393,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and the exact TTFT values, preserving all necessary caveats about lack of real measurements and other metrics. The title matches the body content well. The language is clear and technical, suitable for the target audience. It invites thoughtful discussion without making unsupported claims or overstatements. The post is relevant and credible given the explicit disclaimers. The clickbait score is low as the title is restrained and factual.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all necessary caveats. The title is slightly more analytical and less declarative, which fits the content. The body is clear and concise, reiterating the lack of real data and focusing on the theoretical nature of the TTFT difference. It poses a relevant question for the audience. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains factual accuracy and clearly states the hypothetical nature of the data. The title highlights the TTFT values and contrasts them, consistent with the body. The post preserves all caveats and invites discussion on possible causes for the difference. The language is clear and appropriate for the audience. There are no unsupported claims or misleading statements.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1305,
+    "completion_tokens": 546,
+    "total_tokens": 1851,
+    "cost": 0.0013956,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013956,
+      "upstream_inference_prompt_cost": 0.000522,
+      "upstream_inference_completions_cost": 0.0008736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

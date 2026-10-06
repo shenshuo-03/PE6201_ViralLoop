@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "How well does FamilyBench test LLMs on complex family tree reasoning?",
+      "body": "FamilyBench proposes a unique approach to evaluating language models by generating intricate family trees and then posing questions about their relationships. This method aims to assess a model’s ability to understand and reason over complex, tree-like structures within a large context. The benchmark uses a Python program to create these trees and formulate related questions, which seems promising for testing relational comprehension beyond typical text tasks.\n\nHowever, since the initial report dates from mid-2025 and comes from a single source without independent verification, it’s unclear how robust or generalizable the results are. Also, the benchmark’s reliance on synthetic data raises questions about how well models trained on natural language handle these structured challenges.\n\nHas anyone experimented with FamilyBench or similar synthetic relational benchmarks to see if they reveal weaknesses or strengths in local LLMs that aren’t obvious from standard tests?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Does FamilyBench’s synthetic tree-question setup reflect real-world LLM challenges?",
+      "body": "The FamilyBench benchmark, introduced in an archived 2025 post, tests models on understanding complex family trees by generating both the tree structure and related questions with Python. This synthetic approach focuses on relational reasoning across large contexts, which is often tricky for local LLMs.\n\nWhile this seems like a targeted way to probe hierarchical understanding, the benchmark’s synthetic nature and the lack of broad testing leave open how well it correlates with real-world tasks involving family or genealogical data. The original report also notes early tests used fixed parameters that might not reflect optimal model performance.\n\nFor those interested in local LLM capabilities, does working with synthetic benchmarks like FamilyBench provide meaningful insights, or do they risk overfitting to artificial patterns? How do you balance such tests with more natural data?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

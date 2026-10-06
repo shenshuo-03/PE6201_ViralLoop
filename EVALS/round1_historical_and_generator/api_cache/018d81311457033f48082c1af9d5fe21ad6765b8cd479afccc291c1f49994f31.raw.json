@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101308-UQcUIyvV80SiIKhT1u54",
+  "object": "chat.completion",
+  "created": 1791101308,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and references all provided facts explicitly. It explains the limitations of raw tokens/second as a metric and highlights missing factors like time to first token and answer quality, preserving necessary caveats. The language is clear and technical, suitable for the target audience. The title accurately reflects the content without exaggeration or misleading claims.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully represents the hypothetical scenario and includes all necessary caveats about missing measurements and the inability to declare a winner. It emphasizes the importance of time to first token and quality, which aligns with the facts. The writing is clear and accessible, with a title that matches the body content and avoids sensationalism.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 946,
+    "completion_tokens": 349,
+    "total_tokens": 1295,
+    "cost": 0.0009368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009368,
+      "upstream_inference_prompt_cost": 0.0003784,
+      "upstream_inference_completions_cost": 0.0005584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

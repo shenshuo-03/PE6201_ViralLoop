@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview improve date calculation accuracy?",
+        "body": "A recent 2025 post shared an interesting merge model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which combines DeepSeekR1, QwQ, and SkyT1 32B models. The original user tested this fusion setup using ollama with IQ4_XS, 32k context, and Q8_0 KV Cache, focusing on tasks like date calculations.\n\nThe key question is whether this merged model actually offers better accuracy or reasoning on date-related tasks compared to using DeepSeek-R1-Distill-Qwen-32B alone. Since the test environment details are limited and results are user-reported, it’s unclear if the fusion consistently outperforms the single distilled model or if there are tradeoffs in speed or stability.\n\nHas anyone else experimented with this or similar merged models for date or calendar calculations? What practical differences did you observe in accuracy or responsiveness?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Tradeoffs in using FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview fusion vs. DeepSeek-R1-Distill-Qwen-32B?",
+        "body": "The FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model merges three large models, including DeepSeekR1 and QwQ, aiming to leverage their combined strengths. A 2025 test setup with ollama and IQ4_XS showed some promising results on date calculation tasks, but the details remain sparse.\n\nGiven the added complexity of merging three 32B models, I wonder about the practical tradeoffs: does the fusion improve accuracy enough to justify potential increases in resource usage or inference latency? Also, how stable is this merged model across varied date-related queries compared to the distilled DeepSeek-R1-Distill-Qwen-32B?\n\nHas anyone run more in-depth tests or have insights on whether such merges reliably enhance reasoning tasks like date math, or if simpler distilled models remain preferable?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0416",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:04.733272+00:00",
+    "tag": "V2:F11",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f9aa07bc7af9a2b0f828b360b90314b9123e386a55e3b62259c2695d557e24e8",
+    "actual_cost_usd": 0.001278,
+    "budget_charge_usd": 0.001278,
+    "reserved_upper_usd": 0.005621599999999999,
+    "input_tokens": 1243,
+    "output_tokens": 488,
+    "latency_seconds": 3.7472352999902796,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112680-pt0a0QzPh6IIChYbpiuH",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

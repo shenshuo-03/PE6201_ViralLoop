@@ -1,0 +1,37 @@
+{
+  "drafts": [
+    {
+      "title": "Qwen3 30B A3B model gets stuck with 'thinking' enabled in Open WebUI—any known fixes?",
+      "body": "A user reported updating their local Open WebUI Docker setup and loading the 8.0 gguf quant of the Qwen3 30B A3B model without connection issues. Requests go through fine, and the 'thinking' progress bar appears as expected. However, when the 'thinking' feature is enabled, generation eventually halts mid-sentence and the progress indicator freezes indefinitely. Disabling 'thinking' allows normal responses. Interestingly, the same model works fine on other front ends like SillyTavern and VS Code extensions such as Continue and Clide. Given this, is anyone aware of compatibility nuances or configuration tweaks in Open WebUI that might prevent the generation from freezing with 'thinking' enabled on large models like Qwen3 30B A3B? Any insights on how to debug or work around this stuck state would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "Has anyone resolved 'thinking' stalls with Qwen3 30B A3B on Open WebUI?",
+      "body": "According to a May 2025 report, a user successfully connected the Qwen3 30B A3B model (8.0 gguf quant) to Open WebUI and could send prompts normally. The 'thinking' progress indicator shows up, but enabling it causes the model to freeze mid-generation indefinitely. Without 'thinking', the model replies normally. The model functions correctly on other front ends like SillyTavern and VS Code extensions. This suggests a potential issue with how Open WebUI handles incremental generation or streaming for this model. Has anyone encountered similar hangs with 'thinking' enabled on large models in Open WebUI, and are there known workarounds or config settings that improve stability?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "Troubleshooting Qwen3 30B A3B 'thinking' freeze in Open WebUI—what helps?",
+      "body": "A user updated their Open WebUI Docker setup and loaded the Qwen3 30B A3B 8.0 gguf quant model. While connection and prompt submission work fine, enabling Open WebUI's 'thinking' feature causes generation to stall mid-sentence with the progress indicator stuck. Without 'thinking', the model responds normally. Notably, the model runs without issue on SillyTavern and VS Code extensions like Continue and Clide. This points to a possible compatibility or streaming implementation challenge in Open WebUI with this model. Does anyone have experience resolving or mitigating these stuck states when using 'thinking' with large models? Any recommended Open WebUI settings or debugging approaches?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

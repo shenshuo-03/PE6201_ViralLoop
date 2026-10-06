@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118955-cngssZqD0TfwfLiHbvgi",
+  "object": "chat.completion",
+  "created": 1791118955,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A integrates explicit fact references (F1-F6) seamlessly into narrative flow, creating stronger evidential grounding and credibility for r/LocalLLaMA audience familiar with source documentation. Draft B reads naturally but omits citations, reducing transparency about which claims derive from the original scenario. Both are publishable, but A better serves the community's preference for traceable reasoning.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2206,
+    "completion_tokens": 156,
+    "total_tokens": 2362,
+    "cost": 0.002986,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002986,
+      "upstream_inference_prompt_cost": 0.002206,
+      "upstream_inference_completions_cost": 0.00078
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

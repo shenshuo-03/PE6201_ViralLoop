@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100925-EG4uHu6IcYnIM3rL0k8O",
+  "object": "chat.completion",
+  "created": 1791100925,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical question about small models for tag generation; moderate interest but niche topic.\"},{\"index\":1,\"probability\":0.4,\"reason\":\"Detailed discussion about an AI co-author tool with community engagement potential.\"},{\"index\":2,\"probability\":0.5,\"reason\":\"Tutorial on privacy-preserving data anonymization, relevant and practical topic.\"},{\"index\":3,\"probability\":0.55,\"reason\":\"Research update on Llama 3.2 fMRI with technical depth, likely to attract expert attention.\"},{\"index\":4,\"probability\":0.35,\"reason\":\"Reflective opinion on AGI development, somewhat speculative but engaging.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Question about state-of-the-art models for semantic search, relevant to many users.\"},{\"index\":6,\"probability\":0.25,\"reason\":\"Help request from a beginner with setup issues, lower engagement expected.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Discussion about challenges with AI tools and hardware, moderate niche interest.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6122,
+    "completion_tokens": 237,
+    "total_tokens": 6359,
+    "cost": 0.002828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002828,
+      "upstream_inference_prompt_cost": 0.0024488,
+      "upstream_inference_completions_cost": 0.0003792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

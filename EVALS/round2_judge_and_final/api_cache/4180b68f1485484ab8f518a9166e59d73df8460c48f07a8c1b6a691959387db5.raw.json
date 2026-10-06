@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112698-wPJrhttAZfD9QFjD9YTW",
+  "object": "chat.completion",
+  "created": 1791112698,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"brief\": {\n    \"topic\": \"Qwen3 30B A3B model with Open WebUI\",\n    \"audience\": \"local LLM enthusiasts\",\n    \"problem_or_goal\": \"Troubleshooting Open WebUI integration with the Qwen3 30B A3B model when 'thinking' is enabled.\",\n    \"context\": \"A user is attempting to use the Qwen3 30B A3B model with Open WebUI, specifically encountering issues when the 'thinking' feature is active.\",\n    \"motivation\": \"Understanding potential compatibility issues between specific models and front-end interfaces is valuable for the local LLM community to ensure smooth operation and effective use of new models.\",\n    \"desired_response\": \"Guidance or suggestions on how to resolve the 'stuck' generation issue in Open WebUI when using the Qwen3 30B A3B model with 'thinking' enabled.\",\n    \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n    \"facts\": [\n      {\n        \"id\": \"F1\",\n        \"text\": \"The user updated their local Open WebUi docker setup and downloaded the 8.0 gguf quant of the Qwen3 30B A3B model to their server.\",\n        \"evidence_quote\": \"I updated my local Open WebUi docker setup and downloaded the 8.0 gguf quant of the model to my server.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F2\",\n        \"text\": \"Open WebUi connected without issues and the user could send requests, seeing the “thinking” progress element.\",\n        \"evidence_quote\": \"Open WebUi connected without issues and I could send requests and it would attempt to respond as I could see the “thinking” progress element.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F3\",\n        \"text\": \"When 'thinking' was enabled, the model would eventually stop generating altogether and get “stuck” in the middle of a sentence, with the thinking progress staying like that forever.\",\n        \"evidence_quote\": \"However, it would eventually stop generating all together and get “stuck” it would stop in the middle of a sentence usually and the thinking progress would say it’s on progress and would stay like that forever.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F4\",\n        \"text\": \"Sending a request without 'thinking' enabled has no issues and the model replies as normal.\",\n        \"evidence_quote\": \"Sending a request without thinking enabled has no issues and it replies as normal.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      },\n      {\n        \"id\": \"F5\",\n        \"text\": \"The model works on other front ends such as SillyTavern, and both the Continue and Clide extensions for VS Code.\",\n        \"evidence_quote\": \"it works on any other front end such as SillyTavern, and both the Continue and Clide extensions for VS Code.\",\n        \"status\": \"source-author report, not independently verified measurement\"\n      }\n    ],\n    \"allowed_claims\": [\n      \"The Qwen3 30B A3B model has an 8.0 gguf quant available.\",\n      \"Open WebUI has a 'thinking' feature that can be enabled.\",\n      \"Other front-ends like SillyTavern and VS Code extensions are compatible with the Qwen3 30B A3B model.\"\n    ],\n    \"forbidden_claims\": [\n      \"The Qwen3 30B A3B model is universally compatible with all front-ends.\",\n      \"The issue is definitively a bug in Open WebUI.\",\n      \"The issue is definitively a bug in the Qwen3 30B A3B model.\",\n      \"A specific fix has been found and verified.\"\n    ],\n    \"essential_limitations\": [\n      \"The specific version of Open WebUI used is not detailed.\",\n      \"The hardware specifications of the server running the model are not provided.\",\n      \"The exact nature of the 'stuck' state beyond stopping generation is not specified.\"\n    ],\n    \"missing_information\": [\n      \"Specific Open WebUI version.\",\n      \"Server hardware details.\",\n      \"Any custom configurations within Open WebUI.\"\n    ]\n  },\n  \"corrections\": []\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1601,
+    "completion_tokens": 1021,
+    "total_tokens": 2622,
+    "cost": 0.0030328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030328,
+      "upstream_inference_prompt_cost": 0.0004803,
+      "upstream_inference_completions_cost": 0.0025525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

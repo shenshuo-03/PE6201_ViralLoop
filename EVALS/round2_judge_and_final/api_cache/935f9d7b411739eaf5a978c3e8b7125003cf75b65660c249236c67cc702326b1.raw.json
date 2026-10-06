@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112086-oXvXXfKFqFI7gB463dv7",
+  "object": "chat.completion",
+  "created": 1791112086,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 3,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source's limitations regarding the small number of blocks tested and the potential unfairness of perplexity for CoT models. It poses a relevant question about the reliability of such limited tests for decision-making. Specificity is adequate, referencing DeepSeek R1 and perplexity. Information value is good, as it highlights key limitations and prompts further discussion. Community fit is good, as it directly addresses a technical concern relevant to local LLM enthusiasts. The speaker correctly avoids claiming personal experience.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 5,\n    \"specificity\": 4,\n    \"information_value\": 5,\n    \"clarity\": 5,\n    \"usefulness\": 5,\n    \"credibility\": 5,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 effectively synthesizes the source's limitations (small block count, perplexity suitability for CoT) and pivots to a practical, community-relevant question about alternative evaluation methods for CoT models locally. It is highly specific, referencing DeepSeek R1, expert counts, and CoT. Information value is exceptional, offering a clear problem and seeking actionable solutions. Community fit is exceptional, directly addressing a common challenge for the audience. The speaker correctly avoids claiming personal experience.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3621,
+    "completion_tokens": 489,
+    "total_tokens": 4110,
+    "cost": 0.0005577,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005577,
+      "upstream_inference_prompt_cost": 0.0003621,
+      "upstream_inference_completions_cost": 0.0001956
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

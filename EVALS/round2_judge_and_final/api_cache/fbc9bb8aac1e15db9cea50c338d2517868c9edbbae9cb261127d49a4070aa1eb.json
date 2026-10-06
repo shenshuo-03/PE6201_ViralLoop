@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Performance trade-offs between VLLM and llama.cpp for Gemma3:27b and Qwen3 32B on AMD 7900 XTX/7800 XT GPUs?",
+        "body": "A Reddit user with a setup of two AMD Radeon RX 7900 XTX and one RX 7800 XT (totaling 64GB VRAM) shared dated performance observations comparing VLLM and llama.cpp backends for running Gemma3:27b and Qwen3 32B models. Their report suggests differing inference speeds depending on the backend, but with limited and specific hardware conditions from mid-2025.\n\nGiven the aged and narrowly scoped data, is there a consensus or updated experience on which backend tends to offer better inference speed or efficiency on similar AMD GPU configurations? Also, are there particular optimizations or quantization methods that meaningfully shift the balance between VLLM and llama.cpp for these large models on AMD hardware?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Choosing between VLLM and llama.cpp for large AMD GPU setups: any recent insights for Gemma3:27b and Qwen3 32B?",
+        "body": "A user running Gemma3:27b and Qwen3 32B models on a multi-GPU AMD setup (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total) reported some performance differences between VLLM and llama.cpp backends as of May 2025. However, the data is limited and specific to their environment.\n\nFor those working with similar AMD GPU arrays, how do VLLM and llama.cpp compare in terms of inference speed and resource management for these models? Are there known backend-specific bottlenecks or advantages that should guide the choice, especially considering the dated nature of the original report?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0344",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:14:22.876575+00:00",
+    "tag": "V2:F05",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "fbc9bb8aac1e15db9cea50c338d2517868c9edbbae9cb261127d49a4070aa1eb",
+    "actual_cost_usd": 0.0011644,
+    "budget_charge_usd": 0.0011644,
+    "reserved_upper_usd": 0.005861999999999999,
+    "input_tokens": 1311,
+    "output_tokens": 400,
+    "latency_seconds": 3.0464104999846313,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112459-7IGCxObS2bc7uGcCzU4F",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

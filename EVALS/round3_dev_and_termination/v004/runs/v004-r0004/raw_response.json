@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121577-tsQ1TUlZcN4MMlGVnnoS",
+  "object": "chat.completion",
+  "created": 1791121577,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Local LLM performance on MacBook Air M1 (8GB RAM)\",\n  \"audience\": \"Users interested in running LLMs on low-spec hardware, AI enthusiasts, developers\",\n  \"content_archetype\": \"B\",\n  \"speaker_role\": \"community analyst or resource curator; not original author\",\n  \"source_relationship\": \"third_party_archive\",\n  \"source_date\": \"2025-06-28\",\n  \"posting_intent\": \"Informational, sharing benchmark results\",\n  \"current_context\": \"The user is seeking to understand the practical performance of various LLMs when run locally on a MacBook Air with 8GB of RAM, based on a third-party benchmark.\",\n  \"core_value\": \"Identifying which LLMs perform best and worst on resource-constrained hardware.\",\n  \"core_hook\": {\n    \"text\": \"Discover which LLMs actually work well on a MacBook Air M1 with only 8GB of RAM, as one model took 8 minutes to write a single question.\",\n    \"fact_refs\": [\n      \"f1\",\n      \"f4\"\n    ]\n  },\n  \"facts\": [\n    {\n      \"id\": \"f1\",\n      \"text\": \"The benchmark tested 10 LLMs locally on a MacBook Air M1 with 8GB RAM.\",\n      \"evidence_quote\": \"I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!)\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f2\",\n      \"text\": \"Quantized versions of models were used with specific Ollama environment variables set.\",\n      \"evidence_quote\": \"(All models run with quantized versions, via: os.environ[\\\"OLLAMA_CONTEXT_LENGTH\\\"] = \\\"4096\\\" and os.environ[\\\"OLLAMA_KV_CACHE_TYPE\\\"] = \\\"q4_0\\\")\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f3\",\n      \"text\": \"The methodology involved generating questions, answering them, and evaluating the answers across 5 topics.\",\n      \"evidence_quote\": \"Each model:\\n\\n1. Generated 1 question on 5 topics: *Math, Writing, Coding, Psychology, History*\\n2. Answered all 50 questions (5 x 10)\\n3. Evaluated every answer (including their own)\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f4\",\n      \"text\": \"One model, Qwen3 4B, took 486 seconds (over 8 minutes) to generate a single math question.\",\n      \"evidence_quote\": \"Qwen3 4B took 486s (8+ mins) to generate a single Math question!\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f5\",\n      \"text\": \"Gemma3:latest was identified as the best scorer for evaluations, being consistent, numerical, and unbiased.\",\n      \"evidence_quote\": \"Best scorer: Gemma3:latest – consistent, numerical, no bias\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f6\",\n      \"text\": \"Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, were noted to overrate their own answers.\",\n      \"evidence_quote\": \"Score inflation is real: Mistral, Qwen3, and LLaMA 3.1 8B overrate themselves\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f7\",\n      \"text\": \"Model size does not directly correlate with performance; larger models are not always better.\",\n      \"evidence_quote\": \"Model size ≠ performance. Bigger isn't always better.\",\n      \"status\": \"author_report\"\n    }\n  ],\n  \"limitations\": [\n    \"The benchmark was conducted on a specific hardware configuration (MacBook Air M1, 8GB RAM).\",\n    \"Results are based on a single user's testing and may not be universally applicable.\",\n    \"The evaluation of 'quality' is subjective to the author's assessment.\",\n    \"Specific quantized versions were used, which might differ from other quantization methods.\"\n  ],\n  \"allowed_claims\": [\n    \"LLMs can be run locally on an M1 MacBook Air with 8GB RAM.\",\n    \"Performance varies significantly between different LLMs.\",\n    \"Some models are faster at question generation than others.\",\n    \"Some models are faster at answer generation than others.\",\n    \"Model evaluation quality and consistency differ.\",\n    \"Self-bias in answer evaluation was observed in several models.\",\n    \"Model size is not the sole determinant of performance.\"\n  ],\n  \"forbidden_claims\": [\n    \"Claims of personal ownership or direct experience with the tested LLMs.\",\n    \"Claims that these results are definitive for all hardware or all users.\",\n    \"Invented usage scenarios or equipment not mentioned in the source.\",\n    \"Claims of independent verification beyond the author's report.\",\n    \"Claims about the creator identity of the LLMs or the benchmark author.\"\n  ],\n  \"decision\": null,\n  \"desired_help\": null\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2371,
+    "completion_tokens": 1206,
+    "total_tokens": 3577,
+    "cost": 0.0007195,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007195,
+      "upstream_inference_prompt_cost": 0.0002371,
+      "upstream_inference_completions_cost": 0.0004824
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

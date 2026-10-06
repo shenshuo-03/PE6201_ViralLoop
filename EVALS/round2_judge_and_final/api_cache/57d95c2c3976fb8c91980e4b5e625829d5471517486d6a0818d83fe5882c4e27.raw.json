@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112103-wrbnD1TD1SePIWA2wAj1",
+  "object": "chat.completion",
+  "created": 1791112103,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Newer Small LLMs Seem Better at Coding but Weaker on World Knowledge—Anyone Else Seen This?\",\"body\":\"I've been reading a 2025 report where the author tested various LLMs on coding, engineering problem solving, and also on world knowledge questions like local history and technical standards. Interestingly, despite newer small models often scoring higher on benchmarks and being promoted as equivalent to older, larger models, their world knowledge appeared worse than that of their bigger predecessors and sometimes even worse than lower-benchmarking models of similar size.\\n\\nThis suggests a tradeoff where newer small models might optimize problem-solving skills at the expense of general knowledge depth. Given these observations rely on a private test set and specific models, has anyone else noticed this pattern in their own experience? How do you balance the choice of models if you need both solid coding help and accurate factual knowledge locally?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Tradeoff Between Coding Skills and World Knowledge in Newer Small LLMs—What’s Your Take?\",\"body\":\"A 2025 user-shared test set covering coding, engineering, and detailed world knowledge (like radio protocols and local landmarks) revealed that newer small language models, despite higher benchmark claims, tend to have weaker world knowledge than older larger models. Sometimes, they even perform worse than lower-benchmarking models of similar sizes.\\n\\nThis raises a practical question for those running models locally: if you rely on smaller models for efficiency but need reliable knowledge on technical standards or geography, how do you handle this apparent tradeoff? Are there particular models or configurations that strike a better balance, or is it necessary to accept weaker knowledge for better coding performance?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1306,
+    "completion_tokens": 365,
+    "total_tokens": 1671,
+    "cost": 0.0011064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011064,
+      "upstream_inference_prompt_cost": 0.0005224,
+      "upstream_inference_completions_cost": 0.000584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

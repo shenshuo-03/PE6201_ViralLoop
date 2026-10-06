@@ -8,7 +8,7 @@
 
 | # | Action | Why only you can do it | Done? |
 |---|---|---|---|
-| 1 | ~~Upload the repository to GitHub and confirm it is PUBLIC~~ | **DONE on your behalf on 4 Oct 2026 — `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, 518 files, default branch `main`).** Open the link once and confirm it is the account you want it under. | ✅ done |
+| 1 | ~~Upload the repository to GitHub and confirm it is PUBLIC~~ | **DONE on your behalf on 4 Oct 2026, then replaced on 6 Oct 2026 with the complete, English-only package — `https://github.com/shenshuo-03/PE6201_ViralLoop` (verified public, 5,507 files, default branch `main`).** Open the link once and confirm it is the account you want it under. | ✅ done |
 | 2 | **Record the video presentation** (~5 min, face **and** screen visible) | The brief requires your own face and screen. The script is ready at `DEMO/Video_Script_EN.md`. | ☐ |
 | 3 | **Check your name and matriculation number** appear correctly | Identity fields are placeholders in `REPORT/Problem_Statement_EN.md` | ☐ |
 | 4 | **Submit to NTULearn** | Course requirement; only you have access | ☐ |
@@ -35,10 +35,14 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 
 | Deliverable | Status |
 |---|---|
-| Final English report — 987 words of prose (1,471 counting tables, captions and headings) | ✅ |
+| Final English report — 1,183 words of prose (1,939 counting tables, captions and headings) | ✅ |
 | Both real result figures embedded in the report with captions | ✅ |
 | `CODE/requirements.txt` (consolidated, all three rounds) + `CODE/INSTALL_LOG.txt` | ✅ |
 | Install / import / syntax verification in a clean environment | ✅ 5 Oct 2026, exit 0, US$0.00 |
+| End-to-end reproduction check — `python CODE/run_all_checks.py` | ✅ **14/14 stages passed**, no API key, no cost; Round 1 re-derived bit-identically, Round 3 validator 29/29 |
+| Frozen evidence integrity — `CODE/verify_frozen_evidence.py --check` | ✅ 5,370 files match their SHA-256 manifest, verified after every stage ran |
+| Packaging-change audit — `CODE/verify_packaged_code.py` | ✅ every change to frozen round code declared, originals preserved byte-identical |
+| Chinese-content audit — `CODE/scan_cjk.py --summary` | ✅ 176 files, all inside three declared categories (`EVALS/RAW_EVIDENCE_NOTE.md`) |
 | Problem statement (English) | ✅ |
 | Round 1 / 2 / 3 explainers | ✅ |
 | `DATA_README.md` | ✅ |
@@ -48,7 +52,7 @@ The **one thing you must not do** is re-run the experiments. They are frozen. Re
 | `ViralLoop_Demo.html` (English, 8 pages, self-contained) | ✅ |
 | English video script | ✅ |
 | `SUBMISSION_INDEX.md` | ✅ |
-| Data, evals, code from all three rounds packaged | ✅ 518 files, ~24 MB (excluding .git) |
+| Data, evals, code and frozen evidence from all three rounds packaged | ✅ 5,507 files, ~90 MB (excluding .git) |
 | Secret scan | ✅ 0 hits |
 | Git repository initialised, committed, and **pushed to a public GitHub repo** | ✅ `https://github.com/shenshuo-03/PE6201_ViralLoop` |
 

@@ -1,11 +1,11 @@
-# Evals说明
+# Evaluations (Round 1 package)
 
-历史分类：冻结月份/类型相对score标签；Dev选参数/阈值，Final一次。E5昂贵Judge在预先固定80条子样本，所有本地模型也评同样80条；完整348条表另存，不能混着排名。
+**Historical classification.** A frozen month × type relative-score label. Parameter and threshold selection uses Dev; Final is evaluated once. The expensive E5 judge runs on a pre-fixed 80-item subsample, and every local model is scored on the same 80 items. The full 348-item table is stored separately and must not be merged into a combined ranking.
 
-生成比较：10个冻结假设事实主题；每版本2候选；追加采样和反馈改写各3稿，同一起稿、同一模型、同输出上限。检索/模式只由Train和Tune验证提供。记录全部候选、拒答、最终选择与成本。
+**Generation comparison.** 10 frozen topics with hypothetical facts; 2 candidates per variant. Extra sampling and feedback rewriting each produce 3 drafts, from the same starting draft, with the same model and the same output cap. Retrieval and pattern material are supplied only from Train and Tune-validated sources. All candidates, refusals, final selections and costs are recorded.
 
-质量控制：数字/事实编号/假设状态/长度/复制规则＋独立模型；30条受控正例/变异反例仅检查狭窄事实约束，不证明开放世界判别准确率。
+**Quality control.** Numeric, fact-ID, hypothetical-status, length and copy rules, plus an independent model. The 30 controlled positive cases and mutated counter-examples test only a narrow factual constraint; they do not establish open-world discrimination accuracy.
 
-真人：`human_blind_cases.json`隐藏版本与分数；浏览器`/blind`提供A/B/Tie。`human_review_submissions/`只有真实人提交后才出现记录；AI不能代填。不把未提交写为“人工验证”。解盲映射单独存放，评审时不打开。
+**Human review.** `human_blind_cases.json` hides version and score; the browser route `/blind` offers A/B/Tie. Records appear under `human_review_submissions/` only after a real person submits; AI must not fill them in. Anything not submitted is never written up as "human-verified". The unblinding mapping is stored separately and is not opened during review.
 
-真实平台：本次没有随机平台A/B、曝光或生成稿实际互动，任何“真实爆款率提升”都不可作为已验证结论。
+**Real platform.** There was no randomised platform A/B test, no exposure data and no actual engagement with the generated drafts, so any claim of a "real virality lift" cannot be treated as verified.

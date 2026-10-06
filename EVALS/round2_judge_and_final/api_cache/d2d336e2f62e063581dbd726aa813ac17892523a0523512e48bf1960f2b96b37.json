@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1 improve date calculation accuracy over DeepSeek-R1-Distill-Qwen-32B?",
+        "body": "A 2025 Reddit post shared a Fusion model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which merges DeepSeekR1, QwQ, and SkyT1 32B models. The user tested this merged model against DeepSeek-R1-Distill-Qwen-32B using ollama with a 32k context and Q8_0 KV Cache.\n\nThe key question is whether combining these models actually yields better accuracy on tasks like date calculations, or if the merge introduces tradeoffs that might impact specific capabilities. Since the test environment details are limited, it’s unclear how generalizable the results are.\n\nHas anyone else compared merged models like this to their base components for date or time-related reasoning? What practical differences have you observed in accuracy or consistency?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "What are the accuracy tradeoffs when merging DeepSeekR1, QwQ, and SkyT1 models into FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview?",
+        "body": "An archived user report from early 2025 describes a Fusion model, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, created by merging DeepSeekR1, QwQ, and SkyT1 32B models. The testing was done with ollama and a 32k context window.\n\nThe poster hints at improved performance on date calculation tasks compared to DeepSeek-R1-Distill-Qwen-32B, but the setup specifics are sparse. This raises the question of whether such merges reliably enhance reasoning accuracy or if they sometimes dilute strengths from the individual models.\n\nFor those who have experience with similar merges, how do you evaluate their effectiveness on temporal or arithmetic tasks? Are there known pitfalls in merging that affect these capabilities?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0414",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:58.498894+00:00",
+    "tag": "V1:F11",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d2d336e2f62e063581dbd726aa813ac17892523a0523512e48bf1960f2b96b37",
+    "actual_cost_usd": 0.0011436,
+    "budget_charge_usd": 0.0011436,
+    "reserved_upper_usd": 0.0051924,
+    "input_tokens": 1047,
+    "output_tokens": 453,
+    "latency_seconds": 3.215761899977224,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112675-AZlWdnchNkpsVoBCvRNT",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

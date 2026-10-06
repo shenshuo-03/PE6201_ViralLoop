@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121577-Nc0ksBpE1rFq1S6xWWEk",
+  "object": "chat.completion",
+  "created": 1791121577,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Performance of llama.cpp on mobile devices\",\n  \"audience\": \"Developers and researchers interested in on-device LLM performance\",\n  \"content_archetype\": \"A\",\n  \"speaker_role\": \"community analyst or resource curator; not original author\",\n  \"source_relationship\": \"third_party_archive\",\n  \"source_date\": \"2025-01-13\",\n  \"posting_intent\": \"Troubleshooting and verification of LLM inference speeds on a mobile phone.\",\n  \"current_context\": \"The user is investigating the performance of llama.cpp on a Samsung Galaxy S22 Ultra, specifically questioning if the Adreno GPU is being utilized effectively, as the observed speeds are lower than expected.\",\n  \"core_value\": \"Understanding and optimizing LLM inference performance on edge devices.\",\n  \"core_hook\": {\n    \"text\": \"Is the Adreno GPU in a Samsung Galaxy S22 Ultra being effectively utilized by llama.cpp, or are observed speeds of less than 2 tokens/sec for Mistral-NeMo-Minitron-8B-Instruct-Q4_0 indicative of a problem?\",\n    \"fact_refs\": [\n      \"f1\",\n      \"f2\"\n    ]\n  },\n  \"facts\": [\n    {\n      \"id\": \"f1\",\n      \"text\": \"The user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra.\",\n      \"evidence_quote\": \"Fast forward to today when I was finally able to compile and run llama.cpp on my phone (a Samsung Galaxy S22 Ultra)\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f2\",\n      \"text\": \"The user is experiencing speeds of less than 2 tokens/sec with the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model on their phone.\",\n      \"evidence_quote\": \"I'm getting <2 tokens/sec with this model\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f3\",\n      \"text\": \"The user's GPU-less AMD machine achieved 6 tokens/sec with the same model.\",\n      \"evidence_quote\": \"for reference on my GPU-less AMD I was getting 6 tokens/sec\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f4\",\n      \"text\": \"The user questions if the phone's GPU is being used at all.\",\n      \"evidence_quote\": \"What I'm getting makes me question if the GPU of the phone is used at all.\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f5\",\n      \"text\": \"The user is referencing a Qualcomm.com blog post about an OpenCL GPU backend for llama.cpp on Qualcomm Adreno GPUs.\",\n      \"evidence_quote\": \"based on \\\\[this blog post at Qualcomm.com\\\\](https://www.qualcomm.com/developer/blog/2024/11/introducing-new-opn-cl-gpu-backend-llama-cpp-for-qualcomm-adreno-gpu)\",\n      \"status\": \"author_report\"\n    },\n    {\n      \"id\": \"f6\",\n      \"text\": \"The user previously tested small edge models on a GPU-less AMD machine.\",\n      \"evidence_quote\": \"So about a month ago I had created \\\\[a very rudimentary test of models running on Edge devices\\\\](https://www.reddit.com/r/LocalLLaMA/comments/1hft45b/list\\\\_of\\\\_smalledge\\\\_models\\\\_i\\\\_tested\\\\_without\\\\_a\\\\_gpu/) (i.e. potatoes like my AMD machine without a GPU).\",\n      \"status\": \"author_report\"\n    }\n  ],\n  \"limitations\": [\n    \"The source text is a single user's report and may not represent general performance.\",\n    \"No independent verification of the reported speeds or GPU utilization is provided.\",\n    \"The specific configuration and background processes on the phone are not detailed.\"\n  ],\n  \"allowed_claims\": [\n    \"Users are investigating llama.cpp performance on mobile devices.\",\n    \"Specific LLM models and hardware configurations are being tested.\",\n    \"Observed inference speeds can vary significantly.\",\n    \"Questions exist regarding the effective utilization of mobile GPUs for LLM inference.\"\n  ],\n  \"forbidden_claims\": [\n    \"The speaker has definitively proven that llama.cpp is not utilizing the Adreno GPU.\",\n    \"The reported speeds are universally experienced by all users.\",\n    \"The Qualcomm blog post guarantees specific performance metrics.\",\n    \"The speaker is an expert in mobile GPU optimization for LLMs.\"\n  ],\n  \"decision\": \"Initiate a controlled hypothetical inquiry to systematically test llama.cpp performance on a Samsung Galaxy S22 Ultra with the Adreno GPU enabled, using the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model. The inquiry should compare results against a baseline (e.g., CPU-only inference on the same device) and against reported speeds from the source text.\",\n  \"desired_help\": \"Provide a structured testing protocol for evaluating llama.cpp inference speeds on the specified mobile device and model. This protocol should include steps for enabling and verifying GPU utilization, recording token generation rates, and documenting system resource usage. Additionally, identify potential configuration parameters within llama.cpp or the device's operating system that might influence GPU performance.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1118,
+    "completion_tokens": 1250,
+    "total_tokens": 2368,
+    "cost": 0.0006118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006118,
+      "upstream_inference_prompt_cost": 0.0001118,
+      "upstream_inference_completions_cost": 0.0005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

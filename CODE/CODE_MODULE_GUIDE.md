@@ -86,6 +86,10 @@ Every entry states: what it does · input · output · dependencies · role in t
 | **Freezing** | `configs/*_freeze*.json`, `experiment_contract_*.yaml` | Thresholds and configs frozen before Final |
 | **Provenance** | `runs/*/manifest_*.json`, `prompt.txt`, `raw_response.json`, `request_config.json` | Per-call record — **68 raw responses are missing from Round 2, and that gap is disclosed** |
 | **Archiving** | `process_archive_*.md` | Narrative record of what was run and what was not |
+| **Packaged-layout path resolution** | `_packaged_paths.py` | Restores the rounds' original relative addressing for the `DATA/`+`EVALS/` layout, and redirects every write away from the frozen evidence |
+| **Packaging-change declaration** | `_packaged_code.py`, `PACKAGED_CODE_DEVIATIONS.json`, `_frozen_code/` | Byte-identical originals of every frozen module the packaging had to touch, plus the per-file reason |
+| **Verification** | `verify_frozen_evidence.py`, `verify_packaged_code.py`, `run_all_checks.py` | Exit-status checks for evidence integrity, code provenance and end-to-end runnability |
+| **Vendored helper** | `_vendor/audit_contract.py` | The contract-audit helper `conformance_audit.py` needs, vendored so the round runs without the author's machine |
 
 ## Where to look for the failures
 

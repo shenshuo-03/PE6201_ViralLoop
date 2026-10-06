@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112309-XaLKV3VEL4UYWG2Bnf56",
+  "object": "chat.completion",
+  "created": 1791112309,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": false, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 0 accurately reflects the source and brief, including the author's concerns about centralization and proposal for the Fediverse. It correctly uses fact references and poses relevant questions for community discussion. The copy_pass is false because 'tens of thousands or hundreds of thousands' is a contiguous sequence of 6 words, which is less than the 18-word threshold for a copy violation.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": false, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 also accurately summarizes the source and brief, focusing on the author's concerns and proposal. It correctly uses fact references and highlights the need for practical considerations and community input. The copy_pass is false because 'tens of thousands or hundreds of thousands' is a contiguous sequence of 6 words, which is less than the 18-word threshold for a copy violation.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2691,
+    "completion_tokens": 376,
+    "total_tokens": 3067,
+    "cost": 0.0004195,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004195,
+      "upstream_inference_prompt_cost": 0.0002691,
+      "upstream_inference_completions_cost": 0.0001504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

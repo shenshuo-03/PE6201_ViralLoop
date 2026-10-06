@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118835-w8YjYv2uGKUVq5XxjLtS",
+  "object": "chat.completion",
+  "created": 1791118835,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Choosing Between Qwen3-32b and Qwen3-235b-a22b for Multilingual NER and SQL: Benchmark Insights Needed\",\"body\":\"I'm evaluating Qwen3 models for a hypothetical project requiring strong Named Entity Recognition (NER) across European languages and accurate SQL query generation. The benchmark data shows Qwen3-32b leads in Retrieval Augmented Generation (RAG) with a 92.5 score and matches Qwen3-235b-a22b's perfect 100 in SQL generation. Meanwhile, Qwen3-235b-a22b excels in SQL but scores slightly lower in NER compared to Qwen3-32b. Both models share challenges handling non-English languages, especially Nordic ones in NER, and tend to respond in English rather than the source language in RAG scenarios. Given that excluding non-English questions can boost scores by 5–10 points, how should I interpret these multilingual limitations for a use case focused on European languages? Would the slight NER edge of Qwen3-32b outweigh the SQL strengths of Qwen3-235b-a22b, or are these differences negligible considering the multilingual gaps? Any insights on balancing these trade-offs for a multilingual text and coding task would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F4\",\"F5\",\"F8\",\"F9\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2391,
+    "completion_tokens": 286,
+    "total_tokens": 2677,
+    "cost": 0.001414,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001414,
+      "upstream_inference_prompt_cost": 0.0009564,
+      "upstream_inference_completions_cost": 0.0004576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

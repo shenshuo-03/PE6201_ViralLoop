@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109720-sqqlcqCjHtdiGUj1pdws",
+  "object": "chat.completion",
+  "created": 1791109720,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly asks questions relevant to the local LLM community about feasibility and practical challenges, inviting specific discussion. Draft B is a recap of the brief without a clear call to action or specific questions for the community. Both drafts use the exact facts provided.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1747,
+    "completion_tokens": 123,
+    "total_tokens": 1870,
+    "cost": 0.0008316,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008316,
+      "upstream_inference_prompt_cost": 0.0005241,
+      "upstream_inference_completions_cost": 0.0003075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118892-Ndl9n0AWLmfiUXASAAu7",
+  "object": "chat.completion",
+  "created": 1791118892,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The draft accurately reflects the hypothetical goals of the speaker, discussing UI design choices for a new local LLM application. It correctly references features of Sigil (F1, F2) as examples without claiming personal experience or ownership. The Chinese translation preserves the claims, tense, identity, dates, and numbers.\"\n    },\n    {\n      \"index\": 1,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The draft adheres to the hypothetical nature of the speaker's goals, focusing on UI design decisions for a new local LLM app. It uses Sigil's features (F1, F2, F3) as examples for discussion, not as personal experiences or current facts. The Chinese translation accurately conveys the original meaning, claims, tense, identity, dates, and numbers.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3171,
+    "completion_tokens": 329,
+    "total_tokens": 3500,
+    "cost": 0.0017738,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017738,
+      "upstream_inference_prompt_cost": 0.0009513,
+      "upstream_inference_completions_cost": 0.0008225
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

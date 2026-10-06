@@ -1,0 +1,31 @@
+{
+  "value": {
+    "title_zh": "llama.cpp 的 HTTP 服务器如何处理文件上传提示？寻求关于拼接和查询可靠性的清晰说明",
+    "body_zh": "我在 2025 年 5 月的一篇存档 Reddit 帖子中看到，一位用户在使用 llama 3.2 3B Q4_K_S 模型时，尝试了 llama.cpp 的 HTTP 服务器文件上传按钮。他们怀疑服务器可能只是将上传文件的内容与直接提示拼接起来，将两者都视为一个提示输入。这导致了不一致的结果：有时模型能正确回答关于文件的问题，但有时它似乎将整个文件内容解释为查询本身。该用户还表达了在用相同提示重新打开对话时获得可复现答案的愿望，而这似乎并未得到可靠的实现。鉴于这些观察，有人对文件上传按钮实际如何处理和整合文件数据与用户提示有何见解吗？是否有已知的方法来构建或分隔输入以提高一致性和可复现性？理解这一点可以帮助用户通过 llama.cpp 的 HTTP 服务器接口可靠地查询文件内容。",
+    "fact_refs": [
+      "F1",
+      "F3",
+      "F4",
+      "F5"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0500",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:33:40.756632+00:00",
+    "tag": "translate:L1791113608698225700",
+    "phase": "preflight",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "8d6c500067094d50a034d1821cee8cc9658f07e9c45762482196ee61f9ed5d11",
+    "actual_cost_usd": 0.0001288,
+    "budget_charge_usd": 0.0001288,
+    "reserved_upper_usd": 0.000812,
+    "input_tokens": 292,
+    "output_tokens": 249,
+    "latency_seconds": 1.5754401999874972,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791113619-Tq7kJHSU6N5x1UFN7Y5I",
+    "contract_sha256": "92da471fe324e4a7fd3a582013a0cc97aa7ba2a1d12697bf447d63e1e3624d91"
+  }
+}

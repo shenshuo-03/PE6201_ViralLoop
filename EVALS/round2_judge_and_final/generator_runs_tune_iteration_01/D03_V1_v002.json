@@ -1,0 +1,163 @@
+{
+  "at": "2026-10-04T11:06:03.766645+00:00",
+  "loop_version": "v002",
+  "brief_id": "D03",
+  "phase": "tune",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Insights on DeepSeek R1 Perplexity Tests: Expert Count vs Distilled Models in 2025",
+        "body": "A community member ran a limited perplexity test on DeepSeek R1 models with varying expert counts, comparing those to distilled models including Virtuoso-Medium-v2. Despite the test covering only 8 blocks out of about 560, it suggested that the full DeepSeek R1 with aggressive quantization outperforms normal distills unless restricted to 2 experts. Interestingly, Virtuoso Medium V2’s distill ranks between DeepSeek with 3 and 4 experts.\n\nGiven the small sample and the test’s date (January 2025), how much weight should we place on perplexity as a metric here, especially since chain-of-thought models may not be fairly evaluated this way? Would anyone have insights or experiences on whether expert count correlates strongly with practical performance beyond perplexity?",
+        "fact_refs": [
+          "F1",
+          "F4",
+          "F5",
+          "F2",
+          "F3"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source, including its limitations. It correctly identifies the key findings regarding expert counts and distilled models. The community fit is good as it directly asks for community insights on the implications of the findings. Specificity is good by mentioning DeepSeek R1, expert counts, and distilled models. Information value is good by posing relevant questions for discussion. Clarity and usefulness are high. Credibility is good as it acknowledges the source's limitations. Copying is flagged because \"DeepSeek R1 models with varying expert counts, comparing those to distilled models including Virtuoso-Medium-v2\" is a near-verbatim phrase from the source's context, though not a direct quote. The title is a bit clickbaity by including \"2025\" which is not in the source, but the body correctly states \"January 2025\" as the test date.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 115,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "DeepSeek R1 MoE Models: Handling NaNs and Perplexity Limits in Early 2025 Tests",
+        "body": "An archived post from early 2025 shows a perplexity test of DeepSeek R1 models with different numbers of experts. The test ran on just 8 blocks, and attempts with 10 and 12 experts resulted in perplexity calculations failing due to NaNs. This raises questions about stability or configuration issues at higher expert counts.\n\nGiven the limited scope and the known limitations of perplexity for chain-of-thought models, is there any community experience on why higher expert counts might cause such failures? Could this be a quantization or implementation artifact, or an inherent challenge with scaling experts in MoE models? Any practical advice or follow-up tests would be helpful to understand these tradeoffs better.",
+        "fact_refs": [
+          "F1",
+          "F6",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 accurately summarizes the source, focusing on the NaN issue with higher expert counts and reiterating the test's limitations. It poses relevant questions about the cause of NaNs and potential practical implications, fitting the community discussion goal. Specificity is good by mentioning DeepSeek R1, expert counts, and NaNs. Information value is high by seeking explanations for the observed behavior. Clarity and usefulness are high. Credibility is good due to the acknowledgment of limitations. Copying is flagged because \"perplexity test of DeepSeek R1 models with different numbers of experts\" is a near-verbatim phrase from the source's context, though not a direct quote. The title is a bit clickbaity by including \"early 2025\" which is not in the source, but the body correctly states \"early 2025\" as the test date.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": false,
+        "quality_pass": false,
+        "body_words": 112,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Insights on DeepSeek R1 Perplexity Tests: Expert Count vs Distilled Models in 2025",
+      "body": "A community member ran a limited perplexity test on DeepSeek R1 models with varying expert counts, comparing those to distilled models including Virtuoso-Medium-v2. Despite the test covering only 8 blocks out of about 560, it suggested that the full DeepSeek R1 with aggressive quantization outperforms normal distills unless restricted to 2 experts. Interestingly, Virtuoso Medium V2’s distill ranks between DeepSeek with 3 and 4 experts.\n\nGiven the small sample and the test’s date (January 2025), how much weight should we place on perplexity as a metric here, especially since chain-of-thought models may not be fairly evaluated this way? Would anyone have insights or experiences on whether expert count correlates strongly with practical performance beyond perplexity?",
+      "fact_refs": [
+        "F1",
+        "F4",
+        "F5",
+        "F2",
+        "F3"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source, including its limitations. It correctly identifies the key findings regarding expert counts and distilled models. The community fit is good as it directly asks for community insights on the implications of the findings. Specificity is good by mentioning DeepSeek R1, expert counts, and distilled models. Information value is good by posing relevant questions for discussion. Clarity and usefulness are high. Credibility is good as it acknowledges the source's limitations. Copying is flagged because \"DeepSeek R1 models with varying expert counts, comparing those to distilled models including Virtuoso-Medium-v2\" is a near-verbatim phrase from the source's context, though not a direct quote. The title is a bit clickbaity by including \"2025\" which is not in the source, but the body correctly states \"January 2025\" as the test date.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 115,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0211",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:01.019429+00:00",
+    "tag": "V1:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "de58e15670c3e726df9d5b6b7282ff02555f7a9ee8ae7744fbdfefd88bab040e",
+    "actual_cost_usd": 0.0013552,
+    "budget_charge_usd": 0.0013552,
+    "reserved_upper_usd": 0.006701599999999999,
+    "input_tokens": 1808,
+    "output_tokens": 395,
+    "latency_seconds": 2.938174100010656,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111957-5bmRHsPdxM9QURBICHCp",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0212",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:03.736953+00:00",
+    "tag": "quality:D03:V1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "c8e57834c63340c05ffc878f87b05f18479a3269a89bf6c2b73eeff9ffa59f29",
+    "actual_cost_usd": 0.0006175,
+    "budget_charge_usd": 0.0006175,
+    "reserved_upper_usd": 0.0019683,
+    "input_tokens": 3623,
+    "output_tokens": 638,
+    "latency_seconds": 2.687591699999757,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111960-pa4ohC4pv3tkoWRuZujV",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

@@ -1,0 +1,201 @@
+{
+  "at": "2026-10-04T08:15:55.402377+00:00",
+  "topic": {
+    "id": "T10",
+    "split": "final_test",
+    "topic": "A precise troubleshooting question for a hypothetical slowdown",
+    "content_type": "Question / Troubleshooting",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The hypothetical setup uses a 16 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The slowdown begins when context length changes from 2048 to 8192.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Model and runtime versions are not yet recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No evidence proves a driver, memory or model issue.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T08:15:52.282787+00:00",
+    "tag": "final_test:T10:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "181e72e0df543927cd4290d31312c41efd6b97dfc7a9cbe07a9a90342296e261",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 912,
+    "output_tokens": 892,
+    "actual_cost_usd": 0.000448,
+    "token_price_estimate_usd": 0.000448,
+    "reserved_upper_usd": 0.0012095,
+    "budget_charge_usd": 0.000448,
+    "latency_seconds": 4.17070230000536,
+    "retry": 0,
+    "request_id": "gen-1791101748-FoQye0BpwyW17ArDHp4A"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:15:55.393780+00:00",
+    "tag": "final_test:T10:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3753b7a3e095296a9992cec6953de79d11b788dd10c89da7d7faa1f0b25d104b",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1317,
+    "output_tokens": 398,
+    "actual_cost_usd": 0.0011636,
+    "token_price_estimate_usd": 0.0011635999999999999,
+    "reserved_upper_usd": 0.0054272,
+    "budget_charge_usd": 0.0011636,
+    "latency_seconds": 3.0748564999958035,
+    "retry": 0,
+    "request_id": "gen-1791101752-ITl43FCfq3EiQIWXnWhD"
+  },
+  "retrieved_ids": [
+    "1kmdzv0",
+    "1idgrh4"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "bd7f789e2187c2b37fb5516892d8f093e931b28acd16d088ba6c95eba99cab12",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical 16GB GPU Context Length Slowdown: Investigating Runtime Behavior",
+        "body": "I'm exploring a hypothetical scenario involving a 16 GB GPU setup running local LLMs. A noticeable slowdown is observed when increasing the context length from 2048 to 8192 tokens. This is a purely hypothetical experiment, and no specific model or runtime versions have been recorded yet (F3). Crucially, there's no current evidence pointing to a driver, VRAM, or model architecture issue (F4).\n\nThe primary question is: what runtime factors might be responsible for such a slowdown when only the context length is increased, assuming the model itself and other parameters remain constant? Are there specific memory management patterns or computational overheads associated with larger contexts in typical LLM runtimes that could manifest as a slowdown, even on a system with ample VRAM for the model weights? This is in a hypothetical context, not based on measured results.\n\nSeeking insights into potential bottlenecks related to KV cache management, attention mechanism scaling, or runtime overheads specific to extended contexts. Please share any relevant theoretical considerations or known patterns, keeping in mind this is a hypothetical investigation.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "1. State the hypothetical nature of the scenario upfront.\n2. Clearly define the observed issue: slowdown with increased context length (2048 -> 8192) on a 16GB GPU.\n3. Explicitly mention that model/runtime versions are unrecorded and no specific issues (driver, memory, model) are proven (F3, F4).\n4. Pose the core troubleshooting question: what runtime factors cause slowdown solely due to context length increase?\n5. Suggest potential areas of investigation (KV cache, attention scaling, runtime overheads).\n6. Reiterate the hypothetical, non-measured nature of the query.\n7. Keep the tone technical and focused on discussion, avoiding personal experience.\n8. Ensure word count is within limits."
+      },
+      "performance_score": 0.23230836950227612,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1-F4). It avoids unsupported claims and maintains appropriate caveats about the lack of measured data and unknown model/runtime versions. The title accurately reflects the content. The technical language is clear and accessible to the target audience, making it useful and relevant for troubleshooting discussions. The post is credible given the explicit disclaimers and absence of fabricated results. The clickbait score is low due to restrained, factual wording.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 174,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Troubleshooting Hypothetical LLM Context Length Performance Drop on 16GB GPU",
+        "body": "This post details a hypothetical troubleshooting scenario. We're observing a performance degradation, specifically a slowdown, in a local LLM setup when the context length is extended from 2048 to 8192 tokens. The hypothetical hardware configuration includes a 16 GB GPU (F1).\n\nIt's important to emphasize that this is a hypothetical experiment, and specific model versions, runtime software, or drivers have not been identified or recorded (F3). Furthermore, there is currently no evidence to suggest the slowdown is caused by a driver issue, VRAM limitations, or a problem with the model weights themselves (F4).\n\nThe central question is: what common runtime behaviors or architectural considerations could lead to a significant slowdown when only the context length is increased, given these constraints? Are there specific aspects of context management, like KV cache expansion or attention computation scaling, that become disproportionately more expensive at larger context sizes, even if the GPU has sufficient VRAM for the model weights? This is purely for theoretical discussion.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "1. Clearly frame the post as a hypothetical troubleshooting scenario.\n2. State the observed phenomenon: slowdown when context length increases from 2048 to 8192 tokens.\n3. Mention the hypothetical hardware: 16 GB GPU (F1).\n4. Explicitly state that model/runtime versions are unrecorded (F3) and no specific issues (driver, memory, model) are currently identified (F4).\n5. Ask the core question about runtime factors causing slowdown specifically due to context length.\n6. Suggest potential areas like KV cache or attention scaling as theoretical causes.\n7. Reiterate the hypothetical nature and avoid personal claims or measured results.\n8. Ensure the title is restrained and the body is within the word count."
+      },
+      "performance_score": 0.23689352239977474,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical scenario and references all facts (F1-F4). It clearly frames the question and caveats, avoiding unsupported claims or personal experience. The title matches the body content well. The language is clear and technical, suitable for the intended audience. The post is relevant and credible due to explicit disclaimers and no fabricated data. The clickbait score is low because the title and body are restrained and factual.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 161,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Troubleshooting Hypothetical LLM Context Length Performance Drop on 16GB GPU",
+      "body": "This post details a hypothetical troubleshooting scenario. We're observing a performance degradation, specifically a slowdown, in a local LLM setup when the context length is extended from 2048 to 8192 tokens. The hypothetical hardware configuration includes a 16 GB GPU (F1).\n\nIt's important to emphasize that this is a hypothetical experiment, and specific model versions, runtime software, or drivers have not been identified or recorded (F3). Furthermore, there is currently no evidence to suggest the slowdown is caused by a driver issue, VRAM limitations, or a problem with the model weights themselves (F4).\n\nThe central question is: what common runtime behaviors or architectural considerations could lead to a significant slowdown when only the context length is increased, given these constraints? Are there specific aspects of context management, like KV cache expansion or attention computation scaling, that become disproportionately more expensive at larger context sizes, even if the GPU has sufficient VRAM for the model weights? This is purely for theoretical discussion.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "1. Clearly frame the post as a hypothetical troubleshooting scenario.\n2. State the observed phenomenon: slowdown when context length increases from 2048 to 8192 tokens.\n3. Mention the hypothetical hardware: 16 GB GPU (F1).\n4. Explicitly state that model/runtime versions are unrecorded (F3) and no specific issues (driver, memory, model) are currently identified (F4).\n5. Ask the core question about runtime factors causing slowdown specifically due to context length.\n6. Suggest potential areas like KV cache or attention scaling as theoretical causes.\n7. Reiterate the hypothetical nature and avoid personal claims or measured results.\n8. Ensure the title is restrained and the body is within the word count."
+    },
+    "performance_score": 0.23689352239977474,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also faithfully preserves the hypothetical scenario and references all facts (F1-F4). It clearly frames the question and caveats, avoiding unsupported claims or personal experience. The title matches the body content well. The language is clear and technical, suitable for the intended audience. The post is relevant and credible due to explicit disclaimers and no fabricated data. The clickbait score is low because the title and body are restrained and factual.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 161,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": []
+  },
+  "abstention": false
+}

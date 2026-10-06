@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101277-dxF7LZhOPIWDiUroHR9i",
+  "object": "chat.completion",
+  "created": 1791101277,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly notes the absence of actual measurements or quality/speed metrics, preserving scenario status and necessary caveats. The title matches the content well. The explanation is clear and technical, suitable for the target audience. The post provides actionable value by framing a discussion on resource planning, though it does not provide new data or conclusions. Credibility is high due to careful caveat inclusion and no unsupported claims. Clickbait is minimal, with a restrained and factual title.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical nature and lack of actual measurements, preserving all necessary caveats. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It invites community discussion on factors influencing VRAM usage, providing moderate actionable value. No unsupported claims are made, and credibility is maintained by explicit disclaimers. The title is factual and not clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1066,
+    "completion_tokens": 394,
+    "total_tokens": 1460,
+    "cost": 0.0010568,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010568,
+      "upstream_inference_prompt_cost": 0.0004264,
+      "upstream_inference_completions_cost": 0.0006304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

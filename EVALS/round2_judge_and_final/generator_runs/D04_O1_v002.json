@@ -1,0 +1,235 @@
+{
+  "at": "2026-10-04T11:08:37.046132+00:00",
+  "loop_version": "v002",
+  "brief_id": "D04",
+  "phase": "tune",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Has Anyone Else Seen Newer Small LLMs Sacrifice World Knowledge for Coding Skills?",
+        "body": "A 2025 Reddit post reports that newer small LLMs like Qwen 3 and GLM-4-0414 show noticeably better coding and problem-solving performance compared to older models, yet their world knowledge is often worse—even compared to some older, lower-benchmarking models of similar size. For example, Qwen 3 8B reportedly underperforms Llama 3.1 8B and Gemma 2 9B on knowledge tests, while Qwen 3 14B fares worse than Phi 4 and Gemma 3 12B. The author suspects this trade-off stems from training data containing more problem-solving content but less knowledge-dense material. Given these observations rely on private test questions and specific models, has anyone else noticed this apparent tension between knowledge depth and problem-solving in recent smaller LLMs? How do you approach selecting models when you need both reliable factual knowledge and strong coding abilities locally?",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5",
+          "F8"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's observations about the trade-off between world knowledge and problem-solving in newer small LLMs, citing specific model examples and the author's hypothesis. It correctly frames these as user reports and poses relevant questions to the community, aligning well with the brief's goals. The specificity is good, mentioning model names and the nature of the trade-off. The community fit is strong as it directly asks for shared experiences and strategies. Information value is high due to the clear summary and actionable questions. Credibility is maintained by referencing the source and its limitations. Usefulness is high for local LLM enthusiasts seeking to understand model capabilities. Clarity and clickbait scores are excellent.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 133,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Trade-off Between World Knowledge and Problem-Solving in Newer Small LLMs—Thoughts?",
+        "body": "According to a 2025 user report, newer smaller LLMs such as Qwen 3 and GLM-4-0414 excel in coding and engineering problem solving compared to older models but show degraded world knowledge. The author’s private tests indicate models like Qwen 3 8B and 14B have poorer factual recall than older models like Llama 3.1 8B or Gemma 3 12B. Interestingly, some models like Llama 4 Maverick buck this trend by having strong knowledge but weaker problem-solving skills. The hypothesis is that training data for newer models emphasizes problem-solving tasks at the expense of knowledge-rich content. For those working locally with these models, how do you evaluate or balance these trade-offs in practice? Have you found any testing approaches or model choices that help maintain both knowledge accuracy and problem-solving strength?",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5",
+          "F7",
+          "F8"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft effectively summarizes the source's core argument regarding the knowledge vs. problem-solving trade-off in LLMs, including specific model comparisons and the author's hypothesis. It correctly attributes the information to a user report and poses pertinent questions to the target audience about practical evaluation and balancing these capabilities. Specificity is good, mentioning model names and the nature of the trade-off. Community fit is strong as it directly solicits user experiences and strategies. Information value is high due to the clear summary and actionable questions. Credibility is maintained by referencing the source and its limitations. Usefulness is high for local LLM enthusiasts. Clarity and clickbait scores are excellent.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 129,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Balancing Knowledge and Problem-Solving in Small LLMs: Insights from a 2025 Report",
+        "body": "A 2025 Reddit post highlights a curious pattern: newer small LLMs, while scoring higher on coding and problem-solving benchmarks, often show weaker world knowledge than older or similarly sized models. For instance, Granite 3.3 improved slightly on problem-solving compared to Granite 3.2 but declined in knowledge. Conversely, Llama 4 Maverick offers strong world knowledge but mediocre coding skills. The author speculates this trade-off arises because newer training data is richer in problem-solving content but less dense in factual knowledge. Given these findings are based on private test sets and specific models, does anyone have experience confirming this trade-off? What strategies do you use to assess or mitigate potential losses in knowledge while gaining problem-solving improvements?",
+        "fact_refs": [
+          "F1",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 3,
+        "information_value": 3,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately captures the essence of the source's observations about the knowledge-problem solving trade-off, mentioning specific models and the author's hypothesis. It correctly frames the information as a user report and asks relevant questions to the community. Specificity is adequate, mentioning Granite and Llama 4 Maverick, but less comprehensive on other models compared to drafts 0 and 1. Community fit is good as it asks for confirmation and strategies. Information value is good, providing a concise summary and relevant questions. Credibility is maintained by referencing the source and its limitations. Usefulness is high for local LLM enthusiasts. Clarity and clickbait scores are excellent.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 115,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Newer Small LLMs Seem Better at Coding but Weaker on World Knowledge—Anyone Else Seen This?",
+      "body": "I've been reading a 2025 report where the author tested various LLMs on coding, engineering problem solving, and also on world knowledge questions like local history and technical standards. Interestingly, despite newer small models often scoring higher on benchmarks and being promoted as equivalent to older, larger models, their world knowledge appeared worse than that of their bigger predecessors and sometimes even worse than lower-benchmarking models of similar size.\n\nThis suggests a tradeoff where newer small models might optimize problem-solving skills at the expense of general knowledge depth. Given these observations rely on a private test set and specific models, has anyone else noticed this pattern in their own experience? How do you balance the choice of models if you need both solid coding help and accurate factual knowledge locally?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source's core observation about the trade-off between problem-solving and world knowledge in newer small LLMs, citing the author's private test set. It correctly frames the information as a user report from 2025 and avoids claiming personal testing. The question posed to the community is specific and relevant to the brief's goal. The use of fact references is appropriate. The title and body are clear and informative, fitting the community's interest in LLM capabilities.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 130,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Newer Small LLMs Seem Better at Coding but Weaker on World Knowledge—Anyone Else Seen This?",
+      "body": "I've been reading a 2025 report where the author tested various LLMs on coding, engineering problem solving, and also on world knowledge questions like local history and technical standards. Interestingly, despite newer small models often scoring higher on benchmarks and being promoted as equivalent to older, larger models, their world knowledge appeared worse than that of their bigger predecessors and sometimes even worse than lower-benchmarking models of similar size.\n\nThis suggests a tradeoff where newer small models might optimize problem-solving skills at the expense of general knowledge depth. Given these observations rely on a private test set and specific models, has anyone else noticed this pattern in their own experience? How do you balance the choice of models if you need both solid coding help and accurate factual knowledge locally?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source's core observation about the trade-off between problem-solving and world knowledge in newer small LLMs, citing the author's private test set. It correctly frames the information as a user report from 2025 and avoids claiming personal testing. The question posed to the community is specific and relevant to the brief's goal. The use of fact references is appropriate. The title and body are clear and informative, fitting the community's interest in LLM capabilities.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 130,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0254",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:33.919914+00:00",
+    "tag": "O1:D04",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "795384f4f7d5865f264f184f6327158942910dddae5959299ac35b535bd6c68e",
+    "actual_cost_usd": 0.0014792,
+    "budget_charge_usd": 0.0014792,
+    "reserved_upper_usd": 0.0096972,
+    "input_tokens": 2514,
+    "output_tokens": 656,
+    "latency_seconds": 5.568293999996968,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112108-KDhGa3zZkAYv7CPNDX1e",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0255",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:37.019372+00:00",
+    "tag": "quality:D04:O1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "8724eb714e8ac2eb94e38ef7e448ad599e8d80e7913e2302fe8bc890bb3b855c",
+    "actual_cost_usd": 0.000715,
+    "budget_charge_usd": 0.000715,
+    "reserved_upper_usd": 0.0023195,
+    "input_tokens": 3782,
+    "output_tokens": 842,
+    "latency_seconds": 3.07113960001152,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112113-p67zgrdA6YyrPxaO5TkJ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

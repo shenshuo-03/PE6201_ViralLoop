@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1, F2, F3). It correctly emphasizes the need to check logs and network connections to verify privacy claims without asserting any unverified conclusions. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in local LLM privacy considerations. The absence of clickbait is appropriate for the technical discussion."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all relevant facts (F1, F2, F3). It carefully avoids making unsupported claims and highlights the importance of local log and network traffic analysis. The title aligns well with the body content. The writing is clear and technical, providing actionable framing for the audience. It maintains appropriate caveats and does not exaggerate claims, resulting in low clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:57:19.824857+00:00",
+    "tag": "selection_dev:S02:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1df706d25e4458e9a46ab61c1cb395862f5d44330962eb08dc3e642391eb76b9",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 944,
+    "output_tokens": 390,
+    "actual_cost_usd": 0.0010016,
+    "token_price_estimate_usd": 0.0010016,
+    "reserved_upper_usd": 0.00484,
+    "budget_charge_usd": 0.0010016,
+    "latency_seconds": 3.342005700003938,
+    "retry": 0,
+    "request_id": "gen-1791100636-rXy6jdUAAWks8Uctwj10"
+  },
+  "raw_response": {
+    "id": "gen-1791100636-rXy6jdUAAWks8Uctwj10",
+    "object": "chat.completion",
+    "created": 1791100636,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1, F2, F3). It correctly emphasizes the need to check logs and network connections to verify privacy claims without asserting any unverified conclusions. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in local LLM privacy considerations. The absence of clickbait is appropriate for the technical discussion.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all relevant facts (F1, F2, F3). It carefully avoids making unsupported claims and highlights the importance of local log and network traffic analysis. The title aligns well with the body content. The writing is clear and technical, providing actionable framing for the audience. It maintains appropriate caveats and does not exaggerate claims, resulting in low clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 944,
+      "completion_tokens": 390,
+      "total_tokens": 1334,
+      "cost": 0.0010016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010016,
+        "upstream_inference_prompt_cost": 0.0003776,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

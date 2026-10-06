@@ -1,0 +1,241 @@
+{
+  "at": "2026-10-04T11:18:14.989896+00:00",
+  "loop_version": "v002",
+  "brief_id": "F11",
+  "phase": "final",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "How does the FuseO1 merged model compare to DeepSeek-R1-Distill-Qwen-32B on practical tasks like date calculations and logic puzzles?",
+        "body": "A user tested the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model—a fusion of DeepSeekR1, QwQ, and SkyT1 32B models—using ollama with IQ4_XS quantization, 32k context, and Q8_0 KV Cache. They reported that this merged model correctly solved a file-packing problem with four accurate answers and calculated the days between December 12, 1971, and April 18, 2024, as 19,121 days, which was accurate. In contrast, DeepSeek-R1-Distill-Qwen-32B gave an incorrect date difference and even fell into an infinite loop on a river crossing riddle where the merged model provided a correct single-trip solution. Given these observations, how consistent is the performance gain from such merges across different task types? Has anyone else seen similar improvements or encountered tradeoffs like slower inference or stability issues with FuseO1 or comparable merged models?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source, adhering to the persona and brief. It correctly identifies the models, the user's test setup, and the specific outcomes for each task, including the correct and incorrect answers and the infinite loop. It also poses relevant community questions about performance gains and potential tradeoffs, fitting the community and information value criteria well. Specificity is high due to mentioning model names, tasks, and setup details. The speaker correctly avoids claiming personal testing.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 123,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "User reports FuseO1 merge model solves date and logic tasks better than DeepSeek-R1-Distill-Qwen-32B—thoughts?",
+        "body": "According to a 2025 r/LocalLLaMA post, the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model, which merges DeepSeekR1, QwQ, and SkyT1 32B, showed promising results on specific tests. Using ollama + IQ4_XS + 32k context + Q8_0 KV Cache, the user found it correctly answered a file-packing question with four valid solutions and accurately computed a date difference of 19,121 days, while DeepSeek-R1-Distill-Qwen-32B gave a wrong number (19,486). Additionally, the merged model solved a river crossing riddle with a single crossing, whereas the distilled model got stuck in an infinite loop. Given these task-specific improvements, what might be the underlying reasons for the merged model’s better reasoning here? Are there known limitations or stability concerns with such merges that could affect broader usability?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft accurately summarizes the source material, including the model names, test setup, and task results. It correctly notes the superior performance of the merged model on the file-packing and date calculation tasks, as well as its success on the riddle where the other model failed. The draft poses relevant questions about the reasons for improved performance and potential limitations, aligning with community fit and information value. Specificity is good, referencing model names and task types. The speaker maintains the correct persona by not claiming personal testing.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 117,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Considering the FuseO1-DeepSeekR1-QwQ-SkyT1-32B merge: Is improved accuracy worth potential tradeoffs?",
+        "body": "A Reddit user tested a merged model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, combining DeepSeekR1, QwQ, and SkyT1 32B, under ollama with IQ4_XS quantization and 32k context. They reported it gave multiple correct answers for a file-packing problem and accurately calculated a date difference (19,121 days), outperforming DeepSeek-R1-Distill-Qwen-32B, which gave an incorrect date and even fell into an infinite loop on a river crossing puzzle. While this suggests merging may enhance accuracy and reasoning on some tasks, the user’s environment and prompts aren’t fully detailed. Has anyone else tested this or similar merges and noticed consistent gains? Are there known downsides like increased resource use or occasional instability that should be considered before adopting such merged models?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately captures the key information from the source, including the merged model's name, its components, the test setup, and the comparative performance on the file-packing, date calculation, and river crossing tasks. It correctly highlights the merged model's successes and the other model's failures. The draft also appropriately includes caveats about the limited detail in the source and asks relevant questions about potential tradeoffs, contributing to good community fit and information value. Specificity is high due to the inclusion of model names and task details. The speaker adheres to the persona by not claiming personal testing.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 113,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview improve date calculation accuracy?",
+      "body": "A recent 2025 post shared an interesting merge model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which combines DeepSeekR1, QwQ, and SkyT1 32B models. The original user tested this fusion setup using ollama with IQ4_XS, 32k context, and Q8_0 KV Cache, focusing on tasks like date calculations.\n\nThe key question is whether this merged model actually offers better accuracy or reasoning on date-related tasks compared to using DeepSeek-R1-Distill-Qwen-32B alone. Since the test environment details are limited and results are user-reported, it’s unclear if the fusion consistently outperforms the single distilled model or if there are tradeoffs in speed or stability.\n\nHas anyone else experimented with this or similar merged models for date or calendar calculations? What practical differences did you observe in accuracy or responsiveness?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 focuses on the date calculation aspect of the source, directly addressing the brief's goal of discussing performance differences. It correctly identifies the merged model and the test setup, and poses relevant questions about accuracy and tradeoffs. The community fit is good because it asks for user experiences with similar models. Specificity is high by mentioning the models and task. Information value is good as it synthesizes the source and asks for further insights. Clarity and usefulness are high. Credibility is good as it adheres to the source and brief. Clickbait is low.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 120,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview improve date calculation accuracy?",
+      "body": "A recent 2025 post shared an interesting merge model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which combines DeepSeekR1, QwQ, and SkyT1 32B models. The original user tested this fusion setup using ollama with IQ4_XS, 32k context, and Q8_0 KV Cache, focusing on tasks like date calculations.\n\nThe key question is whether this merged model actually offers better accuracy or reasoning on date-related tasks compared to using DeepSeek-R1-Distill-Qwen-32B alone. Since the test environment details are limited and results are user-reported, it’s unclear if the fusion consistently outperforms the single distilled model or if there are tradeoffs in speed or stability.\n\nHas anyone else experimented with this or similar merged models for date or calendar calculations? What practical differences did you observe in accuracy or responsiveness?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 focuses on the date calculation aspect of the source, directly addressing the brief's goal of discussing performance differences. It correctly identifies the merged model and the test setup, and poses relevant questions about accuracy and tradeoffs. The community fit is good because it asks for user experiences with similar models. Specificity is high by mentioning the models and task. Information value is good as it synthesizes the source and asks for further insights. Clarity and usefulness are high. Credibility is good as it adheres to the source and brief. Clickbait is low.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 120,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0418",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:12.095417+00:00",
+    "tag": "O1:F11",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b6c8414a6e334391c9855da5a019d92ed2dbc374479cc7b518999d0b08c4eb22",
+    "actual_cost_usd": 0.0021468,
+    "budget_charge_usd": 0.0021468,
+    "reserved_upper_usd": 0.0085796,
+    "input_tokens": 2259,
+    "output_tokens": 777,
+    "latency_seconds": 5.227079099975526,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112686-OAvE9mzeZu32Eaj5mB2U",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0419",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:14.962317+00:00",
+    "tag": "quality:F11:O1",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "d1a4abb619c91bdf287e224ad34865548d2449c201168da36e3e0a0ca99ef9d4",
+    "actual_cost_usd": 0.000761,
+    "budget_charge_usd": 0.000761,
+    "reserved_upper_usd": 0.0022177,
+    "input_tokens": 4638,
+    "output_tokens": 743,
+    "latency_seconds": 2.8322043000080157,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112691-JP8ElUuFCtXTysRgCdiO",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

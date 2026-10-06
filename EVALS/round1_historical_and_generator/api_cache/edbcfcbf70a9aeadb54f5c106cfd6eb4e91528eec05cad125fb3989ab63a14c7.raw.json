@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102718-IqrpaPe40lLWx85fLsKf",
+  "object": "chat.completion",
+  "created": 1791102718,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"id\": \"H07\", \"topic_id\": \"T07\", \"topic\": \"一个假设的检索失败：首先检查什么\", \"facts\": [{\"id\": \"F1\", \"text\": \"该场景有40个文档和一个已知答案在其中一个文档中的查询。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"在假设的失败中，相关文档不在检索到的段落中。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"没有证据表明是分块、索引或查询措辞导致了这种情况。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设的检索失败：本地LLM的逐步检查指南\", \"body\": \"本指南针对本地LLM的假设检索失败场景，其中一个包含40个文档且已知答案的查询未能从检索到的段落中找到正确文档。需要强调的是，这是一个假设性的实验，并非基于测量结果。我们缺乏证据来确定是文档分块、索引过程还是查询措辞本身是根本原因。因此，需要进行系统性检查。首先，回顾分块策略：文档是否被分割成大小合适且语义连贯的片段？接下来，检查索引。所选的嵌入模型是否合适，索引是否正确构建？最后，考虑查询。是否可以重新措辞以获得更好的检索效果，或者是否存在歧义？这种假设性的失败突显了这些组成部分在成功的检索增强生成中的重要性。\"}, \"B\": {\"title\": \"调查假设的RAG检索差距：从哪里开始？\", \"body\": \"在一个假设的测试案例中，一个RAG系统收到一个查询，已知该查询的答案来自40个文档中的一个。然而，检索机制未能在此特定文档作为相关段落返回。这种情况纯属假设，并不反映实际测量的结果。\\n\\n在没有预先存在的数据表明根本原因的情况下，初步的诊断重点应放在RAG管道的基本组成部分上。目标是识别可能导致文档完全丢失的潜在故障点。需要考虑的关键领域包括：\\n\\n*   **文档分块**：源文档的初始分割。块是否太小、太大，或者它们是否将关键信息分割到边界之外？\\n*   **嵌入和索引**：为文档块和查询生成的嵌入的质量，以及向量索引本身的完整性。嵌入模型是否未能捕捉到语义相似性？\\n*   **查询构建**：用户自然语言查询被转换为适合向量搜索的形式的过程。翻译或查询本身的嵌入是否存在问题？\\n\\n这种假设性的失败提供了一个讨论系统性调试方法的良好机会。在调查这种检索不足时，您的优先事项是什么？\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 767,
+    "completion_tokens": 581,
+    "total_tokens": 1348,
+    "cost": 0.0003091,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003091,
+      "upstream_inference_prompt_cost": 7.67e-05,
+      "upstream_inference_completions_cost": 0.0002324
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

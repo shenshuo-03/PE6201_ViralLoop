@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111924-l6q1dDoo1x0QMjg2swd7",
+  "object": "chat.completion",
+  "created": 1791111924,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"A user is seeking to understand how to implement distributed inference with a specific tool, encountering issues with model reloading and seeking alternative approaches.\",\n  \"information_order\": [\n    \"Describe the current setup and the observed problem (model reloading per query).\",\n    \"Mention the user's investigation into available command-line options and their limitations.\",\n    \"Discuss the user's exploration of a server-based approach and its incompatibility with the desired distributed method.\",\n    \"Conclude by highlighting the user's assumption that a solution exists and their request for guidance.\"\n  ],\n  \"evidence_style\": \"The user describes their current configuration and the observed behavior, indicating a problem with repeated model loading for each inference request. They also mention reviewing documentation and finding limitations in existing examples for their specific use case.\",\n  \"question_or_cta\": \"The user is asking for confirmation of their understanding and seeking advice on how to achieve their goal, implying a question like 'Am I missing a simpler way to do this?' or 'What is the correct approach for distributed inference with model persistence?'\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The goal is distributed inference.\",\n    \"A challenge is the repeated loading of the model.\",\n    \"Existing tools have limitations for this specific distributed setup.\"\n  ],\n  \"common_weaknesses\": [\n    \"Model reloading for each query.\",\n    \"Lack of a persistent model load in the distributed command-line setup.\",\n    \"Incompatibility between server features and distributed RPC requirements.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 772,
+    "completion_tokens": 345,
+    "total_tokens": 1117,
+    "cost": 0.0002152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002152,
+      "upstream_inference_prompt_cost": 7.72e-05,
+      "upstream_inference_completions_cost": 0.000138
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

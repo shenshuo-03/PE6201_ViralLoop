@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101743-5Xd9eZn5cNt30KysetnY",
+  "object": "chat.completion",
+  "created": 1791101743,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all provided facts explicitly. It avoids making unsupported claims or presenting hypothetical observations as measured results. The title matches the body content well. The language is technical yet accessible, making it useful and relevant for the target audience of local LLaMA users troubleshooting context length slowdowns. The post invites discussion on plausible technical causes without overclaiming, preserving necessary caveats. The clarity is high though slightly verbose in some parts. Credibility is strong given the explicit caveats and fact referencing. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly preserves the hypothetical status and references all facts. It frames the problem as a troubleshooting exercise and explicitly states no real measurements exist. The title accurately reflects the content. The language is clear and technical, suitable for the intended audience. It avoids unsupported claims and maintains necessary caveats. The post is relevant and useful for readers interested in understanding potential causes of context length slowdowns on 16 GB GPUs. The clickbait score is low due to restrained, factual titling.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1044,
+    "completion_tokens": 432,
+    "total_tokens": 1476,
+    "cost": 0.0011088,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011088,
+      "upstream_inference_prompt_cost": 0.0004176,
+      "upstream_inference_completions_cost": 0.0006912
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

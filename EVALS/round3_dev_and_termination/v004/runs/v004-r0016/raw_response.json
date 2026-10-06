@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121592-GQpMWl5D71VJS73EX1IM",
+  "object": "chat.completion",
+  "created": 1791121592,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"brief\": {\n    \"topic\": \"Setting up a local AI coding assistant with VS Code and Continue\",\n    \"audience\": \"Developers interested in local AI coding assistants\",\n    \"content_archetype\": \"D\",\n    \"speaker_role\": \"community analyst or resource curator; not original author\",\n    \"source_relationship\": \"third_party_archive\",\n    \"source_date\": \"2025-06-16\",\n    \"posting_intent\": \"Informational\",\n    \"current_context\": \"The user is seeking information on how to set up a local AI coding assistant, specifically for VS Code, using the Continue extension and local LLM models.\",\n    \"core_value\": \"Enabling developers to use AI coding assistants locally without relying on remote APIs.\",\n    \"core_hook\": {\n      \"text\": \"Take control of your coding copilot by setting up a fully local IDE with MCP integration using Continue.\",\n      \"fact_refs\": [\n        \"f1\"\n      ]\n    },\n    \"facts\": [\n      {\n        \"id\": \"f1\",\n        \"text\": \"You don't need remote APIs for a coding copliot, or the MCP Course! Set up a fully local IDE with MCP integration using Continue.\",\n        \"evidence_quote\": \"You don't need remote APIs for a coding copliot, or the MCP Course! Set up a fully local IDE with MCP integration using Continue.\",\n        \"status\": \"author_report\"\n      },\n      {\n        \"id\": \"f2\",\n        \"text\": \"The Continue extension from the VS Code marketplace serves as the AI coding assistant.\",\n        \"evidence_quote\": \"Get the Continue extension from the VS Code marketplace to serve as the AI coding assistant.\",\n        \"status\": \"author_report\"\n      },\n      {\n        \"id\": \"f3\",\n        \"text\": \"A local model can be served using an OpenAI compatible server in Llama.cpp / LmStudio/ etc.\",\n        \"evidence_quote\": \"Serve the model with an OpenAI compatible server in Llama.cpp / LmStudio/ etc.\",\n        \"status\": \"author_report\"\n      },\n      {\n        \"id\": \"f4\",\n        \"text\": \"A `.continue/models/llama-max.yaml` file is needed in the project to configure Continue for the local Ollama model.\",\n        \"evidence_quote\": \"Create a `.continue/models/llama-max.yaml` file in your project to tell Continue how to use the local Ollama model.\",\n        \"status\": \"author_report\"\n      },\n      {\n        \"id\": \"f5\",\n        \"text\": \"A `.continue/mcpServers/playwright-mcp.yaml` file integrates tools like the Playwright browser automation tool with the assistant.\",\n        \"evidence_quote\": \"Create a `.continue/mcpServers/playwright-mcp.yaml` file to integrate a tool, like the Playwright browser automation tool, with your assistant.\",\n        \"status\": \"author_report\"\n      },\n      {\n        \"id\": \"f6\",\n        \"text\": \"A full tutorial is available at a Hugging Face URL.\",\n        \"evidence_quote\": \"Check out the full tutorial here: [https://huggingface.co/learn/mcp-course/unit2/continue-client](https://huggingface.co/learn/mcp-course/unit2/continue-client)\",\n        \"status\": \"author_report\"\n      }\n    ],\n    \"limitations\": [\n      \"The source text describes a tutorial and assumes the user has the necessary technical background to follow it.\",\n      \"Specific model compatibility or performance is not detailed.\",\n      \"The tutorial is presented as a guide, not a verified solution.\"\n    ],\n    \"allowed_claims\": [\n      \"It is possible to set up a local AI coding assistant using VS Code, the Continue extension, and local LLM models.\",\n      \"The Continue extension facilitates integration with local LLM servers.\",\n      \"Configuration files are required to connect Continue to local models and tools.\",\n      \"Tools like Playwright can be integrated with the local assistant.\"\n    ],\n    \"forbidden_claims\": [\n      \"The speaker has personally set up this system and experienced its benefits.\",\n      \"The tutorial guarantees a specific level of performance or functionality.\",\n      \"The source author is the creator of the Continue extension or the MCP course.\",\n      \"Any claims about the ease of setup or troubleshooting without direct evidence from the source.\"\n    ],\n    \"decision\": null,\n    \"desired_help\": null\n  },\n  \"corrections\": [],\n  \"scenario_pass\": true,\n  \"source_pass\": true\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1719,
+    "completion_tokens": 1061,
+    "total_tokens": 2780,
+    "cost": 0.0031682,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0031682,
+      "upstream_inference_prompt_cost": 0.0005157,
+      "upstream_inference_completions_cost": 0.0026525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

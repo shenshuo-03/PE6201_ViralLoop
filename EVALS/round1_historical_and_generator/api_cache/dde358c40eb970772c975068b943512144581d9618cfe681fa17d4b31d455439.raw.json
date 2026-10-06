@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100893-PldkNoXzuPiO9t7Y3QZR",
+  "object": "chat.completion",
+  "created": 1791100893,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical hardware details and testing interest may attract niche but engaged audience.\"},{\"index\":1,\"probability\":0.5,\"reason\":\"Detailed benchmark comparison with clear data likely appeals to performance-focused readers.\"},{\"index\":2,\"probability\":0.25,\"reason\":\"Question about repositories is useful but less likely to gain broad high engagement.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"Showcase with technical depth and code snippet may attract enthusiasts, moderate interest.\"},{\"index\":4,\"probability\":0.45,\"reason\":\"Tool development for prompt benchmarking is timely and relevant, likely moderate interest.\"},{\"index\":5,\"probability\":0.35,\"reason\":\"In-depth RPC benchmark with technical specs appeals to specialized audience, moderate interest.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Request for detailed guide is common but may have limited broad appeal.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"Specific API support question is niche and likely lower engagement.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2430,
+    "completion_tokens": 227,
+    "total_tokens": 2657,
+    "cost": 0.0013352,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013352,
+      "upstream_inference_prompt_cost": 0.000972,
+      "upstream_inference_completions_cost": 0.0003632
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

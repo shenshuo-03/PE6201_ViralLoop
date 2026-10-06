@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121661-0GZqPELYiCHHU1iBo6QR",
+  "object": "chat.completion",
+  "created": 1791121661,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Assessing llama.cpp Performance on Samsung Galaxy S22 Ultra: Is the Adreno GPU Being Utilized?\",\"body\":\"A user compiled and ran llama.cpp on a Samsung Galaxy S22 Ultra and reported inference speeds of less than 2 tokens per second using the Mistral-NeMo-Minitron-8B-Instruct-Q4_0 model (f1, f2). For comparison, the same model ran at about 6 tokens per second on a GPU-less AMD machine (f3, f6). This discrepancy raises the question of whether the phone’s Adreno GPU is effectively engaged during inference (f4).\\n\\nThe user referenced a Qualcomm blog post describing an OpenCL GPU backend for llama.cpp targeting Adreno GPUs (f5), but it’s unclear if this backend was enabled or properly configured in their setup. Without detailed diagnostics—such as GPU utilization metrics, logs confirming OpenCL execution, or profiling data—it’s difficult to determine if the slow speed is due to lack of GPU acceleration or other bottlenecks.\\n\\nWhat specific diagnostics or tools would best verify whether the Adreno GPU is active during llama.cpp runs on mobile? Identifying this could help distinguish between configuration issues and inherent performance limits on the device.\",\"fact_refs\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1684,
+    "completion_tokens": 281,
+    "total_tokens": 1965,
+    "cost": 0.0011232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011232,
+      "upstream_inference_prompt_cost": 0.0006736,
+      "upstream_inference_completions_cost": 0.0004496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

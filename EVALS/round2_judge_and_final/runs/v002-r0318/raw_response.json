@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112383-qW2j4weYj7sDu297VfT5",
+  "object": "chat.completion",
+  "created": 1791112383,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 0 accurately reflects the source and brief, posing a relevant question to the community about the feasibility of training a local LLM on a specific document versus using prompt engineering with a cloud model. It correctly notes the lack of performance data in the source and avoids making unsupported claims. The community fit is good as it directly asks for community insight on a technical trade-off.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 also accurately summarizes the source and brief, posing a clear question to the community about the practical challenges of specialized local LLM training versus prompt engineering. It correctly identifies the lack of performance data in the original post and adheres to the speaker's persona. The community fit is good as it directly solicits expert opinions on a technical comparison.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2547,
+    "completion_tokens": 364,
+    "total_tokens": 2911,
+    "cost": 0.0004003,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004003,
+      "upstream_inference_prompt_cost": 0.0002547,
+      "upstream_inference_completions_cost": 0.0001456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

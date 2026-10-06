@@ -1,0 +1,15 @@
+{
+  "brief_id": "E06",
+  "id": "1ic75h8",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "178",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-01-28",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1ic75h8/in_spite_of_meeting_requirements_llm_wont_run_on/",
+  "source_hash": "de3323bf79c469c47a5818367bf7c137376d015fc16d9c3fca4d5f868d55dd86",
+  "historical_split": "train",
+  "rule_classification": "PROVISIONAL_REQUIRES_SOURCE_SHAPE_CHECK",
+  "source_title": "in spite of meeting requirements, llm won't run on gpu.",
+  "source_text": "I am having difficulties running the LLM(deepseek) on my GPU, it will only run on my CPU. I have downloaded the proper drivers, I have the CUDA toolkit installed, and I have initiated a Docker container running open-webui, and tagged it with --gpu 1 which is my 4090, as gpu0 is my k series i9, so i dont want to use 'all'. It agrees I have a 4090 and will run the n-body sample function on all of my 16000 cuda cores in 77ms, so I must be really close. I have WSL 2 engine checked in docker's options. I have done this all from scratch after having all the drivers and the cuda toolkit 12.8 installed. I can successfully run the 70b model on my system through owui, but obviously is too much for a 12900k. It is evident it only runs on the cpu as its slow and heats up the cpu and gpu sits idle."
+}

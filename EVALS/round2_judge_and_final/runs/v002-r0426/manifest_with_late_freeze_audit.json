@@ -1,0 +1,45 @@
+{
+  "run_id": "v002-r0426",
+  "loop_version": "v002",
+  "cycle_id": "v002",
+  "phase": "final",
+  "variant_id": "V1",
+  "contract_id": "ViralLoop-v002-focused-generation",
+  "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e",
+  "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "579006fdbbe3010bdd873b6019f06d0850e3b6c51cb58461c7568df0339ac37a",
+  "config_hash": "ab66cef6bc4ab7ae6066fa47e0e0327aa1da570333aee1763cd24b4d61aee797",
+  "code_hash": "0e29118459cccf19663fa7ae9528858f84e803c588d885ff9eb9b0058d2630e4",
+  "input_hash": "8134cff6364f3a25193e303b0b8be7093614b63b2619a85f8817164868c7d25c",
+  "output_hash": "d8121af9bb2730cccebeb2189f09164e9dc2a4182122c9fc296be2246f214f28",
+  "scores_hash": "d8121af9bb2730cccebeb2189f09164e9dc2a4182122c9fc296be2246f214f28",
+  "primary_metric_hash": "e66572f0e06f824a569f9d0dca1cc7534e38d4620f5447e8377308f87903c229",
+  "evaluator_hash": "ebd5240e5f2075069ff5c5813e039396e5d258be200e063c272fb274377dd221",
+  "candidate_count": 2,
+  "tokens": 1398,
+  "api_calls": 1,
+  "cost": 0.0009972,
+  "currency": "USD",
+  "latency_seconds": 3.0080124999803957,
+  "retry_count": 0,
+  "access_events": [
+    {
+      "split": "final",
+      "purpose": "generate_or_judge",
+      "time": "2026-10-04T11:18:36.553763+00:00",
+      "evidence": "C:\\Users\\19139\\Documents\\Codex\\2026-10-04\\zhe-g\\experiment_1_1\\loops\\v002\\runs\\v002-r0426\\prompt.txt"
+    }
+  ],
+  "integrity_checks": {
+    "artifact_hashes_verified": true,
+    "split_integrity": true,
+    "billing_ledger_complete": true,
+    "project_budget_verified": true
+  },
+  "model": "openai/gpt-4.1-mini",
+  "freeze_verified": true,
+  "final_unexposed_before_run": true,
+  "late_audit_at": "2026-10-04T11:38:02.792522+00:00",
+  "original_manifest_sha256": "f2a9a3fff1c52a182ba9e33ccffe6523c4f1a61c0392d08a9f0190ff2710a7ac",
+  "annotation_note": "Freeze evidence verified after run from immutable freeze/code hashes and actual source access log; not contemporaneous original fields"
+}

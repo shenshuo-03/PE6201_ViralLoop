@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102716-HT4NtUufxLrRqgw2j3Ph",
+  "object": "chat.completion",
+  "created": 1791102716,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"id\": \"H06\", \"topic_id\": \"T06\", \"topic\": \"设计一个假设性的提示回归测试\", \"facts\": [{\"id\": \"F1\", \"text\": \"该场景有12个固定的测试提示。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"在相同的模型设置下比较旧提示和新提示。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"包括可回答和信息不足的情况。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F4\", \"text\": \"尚无改进结果。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设性提示回归测试：设计考量\", \"body\": \"本帖概述了一个为本地LLM设计提示回归测试套件的假设性框架。目标是建立一种可重复的方法来评估提示的有效性，而不依赖于预先存在的结果。我们建议使用一组固定的12个测试提示，涵盖直接可回答的问题和信息不足的情况。核心思想是在相同的硬件上使用相同的模型设置和参数，将旧提示的输出与新变体的输出进行比较。这种受控的比较对于隔离提示更改的影响至关重要。需要注意的是，这是一个概念设计，在此阶段尚未进行或提供实际的性能改进或测量。目标是在任何实施或数据收集发生之前，就拟议的测试方法本身征求反馈。您对构建此类测试有什么看法？\"}, \"B\": {\"title\": \"为本地LLM设置假设性提示回归测试（r/LocalLLaMA）\", \"body\": \"本指南详细介绍了一种为本地语言模型设置提示回归测试的假设性方法。目标是创建一个可重现的测试套件，以验证提示的完整性。我们从一组定义的12个固定测试提示[F1]开始，作为我们的基准。这些提示旨在包括可以清楚推导出答案的情况和信息不足的情况[F3]。为了进行测试，我们将比较旧提示版本生成的输出与新版本生成的输出，使用完全相同的模型和推理参数[F2]。这种受控的比较对于识别提示修改引入的任何回归至关重要。我们必须明确指出，这是一个假设性实验；目前尚无性能数据或测量结果[F4]。重点是建立测试方法本身。\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 676,
+    "completion_tokens": 500,
+    "total_tokens": 1176,
+    "cost": 0.0002676,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002676,
+      "upstream_inference_prompt_cost": 6.76e-05,
+      "upstream_inference_completions_cost": 0.0002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

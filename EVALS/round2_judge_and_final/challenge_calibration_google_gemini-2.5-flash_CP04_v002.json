@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Uncertain",
+    "specificity": "B",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "swap_consistent": {
+    "community_fit": false,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": false,
+    "credibility": false,
+    "overall": false
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A is more concise and directly asks for community input, making it more engaging. Draft B is slightly more verbose and reads a bit more like a summary report, even though it also asks questions. Both drafts use the facts well and maintain credibility."
+    },
+    "usage": {
+      "run_id": "v002-r0113",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:12.757562+00:00",
+      "tag": "judge_calibration:CP04:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "47abd10d0c1c9df7a76c0496942a17e3cac5d9bfe38aa4addfa6c461cccc95cf",
+      "actual_cost_usd": 0.0009712,
+      "budget_charge_usd": 0.0009712,
+      "reserved_upper_usd": 0.0046936,
+      "input_tokens": 2404,
+      "output_tokens": 100,
+      "latency_seconds": 1.1699900999956299,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109691-mb7yssbs1ibNMiZxUSNh",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A explicitly mentions 'technical approaches' and 'architectures' in its questions, directly aligning with the brief's 'technical approaches' and 'future development' goals. Draft B's questions are more generic ('What are your thoughts', 'Any insights'). Draft A also more clearly frames the problem as a 'limitation' and asks for ways to 'improve' it, which is more aligned with the 'problem_or_goal' and 'desired_response' of the brief. Both drafts accurately reference the facts, but A's framing of the questions is more specific to the technical community and the desired discussion."
+    },
+    "usage": {
+      "run_id": "v002-r0114",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:14.737289+00:00",
+      "tag": "judge_calibration:CP04:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "4067189eaedc00b306cae24ac0db60e6cdf8a32f184ed492c7fc660aa1c3bbe2",
+      "actual_cost_usd": 0.0012187,
+      "budget_charge_usd": 0.0012187,
+      "reserved_upper_usd": 0.0046936,
+      "input_tokens": 2404,
+      "output_tokens": 199,
+      "latency_seconds": 1.955462300014915,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109692-nmgJspLJ9aecKzN0Bj5y",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash"
+}

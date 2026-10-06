@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T08:07:39.866408+00:00",
+  "topic": {
+    "id": "T02",
+    "split": "final_test",
+    "topic": "A hypothetical context length memory experiment",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "In a hypothetical run, context length 2048 uses 7 GB and 8192 uses 11 GB.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Model, runtime and hardware are held fixed.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No output quality or throughput results were collected.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T08:07:33.819939+00:00",
+    "tag": "final_test:T02:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "1289eb6347a002d8946618370e49f490c2d9ca9405beb0879ade2731cba5aa6a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 435,
+    "output_tokens": 529,
+    "actual_cost_usd": 0.0002551,
+    "token_price_estimate_usd": 0.00025509999999999997,
+    "reserved_upper_usd": 0.0010228,
+    "budget_charge_usd": 0.0002551,
+    "latency_seconds": 2.5457768000051146,
+    "retry": 0,
+    "request_id": "gen-1791101251-NBYquhhvbQEaujB5fXaZ"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:07:39.854838+00:00",
+    "tag": "final_test:T02:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "5344d6baf4a114763ac27d222af298a12fd7eba164b302216c8ea00954ee7224",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 949,
+    "output_tokens": 378,
+    "actual_cost_usd": 0.0009844,
+    "token_price_estimate_usd": 0.0009843999999999999,
+    "reserved_upper_usd": 0.0047576,
+    "budget_charge_usd": 0.0009844,
+    "latency_seconds": 5.997243700010586,
+    "retry": 0,
+    "request_id": "gen-1791101254-vncKyQNOF1su564m8pWL"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "4a49c5584bb6fd7036319e2fc7da7d244f64fdaa8a890a98a4a0c6d5e372a495",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Memory Usage: Context Length vs. RAM in Local LLMs",
+        "body": "This post explores a hypothetical scenario investigating the relationship between context length and RAM consumption for local large language models. In this *hypothetical* setup, with the model, runtime, and hardware kept constant (F2), we observed distinct RAM footprints. A context length of 2048 tokens was associated with approximately 7 GB of RAM usage, while increasing the context length to 8192 tokens hypothetically required around 11 GB of RAM (F1). It's crucial to note that this experiment was purely hypothetical; no actual measurements were taken, and no results regarding output quality or processing speed were recorded (F3). The objective was solely to illustrate the potential memory scaling with context length. Further investigation would be needed to confirm these hypothetical figures and explore their impact on practical usability.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Discuss the hypothetical RAM usage increase with context length. Explicitly state the hypothetical nature of the findings and the lack of quality/throughput data. Invite discussion on expected RAM scaling in local LLMs."
+      },
+      "performance_score": 0.24128121731744318,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references the synthetic facts (F1, F2, F3). It preserves the scenario status and necessary caveats about no actual measurements or quality/throughput data. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the explicit disclaimers, though usefulness is moderate since it only illustrates potential memory scaling without actionable benchmarks or guidance.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 126,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical RAM Scaling with Context Length in Local LLM Experiments",
+        "body": "We are considering a hypothetical experiment to understand memory requirements for local LLMs at different context lengths. The premise is that the underlying model, runtime environment, and hardware remain unchanged throughout (F2). In this *hypothetical* test, we are exploring the RAM usage implications. Specifically, a context length of 2048 tokens is projected to utilize roughly 7 GB of RAM, whereas extending the context to 8192 tokens is hypothetically estimated to require approximately 11 GB of RAM (F1). It is important to emphasize that these are hypothetical figures derived from the experiment brief, and no actual performance metrics, such as output quality or inference speed, were measured or are being reported (F3). This exploration is intended to provide a conceptual understanding of memory demands.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Present a hypothetical observation on RAM usage tied to context length. Clearly state that these are not measured results and that quality/throughput data is absent. Encourage discussion on the theoretical memory implications of longer contexts for local LLMs."
+      },
+      "performance_score": 0.24015553004740114,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and includes all necessary caveats about the lack of real measurements and quality/throughput data. The title aligns well with the body content. The writing is clear and restrained, appropriate for the technical audience. It is relevant and credible, but usefulness is moderate due to the absence of concrete results or actionable recommendations.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 123,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Memory Usage: Context Length vs. RAM in Local LLMs",
+      "body": "This post explores a hypothetical scenario investigating the relationship between context length and RAM consumption for local large language models. In this *hypothetical* setup, with the model, runtime, and hardware kept constant (F2), we observed distinct RAM footprints. A context length of 2048 tokens was associated with approximately 7 GB of RAM usage, while increasing the context length to 8192 tokens hypothetically required around 11 GB of RAM (F1). It's crucial to note that this experiment was purely hypothetical; no actual measurements were taken, and no results regarding output quality or processing speed were recorded (F3). The objective was solely to illustrate the potential memory scaling with context length. Further investigation would be needed to confirm these hypothetical figures and explore their impact on practical usability.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Discuss the hypothetical RAM usage increase with context length. Explicitly state the hypothetical nature of the findings and the lack of quality/throughput data. Invite discussion on expected RAM scaling in local LLMs."
+    },
+    "performance_score": 0.24128121731744318,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references the synthetic facts (F1, F2, F3). It preserves the scenario status and necessary caveats about no actual measurements or quality/throughput data. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the explicit disclaimers, though usefulness is moderate since it only illustrates potential memory scaling without actionable benchmarks or guidance.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 126,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

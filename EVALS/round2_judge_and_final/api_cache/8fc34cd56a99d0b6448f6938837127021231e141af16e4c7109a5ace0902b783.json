@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Draft A is severely underdeveloped for the stated audience and goal. It mentions LettuceDetect only generically ('supports long input sequences,' 'available under an open license') without concrete technical details that local LLM enthusiasts need to evaluate or use the tool. Draft B provides specific, actionable facts: ModernBERT architecture, 4K token capacity, 79.22% F1 benchmark, MIT license, and concrete deliverables (Python packages, pretrained models, Hugging Face demo). Both correctly attribute claims to source-author reports and avoid forbidden claims (personal testing, guarantees, exclusivity). However, Draft B directly addresses community_fit by naming specialized domains (medicine, law) and explicitly inviting feedback on 'real-time detection in local RAG setups'—matching the brief's motivation. Draft A's vague phrasing ('feedback on its use') and omission of technical specifics (no mention of ModernBERT, token limit, or benchmark) make it less useful for a technical community deciding whether to adopt or contribute. Both cite F1 but B integrates F2–F7 appropriately without inventing unsupported claims. Credibility is tied because both correctly ground claims in the source and avoid the reader claiming personal verification. Draft B is more worth posting because it preserves the factual distinctions (encoder-based, no LLM required, specific performance metric) that enable genuine community response."
+  },
+  "usage": {
+    "run_id": "v002-r0186",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:31:21.492125+00:00",
+    "tag": "judge_validation:HP12:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "8fc34cd56a99d0b6448f6938837127021231e141af16e4c7109a5ace0902b783",
+    "actual_cost_usd": 0.004231,
+    "budget_charge_usd": 0.004231,
+    "reserved_upper_usd": 0.012464,
+    "input_tokens": 2251,
+    "output_tokens": 396,
+    "latency_seconds": 5.487328900024295,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109875-mmjRl6Ptw0XWKGKSjwGi",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

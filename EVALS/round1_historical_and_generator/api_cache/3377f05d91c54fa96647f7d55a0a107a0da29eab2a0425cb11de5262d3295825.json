@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any unverified claims. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations as per the input facts. The title matches the content well, and the 12GB GPU context is emphasized. The language is clear and technical, suitable for the target audience. The guide is useful for planning and understanding VRAM needs in a local LLM setup, though it does not provide measured data or benchmarks, which is appropriate given the scenario. The tone is restrained and credible, with no clickbait elements."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also explicitly states the hypothetical and untested nature of the framework. It correctly divides VRAM usage into the three required categories and links them to the 12GB GPU context. The explanation is clear and technical, appropriate for the audience. The title accurately reflects the content. The draft avoids unsupported claims and maintains necessary caveats. It is relevant and useful for readers planning VRAM allocation for local LLMs, without overstating or fabricating results."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:44:36.641306+00:00",
+    "tag": "tune_dev:D01:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3377f05d91c54fa96647f7d55a0a107a0da29eab2a0425cb11de5262d3295825",
+    "status": "success",
+    "input_tokens": 994,
+    "output_tokens": 425,
+    "actual_cost_usd": 0.0010776,
+    "token_price_estimate_usd": 0.0010776,
+    "reserved_upper_usd": 0.004859199999999999,
+    "budget_charge_usd": 0.0010776,
+    "latency_seconds": 3.231209100005799,
+    "retry": 0,
+    "request_id": "gen-1791099873-khwL1D0vNAZ9YMlkSQyo"
+  },
+  "raw_response": {
+    "id": "gen-1791099873-khwL1D0vNAZ9YMlkSQyo",
+    "object": "chat.completion",
+    "created": 1791099873,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present any unverified claims. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations as per the input facts. The title matches the content well, and the 12GB GPU context is emphasized. The language is clear and technical, suitable for the target audience. The guide is useful for planning and understanding VRAM needs in a local LLM setup, though it does not provide measured data or benchmarks, which is appropriate given the scenario. The tone is restrained and credible, with no clickbait elements.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also explicitly states the hypothetical and untested nature of the framework. It correctly divides VRAM usage into the three required categories and links them to the 12GB GPU context. The explanation is clear and technical, appropriate for the audience. The title accurately reflects the content. The draft avoids unsupported claims and maintains necessary caveats. It is relevant and useful for readers planning VRAM allocation for local LLMs, without overstating or fabricating results.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 994,
+      "completion_tokens": 425,
+      "total_tokens": 1419,
+      "cost": 0.0010776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010776,
+        "upstream_inference_prompt_cost": 0.0003976,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

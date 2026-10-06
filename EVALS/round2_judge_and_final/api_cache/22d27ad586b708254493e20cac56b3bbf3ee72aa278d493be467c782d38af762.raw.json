@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112153-lLMagNg30gyIp9HsAykz",
+  "object": "chat.completion",
+  "created": 1791112153,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Local LLM Prompt Engineering for Classification\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"Improving prompt consistency and classification accuracy for a local binary classification task using LLaMA 3.1 8B.\",\n  \"context\": \"The user is attempting to build a local-only system to classify prompts into 'related' or 'unrelated' categories using LLaMA 3.1 8B. They are encountering limitations with few-shot examples and cannot use embedding-based filtering due to the local-only constraint.\",\n  \"motivation\": \"The source author is seeking practical advice and best practices for prompt engineering and system prompts to enhance the performance of local LLMs in classification tasks, as standard methods like few-shot learning are proving insufficient.\",\n  \"desired_response\": \"Seeking advice on prompt engineering techniques, system prompt refinements, or other best practices for improving classification accuracy with local LLMs, specifically LLaMA 3.1 8B, without external API calls or embedding-based filtering.\",\n  \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"The user is employing LLaMA 3.1 8B for a local prompt classification task.\",\n      \"evidence_quote\": \"I use llama 3.1 8B to validate whether a given prompt falls into a certain semantic category.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"The classification task is binary: related versus unrelated.\",\n      \"evidence_quote\": \"The classification is binary (related vs unrelated), and I'm keeping everything local\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"The user's project requires a strictly local setup, prohibiting external API calls.\",\n      \"evidence_quote\": \"I'm keeping everything local — no APIs or external calls.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"Few-shot examples have provided limited success in improving classification.\",\n      \"evidence_quote\": \"Few-shot examples only get me so far, and embedding-based filtering isn’t viable here\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"Embedding-based filtering is not a viable option due to the local-only requirement.\",\n      \"evidence_quote\": \"embedding-based filtering isn’t viable here due to the local-only requirement.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"Users are seeking advice on prompt engineering for local LLMs.\",\n    \"LLaMA 3.1 8B is being used for prompt classification.\",\n    \"Local-only constraints impact the choice of classification methods.\"\n  ],\n  \"forbidden_claims\": [\n    \"The user has successfully improved their prompt classification accuracy.\",\n    \"Specific prompt templates or system prompts were provided and tested.\",\n    \"The LLM's performance metrics (e.g., accuracy percentage) were shared.\"\n  ],\n  \"essential_limitations\": [\n    \"The specific hardware configuration used for running the local LLM is not mentioned.\",\n    \"The exact prompt engineering techniques or system prompts currently in use are not detailed.\",\n    \"The nature of the 'certain semantic category' is not specified.\"\n  ],\n  \"missing_information\": [\n    \"Details on the current prompt structure and few-shot examples.\",\n    \"Information about the specific challenges encountered with prompt consistency.\",\n    \"Any attempts made at refining system prompts prior to seeking help.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 756,
+    "completion_tokens": 891,
+    "total_tokens": 1647,
+    "cost": 0.000432,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000432,
+      "upstream_inference_prompt_cost": 7.56e-05,
+      "upstream_inference_completions_cost": 0.0003564
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

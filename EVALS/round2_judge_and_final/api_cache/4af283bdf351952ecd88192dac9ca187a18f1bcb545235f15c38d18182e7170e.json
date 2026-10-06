@@ -1,0 +1,90 @@
+{
+  "value": {
+    "topic": "Optimizing llama.cpp performance with multiple GPUs",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discussing methods to improve token generation speed in llama.cpp when using multiple GPUs, particularly with mixed hardware.",
+    "context": "This discussion is based on an archived user account from May 7, 2025, detailing their experiments with llama.cpp on a system with a 3090 and two 3060 GPUs. The original author explored tensor splitting and row split modes to enhance performance with various models.",
+    "motivation": "Understanding how to configure tensor splitting and other settings in llama.cpp can significantly impact performance when running large language models on multi-GPU setups. This question aims to explore these techniques based on the archived observations.",
+    "desired_response": "A discussion about the effectiveness of tensor splitting and row split modes in llama.cpp for optimizing performance on multi-GPU systems, referencing the observations made in the source material.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Disabling secondary GPUs (3060s) provided a performance boost for smaller models that fit entirely within the primary GPU (3090).",
+        "evidence_quote": "If we disable them, we see a performance boost: from 48 to 82 tokens per second, and from 28 to 48.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "Adjusting tensor split values is necessary for larger models that exceed a single GPU's VRAM, with optimal settings requiring experimentation.",
+        "evidence_quote": "we can control how the tensors are split. For example, we can allocate more memory on the first card and less on the second and third.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "Experimenting with tensor splitting on Qwen3 32B improved performance from 13.0 to 15.6 tokens per second, and further to 16.4 tokens per second with 'row' split mode.",
+        "evidence_quote": "We can improve performance from the default 13.0 tokens per second to 15.6 by adjusting the tensor split.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "Tuning tensor splits for Nemotron 49B (Q6) increased performance from 12.4 to 14.1 tokens per second.",
+        "evidence_quote": "With some tuning, we can go from 12.4 to 14.1 tokens per second.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "For Gemma3 27B, optimized tensor splits boosted performance from 14.9 to 18.9 tokens per second, though 'sm' row mode slightly reduced speed.",
+        "evidence_quote": "With optimized tensor split values, we boost performance from 14.9 to 18.9 tokens per second.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "Mistral Small 24B saw performance increase from 18.8 to 28.2 tokens per second with tensor splitting, with 'sm' row mode yielding slightly less.",
+        "evidence_quote": "Performance goes from 18.8 to 28.2 tokens per second with tensor split, but again, `sm` row mode reduces it slightly to 26.1.",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "Tensor splitting can be used to manage model VRAM requirements across multiple GPUs.",
+      "Different split modes ('row', 'sm') may yield varying performance results.",
+      "Experimentation is key to finding optimal tensor split configurations for specific models and hardware."
+    ],
+    "forbidden_claims": [
+      "The reported token-per-second values are universally applicable.",
+      "The 'row' split mode is always superior.",
+      "Mixing GPUs is inherently problematic.",
+      "Specific hardware configurations are guaranteed to achieve these exact results."
+    ],
+    "essential_limitations": [
+      "The specific motherboard and riser configuration are not detailed.",
+      "The exact VRAM allocation for each GPU is not specified.",
+      "The precise version of llama.cpp used is not stated, only that it was recent.",
+      "The system's CPU and RAM specifications are not provided."
+    ],
+    "missing_information": [
+      "Detailed VRAM allocation settings for each GPU.",
+      "Specific llama.cpp version used for testing.",
+      "Full system specifications beyond GPU models."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0054",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:23:47.483570+00:00",
+    "tag": "brief_builder:C04",
+    "phase": "calibration",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "4af283bdf351952ecd88192dac9ca187a18f1bcb545235f15c38d18182e7170e",
+    "actual_cost_usd": 0.0006021,
+    "budget_charge_usd": 0.0006021,
+    "reserved_upper_usd": 0.001826,
+    "input_tokens": 1353,
+    "output_tokens": 1167,
+    "latency_seconds": 4.341576300008455,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109422-pij33NuWr4r5bAm0euGr",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

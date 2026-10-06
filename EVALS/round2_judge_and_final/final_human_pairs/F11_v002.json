@@ -1,28 +1,5 @@
 {
-  "task_zh": "根据用户报告的测试，讨论合并后的LLM（FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview）与另一模型（DeepSeek-R1-Distill-Qwen-32B）之间观察到的性能差异。",
   "A": {
-    "title": "将DeepSeekR1、QwQ和SkyT1合并到FuseO1是否能提高日期计算的准确性，优于DeepSeek-R1-Distill-Qwen-32B？",
-    "body": "一篇2025年的Reddit帖子分享了一个名为FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview的融合模型，该模型合并了DeepSeekR1、QwQ和SkyT1的32B模型。用户使用ollama，在32k上下文和Q8_0 KV缓存下，将这个合并后的模型与DeepSeek-R1-Distill-Qwen-32B进行了测试。\n\n关键问题在于，将这些模型结合起来是否真的能提高日期计算等任务的准确性，或者合并是否会引入可能影响特定能力的权衡。由于测试环境细节有限，结果的可推广性尚不清楚。\n\n是否有人将像这样的合并模型与其基础组件在日期或时间相关的推理方面进行了比较？您在准确性或一致性方面观察到了哪些实际差异？",
-    "fact_refs": [
-      "F1",
-      "F2"
-    ]
-  },
-  "B": {
-    "title": "来自2025年用户报告的关于合并LLM性能的见解和问题",
-    "body": "一位用户在r/LocalLLaMA上分享了对一个合并LLM FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview与DeepSeek-R1-Distill-Qwen-32B的比较。据报道，合并模型在文件打包问题上表现出色，并正确计算了19,121天的日期差，而另一个模型给出了错误的结果。此外，合并模型以一次穿越解决了过河谜题，但DeepSeek-R1-Distill-Qwen-32B陷入了无限循环。测试环境使用了ollama，带有IQ4_XS量化和32k上下文窗口以及Q8_0 KV缓存。由于来源是2025年初一位用户的报告，这引发了关于合并模型如何影响推理和稳定性的问题。合并通常会提高逻辑一致性，还是可能引入意外行为？除了轶事测试之外，评估此类合并的最佳实践是什么？分享关于合并模型的经验或基准测试有助于阐明它们的实际好处和局限性。",
-    "fact_refs": [
-      "F1",
-      "F2",
-      "F3",
-      "F4",
-      "F5",
-      "F6",
-      "F7"
-    ]
-  },
-  "pair_id": "F11",
-  "english_A": {
     "title": "Does merging DeepSeekR1, QwQ, and SkyT1 into FuseO1 improve date calculation accuracy over DeepSeek-R1-Distill-Qwen-32B?",
     "body": "A 2025 Reddit post shared a Fusion model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, which merges DeepSeekR1, QwQ, and SkyT1 32B models. The user tested this merged model against DeepSeek-R1-Distill-Qwen-32B using ollama with a 32k context and Q8_0 KV Cache.\n\nThe key question is whether combining these models actually yields better accuracy on tasks like date calculations, or if the merge introduces tradeoffs that might impact specific capabilities. Since the test environment details are limited, it’s unclear how generalizable the results are.\n\nHas anyone else compared merged models like this to their base components for date or time-related reasoning? What practical differences have you observed in accuracy or consistency?",
     "fact_refs": [
@@ -30,7 +7,7 @@
       "F2"
     ]
   },
-  "english_B": {
+  "B": {
     "title": "Insights and Questions on Merged LLM Performance from a 2025 User Report",
     "body": "A user shared a comparison between a merged LLM, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, and DeepSeek-R1-Distill-Qwen-32B on r/LocalLLaMA. The merged model reportedly excelled at a file-packing problem and correctly computed a date difference of 19,121 days, while the other model gave a wrong result. Additionally, the merged model solved a river crossing riddle with a single crossing, but DeepSeek-R1-Distill-Qwen-32B got stuck in an infinite loop. The test environment used ollama with IQ4_XS quantization and a 32k context window with Q8_0 KV Cache. Since the source is a single user’s report from early 2025, it raises questions about how merging models affects reasoning and stability. Does merging generally improve logical consistency, or might it introduce unexpected behaviors? What are the best practices to evaluate such merges beyond anecdotal tests? Sharing experiences or benchmarks on merged models could help clarify their practical benefits and limitations.",
     "fact_refs": [
@@ -43,6 +20,7 @@
       "F7"
     ]
   },
+  "pair_id": "F11",
   "translation_numeric_checks": {
     "A": true,
     "B": true
@@ -51,5 +29,7 @@
     "A": true,
     "B": true
   },
-  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  "numeric_check_note": "Equivalent May 2025 dates normalized to the same date before checking numbers; draft text unchanged",
+  "task_en": "Discuss the performance difference observed, in user-reported testing, between the merged LLM (FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview) and another model (DeepSeek-R1-Distill-Qwen-32B).",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

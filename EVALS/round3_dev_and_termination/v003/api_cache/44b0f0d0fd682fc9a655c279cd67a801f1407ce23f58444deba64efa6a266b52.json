@@ -1,0 +1,19 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Performance gap between llama.cpp and ExLlamav2 on Phi-3-medium 50k context: seeking config tips for llama.cpp",
+        "body": "I'm experimenting with the RAPTOR example from Langchain, modified to use Langchain's LlamaCpp, running the Phi-3-medium-128k-instruct Q4_K_M model with a 50k context window (F1, F2). On my setup, llama.cpp requires offloading 5 out of 41 layers and takes about 20 hours to complete the task (F3). In contrast, ExLlamav2 finishes the same workload in 20 minutes using 19GB VRAM at 50k context (F4, F5). Given this significant performance difference, I'm evaluating whether to keep troubleshooting llama.cpp or switch to ExLlamav2 for long context tasks. \n\nMy main question: Are there specific llama.cpp settings or techniques within Langchain's LlamaCpp interface that can reduce or prevent layer offloading and improve runtime? Or is this overhead inherent at such long contexts with llama.cpp? Any insights on tuning or confirming that ExLlamav2 is simply better suited for this use case would be appreciated (F6). Thanks!",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "run_id": "v003-r0010"
+}

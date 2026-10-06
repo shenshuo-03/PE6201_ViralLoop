@@ -1,0 +1,87 @@
+{
+  "value": {
+    "topic": "Local Text-to-Speech (TTS) for Short Dialogues",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Finding a local or free TTS solution capable of generating natural-sounding American English short dialogues with adjustable speaker genders.",
+    "context": "A user is seeking a TTS system for creating short, multi-speaker dialogues, similar to the provided example. They have experience with Coqui TTS (XTTS v2) but found its output 'terrible' and are looking for alternatives to online services like ElevenLabs.",
+    "motivation": "The user's experience with Coqui TTS highlights a potential gap in readily available, high-quality local TTS for simple dialogue generation. Discussing this could help others facing similar challenges and identify suitable open-source or free tools.",
+    "desired_response": "Suggestions for local or free TTS software that can produce natural American English dialogue with configurable speaker genders, suitable for short conversational exchanges.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The user requires a TTS system for generating short dialogues between two speakers, with the ability to switch between male/male, male/female, and female/female combinations.",
+        "evidence_quote": "I need something so I can create short dialogs between two speakers (if I can change male/male, male/female, female/female, that'd be great)",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The desired accent for the TTS output is natural American English.",
+        "evidence_quote": "natural American English accent.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "The user found the locally installed XTTS v2 (Coqui TTS) to be of poor quality, even for basic text reading.",
+        "evidence_quote": "I've installed locally XTTS v2 (Coqui TTS), it's pretty terrible even for just reading a text.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "The user is new to TTS technology and has limited programming knowledge, having only successfully set up Coqui TTS with assistance.",
+        "evidence_quote": "I'm pretty new to this, and I know nothing of programming, I only got Coqui TTS to work",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "The user is seeking local or free alternatives to online TTS services like ElevenLabs.",
+        "evidence_quote": "I've used elevenlabs, but I'm looking for local or free alternatives for what I need",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "The source author is looking for local or free TTS solutions.",
+      "The source author has tried Coqui TTS (XTTS v2) locally.",
+      "The source author desires natural American English dialogue generation.",
+      "The source author wants to control speaker gender combinations."
+    ],
+    "forbidden_claims": [
+      "Coqui TTS (XTTS v2) is definitively bad for all users.",
+      "ElevenLabs is the best online TTS solution.",
+      "The user has successfully implemented any specific TTS solution for dialogues.",
+      "The user has programming expertise.",
+      "The user's dialogue examples are representative of complex use cases."
+    ],
+    "essential_limitations": [
+      "The specific hardware used by the source author is not mentioned.",
+      "The exact version or configuration of Coqui TTS (XTTS v2) is not specified.",
+      "The source author's definition of 'terrible' output is subjective and not quantified.",
+      "The complexity of the actual dialogues the user intends to create is not detailed beyond the provided simple example."
+    ],
+    "missing_information": [
+      "Specific recommendations for local or free TTS software.",
+      "Details on how to configure speaker gender in potential TTS solutions.",
+      "Information on the performance of alternative TTS systems for dialogue generation.",
+      "The source author's operating system or environment."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0275",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:49.611733+00:00",
+    "tag": "brief_builder:S04",
+    "phase": "selection",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "bbd6101ba54e30939f5ba6795e040eed46ccce2852ea7ce05e7820c85aa62fec",
+    "actual_cost_usd": 0.0004872,
+    "budget_charge_usd": 0.0004872,
+    "reserved_upper_usd": 0.0016552,
+    "input_tokens": 836,
+    "output_tokens": 1009,
+    "latency_seconds": 3.699828400014667,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112185-Ho6Gt8q3toyMhxXJgu0a",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

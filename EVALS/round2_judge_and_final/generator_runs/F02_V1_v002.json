@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-04T11:12:31.619199+00:00",
+  "loop_version": "v002",
+  "brief_id": "F02",
+  "phase": "final",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Using Weaviate or Milvus to Find Specific 1-2 Word Keywords with Order Preservation?",
+        "body": "I'm looking at a use case where the goal is to match very short keywords—like \"hugging face\" or \"meta\"—and also find semantically close sentences from a database based on user input. The challenge is that vector databases such as Weaviate and Milvus were not originally designed for reverse keyword search or to preserve word order in these short phrases.\n\nA Reddit user from mid-2025 reported trying these databases for this purpose but didn't detail the exact configurations or share clear success metrics. Given that vector similarity focuses more on semantic closeness than exact token order, I'm wondering if anyone here has practical experience or strategies for reliably detecting these 1-2 word keywords while maintaining their order using Weaviate or Milvus?\n\nAre there known workarounds or hybrid approaches that might improve keyword detection fidelity in this context?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source and brief, posing a relevant question to the community. It correctly states the user's problem and their attempts with Weaviate and Milvus without claiming personal experience. The question about workarounds and hybrid approaches is specific and useful. The copy check flagged a phrase that is not a direct copy of the source, but rather a rephrasing of the problem statement.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 136,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Can Vector DBs Like Weaviate or Milvus Reliably Detect Ordered 1-2 Word Keywords?",
+        "body": "A use case from a 2025 Reddit post involves matching very short keywords (1-2 words, e.g., \"hugging face\") and semantically similar sentences from a database using user input. The user tried Weaviate and Milvus for this, but these vector databases aren’t inherently designed for reverse keyword search or preserving the exact order of words.\n\nSince vector embeddings emphasize semantic similarity over strict token order, it’s unclear how well they handle precise keyword matching when order matters. Has anyone experimented with configuration tweaks or additional indexing layers to improve detection of such short, ordered keywords in these systems?\n\nWould combining vector search with traditional keyword indexing be a practical solution here, or are there better approaches within the vector DB ecosystem?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 also accurately represents the source and brief. It poses a specific and relevant question to the community about configuration tweaks or hybrid solutions. The speaker correctly avoids claiming personal experience. The copy check flagged a phrase that is not a direct copy of the source, but rather a rephrasing of the problem statement.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 120,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Using Weaviate or Milvus to Find Specific 1-2 Word Keywords with Order Preservation?",
+      "body": "I'm looking at a use case where the goal is to match very short keywords—like \"hugging face\" or \"meta\"—and also find semantically close sentences from a database based on user input. The challenge is that vector databases such as Weaviate and Milvus were not originally designed for reverse keyword search or to preserve word order in these short phrases.\n\nA Reddit user from mid-2025 reported trying these databases for this purpose but didn't detail the exact configurations or share clear success metrics. Given that vector similarity focuses more on semantic closeness than exact token order, I'm wondering if anyone here has practical experience or strategies for reliably detecting these 1-2 word keywords while maintaining their order using Weaviate or Milvus?\n\nAre there known workarounds or hybrid approaches that might improve keyword detection fidelity in this context?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source and brief, posing a relevant question to the community. It correctly states the user's problem and their attempts with Weaviate and Milvus without claiming personal experience. The question about workarounds and hybrid approaches is specific and useful. The copy check flagged a phrase that is not a direct copy of the source, but rather a rephrasing of the problem statement.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 136,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0305",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:12:29.876517+00:00",
+    "tag": "V1:F02",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "10b438595371a74f6cea97ecd11f3cc3c85fdd955cc41da6552b64ef4d867445",
+    "actual_cost_usd": 0.0010268,
+    "budget_charge_usd": 0.0010268,
+    "reserved_upper_usd": 0.0052596,
+    "input_tokens": 959,
+    "output_tokens": 402,
+    "latency_seconds": 3.3998449000064284,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112346-i8zQmsa2W51Y0QvLPZSD",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0306",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:12:31.593644+00:00",
+    "tag": "quality:F02:V1",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "4943afd50f6678fc511db27360711a7a31ff146817dd3607b6268153d5c246fb",
+    "actual_cost_usd": 0.0004287,
+    "budget_charge_usd": 0.0004287,
+    "reserved_upper_usd": 0.0017661,
+    "input_tokens": 2547,
+    "output_tokens": 435,
+    "latency_seconds": 1.6849534999928437,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112349-ePmjj8bj4o0BQEZ7WU2E",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

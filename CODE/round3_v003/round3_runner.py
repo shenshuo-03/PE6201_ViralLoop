@@ -2,20 +2,24 @@
 from pathlib import Path
 import json,os,hashlib,datetime,threading,time,urllib.request,urllib.error,re,sys
 from concurrent.futures import ThreadPoolExecutor,as_completed
-L=Path(__file__).resolve().parents[1];ROOT=L.parents[1];BASE=ROOT.parent
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from _packaged_paths import round3_v003_root, repo_paths, redirect_write, reproduction_copy
+L=round3_v003_root();ROOT=repo_paths();BASE=repo_paths()
 LOCK=threading.RLock();INFLIGHT={}
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
-def write(p,v):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='utf-8')
+def write(p,v):
+    # Never overwrite the frozen evidence: redirect any such write to reproduced_run/.
+    p=redirect_write(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='utf-8')
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def digest(x):return hashlib.sha256(x.encode()).hexdigest()
 def rows(p):return [json.loads(x) for x in p.read_text(encoding='utf-8').splitlines()] if p.exists() else []
 def event(stage,action,evidence):
  with LOCK:
-  x={'time':now(),'loop_version':'v003','stage':stage,'action':action,'evidence':evidence};p=L/'events_v003.jsonl'
+  x={'time':now(),'loop_version':'v003','stage':stage,'action':action,'evidence':evidence};p=reproduction_copy(L/'events_v003.jsonl',L.workdir)
   with p.open('a',encoding='utf-8') as f:f.write(json.dumps(x,ensure_ascii=False)+'\n')
-  with (L/'process_archive_v003.md').open('a',encoding='utf-8') as f:f.write('\n'+x['time']+' '+stage+' '+action+' '+json.dumps(evidence,ensure_ascii=False)+'\n')
-C=read(L/'experiment_contract_v003.yaml');MODELS=C['models'];PRICES=read(L/'configs/model_prices_v003.json')['models'];LEDGER=L/'results/api_ledger_v003.jsonl'
+  with reproduction_copy(L/'process_archive_v003.md',L.workdir).open('a',encoding='utf-8') as f:f.write('\n'+x['time']+' '+stage+' '+action+' '+json.dumps(evidence,ensure_ascii=False)+'\n')
+C=read(L/'experiment_contract_v003.yaml');MODELS=C['models'];PRICES=read(L/'configs/model_prices_v003.json')['models'];LEDGER=reproduction_copy(L/'results/api_ledger_v003.jsonl',L.workdir)
 def project_prior():
  return sum(x.get('budget_charge_usd',0) for p in [BASE/'experiment_1_0/results/api_ledger.jsonl',ROOT/'loops/v002/results/api_ledger_v002.jsonl'] for x in rows(p))
 def charge_total():return sum(x['budget_charge_usd'] for x in rows(LEDGER))
@@ -70,7 +74,7 @@ AUDIT='''Audit and repair the candidate brief against source. Keep assigned user
 BASEPROMPT='''Write a natural r/LocalLLaMA post addressing current_user_goal, current_decision and desired_help for the supplied audience. Use full brief evidence, not a source summary. Preserve relevant conditions and essential uncertainty. Speaker may express the explicitly assigned hypothetical goals but not invent tests, ownership or experiences. Attribute historical measurements/date concisely when relied on; do not force an old-post recap. No unsupported recommendations, no clickbait, no generic invitation after a useful question. Body 90-180 words, hard limit 220; title <=160 characters. Return JSON {"drafts":[{"title":"...","body":"...","fact_refs":["F1"]}]}. Exactly ONE draft.'''
 PLAN='''Given complete brief, organize but never change its user goal. Return JSON {"speaker":"...","scenario_origin":"...","current_goal":"...","central_purpose":"...","desired_response":"...","relevant_evidence_ids":["F1"],"must_preserve":["..."],"must_not_invent":["..."]}. Preserve full source context and limitations; do not limit facts to two; no new personal history.'''
 QUALITY='''Audit BOTH drafts independently against source and same brief. The assigned controlled hypothetical goals may be expressed as goals, not as lived experiences. Source reports must not become speaker tests or current universal facts. No invented facts, measurements, ownership, critical context loss, misleading title or copying. Do not assign generic 1-5 quality scores. Return JSON {"judgments":[{"index":0,"factual_pass":true,"speaker_pass":true,"essential_context_pass":true,"title_body_pass":true,"unsupported_claims":[],"unverified_claims":[],"reason":"..."}]}. Include one judgment for each draft.'''
-TRANSLATE='''Faithfully translate task goal, decision, desired help and two supplied drafts into simplified Chinese. Preserve wording strength, dates, numbers, named models, paragraph structure, speaker identity and uncertainty; no polishing or additions. Return JSON {"task_zh":{"goal":"...","decision":"...","desired_help":"...","source_date":"...","scenario_note":"受控假设用户场景；历史资料不代表本人亲测"},"drafts":[{"title":"...","body":"..."}]}. Preserve input draft order.'''
+TRANSLATE='''Faithfully translate task goal, decision, desired help and two supplied drafts into simplified Chinese. Preserve wording strength, dates, numbers, named models, paragraph structure, speaker identity and uncertainty; no polishing or additions. Return JSON {"task_zh":{"goal":"...","decision":"...","desired_help":"...","source_date":"...","scenario_note":"Controlled hypothetical user scenario; the historical material does not represent the poster's own testing"},"drafts":[{"title":"...","body":"..."}]}. Preserve input draft order.'''
 JUDGE='''Judge two community drafts for SAME complete brief including current user goal. Prefer natural, useful, concretely motivated writing with necessary context and factual safety. Ignore position, length and model identity. Answer A/B/Tie/Both unacceptable/Uncertain. Both unacceptable means neither publishable; Uncertain means unable to judge. Return JSON {"overall":"A","naturalness":"A","motivation":"A","worth_replying":"A","publishable_A":"Yes","publishable_B":"Yes","evidence":"one short grounded reason"}. No human labels supplied.'''
 
 def normalized(x):return ' '.join(re.findall(r'[a-z0-9]+',x.lower()))
@@ -125,7 +129,7 @@ def dev():
    except Exception as e:failures.append({'brief_id':futures[f]['brief_id'],'error':str(e)});event('dev','task_failed',failures[-1])
  write(L/'results/dev_stage_v003.json',{'complete':len(cases),'failures':failures,'cost':charge_total(),'calls':len(rows(LEDGER))})
  if failures:raise RuntimeError('Incomplete Dev; preserve outputs and repair evidenced issue')
- prepare_blind(cases);(ROOT/'PROJECT_STATE.md').write_text('# 当前状态\n\nloop_version: v003\nstate: HUMAN_DEV_PENDING\n\n8对中文开发盲评已准备，等待用户真实评价；Selector未准入，Final尚未打开。\n',encoding='utf-8')
+ prepare_blind(cases);(ROOT/'PROJECT_STATE.md').write_text('# Current state\n\nloop_version: v003\nstate: HUMAN_DEV_PENDING\n\n8 development blind-review pairs are prepared and awaiting genuine user feedback; the selector has not passed admission and Final remains closed.\n',encoding='utf-8')
 
 def offline_checks():
  checks={}

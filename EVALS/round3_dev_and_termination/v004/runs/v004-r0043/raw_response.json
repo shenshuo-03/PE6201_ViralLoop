@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121680-FaSPqhgqW89yeROghijZ",
+  "object": "chat.completion",
+  "created": 1791121680,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"GraphRAG Tutorial: Multi-Hop Question Answering Using Vector Search and Graph Reasoning Without Separate Graph DBs\",\"body\":\"A recently archived tutorial introduces GraphRAG, a method combining vector search with graph-style reasoning for multi-hop question answering. Unlike traditional approaches requiring separate graph databases, GraphRAG relies solely on vector databases. The tutorial guides users through converting text into entities, relationships, and passages stored in vectors. It covers building two search types—entity search and relationship search—and using mathematical matrices to identify connections between data points. AI prompting helps select the most relevant relationships to answer complex queries. This resource is particularly useful for developers and AI practitioners exploring advanced retrieval-augmented generation (RAG) techniques focused on multi-hop retrieval. Note that the tutorial outlines the methodology and provides a linked notebook but does not offer independent performance validation or real-world implementation results. For those interested, the complete GraphRAG notebook is available in the RAG_TECHNIQUES GitHub repository, archived as of June 2025.\",\"fact_refs\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1600,
+    "completion_tokens": 242,
+    "total_tokens": 1842,
+    "cost": 0.0010272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010272,
+      "upstream_inference_prompt_cost": 0.00064,
+      "upstream_inference_completions_cost": 0.0003872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

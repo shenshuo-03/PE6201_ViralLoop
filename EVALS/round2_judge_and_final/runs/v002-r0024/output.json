@@ -1,0 +1,17 @@
+{
+  "drafts": [
+    {
+      "title": "Using Local LLMs to Improve HTML-to-Markdown Conversion: Challenges with Media-Heavy and JS-Only Sites",
+      "body": "A recent project shared on r/LocalLLaMA explores converting HTML web pages to high-quality Markdown using local LLMs like Qwen2.5-7B/8B running fully offline with llama.cpp on consumer GPUs (e.g., 4070/4080/4090). The approach combines heuristic HTML analysis (via BeautifulSoup) to detect content focus and framework fingerprints with LLM-generated JSON extraction strategies and AI-based quality scoring. While results on standard article or blog pages are often rated good to excellent, the tool struggles with media-heavy or JavaScript-only sites without browser rendering. Performance-wise, processing a single page takes about 10–20 seconds on a 4070 GPU, but batch processing hundreds of pages may need optimization. Given these constraints, how do others handle dynamic or media-rich sites when relying solely on local LLMs without browser engines? Are there practical methods to improve extraction quality or speed in such cases, perhaps through pre-rendering, hybrid heuristics, or model fine-tuning? Also, what evaluation approaches have you found effective beyond AI scoring to reliably benchmark Markdown extraction quality?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    }
+  ]
+}

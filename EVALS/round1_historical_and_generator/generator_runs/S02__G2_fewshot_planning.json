@@ -1,0 +1,304 @@
+{
+  "at": "2026-10-04T08:02:55.868452+00:00",
+  "topic": {
+    "id": "S02",
+    "split": "selection_dev",
+    "topic": "What would count as evidence that local deployment improves privacy?",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario keeps prompts on a local machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Logs and optional network connections must also be checked.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No security audit or compliance certification was performed.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T07:57:09.304441+00:00",
+    "tag": "selection_dev:S02:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "c44d4acacfab825cdaf8db2ffd8f33d70a7115c396788621ccb76c488223cf40",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1151,
+    "output_tokens": 577,
+    "actual_cost_usd": 0.0003459,
+    "token_price_estimate_usd": 0.0003459,
+    "reserved_upper_usd": 0.0012601,
+    "budget_charge_usd": 0.0003459,
+    "latency_seconds": 3.116250000006403,
+    "retry": 0,
+    "request_id": "gen-1791100626-Osu1wiTs3Fjg1fLXFv5d"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:57:12.264642+00:00",
+    "tag": "selection_dev:S02:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "77ba6ac7003cba5737794b45d47a3ac8832db25f4be5f7f65ac40c55f88c41ca",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 989,
+    "output_tokens": 385,
+    "actual_cost_usd": 0.0010116,
+    "token_price_estimate_usd": 0.0010116,
+    "reserved_upper_usd": 0.0049832,
+    "budget_charge_usd": 0.0010116,
+    "latency_seconds": 2.9103183999977773,
+    "retry": 0,
+    "request_id": "gen-1791100629-yDb3szacRDwp1bZ8DWbk"
+  },
+  "retrieved_ids": [
+    "1ixamd9",
+    "1k9qg8o"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "154c76144ce7ac60f64dd76fc053f1b2adb6e2aa212463a1aa0ac8f300a78e21",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "What constitutes evidence for local LLM deployment enhancing privacy?",
+        "body": "Exploring the privacy benefits of running LLMs locally is a key concern for the r/LocalLLaMA community. This post outlines a hypothetical experimental setup to gather evidence. The core premise is that local deployment inherently keeps prompts on the user's machine, preventing data from being sent to external servers. However, to rigorously assess privacy improvements, we need to consider more than just prompt containment. This hypothetical scenario suggests checking system logs for any unexpected data exfiltration and examining any configured network connections to ensure they are strictly necessary and not transmitting user data. It's crucial to note that this hypothetical experiment involves no formal security audit or compliance certification. Therefore, any conclusions drawn from this setup would be indicative rather than definitive proof of enhanced privacy. What specific metrics or observations would you consider compelling evidence in such a scenario?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft 1: Focus on the hypothetical nature of the experiment and the need to go beyond just prompt containment. Emphasize logs and network checks as crucial components. Explicitly state the lack of formal audits. End with an open question about what constitutes compelling evidence."
+      },
+      "performance_score": 0.23445154065764692,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references the key facts (F1, F2, F3). It emphasizes the need to look beyond prompt locality by checking logs and network connections, preserving necessary caveats about the lack of formal audits. The language is clear and technical, suitable for the target audience. The open question invites constructive discussion, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 139,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical evidence for local LLM privacy gains: Beyond prompt locality",
+        "body": "When discussing the privacy advantages of local LLM deployments, it's easy to assume that simply keeping prompts on one's machine (F1) is sufficient evidence. This hypothetical discussion aims to identify what *else* would be needed to build a stronger case. While local processing prevents direct transmission of prompts to third parties, a comprehensive privacy assessment requires a deeper look. For instance, this hypothetical scenario proposes examining system logs for any unintended data leakage and scrutinizing any network connections the local LLM setup might establish. Are these connections purely for model updates, or could they potentially transmit usage data? It is vital to acknowledge that this hypothetical framework does not include any security audits or formal compliance certifications (F3). Therefore, the evidence gathered would represent a preliminary assessment, not a guarantee of privacy. What specific log entries or network behaviors would strengthen the argument for privacy improvement in this limited context?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Draft 2: Start by directly addressing the common assumption about prompt locality and then introduce the need for further investigation. Frame the examination of logs and network connections as essential steps in the hypothetical assessment. Reiterate the absence of formal certification. Conclude by asking for specific indicators within logs or network traffic that would support privacy claims."
+      },
+      "performance_score": 0.22570854344472394,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and references all supplied facts. It challenges the assumption that prompt locality alone is sufficient, highlighting the importance of logs and network connection scrutiny. The absence of formal audits is clearly stated. The writing is clear and technical, appropriate for the audience. The concluding question is well-posed to stimulate relevant discussion. No unsupported claims or clickbait elements are present.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 150,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "What constitutes evidence for local LLM deployment enhancing privacy?",
+      "body": "Exploring the privacy benefits of running LLMs locally is a key concern for the r/LocalLLaMA community. This post outlines a hypothetical experimental setup to gather evidence. The core premise is that local deployment inherently keeps prompts on the user's machine, preventing data from being sent to external servers. However, to rigorously assess privacy improvements, we need to consider more than just prompt containment. This hypothetical scenario suggests checking system logs for any unexpected data exfiltration and examining any configured network connections to ensure they are strictly necessary and not transmitting user data. It's crucial to note that this hypothetical experiment involves no formal security audit or compliance certification. Therefore, any conclusions drawn from this setup would be indicative rather than definitive proof of enhanced privacy. What specific metrics or observations would you consider compelling evidence in such a scenario?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Draft 1: Focus on the hypothetical nature of the experiment and the need to go beyond just prompt containment. Emphasize logs and network checks as crucial components. Explicitly state the lack of formal audits. End with an open question about what constitutes compelling evidence."
+    },
+    "performance_score": 0.23445154065764692,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly references the key facts (F1, F2, F3). It emphasizes the need to look beyond prompt locality by checking logs and network connections, preserving necessary caveats about the lack of formal audits. The language is clear and technical, suitable for the target audience. The open question invites constructive discussion, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 139,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

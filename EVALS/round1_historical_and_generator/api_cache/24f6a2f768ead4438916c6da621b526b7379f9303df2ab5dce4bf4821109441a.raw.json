@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100784-Mjv6gzpxGSqtCh8HAWXG",
+  "object": "chat.completion",
+  "created": 1791100784,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.4,\n      \"reason\": \"Technical question about GPUs and LLMs with some interest but typical troubleshooting style; moderate chance of high score.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.3,\n      \"reason\": \"Niche question about TTS for emotional expression; less broad appeal, likely lower engagement.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"Focused question on local LLMs for classification; practical but somewhat narrow audience.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.45,\n      \"reason\": \"Experience/benchmark comparing AMD and Intel/Nvidia for local models; likely to attract interest from hardware enthusiasts.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.6,\n      \"reason\": \"Creative and detailed experience post about building a custom LLM agent for Matthew McConaughey; likely to attract high engagement.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.4,\n      \"reason\": \"Experience post about GPU upgrade considerations for LLMs; practical and relevant to many users.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.3,\n      \"reason\": \"Speculative discussion about DGX Spark and GPU offloading; niche and technical, moderate interest.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.35,\n      \"reason\": \"Discussion about running AI models on low-end hardware; practical but limited audience.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5676,
+    "completion_tokens": 373,
+    "total_tokens": 6049,
+    "cost": 0.0028672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028672,
+      "upstream_inference_prompt_cost": 0.0022704,
+      "upstream_inference_completions_cost": 0.0005968
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical hardware setup and testing discussion with some model comparison; moderate interest expected."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Detailed benchmark comparison of AMD systems; likely to attract technical audience but niche."
+      },
+      {
+        "index": 2,
+        "probability": 0.25,
+        "reason": "Question about Vulkan dockers and local setup; more niche and troubleshooting focused."
+      },
+      {
+        "index": 3,
+        "probability": 0.5,
+        "reason": "Showcase post with detailed technical content and code snippet; higher engagement potential."
+      },
+      {
+        "index": 4,
+        "probability": 0.45,
+        "reason": "Tool building for prompt benchmarking with community feedback request; relevant and practical."
+      },
+      {
+        "index": 5,
+        "probability": 0.4,
+        "reason": "In-depth RPC-server benchmarking with detailed specs; technical but may attract interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Request for detailed guide on running a model; tutorial style but less broad appeal."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "Short question about API support; likely lower engagement due to brevity and specificity."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:02:05.111960+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:64",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "2e066f1c61f2c1b0615ac41e79447c308c2cf17ba6b3a43aa71607d2cf805742",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6478,
+    "output_tokens": 256,
+    "actual_cost_usd": 0.0030008,
+    "token_price_estimate_usd": 0.0030007999999999996,
+    "reserved_upper_usd": 0.0120012,
+    "budget_charge_usd": 0.0030008,
+    "latency_seconds": 2.3444267000013497,
+    "retry": 0,
+    "request_id": "gen-1791100922-BgQvurkkZndOTP3nQmPC"
+  },
+  "raw_response": {
+    "id": "gen-1791100922-BgQvurkkZndOTP3nQmPC",
+    "object": "chat.completion",
+    "created": 1791100922,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[\n  {\"index\":0,\"probability\":0.3,\"reason\":\"Technical hardware setup and testing discussion with some model comparison; moderate interest expected.\"},\n  {\"index\":1,\"probability\":0.35,\"reason\":\"Detailed benchmark comparison of AMD systems; likely to attract technical audience but niche.\"},\n  {\"index\":2,\"probability\":0.25,\"reason\":\"Question about Vulkan dockers and local setup; more niche and troubleshooting focused.\"},\n  {\"index\":3,\"probability\":0.5,\"reason\":\"Showcase post with detailed technical content and code snippet; higher engagement potential.\"},\n  {\"index\":4,\"probability\":0.45,\"reason\":\"Tool building for prompt benchmarking with community feedback request; relevant and practical.\"},\n  {\"index\":5,\"probability\":0.4,\"reason\":\"In-depth RPC-server benchmarking with detailed specs; technical but may attract interest.\"},\n  {\"index\":6,\"probability\":0.3,\"reason\":\"Request for detailed guide on running a model; tutorial style but less broad appeal.\"},\n  {\"index\":7,\"probability\":0.25,\"reason\":\"Short question about API support; likely lower engagement due to brevity and specificity.\"}\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6478,
+      "completion_tokens": 256,
+      "total_tokens": 6734,
+      "cost": 0.0030008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030008,
+        "upstream_inference_prompt_cost": 0.0025912,
+        "upstream_inference_completions_cost": 0.0004096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

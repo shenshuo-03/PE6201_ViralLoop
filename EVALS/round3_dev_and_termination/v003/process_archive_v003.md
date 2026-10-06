@@ -1,6 +1,6 @@
-# v003 实际过程
+# v003 Actual Process
 
-2026-10-04T12:54:26.121151+00:00：用户授权按v1.2执行。免费预检；Jev无法可靠定价且无直连凭证，按协议采用Claude。独立来源组已分配，Final正文不保存或进入开发。
+2026-10-04T12:54:26.121151+00:00: The user authorized execution per v1.2. Free pre-check; Jev could not be reliably priced and had no direct credentials, so Claude was used per protocol. Independent source groups were allocated, and Final bodies were not saved or brought into development.
 
 2026-10-04T12:57:33.289994+00:00 prepare_dev api_completed {"run_id": "v003-r0001", "tag": "brief:D03", "status": "success", "cost": 0.0005303}
 

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100607-WjP679ldQhihGxQRwnK0",
+  "object": "chat.completion",
+  "created": 1791100607,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and the experimental design using 30 local documents, comparing retrieval on vs off, and including unanswerable questions. It avoids introducing unsupported claims and explicitly notes no actual results are presented. The title matches the content well. The language is clear and technical, suitable for the target audience. The post invites discussion on design considerations, making it useful and relevant. The credibility is strong due to explicit caveats and no overstatements. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft is well structured and explicitly states the hypothetical framework and the use of 30 documents. It clearly explains the retrieval on/off comparison and the inclusion of unanswerable questions. The caveats about no actual results are clearly presented. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. The post encourages focused discussion, enhancing usefulness and relevance. Credibility is maintained by avoiding unsupported claims and emphasizing the theoretical nature. The title is straightforward and not clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly presents the hypothetical RAG sanity check focusing on retrieval effectiveness with unanswerable questions. It explicitly states the use of 30 local documents and the retrieval on/off comparison. The hypothetical nature and lack of actual metrics are clearly noted. The title matches the content well and emphasizes the evaluation aspect. The language is clear, concise, and technical, suitable for the audience. The post invites discussion on critical design considerations, making it useful and relevant. Credibility is strong due to explicit caveats and no unsupported claims. The title is descriptive and not clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1190,
+    "completion_tokens": 635,
+    "total_tokens": 1825,
+    "cost": 0.001492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001492,
+      "upstream_inference_prompt_cost": 0.000476,
+      "upstream_inference_completions_cost": 0.001016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

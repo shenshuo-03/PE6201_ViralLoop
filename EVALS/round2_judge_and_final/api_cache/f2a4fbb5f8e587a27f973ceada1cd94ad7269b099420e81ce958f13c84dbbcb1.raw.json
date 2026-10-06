@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112388-rjsdQ5aI2W4VyQFtSJbs",
+  "object": "chat.completion",
+  "created": 1791112388,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 0 accurately reflects the source's question about training a local LLM on the 2018 International Building Code for floor plan analysis and compares it to cloud models. It correctly states the user's intent without claiming personal experience or definitive outcomes. The community fit is good as it directly addresses the core technical question. Specificity is high, mentioning the building code and floor plan analysis. Information value is good, posing a clear dilemma. Clarity and usefulness are high. Credibility is good as it sticks to the source's hypothetical nature. Clickbait is low.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately captures the source's inquiry regarding the practicality of training a local LLM on the 2018 International Building Code for floor plan analysis versus using cloud models with prompt engineering. It adheres to the persona and avoids unsupported claims or personal experience. Community fit is strong, directly engaging with the technical challenge. Specificity is high, referencing the code and task. Information value is good, framing the trade-off clearly. Clarity, usefulness, and credibility are all high. Clickbait is low.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2565,
+    "completion_tokens": 510,
+    "total_tokens": 3075,
+    "cost": 0.0004605,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004605,
+      "upstream_inference_prompt_cost": 0.0002565,
+      "upstream_inference_completions_cost": 0.000204
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

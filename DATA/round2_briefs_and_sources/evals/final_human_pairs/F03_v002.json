@@ -1,27 +1,5 @@
 {
-  "task_zh": "确定是否可以有效地在特定文档（2018年国际建筑规范）上训练本地LLM，以在目标分析和检索方面优于云模型。",
   "A": {
-    "title": "在2018年国际建筑规范上训练本地LLM是否适用于目标建筑规范分析？",
-    "body": "我看到一个讨论，其中有人想专门在2018年国际建筑规范（IBC）上训练一个本地LLM，以回答有关建筑规范分析的查询，可能使用诸如平面图之类的输入。核心问题是，将模型仅限于一个详细的技术文档是否能产生专注且准确的响应，特别是与使用经过精心设计的提示的云模型（如ChatGPT）相比。考虑到原始作者是普通人，并且没有提供具体的性能数据，我对这种方法的可行性感到好奇。这里有人尝试过在单个专业文档上训练或微调本地LLM以完成特定领域任务吗？结果通常与云模型相比如何，特别是当考虑提示工程时？此外，在为这类模型表示平面图之类的输入时可能会出现哪些挑战？任何见解或经验都将不胜感激。",
-    "fact_refs": [
-      "F1",
-      "F2",
-      "F3",
-      "F4",
-      "F5",
-      "F6"
-    ]
-  },
-  "B": {
-    "title": "在2018年国际建筑规范上训练本地AI是否适用于平面图分析？",
-    "body": "我看到一篇来自2025年中期的帖子，作者想创建一个专门在2018年国际建筑规范（IBC）上训练的专注AI模型，以分析平面图并提供建筑规范反馈。想法是输入一个平面图，直接从模型中获得基于规范的分析。\n\n考虑到2018年IBC文本的特殊性，仅凭该文档训练本地LLM来完成此类任务是否可行？或者，与依赖经过精心设计的提示的云模型（如ChatGPT）来解释相对于平面图的代码相比，哪种方法更有效？原始帖子没有提供关于可行性或性能的细节，所以我很好奇对于这个用例，在本地专业模型与通用模型上的提示工程之间进行权衡，是否有人能提供见解。",
-    "fact_refs": [
-      "F1",
-      "F2"
-    ]
-  },
-  "pair_id": "F03",
-  "english_A": {
     "title": "Is training a local LLM on the 2018 International Building Code practical for targeted building code analysis?",
     "body": "I've come across a discussion where someone wants to train a local LLM specifically on the 2018 International Building Code (IBC) to answer queries about building code analysis, potentially using inputs like floor plans. The core question is whether limiting a model to just one detailed technical document can produce focused and accurate responses, especially compared to using cloud-based models like ChatGPT with carefully crafted prompts. Given that the source author is a layperson and hasn't provided concrete performance data, I'm curious about the feasibility of this approach. Has anyone here experimented with training or fine-tuning local LLMs on a single specialized document for domain-specific tasks? How do the results typically compare to cloud models, particularly when prompt engineering is factored in? Also, what challenges might arise in representing inputs like floor plans for such models? Any insights or experiences would be appreciated.",
     "fact_refs": [
@@ -33,7 +11,7 @@
       "F6"
     ]
   },
-  "english_B": {
+  "B": {
     "title": "Is training a local AI on the 2018 International Building Code practical for floor plan analysis?",
     "body": "I came across a post from mid-2025 where the author wanted to create a focused AI model trained specifically on the 2018 International Building Code (IBC) to analyze floor plans and provide building code feedback. The idea is to input a floor plan and get a code-based analysis directly from the model.\n\nGiven the specificity of the 2018 IBC text, is it practical to train a local LLM just on this document for such a task? Or would it be more efficient to rely on a cloud-based model like ChatGPT with carefully crafted prompts to interpret the code relative to floor plans? The source doesn't provide details on feasibility or performance, so I’m curious if anyone has insight into the tradeoffs between a local specialized model versus prompt engineering on a general model for this use case.",
     "fact_refs": [
@@ -41,6 +19,7 @@
       "F2"
     ]
   },
+  "pair_id": "F03",
   "translation_numeric_checks": {
     "A": true,
     "B": true
@@ -49,5 +28,7 @@
     "A": true,
     "B": true
   },
-  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  "numeric_check_note": "Equivalent May 2025 dates normalized to the same date before checking numbers; draft text unchanged",
+  "task_en": "Determine whether a local LLM can be trained effectively on a specific document (the 2018 International Building Code) to beat cloud models at targeted analysis and retrieval.",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

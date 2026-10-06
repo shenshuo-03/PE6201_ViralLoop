@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112805-zrrNC9V6SjYIMJJtlnf4",
+  "object": "chat.completion",
+  "created": 1791112805,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"B\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Both drafts preserve the core facts (F1, F2) and frame a legitimate community question. Draft A better serves community_fit by opening with concrete motivation (\\\"I've come across a plan\\\") and posing a direct actionable question about practical tradeoffs—exactly what local LLM enthusiasts can debate. Draft B weakens this by inserting \\\"mid-2025\\\" (the brief specifies source_date as 2025-07-19, making \\\"mid-2025\\\" temporally vague and potentially confusing) and framing the post as reporting on archived content rather than engaging the problem directly. Both are equally specific to the facts provided. Draft A's information_value is stronger: it organizes the tension (narrow training vs. broad + prompting) into a clear distinction readers can reason about. Draft B repeats the setup without advancing the distinction as crisply. On credibility, Draft B is more cautious (\\\"source doesn't provide details\\\") and explicitly signals the layperson status implied by F6, whereas Draft A omits this context, risking unstated assumptions. Both avoid forbidden claims. Draft A's framing as a genuine inquiry from a community member is more authentic to the audience and purpose than Draft B's archival-report tone.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2147,
+    "completion_tokens": 353,
+    "total_tokens": 2500,
+    "cost": 0.003912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003912,
+      "upstream_inference_prompt_cost": 0.002147,
+      "upstream_inference_completions_cost": 0.001765
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

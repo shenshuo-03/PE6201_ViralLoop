@@ -1,0 +1,12 @@
+{
+  "drafts": [
+    {
+      "title": "Reassessing 'The Illusion of Thinking': How Token Limits and Puzzle Design May Skew AI Reasoning Claims",
+      "body": "The Apple paper \"The Illusion of Thinking\" posits a reasoning collapse in large language models, exemplified by failures on puzzles like Tower of Hanoi and River Crossing. However, an archived Reddit comment from June 2025 raises important concerns about the experimental design behind these conclusions. The commenter suggests that the reported collapse at 8 disks in Hanoi coincides with the model’s output exceeding its maximum token limit (e.g., 64k tokens), implying the failure might stem from output constraints rather than reasoning breakdown (F1). Additionally, the study reportedly tested River Crossing puzzles with configurations mathematically unsolvable—specifically, 6 or more actors with a boat capacity of 3—casting doubt on the validity of those results (F2). While these points are presented as opinions without independent verification, they highlight the challenge of disentangling genuine reasoning limitations from artifacts caused by benchmark selection and model output limits. This invites a broader discussion on how AI reasoning capabilities should be rigorously evaluated, ensuring that experimental setups do not inadvertently conflate technical boundaries with cognitive failures. Such scrutiny is crucial to avoid misleading interpretations of model capabilities and to refine future benchmarks. These critiques are a valuable prompt for ongoing debate rather than conclusive judgments.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

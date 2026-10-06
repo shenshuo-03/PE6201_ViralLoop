@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101522-u2aq33egNenQwASePG15",
+  "object": "chat.completion",
+  "created": 1791101522,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly and accurately describes the hypothetical prompt regression test design, explicitly stating the scenario is hypothetical with no results yet (F4). It references all relevant facts (F1-F3) correctly and maintains consistency between title and body. The language is clear and technical, suitable for the target audience. It provides actionable methodological guidance and invites discussion, enhancing usefulness and relevance. There are no unsupported claims or exaggerations, and the caveats about the hypothetical nature are preserved.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all required caveats (F4). It correctly references the fixed prompt set (F1), identical model settings (F2), and inclusion of answerable and insufficient-information cases (F3). The title matches the content well. The writing is clear and technical, appropriate for the audience. It offers a useful framework outline and invites feedback on evaluation strategies, making it relevant and actionable. No unsupported claims or clickbait elements are present.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1020,
+    "completion_tokens": 404,
+    "total_tokens": 1424,
+    "cost": 0.0010544,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010544,
+      "upstream_inference_prompt_cost": 0.000408,
+      "upstream_inference_completions_cost": 0.0006464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

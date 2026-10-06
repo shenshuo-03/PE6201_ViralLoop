@@ -1,0 +1,89 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical Local LLM Inference: Beyond Raw Tokens/Second",
+        "body": "This post discusses a hypothetical experiment exploring local Large Language Model (LLM) inference speeds. In this scenario, two hypothetical runtimes on the same machine achieved 18 and 24 tokens per second respectively, using a single prompt (F1, F2). While a higher tokens/second rate seems advantageous, it's crucial to understand what this metric doesn't capture. This hypothetical test did not measure critical factors like time to first token (TTFT) or the actual quality of the generated answers (F3). TTFT significantly impacts perceived responsiveness, especially for interactive use cases. Similarly, a faster generation rate is less meaningful if the output is nonsensical or irrelevant. Therefore, this limited hypothetical sample does not establish a universal winner (F4). Evaluating local LLM performance requires a broader set of metrics beyond just raw throughput.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ]
+      },
+      {
+        "title": "Hypothetical LLM Inference: Why 24 t/s Isn't Always Better Than 18 t/s",
+        "body": "We're examining a hypothetical local LLM inference scenario to highlight potential performance nuances. The experiment involves a single prompt run on identical hardware, yielding two hypothetical results: 18 tokens per second (t/s) and 24 t/s (F1, F2). While the 24 t/s figure appears superior, this hypothetical data is incomplete. Crucially, the experiment did not quantify the time taken to generate the *first* token, nor did it assess the semantic quality or factual accuracy of the responses (F3). For many applications, especially chat interfaces, the initial delay (TTFT) is a major contributor to user experience. A model generating 18 t/s with a near-instant TTFT might feel faster than a 24 t/s model with a noticeable lag before any output appears. Furthermore, raw speed without quality is unproductive. This hypothetical comparison, therefore, does not declare a definitive winner (F4) and underscores the need for comprehensive benchmarking.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:08:28.719693+00:00",
+    "tag": "final_test:T03:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "ad37fd4a7a82e8d80d097925d33e032bdbba7bf96fe314e52c208720aad39d1d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 397,
+    "output_tokens": 505,
+    "actual_cost_usd": 0.0002417,
+    "token_price_estimate_usd": 0.0002417,
+    "reserved_upper_usd": 0.0010019,
+    "budget_charge_usd": 0.0002417,
+    "latency_seconds": 2.4971086000005016,
+    "retry": 0,
+    "request_id": "gen-1791101306-O2pEuEk7kqmFVpjBmB2N"
+  },
+  "raw_response": {
+    "id": "gen-1791101306-O2pEuEk7kqmFVpjBmB2N",
+    "object": "chat.completion",
+    "created": 1791101306,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Local LLM Inference: Beyond Raw Tokens/Second\",\n    \"body\": \"This post discusses a hypothetical experiment exploring local Large Language Model (LLM) inference speeds. In this scenario, two hypothetical runtimes on the same machine achieved 18 and 24 tokens per second respectively, using a single prompt (F1, F2). While a higher tokens/second rate seems advantageous, it's crucial to understand what this metric doesn't capture. This hypothetical test did not measure critical factors like time to first token (TTFT) or the actual quality of the generated answers (F3). TTFT significantly impacts perceived responsiveness, especially for interactive use cases. Similarly, a faster generation rate is less meaningful if the output is nonsensical or irrelevant. Therefore, this limited hypothetical sample does not establish a universal winner (F4). Evaluating local LLM performance requires a broader set of metrics beyond just raw throughput.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"]\n  },\n  {\n    \"title\": \"Hypothetical LLM Inference: Why 24 t/s Isn't Always Better Than 18 t/s\",\n    \"body\": \"We're examining a hypothetical local LLM inference scenario to highlight potential performance nuances. The experiment involves a single prompt run on identical hardware, yielding two hypothetical results: 18 tokens per second (t/s) and 24 t/s (F1, F2). While the 24 t/s figure appears superior, this hypothetical data is incomplete. Crucially, the experiment did not quantify the time taken to generate the *first* token, nor did it assess the semantic quality or factual accuracy of the responses (F3). For many applications, especially chat interfaces, the initial delay (TTFT) is a major contributor to user experience. A model generating 18 t/s with a near-instant TTFT might feel faster than a 24 t/s model with a noticeable lag before any output appears. Furthermore, raw speed without quality is unproductive. This hypothetical comparison, therefore, does not declare a definitive winner (F4) and underscores the need for comprehensive benchmarking.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"]\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 505,
+      "total_tokens": 902,
+      "cost": 0.0002417,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002417,
+        "upstream_inference_prompt_cost": 3.97e-05,
+        "upstream_inference_completions_cost": 0.000202
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

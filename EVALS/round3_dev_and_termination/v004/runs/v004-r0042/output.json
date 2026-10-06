@@ -1,0 +1,15 @@
+{
+  "drafts": [
+    {
+      "title": "Reassessing Apple's \"The Illusion of Thinking\": Token Limits and Puzzle Design Raise Questions on AI Reasoning Claims",
+      "body": "A recent critique archived from Reddit points out potential design flaws in Apple's 2025 paper \"The Illusion of Thinking,\" which claims to analyze AI reasoning capabilities. The commenter suggests that the reported \"reasoning collapse\" in the Tower of Hanoi puzzle at 8 disks coincides with the model hitting its maximum output token limit (e.g., 64k tokens), implying the failure might stem from output constraints rather than true reasoning breakdown (F1). Additionally, the study's testing on River Crossing puzzles with 6 or more actors and a boat that holds only 3 is highlighted as problematic since such instances are mathematically unsolvable beyond 5 actors (F2). These points lead the commenter to conclude the research may have been poorly conceived (F3), an angle not widely discussed in other forums (F4). While other rebuttals exist, this particular critique focuses on technical issues with experimental design rather than broader theoretical debates (F5). This raises an important trade-off in AI evaluation: distinguishing genuine reasoning failures from artifacts of benchmark or output limitations. It invites further discussion on how to best design tests that fairly assess large language models' reasoning without conflating token constraints or unsolvable tasks with cognitive collapse.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

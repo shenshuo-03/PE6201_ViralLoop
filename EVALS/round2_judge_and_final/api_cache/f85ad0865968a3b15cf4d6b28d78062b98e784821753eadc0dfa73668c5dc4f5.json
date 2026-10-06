@@ -1,0 +1,37 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How does llama.cpp's HTTP server file-upload button handle file content with prompts?",
+        "body": "I've been looking into the file-upload feature of llama.cpp's HTTP server and trying to understand its exact behavior. According to a user report, the file-upload button might concatenate the uploaded file's content with the direct prompt, treating the combined text as a single prompt. The user wanted to ask questions about the file's contents and, over about 15 experiments, sometimes got correct answers, but other times the model seemed to interpret the file contents instead of the query. They also hoped for reproducible results—getting the same answers with the same prompts in new conversations—but this wasn't achieved. The exact mechanics of how the server processes the uploaded file alongside user prompts remain unclear, as do the reasons for the inconsistent responses. Has anyone else experimented with this feature in llama.cpp's HTTP server? How does your experience compare regarding the handling of file content and prompt interaction, and do you know if the file content is actually concatenated or integrated differently? Any insights into improving consistency or reproducibility when querying uploaded files would be very helpful.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ],
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0002",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:05:48.751564+00:00",
+    "tag": "naturalness:D01",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f85ad0865968a3b15cf4d6b28d78062b98e784821753eadc0dfa73668c5dc4f5",
+    "actual_cost_usd": 0.0010836,
+    "budget_charge_usd": 0.0010836,
+    "reserved_upper_usd": 0.0051984,
+    "input_tokens": 1557,
+    "output_tokens": 288,
+    "latency_seconds": 2.4903162000118755,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108346-LXxouAZthcBBXHBKB8F2",
+    "contract_sha256": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304"
+  }
+}

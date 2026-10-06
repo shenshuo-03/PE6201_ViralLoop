@@ -1,0 +1,57 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Strategies for Boosting Binary Classification Accuracy with LLaMA 3.1 8B Locally?",
+        "body": "I've come across a post where a user is using LLaMA 3.1 8B to classify prompts into 'related' or 'unrelated' categories entirely offline. They mention that few-shot prompting hasn't yielded strong consistency or accuracy improvements, and embedding-based filtering isn't an option due to the local-only setup. Given these constraints, what are some practical prompt engineering techniques or system prompt adjustments that could help enhance classification performance? Are there known approaches to structuring prompts or leveraging system instructions that work well for binary classification tasks on local LLaMA models? Any insights on overcoming the limitations of few-shot learning in this context would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "metadata": {
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/",
+          "source_date": "2025-05-08"
+        }
+      },
+      {
+        "title": "Improving Prompt Consistency for Local LLaMA 3.1 8B Binary Classification Without Embeddings?",
+        "body": "A user reported challenges with prompt consistency and classification accuracy when using LLaMA 3.1 8B locally for a binary task distinguishing 'related' vs 'unrelated' prompts. They can't use embedding-based filtering or external APIs, and few-shot examples only help so much. Has anyone experimented with system prompt refinements or alternative prompt engineering strategies under similar constraints? What practical best practices exist to improve classification reliability on local LLaMA models without relying on embeddings or external services? Sharing concrete prompt patterns or system prompt tweaks that have worked could be really valuable here.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "metadata": {
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1khsinw/need_help_improving_local_llm_prompt/",
+          "source_date": "2025-05-08"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0266",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:26.943530+00:00",
+    "tag": "V0:S03",
+    "phase": "selection",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "566029f16218f48766c2deae51a173a6e13bddc7ff79df1dc8c693728eb4bc5d",
+    "actual_cost_usd": 0.001236,
+    "budget_charge_usd": 0.001236,
+    "reserved_upper_usd": 0.0058616,
+    "input_tokens": 1326,
+    "output_tokens": 441,
+    "latency_seconds": 3.3508138000033796,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112163-UOAoOLLKW0dIwIaMGAFT",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

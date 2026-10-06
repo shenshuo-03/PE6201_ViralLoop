@@ -1,0 +1,38 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Exploring Audiobook Creator v1.4's Orpheus TTS Integration and LLM-Driven Emotion Tagging",
+        "body": "The recently released Audiobook Creator v1.4 introduces support for Orpheus TTS alongside Kokoro, aiming to produce higher-quality, more expressive speech. It also adds automatic emotion tagging to text via an LLM, which Orpheus can utilize to enhance narration. The app generates M4B audiobooks with covers, metadata, and chapter timestamps and accepts multiple input formats like EPUB and PDF. Audio generation with Orpheus is handled through a dedicated FastAPI server, and the whole project is open source under GPL v3. However, details such as which LLM is used for emotion tagging, examples of emotion tags, and user feedback on the actual speech quality remain unclear. Has anyone here experimented with Orpheus TTS in this setup or tested the emotion tagging feature? How noticeable and effective are the emotional cues in the audiobook output? Insights on character identification accuracy or practical tips for configuring the FastAPI server would also be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F8"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0027",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:14:08.384133+00:00",
+    "tag": "naturalness:S02",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ab8dbf8ec77161f3e0d7dae9bf96e04fa9accdcb19105acf35cfdd76c527e608",
+    "actual_cost_usd": 0.001134,
+    "budget_charge_usd": 0.001134,
+    "reserved_upper_usd": 0.0055124,
+    "input_tokens": 1831,
+    "output_tokens": 251,
+    "latency_seconds": 2.0895930000115186,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108846-wAWu04BCvPYNIh20v84c",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

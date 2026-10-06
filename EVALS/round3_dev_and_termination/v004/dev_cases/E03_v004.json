@@ -205,39 +205,6 @@
       }
     ]
   },
-  "translation": {
-    "task_zh": {
-      "content_archetype": "B",
-      "posting_intent": "分享发现",
-      "current_context": "分享一则归档的推理速度声明，展示硬件与软件性能对比；讨论其声明范围，而非当今验证的排名。",
-      "core_value": "通过硬件与软件协同设计实现前所未有的AI推理速度。",
-      "source_date": "2025-02-07",
-      "scenario_note": "受控产品输入"
-    },
-    "drafts": [
-      {
-        "title": "归档报告：Cerebras与Mistral声称通过Wafer Scale Engine 3在Mistral Large 2上实现1100令牌/秒推理速度突破",
-        "body": "一份2025年初的归档第三方报告详细介绍了Cerebras与Mistral的合作，将Cerebras推理集成到Mistral的Le Chat平台，实现了据称的AI推理速度突破。具体而言，该系统声称使用1230亿参数的Mistral Large 2模型，文本生成速度达到1100令牌每秒。据称该速度相比同期AI助手如ChatGPT 4o（115令牌/秒）和Claude Sonnet 3.5（71令牌/秒）提升约10倍。性能提升归因于Cerebras的Wafer Scale Engine 3技术，该技术采用基于SRAM的推理架构，结合与Mistral研究人员共同开发的推测解码方法。新功能名为“闪电答案”，目前专注于基于文本的查询，并在聊天界面以闪电图标视觉标识。需注意，这些声明来自第三方归档引用的厂商陈述，未经独立验证，且速度比较可能不反映相同测试条件或当前排名。尽管如此，该报告凸显了硬件与软件协同设计在推动大型语言模型推理速度极限方面的潜力。",
-        "fact_refs": [
-          "f1",
-          "f2",
-          "f3",
-          "f4",
-          "f5",
-          "f6"
-        ]
-      },
-      {
-        "title": "归档报告：Cerebras + Mistral声称通过Wafer Scale Engine 3集成在Mistral Large 2上实现1100令牌/秒",
-        "body": "一份2025年初的归档第三方报告详细介绍了Cerebras与Mistral的合作，将Cerebras推理技术集成到Mistral的Le Chat平台。据称该集成实现了使用1230亿参数Mistral Large 2模型的1100令牌每秒AI推理速度突破。该突破归功于Cerebras的Wafer Scale Engine 3技术，采用基于SRAM的推理架构，结合与Mistral研究人员共同开发的推测解码技术。虽然报告强调这是硬件与软件协同设计的重要里程碑，但需注意这些为第三方归档中的厂商声明，未经独立验证。速度据称远超部分同期AI助手，但直接比较缺乏测试条件等效性。支持该性能的功能名为“闪电答案”，目前专注于基于文本的查询。该声明展示了加速大型语言模型推理的潜在方向，但应结合其来源及声明限制加以考虑。",
-        "fact_refs": [
-          "f1",
-          "f2",
-          "f4"
-        ]
-      }
-    ]
-  },
   "numeric_translation_checks": [
     {
       "english": [
@@ -308,5 +275,6 @@
     "engagement_risk": "Risk of readers perceiving the content as promotional or uncritical if the vendor-claimed nature and limitations are not clearly communicated; also risk of confusion if comparisons are taken as definitive rankings.",
     "safety_constraints": "Avoid endorsing or verifying the claims beyond the source text; do not present personal experience or unverifiable details; clearly state the vendor-claimed status and limitations to prevent misinformation."
   },
-  "source_hash": "52a2dffac5a898fb21e563677d6c8b480cc18e6cc3088afdfe04d4335ac1a2aa"
+  "source_hash": "52a2dffac5a898fb21e563677d6c8b480cc18e6cc3088afdfe04d4335ac1a2aa",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

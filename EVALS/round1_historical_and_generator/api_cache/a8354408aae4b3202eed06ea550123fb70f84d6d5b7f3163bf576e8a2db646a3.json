@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and integrates all provided facts (F1-F3) accurately. It explains the core idea of prompt isolation and the need to check logs and network traffic. The caveat about no audits is explicitly mentioned, preserving scenario integrity. The title matches the content well. The language is clear and technical, suitable for the audience. It invites further discussion on evidence, making it useful and relevant. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and references all facts. It emphasizes prompt isolation and log/network checks as evidence. The lack of audits is clearly stated as a limitation. The title is more specific, which helps clarity and relevance. The writing is clear and technical, appropriate for the audience. No unsupported claims or misleading statements are made."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft correctly frames the scenario as hypothetical and integrates all facts. It presents prompt isolation as a starting point and then adds logs/network checks as further evidence. The absence of audits is clearly noted as a limitation. The title aligns with the body content. The language is clear and technical, suitable for the target audience. No unsupported claims or exaggerations are present."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:57:53.954482+00:00",
+    "tag": "selection_dev:S02:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a8354408aae4b3202eed06ea550123fb70f84d6d5b7f3163bf576e8a2db646a3",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1283,
+    "output_tokens": 547,
+    "actual_cost_usd": 0.0013884,
+    "token_price_estimate_usd": 0.0013884,
+    "reserved_upper_usd": 0.0055712,
+    "budget_charge_usd": 0.0013884,
+    "latency_seconds": 4.1808557999902405,
+    "retry": 0,
+    "request_id": "gen-1791100669-eaAMiHkrmbl7AMxEgu0l"
+  },
+  "raw_response": {
+    "id": "gen-1791100669-eaAMiHkrmbl7AMxEgu0l",
+    "object": "chat.completion",
+    "created": 1791100669,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and integrates all provided facts (F1-F3) accurately. It explains the core idea of prompt isolation and the need to check logs and network traffic. The caveat about no audits is explicitly mentioned, preserving scenario integrity. The title matches the content well. The language is clear and technical, suitable for the audience. It invites further discussion on evidence, making it useful and relevant. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and references all facts. It emphasizes prompt isolation and log/network checks as evidence. The lack of audits is clearly stated as a limitation. The title is more specific, which helps clarity and relevance. The writing is clear and technical, appropriate for the audience. No unsupported claims or misleading statements are made.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft correctly frames the scenario as hypothetical and integrates all facts. It presents prompt isolation as a starting point and then adds logs/network checks as further evidence. The absence of audits is clearly noted as a limitation. The title aligns with the body content. The language is clear and technical, suitable for the target audience. No unsupported claims or exaggerations are present.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1283,
+      "completion_tokens": 547,
+      "total_tokens": 1830,
+      "cost": 0.0013884,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013884,
+        "upstream_inference_prompt_cost": 0.0005132,
+        "upstream_inference_completions_cost": 0.0008752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

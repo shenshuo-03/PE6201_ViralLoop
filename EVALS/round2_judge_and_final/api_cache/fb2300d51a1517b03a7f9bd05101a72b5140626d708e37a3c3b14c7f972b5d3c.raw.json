@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109044-YpXNgBgHH0AyYAfEDjDS",
+  "object": "chat.completion",
+  "created": 1791109044,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"What do DeepSeek R1 perplexity results tell us about expert count and distilled model comparisons?\",\"body\":\"A short perplexity test on DeepSeek R1 models with different numbers of experts offers some tentative insights but comes with major caveats. The test covered only 8 blocks out of about 560, used a block size of 512, and included distilled models plus Virtuoso-Medium-v2 for comparison. The source notes that the full DeepSeek R1 model, even with aggressive quantization, generally outperformed the distilled versions unless limited to 2 experts. Virtuoso Medium V2’s distill performance fell between DeepSeek R1 with 3 and 4 experts. Attempts to test with 10 and 12 experts failed due to NaN errors. Also, perplexity may not be a fair metric for chain-of-thought models since they don’t get to \\\"think.\\\" Given these limitations and missing details like hardware and dataset specifics, how useful do you find perplexity as a metric for evaluating MoE models like DeepSeek? Would other benchmarks or test setups better clarify the impact of expert count on performance?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3328,
+    "completion_tokens": 259,
+    "total_tokens": 3587,
+    "cost": 0.0017456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017456,
+      "upstream_inference_prompt_cost": 0.0013312,
+      "upstream_inference_completions_cost": 0.0004144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

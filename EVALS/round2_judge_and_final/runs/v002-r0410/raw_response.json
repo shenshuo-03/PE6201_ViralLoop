@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112665-GQUfYwyeFtYZZBtkREBr",
+  "object": "chat.completion",
+  "created": 1791112665,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Announce the availability of new model variants.\",\n  \"information_order\": [\n    \"Introduce the models and their base architectures.\",\n    \"Describe the training methodology, including any pre-training or distillation steps.\",\n    \"Mention the use of specific datasets or configurations.\",\n    \"Discuss the outcomes or observed characteristics of the models.\",\n    \"Outline future development plans or next steps.\"\n  ],\n  \"evidence_style\": \"Refer to external repositories for detailed reports and datasets.\",\n  \"question_or_cta\": \"Encourage community engagement and further exploration.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The existence of distilled model variants.\",\n    \"The foundational models used for distillation.\",\n    \"The general approach to training and adaptation.\"\n  ],\n  \"common_weaknesses\": [\n    \"Issues with model detection or loading in specific software.\",\n    \"Reliance on specific configurations or small data subsets for initial results.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 223,
+    "total_tokens": 1264,
+    "cost": 0.0001933,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001933,
+      "upstream_inference_prompt_cost": 0.0001041,
+      "upstream_inference_completions_cost": 8.92e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

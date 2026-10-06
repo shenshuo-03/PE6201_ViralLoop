@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all relevant facts (F1-F3). It maintains consistency between title and body, preserving the scenario status and necessary caveats. The language is clear and technical, suitable for the target audience. The checklist approach is useful for planning but limited by the lack of actual test data, so usefulness is moderate. The content is relevant to local LLM offline testing discussions. Credibility is high due to explicit caveats and no unsupported claims. The title is restrained and not clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and cites all facts. The title matches the content well, and the scenario status and caveats are clearly stated. The writing is clear and technical, appropriate for the audience. The plan is actionable as a framework but limited by the lack of real test results, so usefulness is moderate. The topic is relevant and credible with no unsupported claims. The title is straightforward and not clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:10:41.891476+00:00",
+    "tag": "final_test:T05:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "26ac63a4bf74912e9d75ea4ed3f71bd8371c00a01d63a81c95476200dce0db88",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 973,
+    "output_tokens": 406,
+    "actual_cost_usd": 0.0010388,
+    "token_price_estimate_usd": 0.0010387999999999999,
+    "reserved_upper_usd": 0.0048868,
+    "budget_charge_usd": 0.0010388,
+    "latency_seconds": 3.202867800006061,
+    "retry": 0,
+    "request_id": "gen-1791101438-4Hw0bBwNlcZPMSyippr5"
+  },
+  "raw_response": {
+    "id": "gen-1791101438-4Hw0bBwNlcZPMSyippr5",
+    "object": "chat.completion",
+    "created": 1791101438,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all relevant facts (F1-F3). It maintains consistency between title and body, preserving the scenario status and necessary caveats. The language is clear and technical, suitable for the target audience. The checklist approach is useful for planning but limited by the lack of actual test data, so usefulness is moderate. The content is relevant to local LLM offline testing discussions. Credibility is high due to explicit caveats and no unsupported claims. The title is restrained and not clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and cites all facts. The title matches the content well, and the scenario status and caveats are clearly stated. The writing is clear and technical, appropriate for the audience. The plan is actionable as a framework but limited by the lack of real test results, so usefulness is moderate. The topic is relevant and credible with no unsupported claims. The title is straightforward and not clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 973,
+      "completion_tokens": 406,
+      "total_tokens": 1379,
+      "cost": 0.0010388,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010388,
+        "upstream_inference_prompt_cost": 0.0003892,
+        "upstream_inference_completions_cost": 0.0006496
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

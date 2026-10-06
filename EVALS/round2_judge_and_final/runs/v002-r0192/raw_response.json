@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109903-zmeQiOBM0kZwyAD3Qoyr",
+  "object": "chat.completion",
+  "created": 1791109903,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"Tie\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"Tie\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"Tie\"\n  },\n  \"evidence\": \"Drafts A and B are identical in all substantive content: title, body text, fact references, and structure. Both preserve the brief's facts accurately without inventing missing settings (e.g., acknowledging 'graphical results' are mentioned but not detailed, noting memory limits depend on device rather than specifying exact thresholds). Both frame the post as a genuine question to the local LLM community about practical integration experience rather than a report-recap. Both appropriately attribute claims to source-author reports and avoid forbidden claims. The identical wording means no differentiation is possible across any evaluation dimension.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2629,
+    "completion_tokens": 214,
+    "total_tokens": 2843,
+    "cost": 0.003699,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003699,
+      "upstream_inference_prompt_cost": 0.002629,
+      "upstream_inference_completions_cost": 0.00107
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

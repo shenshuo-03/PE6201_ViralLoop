@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112951-a8RAV5zp8hVg0G7Lu7H8",
+  "object": "chat.completion",
+  "created": 1791112951,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts correctly ground themselves in F1 and F2 without inventing unsupported claims. Post A frames the inquiry around 'how mature is it really' and asks about 'audio quality or processing reliability'—reasonable inferences but slightly beyond the brief's stated facts. Post B more directly acknowledges the source limitation ('doesn't provide detailed performance metrics or stability info') and frames the gap explicitly before asking for community experience. Post B's phrasing 'given its development context and near-completion status' more precisely connects the 90% readiness to the maturity question, whereas Post A treats this as background context. Both ask for community feedback appropriately, but Post B's acknowledgment of missing information (latency, voice quality, platform compatibility) is more grounded in what the brief identifies as absent rather than assumed. Post A's 'alternative offline TTS solutions should be prioritized' introduces a comparison not supported by the brief. Post B stays closer to the specific engine and its readiness gap, making it more credible for this audience and task.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2202,
+    "completion_tokens": 306,
+    "total_tokens": 2508,
+    "cost": 0.003732,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003732,
+      "upstream_inference_prompt_cost": 0.002202,
+      "upstream_inference_completions_cost": 0.00153
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

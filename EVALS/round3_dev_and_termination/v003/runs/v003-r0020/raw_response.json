@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118666-2j9EVbNsK3YVRe1TtkLs",
+  "object": "chat.completion",
+  "created": 1791118666,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Seeking advice on optimizing llama.cpp for 50k context with Phi-3-medium vs ExLlamav2 performance gap\",\"body\":\"I'm experimenting with the RAPTOR example from Langchain, modified to use Langchain's LlamaCpp, running the Phi-3-medium-128k-instruct model with a 50k context window (Q4_K_M). On my 3090 GPU setup, llama.cpp requires offloading 5 out of 41 layers and ends up taking about 20 hours to complete the task. In contrast, using Langchain's ExLlamav2 with the same model and context length finishes in roughly 20 minutes, using around 19GB of VRAM. Given this significant performance difference, I'm trying to understand if there are specific llama.cpp configuration options or techniques that could improve its long context handling and possibly avoid layer offloading. Has anyone here found settings in llama.cpp (within Langchain's LlamaCpp interface) that help close this gap? Or should I consider ExLlamav2 the better choice for this particular use case? Any insights on tuning llama.cpp for such long contexts would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2249,
+    "completion_tokens": 262,
+    "total_tokens": 2511,
+    "cost": 0.0013188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013188,
+      "upstream_inference_prompt_cost": 0.0008996,
+      "upstream_inference_completions_cost": 0.0004192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

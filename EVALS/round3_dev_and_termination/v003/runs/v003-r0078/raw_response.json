@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118960-zt6c9DEW8UGmmP9f7BsB",
+  "object": "chat.completion",
+  "created": 1791118960,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"B\",\n  \"naturalness\": \"B\",\n  \"motivation\": \"B\",\n  \"worth_replying\": \"B\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"B more effectively contextualizes the multilingual challenge by explicitly connecting the 5-10 point score adjustment (F2) to the user's European language focus, making the trade-off analysis more concrete and actionable. A mentions multilingual limitations but doesn't bridge the gap between benchmark adjustments and real-world impact as clearly.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3209,
+    "completion_tokens": 144,
+    "total_tokens": 3353,
+    "cost": 0.003929,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003929,
+      "upstream_inference_prompt_cost": 0.003209,
+      "upstream_inference_completions_cost": 0.00072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

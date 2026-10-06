@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112791-JKeAkv1Bh1108rejoTBW",
+  "object": "chat.completion",
+  "created": 1791112791,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly addresses the community's core concern—whether local LLM training on a single specialized document outperforms cloud models—by framing it as a genuine feasibility question with actionable dimensions (training methods, performance comparison, prompt engineering, input representation challenges). It cites all six facts, including the crucial context that the source author is a layperson without test data, which establishes appropriate epistemic humility and invites experienced contributors. Draft B reduces the scope to only F1 and F2, omitting the comparison framing (F4, F5), the author's self-identified inexperience (F6), and the core uncertainty about accuracy (F3). While B is more concise, it loses the tension that makes the question valuable to the community—the explicit local-vs-cloud tradeoff and prompt engineering angle. A's longer setup directly enables community members to contribute specific experiences; B's brevity sacrifices the structured comparison that would generate useful discussion. Both avoid forbidden claims, but A better preserves the brief's stated goal of exploring 'practical limitations and potential' through concrete tradeoffs.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2163,
+    "completion_tokens": 317,
+    "total_tokens": 2480,
+    "cost": 0.003748,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003748,
+      "upstream_inference_prompt_cost": 0.002163,
+      "upstream_inference_completions_cost": 0.001585
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

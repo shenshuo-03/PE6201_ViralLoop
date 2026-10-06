@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112694-YO2A8vV50v6JEnaBjFlj",
+  "object": "chat.completion",
+  "created": 1791112694,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"Qwen3 30B A3B model with Open WebUI\",\n  \"audience\": \"local LLM enthusiasts\",\n  \"problem_or_goal\": \"Troubleshooting Open WebUI integration with the Qwen3 30B A3B model when 'thinking' is enabled.\",\n  \"context\": \"A user is attempting to use the Qwen3 30B A3B model with Open WebUI, specifically encountering issues when the 'thinking' feature is active.\",\n  \"motivation\": \"Understanding potential compatibility issues between specific models and front-end interfaces is valuable for the local LLM community to ensure smooth operation and effective use of new models.\",\n  \"desired_response\": \"Guidance or suggestions on how to resolve the 'stuck' generation issue in Open WebUI when using the Qwen3 30B A3B model with 'thinking' enabled.\",\n  \"speaker_relationship_to_source\": \"reader of archived source; no claim of personally running reported tests\",\n  \"facts\": [\n    {\n      \"id\": \"F1\",\n      \"text\": \"The user attempted to use the Qwen3 30B A3B model, specifically an 8.0 gguf quant, with Open WebUI.\",\n      \"evidence_quote\": \"I updated my local Open WebUi docker setup and downloaded the 8.0 gguf quant of the model to my server.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F2\",\n      \"text\": \"Open WebUI connected to the model, and requests were initiated, showing a 'thinking' progress element.\",\n      \"evidence_quote\": \"Open WebUi connected without issues and I could send requests and it would attempt to respond as I could see the “thinking” progress element.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F3\",\n      \"text\": \"When 'thinking' was enabled, the model would stop generating mid-sentence and the progress indicator would remain indefinitely.\",\n      \"evidence_quote\": \"However, it would eventually stop generating all together and get “stuck” it would stop in the middle of a sentence usually and the thinking progress would say it’s on progress and would stay like that forever.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F4\",\n      \"text\": \"Requests without 'thinking' enabled in Open WebUI functioned normally, with the model responding as expected.\",\n      \"evidence_quote\": \"Sending a request without thinking enabled has no issues and it replies as normal.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    },\n    {\n      \"id\": \"F5\",\n      \"text\": \"The Qwen3 30B A3B model reportedly works correctly with other front-end applications like SillyTavern and VS Code extensions (Continue, Clide).\",\n      \"evidence_quote\": \"it works on any other front end such as SillyTavern, and both the Continue and Clide extensions for VS Code.\",\n      \"status\": \"source-author report, not independently verified measurement\"\n    }\n  ],\n  \"allowed_claims\": [\n    \"The Qwen3 30B A3B model has an 8.0 gguf quant available.\",\n    \"Open WebUI has a 'thinking' feature that can be enabled.\",\n    \"Other front-ends like SillyTavern and VS Code extensions are compatible with the Qwen3 30B A3B model.\"\n  ],\n  \"forbidden_claims\": [\n    \"The Qwen3 30B A3B model is universally compatible with all front-ends.\",\n    \"The issue is definitively a bug in Open WebUI.\",\n    \"The issue is definitively a bug in the Qwen3 30B A3B model.\",\n    \"A specific fix has been found and verified.\"\n  ],\n  \"essential_limitations\": [\n    \"The specific version of Open WebUI used is not detailed.\",\n    \"The hardware specifications of the server running the model are not provided.\",\n    \"The exact nature of the 'stuck' state beyond stopping generation is not specified.\"\n  ],\n  \"missing_information\": [\n    \"Specific Open WebUI version.\",\n    \"Server hardware details.\",\n    \"Any custom configurations within Open WebUI.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 869,
+    "completion_tokens": 1002,
+    "total_tokens": 1871,
+    "cost": 0.0004877,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004877,
+      "upstream_inference_prompt_cost": 8.69e-05,
+      "upstream_inference_completions_cost": 0.0004008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

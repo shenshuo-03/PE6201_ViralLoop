@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112108-KDhGa3zZkAYv7CPNDX1e",
+  "object": "chat.completion",
+  "created": 1791112108,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Has Anyone Else Seen Newer Small LLMs Sacrifice World Knowledge for Coding Skills?\",\"body\":\"A 2025 Reddit post reports that newer small LLMs like Qwen 3 and GLM-4-0414 show noticeably better coding and problem-solving performance compared to older models, yet their world knowledge is often worse—even compared to some older, lower-benchmarking models of similar size. For example, Qwen 3 8B reportedly underperforms Llama 3.1 8B and Gemma 2 9B on knowledge tests, while Qwen 3 14B fares worse than Phi 4 and Gemma 3 12B. The author suspects this trade-off stems from training data containing more problem-solving content but less knowledge-dense material. Given these observations rely on private test questions and specific models, has anyone else noticed this apparent tension between knowledge depth and problem-solving in recent smaller LLMs? How do you approach selecting models when you need both reliable factual knowledge and strong coding abilities locally?\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F5\",\"F8\"]},{\"title\":\"Trade-off Between World Knowledge and Problem-Solving in Newer Small LLMs—Thoughts?\",\"body\":\"According to a 2025 user report, newer smaller LLMs such as Qwen 3 and GLM-4-0414 excel in coding and engineering problem solving compared to older models but show degraded world knowledge. The author’s private tests indicate models like Qwen 3 8B and 14B have poorer factual recall than older models like Llama 3.1 8B or Gemma 3 12B. Interestingly, some models like Llama 4 Maverick buck this trend by having strong knowledge but weaker problem-solving skills. The hypothesis is that training data for newer models emphasizes problem-solving tasks at the expense of knowledge-rich content. For those working locally with these models, how do you evaluate or balance these trade-offs in practice? Have you found any testing approaches or model choices that help maintain both knowledge accuracy and problem-solving strength?\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F5\",\"F7\",\"F8\"]},{\"title\":\"Balancing Knowledge and Problem-Solving in Small LLMs: Insights from a 2025 Report\",\"body\":\"A 2025 Reddit post highlights a curious pattern: newer small LLMs, while scoring higher on coding and problem-solving benchmarks, often show weaker world knowledge than older or similarly sized models. For instance, Granite 3.3 improved slightly on problem-solving compared to Granite 3.2 but declined in knowledge. Conversely, Llama 4 Maverick offers strong world knowledge but mediocre coding skills. The author speculates this trade-off arises because newer training data is richer in problem-solving content but less dense in factual knowledge. Given these findings are based on private test sets and specific models, does anyone have experience confirming this trade-off? What strategies do you use to assess or mitigate potential losses in knowledge while gaining problem-solving improvements?\",\"fact_refs\":[\"F1\",\"F6\",\"F7\",\"F8\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2514,
+    "completion_tokens": 656,
+    "total_tokens": 3170,
+    "cost": 0.0014792,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014792,
+      "upstream_inference_prompt_cost": 0.0004296,
+      "upstream_inference_completions_cost": 0.0010496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

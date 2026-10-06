@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112761-HbrI0howLN5ikrxAfX3Q",
+  "object": "chat.completion",
+  "created": 1791112761,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"B\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts preserve the core facts (F1, F2) and invite discussion appropriately. However, B better serves the community's actual needs: (1) **Community fit**: B explicitly invites experiential input ('Has anyone here experienced or studied...'), creating actionable engagement; A asks rhetorical questions about tradeoffs without grounding them in what the community can contribute. (2) **Specificity**: B acknowledges the 'enshittification' language while flagging its vagueness ('details on these changes are sparse'), respecting the brief's essential_limitations; A omits this uncertainty marker, implying clarity where none exists. (3) **Information value**: B frames the core tension—balancing openness and order without central authority—as the focal question; A repeats the concern without sharpening what distinguishes this migration decision. (4) **Usefulness**: B signals what expertise would help (decentralized platform case studies, moderation patterns); A asks for abstract 'examples' and 'tradeoffs' without specifying what the community uniquely knows. (5) **Credibility**: B's acknowledgment of sparse details on 'latest developments' and 'enshittification' aligns with the brief's essential_limitations and forbidden_claims (avoiding definitive claims about platform degradation); A treats concerns as established fact without this epistemic restraint. Both avoid forbidden claims, but B's framing is more honest about what remains unknown and what the community can actually resolve.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2069,
+    "completion_tokens": 403,
+    "total_tokens": 2472,
+    "cost": 0.004084,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004084,
+      "upstream_inference_prompt_cost": 0.002069,
+      "upstream_inference_completions_cost": 0.002015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112408-ZHOkJQ1a6pDgwgnglo65",
+  "object": "chat.completion",
+  "created": 1791112408,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Identify a core problem or need within the technical community.\",\n  \"information_order\": [\n    \"Describe the specific challenge or task.\",\n    \"Explain the current approach or tools being used.\",\n    \"Detail the limitations or desired improvements.\",\n    \"Request community input or suggestions.\"\n  ],\n  \"evidence_style\": \"Anecdotal experiences and direct questions to the community.\",\n  \"question_or_cta\": \"Directly ask for community recommendations, experiences, or opinions on specific aspects of the problem.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"The general domain of the problem (e.g., automation, model adaptation, tool discovery).\",\n    \"The desired outcome or performance characteristic (e.g., speed, adaptation, discoverability).\",\n    \"The type of input or output involved (e.g., structured data, model weights, application interfaces).\"\n  ],\n  \"common_weaknesses\": [\n    \"Reliance on specific, potentially slow, existing methods.\",\n    \"Difficulty in achieving desired performance metrics.\",\n    \"Challenges with discovery and organization of available tools.\",\n    \"Questions about the practical applicability or cost-effectiveness of advanced techniques.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1144,
+    "completion_tokens": 274,
+    "total_tokens": 1418,
+    "cost": 0.000224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000224,
+      "upstream_inference_prompt_cost": 0.0001144,
+      "upstream_inference_completions_cost": 0.0001096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

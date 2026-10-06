@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112196-dqKlwBVPo3w6jGKA8S6R",
+  "object": "chat.completion",
+  "created": 1791112196,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Introduce a new framework or tool for building AI assistants.\",\n  \"information_order\": [\n    \"Describe the purpose and core functionality of the framework.\",\n    \"List key features and components.\",\n    \"Explain the benefits and use cases.\",\n    \"Mention the open-source nature and call for feedback.\"\n  ],\n  \"evidence_style\": \"Descriptive, highlighting capabilities and ease of use.\",\n  \"question_or_cta\": \"Encourage users to try the framework and share their creations.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"Framework's purpose (AI assistant building)\",\n    \"Integration of multiple AI technologies\",\n    \"Modular design\",\n    \"Ease of use\",\n    \"Open-source availability\"\n  ],\n  \"common_weaknesses\": [\n    \"Potential issues with text generation quality after fine-tuning.\",\n    \"Confusion regarding training metrics and their interpretation.\",\n    \"Unexpected or irrelevant output during generation.\",\n    \"Difficulty in retaining specific details from training data.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1248,
+    "completion_tokens": 241,
+    "total_tokens": 1489,
+    "cost": 0.0002212,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002212,
+      "upstream_inference_prompt_cost": 0.0001248,
+      "upstream_inference_completions_cost": 9.64e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100811-Rk1iEAX1tQC30w7YVIlC",
+  "object": "chat.completion",
+  "created": 1791100811,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Niche discussion on VS code alternatives with chat-based agent workflow; moderate similarity to a high-class example but overall typical discussion, so slightly above prior.\"},{\"index\":1,\"probability\":0.7,\"reason\":\"Detailed benchmark update with new model results and leaderboard; similar to a high-class example with technical depth and benchmarking, indicating higher engagement.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Technical tutorial-style question about model behavior across platforms; similar to a high-class example but more niche and less broad appeal, so moderate probability.\"},{\"index\":3,\"probability\":0.35,\"reason\":\"Announcement of small models with links; similar to a high-class example but more promotional and less interactive, so moderate-low probability.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Discussion about a CLI tool for scraping with browser fingerprinting; similar to a high-class example but limited scope and niche, so slightly above prior.\"},{\"index\":5,\"probability\":0.25,\"reason\":\"Beginner question about optimizing AI usage on limited hardware; similar to a not-high example and typical beginner post, so at prior.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Community thread about hardware support for models; similar to a high-class example but more niche and less detailed, so slightly above prior.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Request for small efficient English model focused on semantics; similar to a high-class example but more specific and less broad, so slightly above prior.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5769,
+    "completion_tokens": 337,
+    "total_tokens": 6106,
+    "cost": 0.0028468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028468,
+      "upstream_inference_prompt_cost": 0.0023076,
+      "upstream_inference_completions_cost": 0.0005392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "brief_id": "E05",
+  "id": "1i3fli7",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "80",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-01-17",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1i3fli7/laptop_llm_performance_beware_of_the_power/",
+  "source_hash": "e4e653e312d8c0fde2ca04cef42f75b9cd2aa1c42ee25ba7d1407c374c2ac084",
+  "historical_split": "train",
+  "rule_classification": "PROVISIONAL_REQUIRES_SOURCE_SHAPE_CHECK",
+  "source_title": "Laptop LLM performance - beware of the power settings!",
+  "source_text": "It's pity that I did such a lame negligence, but want to share with you, in case someone struggles with the same issue.\n\nBoth me and the wife have Lenovo gaming laptops:\n\n1. Rizen 5, 16GB RAM, 3050ti 4GB\n\n2. i5, 16GB RAM, 4060 8GB\n\nLogically, if a model fits entirely in the VRAM, the machine 2 runs it noticeble faster. BUT, everything beyond 7B which is partially offloaded in VRAM, practically goes with less than 0.2T/s and takes 2-3 minutes to output the first token on the machine 2! While machine 1 runs Qwen 2.5 14B quite acceptable with around 2T/s. \n\nI was changing nVidia/CUDA drivers, settings of llama.cpp - nothing helped. Till I checked the \"power settings\" of Windows and changed the presets from \"balanced\" to \"performance\".  It was the CPU/RAM of the machine which killed all the fun. Now I get 5-10 T/s with 14B model and 26/49 layers to GPU."
+}

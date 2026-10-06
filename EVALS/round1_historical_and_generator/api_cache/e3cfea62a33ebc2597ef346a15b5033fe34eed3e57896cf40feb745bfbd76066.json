@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.6,
+        "reason": "Open-sourcing a novel AI memory engine with demos and production-ready features likely attracts high engagement."
+      },
+      {
+        "index": 1,
+        "probability": 0.4,
+        "reason": "Controversial question about OpenAI model sabotage may generate moderate interest but is somewhat niche."
+      },
+      {
+        "index": 2,
+        "probability": 0.5,
+        "reason": "Sharing working quantized models for a popular AI model can attract attention from practitioners."
+      },
+      {
+        "index": 3,
+        "probability": 0.35,
+        "reason": "A question about best models for video transcription with speaker ID is specific and may have limited reach."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Short experience post about testing a model format with some technical details, likely moderate interest."
+      },
+      {
+        "index": 5,
+        "probability": 0.45,
+        "reason": "Detailed troubleshooting post on fine-tuning a model with domain-specific goals may engage a focused audience."
+      },
+      {
+        "index": 6,
+        "probability": 0.55,
+        "reason": "Offering free compute hours and open source cluster software with a demo tweet likely draws good attention."
+      },
+      {
+        "index": 7,
+        "probability": 0.5,
+        "reason": "Sharing research on in-context learning effects with data and stats appeals to AI researchers and enthusiasts."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:35.107469+00:00",
+    "tag": "tune_dev:classifier:E5b_few_shot:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e3cfea62a33ebc2597ef346a15b5033fe34eed3e57896cf40feb745bfbd76066",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6119,
+    "output_tokens": 279,
+    "actual_cost_usd": 0.002894,
+    "token_price_estimate_usd": 0.002894,
+    "reserved_upper_usd": 0.011959999999999998,
+    "budget_charge_usd": 0.002894,
+    "latency_seconds": 2.380929599996307,
+    "retry": 0,
+    "request_id": "gen-1791100712-Qdq3cgmlKw0mab80mNtI"
+  },
+  "raw_response": {
+    "id": "gen-1791100712-Qdq3cgmlKw0mab80mNtI",
+    "object": "chat.completion",
+    "created": 1791100712,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[\n  {\"index\":0,\"probability\":0.6,\"reason\":\"Open-sourcing a novel AI memory engine with demos and production-ready features likely attracts high engagement.\"},\n  {\"index\":1,\"probability\":0.4,\"reason\":\"Controversial question about OpenAI model sabotage may generate moderate interest but is somewhat niche.\"},\n  {\"index\":2,\"probability\":0.5,\"reason\":\"Sharing working quantized models for a popular AI model can attract attention from practitioners.\"},\n  {\"index\":3,\"probability\":0.35,\"reason\":\"A question about best models for video transcription with speaker ID is specific and may have limited reach.\"},\n  {\"index\":4,\"probability\":0.3,\"reason\":\"Short experience post about testing a model format with some technical details, likely moderate interest.\"},\n  {\"index\":5,\"probability\":0.45,\"reason\":\"Detailed troubleshooting post on fine-tuning a model with domain-specific goals may engage a focused audience.\"},\n  {\"index\":6,\"probability\":0.55,\"reason\":\"Offering free compute hours and open source cluster software with a demo tweet likely draws good attention.\"},\n  {\"index\":7,\"probability\":0.5,\"reason\":\"Sharing research on in-context learning effects with data and stats appeals to AI researchers and enthusiasts.\"}\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6119,
+      "completion_tokens": 279,
+      "total_tokens": 6398,
+      "cost": 0.002894,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002894,
+        "upstream_inference_prompt_cost": 0.0024476,
+        "upstream_inference_completions_cost": 0.0004464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121668-adcHVStPeLXMEn2GKOaH",
+  "object": "chat.completion",
+  "created": 1791121668,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Archived Report: Cerebras + Mistral Claim 1,100 Tokens/s on Mistral Large 2 Via Wafer Scale Engine 3 Integration\",\n      \"body\": \"An archived third-party report from early 2025 details a collaboration between Cerebras and Mistral integrating Cerebras Inference technology into Mistral's Le Chat platform. This integration reportedly achieves an AI inference speed of 1,100 tokens per second using the 123 billion parameter Mistral Large 2 model. The breakthrough is attributed to Cerebras's Wafer Scale Engine 3, which employs an SRAM-based inference architecture, combined with speculative decoding techniques developed alongside Mistral researchers. While the report highlights this as a significant hardware-software co-design milestone, it is important to note these are vendor claims from a third-party archive without independent verification. The speed is said to be substantially faster than some contemporary AI assistants, but direct comparisons lack established equivalence in testing conditions. The feature enabling this performance, branded as \\\"Flash Answers,\\\" currently focuses on text-based queries. This claim illustrates potential directions in accelerating large language model inference but should be considered within the context of its source and stated limitations.\"\n      ,\n      \"fact_refs\": [\"f1\", \"f2\", \"f4\"]\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2303,
+    "completion_tokens": 278,
+    "total_tokens": 2581,
+    "cost": 0.001366,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001366,
+      "upstream_inference_prompt_cost": 0.0009212,
+      "upstream_inference_completions_cost": 0.0004448
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

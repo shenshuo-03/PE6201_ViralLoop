@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the test (F3) and outlines a logical, stepwise checklist consistent with the scenario facts (F1, F2). It avoids unsupported claims and personal experience, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the audience, making it useful and relevant. Credibility is high due to explicit caveats and restrained tone. No clickbait elements are present."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical status (F3) and includes all key steps from the facts (F1, F2). The title accurately reflects the content. The explanation is clear, technical, and cautious, suitable for the target audience. It avoids unsupported claims and personal anecdotes, maintaining credibility and necessary caveats. The post is relevant and actionable as a conceptual framework. No clickbait detected."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:10:49.477254+00:00",
+    "tag": "final_test:T05:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "04886f4aeb2fb37fd213741c4a5a517f78edceb7b5488699c8643b897770717e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1148,
+    "output_tokens": 386,
+    "actual_cost_usd": 0.0010768,
+    "token_price_estimate_usd": 0.0010768,
+    "reserved_upper_usd": 0.0051284,
+    "budget_charge_usd": 0.0010768,
+    "latency_seconds": 2.8205614000034984,
+    "retry": 0,
+    "request_id": "gen-1791101446-RjbH6cAAQm2FDIOVxJ2b"
+  },
+  "raw_response": {
+    "id": "gen-1791101446-RjbH6cAAQm2FDIOVxJ2b",
+    "object": "chat.completion",
+    "created": 1791101446,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the test (F3) and outlines a logical, stepwise checklist consistent with the scenario facts (F1, F2). It avoids unsupported claims and personal experience, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the audience, making it useful and relevant. Credibility is high due to explicit caveats and restrained tone. No clickbait elements are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully preserves the hypothetical status (F3) and includes all key steps from the facts (F1, F2). The title accurately reflects the content. The explanation is clear, technical, and cautious, suitable for the target audience. It avoids unsupported claims and personal anecdotes, maintaining credibility and necessary caveats. The post is relevant and actionable as a conceptual framework. No clickbait detected.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1148,
+      "completion_tokens": 386,
+      "total_tokens": 1534,
+      "cost": 0.0010768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010768,
+        "upstream_inference_prompt_cost": 0.0004592,
+        "upstream_inference_completions_cost": 0.0006176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

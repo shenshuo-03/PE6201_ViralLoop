@@ -1,0 +1,61 @@
+{
+  "topic": "Behavior of llama.cpp's HTTP server file-upload button in prompt handling",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Understanding how the file-upload button affects prompt processing and response consistency",
+  "context": "An archived user inquiry from May 2025 about llama.cpp version 3.2 3B Q4_K_S's HTTP server file-upload feature and its interaction with user prompts",
+  "motivation": "Clarifying whether the file-upload button concatenates file content with user prompts and how that impacts answer reliability and reproducibility",
+  "desired_response": "An explanation of the file-upload button's function in prompt construction and guidance on achieving consistent query results about file contents",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The user suspects the file-upload button concatenates the file content with the direct prompt.",
+      "evidence_quote": "Does it simply concatenate the file and my direct prompt, treating the concatenation as the prompt?",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "The user notes that no model would yield reliable results if the above concatenation is true.",
+      "evidence_quote": "but incase my above suspicion is true, that does not matter as no model would yield reliable results.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "In 15 experiments, the user sometimes got correct answers about the file's contents.",
+      "evidence_quote": "In my 15 experiments, sometimes the question about the file's contents is correctly answered.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "Sometimes the model interprets the file contents instead of the user's query.",
+      "evidence_quote": "But sometimes it interprets the contents of the file instead of my query.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "The user desires reproducible results when reopening conversations with the same prompts.",
+      "evidence_quote": "I would like the result to be reproducable, ie when I open a new conversation, giving it the same prompts, I would like to get the same answers",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "The file-upload button may concatenate file content with the prompt.",
+    "Model responses can vary between interpreting file content and user queries.",
+    "Reproducibility of answers is a concern when using file uploads in prompts."
+  ],
+  "forbidden_claims": [
+    "Any specific performance metrics or success rates.",
+    "Claims about hardware or model architecture beyond the stated version.",
+    "Assumptions about user motivations beyond those expressed."
+  ],
+  "essential_limitations": [
+    "Uncertainty about the exact internal handling of file uploads by llama.cpp's HTTP server.",
+    "No independent verification of the user's experimental results.",
+    "Unknown settings or parameters used during the experiments."
+  ],
+  "missing_information": [
+    "Precise mechanism of how the file-upload button integrates file content into the prompt.",
+    "Whether any prompt preprocessing or tokenization affects the concatenation.",
+    "Details on model configuration or session state management affecting reproducibility."
+  ]
+}

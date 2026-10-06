@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100555-RzwISCGe0yMKj6GQNF7k",
+  "object": "chat.completion",
+  "created": 1791100555,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly and accurately describes the hypothetical scenario using 30 local documents and comparing retrieval on vs off with the same questions. It explicitly states the hypothetical nature and lack of actual results, preserving necessary caveats. The title matches the body content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in designing RAG sanity checks, providing a solid conceptual framework without overclaiming. The credibility is good given the explicit caveats and no unsupported claims. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and includes all key facts: 30 local documents, retrieval on/off comparison, handling unanswerable questions, and explicit statement of no real measurements. The title aligns well with the body. The writing is clear and technical, appropriate for the audience. The post is relevant and useful as a conceptual guide for RAG evaluation design. It maintains credibility by preserving caveats and avoiding unsupported claims. The clickbait score is low due to the straightforward, descriptive title.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1012,
+    "completion_tokens": 430,
+    "total_tokens": 1442,
+    "cost": 0.0010928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010928,
+      "upstream_inference_prompt_cost": 0.0004048,
+      "upstream_inference_completions_cost": 0.000688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "at": "2026-10-04T08:16:10.659302+00:00",
+  "topic": {
+    "id": "T10",
+    "split": "final_test",
+    "topic": "A precise troubleshooting question for a hypothetical slowdown",
+    "content_type": "Question / Troubleshooting",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The hypothetical setup uses a 16 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The slowdown begins when context length changes from 2048 to 8192.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Model and runtime versions are not yet recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No evidence proves a driver, memory or model issue.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G4_both",
+  "generation_usage": {
+    "at": "2026-10-04T08:16:06.174014+00:00",
+    "tag": "final_test:T10:G4_positive",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "751530185a1f0e7099826b79f14ffde19d43f33e3538f10c79b5aeb1e49407fc",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1608,
+    "output_tokens": 537,
+    "actual_cost_usd": 0.0003756,
+    "token_price_estimate_usd": 0.0003756,
+    "reserved_upper_usd": 0.0014594,
+    "budget_charge_usd": 0.0003756,
+    "latency_seconds": 2.7691625999868847,
+    "retry": 0,
+    "request_id": "gen-1791101763-BssFa1mZk4rWbefahKhv"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:16:09.548669+00:00",
+    "tag": "final_test:T10:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "54f4c29084720bf24ce2bc3a8fad61bfc04bbf8a1541b0d0b4a08f82c0254a1c",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 966,
+    "output_tokens": 432,
+    "actual_cost_usd": 0.0010776,
+    "token_price_estimate_usd": 0.0010776,
+    "reserved_upper_usd": 0.0047912,
+    "budget_charge_usd": 0.0010776,
+    "latency_seconds": 3.3304905999975745,
+    "retry": 0,
+    "request_id": "gen-1791101766-q8UsDxQlFPSMDQZMRPl8"
+  },
+  "retrieved_ids": [
+    "1kmdzv0",
+    "1idgrh4",
+    "1m2gios",
+    "1iuv064",
+    "1hs4i8l"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "d3a0a9a91b39be7e4a74e0b7cc5b5bf869db7d235e7125767fb1c7b21db303ee",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Slowdown: 16GB GPU, Context Length Increase (2048 -> 8192)",
+        "body": "I'm investigating a hypothetical performance issue in a local LLM setup. The scenario involves a 16 GB GPU. A noticeable slowdown is observed specifically when increasing the context length from 2048 tokens to 8192 tokens. The model and runtime versions are currently unrecorded, and there's no existing evidence pointing towards a driver, VRAM, or model-specific problem. This is purely a hypothetical experimental brief. My primary question is: what are the most probable causes for such a context length-dependent slowdown on a 16 GB GPU, assuming no other obvious hardware or software faults? Are there specific architectural features or common implementation bottlenecks that tend to manifest under these conditions? I'm looking for insights into potential areas to investigate in a real-world scenario, given these constraints.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Focus on architectural limitations and common bottlenecks related to context window expansion on limited VRAM. Avoid speculative solutions. Invite discussion on typical trade-offs."
+      },
+      "performance_score": 0.23021707142532138,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all relevant facts from the brief. It avoids unsupported claims and maintains appropriate caveats about the lack of recorded model/runtime versions and absence of evidence for driver or hardware faults. The title accurately reflects the content. The language is technical and restrained, suitable for the target audience. The question is focused and invites discussion on architectural and implementation bottlenecks related to context length increase on a 16 GB GPU, which is relevant and useful for troubleshooting. The post is credible and not clickbait.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 124,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Troubleshooting Hypothetical LLM Latency Jump with Increased Context on 16GB GPU",
+        "body": "This post outlines a hypothetical troubleshooting scenario for a local LLM. We're working with a setup featuring a 16 GB GPU. The core observation is a significant performance degradation when the context length is expanded from 2048 to 8192 tokens. It's important to note that this is a hypothetical experimental brief; model/runtime versions are not yet recorded, and there is currently no evidence implicating drivers, system memory, or the model weights themselves. The question is: what factors commonly contribute to such a pronounced latency increase when scaling context length on a system with a 16 GB VRAM constraint? Are there specific memory management strategies, attention mechanism variations, or quantization effects that might be disproportionately impacted by this change? Understanding these potential bottlenecks is key for future debugging efforts.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Explore potential causes related to memory bandwidth, attention computation scaling, and KV cache management under VRAM constraints. Keep discussion focused on the hypothetical nature and technical factors."
+      },
+      "performance_score": 0.23525191096007506,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and includes all key facts from the brief. It explicitly notes the lack of evidence for driver or model issues and the unrecorded model/runtime versions. The title matches the body content well. The language is clear and technical, appropriate for the audience. The post asks about common causes of latency increase with context length scaling on a 16 GB GPU, focusing on memory management, attention mechanisms, and quantization effects, which is relevant and useful. The tone is credible and restrained, with no clickbait elements.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 128,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Troubleshooting Hypothetical LLM Latency Jump with Increased Context on 16GB GPU",
+      "body": "This post outlines a hypothetical troubleshooting scenario for a local LLM. We're working with a setup featuring a 16 GB GPU. The core observation is a significant performance degradation when the context length is expanded from 2048 to 8192 tokens. It's important to note that this is a hypothetical experimental brief; model/runtime versions are not yet recorded, and there is currently no evidence implicating drivers, system memory, or the model weights themselves. The question is: what factors commonly contribute to such a pronounced latency increase when scaling context length on a system with a 16 GB VRAM constraint? Are there specific memory management strategies, attention mechanism variations, or quantization effects that might be disproportionately impacted by this change? Understanding these potential bottlenecks is key for future debugging efforts.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Explore potential causes related to memory bandwidth, attention computation scaling, and KV cache management under VRAM constraints. Keep discussion focused on the hypothetical nature and technical factors."
+    },
+    "performance_score": 0.23525191096007506,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also clearly preserves the hypothetical status and includes all key facts from the brief. It explicitly notes the lack of evidence for driver or model issues and the unrecorded model/runtime versions. The title matches the body content well. The language is clear and technical, appropriate for the audience. The post asks about common causes of latency increase with context length scaling on a 16 GB GPU, focusing on memory management, attention mechanisms, and quantization effects, which is relevant and useful. The tone is credible and restrained, with no clickbait elements.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 128,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": []
+  },
+  "abstention": false
+}

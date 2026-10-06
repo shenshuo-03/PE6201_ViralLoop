@@ -1,0 +1,38 @@
+{
+  "judgments": [
+    {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's findings and limitations. It correctly states that the full DeepSeek R1 model outperforms distilled models except when limited to 2 experts, and that Virtuoso Medium V2 falls between 3- and 4-expert DeepSeek configurations. Crucially, it emphasizes the severe limitations of the test (8 blocks out of 560) and the potential unsuitability of perplexity for CoT models. The questions posed are relevant to the community and directly address the implications of the limited data and testing methodology, encouraging further discussion and investigation into practical evaluation methods."
+    },
+    {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 2 accurately reports the source's findings regarding NaN errors with 10-12 experts and the relative performance of other configurations. It correctly highlights the limited scope of the test (8 blocks out of 560). The questions posed are highly relevant to the community, focusing on the practical implications of NaN errors in MoE models, potential causes, and whether they indicate fundamental issues or test setup quirks. This encourages discussion on model stability and practical scaling."
+    }
+  ]
+}

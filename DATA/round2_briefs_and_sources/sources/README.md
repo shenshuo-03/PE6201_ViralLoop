@@ -1,9 +1,9 @@
-# 第二轮素材说明
+# Round 2 material notes
 
-来源：第一轮已清洗的r/LocalLLaMA 2025年Train帖子，不重新使用历史Final。原始数据集为pszemraj/LocalLLaMA-posts。帖子作者的内容是用户报告，不是独立证实的事实。
+**Source.** The cleaned 2025 r/LocalLLaMA Train posts produced by Round 1; the historical Final split is not reused. The underlying dataset is `pszemraj/LocalLLaMA-posts`. What a post author writes is a user report, not independently verified fact.
 
-source_date是原帖发布时间（原始文件以时间戳保存，Brief转为日期）。初次准备文件的collected_at字段是本项目本地整理该来源的时间，不代表原始互动score的采集时间，也不能推断完整曝光窗口。原始互动采集时间仍缺少可靠全量证明。
+**Dates.** `source_date` is the original post's publication time (the raw file stores a timestamp; the brief converts it to a date). The `collected_at` field in the initial preparation files is the time this project assembled the material locally. It is not the collection time of the original engagement score and does not allow the full exposure window to be inferred. A reliable, complete record of when the original engagement was collected is still missing.
 
-分组源文件source_assignment_v002.json与后续dev_assignment_correction_v002.json一起定义最终角色。曾曝光的Selection样例被降级，补选来源在正式Selection之前分配。所有这些来源从RAG检索库排除。
+**Roles.** The grouping file `source_assignment_v002.json`, together with the later `dev_assignment_correction_v002.json`, defines the final role of each source. Selection samples that had already been exposed to the model were demoted, and replacement sources were assigned before formal Selection began. All of these sources are excluded from the RAG retrieval index.
 
-sources中L开头为产品功能测试或之后用户提供的素材，不纳入正式Final、训练或效果结论。原始素材保留，文件不会把任何上传文本当作Agent执行指令。
+**Labels beginning with L** under `sources` are product functionality tests, or material supplied later by a user. They are not part of the formal Final set, training, or any effect conclusion. The original material is retained, and no uploaded text is ever treated as an instruction for the agent to execute.

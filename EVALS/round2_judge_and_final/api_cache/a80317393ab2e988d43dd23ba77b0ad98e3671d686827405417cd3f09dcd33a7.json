@@ -1,0 +1,113 @@
+{
+  "value": {
+    "brief": {
+      "topic": "MiniSearch capabilities and local LLM integration",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+      "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+      "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+      "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+      "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "MiniSearch has been updated to gather more textual and graphical results to provide grounded answers for follow-up questions.",
+          "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F2",
+          "text": "All links and images collected during a session will keep being listed, with the only limit being system memory.",
+          "evidence_quote": "All links and images collected during a session will keep being listed, and the only limit will be your system memory.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F3",
+          "text": "The chat runs on a sliding window where the context is always kept under 4k tokens, so users don't need to worry about context size.",
+          "evidence_quote": "You don't need to worry about context size, as the chat runs on a sliding window where the context is always kept under 4k tokens.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F4",
+          "text": "The web app is optimized to work on mobile browsers, allowing users to probably finish their research before running out of memory on these devices.",
+          "evidence_quote": "Also, the web app is optimized to work on mobile browsers, so even on these devices you'll probably finish your research before running out of memory.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F5",
+          "text": "MiniSearch can be run on a machine via Docker, or a public instance is available as a Hugging Face Space.",
+          "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available as a Hugging Face Space here:",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F6",
+          "text": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in the browser and comment about web search results.",
+          "evidence_quote": "MiniSearch is a pet project started two years ago, making use of small LLMs that can run directly in your browser and comment about the web search results, so that's what it defaults to.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F7",
+          "text": "Users who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic) can select \"Remote server (API)\" in the \"AI Processing Location\" menu option.",
+          "evidence_quote": "But for those who prefer using local inference engines (i.e. LM Studio, Ollama, vLLM) or cloud inference servers (i.e. OpenRouter, Glama, Infermatic), which can respond faster, they just need to select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option,",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F8",
+          "text": "To configure remote servers, users need to configure their API Base URL, Access Key, and Model.",
+          "evidence_quote": "and configure their API Base URL, Access Key and Model.",
+          "status": "source-author report, not independently verified measurement"
+        }
+      ],
+      "allowed_claims": [
+        "MiniSearch aims to improve web research by providing more comprehensive results.",
+        "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+        "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+      ],
+      "forbidden_claims": [
+        "MiniSearch guarantees a specific level of research accuracy.",
+        "The tool has been tested for performance on all mobile devices.",
+        "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+        "The 4k token limit is a universal constraint for all LLM interactions."
+      ],
+      "essential_limitations": [
+        "The exact system memory limit for the local instance is not specified beyond 'your system memory'.",
+        "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+        "The specific small LLMs used by the default browser-based processing are not detailed."
+      ],
+      "missing_information": [
+        "Details on the specific small LLMs used for default browser processing.",
+        "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+        "Information on the 'graphical results' mentioned in the update."
+      ]
+    },
+    "corrections": [
+      "The text for fact F1 was slightly rephrased to be more exact to the evidence quote.",
+      "The text for fact F2 was expanded to include the 'only limit will be your system memory' as per the evidence quote.",
+      "The text for fact F3 was expanded to include 'so users don't need to worry about context size' as per the evidence quote.",
+      "The text for fact F4 was expanded to include 'allowing users to probably finish their research before running out of memory on these devices' as per the evidence quote.",
+      "Fact F5 was rephrased to be more exact to the evidence quote, specifying 'on a machine via Docker' and 'public instance is available as a Hugging Face Space'.",
+      "Two new facts (F6 and F7) were added to capture information about MiniSearch being a pet project using small LLMs in the browser by default, and the specific examples of local and cloud inference engines mentioned for the 'Remote server (API)' option.",
+      "Fact F6 (originally F5) was renumbered to F8 and its text was slightly adjusted for clarity.",
+      "The 'essential_limitations' were refined to be more precise based on the source text, specifically for the system memory limit and mobile performance."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0078",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:27:19.160426+00:00",
+    "tag": "brief_builder:H08:source_audit",
+    "phase": "preflight",
+    "model": "google/gemini-2.5-flash",
+    "cache_key": "a80317393ab2e988d43dd23ba77b0ad98e3671d686827405417cd3f09dcd33a7",
+    "actual_cost_usd": 0.0046315,
+    "budget_charge_usd": 0.0046315,
+    "reserved_upper_usd": 0.0108279,
+    "input_tokens": 1680,
+    "output_tokens": 1651,
+    "latency_seconds": 7.467083499999717,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109631-6FdVa5cctNkPQGu2eiyR",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

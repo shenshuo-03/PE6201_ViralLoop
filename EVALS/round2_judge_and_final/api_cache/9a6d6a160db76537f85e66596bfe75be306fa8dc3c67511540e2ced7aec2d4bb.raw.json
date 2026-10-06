@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112465-HTJApvVTMVCo254nwc8o",
+  "object": "chat.completion",
+  "created": 1791112465,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Optimizing LLM Inference on Multi-GPU AMD Setup: Best Backends and Quantization for Gemma3:27b & Qwen3 32B?\",\"body\":\"A user with 2x AMD Radeon RX 7900 XTX and 1x RX 7800 XT (64GB VRAM total) is exploring the best VRAM backends and configurations to maximize inference speed and throughput for Gemma3:27b and Qwen3 32B. They’ve tried VLLM and llama.cpp but found only small speed differences (~1-2 tokens/sec) on older models, which was inconclusive. Vulkan with llama.cpp showed better speeds on some Qwen3 variants, but details remain sparse. \\n\\nGiven this, what are the current experiences on AMD multi-GPU setups regarding backend choice? Are there quantization methods (e.g., GPTQ, AWQ, GGUF) and bit depths that consistently improve performance? Also, what strategies effectively leverage multiple GPUs for these large models? Insights on inference frameworks and specific configuration tweaks that enhance throughput would be highly valuable.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},{\"title\":\"Seeking Advice on Multi-GPU AMD LLM Inference: VLLM vs llama.cpp and Quantization for Gemma3 and Qwen3 Models\",\"body\":\"On a system with dual AMD Radeon RX 7900 XTX plus an RX 7800 XT (64GB VRAM combined), a user is targeting efficient inference for Gemma3:27b and Qwen3 32B models. Previous tests with VLLM and llama.cpp backends on older models showed marginal speed differences, leaving no clear winner. Vulkan plus llama.cpp gave better token rates on some Qwen3 variants but without comprehensive benchmarks.\\n\\nHas anyone with similar AMD multi-GPU setups found a preferred backend or quantization approach (like GPTQ, AWQ, or GGUF at 4- or 8-bit) that meaningfully boosts throughput? Additionally, what are the best practices for distributing workloads across these GPUs and which inference frameworks integrate smoothly for optimal speed? Sharing detailed configs or experiences would help clarify the tradeoffs here.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},{\"title\":\"Best Practices for Large Model Inference on AMD Multi-GPU (7900 XTX + 7800 XT): Backend and Quantization Insights?\",\"body\":\"A Reddit report from mid-2025 describes a setup with 2x AMD Radeon RX 7900 XTX and 1x RX 7800 XT totaling 64GB VRAM, running Gemma3:27b and Qwen3 32B models. The user tested VLLM and llama.cpp backends, noting only minor speed differences on older models and some gains with Vulkan and llama.cpp on Qwen3 variants. They’re now seeking guidance on the most efficient backend, optimal quantization methods (e.g., GPTQ, AWQ, GGUF), and bit depths to maximize throughput.\\n\\nGiven the dated and limited data, what configurations or frameworks currently deliver the best inference performance on similar AMD multi-GPU rigs? How do you handle multi-GPU scaling for these large models? Any practical tips on balancing VRAM use, token speed, and backend choice would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2182,
+    "completion_tokens": 724,
+    "total_tokens": 2906,
+    "cost": 0.0020312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020312,
+      "upstream_inference_prompt_cost": 0.0008728,
+      "upstream_inference_completions_cost": 0.0011584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

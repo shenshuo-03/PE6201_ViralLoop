@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109657-M65f3dpfjsSpBnQMcue8",
+  "object": "chat.completion",
+  "created": 1791109657,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Post A is better because it directly asks a question to the community about technical approaches and potential improvements, aligning with the 'desired_response' in the brief. Post B is more of a summary of the archived post. Both posts use the facts well and maintain credibility. Post A's specificity is slightly better as it frames the observations as a problem to be solved by the community, rather than just a statement of limitations.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2411,
+    "completion_tokens": 157,
+    "total_tokens": 2568,
+    "cost": 0.0003039,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003039,
+      "upstream_inference_prompt_cost": 0.0002411,
+      "upstream_inference_completions_cost": 6.28e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

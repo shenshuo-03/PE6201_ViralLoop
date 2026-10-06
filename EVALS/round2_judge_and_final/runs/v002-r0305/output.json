@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "Using Weaviate or Milvus to Find Specific 1-2 Word Keywords with Order Preservation?",
+      "body": "I'm looking at a use case where the goal is to match very short keywords—like \"hugging face\" or \"meta\"—and also find semantically close sentences from a database based on user input. The challenge is that vector databases such as Weaviate and Milvus were not originally designed for reverse keyword search or to preserve word order in these short phrases.\n\nA Reddit user from mid-2025 reported trying these databases for this purpose but didn't detail the exact configurations or share clear success metrics. Given that vector similarity focuses more on semantic closeness than exact token order, I'm wondering if anyone here has practical experience or strategies for reliably detecting these 1-2 word keywords while maintaining their order using Weaviate or Milvus?\n\nAre there known workarounds or hybrid approaches that might improve keyword detection fidelity in this context?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Can Vector DBs Like Weaviate or Milvus Reliably Detect Ordered 1-2 Word Keywords?",
+      "body": "A use case from a 2025 Reddit post involves matching very short keywords (1-2 words, e.g., \"hugging face\") and semantically similar sentences from a database using user input. The user tried Weaviate and Milvus for this, but these vector databases aren’t inherently designed for reverse keyword search or preserving the exact order of words.\n\nSince vector embeddings emphasize semantic similarity over strict token order, it’s unclear how well they handle precise keyword matching when order matters. Has anyone experimented with configuration tweaks or additional indexing layers to improve detection of such short, ordered keywords in these systems?\n\nWould combining vector search with traditional keyword indexing be a practical solution here, or are there better approaches within the vector DB ecosystem?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

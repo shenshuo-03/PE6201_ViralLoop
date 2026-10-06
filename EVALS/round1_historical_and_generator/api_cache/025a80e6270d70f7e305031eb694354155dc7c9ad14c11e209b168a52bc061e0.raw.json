@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101270-4XeRftZ6sRklefT9IF6o",
+  "object": "chat.completion",
+  "created": 1791101270,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and references the provided facts accurately. It explicitly notes the fixed model, runtime, and hardware, and the absence of output quality or throughput data, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the scenario, and it avoids any unsupported claims or exaggeration, resulting in low clickbait. Usefulness is moderate as it provides actionable insight into memory scaling but does not extend beyond the hypothetical data.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical facts and preserves all necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It emphasizes the hypothetical nature and lack of performance metrics, maintaining credibility. The post is relevant and moderately useful for readers interested in resource planning. No unsupported claims or clickbait elements are present.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 870,
+    "completion_tokens": 398,
+    "total_tokens": 1268,
+    "cost": 0.0009848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009848,
+      "upstream_inference_prompt_cost": 0.000348,
+      "upstream_inference_completions_cost": 0.0006368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

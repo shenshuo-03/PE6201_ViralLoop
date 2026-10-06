@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "Why does Qwen3-8B Q6_K_L run slowly on a TitanXP with 32GB RAM in LM Studio?",
+      "body": "I've come across a report from May 2025 where a user ran Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB of RAM, but experienced very slow and odd behavior. Given that 12GB VRAM is somewhat limited for larger quantized models, I wonder if the bottleneck might be related to VRAM constraints or how LM Studio handles this quantization type.\n\nHas anyone else tried running Qwen3-8B Q6_K_L on similar hardware and noticed performance issues? Are there known quirks with LM Studio's support for Q6_K_L quantization that could cause slowdowns or instability on GPUs like the TitanXP? Any practical advice on settings or workarounds would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Possible causes for slow Qwen3-8B Q6_K_L performance on TitanXP + 32GB RAM in LM Studio?",
+      "body": "A user report from May 2025 describes very slow and odd behavior when running Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU and 32GB RAM. Since the TitanXP has 12GB of VRAM, I’m curious if memory limitations or LM Studio’s handling of Q6_K_L quantization could be factors here.\n\nDoes anyone have insights into how LM Studio manages this model and quantization on mid-tier GPUs? Could the slowdowns be related to model loading strategies, VRAM swapping, or compatibility issues with this quantization format? Understanding these tradeoffs might help others facing similar setups.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

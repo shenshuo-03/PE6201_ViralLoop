@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Newer Smaller LLMs: Better at Coding but Worse at World Knowledge?",
+        "body": "Has anyone else come across the observation that newer, smaller LLMs seem to outperform older, larger ones on coding and engineering tasks, yet fall short on world knowledge? A Reddit user from May 2025 noted this trend after testing models with private questions covering technical standards, local history, and engineering problem solving. Despite benchmark improvements and claims of equivalence to bigger models, these smaller ones reportedly struggle with detailed factual knowledge about geography and history.\n\nThis raises a practical question: is there an inherent tradeoff in model design where optimizing for problem-solving skills compromises the breadth or accuracy of world knowledge? For those working with local LLMs, how do you balance or verify these competing strengths in your applications?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Tradeoffs in LLMs: Are Smaller Newer Models Sacrificing World Knowledge?",
+        "body": "Based on a May 2025 Reddit report, newer smaller LLMs may handle coding and system threat modeling better than older larger models but show weaker performance on factual questions about local geography, history, and technical standards. The author’s private tests suggest that despite higher benchmark scores, these small models often have worse world knowledge than both their larger predecessors and similarly sized lower-benchmarking models.\n\nFor local LLaMA enthusiasts, this poses a key challenge: how do you assess or improve world knowledge in smaller models that excel technically? Have you found practical ways to supplement or retrain these models to regain that broader factual accuracy without losing problem-solving ability?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0250",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:21.146968+00:00",
+    "tag": "V1:D04",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "12fd393e6c97e13f9af2dc03c082f60c3d5621c48d87a40d3b9954ff250cc3b0",
+    "actual_cost_usd": 0.0009876,
+    "budget_charge_usd": 0.0009876,
+    "reserved_upper_usd": 0.0056164,
+    "input_tokens": 1073,
+    "output_tokens": 349,
+    "latency_seconds": 2.789613799977815,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112098-WaNJRfMkEsWHIEoGe90X",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

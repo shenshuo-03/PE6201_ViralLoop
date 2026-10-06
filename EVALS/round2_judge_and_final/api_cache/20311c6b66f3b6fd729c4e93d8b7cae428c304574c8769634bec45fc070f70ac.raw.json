@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112448-BZxJD2rsbcPRVIac8DqA",
+  "object": "chat.completion",
+  "created": 1791112448,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"The draft accurately reflects the source's hardware, model interests, and backend considerations. It correctly notes the user's previous inconclusive findings and seeks specific advice on backends, quantization, and multi-GPU strategies for AMD hardware. The draft maintains the persona of a reader seeking information and avoids making personal claims about running tests. It also highlights the lack of detailed information in existing reports, which aligns with the source's intent. The community fit is good as it directly asks for advice from users with similar setups. Specificity is high due to mentioning the exact hardware and models. Information value is good as it asks targeted questions about performance optimization. Clarity and usefulness are high as the post is well-structured and directly addresses the problem. Credibility is good as it relies on the source's reported experiences and seeks further data. Clickbait is low.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"This draft also accurately captures the essence of the source, including the hardware, models, and the user's prior inconclusive experiments. It effectively prompts for specific details on backends, quantization, and multi-GPU strategies for AMD systems. The draft adheres to the persona of a reader and avoids personal claims. It correctly identifies the need for more detailed information regarding ROCm/driver versions and setups, which is a key aspect of the original post. Community fit is good as it targets users with similar hardware. Specificity is high, mentioning exact hardware and models. Information value is good, asking relevant optimization questions. Clarity and usefulness are high due to the clear structure and directness. Credibility is good as it builds upon the source's reported experiences and seeks further data. Clickbait is low.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3370,
+    "completion_tokens": 620,
+    "total_tokens": 3990,
+    "cost": 0.000585,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000585,
+      "upstream_inference_prompt_cost": 0.000337,
+      "upstream_inference_completions_cost": 0.000248
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

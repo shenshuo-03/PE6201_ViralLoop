@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112317-EU4H97BHsWBlzv4HWCGK",
+  "object": "chat.completion",
+  "created": 1791112317,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Could decentralizing LocalLLaMA to the Fediverse help prevent control by a few moderators?\",\"body\":\"A recent 2025 post raised concerns about centralized platforms allowing a small group to dictate how large communities communicate and share content. The author feels this dynamic is problematic for LocalLLaMA, especially as the subreddit seems to be shifting in ways they describe as \\\"enshittification,\\\" though details on these changes are sparse.\\n\\nGiven this, would moving LocalLLaMA to a decentralized platform like the Fediverse realistically reduce centralized control? What practical challenges might arise in maintaining community cohesion and discoverability on such a platform? \\n\\nHas anyone here experienced or studied how decentralized platforms handle moderation and content curation for similarly sized AI communities? Insights on balancing openness and order without a central authority would be especially valuable.\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Is shifting LocalLLaMA to the Fediverse a viable way to avoid centralized moderation control?\",\"body\":\"A 2025 Reddit post expressed distrust of centralized platforms, noting that a few individuals currently hold significant power over communication and content in the LocalLLaMA subreddit. The author fears this concentration of control could stifle community-driven discussion and innovation.\\n\\nWould migrating to a decentralized platform like the Fediverse effectively democratize content control, or might it introduce new issues such as fragmentation or harder content discovery? For those familiar with decentralized communities, how do they handle moderation and governance at scale without centralized oversight?\\n\\nUnderstanding these tradeoffs could help LocalLLaMA members decide if decentralization aligns with the community’s goals or if alternative approaches might better balance inclusivity and structure.\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1185,
+    "completion_tokens": 356,
+    "total_tokens": 1541,
+    "cost": 0.0010436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010436,
+      "upstream_inference_prompt_cost": 0.000474,
+      "upstream_inference_completions_cost": 0.0005696
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

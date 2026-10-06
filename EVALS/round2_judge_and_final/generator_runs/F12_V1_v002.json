@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-04T11:18:38.247703+00:00",
+  "loop_version": "v002",
+  "brief_id": "F12",
+  "phase": "final",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Qwen3 30B A3B stalls mid-sentence with 'thinking' enabled in Open WebUI—any workarounds?",
+        "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send prompts, seeing the usual “thinking” progress indicator. However, when the 'thinking' feature was enabled, the model would often freeze mid-generation, leaving the progress stuck indefinitely. Without 'thinking', the model responded normally.\n\nThis suggests a possible interaction problem between the model and the 'thinking' mechanism in Open WebUI, though the exact cause isn’t clear. Has anyone else experienced this behavior or found a way to avoid the stall while keeping 'thinking' enabled? Are there particular Open WebUI versions or settings that might help mitigate this?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately summarizes the source, correctly identifies the problem, and poses relevant questions to the community. It adheres to the persona and avoids making unsupported claims or personal experiences. The specificity is good, referencing the model and the UI feature. The community fit is strong as it directly asks for solutions to a shared technical problem.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 109,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Anyone else see Qwen3 30B A3B hang during generation with Open WebUI's thinking mode?",
+        "body": "An archived user report from May 2025 notes that while the Qwen3 30B A3B model connects fine to Open WebUI and responds without issues when 'thinking' is off, enabling 'thinking' causes the model to get stuck mid-sentence. The progress indicator stays active but the output halts indefinitely.\n\nThis points to a potential compatibility or timing issue between the model and the 'thinking' feature in Open WebUI, but no definitive cause or fix was identified. Has anyone encountered this? If so, did you find any practical tweaks—like adjusting timeout settings or alternative UI options—that prevent the generation from freezing?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately reflects the source material, focusing on the core issue of the model stalling in Open WebUI with 'thinking' enabled. It maintains the correct persona and avoids personal claims. The questions posed are specific and relevant to troubleshooting, making it a good fit for the community. The information value is high due to its clear problem statement and call for practical solutions.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 98,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Qwen3 30B A3B stalls mid-sentence with 'thinking' enabled in Open WebUI—any workarounds?",
+      "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send prompts, seeing the usual “thinking” progress indicator. However, when the 'thinking' feature was enabled, the model would often freeze mid-generation, leaving the progress stuck indefinitely. Without 'thinking', the model responded normally.\n\nThis suggests a possible interaction problem between the model and the 'thinking' mechanism in Open WebUI, though the exact cause isn’t clear. Has anyone else experienced this behavior or found a way to avoid the stall while keeping 'thinking' enabled? Are there particular Open WebUI versions or settings that might help mitigate this?",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately summarizes the source, correctly identifies the problem, and poses relevant questions to the community. It adheres to the persona and avoids making unsupported claims or personal experiences. The specificity is good, referencing the model and the UI feature. The community fit is strong as it directly asks for solutions to a shared technical problem.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 109,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0426",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:36.541730+00:00",
+    "tag": "V1:F12",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "64763efabdbcc98831eabc603ca714a81aa581eaa400f864fb24dd012de267b5",
+    "actual_cost_usd": 0.0009972,
+    "budget_charge_usd": 0.0009972,
+    "reserved_upper_usd": 0.005335599999999999,
+    "input_tokens": 1033,
+    "output_tokens": 365,
+    "latency_seconds": 3.0080124999803957,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112713-BCca1ebWtvWOTkQK7cZH",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0427",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:38.223329+00:00",
+    "tag": "quality:F12:V1",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "e79d31c2bfa889d656b52c9464bf9b834fc13a682bf2b8236061674acafe3326",
+    "actual_cost_usd": 0.0003787,
+    "budget_charge_usd": 0.0003787,
+    "reserved_upper_usd": 0.0016966,
+    "input_tokens": 2547,
+    "output_tokens": 310,
+    "latency_seconds": 1.6461980000021867,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112716-KcdlNV7WX732c6YXTWez",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

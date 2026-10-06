@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+      "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Considering the limited perplexity test on DeepSeek R1, what’s the best way to evaluate chain-of-thought models locally?",
+      "body": "An archived perplexity test from early 2025 ran on only 8 blocks out of about 560 for DeepSeek R1 models, so its results are very limited. The tester also pointed out that perplexity might not fairly assess chain-of-thought models since they can’t perform multi-step reasoning in this setup.\n\nThis raises a practical issue: if perplexity isn’t reliable here, especially with such a small sample size, what alternatives exist for comparing models with varying expert counts that use chain-of-thought reasoning? How can local LLM enthusiasts effectively evaluate these models’ real-world performance without extensive resources?\n\nHas anyone found or developed lightweight benchmarks or practical tests that better capture the strengths of chain-of-thought models on local hardware?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

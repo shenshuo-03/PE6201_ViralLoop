@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How reliable are perplexity comparisons for DeepSeek R1 models with varying expert counts given limited test data?",
+        "body": "I came across a perplexity test from early 2025 comparing DeepSeek R1 models with different numbers of experts. However, the test only ran on 8 blocks out of roughly 560, which the original poster cautioned should be taken with a massive grain of salt. Additionally, perplexity might not be the best metric for chain-of-thought models since they don't get to perform their reasoning during such tests.\n\nGiven these limitations, how much confidence can we place in using these perplexity results to compare DeepSeek R1 variants? Is there a better way to evaluate these models’ performance differences in practice, especially when chain-of-thought reasoning is involved?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Does a tiny sample size and perplexity’s limits undermine DeepSeek R1 expert count comparisons?",
+        "body": "A perplexity test from January 2025 on DeepSeek R1 models with different expert counts ran on just 8 blocks out of about 560, which the source author noted is a very small sample size. They also pointed out perplexity probably isn’t a fair test for chain-of-thought models since such tests don’t allow the model to actually do any thinking.\n\nGiven these constraints, can we really trust perplexity scores to distinguish between DeepSeek R1 models with varying expert configurations? For those of us interested in local LLMs, what alternative benchmarks or evaluation methods might better capture real-world differences, especially for chain-of-thought capabilities?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0243",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:02.022143+00:00",
+    "tag": "V1:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c7c2c4df4b70bed3c53f7e6811e49ac4b98e35bc62c272166f04a8548f33076a",
+    "actual_cost_usd": 0.0009604,
+    "budget_charge_usd": 0.0009604,
+    "reserved_upper_usd": 0.0053424,
+    "input_tokens": 1013,
+    "output_tokens": 347,
+    "latency_seconds": 3.085201199981384,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112078-3ZsPesIRJ6rxTlF2Vnf8",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

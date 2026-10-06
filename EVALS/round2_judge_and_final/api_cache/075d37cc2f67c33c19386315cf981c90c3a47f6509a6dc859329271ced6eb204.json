@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "evidence": "Draft A preserves concrete failure modes (Gemma missing 2/4 list items, Qwen confusing 10^9 vs 109) and explicitly flags missing context (hardware, document quality, model versions, source date May 2025). It frames the question as actionable for the community (\"what tradeoffs have you encountered\") while maintaining epistemic humility about unknowns. Draft B abstracts the same facts into vague language (\"trouble,\" \"missing parts,\" \"confusing similar numbers\") and omits the source date and acknowledged gaps entirely. This makes B appear more confident than warranted and less useful for readers trying to assess relevance to their own setups. A's specificity (exact model names, concrete examples, explicit uncertainty markers) directly serves the brief's goal of identifying \"smallest, most effective\" models—readers can calibrate their own tests against stated limitations. B's generalization (\"some popular OCR models\") weakens community_fit by obscuring which models actually failed and why, reducing the signal value of the post."
+  },
+  "usage": {
+    "run_id": "v002-r0177",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:30:39.127506+00:00",
+    "tag": "judge_validation:HP07:BA",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "075d37cc2f67c33c19386315cf981c90c3a47f6509a6dc859329271ced6eb204",
+    "actual_cost_usd": 0.003589,
+    "budget_charge_usd": 0.003589,
+    "reserved_upper_usd": 0.011616999999999999,
+    "input_tokens": 2034,
+    "output_tokens": 311,
+    "latency_seconds": 4.495410100003937,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109834-gF4rXKRvIPCryHFQ1kCl",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

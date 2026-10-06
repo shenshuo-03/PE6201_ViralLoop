@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112686-OAvE9mzeZu32Eaj5mB2U",
+  "object": "chat.completion",
+  "created": 1791112686,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"How does the FuseO1 merged model compare to DeepSeek-R1-Distill-Qwen-32B on practical tasks like date calculations and logic puzzles?\",\"body\":\"A user tested the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model—a fusion of DeepSeekR1, QwQ, and SkyT1 32B models—using ollama with IQ4_XS quantization, 32k context, and Q8_0 KV Cache. They reported that this merged model correctly solved a file-packing problem with four accurate answers and calculated the days between December 12, 1971, and April 18, 2024, as 19,121 days, which was accurate. In contrast, DeepSeek-R1-Distill-Qwen-32B gave an incorrect date difference and even fell into an infinite loop on a river crossing riddle where the merged model provided a correct single-trip solution. Given these observations, how consistent is the performance gain from such merges across different task types? Has anyone else seen similar improvements or encountered tradeoffs like slower inference or stability issues with FuseO1 or comparable merged models?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]},{\"title\":\"User reports FuseO1 merge model solves date and logic tasks better than DeepSeek-R1-Distill-Qwen-32B—thoughts?\",\"body\":\"According to a 2025 r/LocalLLaMA post, the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model, which merges DeepSeekR1, QwQ, and SkyT1 32B, showed promising results on specific tests. Using ollama + IQ4_XS + 32k context + Q8_0 KV Cache, the user found it correctly answered a file-packing question with four valid solutions and accurately computed a date difference of 19,121 days, while DeepSeek-R1-Distill-Qwen-32B gave a wrong number (19,486). Additionally, the merged model solved a river crossing riddle with a single crossing, whereas the distilled model got stuck in an infinite loop. Given these task-specific improvements, what might be the underlying reasons for the merged model’s better reasoning here? Are there known limitations or stability concerns with such merges that could affect broader usability?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]},{\"title\":\"Considering the FuseO1-DeepSeekR1-QwQ-SkyT1-32B merge: Is improved accuracy worth potential tradeoffs?\",\"body\":\"A Reddit user tested a merged model called FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, combining DeepSeekR1, QwQ, and SkyT1 32B, under ollama with IQ4_XS quantization and 32k context. They reported it gave multiple correct answers for a file-packing problem and accurately calculated a date difference (19,121 days), outperforming DeepSeek-R1-Distill-Qwen-32B, which gave an incorrect date and even fell into an infinite loop on a river crossing puzzle. While this suggests merging may enhance accuracy and reasoning on some tasks, the user’s environment and prompts aren’t fully detailed. Has anyone else tested this or similar merges and noticed consistent gains? Are there known downsides like increased resource use or occasional instability that should be considered before adopting such merged models?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\",\"F7\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2259,
+    "completion_tokens": 777,
+    "total_tokens": 3036,
+    "cost": 0.0021468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0021468,
+      "upstream_inference_prompt_cost": 0.0009036,
+      "upstream_inference_completions_cost": 0.0012432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "drafts": [
+    {
+      "title": "Lightweight Hallucination Detection in RAG Pipelines with LettuceDetect: Practical Tradeoffs?",
+      "body": "Hallucinations remain a major challenge in retrieval-augmented generation (RAG) pipelines, especially in sensitive domains like medicine and law (F1). Existing detection methods often struggle with context window limits, notably in encoder-only models (F2), or incur high inference costs when relying on LLMs (F3). LettuceDetect is an open-source, encoder-based tool built on ModernBERT that flags hallucinated spans in LLM-generated answers without needing an LLM, handling up to 4K tokens (F4, F5). It reportedly achieves 79.22% F1 on the RAGTruth benchmark (F6) and is MIT licensed with Python packages and a Hugging Face demo available (F7). However, details on its real-time detection capabilities, training data, and comparative performance against other lightweight detectors remain unclear. For those working with local RAG setups or lightweight hallucination evaluation, how viable is an encoder-based approach like LettuceDetect for real-time or near-real-time detection? What practical limitations or integration challenges have you encountered or anticipate?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    {
+      "title": "Lightweight Hallucination Detection in RAG Pipelines with LettuceDetect: Practical Tradeoffs?",
+      "body": "Hallucinations remain a major challenge in retrieval-augmented generation (RAG) pipelines, especially in sensitive domains like medicine and law (F1). Existing detection methods often struggle with context window limits, notably in encoder-only models (F2), or incur high inference costs when relying on LLMs (F3). LettuceDetect is an open-source, encoder-based tool built on ModernBERT that flags hallucinated spans in LLM-generated answers without needing an LLM, handling up to 4K tokens (F4, F5). It reportedly achieves 79.22% F1 on the RAGTruth benchmark (F6) and is MIT licensed with Python packages and a Hugging Face demo available (F7). However, details on its real-time detection capabilities, training data, and comparative performance against other lightweight detectors remain unclear. For those working with local RAG setups or lightweight hallucination evaluation, how viable is an encoder-based approach like LettuceDetect for real-time or near-real-time detection? What practical limitations or integration challenges have you encountered or anticipate?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    {
+      "title": "Open-Source Encoder-Based Hallucination Detection for RAG: LettuceDetect Overview",
+      "body": "Hallucinations are a significant issue in RAG pipelines, especially in complex domains such as medicine and law (F1). Existing detection methods face challenges like context window limitations in encoder-only models (F2) and high inference costs when using LLM-based detectors (F3). LettuceDetect is an open-source, encoder-based framework built on ModernBERT that flags hallucinated spans in LLM-generated answers without requiring an LLM, supporting up to 4K tokens (F4, F5). It achieves 79.22% F1 on the RAGTruth benchmark and is MIT licensed with Python packages and a Hugging Face demo (F6, F7). While promising, information on its training data, specific hallucination types detected, and real-time performance is missing. This tool might offer a lightweight alternative for hallucination detection in local RAG pipelines.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    {
+      "title": "Hallucination Detection Challenges in RAG and LettuceDetect’s Encoder-Based Approach",
+      "body": "Hallucinations are a persistent challenge in retrieval-augmented generation pipelines, particularly in specialized fields like medicine and law (F1). Current detection methods can be limited by context window size, especially for encoder-only models (F2), and often have high inference costs due to reliance on LLMs (F3). LettuceDetect is an open-source, encoder-based framework built on ModernBERT that flags hallucinated spans in LLM-generated answers without requiring an LLM, handling up to 4K tokens (F4, F5). It reportedly achieves 79.22% F1 on the RAGTruth benchmark and is MIT licensed with Python packages and a Hugging Face demo (F6, F7). However, details about its real-time detection capabilities, training data, and comparative performance remain unavailable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    }
+  ]
+}

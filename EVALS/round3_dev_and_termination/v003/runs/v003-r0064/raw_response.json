@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118890-6xCdFQ92QWhZQVYlDTsA",
+  "object": "chat.completion",
+  "created": 1791118890,
+  "model": "google/gemini-2.5-flash",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The speaker correctly frames the discussion around hypothetical product development and seeks community input on potential future choices. All factual claims are attributed to the source's historical reports and are not presented as the speaker's own experience or current universal facts. The translation accurately preserves the hypothetical nature, claims, and context.\"\n    },\n    {\n      \"index\": 1,\n      \"speaker_pass\": true,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"critical_context_loss\": [],\n      \"source_attribution_or_date_missing\": false,\n      \"translation_pass\": true,\n      \"translation_issues\": [],\n      \"reason\": \"The speaker maintains a hypothetical stance, asking for insights on future product decisions rather than claiming personal experience or current usage. All factual statements are consistent with the provided source and are presented as industry considerations or reported advantages, not as the speaker's own findings. The translation is accurate and retains the original meaning and intent.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4306,
+    "completion_tokens": 314,
+    "total_tokens": 4620,
+    "cost": 0.0020768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020768,
+      "upstream_inference_prompt_cost": 0.0012918,
+      "upstream_inference_completions_cost": 0.000785
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

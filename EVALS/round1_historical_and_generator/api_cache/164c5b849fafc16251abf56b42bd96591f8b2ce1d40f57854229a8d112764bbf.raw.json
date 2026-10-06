@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101356-ogIkQrJSH0CZfKsExTZ5",
+  "object": "chat.completion",
+  "created": 1791101356,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the data and explicitly references all provided facts. It carefully explains the limitations of raw tokens per second as a metric, including missing TTFT and quality assessments, preserving necessary caveats. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post invites community input, enhancing usefulness and relevance. There is no exaggeration or misleading phrasing, so clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully represents the hypothetical scenario and includes all key caveats about missing TTFT and quality metrics. The title matches the body content well. The explanation is clear and concise, with a professional tone. It emphasizes the limitations of the raw token speed metric and invites discussion, making it relevant and useful. No unsupported claims or clickbait elements are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft accurately conveys the hypothetical nature of the test and includes all required caveats about missing TTFT and quality data. The title is consistent with the body and appropriately restrained. The explanation is clear and technical, suitable for the audience. It highlights the limitations of the token per second metric and encourages community engagement. There are no unsupported claims or clickbait tendencies.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1327,
+    "completion_tokens": 549,
+    "total_tokens": 1876,
+    "cost": 0.0014092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014092,
+      "upstream_inference_prompt_cost": 0.0005308,
+      "upstream_inference_completions_cost": 0.0008784
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "purpose": "Declares every change made to the frozen v003/v004 evidence while converting the submission package to English. No data value, metric, threshold, prompt, contract or experiment result was altered; changes are limited to removing Chinese renderings of English content already present in the package, renaming Chinese artefact paths, and package-layout path resolution.",
+  "baseline_file": "EVALS/round3_dev_and_termination/v004/attempt1_preservation_baseline_v004.json",
+  "baseline_file_count": 578,
+  "changed_count": 13,
+  "entries": [
+    {
+      "path": "code\\human_review.py",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "b373eb9fa1a85911ba25d61b5699fc82205c3bf98364b4e5cf187e2d9fe6f4a9",
+      "current_sha256": "5b13d50c5ceebcfca4daf72f1faac1f6dd8599ae1866506509c6cea2386e5e60",
+      "original_exists_outside_package": true,
+      "original_sha256": "b373eb9fa1a85911ba25d61b5699fc82205c3bf98364b4e5cf187e2d9fe6f4a9",
+      "cjk_chars_before": 297,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "code\\round3_runner.py",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "bc38366730df3c73524d66bf9819042dcf56e798c9ccf4584e5f81f2997b09dd",
+      "current_sha256": "41731b9f4217a7d4ed7973024287505557927b16bb127017d129e09bcb23fc5d",
+      "original_exists_outside_package": true,
+      "original_sha256": "bc38366730df3c73524d66bf9819042dcf56e798c9ccf4584e5f81f2997b09dd",
+      "cjk_chars_before": 48,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "evals\\dev_public_pairs_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "2e7ba48d29cd6895a27759c0eba3391126fc82caadb614d37c32383d8fb6841d",
+      "current_sha256": "338e3de90b1dd05283f5e3608d07e6152ec0b1464d6e355a208225938f937a36",
+      "original_exists_outside_package": true,
+      "original_sha256": "2e7ba48d29cd6895a27759c0eba3391126fc82caadb614d37c32383d8fb6841d",
+      "cjk_chars_before": 5219,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "prompts\\TRANSLATE_v003.txt",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "10c8a019dd5a58a303686b16fb991a32a2a232758634bb28bafbf4ed1720e66c",
+      "current_sha256": "c732a91b95de29f8101236979293aaf982ecff5ba77a9f651c97b09b3c89aca9",
+      "original_exists_outside_package": true,
+      "original_sha256": "10c8a019dd5a58a303686b16fb991a32a2a232758634bb28bafbf4ed1720e66c",
+      "cjk_chars_before": 19,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D01_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "f6f7a83386d69f3c65b5c8ac517bacf25ec097bc5adbdb547fd6cd8985a0fd5d",
+      "current_sha256": "65fb9ebf563e59f78baec98d3dfbd89adcc1274ae4eaaac234ce1a8d2d99a2a2",
+      "original_exists_outside_package": true,
+      "original_sha256": "f6f7a83386d69f3c65b5c8ac517bacf25ec097bc5adbdb547fd6cd8985a0fd5d",
+      "cjk_chars_before": 716,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D02_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "52f11a9a4b6428d34eb30290ec4b3f47144cf1ad143dd8aedf358fafa3664a02",
+      "current_sha256": "20117bfdacc623410d88bf15a9f8383a3ebb15a867fc5a98db764900cad94010",
+      "original_exists_outside_package": true,
+      "original_sha256": "52f11a9a4b6428d34eb30290ec4b3f47144cf1ad143dd8aedf358fafa3664a02",
+      "cjk_chars_before": 589,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D03_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "552f9c5262a7a2f3b3ae5518e81daa5d08bc124770ee604862f3255d0002501a",
+      "current_sha256": "d0db9a6d7fb2e3c9c64b9922e137ba0d6659d245bf8ea119ee2096716c5f94dd",
+      "original_exists_outside_package": true,
+      "original_sha256": "552f9c5262a7a2f3b3ae5518e81daa5d08bc124770ee604862f3255d0002501a",
+      "cjk_chars_before": 622,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D04_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "75b3b0390b4e90c14f3543059a6faadfa8ba7f89949195560781d25237c9ec70",
+      "current_sha256": "a67d50c42630daeb36f6f4489fb746c61fc75b1f20e453902f6dbc982d06002c",
+      "original_exists_outside_package": true,
+      "original_sha256": "75b3b0390b4e90c14f3543059a6faadfa8ba7f89949195560781d25237c9ec70",
+      "cjk_chars_before": 559,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D05_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "20927c3a827b5a426c891bd30bd46ce39522e91c92383868eb2c471bd22f2c28",
+      "current_sha256": "b652c9e81235f7c2d126a57ba6c905998dff6a58a33d937b37d0b2b5e150f717",
+      "original_exists_outside_package": true,
+      "original_sha256": "20927c3a827b5a426c891bd30bd46ce39522e91c92383868eb2c471bd22f2c28",
+      "cjk_chars_before": 641,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D06_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "432780aa8907ee385af96294cfd2212bad9808b4d3b1ee65788ffc7e22ef9718",
+      "current_sha256": "c41a7cfc989b33309d86dbf381cd27a345b24da3f50a925149f6a2dc1ee836bc",
+      "original_exists_outside_package": true,
+      "original_sha256": "432780aa8907ee385af96294cfd2212bad9808b4d3b1ee65788ffc7e22ef9718",
+      "cjk_chars_before": 691,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D07_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "ff46e6b23b584f155cb2600b3f5ba6d5ffc8943839b2c0b0fcde5075d0e30796",
+      "current_sha256": "f521ffa4fb4121181c4a27e4e515182121da8d0e2212b757b093f0a86fe42025",
+      "original_exists_outside_package": true,
+      "original_sha256": "ff46e6b23b584f155cb2600b3f5ba6d5ffc8943839b2c0b0fcde5075d0e30796",
+      "cjk_chars_before": 629,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\dev_cases\\D08_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "87f758ca9018427d9094b21b2ddb9accb3e97c430aa155c8bc76e09182912767",
+      "current_sha256": "d41f86e87e6474a87f9f4a80f37b05cd91293aa2b03491141dee9dc9026af715",
+      "original_exists_outside_package": true,
+      "original_sha256": "87f758ca9018427d9094b21b2ddb9accb3e97c430aa155c8bc76e09182912767",
+      "cjk_chars_before": 772,
+      "cjk_chars_after": 0
+    },
+    {
+      "path": "results\\identity_supplement\\D03_v003.json",
+      "kind": "ENGLISHIZED",
+      "baseline_sha256": "76f7c740422fab7ff7999eb4536f2e049a34cac6e6aa6e819cf29808bfa46b4d",
+      "current_sha256": "526a2dd5ed057185c394cc8096afda823c32ced49bbf2722195bcf1b4821ad47",
+      "original_exists_outside_package": true,
+      "original_sha256": "76f7c740422fab7ff7999eb4536f2e049a34cac6e6aa6e819cf29808bfa46b4d",
+      "cjk_chars_before": 38,
+      "cjk_chars_after": 0
+    }
+  ],
+  "v004_entries": [
+    {
+      "path": "results/review_layout_preview_NOT_GENERATED_DATA.html",
+      "kind": "ENGLISHIZED",
+      "original_sha256": "b6328fce807f845021c611254631864e187fd6654bdcad9112c651680a5da1b8",
+      "current_sha256": "32790c70572501e52bb702063b7e2d319eda6d021b14ac58d990de60d84614de",
+      "cjk_chars_before": 628,
+      "cjk_chars_after": 0
+    }
+  ]
+}

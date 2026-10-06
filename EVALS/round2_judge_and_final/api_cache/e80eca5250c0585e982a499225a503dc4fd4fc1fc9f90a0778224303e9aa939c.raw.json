@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109665-1t3ybYn4jksNqlo164BF",
+  "object": "chat.completion",
+  "created": 1791109665,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"B\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is better because it directly asks a question to the community, making it more engaging and fitting for a community discussion. It also retains more of the specific details and nuances from the source, such as the mixed results with `sm` row mode and the specific models tested, which adds to its specificity and information value. Post A is more of a summary report and lacks a clear call to action or question for the community. Post B's direct questions about practical advice and patterns in performance gains make it more useful and credible for the target audience of local LLM enthusiasts looking to optimize their setups.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2387,
+    "completion_tokens": 193,
+    "total_tokens": 2580,
+    "cost": 0.0003159,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003159,
+      "upstream_inference_prompt_cost": 0.0002387,
+      "upstream_inference_completions_cost": 7.72e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,14 +1,14 @@
-# 第三轮 Dev Attempt 2：离线修正
+# Round 3 Dev Attempt 2: offline revision
 
-用户明确暂停付费执行。本次只改任务定义/评价目标，新增工程版本隔离旧证据，费用不重置。
+The user explicitly paused paid execution. This pass only changes the task definition / evaluation goal, adds a new engineering version to isolate the old evidence, and does not reset cost.
 
-离线采样多次发现旧类型标签与正文不符，初次候选全部留在 sampling_draft1..4；修正规则发生在任何生成和评测之前。最终固定种子、固定规则，四类各2题。
+Offline sampling repeatedly found that the old category labels did not match the bodies, so all initial candidates were left in sampling_draft1..4; the rule fix happened before any generation and evaluation. In the end the seed and rules are fixed, with 2 tasks in each of four categories.
 
-G0/G1完整Brief、公共类型路由、事实约束、模型和长度预算相同；G1仅增加Engagement Planner。可证明的是规划流水线的效果，不能单独归因为抽象动机或某个心理因素。
+G0/G1 share the full brief, common category routing, fact constraints, model and length budget; G1 only adds the Engagement Planner. What can be demonstrated is the effect of the planning pipeline, which cannot be attributed solely to an abstract motivation or a particular psychological factor.
 
-Final按1/2/2/1覆盖四类；恢复付费前必须独立分配并封存，预算与产品冻结完成才允许Final。此Dev入口不实现自动Final。
+Final covers the four categories as 1/2/2/1; before paid execution resumes it must be independently allocated and sealed, and Final is only permitted once the budget and product freeze are complete. This Dev entry point does not implement an automatic Final.
 
-用户明确回复“继续”，恢复新8题Dev；免费更新价格，冻结前瞻配置。Final继续关闭，旧Attempt1费用不重置。
+The user explicitly replied "continue", resuming the 8 new Dev tasks; prices are refreshed free of charge and the forward-looking configuration is frozen. Final remains closed, and the old Attempt 1 cost is not reset.
 
 2026-10-04T13:46:21.303203+00:00 prepare_dev api_completed {"run_id": "v004-r0002", "tag": "brief:E03", "status": "success", "cost": 0.0005223}
 
@@ -175,42 +175,42 @@ Final按1/2/2/1覆盖四类；恢复付费前必须独立分配并封存，预�
 2026-10-04T13:48:20.406452+00:00 human_dev prepared_blind_pairs {"pairs": 8, "human_labels_fabricated": false}
 
 
-# 第三轮 Dev Attempt 2：新8组生成与审核结果
+# Round 3 Dev Attempt 2: results for the new 8 groups (generation and review)
 
-状态：**新8组已生成，等待真实中文盲评；尚无G0/G1效果结论，JEV尚未校准，Final未运行。**
+Status: **the new 8 groups have been generated and are awaiting genuine Chinese blind review; there is no G0/G1 effect conclusion yet, JEV is not yet calibrated, and Final has not run.**
 
-## 实际执行
+## What was actually executed
 
-- 新来源8组，A求助/B发现/C观点/D资源各2组；G0/G1各1稿，共16稿。
-- 使用GPT-4.1-mini生成，G1额外使用Engagement Planner；两个版本共用完整Brief、类型路由和事实约束。
-- 完成来源审核、初级质量审核、独立身份/事实审核、忠实中文翻译。
-- 本次64次真实API请求，新增费用 **US$0.0975549**；原第三轮Attempt1费用仍累计，未重置。
-- 保留全部Prompt、响应、Manifest、缓存、失败记录和费用；未访问Final，未生成真人评价。
+- 8 new source groups, 2 each of A help-seeking / B discovery / C opinion / D resource; 1 G0 and 1 G1 draft each, 16 drafts in total.
+- Generated with GPT-4.1-mini, with G1 additionally using the Engagement Planner; both versions share the full brief, category routing and fact constraints.
+- Completed source review, primary quality review, independent identity/fact review, and faithful Chinese translation.
+- This pass made 64 real API requests with **US$0.0975549** of new cost; the original Round 3 Attempt 1 cost remains accumulated and was not reset.
+- All prompts, responses, manifests, caches, failure records and costs were retained; Final was not accessed and no human evaluation was generated.
 
-## 偏差和修复
+## Deviations and fixes
 
-最初8份Brief因意图标签为自由文本而被限定枚举校验拒绝；另有A类缺少必填求助字段、非连续引文及说法过强问题。助手基于原始材料做了无费用修复，保留原始Brief输出，**修复发生在任何G0/G1生成之前**，两个版本拿到相同修复稿。没有更换来源或依据生成表现调题。
+The first 8 briefs were rejected by the restricted-enumeration check because the intent labels were free text; there were also issues such as a category-A brief missing a required help-seeking field, non-contiguous quotes, and over-strong claims. The assistant performed a zero-cost repair based on the original material and preserved the original brief outputs; **the repair happened before any G0/G1 generation**, and both versions received the same repaired brief. No sources were swapped and no task was adjusted based on generation performance.
 
-过程审核：来源和旧证据保存、合同Manifest对应、费用记录、Final隔离均通过；结论为 **PASS_WITH_DOCUMENTED_BRIEF_REPAIR**，不能写成零偏差执行。
+Process review: source and old-evidence preservation, contract-manifest correspondence, cost recording and Final isolation all passed; the verdict is **PASS_WITH_DOCUMENTED_BRIEF_REPAIR**, which must not be written up as a zero-deviation execution.
 
-## 目前观察到的问题
+## Problems observed so far
 
-任务与生成内容不再全部求助化，已覆盖发现、观点与资源。但是：
+Tasks and generated content are no longer all help-seeking and now cover discovery, opinion and resource. However:
 
-1. 多篇仍像第三方资料总结；Engagement Planner是否有帮助，尚不能只凭我判断。
-2. 部分稿把内部事实编号写进正文；原机械检查只抓大写F，漏掉小写f，补充审查已记录。原稿不删除这些编号来美化本次成绩。
-3. 一些2025年来源被写成“最近”，或者把单个GraphRAG教程的实现泛化为整个技术类别；保留为发布阻断问题。
-4. 初级审核器把“明确有归属、明确不确定”的观点/厂商说法也列入unverified，独立审核器却未阻断。**评价工具本身存在定义执行不一致**。保留双方原始标签，不按有利结果挑尺子。
+1. Several drafts still read like a third-party material summary; whether the Engagement Planner helps cannot yet be judged by me alone.
+2. Some drafts wrote internal fact IDs into the body; the original mechanical check only caught uppercase F and missed lowercase f, and the supplemental review recorded this. The original drafts were not edited to remove these IDs in order to beautify this round's result.
+3. Some 2025 sources were written as "recently", or a single GraphRAG tutorial's implementation was generalized to the entire technology category; these are retained as publication-blocking issues.
+4. The primary reviewer listed opinions or vendor claims that were "clearly attributed and clearly framed as uncertain" as unverified, while the independent reviewer did not block them. **The evaluation tools themselves apply the definitions inconsistently.** Both sides' original labels are retained, and the yardstick is not chosen to favour a favourable result.
 
-原自动检查7/16通过；补充审查后 **2/16** 暂无上述发布阻断且满足原自动标签。这个数是保守的流程门槛，受到审核分歧影响，**不是生成器的真实内容正确率或社区发布率**。
+The original automated check passed 7/16; after the supplemental review, **2/16** had none of the above publication blockers and also satisfied the original automated labels. This number is a conservative process threshold affected by reviewer disagreement, and **is not the generator's true content-accuracy rate or community publication rate**.
 
-所有8组仍用于开发诊断，不换掉失败题。当前不足8组双方都符合发布门槛的Selector校准对，故不能直接宣布JEV/Claude准入或靠删掉难题凑合格率。
+All 8 groups are still used for development diagnosis, and failing tasks are not swapped out. There are currently fewer than 8 Selector calibration pairs where both sides meet the publication threshold, so JEV/Claude admission cannot be announced outright, nor can the qualification rate be padded by deleting hard problems.
 
-## 真人需要做什么
+## What the human needs to do
 
-访问 http://127.0.0.1:8882/ 。8组中文A/B匿名比较；主要判断信息流里愿不愿意点开继续读，另记信息价值、收藏分享、评论欲、自然度和单篇发布性。
+Visit http://127.0.0.1:8882/ . There are 8 anonymous Chinese A/B comparisons; the main judgment is whether you would click through and keep reading in a feed, with additional notes on information value, save/share intent, comment intent, naturalness and per-draft publishability.
 
-可选择“差不多”“两个都不想读”“无法判断”，不必强行选赢家。技术事实检查由系统记录，你只需判断阅读与表达感受。内部编号、总结感等问题可以勾选/备注；这些是实际输出，未被偷偷润色。
+You may choose "about the same", "would not read either" or "cannot judge", and you do not have to force a winner. Technical fact checks are recorded by the system; you only need to judge the reading and expression feel. Issues such as internal IDs or a summary feel can be ticked or noted; these are the actual outputs and have not been quietly polished.
 
-本批是真实Dev诊断，不能当Final；不会自动发布到社区，也不会自动进入Final。真人提交后先审查用户反馈与工具分歧，再决定能否校准既定Selector，不能预设复杂组件胜出。
+This batch is a genuine Dev diagnosis and cannot serve as Final; it will not be automatically published to the community, nor automatically enter Final. After the human submits, the user feedback and tool disagreements are reviewed first, and only then is it decided whether the established Selector can be calibrated; it must not be presupposed that a complex component wins.
 

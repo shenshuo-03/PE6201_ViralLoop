@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101199-UopzKl6hScY8OKbd5E92",
+  "object": "chat.completion",
+  "created": 1791101199,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present the synthetic data as real measured results. It accurately references the memory usage and hypothetical accuracy figures from the brief. The language is technical yet accessible, suitable for the r/LocalLLaMA audience. It preserves all necessary caveats and invites discussion without overclaiming. The title matches the content well. The post is relevant and useful for readers interested in quantization trade-offs, though the hypothetical nature limits direct actionable value. The tone is restrained and credible, with no clickbait elements.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical scenario and synthetic nature of the data, referencing all facts correctly. The framing emphasizes the memory-accuracy trade-off and invites community input on general principles, which is relevant and useful for the target audience. The technical tone is appropriate and the post is well-structured and readable. The title accurately reflects the content. No unsupported claims or clickbait are present. The post preserves all necessary caveats and the hypothetical status.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1145,
+    "completion_tokens": 415,
+    "total_tokens": 1560,
+    "cost": 0.001122,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001122,
+      "upstream_inference_prompt_cost": 0.000458,
+      "upstream_inference_completions_cost": 0.000664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

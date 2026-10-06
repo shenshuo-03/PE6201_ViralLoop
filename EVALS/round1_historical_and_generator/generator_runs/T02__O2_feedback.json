@@ -1,0 +1,497 @@
+{
+  "at": "2026-10-04T08:08:24.723128+00:00",
+  "topic": {
+    "id": "T02",
+    "split": "final_test",
+    "topic": "A hypothetical context length memory experiment",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "In a hypothetical run, context length 2048 uses 7 GB and 8192 uses 11 GB.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Model, runtime and hardware are held fixed.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No output quality or throughput results were collected.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "O2_feedback",
+  "generation_usage": {
+    "at": "2026-10-04T08:08:20.514344+00:00",
+    "tag": "final_test:T02:O2_feedback",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "dc9e98d3ce2009f21326e7675fe784bc453a9707015bf8cee229fb1a9bcf1683",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2723,
+    "output_tokens": 826,
+    "actual_cost_usd": 0.0006027,
+    "token_price_estimate_usd": 0.0006027000000000001,
+    "reserved_upper_usd": 0.0024863,
+    "budget_charge_usd": 0.0006027,
+    "latency_seconds": 3.6090821999969194,
+    "retry": 0,
+    "request_id": "gen-1791101297-A3WU1XblT9IUUVLp30Wf"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:08:24.716212+00:00",
+    "tag": "final_test:T02:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7417d800cab67656453a17df56b8c8432722d5e343b3887ca56b933b1fed634a",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1207,
+    "output_tokens": 571,
+    "actual_cost_usd": 0.0013964,
+    "token_price_estimate_usd": 0.0013964,
+    "reserved_upper_usd": 0.0052768,
+    "budget_charge_usd": 0.0013964,
+    "latency_seconds": 4.135599000001093,
+    "retry": 0,
+    "request_id": "gen-1791101300-AMGI0PnWnO6Sl624fiqN"
+  },
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical VRAM Scaling: 2048 vs 8192 Context Lengths (Fixed Model/Hardware)",
+        "body": "I'm exploring a hypothetical scenario concerning VRAM usage with varying context lengths in local LLMs. This is purely theoretical, with no actual measurements performed. The premise is that for a fixed model, runtime, and hardware setup, increasing the context length from 2048 tokens to 8192 tokens hypothetically increases VRAM consumption from 7 GB to 11 GB.\n\nNo performance metrics (tokens/sec) or output quality assessments were part of this hypothetical exercise. The focus is strictly on the memory footprint difference as context length scales. This thought experiment aims to understand the potential VRAM implications for users considering longer contexts. What are the primary factors contributing to this hypothetical memory increase, and are there common strategies to mitigate it within similar theoretical frameworks?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Revise title for clarity and add 'Fixed Model/Hardware' to highlight controlled variables. Rephrase the opening to explicitly state the hypothetical nature. Add a question about mitigation strategies to encourage discussion."
+      },
+      "performance_score": 0.23872597751627286,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of actual measurements, preserving scenario status and necessary caveats. The title accurately reflects the content and controlled variables. The body is well-structured and readable, with a clear focus on VRAM scaling with context length. The inclusion of a question about mitigation strategies adds actionable value for the audience. The post is relevant to readers interested in local LLM memory usage. No unsupported claims or exaggerations are present, and the tone is restrained and technical.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 121,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Theoretical VRAM Consumption: Impact of Context Length (2048 vs 8192 Tokens)",
+        "body": "This post examines a hypothetical experiment regarding VRAM usage related to context length in local LLM deployments. It's crucial to emphasize that these figures are purely theoretical and not based on measured results. The hypothetical scenario posits that with a constant model, runtime, and hardware configuration, a context length of 2048 tokens would hypothetically require 7 GB of VRAM, while extending to 8192 tokens would hypothetically require 11 GB.\n\nNo data on output quality or throughput was collected. The objective is to isolate and discuss the potential memory overhead associated with larger context windows under controlled, hypothetical conditions. Given this theoretical memory scaling, what are the common architectural considerations or limitations that lead to such VRAM increases when context length is expanded?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Adjust the title to use 'Theoretical' and 'Impact of Context Length'. Refine the opening to further stress the hypothetical nature and lack of measurements. Modify the concluding question to focus on architectural considerations for memory increase."
+      },
+      "performance_score": 0.2384161455931504,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly states the hypothetical nature and lack of measured data, preserving scenario status and caveats. The title is clear and consistent with the body. The language is technical and restrained. The concluding question about architectural considerations is relevant but somewhat less directly actionable for the audience compared to mitigation strategies. Overall, it is clear and credible with no unsupported claims or clickbait.",
+        "quality_mean": 3.75,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 122,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Hypothetical VRAM Usage: 7GB at 2048 Context vs 11GB at 8192 Context (Controlled Variables)",
+        "body": "Exploring a hypothetical scenario: how does VRAM usage scale with context length when other factors are held constant? This is a theoretical exercise, not an actual benchmark. In this hypothetical setup, a model running with a 2048 token context length is estimated to consume 7 GB of VRAM. Hypothetically increasing this to an 8192 token context length, while keeping the model, runtime, and hardware identical, is projected to require 11 GB of VRAM.\n\nImportantly, this hypothetical exploration does not include any data on output quality or inference speed (tokens/second). The sole focus is on the theoretical memory footprint difference directly attributable to context window size. What are the expected implications of this kind of VRAM scaling for users operating with limited GPU memory, assuming this theoretical relationship holds?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Make the title more specific by including the hypothetical numbers and explicitly stating 'Controlled Variables'. Reorder the body to present the core hypothetical numbers earlier. Adjust the concluding question to focus on practical implications for users with VRAM constraints."
+      },
+      "performance_score": 0.23668181467272034,
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains clear and explicit statements about the hypothetical nature and lack of actual benchmarks, preserving scenario status and caveats. The title is specific and consistent with the body content. The body presents the key hypothetical numbers early, improving clarity. The concluding question about practical implications for users with limited VRAM is relevant and actionable. The tone is technical and restrained, with no unsupported claims or clickbait.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 128,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical VRAM Scaling: 2048 vs 8192 Context Lengths (Fixed Model/Hardware)",
+      "body": "I'm exploring a hypothetical scenario concerning VRAM usage with varying context lengths in local LLMs. This is purely theoretical, with no actual measurements performed. The premise is that for a fixed model, runtime, and hardware setup, increasing the context length from 2048 tokens to 8192 tokens hypothetically increases VRAM consumption from 7 GB to 11 GB.\n\nNo performance metrics (tokens/sec) or output quality assessments were part of this hypothetical exercise. The focus is strictly on the memory footprint difference as context length scales. This thought experiment aims to understand the potential VRAM implications for users considering longer contexts. What are the primary factors contributing to this hypothetical memory increase, and are there common strategies to mitigate it within similar theoretical frameworks?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Revise title for clarity and add 'Fixed Model/Hardware' to highlight controlled variables. Rephrase the opening to explicitly state the hypothetical nature. Add a question about mitigation strategies to encourage discussion."
+    },
+    "performance_score": 0.23872597751627286,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of actual measurements, preserving scenario status and necessary caveats. The title accurately reflects the content and controlled variables. The body is well-structured and readable, with a clear focus on VRAM scaling with context length. The inclusion of a question about mitigation strategies adds actionable value for the audience. The post is relevant to readers interested in local LLM memory usage. No unsupported claims or exaggerations are present, and the tone is restrained and technical.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 121,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Context Length Memory: VRAM Usage at 2048 vs 8192 Tokens",
+      "body": "This post outlines a hypothetical experiment exploring VRAM consumption across different context lengths for a local LLM. The scenario is purely theoretical, with no actual measurements taken. In this hypothetical context, a model run with a context length of 2048 tokens is estimated to use 7 GB of VRAM. Expanding this to a context length of 8192 tokens, under identical conditions, hypothetically requires 11 GB of VRAM. The model, runtime environment, and hardware specifications are assumed to remain constant throughout this hypothetical comparison. Crucially, no data on output quality or inference speed (tokens/second) was collected or simulated in this hypothetical setup. The purpose is to isolate the memory footprint difference solely based on context window size. Discussion is invited on the implications of such memory scaling.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Discuss the hypothetical VRAM usage difference between two context lengths, emphasizing the theoretical nature of the data and the controlled variables. Invite focused discussion on memory scaling implications."
+    },
+    "performance_score": 0.23759254093022575,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 3,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes that no actual measurements or performance data were collected, preserving scenario status and necessary caveats. The title accurately reflects the content. The explanation is clear and technical, suitable for the target audience. It provides actionable insight by isolating memory footprint differences due to context length, which is relevant for local LLM users considering memory scaling. No unsupported claims or exaggerations are present, and the tone is restrained without clickbait.",
+      "quality_mean": 3.75,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 126,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent_variant": "G4_both",
+  "abstention": false,
+  "original_retained": false,
+  "prompt_sha256": "952a52034944515d2c425eff23f5970ee76699219377cb3c58d025b00d90cc0a",
+  "feedback_sent": {
+    "performance_score": 0.23759254093022575,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ],
+    "boundary": "relative classifier score, not causal or real virality probability"
+  }
+}

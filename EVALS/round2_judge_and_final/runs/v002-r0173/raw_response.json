@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109815-mxfY2l1a3ei1B61tGHOe",
+  "object": "chat.completion",
+  "created": 1791109815,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A preserves concrete details that enable community engagement: names specific API options (OpenAI, Claude, Gemini), articulates the actual friction points (login management, costs, user performance), and frames distinct questions (fine-tuning necessity, content filtering methods). Draft B abstracts these into generic language ('popular API services,' 'setup, performance, and deployment preparation'), removing the specificity that would let the LocalLLaMA community recognize the exact problem and offer targeted advice. For a community of LLM enthusiasts, A's precision about trade-offs (app size vs. user friction) and explicit concern about limiting controversial content creates actionable discussion hooks. B reads as a report summary rather than a genuine question seeking community expertise. Both cite the same facts accurately, but A's retained detail—particularly naming the three API options and specifying character generation as non-conversational—directly serves the stated audience and motivation. Neither makes forbidden claims; both respect the source date and uncertainty. A is substantially more worth posting to this community.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2197,
+    "completion_tokens": 298,
+    "total_tokens": 2495,
+    "cost": 0.003687,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003687,
+      "upstream_inference_prompt_cost": 0.002197,
+      "upstream_inference_completions_cost": 0.00149
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

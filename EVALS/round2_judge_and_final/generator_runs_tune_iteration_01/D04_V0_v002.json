@@ -1,0 +1,172 @@
+{
+  "at": "2026-10-04T11:06:25.219531+00:00",
+  "loop_version": "v002",
+  "brief_id": "D04",
+  "phase": "tune",
+  "variant": "V0",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Has anyone else noticed smaller new LLMs trading world knowledge for problem-solving skills?",
+        "body": "I came across an archived 2025 post where the author tested various smaller LLMs using private questions spanning coding, engineering, threat modeling, and specific world knowledge topics like local geography and technical standards. They observed that newer small models like Qwen 3 and GLM-4-0414 perform much better on coding and problem-solving but often have worse world knowledge than older, larger models or even some older smaller models. For example, Qwen 3 8B reportedly has poorer knowledge than Llama 3.1 8B and Gemma 2 9B, and Qwen 3 14B fares worse than Phi 4 and Gemma 3 12B in knowledge despite better problem-solving. Llama 4 Maverick bucks this trend with strong knowledge but mediocre problem-solving. The author suspects this trade-off might be due to newer training data focusing more on problem-solving content at the expense of knowledge density. Given the lack of detailed test prompts and metrics, I'm curious if others have noticed similar patterns or have strategies to evaluate and balance these trade-offs when choosing models for mixed tasks? Also, could differences in training data or fine-tuning approaches explain this? Thoughts? (Source: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/)",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F7",
+          "F8"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately summarizes the source, correctly attributes observations to the source author, and avoids making personal claims. It poses relevant questions to the community about evaluating trade-offs and potential causes, fitting the brief's goal. Specificity is good, mentioning model names and types of tests. The inclusion of the source link and the date context is appropriate.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 183,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Exploring the reported knowledge vs. problem-solving trade-off in recent small LLMs",
+        "body": "An archived Reddit post from May 2025 shares an interesting observation: newer smaller LLMs, despite scoring higher on coding and problem-solving benchmarks, seem to exhibit weaker world knowledge compared to older larger or similarly sized models. The author tested models like Qwen 3 and GLM-4-0414 using private questions covering technical and geographic knowledge as well as problem-solving. They found that Qwen 3 8B and 14B had notably worse knowledge than older models such as Llama 3.1 8B, Gemma 2 9B, Phi 4, and Gemma 3 12B, even though their coding skills were better. Conversely, Llama 4 Maverick showed strong world knowledge but only mediocre problem-solving. The author hypothesizes that this might reflect a shift in training data composition favoring problem-solving content over knowledge density. Given these findings, how should we approach model selection when both knowledge and problem-solving are important? Has anyone else seen similar trade-offs or tried to quantify them? Any insights on training data effects or evaluation methods would be valuable. (Link: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/)",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F7",
+          "F8"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 also accurately reflects the source's content, attributing the observations to the original author and adhering to the persona. It effectively prompts community discussion on model selection and evaluation strategies, aligning with the brief. Specificity is maintained by referencing model names and the nature of the tests. The inclusion of the source link and date context is appropriate.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 165,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Has anyone else noticed smaller new LLMs trading world knowledge for problem-solving skills?",
+      "body": "I came across an archived 2025 post where the author tested various smaller LLMs using private questions spanning coding, engineering, threat modeling, and specific world knowledge topics like local geography and technical standards. They observed that newer small models like Qwen 3 and GLM-4-0414 perform much better on coding and problem-solving but often have worse world knowledge than older, larger models or even some older smaller models. For example, Qwen 3 8B reportedly has poorer knowledge than Llama 3.1 8B and Gemma 2 9B, and Qwen 3 14B fares worse than Phi 4 and Gemma 3 12B in knowledge despite better problem-solving. Llama 4 Maverick bucks this trend with strong knowledge but mediocre problem-solving. The author suspects this trade-off might be due to newer training data focusing more on problem-solving content at the expense of knowledge density. Given the lack of detailed test prompts and metrics, I'm curious if others have noticed similar patterns or have strategies to evaluate and balance these trade-offs when choosing models for mixed tasks? Also, could differences in training data or fine-tuning approaches explain this? Thoughts? (Source: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/)",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7",
+        "F8"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately summarizes the source, correctly attributes observations to the source author, and avoids making personal claims. It poses relevant questions to the community about evaluating trade-offs and potential causes, fitting the brief's goal. Specificity is good, mentioning model names and types of tests. The inclusion of the source link and the date context is appropriate.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 183,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0218",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:23.241085+00:00",
+    "tag": "V0:D04",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "dd74e5f8d36a7f00ee8d133586664c70bbba0e3c3c3e1c07b53e792f650095e5",
+    "actual_cost_usd": 0.0018104,
+    "budget_charge_usd": 0.0018104,
+    "reserved_upper_usd": 0.007082,
+    "input_tokens": 1978,
+    "output_tokens": 637,
+    "latency_seconds": 4.708262000000104,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111978-MuIxKRUy9R0vJuo0nbVy",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0219",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:25.197202+00:00",
+    "tag": "quality:D04:V0",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "5bdb7a069f85801144efbae383c4758093703f84bdc614ea777b8cb31ff443b4",
+    "actual_cost_usd": 0.0005506,
+    "budget_charge_usd": 0.0005506,
+    "reserved_upper_usd": 0.0023033,
+    "input_tokens": 3774,
+    "output_tokens": 433,
+    "latency_seconds": 1.926418899995042,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111983-nhvwKxjxdbaFMYk4qc3U",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "User is new and struggling with setup, but topic is common and relatable, similar examples show moderate interest."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Technical question about model conversion on mobile, niche but practical; similar examples have mixed scores."
+      },
+      {
+        "index": 2,
+        "probability": 0.3,
+        "reason": "Tutorial about remote API use, useful but somewhat niche; similar examples show moderate engagement."
+      },
+      {
+        "index": 3,
+        "probability": 0.25,
+        "reason": "Technical question about quantization methods, somewhat specialized; similar examples have low to moderate interest."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Research-oriented post about reserved tokens, niche but potentially interesting to experts; similar examples show mixed engagement."
+      },
+      {
+        "index": 5,
+        "probability": 0.25,
+        "reason": "Question about automation in AI deployment, broad but somewhat abstract; similar examples have low engagement."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Technical question about VRAM usage and batching, relevant to practitioners; similar examples show moderate interest."
+      },
+      {
+        "index": 7,
+        "probability": 0.35,
+        "reason": "Detailed post about AI infrastructure setup, complex but potentially valuable; similar examples show moderate engagement."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:00:47.354647+00:00",
+    "tag": "selection_dev:classifier:E5c_retrieval:32",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "908462639d60f68f35ec3a663ae3ecf72b8b637dd2f49b1cc6e52b6726893d4d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5026,
+    "output_tokens": 268,
+    "actual_cost_usd": 0.0024392,
+    "token_price_estimate_usd": 0.0024392,
+    "reserved_upper_usd": 0.009870799999999999,
+    "budget_charge_usd": 0.0024392,
+    "latency_seconds": 2.6080289000092307,
+    "retry": 0,
+    "request_id": "gen-1791100844-OeMDoo13CBUCW0YzS38n"
+  },
+  "raw_response": {
+    "id": "gen-1791100844-OeMDoo13CBUCW0YzS38n",
+    "object": "chat.completion",
+    "created": 1791100844,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"User is new and struggling with setup, but topic is common and relatable, similar examples show moderate interest.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Technical question about model conversion on mobile, niche but practical; similar examples have mixed scores.\"},{\"index\":2,\"probability\":0.3,\"reason\":\"Tutorial about remote API use, useful but somewhat niche; similar examples show moderate engagement.\"},{\"index\":3,\"probability\":0.25,\"reason\":\"Technical question about quantization methods, somewhat specialized; similar examples have low to moderate interest.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Research-oriented post about reserved tokens, niche but potentially interesting to experts; similar examples show mixed engagement.\"},{\"index\":5,\"probability\":0.25,\"reason\":\"Question about automation in AI deployment, broad but somewhat abstract; similar examples have low engagement.\"},{\"index\":6,\"probability\":0.3,\"reason\":\"Technical question about VRAM usage and batching, relevant to practitioners; similar examples show moderate interest.\"},{\"index\":7,\"probability\":0.35,\"reason\":\"Detailed post about AI infrastructure setup, complex but potentially valuable; similar examples show moderate engagement.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5026,
+      "completion_tokens": 268,
+      "total_tokens": 5294,
+      "cost": 0.0024392,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0024392,
+        "upstream_inference_prompt_cost": 0.0020104,
+        "upstream_inference_completions_cost": 0.0004288
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

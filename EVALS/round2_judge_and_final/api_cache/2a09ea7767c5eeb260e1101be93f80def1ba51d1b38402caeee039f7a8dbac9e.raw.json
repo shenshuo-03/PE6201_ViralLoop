@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112766-FHVpgbGzkqLXMta2N5Kc",
+  "object": "chat.completion",
+  "created": 1791112766,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts accurately ground concerns in F1–F2 without inventing details. A frames the question narrowly around 'control by moderators' and asks for decentralized platform case studies, which is relevant but somewhat assumes the problem is already established. B reframes the concern as a genuine tension—acknowledging both the centralization worry AND potential downsides (moderation consistency, discoverability)—making it more balanced for community discussion. B's closing ('how others weigh the balance') invites genuine deliberation rather than validation of a premise. A's phrasing ('enshittification' in quotes, 'details on these changes are sparse') signals skepticism but doesn't fully leverage that to open dialogue. B avoids the \\\"enshittification\\\" framing entirely, staying closer to the concrete concern (moderator control) while explicitly naming tradeoffs, which better serves the brief's goal of 'open discussion' about feasibility and desirability. Both cite F1–F2 appropriately and avoid forbidden claims. B's specificity to 'moderation consistency or discoverability' as concrete Fediverse challenges is marginally more actionable than A's generic 'community cohesion' language. Neither introduces unsupported external facts.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2069,
+    "completion_tokens": 352,
+    "total_tokens": 2421,
+    "cost": 0.003829,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003829,
+      "upstream_inference_prompt_cost": 0.002069,
+      "upstream_inference_completions_cost": 0.00176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

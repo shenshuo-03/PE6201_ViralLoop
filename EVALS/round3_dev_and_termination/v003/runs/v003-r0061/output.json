@@ -1,0 +1,41 @@
+{
+  "judgments": [
+    {
+      "index": 0,
+      "speaker_pass": false,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "I've been using OpenRouter mainly for development, running tests across multiple models to balance quality and cost.",
+        "The website's chat interface is great for comparing AI responses side-by-side.",
+        "Some conversations turn out valuable after I edit them—mostly trimming out weaker responses and keeping the best ones.",
+        "Since my training sessions rely on PDF instructions, I'd really like to export these chats in a reusable, well-formatted PDF or similar format.",
+        "I'm aware of the JSON export option, but it doesn't suit my needs for presentation."
+      ],
+      "critical_context_loss": [],
+      "source_attribution_or_date_missing": false,
+      "translation_pass": false,
+      "translation_issues": [
+        "The Chinese translation of the body uses first-person statements that are not hypothetical, but rather state past actions and experiences as if they are the current speaker's own, which is not allowed. For example, \"我主要使用OpenRouter进行开发\" (I mainly use OpenRouter for development) and \"我的培训课程依赖PDF说明\" (my training sessions rely on PDF instructions) are presented as current speaker's lived experience, not as hypothetical goals."
+      ],
+      "reason": "The draft fails the speaker_pass because it uses first-person statements ('I've been using', 'The website's chat interface is great', 'Some conversations turn out valuable', 'my training sessions rely', 'I'm aware') that describe past actions, established work, or observed symptoms as if they are the current speaker's own, rather than hypothetical goals. The factual_pass fails for the same reason, as these claims are presented as current facts about the speaker, not as hypothetical goals. The translation also fails because it preserves these first-person, non-hypothetical claims in Chinese."
+    },
+    {
+      "index": 1,
+      "speaker_pass": false,
+      "factual_pass": false,
+      "unsupported_claims": [
+        "I've been using OpenRouter extensively to test multiple AI models quickly and compare their responses in one interface, which has been great for development purposes (F1, F2).",
+        "Some of these chat conversations, after editing out weaker responses and keeping the best ones, have proven valuable for training sessions I conduct (F3).",
+        "Since my training materials are usually PDF-based (F4), I'm looking for an efficient way to export these OpenRouter chats into a reusable, well-formatted format like PDF without having to manually reformat everything.",
+        "While I know OpenRouter offers JSON export options (F5), that format isn't ideal for direct use in training documents."
+      ],
+      "critical_context_loss": [],
+      "source_attribution_or_date_missing": false,
+      "translation_pass": false,
+      "translation_issues": [
+        "The Chinese translation of the body uses first-person statements that are not hypothetical, but rather state past actions and experiences as if they are the current speaker's own, which is not allowed. For example, \"我广泛使用OpenRouter\" (I extensively use OpenRouter) and \"对我进行的培训课程非常有价值\" (very valuable for training sessions I conduct) are presented as current speaker's lived experience, not as hypothetical goals."
+      ],
+      "reason": "The draft fails the speaker_pass because it uses first-person statements ('I've been using', 'I conduct', 'my training materials are usually', 'I'm looking for', 'I know') that describe past actions, established work, or observed symptoms as if they are the current speaker's own, rather than hypothetical goals. The factual_pass fails for the same reason, as these claims are presented as current facts about the speaker, not as hypothetical goals. The translation also fails because it preserves these first-person, non-hypothetical claims in Chinese."
+    }
+  ]
+}

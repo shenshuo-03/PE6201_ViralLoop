@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Is training a local AI on the 2018 International Building Code practical for floor plan analysis?",
+        "body": "I've come across a plan to train a local AI model specifically on the 2018 International Building Code to analyze floor plans and provide building code guidance. The idea is to input a floor plan and get a code analysis directly from the locally trained model. However, the feasibility and effectiveness of this approach remain unclear, especially compared to using a cloud-based model like ChatGPT with a well-crafted prompt.\n\nGiven the specificity of the building code and the complexity of interpreting floor plans, is it realistically practical to create a focused local model that can handle this task accurately? Or might it be more efficient to rely on cloud models that have broader training and can be prompted cleverly to interpret the code in context?\n\nHas anyone explored this tradeoff or can share insights on whether local training on such a narrow knowledge base justifies the effort and resources involved?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Local LLM trained on 2018 Building Code vs. prompt engineering with cloud AI for floor plans—thoughts?",
+        "body": "There's interest in using the 2018 International Building Code text to train a local AI model that can analyze floor plans and provide building code feedback. The workflow would involve feeding a floor plan into this specialized model for direct code interpretation. This contrasts with simply using a cloud model like ChatGPT and crafting detailed prompts to extract relevant code analysis.\n\nConsidering the dated nature of the source and the unknowns around training such a narrowly focused local model, is the potential gain worth the complexity? Could prompt engineering on a cloud AI offer comparable or better results without the overhead of fine-tuning a local LLM?\n\nWhat have others experienced or recommend when deciding between training a local model on a specific text resource versus leveraging prompt design with general-purpose cloud models?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0319",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:13:08.956235+00:00",
+    "tag": "V2:F03",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "bb0e39b5cb93f9434dde3d7396b27d45550032868737497ea2f9d5693004faa3",
+    "actual_cost_usd": 0.0011288,
+    "budget_charge_usd": 0.0011288,
+    "reserved_upper_usd": 0.005843599999999999,
+    "input_tokens": 1210,
+    "output_tokens": 403,
+    "latency_seconds": 3.209427299996605,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112385-LvYUJjk6XLeuzQVsiil1",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "Is training a local AI on the 2018 International Building Code practical for floor plan analysis?",
+      "body": "I came across a post from mid-2025 where the author wanted to create a focused AI model trained specifically on the 2018 International Building Code (IBC) to analyze floor plans and provide building code feedback. The idea is to input a floor plan and get a code-based analysis directly from the model.\n\nGiven the specificity of the 2018 IBC text, is it practical to train a local LLM just on this document for such a task? Or would it be more efficient to rely on a cloud-based model like ChatGPT with carefully crafted prompts to interpret the code relative to floor plans? The source doesn't provide details on feasibility or performance, so I’m curious if anyone has insight into the tradeoffs between a local specialized model versus prompt engineering on a general model for this use case.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "title": "Focused local LLM on 2018 Building Code vs prompt engineering with ChatGPT for floor plans?",
+      "body": "There’s a 2025 Reddit post where the author wanted to build a local AI trained specifically on the 2018 International Building Code to analyze floor plans and provide code compliance feedback. The input would be a floor plan image or description, and the output a building code analysis.\n\nThe question is whether it makes sense to train a local LLM on such a narrowly defined corpus, or if using a cloud model like ChatGPT with well-designed prompts could be just as effective or better. Since the original post doesn’t report any performance data or technical details, does anyone here have experience or thoughts on the practical challenges and benefits of training a focused local model for this versus prompt-based approaches?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    }
+  ]
+}

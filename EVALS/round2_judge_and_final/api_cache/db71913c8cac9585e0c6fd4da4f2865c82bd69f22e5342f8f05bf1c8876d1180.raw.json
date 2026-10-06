@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112422-73aV6qLBf2jypoH1n5Nw",
+  "object": "chat.completion",
+  "created": 1791112422,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Lightweight In-Browser LLMs for JSON to Chart.js Conversion—Any Recommendations?\",\"body\":\"I'm looking into running small language models entirely in the browser to convert JSON data into valid Chart.js configurations. The goal is to keep everything lightweight and client-side without relying on external APIs or servers.\\n\\nGiven the unknown hardware and browser environments users might have, I'm curious if anyone has experience with inference frameworks that balance performance and compatibility well for this kind of task. Are there any tools or setups you’d recommend that handle small LLM inference efficiently in-browser, especially for structured output like Chart.js configs?\\n\\nAny insights on tradeoffs like model size, speed, or ease of integration would be helpful since the use case is quite specific and the environment unpredictable.\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Seeking Lightweight Browser-Based LLM Inference Tools for Chart.js Config Generation\",\"body\":\"Exploring ideas around running small language models fully in-browser to generate Chart.js configs from JSON objects. The main challenge seems to be finding a lightweight inference framework that can handle this task without heavy resource requirements.\\n\\nSince hardware specs and browser capabilities vary widely, I'm interested in hearing about any tools or frameworks that have proven effective or at least promising for this use case. Has anyone tried small LLM inference in-browser for structured data transformation like JSON to visualization configs?\\n\\nWhat are the practical limitations or benefits you've encountered, especially regarding model size, inference speed, and output reliability? Any recommendations or experiences would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1222,
+    "completion_tokens": 327,
+    "total_tokens": 1549,
+    "cost": 0.001012,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001012,
+      "upstream_inference_prompt_cost": 0.0004888,
+      "upstream_inference_completions_cost": 0.0005232
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

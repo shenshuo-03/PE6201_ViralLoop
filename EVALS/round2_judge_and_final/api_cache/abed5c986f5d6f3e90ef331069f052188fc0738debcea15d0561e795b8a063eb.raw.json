@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112487-OpeIGBtYDrm4Zkku6dmW",
+  "object": "chat.completion",
+  "created": 1791112487,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"The draft accurately reflects the source material and the brief's requirements. It correctly identifies the tools used (llama.cpp, ik_llama.cpp, llama-swap, Open WebUI) and the user's motivation for moving away from Ollama, specifically mentioning improved model management and file organization. The draft poses relevant questions about the practical trade-offs, complexity of configuration, and comparison of model management features, directly addressing the brief's goal of exploring alternatives. It adheres to the persona by not claiming personal experience and correctly references the source facts. The specificity is good, mentioning the tools and the config.yaml file. Community fit is strong due to the direct questions posed to other users. Information value is high as it synthesizes the source and prompts further discussion on practical aspects.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"This draft also accurately summarizes the source and adheres to the brief. It highlights the user's transition from Ollama, the tools adopted, and the perceived benefits like easier model management. Crucially, it also points out the missing information from the source (specifics of config.yaml, exact reasons for Ollama issues) and frames questions around the transition challenges, workflow impact, and comparison of management approaches. This directly aligns with the brief's goal of understanding concrete issues and benefits. The draft maintains the correct persona and references the facts. Specificity is good, referencing the tools and the config.yaml. Community fit is strong by asking about transition challenges and workflow impacts. Information value is high by synthesizing the source and prompting discussion on practical challenges and workflow.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2664,
+    "completion_tokens": 601,
+    "total_tokens": 3265,
+    "cost": 0.0005068,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005068,
+      "upstream_inference_prompt_cost": 0.0002664,
+      "upstream_inference_completions_cost": 0.0002404
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

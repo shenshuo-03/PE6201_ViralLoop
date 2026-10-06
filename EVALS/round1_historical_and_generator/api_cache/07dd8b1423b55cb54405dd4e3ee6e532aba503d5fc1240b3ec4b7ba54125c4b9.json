@@ -1,0 +1,95 @@
+{
+  "value": {
+    "id": "H11",
+    "topic_id": "T09",
+    "topic": "假设性比较：模型推荐前的可复现性",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "该场景比较了两个本地模型。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "需要记录模型版本、提示、生成设置和硬件。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "尚未提供任何实验结果。",
+        "status": "synthetic experimental input"
+      }
+    ],
+    "A": {
+      "title": "假设：本地LLM测试中的可复现性 - 模型推荐 vs. 环境日志记录",
+      "body": "本帖概述了一项假设性实验，旨在探讨本地LLM评估中的可复现性。核心问题是，与仅依赖模型推荐相比，明确记录模型版本、提示、生成设置和硬件规格（F2）是否能带来更可复现的结果，以比较两个本地模型（F1）。\n\n我们正在考虑一个场景，其中两个不同的本地模型在相同的条件下进行测试。假设详细的环境日志，包括所有参数和硬件细节，对于在多次运行中实现一致的结果至关重要。没有这样的日志记录，即使有相同的模型推荐，设置的差异也可能导致观察到的性能不同。\n\n需要重申的是，这是一个假设性的设置；没有生成或测量任何实际的实验数据或结果（F3）。目标是讨论此类实验的*设计*以及对于任何以可靠的本地LLM基准测试为目标的人来说，细致记录的重要性。您对可复现的本地LLM测试的关键组成部分有何看法？"
+    },
+    "B": {
+      "title": "假设：本地LLM测试中的可复现性 - 模型推荐 vs. 环境日志记录",
+      "body": "本帖概述了一项假设性实验，旨在探讨本地LLM评估中的可复现性。核心问题是，与仅依赖模型推荐相比，明确记录模型版本、提示、生成设置和硬件规格（F2）是否能带来更可复现的结果，以比较两个本地模型（F1）。\n\n我们正在考虑一个场景，其中两个不同的本地模型在相同的条件下进行测试。假设详细的环境日志，包括所有参数和硬件细节，对于在多次运行中实现一致的结果至关重要。没有这样的日志记录，即使有相同的模型推荐，设置的差异也可能导致观察到的性能不同。\n\n需要重申的是，这是一个假设性的设置；没有生成或测量任何实际的实验数据或结果（F3）。目标是讨论此类实验的*设计*以及对于任何以可靠的本地LLM基准测试为目标的人来说，细致记录的重要性。您对可复现的本地LLM测试的关键组成部分有何看法？"
+    }
+  },
+  "usage": {
+    "at": "2026-10-04T08:32:12.687928+00:00",
+    "tag": "human_blind_translation:H11",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "07dd8b1423b55cb54405dd4e3ee6e532aba503d5fc1240b3ec4b7ba54125c4b9",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 730,
+    "output_tokens": 603,
+    "actual_cost_usd": 0.0003142,
+    "token_price_estimate_usd": 0.0003142,
+    "reserved_upper_usd": 0.0016851,
+    "budget_charge_usd": 0.0003142,
+    "latency_seconds": 2.426601399987703,
+    "retry": 0,
+    "request_id": "gen-1791102730-rvLl7NQE6ONMm3Mwpo0Q"
+  },
+  "raw_response": {
+    "id": "gen-1791102730-rvLl7NQE6ONMm3Mwpo0Q",
+    "object": "chat.completion",
+    "created": 1791102730,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"id\": \"H11\", \"topic_id\": \"T09\", \"topic\": \"假设性比较：模型推荐前的可复现性\", \"facts\": [{\"id\": \"F1\", \"text\": \"该场景比较了两个本地模型。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"需要记录模型版本、提示、生成设置和硬件。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"尚未提供任何实验结果。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设：本地LLM测试中的可复现性 - 模型推荐 vs. 环境日志记录\", \"body\": \"本帖概述了一项假设性实验，旨在探讨本地LLM评估中的可复现性。核心问题是，与仅依赖模型推荐相比，明确记录模型版本、提示、生成设置和硬件规格（F2）是否能带来更可复现的结果，以比较两个本地模型（F1）。\\n\\n我们正在考虑一个场景，其中两个不同的本地模型在相同的条件下进行测试。假设详细的环境日志，包括所有参数和硬件细节，对于在多次运行中实现一致的结果至关重要。没有这样的日志记录，即使有相同的模型推荐，设置的差异也可能导致观察到的性能不同。\\n\\n需要重申的是，这是一个假设性的设置；没有生成或测量任何实际的实验数据或结果（F3）。目标是讨论此类实验的*设计*以及对于任何以可靠的本地LLM基准测试为目标的人来说，细致记录的重要性。您对可复现的本地LLM测试的关键组成部分有何看法？\"}, \"B\": {\"title\": \"假设：本地LLM测试中的可复现性 - 模型推荐 vs. 环境日志记录\", \"body\": \"本帖概述了一项假设性实验，旨在探讨本地LLM评估中的可复现性。核心问题是，与仅依赖模型推荐相比，明确记录模型版本、提示、生成设置和硬件规格（F2）是否能带来更可复现的结果，以比较两个本地模型（F1）。\\n\\n我们正在考虑一个场景，其中两个不同的本地模型在相同的条件下进行测试。假设详细的环境日志，包括所有参数和硬件细节，对于在多次运行中实现一致的结果至关重要。没有这样的日志记录，即使有相同的模型推荐，设置的差异也可能导致观察到的性能不同。\\n\\n需要重申的是，这是一个假设性的设置；没有生成或测量任何实际的实验数据或结果（F3）。目标是讨论此类实验的*设计*以及对于任何以可靠的本地LLM基准测试为目标的人来说，细致记录的重要性。您对可复现的本地LLM测试的关键组成部分有何看法？\"}}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 730,
+      "completion_tokens": 603,
+      "total_tokens": 1333,
+      "cost": 0.0003142,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003142,
+        "upstream_inference_prompt_cost": 7.3e-05,
+        "upstream_inference_completions_cost": 0.0002412
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

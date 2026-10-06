@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112315-Vz1IwyCNGRzwkXHpbRo2",
+  "object": "chat.completion",
+  "created": 1791112315,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 3, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 accurately reflects the source's concerns about centralized control and proposes the Fediverse as a solution. It poses relevant questions about potential tradeoffs and asks for community examples, aligning well with the brief's goal of fostering discussion. The specificity is good, referencing the core issue of control and mentioning the Fediverse. Information value is high due to the well-structured questions that encourage deeper discussion. The speaker correctly avoids personal claims and adheres to the persona. Community fit is good as it directly addresses the core topic of platform migration for the LocalLLaMA community.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 3, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 effectively captures the essence of the source's concerns regarding centralized control and the proposed Fediverse solution. It poses pertinent questions about the practicalities of decentralization, such as moderation and governance, which aligns with the brief's objective. The specificity is adequate, referencing the core problem and the proposed solution. Information value is high as it prompts a discussion on the practical challenges and benefits of decentralization. The speaker maintains the persona and avoids personal claims. Community fit is strong as it directly addresses the core topic of platform migration for the LocalLLaMA community.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2542,
+    "completion_tokens": 448,
+    "total_tokens": 2990,
+    "cost": 0.0004334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004334,
+      "upstream_inference_prompt_cost": 0.0002542,
+      "upstream_inference_completions_cost": 0.0001792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

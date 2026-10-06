@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical troubleshooting with some model-specific details; moderate similarity to a high-class example but overall typical question format suggests moderate interest."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "General question about cost regret, similar to a low-interest example; likely average engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.2,
+        "reason": "Discussion about prompt management, similar to a not_high example; niche topic with moderate technical depth."
+      },
+      {
+        "index": 3,
+        "probability": 0.4,
+        "reason": "Announcement of a new model integration with links and technical details; similar to a high-class example, likely to attract attention."
+      },
+      {
+        "index": 4,
+        "probability": 0.2,
+        "reason": "Question about model support and future, similar to a not_high example; somewhat niche and speculative."
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Detailed tutorial/guide on LoRA fine-tuning with references and examples; tutorial content tends to have moderate-high interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.25,
+        "reason": "Personal project question with hardware and AI integration; similar to a not_high example, likely moderate engagement."
+      },
+      {
+        "index": 7,
+        "probability": 0.4,
+        "reason": "Detailed discussion/opinion post about GPT-1 fine-tuning with examples; similar to a high-class example, likely to attract interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:00:02.721506+00:00",
+    "tag": "selection_dev:classifier:E5c_retrieval:0",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "72fb5fc07f39abdc1d53cf05890e8efe07f77c20009e6dfe10f0ed508ba37738",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5633,
+    "output_tokens": 293,
+    "actual_cost_usd": 0.002722,
+    "token_price_estimate_usd": 0.002722,
+    "reserved_upper_usd": 0.0107668,
+    "budget_charge_usd": 0.002722,
+    "latency_seconds": 2.588062299997546,
+    "retry": 0,
+    "request_id": "gen-1791100800-fFmV4RPjduFb6kGSsDII"
+  },
+  "raw_response": {
+    "id": "gen-1791100800-fFmV4RPjduFb6kGSsDII",
+    "object": "chat.completion",
+    "created": 1791100800,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical troubleshooting with some model-specific details; moderate similarity to a high-class example but overall typical question format suggests moderate interest.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"General question about cost regret, similar to a low-interest example; likely average engagement.\"},{\"index\":2,\"probability\":0.2,\"reason\":\"Discussion about prompt management, similar to a not_high example; niche topic with moderate technical depth.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"Announcement of a new model integration with links and technical details; similar to a high-class example, likely to attract attention.\"},{\"index\":4,\"probability\":0.2,\"reason\":\"Question about model support and future, similar to a not_high example; somewhat niche and speculative.\"},{\"index\":5,\"probability\":0.35,\"reason\":\"Detailed tutorial/guide on LoRA fine-tuning with references and examples; tutorial content tends to have moderate-high interest.\"},{\"index\":6,\"probability\":0.25,\"reason\":\"Personal project question with hardware and AI integration; similar to a not_high example, likely moderate engagement.\"},{\"index\":7,\"probability\":0.4,\"reason\":\"Detailed discussion/opinion post about GPT-1 fine-tuning with examples; similar to a high-class example, likely to attract interest.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5633,
+      "completion_tokens": 293,
+      "total_tokens": 5926,
+      "cost": 0.002722,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002722,
+        "upstream_inference_prompt_cost": 0.0022532,
+        "upstream_inference_completions_cost": 0.0004688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

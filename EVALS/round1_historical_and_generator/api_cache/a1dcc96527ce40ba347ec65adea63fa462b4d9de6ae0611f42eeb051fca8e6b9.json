@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and lack of actual testing, preserving scenario status and necessary caveats. It correctly separates VRAM into model weights, KV cache, and other runtime allocations as per the input facts. The language is clear and technical, suitable for the target audience. It provides a structured checklist that is moderately useful for planning VRAM, though it does not provide concrete numbers or benchmarks, limiting actionable value. The title accurately reflects the content without exaggeration or clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical scenario and explicitly states no empirical testing was done. It correctly segments VRAM into model weights, KV cache, and other runtime allocations, consistent with the facts. The writing is clear and professional, making it accessible to the intended technical audience. The content is relevant and moderately useful for readers planning VRAM usage, though it remains conceptual without concrete data. The title matches the body content and is not clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:44:58.245997+00:00",
+    "tag": "tune_dev:D01:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a1dcc96527ce40ba347ec65adea63fa462b4d9de6ae0611f42eeb051fca8e6b9",
+    "status": "success",
+    "input_tokens": 1104,
+    "output_tokens": 398,
+    "actual_cost_usd": 0.0010784,
+    "token_price_estimate_usd": 0.0010784,
+    "reserved_upper_usd": 0.0050316,
+    "budget_charge_usd": 0.0010784,
+    "latency_seconds": 3.0981212000042433,
+    "retry": 0,
+    "request_id": "gen-1791099895-ajwXqc08svn1IWaeIvb6"
+  },
+  "raw_response": {
+    "id": "gen-1791099895-ajwXqc08svn1IWaeIvb6",
+    "object": "chat.completion",
+    "created": 1791099895,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and lack of actual testing, preserving scenario status and necessary caveats. It correctly separates VRAM into model weights, KV cache, and other runtime allocations as per the input facts. The language is clear and technical, suitable for the target audience. It provides a structured checklist that is moderately useful for planning VRAM, though it does not provide concrete numbers or benchmarks, limiting actionable value. The title accurately reflects the content without exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical scenario and explicitly states no empirical testing was done. It correctly segments VRAM into model weights, KV cache, and other runtime allocations, consistent with the facts. The writing is clear and professional, making it accessible to the intended technical audience. The content is relevant and moderately useful for readers planning VRAM usage, though it remains conceptual without concrete data. The title matches the body content and is not clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1104,
+      "completion_tokens": 398,
+      "total_tokens": 1502,
+      "cost": 0.0010784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010784,
+        "upstream_inference_prompt_cost": 0.0004416,
+        "upstream_inference_completions_cost": 0.0006368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

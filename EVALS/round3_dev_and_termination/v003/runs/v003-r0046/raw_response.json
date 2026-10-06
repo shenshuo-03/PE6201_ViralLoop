@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118691-RnmIwyaDxpPg7qvWWBSR",
+  "object": "chat.completion",
+  "created": 1791118691,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Pros and cons of tabbed chats vs single-chat with persistent history for local LLM UIs?\",\"body\":\"I'm designing a local LLM app and trying to decide between two UI approaches: one with tabbed chats where each tab independently remembers its system prompt and sampling settings, and another with a single chat interface that saves all conversations persistently in a sidebar. The tabbed approach, as seen in Sigil, offers isolated sessions which might help users experiment with different models or prompts without confusion. On the other hand, a single-chat view with persistent storage could simplify navigation by consolidating history, letting users revisit or delete chats non-destructively. Sigil also emphasizes a fast, minimal, and easy-to-run design, which might influence how complex the UI should be. Given these points, which interface do you think would be more intuitive and efficient for users exploring various prompts and models locally? Are there trade-offs in feature management or ease of use that stand out in either approach?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1824,
+    "completion_tokens": 221,
+    "total_tokens": 2045,
+    "cost": 0.0010832,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010832,
+      "upstream_inference_prompt_cost": 0.0007296,
+      "upstream_inference_completions_cost": 0.0003536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

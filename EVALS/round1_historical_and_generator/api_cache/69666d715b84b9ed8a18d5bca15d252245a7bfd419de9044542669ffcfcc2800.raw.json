@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101478-f2oddSIN7sVdDaCsbj4B",
+  "object": "chat.completion",
+  "created": 1791101478,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly references all key facts (F1, F2, F3). The title matches the content well, focusing on offline testing and network isolation. The language is technical yet accessible, suitable for the target audience. It provides actionable guidance on what to check in an offline test, making it useful and relevant. The caveats about no actual testing are preserved, maintaining credibility. The post is restrained and not clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and references all facts. The title aligns well with the content, emphasizing true disconnection. The explanation is clear and concise, with a good balance of technical detail and readability. It preserves the necessary caveats and invites discussion, enhancing usefulness and credibility. The tone is professional and non-sensational.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The third draft maintains factual accuracy and clearly states the hypothetical nature. The title is consistent with the body, focusing on offline operation and network egress. The language is clear and technical, appropriate for the audience. It preserves all necessary caveats and encourages discussion. The post is credible and relevant without exaggeration or clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1196,
+    "completion_tokens": 542,
+    "total_tokens": 1738,
+    "cost": 0.0013456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013456,
+      "upstream_inference_prompt_cost": 0.0004784,
+      "upstream_inference_completions_cost": 0.0008672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

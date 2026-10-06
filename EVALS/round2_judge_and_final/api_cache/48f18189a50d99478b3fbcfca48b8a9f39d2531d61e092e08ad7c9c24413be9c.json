@@ -1,0 +1,92 @@
+{
+  "value": {
+    "topic": "Improving HTML-to-Markdown Extraction with Local LLMs",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "Discussing methods and challenges for enhancing HTML-to-Markdown conversion using local LLMs, aiming to outperform traditional tools on complex websites.",
+    "context": "A community member is sharing their experience and seeking advice on a project that uses local LLMs (Qwen2.5-7B/8B with llama.cpp) to convert HTML web pages to Markdown, focusing on offline processing and improved quality over standard tools. The project aims to handle difficult website structures like SPAs and noisy sites.",
+    "motivation": "The original author is seeking feedback and solutions for specific challenges encountered in their HTML-to-Markdown conversion project, particularly concerning media-heavy sites, performance optimization, and evaluation methods. This discussion aims to gather insights from other local LLM users.",
+    "desired_response": "Community members are invited to share their approaches, tips, and recommendations for improving the HTML-to-Markdown extraction process, especially for challenging web content, and to discuss the potential usefulness of such a tool.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The project aims to convert HTML web pages to high-quality Markdown using local LLMs and consumer GPUs, running fully offline.",
+        "evidence_quote": "I'm working on a smarter way to convert HTML web pages to high-quality Markdown using local LLMs",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The system analyzes website types and uses BeautifulSoup for HTML structure extraction before AI-powered planning.",
+        "evidence_quote": "Uses BeautifulSoup to extract candidate content areas, main titles, headings, and framework fingerprints",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "A local LLM generates extraction strategies (selectors, filters) and scores the resulting Markdown for quality.",
+        "evidence_quote": "Local LLM generates JSON-formatted extraction strategies (selectors, noise filters, special rules)",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "The tool runs locally using llama-cpp-python with quantized GGUF models on consumer hardware.",
+        "evidence_quote": "I use llama-cpp-python with quantized GGUF models, so it runs on a 4070/4080/4090",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "On standard article/news/blog pages, the AI assessment scores the quality as typically 'good' or 'excellent' (7-9/10).",
+        "evidence_quote": "On standard article/news/blog pages, quality is usually “good” or “excellent” (AI assessment scores 7-9/10)",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "For media-heavy or JavaScript-only sites, the LLM struggles without browser rendering capabilities.",
+        "evidence_quote": "For *media-heavy* or JavaScript-only sites, even the LLM struggles without browser rendering.",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "The project uses local LLMs for HTML to Markdown conversion.",
+      "The tool aims to improve upon traditional extraction methods.",
+      "Offline processing is a key feature.",
+      "The author is seeking advice on specific technical challenges."
+    ],
+    "forbidden_claims": [
+      "The tool has been proven to outperform all existing methods.",
+      "Specific performance metrics like pages per second are guaranteed.",
+      "The author has personally achieved successful batch processing optimization.",
+      "The LLM's suggestions are always perfect.",
+      "The tool is ready for widespread public use without further development."
+    ],
+    "essential_limitations": [
+      "The effectiveness on media-heavy or JavaScript-only sites is limited without browser rendering.",
+      "Performance for batch processing may require further optimization.",
+      "Evaluation of extraction quality relies on AI assessment and manual review, with a need for better benchmarks."
+    ],
+    "missing_information": [
+      "Specific details on the datasets used for training or evaluation.",
+      "Exact hardware specifications beyond GPU models (e.g., RAM, CPU).",
+      "The precise nature of 'framework fingerprints' and their impact.",
+      "Details on the 'domain-specific extraction rule generation' process."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0021",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:11:27.674613+00:00",
+    "tag": "brief_builder:S01",
+    "phase": "naturalness",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "48f18189a50d99478b3fbcfca48b8a9f39d2531d61e092e08ad7c9c24413be9c",
+    "actual_cost_usd": 0.0005764,
+    "budget_charge_usd": 0.0005764,
+    "reserved_upper_usd": 0.0018609,
+    "input_tokens": 1308,
+    "output_tokens": 1114,
+    "latency_seconds": 4.525082600011956,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108683-JV9xNCMjSUMM13R7ajsC",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

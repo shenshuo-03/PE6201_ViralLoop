@@ -1,0 +1,73 @@
+{
+  "brief": {
+    "topic": "Local LLM capabilities for specialized knowledge retrieval",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "To determine if a local LLM can be effectively trained on a specific document (2018 International Building Code) to outperform cloud models for targeted analysis and retrieval.",
+    "context": "A user is exploring the possibility of creating a focused AI model using a specific technical document, the 2018 International Building Code, to answer queries related to building code analysis. They are comparing the potential of local models versus cloud-based models like ChatGPT for this task.",
+    "motivation": "This question is worth discussing to understand the practical limitations and potential of local LLMs for domain-specific knowledge applications, especially when compared to general-purpose cloud models.",
+    "desired_response": "A discussion exploring the feasibility and potential effectiveness of training a local LLM on a single, specialized document for accurate data retrieval and analysis, considering the trade-offs with cloud-based solutions and prompt engineering.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The source author wants to use the 2018 International Building Code (pdf or other text file) to create a focused AI model.",
+        "evidence_quote": "I want to take the 2018 International Building Code (pdf or other text file) and create a focused AI model to converse with.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The intended input for the AI model would be a floor plan, with the model providing a building code analysis.",
+        "evidence_quote": "The input would be something like\" give me a building code analysis for this floor plan I just put in the chat.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "The author questions if limiting an LLM to one specific document can yield focused, accurate data.",
+        "evidence_quote": "If one wants to just limit a LLM to one specific document, and get really focused, accurate data, is that reasonable/possible?",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "The author is considering both cloud models and local models for this task.",
+        "evidence_quote": "Either with cloud models or with local models really.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "The author wonders if a good prompt on ChatGPT would provide better input.",
+        "evidence_quote": "Or, will I actually just get better input with a good prompt on Chatgpt?",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "The source author identifies as a layperson regarding large language models.",
+        "evidence_quote": "I'm a layperson when it comes to large language models.",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "Local LLMs can be trained on specific documents.",
+      "Cloud models like ChatGPT can be used for knowledge retrieval.",
+      "Prompt engineering is a factor in LLM performance."
+    ],
+    "forbidden_claims": [
+      "Local LLMs definitively outperform cloud models for specialized tasks.",
+      "The 2018 International Building Code has been successfully used to train a model.",
+      "Specific hardware configurations are required for this task.",
+      "The author has personally tested any of these models."
+    ],
+    "essential_limitations": [
+      "The specific technical feasibility and performance metrics of training a local LLM on the 2018 International Building Code are not provided.",
+      "The exact nature of the 'floor plan' input is not detailed.",
+      "The comparison between local and cloud models is hypothetical.",
+      "The source author identifies as a layperson with limited LLM expertise."
+    ],
+    "missing_information": [
+      "Details on the specific local LLM architectures or training methods considered.",
+      "Information on the size and format of the 2018 International Building Code document.",
+      "Any specific prompts or prompt engineering techniques considered for ChatGPT.",
+      "The author's definition of 'better input' or 'accurate data'."
+    ]
+  },
+  "corrections": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112119-0XQkwfHxeEyCPUuvJEaZ",
+  "object": "chat.completion",
+  "created": 1791112119,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"How effective are local LLMs with BeautifulSoup for offline HTML to Markdown conversion on text-heavy sites?\",\"body\":\"A 2025 project explored using local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools on complex, text-focused websites. The script first uses BeautifulSoup to identify candidate content areas, main titles, and headings, distinguishing text-centric sites from media-heavy ones.\\n\\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this approach handles modern web apps or sites with dynamic content. Has anyone seen local LLM pipelines effectively manage the tradeoff between offline processing and the quality of Markdown output on such tricky sites? What strategies might improve content extraction when JavaScript-heavy frameworks limit static HTML analysis?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Can offline local LLMs plus BeautifulSoup reliably extract Markdown from modern text-focused websites?\",\"body\":\"There’s an interesting 2025 attempt to convert HTML to Markdown fully offline using local LLMs combined with BeautifulSoup for content area detection. The script distinguishes between text-focused and media-centric pages by analyzing HTML structure and framework fingerprints.\\n\\nSince it doesn’t rely on browser rendering, I’m curious about the practical limitations this imposes. For text-heavy sites with complex layouts or SPA frameworks, does anyone know if local LLMs can still produce high-quality Markdown? What are effective heuristics or preprocessing steps to enhance content extraction in such offline setups?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1103,
+    "completion_tokens": 323,
+    "total_tokens": 1426,
+    "cost": 0.000958,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000958,
+      "upstream_inference_prompt_cost": 0.0004412,
+      "upstream_inference_completions_cost": 0.0005168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

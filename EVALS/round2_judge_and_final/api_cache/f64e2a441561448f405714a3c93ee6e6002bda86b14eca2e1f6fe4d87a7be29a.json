@@ -1,0 +1,109 @@
+{
+  "value": {
+    "brief": {
+      "topic": "Local Text-to-Speech (TTS) for Short Dialogues",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "Finding a local or free TTS solution capable of generating natural-sounding American English short dialogues with adjustable speaker genders.",
+      "context": "A user is seeking a TTS system for creating short, multi-speaker dialogues, similar to the provided example. They have experience with Coqui TTS (XTTS v2) but found its output 'terrible' and are looking for alternatives to online services like ElevenLabs.",
+      "motivation": "The user's experience with Coqui TTS highlights a potential gap in readily available, high-quality local TTS for simple dialogue generation. Discussing this could help others facing similar challenges and identify suitable open-source or free tools.",
+      "desired_response": "Suggestions for local or free TTS software that can produce natural American English dialogue with configurable speaker genders, suitable for short conversational exchanges.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The user needs a TTS system to create short dialogues between two speakers.",
+          "evidence_quote": "I need something so I can create short dialogs between two speakers",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F2",
+          "text": "The user desires the ability to change speaker gender combinations (male/male, male/female, female/female).",
+          "evidence_quote": "(if I can change male/male, male/female, female/female, that'd be great)",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F3",
+          "text": "The desired accent for the TTS output is natural American English.",
+          "evidence_quote": "natural American English accent.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F4",
+          "text": "The user installed XTTS v2 (Coqui TTS) locally and found its performance \"pretty terrible even for just reading a text.\"",
+          "evidence_quote": "I've installed locally XTTS v2 (Coqui TTS), it's pretty terrible even for just reading a text.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F5",
+          "text": "The user has used ElevenLabs but is looking for local or free alternatives.",
+          "evidence_quote": "I've used elevenlabs, but I'm looking for local or free alternatives for what I need",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F6",
+          "text": "The user is new to this field and has no programming knowledge.",
+          "evidence_quote": "I'm pretty new to this, and I know nothing of programming",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F7",
+          "text": "The user only got Coqui TTS to work by following ChatGPT's step-by-step instructions.",
+          "evidence_quote": "I only got Coqui TTS to work following chatgpt's step-by-step instructions.",
+          "status": "source-author report, not independently verified measurement"
+        }
+      ],
+      "allowed_claims": [
+        "The source author is looking for local or free TTS solutions.",
+        "The source author has tried Coqui TTS (XTTS v2) locally.",
+        "The source author desires natural American English dialogue generation.",
+        "The source author wants to control speaker gender combinations."
+      ],
+      "forbidden_claims": [
+        "Coqui TTS (XTTS v2) is definitively bad for all users.",
+        "ElevenLabs is the best online TTS solution.",
+        "The user has successfully implemented any specific TTS solution for dialogues.",
+        "The user has programming expertise.",
+        "The user's dialogue examples are representative of complex use cases."
+      ],
+      "essential_limitations": [
+        "The specific hardware used by the source author is not mentioned.",
+        "The exact version or configuration of Coqui TTS (XTTS v2) is not specified beyond 'v2'.",
+        "The source author's definition of 'terrible' output is subjective and not quantified.",
+        "The complexity of the actual dialogues the user intends to create is not detailed beyond the provided simple example."
+      ],
+      "missing_information": [
+        "Specific recommendations for local or free TTS software.",
+        "Details on how to configure speaker gender in potential TTS solutions.",
+        "Information on the performance of alternative TTS systems for dialogue generation.",
+        "The source author's operating system or environment."
+      ]
+    },
+    "corrections": [
+      "The 'facts' section was updated to include 7 facts, within the 4-8 fact range, with more precise and contiguous evidence quotes.",
+      "Fact F1 was rephrased for conciseness and to use a more direct quote.",
+      "Fact F4 was updated to include the specific model 'XTTS v2' and the observation about its quality.",
+      "Fact F6 was added to capture the user's lack of programming knowledge.",
+      "Fact F7 was added to capture the user's method of getting Coqui TTS to work.",
+      "The 'essential_limitations' were reviewed and refined for accuracy against the source, specifically clarifying the version of Coqui TTS mentioned."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0276",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:56.217484+00:00",
+    "tag": "brief_builder:S04:source_audit",
+    "phase": "selection",
+    "model": "google/gemini-2.5-flash",
+    "cache_key": "f64e2a441561448f405714a3c93ee6e6002bda86b14eca2e1f6fe4d87a7be29a",
+    "actual_cost_usd": 0.0037251,
+    "budget_charge_usd": 0.0037251,
+    "reserved_upper_usd": 0.0106332,
+    "input_tokens": 1567,
+    "output_tokens": 1302,
+    "latency_seconds": 6.57520600000862,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112189-vdgG5gAqVl9ovMzcBZWb",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

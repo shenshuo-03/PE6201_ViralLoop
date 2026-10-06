@@ -1,0 +1,234 @@
+{
+  "at": "2026-10-04T11:17:34.644742+00:00",
+  "loop_version": "v002",
+  "brief_id": "F10",
+  "phase": "final",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "KokoroSharp: A New Local, Cross-Platform TTS Engine in C# Now on NuGet and GitHub",
+        "body": "KokoroSharp is a recently introduced local text-to-speech engine written in C#, designed to be cross-platform and beginner-friendly yet flexible. It emerged from an effort to leverage a new high-performance audio model called Kokoro, with the author pivoting from an offline AI voice chat app to build this TTS solution. The engine is available as a NuGet package and the source code is open on GitHub, making it accessible for experimentation and integration. However, details on performance, audio quality, and hardware requirements remain scarce. For those interested in offline AI voice chat or speech synthesis projects, what practical experiences do you have with KokoroSharp regarding stability and output quality? Are there notable limitations in processing speed or voice naturalness that might affect real-time applications?",
+        "fact_refs": [
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source and brief, including the developer's reported motivation and the availability of the engine on NuGet and GitHub. It correctly identifies the lack of detailed performance metrics and poses relevant community questions about practical experience, stability, and output quality. The speaker's role as a reader of archived material is maintained.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 123,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Exploring KokoroSharp: Open-Source Local TTS Engine in C# for Offline Use Cases",
+        "body": "A new local TTS engine called KokoroSharp has been developed in C# following the release of the Kokoro audio model. It aims to be beginner-friendly and flexible, offering a cross-platform solution for offline speech synthesis. Available via NuGet with open-source code on GitHub, KokoroSharp provides example code for loading models and selecting voices like \"af_heart.\" Despite these promising features, there is limited information on its actual runtime performance, audio quality, or robustness in diverse environments. For local LLM enthusiasts considering offline voice chat or similar projects, how does KokoroSharp compare to other local TTS engines you’ve tried? Have you encountered any technical hurdles or benefits worth noting?",
+        "fact_refs": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 is factually accurate, adhering to the source and brief. It highlights the engine's features, availability, and the open-source nature, while also noting the scarcity of performance and quality details. The community questions are specific and relevant to the brief's goal of discussing potential use cases and technical aspects. Speaker compliance is maintained.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 107,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "KokoroSharp Local TTS Engine: Potential and Practical Questions for Offline AI Voice Chat",
+        "body": "KokoroSharp is a local, cross-platform TTS engine written in C# that was created in response to a new high-performance audio model named Kokoro. It’s described as beginner-friendly yet flexible and is accessible through NuGet with open-source code available on GitHub. The original developer was working on an offline AI voice chat app and shifted focus to build this engine. However, the community lacks detailed benchmarks or user feedback on how well KokoroSharp handles audio quality, processing reliability, or integration complexity. For those who have experimented with it or similar offline TTS tools, what are the main tradeoffs in adopting KokoroSharp? Are there specific scenarios where it excels or falls short?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 3 successfully summarizes the source material and brief, accurately stating the engine's origin, features, and availability. It correctly points out the lack of community feedback and benchmarks. The questions posed to the community are specific and directly address the practical adoption and performance tradeoffs, aligning with the brief's objectives. Speaker compliance is maintained.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 110,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Considering KokoroSharp for Offline AI Voice Chat: How Mature Is It Really?",
+      "body": "I came across a report from early 2025 about KokoroSharp, a local TTS engine developed in response to a new high-performance audio model called Kokoro. The author was building a fully offline AI voice chat app and pivoted to create this cross-platform TTS engine, which was about 90% ready at the time.\n\nGiven that the exact performance details and stability of KokoroSharp aren’t fully documented, I’m curious about how suitable it might be for offline AI voice chat projects today. Has anyone here explored KokoroSharp further or integrated it into similar setups? What practical challenges or limitations did you encounter, especially regarding audio quality or processing reliability?\n\nUnderstanding these tradeoffs would help decide if KokoroSharp is a viable foundation or if alternative offline TTS solutions should be prioritized.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 asks specific questions about practical challenges and limitations of KokoroSharp for offline AI voice chat, referencing the source's context of the author's previous project and the engine's development. It correctly notes the lack of detailed performance information and seeks community input on viability. The title and body are well-aligned with the source and brief.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 128,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Considering KokoroSharp for Offline AI Voice Chat: How Mature Is It Really?",
+      "body": "I came across a report from early 2025 about KokoroSharp, a local TTS engine developed in response to a new high-performance audio model called Kokoro. The author was building a fully offline AI voice chat app and pivoted to create this cross-platform TTS engine, which was about 90% ready at the time.\n\nGiven that the exact performance details and stability of KokoroSharp aren’t fully documented, I’m curious about how suitable it might be for offline AI voice chat projects today. Has anyone here explored KokoroSharp further or integrated it into similar setups? What practical challenges or limitations did you encounter, especially regarding audio quality or processing reliability?\n\nUnderstanding these tradeoffs would help decide if KokoroSharp is a viable foundation or if alternative offline TTS solutions should be prioritized.",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 asks specific questions about practical challenges and limitations of KokoroSharp for offline AI voice chat, referencing the source's context of the author's previous project and the engine's development. It correctly notes the lack of detailed performance information and seeks community input on viability. The title and body are well-aligned with the source and brief.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 128,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0406",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:32.152218+00:00",
+    "tag": "O1:F10",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b2a6a79007a660b2d199e3426762e05b87b5c5e848df5a7cf4daa7850e2d4436",
+    "actual_cost_usd": 0.001696,
+    "budget_charge_usd": 0.001696,
+    "reserved_upper_usd": 0.0083144,
+    "input_tokens": 1940,
+    "output_tokens": 575,
+    "latency_seconds": 4.327995900006499,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112647-X4G0NqS3bZXZo4GBw8mx",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0407",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:34.618149+00:00",
+    "tag": "quality:F10:O1",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "7cf47b5cc87085433358e18d6e47ed098b29311f13825c95f922fdf47e084249",
+    "actual_cost_usd": 0.0005334,
+    "budget_charge_usd": 0.0005334,
+    "reserved_upper_usd": 0.0018143999999999999,
+    "input_tokens": 2794,
+    "output_tokens": 635,
+    "latency_seconds": 2.4318957999930717,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112652-QZAujwLMC1oPjR8u2CBj",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

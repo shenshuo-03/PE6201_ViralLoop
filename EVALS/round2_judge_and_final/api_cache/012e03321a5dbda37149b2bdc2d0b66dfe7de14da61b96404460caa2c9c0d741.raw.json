@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109662-1OeeVD9thDJgfWPFcDhf",
+  "object": "chat.completion",
+  "created": 1791109662,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Post A is superior because it directly references the specific hardware (3090 and 3060 GPUs) and the llama.cpp software mentioned in the brief, aligning better with the specificity requirement. It also poses a more concrete question about practical advice and heuristics for configuring tensor splits and split modes on heterogeneous multi-GPU rigs, making it more relevant to the community's goal of understanding these techniques. Post B is more generic, referring to 'one high-end GPU and two mid-tier GPUs' and 'a local LLM inference engine' without naming them, which reduces its specificity and direct relevance to the brief's context. Both posts effectively summarize the provided facts and their limitations, but Post A's framing of the question makes it more useful and community-fitting.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2369,
+    "completion_tokens": 232,
+    "total_tokens": 2601,
+    "cost": 0.0003297,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003297,
+      "upstream_inference_prompt_cost": 0.0002369,
+      "upstream_inference_completions_cost": 9.28e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

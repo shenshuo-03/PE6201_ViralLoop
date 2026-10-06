@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112345-H4ovbmiVTc16HpyMjuZh",
+  "object": "chat.completion",
+  "created": 1791112345,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"focus\":\"Can vector databases like Weaviate or Milvus effectively identify specific 1-2 word keywords within user input while preserving the order of words, given that they are not originally designed for reverse keyword search?\",\"fact_ids\":[\"F1\",\"F2\"],\"limitation_indices\":[0]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1298,
+    "completion_tokens": 62,
+    "total_tokens": 1360,
+    "cost": 0.0006184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006184,
+      "upstream_inference_prompt_cost": 0.0005192,
+      "upstream_inference_completions_cost": 9.92e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

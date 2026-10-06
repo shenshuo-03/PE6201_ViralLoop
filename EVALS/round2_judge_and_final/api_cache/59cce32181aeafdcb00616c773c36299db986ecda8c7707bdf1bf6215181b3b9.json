@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How reliable are DeepSeek R1 perplexity comparisons with only 8 blocks tested?",
+        "body": "A perplexity test on DeepSeek R1 models ran on just 8 out of roughly 560 blocks, which the original tester warns should be taken with a massive grain of salt. Since the test sample is so small, it raises questions about how meaningful the perplexity differences really are between models with different expert counts.\n\nAdditionally, perplexity might not be a fair metric for chain-of-thought models because they don’t get to perform their reasoning steps during the test. This could skew comparisons if one model relies more on chain-of-thought mechanisms than another.\n\nGiven these limitations, how much confidence should we place in these perplexity results when deciding between DeepSeek R1 variants? Are there better or more practical ways to benchmark these models locally without exhaustive testing?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Considering the limited perplexity test on DeepSeek R1, what’s the best way to evaluate chain-of-thought models locally?",
+        "body": "An archived perplexity test from early 2025 ran on only 8 blocks out of about 560 for DeepSeek R1 models, so its results are very limited. The tester also pointed out that perplexity might not fairly assess chain-of-thought models since they can’t perform multi-step reasoning in this setup.\n\nThis raises a practical issue: if perplexity isn’t reliable here, especially with such a small sample size, what alternatives exist for comparing models with varying expert counts that use chain-of-thought reasoning? How can local LLM enthusiasts effectively evaluate these models’ real-world performance without extensive resources?\n\nHas anyone found or developed lightweight benchmarks or practical tests that better capture the strengths of chain-of-thought models on local hardware?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0245",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:06.588827+00:00",
+    "tag": "V2:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "59cce32181aeafdcb00616c773c36299db986ecda8c7707bdf1bf6215181b3b9",
+    "actual_cost_usd": 0.0010972,
+    "budget_charge_usd": 0.0010972,
+    "reserved_upper_usd": 0.0057236,
+    "input_tokens": 1187,
+    "output_tokens": 389,
+    "latency_seconds": 2.780213799997,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112083-1OvrFdlp4eZR7DEx6T0Q",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

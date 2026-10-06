@@ -1,0 +1,15 @@
+{
+  "brief_id": "E05",
+  "id": "1jwhdkx",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "664",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-04-11",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1jwhdkx/i_finetuned_csm_to_make_it_always_speak_in_whisper/",
+  "source_hash": "d9bd098a7d67527ec33edadf1b2a7289f79344af644a4f3339bd95e0aeac30d6",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "I fine-tuned CSM to make it always speak in whisper.",
+  "source_text": "Hello, LocalLLaMA!\n\nRecently, I've been looking closely at the Sesame's CSM-1b model. Although there were a lot of controversies around it, I believe it's one of the strongest TTS-like models open-source has along with Orpheus, especially with context awareness!\n\nWith [an amazing PR](https://github.com/senstella/csm-mlx/pull/10) to my CSM repository, contributors and I made CSM SFT fine-tunable on Mac, and ran a short fine-tune with my MacBook Air M2! (Around 40 samples) The result is pretty good - it generates a consistent whisper voice quite nicely.\n\n[Here's a quick sample.](https://huggingface.co/senstella/csm-expressiva-1b/resolve/main/assets/demo.wav)\n\n[Model Page](https://huggingface.co/senstella/csm-expressiva-1b)\n\nThere's a lot of room for improvement though. First of all, it just goes through SFT-phase, not RL-phase. I plan to quickly implement KTO and giving another shot on top of this model to further improve the stability of the model.\n\nHope you like it!"
+}

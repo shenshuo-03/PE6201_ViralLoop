@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "evidence": "Draft A directly addresses the brief's core motivation by naming LettuceDetect, specifying its technical foundation (ModernBERT, 4K tokens, 79.22% F1), and explicitly inviting community feedback on applications and real-time detection—actionable for local LLM enthusiasts. It preserves all allowed claims with proper source attribution (F1–F7) and respects limitations by reporting benchmark results as source-author claims without personal verification. Draft B strips away concrete details (no model name, no token limit, no benchmark score, no license type), reducing it to generic recap language ('known issue,' 'some detection methods,' 'can process long inputs'). This vagueness eliminates specificity and usefulness—readers cannot assess whether LettuceDetect fits their constraints or contribute informed feedback. Both avoid forbidden claims, but A's precision and direct community engagement versus B's abstraction creates a clear gap in information value and community fit for the stated audience."
+  },
+  "usage": {
+    "run_id": "v002-r0183",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:31:06.708605+00:00",
+    "tag": "judge_validation:HP10:BA",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "3ffb4c3c7bc290c9dded88e9b615df797515e0cf2b4223f95df164b5e2bf104b",
+    "actual_cost_usd": 0.003697,
+    "budget_charge_usd": 0.003697,
+    "reserved_upper_usd": 0.012403999999999998,
+    "input_tokens": 2237,
+    "output_tokens": 292,
+    "latency_seconds": 4.557466700003715,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109861-fI6kF54t7D7dv57mtoS1",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

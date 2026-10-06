@@ -1,0 +1,96 @@
+{
+  "value": {
+    "brief": {
+      "topic": "Local Text-to-Speech (TTS) Engine Development",
+      "audience": "local LLM enthusiasts",
+      "problem_or_goal": "To discuss the development and potential of a new, local, cross-platform TTS engine.",
+      "context": "A community member is sharing information about a newly released local TTS engine called KokoroSharp, written in C#, which is available as a NuGet package and has open-source code.",
+      "motivation": "This question is worth discussing to understand the capabilities and potential applications of local TTS solutions for LLM enthusiasts who might be interested in offline AI voice chat or other speech synthesis projects.",
+      "desired_response": "A discussion about the technical aspects, potential use cases, and community reception of the KokoroSharp TTS engine.",
+      "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+      "facts": [
+        {
+          "id": "F1",
+          "text": "The author was working on a fully offline AI voice chat app that was about 90% ready to release.",
+          "evidence_quote": "So, to start with, I am working on a fully offline AI voice chat app, and while it's about 90% ready to release, a specific new, high-performance audio model came out",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F2",
+          "text": "A new, high-performance audio model, referred to as \"Kokoro,\" prompted the author to build a local, cross-platform TTS engine.",
+          "evidence_quote": "a specific new, high-performance audio model came out (\\*stares at Kokoro\\*).\n\nWhat did I do?\n\nI dropped everything to build a local, cross-platform TTS engine!",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F3",
+          "text": "The developed TTS engine is described as \"Beginner-friendly yet flexible.\"",
+          "evidence_quote": "Beginner-friendly yet flexible.",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F4",
+          "text": "The KokoroSharp TTS engine is available on NuGet.",
+          "evidence_quote": "It's available on [NuGet](https://www.nuget.org/packages/KokoroSharp/)! Just install the package and you're ready!",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F5",
+          "text": "The source code for KokoroSharp is open and available on GitHub.",
+          "evidence_quote": "And, of course, the source is open: [https://github.com/Lyrcaxis/KokoroSharp](https://github.com/Lyrcaxis/KokoroSharp)",
+          "status": "source-author report, not independently verified measurement"
+        },
+        {
+          "id": "F6",
+          "text": "The example code demonstrates loading a KokoroTTS model and getting a voice named \"af_heart\" using KokoroVoiceManager.",
+          "evidence_quote": "KokoroTTS tts = KokoroTTS.LoadModel();\n    KokoroVoice heartVoice = KokoroVoiceManager.GetVoice(\"af_heart\");",
+          "status": "source-author report, not independently verified measurement"
+        }
+      ],
+      "allowed_claims": [
+        "KokoroSharp is a local TTS engine.",
+        "KokoroSharp is written in C#.",
+        "KokoroSharp is cross-platform.",
+        "KokoroSharp is available on NuGet.",
+        "KokoroSharp has open-source code."
+      ],
+      "forbidden_claims": [
+        "The engine has been tested for performance benchmarks.",
+        "The engine is guaranteed to be bug-free.",
+        "The author has personally used the engine in a production application.",
+        "Specific hardware requirements for the engine.",
+        "Details on the 'af_heart' voice model's performance."
+      ],
+      "essential_limitations": [
+        "The exact performance characteristics of the TTS engine are not detailed.",
+        "No information is provided on the specific audio models supported beyond the example.",
+        "The '90% ready' status of the previous app is dated context."
+      ],
+      "missing_information": [
+        "Specific hardware requirements for running KokoroSharp.",
+        "Detailed performance metrics or benchmarks.",
+        "Information on the training data or architecture of the audio models used.",
+        "User reviews or community feedback on the engine's stability and quality."
+      ]
+    },
+    "corrections": []
+  },
+  "usage": {
+    "run_id": "v002-r0397",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:09.756714+00:00",
+    "tag": "brief_builder:F10:source_audit",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash",
+    "cache_key": "c407a21ecda7511b8d3caeaac2c8ec6d717432a16c733f8faa47a9a46327d496",
+    "actual_cost_usd": 0.0031865,
+    "budget_charge_usd": 0.0031865,
+    "reserved_upper_usd": 0.0104604,
+    "input_tokens": 1505,
+    "output_tokens": 1094,
+    "latency_seconds": 5.2793614999973215,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112624-UVqnROjgNIGmK5XRPnXY",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

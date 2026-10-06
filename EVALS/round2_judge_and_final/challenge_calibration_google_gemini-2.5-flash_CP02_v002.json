@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Uncertain",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "swap_consistent": {
+    "community_fit": false,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": false,
+    "credibility": false,
+    "overall": false
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A explicitly names 'vLLM', 'Ollama', and 'Mistral models', directly aligning with the brief's specifics and the user's stated problem. Draft B generalizes these into 'one performance-focused runtime', 'another runtime', and 'certain 7B parameter models', losing specificity and direct relevance to the community's likely knowledge base. Draft A's directness makes it more actionable and relevant for local LLM enthusiasts."
+    },
+    "usage": {
+      "run_id": "v002-r0109",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:05.990703+00:00",
+      "tag": "judge_calibration:CP02:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "b3081b57a1991723fb62978026c4de17fbfaf5ebbb673c6d82a124c213645bfd",
+      "actual_cost_usd": 0.0011327,
+      "budget_charge_usd": 0.0011327,
+      "reserved_upper_usd": 0.0046195,
+      "input_tokens": 2409,
+      "output_tokens": 164,
+      "latency_seconds": 1.5786496000073384,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109684-POUqF2YxV3cuPeUtnzqZ",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A rephrases the problem in a more general way, making it less about the author's specific setup and more about a general technical discrepancy, which is more inviting for community discussion. Draft B is more of a direct report of the author's experience. Both drafts use the exact facts and ask the same core questions, leading to a Tie in information_value and credibility. Draft A's generalized framing makes it more useful for a broader audience."
+    },
+    "usage": {
+      "run_id": "v002-r0110",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:07.623056+00:00",
+      "tag": "judge_calibration:CP02:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "37ad587b406f4ad751d6a55b76f955ca1d497d2162924c3cc4bc412b081b923f",
+      "actual_cost_usd": 0.0011352,
+      "budget_charge_usd": 0.0011352,
+      "reserved_upper_usd": 0.0046195,
+      "input_tokens": 2409,
+      "output_tokens": 165,
+      "latency_seconds": 1.6095585999719333,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109685-fUe3g0JNoIG1NwOwiXT2",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash"
+}

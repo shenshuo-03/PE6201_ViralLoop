@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109770-uTTgxO58n4cqosyuuUvG",
+  "object": "chat.completion",
+  "created": 1791109770,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"B\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is better because it directly asks about the user experience of integrating with local LLMs, which is a core part of the brief's desired response and motivation. It also specifically asks for insights on the graphical results, addressing a missing information point. Post A is more of a summary and ends with a generic question. Post B's specificity in asking about setup complexity, latency, and reliability for remote server integration makes it more valuable for the target audience of local LLM enthusiasts.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2392,
+    "completion_tokens": 170,
+    "total_tokens": 2562,
+    "cost": 0.0003072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003072,
+      "upstream_inference_prompt_cost": 0.0002392,
+      "upstream_inference_completions_cost": 6.8e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

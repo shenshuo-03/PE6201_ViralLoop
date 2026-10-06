@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "A",
+      "overall": "A"
+    },
+    "evidence": "Draft A directly frames the core tension for the audience: KokoroSharp exists and is accessible (NuGet, open-source), but the brief explicitly notes 'exact performance characteristics are not detailed' and 'no information on stability.' Draft A asks whether it's 'mature enough' and immediately acknowledges 'the source doesn't provide detailed performance metrics or stability info'—this is honest uncertainty that invites community testing and real-world reports. Draft B uses softer language ('not fully documented,' 'I'm curious') and adds an unsupported comparative claim ('alternative offline TTS solutions should be prioritized'), which goes beyond the brief's facts. Both preserve F1 and F2 correctly and avoid forbidden claims. Draft A's phrasing 'given its development context and near-completion status' more directly connects the author's pivot (F2) to the readiness question, making the motivation concrete. Draft B's 'today' and 'viable foundation' introduce temporal and evaluative framing not grounded in the source. Draft A's closing is tighter: it names three specific friction points (latency, voice quality, platform compatibility) that are plausible for offline TTS but not invented; Draft B's 'audio quality or processing reliability' is similar but less precise. Both avoid the forbidden performance-benchmark and production-use claims. Draft A edges ahead by being more direct about what the brief *doesn't* say, which builds credibility with a skeptical technical audience."
+  },
+  "usage": {
+    "run_id": "v002-r0470",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:22:32.043740+00:00",
+    "tag": "judge_final:F10:V2_vs_V1:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "213ff9a81ee286b0d434c950cc0f34eb9df0bdf9ccf184d29bb4a2a05d19d247",
+    "actual_cost_usd": 0.004202,
+    "budget_charge_usd": 0.004202,
+    "reserved_upper_usd": 0.011892,
+    "input_tokens": 2202,
+    "output_tokens": 400,
+    "latency_seconds": 5.391345400013961,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112946-zZiWK5c4KaOUsNCqa2Wp",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109866-rN7CThQNmGu9I1WruzM2",
+  "object": "chat.completion",
+  "created": 1791109866,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A preserves all seven grounded facts with exact details (ModernBERT, 4K tokens, 79.22% F1, MIT license, Python packages, Hugging Face demo), while Draft B omits or vaguely generalizes critical specifics (\\\"modern encoder model\\\" instead of ModernBERT, \\\"several thousand tokens\\\" instead of 4K, no benchmark score, no license name). For a local LLM community seeking lightweight solutions, Draft A's precision on architecture, capacity, and performance metrics directly enables evaluation and integration decisions. Draft A also properly attributes all claims to source-author reports without overstating verification. Draft B's vaguer framing (\\\"strong benchmark performance\\\" without the F1 score) reduces actionability and credibility for technical readers. Both avoid forbidden claims, but A's specificity better serves the stated audience motivation of gathering insights on real-time detection and potential collaborations.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2285,
+    "completion_tokens": 279,
+    "total_tokens": 2564,
+    "cost": 0.00368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00368,
+      "upstream_inference_prompt_cost": 0.002285,
+      "upstream_inference_completions_cost": 0.001395
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

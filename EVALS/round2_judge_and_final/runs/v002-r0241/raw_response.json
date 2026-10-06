@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112074-MHNGMLNZdTkGQc2TzcXq",
+  "object": "chat.completion",
+  "created": 1791112074,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 0 accurately reflects the source and brief, posing clear questions about the file upload functionality and reproducibility. It correctly attributes observations to the source author and avoids making definitive claims about the feature's behavior. The community fit is good as it directly addresses a technical aspect of llama.cpp relevant to local LLM enthusiasts. Specificity is high, referencing the file upload feature and the goal of querying file contents. Information value is good, organizing the user's questions and observations effectively. Clarity and usefulness are high, making the post easy to understand and actionable for others who might have insights. Credibility is high due to its faithful representation of the source and adherence to the brief's constraints. Clickbait is minimal.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 effectively summarizes the source material and brief, focusing on the reproducibility aspect. It correctly attributes the observations to the original poster and maintains the conditional nature of the claims. Community fit is good as it targets a specific technical challenge within the local LLM community. Specificity is high, mentioning the file upload feature and reproducibility. Information value is good, framing the problem and seeking solutions. Clarity and usefulness are high. Credibility is maintained by adhering to the source and brief. Clickbait is minimal.\"}, {\"index\": 2, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 accurately captures the essence of the source and brief, posing direct questions about the file upload functionality and reproducibility. It correctly attributes the user's experiences and avoids making unsubstantiated claims. Community fit is good, as it addresses a specific feature of llama.cpp that would interest local LLM users. Specificity is high, focusing on the file upload button and stable Q&A on file contents. Information value is good, clearly outlining the problem and seeking expert input. Clarity and usefulness are high. Credibility is maintained by staying true to the source and brief. Clickbait is minimal.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2692,
+    "completion_tokens": 692,
+    "total_tokens": 3384,
+    "cost": 0.000546,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000546,
+      "upstream_inference_prompt_cost": 0.0002692,
+      "upstream_inference_completions_cost": 0.0002768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

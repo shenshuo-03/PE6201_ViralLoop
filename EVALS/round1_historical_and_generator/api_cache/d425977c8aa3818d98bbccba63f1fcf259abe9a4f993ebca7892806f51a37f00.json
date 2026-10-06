@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and does not present any unsupported claims. It consistently references the fixed model, runtime, and hardware, and explicitly notes the absence of output quality or throughput data. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the scenario, though usefulness is moderate since it only provides memory usage estimates without actionable guidance or performance insights."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The title matches the content well. The explanation is clear and technical, appropriate for the audience. It avoids unsupported claims and clearly states the limitations of the data. Usefulness is moderate due to the lack of actionable recommendations or measured results, but the post is relevant and credible."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:07:31.248133+00:00",
+    "tag": "final_test:T02:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d425977c8aa3818d98bbccba63f1fcf259abe9a4f993ebca7892806f51a37f00",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 923,
+    "output_tokens": 373,
+    "actual_cost_usd": 0.000966,
+    "token_price_estimate_usd": 0.000966,
+    "reserved_upper_usd": 0.0047516,
+    "budget_charge_usd": 0.000966,
+    "latency_seconds": 3.0356116999901133,
+    "retry": 0,
+    "request_id": "gen-1791101248-09ynQBYytPxlEZG85Sda"
+  },
+  "raw_response": {
+    "id": "gen-1791101248-09ynQBYytPxlEZG85Sda",
+    "object": "chat.completion",
+    "created": 1791101248,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and does not present any unsupported claims. It consistently references the fixed model, runtime, and hardware, and explicitly notes the absence of output quality or throughput data. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the scenario, though usefulness is moderate since it only provides memory usage estimates without actionable guidance or performance insights.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately preserves the hypothetical scenario and includes all necessary caveats. The title matches the content well. The explanation is clear and technical, appropriate for the audience. It avoids unsupported claims and clearly states the limitations of the data. Usefulness is moderate due to the lack of actionable recommendations or measured results, but the post is relevant and credible.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 923,
+      "completion_tokens": 373,
+      "total_tokens": 1296,
+      "cost": 0.000966,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000966,
+        "upstream_inference_prompt_cost": 0.0003692,
+        "upstream_inference_completions_cost": 0.0005968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

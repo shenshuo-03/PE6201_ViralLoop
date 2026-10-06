@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112845-GWZP5IgrBm304E185nLS",
+  "object": "chat.completion",
+  "created": 1791112845,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"B\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts correctly identify the hardware (F1) and target models (F2), but B is more effective for community engagement. A uses vague framing ('hints at notable speed differences') without grounding in the actual data provided—F4 explicitly states the user found 1-2 token/s differences 'inconclusive,' and F5 shows Vulkan/llama.cpp performed better on specific models, not ambiguous 'notable' differences. B directly acknowledges the data is 'dated and narrowly scoped' and asks for 'updated experience,' which is more honest about limitations (essential_limitations note ROCm/driver versions unspecified) and invites targeted responses. A's phrasing 'hints at notable speed differences' overstates confidence without citing which specific comparison showed what. B's second question about 'quantization methods that meaningfully shift the balance' connects to F6 (user's stated interest) and the brief's desired response, whereas A's 'VRAM distribution across these cards influences the choice' introduces a claim not grounded in provided facts. B preserves source_date context ('mid-2025') and treats the source author as a reader of archived material (speaker_relationship_to_source), avoiding false authority. Both avoid forbidden claims, but B's framing ('consensus or updated experience') better positions the community to contribute relevant, current data rather than validate dated observations.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2431,
+    "completion_tokens": 386,
+    "total_tokens": 2817,
+    "cost": 0.004361,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004361,
+      "upstream_inference_prompt_cost": 0.002431,
+      "upstream_inference_completions_cost": 0.00193
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

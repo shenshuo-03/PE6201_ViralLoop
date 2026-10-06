@@ -1,0 +1,64 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "FamilyBench: Testing Local LLMs on Large, Complex Family Trees—Insights and Open Questions",
+        "body": "FamilyBench is an open-source benchmark designed to challenge LLMs with complex, tree-like family relationships across very large contexts—up to 400 individuals over 10 generations, roughly 18k tokens. It generates synthetic family trees via Python scripts and formulates 200 questions per test, aiming to probe relational and contextual reasoning beyond typical text tasks. Initial tests on seven models (mostly open weights) show a wide range of accuracy, with Gemini 2.5 Pro scoring highest at about 81%, while others achieved lower scores and some exhibited ‘no response’ failures when token limits were exceeded. These results were obtained under fixed conditions (8k max tokens, temperature 0.3, low reasoning effort) and should be viewed as preliminary. Given the benchmark’s novelty and synthetic nature, how might we interpret these accuracy differences? Could tuning parameters or expanding question types reveal more about local LLMs’ strengths and weaknesses in handling intricate relational data? Also, what approaches might help reduce the no response rate linked to token exhaustion? I’m interested in hearing if anyone has experimented further with FamilyBench or similar large-context relational benchmarks to better understand local LLM reasoning limits.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      {
+        "title": "Evaluating LLMs on FamilyBench’s Massive Context and Complex Trees: What Are the Key Challenges?",
+        "body": "FamilyBench introduces a novel framework to evaluate language models on understanding complex family tree relationships within a massive textual context—about 18,000 tokens representing 400 individuals across 10 generations. A Python program generates these trees and corresponding questions, with initial testing involving 7 models under uniform inference settings (8k max tokens, temperature 0.3). Results show notable variation in accuracy and a measurable no response rate when models exceed token limits during reasoning. Given these initial findings, what are the main bottlenecks local LLMs face here? Is it the size of the context, the complexity of tree-structured data, or the question formulation? Moreover, could adjusting parameters like max tokens or temperature improve response rates and accuracy? Since the benchmark is new and synthetic, what refinements or additional metrics would you suggest for better capturing a model’s relational reasoning abilities on such tasks?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F8"
+        ]
+      },
+      {
+        "title": "Insights from FamilyBench’s First Round: How Well Can Local LLMs Handle Complex Family Trees?",
+        "body": "FamilyBench offers an open-source benchmark focused on testing LLMs’ ability to understand and reason over complex family trees spanning large contexts—up to 400 people over 10 generations. The benchmark uses a Python tool to generate trees and 200 related questions per run. Early results from seven models show varied accuracy, with Gemini 2.5 Pro reaching over 81% accuracy and no failures to respond, whereas others had lower accuracy and some no responses attributed to token limit exhaustion. Tests were done with fixed parameters (8k max tokens, low reasoning effort, temperature 0.3), so it’s unclear how much tuning might affect outcomes. Considering these caveats, how useful do you find FamilyBench for assessing local LLMs’ relational reasoning? Are there ways to extend or complement this benchmark to better capture model capabilities or failure modes, especially regarding large context handling and complex tree-like data?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0370",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:15:44.284384+00:00",
+    "tag": "O1:F07",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "980c73645725a037d8bde700cd8d2cab6d7337a74445233f90e058ae078eb852",
+    "actual_cost_usd": 0.00213,
+    "budget_charge_usd": 0.00213,
+    "reserved_upper_usd": 0.0092252,
+    "input_tokens": 2321,
+    "output_tokens": 751,
+    "latency_seconds": 5.052185100008501,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112539-aFUTVqVN021nT1PiNIwS",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "drafts": [
+    {
+      "title": "How to handle multi-word keyword matching with vector DBs for reverse search?",
+      "body": "I'm exploring a reverse keyword search scenario where the goal is to find specific 1-2 word keywords (like \"hugging face\" or \"meta\") within larger user inputs, while also retrieving the semantically closest sentence from a database. A Reddit post from 2025 discusses attempts using Weaviate and Milvus vector databases but highlights that vector DBs aren't inherently designed for this kind of reverse keyword search. The author points out challenges in preserving keyword order and avoiding false positives when using simple AND/OR logic for multi-word keywords—for example, \"hugging face\" matching incorrectly on phrases like \"face hugging aliens\" or \"hugging people.\" Given these limitations and the lack of detail on database size or configuration, what practical strategies or hybrid approaches could local LLM enthusiasts consider to better handle order preservation and accurate multi-word keyword detection in this context? Are there known techniques to combine semantic similarity with precise phrase matching in vector DBs, or should alternative indexing methods be explored?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "title": "Seeking approaches to combine semantic similarity and precise keyword order in vector DB reverse searches",
+      "body": "A 2025 Reddit discussion describes a use case where users input sentences or paragraphs, and the system tries to identify matching 1-2 word keywords (e.g., \"hugging face\") along with semantically closest sentences stored in a database. The author tried Weaviate and Milvus but notes that vector databases aren’t naturally suited for reverse keyword search. They specifically mention issues with multi-word keywords: using AND logic leads to false positives like \"face hugging aliens,\" while OR logic captures unwanted matches such as \"hugging people.\" Since details on the database setup and query implementation are missing, what are some recommended methods to tackle these challenges? Could combining vector search with traditional text indexing or token-based filtering help preserve keyword order and improve accuracy? Any community experience or pointers on integrating semantic and exact phrase matching locally would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118956-q49yKu9fQcLDjeewwlFW",
+  "object": "chat.completion",
+  "created": 1791118956,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A reads as authentic community inquiry with natural phrasing ('I'm hypothetically looking', 'sounds promising', 'Has anyone here worked with'), while Draft B's explicit fact references (F1-F7) break immersion and feel artificially constructed for a Reddit post. Both are factually sound, but A better matches the posting intent of genuine community advice-seeking.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2830,
+    "completion_tokens": 154,
+    "total_tokens": 2984,
+    "cost": 0.0036,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0036,
+      "upstream_inference_prompt_cost": 0.00283,
+      "upstream_inference_completions_cost": 0.00077
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

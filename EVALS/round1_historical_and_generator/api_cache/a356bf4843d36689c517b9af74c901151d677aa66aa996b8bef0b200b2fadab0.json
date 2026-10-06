@@ -1,0 +1,88 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical VRAM Planning Checklist for 12GB GPUs: Model Weights, KV Cache, and Runtime",
+        "body": "This post outlines a hypothetical checklist for VRAM planning on a 12 GB GPU for running local LLMs. The scenario is purely hypothetical and has not been tested with actual models or runtimes. The goal is to provide a structured approach to estimating VRAM needs.\n\nWe'll separate allocations into three key areas:\n\n1.  **Model Weights:** This is the primary consumer, varying significantly by model size (e.g., 7B, 13B) and quantization level (e.g., FP16, 4-bit). For a 12 GB card, larger models will likely require aggressive quantization.\n2.  **KV Cache:** This scales with context length and batch size. Longer contexts and larger batches demand more VRAM. Planning for a reasonable context window is crucial.\n3.  **Other Runtime Allocations:** This includes the operating system, the LLM inference framework itself (e.g., llama.cpp, vLLM), and any intermediate activations or buffers. These are generally smaller but can add up.\n\nThis framework aims to help users anticipate potential VRAM bottlenecks before attempting to load a model. Remember, no specific model or runtime was tested; this is a conceptual guide.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Create a technical Reddit post outlining a hypothetical VRAM planning checklist for a 12GB GPU. Explicitly state the hypothetical nature of the scenario and that no actual testing was performed. Structure the body to separate allocations for model weights, KV cache, and other runtime needs. Keep the title restrained and the body within the word count. Ensure fact references are correctly cited."
+      },
+      {
+        "title": "Structuring VRAM Usage: A Hypothetical Guide for 12GB Local LLM Setups",
+        "body": "This guide presents a hypothetical framework for VRAM management on a 12 GB GPU when running local LLMs. It's crucial to understand that this is a conceptual exercise; no specific models or runtimes were evaluated, and these are not measured results. The objective is to offer a structured way to think about VRAM allocation.\n\nWe propose categorizing VRAM usage into three distinct components:\n\n*   **Model Weights:** The size of the model's parameters is the largest factor, heavily influenced by the parameter count (e.g., 7B, 13B) and the precision used (e.g., FP16, INT8, 4-bit quantization). A 12 GB card will necessitate careful consideration of quantization for larger models.\n*   **KV Cache:** This dynamic allocation grows with the sequence length of the input and the batch size. Longer conversations or processing multiple requests concurrently will increase KV cache requirements.\n*   **Runtime Overhead:** This encompasses the VRAM consumed by the operating system, the inference engine (like Transformers, llama.cpp), and any temporary buffers or activations generated during processing.\n\nBy considering these categories hypothetically, users can better anticipate potential VRAM constraints before deploying models. This is a planning aid, not a performance benchmark.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Develop a second, distinct technical Reddit post on the same hypothetical VRAM planning topic. Maintain the hypothetical status and avoid any measured results. Focus on separating the three VRAM allocation types: model weights, KV cache, and runtime. Ensure the title is concise and the body adheres to the word count. Use the specified fact references."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:44:47.539758+00:00",
+    "tag": "tune_dev:D01:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "a356bf4843d36689c517b9af74c901151d677aa66aa996b8bef0b200b2fadab0",
+    "status": "success",
+    "input_tokens": 804,
+    "output_tokens": 831,
+    "actual_cost_usd": 0.0004128,
+    "token_price_estimate_usd": 0.0004128,
+    "reserved_upper_usd": 0.0011646,
+    "budget_charge_usd": 0.0004128,
+    "latency_seconds": 3.4290053000004264,
+    "retry": 0,
+    "request_id": "gen-1791099884-yfXl6mEIZhTkKgkzLNdZ"
+  },
+  "raw_response": {
+    "id": "gen-1791099884-yfXl6mEIZhTkKgkzLNdZ",
+    "object": "chat.completion",
+    "created": 1791099884,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical VRAM Planning Checklist for 12GB GPUs: Model Weights, KV Cache, and Runtime\",\n      \"body\": \"This post outlines a hypothetical checklist for VRAM planning on a 12 GB GPU for running local LLMs. The scenario is purely hypothetical and has not been tested with actual models or runtimes. The goal is to provide a structured approach to estimating VRAM needs.\\n\\nWe'll separate allocations into three key areas:\\n\\n1.  **Model Weights:** This is the primary consumer, varying significantly by model size (e.g., 7B, 13B) and quantization level (e.g., FP16, 4-bit). For a 12 GB card, larger models will likely require aggressive quantization.\\n2.  **KV Cache:** This scales with context length and batch size. Longer contexts and larger batches demand more VRAM. Planning for a reasonable context window is crucial.\\n3.  **Other Runtime Allocations:** This includes the operating system, the LLM inference framework itself (e.g., llama.cpp, vLLM), and any intermediate activations or buffers. These are generally smaller but can add up.\\n\\nThis framework aims to help users anticipate potential VRAM bottlenecks before attempting to load a model. Remember, no specific model or runtime was tested; this is a conceptual guide.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"Create a technical Reddit post outlining a hypothetical VRAM planning checklist for a 12GB GPU. Explicitly state the hypothetical nature of the scenario and that no actual testing was performed. Structure the body to separate allocations for model weights, KV cache, and other runtime needs. Keep the title restrained and the body within the word count. Ensure fact references are correctly cited.\"\n    },\n    {\n      \"title\": \"Structuring VRAM Usage: A Hypothetical Guide for 12GB Local LLM Setups\",\n      \"body\": \"This guide presents a hypothetical framework for VRAM management on a 12 GB GPU when running local LLMs. It's crucial to understand that this is a conceptual exercise; no specific models or runtimes were evaluated, and these are not measured results. The objective is to offer a structured way to think about VRAM allocation.\\n\\nWe propose categorizing VRAM usage into three distinct components:\\n\\n*   **Model Weights:** The size of the model's parameters is the largest factor, heavily influenced by the parameter count (e.g., 7B, 13B) and the precision used (e.g., FP16, INT8, 4-bit quantization). A 12 GB card will necessitate careful consideration of quantization for larger models.\\n*   **KV Cache:** This dynamic allocation grows with the sequence length of the input and the batch size. Longer conversations or processing multiple requests concurrently will increase KV cache requirements.\\n*   **Runtime Overhead:** This encompasses the VRAM consumed by the operating system, the inference engine (like Transformers, llama.cpp), and any temporary buffers or activations generated during processing.\\n\\nBy considering these categories hypothetically, users can better anticipate potential VRAM constraints before deploying models. This is a planning aid, not a performance benchmark.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"Develop a second, distinct technical Reddit post on the same hypothetical VRAM planning topic. Maintain the hypothetical status and avoid any measured results. Focus on separating the three VRAM allocation types: model weights, KV cache, and runtime. Ensure the title is concise and the body adheres to the word count. Use the specified fact references.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 804,
+      "completion_tokens": 831,
+      "total_tokens": 1635,
+      "cost": 0.0004128,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004128,
+        "upstream_inference_prompt_cost": 8.04e-05,
+        "upstream_inference_completions_cost": 0.0003324
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

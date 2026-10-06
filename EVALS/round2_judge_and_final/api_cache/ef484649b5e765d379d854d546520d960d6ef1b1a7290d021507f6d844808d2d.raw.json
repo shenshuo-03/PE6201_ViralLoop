@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111708-qt9yYcxx0Xo51xAqB0zX",
+  "object": "chat.completion",
+  "created": 1791111708,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Understanding a Short January 2025 Perplexity Test on DeepSeek R1 Models and Its Limits\",\n      \"body\": \"A January 2025 user shared a very short perplexity test on DeepSeek R1 models with different numbers of experts. The test only covered 8 blocks out of about 560, so its results are very limited. Perplexity measures how well a model predicts text, but it doesn’t allow the model to show step-by-step reasoning, which is important for some models. Because of this, perplexity might not fairly reflect reasoning ability. To check actual reasoning, one could use tasks that require explaining answers or solving problems step-by-step. This test is a starting point but not a full evaluation.\",\n      \"fact_refs\": [\"F1\", \"F2\"]\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2696,
+    "completion_tokens": 181,
+    "total_tokens": 2877,
+    "cost": 0.001368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001368,
+      "upstream_inference_prompt_cost": 0.0010784,
+      "upstream_inference_completions_cost": 0.0002896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

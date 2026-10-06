@@ -1,0 +1,68 @@
+{
+  "topic": "MiniSearch capabilities and local LLM integration",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "To understand the features of MiniSearch and how it can be configured to work with local inference engines.",
+  "context": "A community member is sharing an update about MiniSearch, a tool for web research that uses LLMs. The update highlights new features and options for integrating with various local and cloud inference servers.",
+  "motivation": "This question is worth discussing to explore how MiniSearch can enhance web research for local LLM users and to understand the practicalities of its integration with different inference setups.",
+  "desired_response": "A discussion about the features of MiniSearch, its potential benefits for web research, and the user experience of integrating it with local LLM inference engines like LM Studio or Ollama.",
+  "speaker_relationship_to_source": "Reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "MiniSearch has been updated to gather more textual and graphical results for grounded answers in follow-up questions.",
+      "evidence_quote": "every follow-up question gathers more textual and graphical results to provide grounded answers.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "The tool keeps a list of all collected links and images during a session.",
+      "evidence_quote": "All links and images collected during a session will keep being listed",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "The chat context is managed using a sliding window, keeping it under 4k tokens.",
+      "evidence_quote": "the chat runs on a sliding window where the context is always kept under 4k tokens.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "The web application is optimized for mobile browsers.",
+      "evidence_quote": "the web app is optimized to work on mobile browsers",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "MiniSearch can be run locally via Docker or through a public Hugging Face Space instance.",
+      "evidence_quote": "you can run it on your machine via Docker, but for those willing to try without installing anything, there's a public instance available",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F6",
+      "text": "Users can select 'Remote server (API)' to use local inference engines or cloud servers.",
+      "evidence_quote": "select *\"Remote server (API)\"* in the *\"AI Processing Location\"* menu option",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "MiniSearch aims to improve web research by providing more comprehensive results.",
+    "The tool offers flexibility in how users process AI, supporting both browser-based and remote inference.",
+    "Configuration for remote servers requires API Base URL, Access Key, and Model selection."
+  ],
+  "forbidden_claims": [
+    "MiniSearch guarantees a specific level of research accuracy.",
+    "The tool has been tested for performance on all mobile devices.",
+    "Running MiniSearch locally via Docker is simpler than using the Hugging Face Space.",
+    "The 4k token limit is a universal constraint for all LLM interactions."
+  ],
+  "essential_limitations": [
+    "The exact system memory limit for the local instance is not specified.",
+    "Performance on mobile browsers is described as 'probably' sufficient, not guaranteed.",
+    "The specific LLMs used by the default browser-based processing are not detailed."
+  ],
+  "missing_information": [
+    "Details on the specific small LLMs used for default browser processing.",
+    "User experiences with the 'Remote server (API)' configuration for various local inference engines.",
+    "Information on the 'graphical results' mentioned in the update."
+  ]
+}

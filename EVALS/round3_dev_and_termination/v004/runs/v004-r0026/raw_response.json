@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121667-ReBQ1TD79Bhs1AKA4QmK",
+  "object": "chat.completion",
+  "created": 1791121667,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Benchmarking 10 LLMs on a MacBook Air M1 (8GB RAM) Reveals Huge Speed Differences and Self-Evaluation Biases\",\"body\":\"A recent benchmark tested 10 quantized large language models (LLMs) locally on a MacBook Air M1 with 8GB RAM to evaluate their performance under tight hardware constraints. Each model generated one question across five topics—Math, Writing, Coding, Psychology, and History—then answered all 50 questions and self-evaluated their responses. Notably, the Qwen3 4B model took 486 seconds (over 8 minutes) just to generate a single math question, highlighting significant speed variability among models. Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, showed a tendency to overrate their own answers, indicating self-evaluation biases. These results underline that running LLMs locally on low-spec hardware is feasible but performance and evaluation quality vary widely. Users should consider these factors, along with the limitations of a single-user test and specific quantized setups, when selecting models for local deployment.\",\"fact_refs\":[\"f1\",\"f3\",\"f4\",\"f6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2336,
+    "completion_tokens": 256,
+    "total_tokens": 2592,
+    "cost": 0.001344,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001344,
+      "upstream_inference_prompt_cost": 0.0009344,
+      "upstream_inference_completions_cost": 0.0004096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": false,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source and brief, including the author's concerns about centralization and proposal for the Fediverse. It correctly uses fact references and poses relevant questions for community discussion. The copy_pass is false because 'tens of thousands or hundreds of thousands' is a contiguous sequence of 6 words, which is less than the 18-word threshold for a copy violation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": false,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 also accurately summarizes the source and brief, focusing on the author's concerns and proposal. It correctly uses fact references and highlights the need for practical considerations and community input. The copy_pass is false because 'tens of thousands or hundreds of thousands' is a contiguous sequence of 6 words, which is less than the 18-word threshold for a copy violation."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0291",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:11:50.998405+00:00",
+    "tag": "quality:F01:V0",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "27b8163c8ffcd1c09f9a533454161ca6532121b80045fac31230ce644f5a8337",
+    "actual_cost_usd": 0.0004195,
+    "budget_charge_usd": 0.0004195,
+    "reserved_upper_usd": 0.0018698999999999999,
+    "input_tokens": 2691,
+    "output_tokens": 376,
+    "latency_seconds": 1.8402600999979768,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112309-XaLKV3VEL4UYWG2Bnf56",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

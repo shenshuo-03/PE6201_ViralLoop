@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Tie",
+    "usefulness": "A",
+    "credibility": "Tie",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Post A is more specific by directly referencing the model name (SmolLM3) and the framework (MistralRS) in its title and body, aligning better with the brief's goal of discussing their integration. Post B is more generic, referring to 'a reported 3 billion parameter model' and 'a framework', which reduces its relevance and specificity. Both posts accurately reflect the facts provided in the brief and maintain the appropriate speaker relationship and limitations. Post A's questions are more concrete and directly tied to the reported features, making it more useful for the target audience of local LLM enthusiasts looking for practical insights."
+    },
+    "usage": {
+      "run_id": "v002-r0105",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:00.055729+00:00",
+      "tag": "judge_calibration:CP14:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "2c0e046c777823c0c6f36529e4bc7c3b69e793ce646638828095f7cf2290e0bd",
+      "actual_cost_usd": 0.0002787,
+      "budget_charge_usd": 0.0002787,
+      "reserved_upper_usd": 0.0011292,
+      "input_tokens": 1995,
+      "output_tokens": 198,
+      "latency_seconds": 1.321036000008462,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109678-XXllP0bRN3ZiqLyOjFQV",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it more directly asks about the practical tradeoffs and real-world scenarios of using SmolLM3 with MistralRS, aligning better with the 'local LLM enthusiasts' audience. It also more explicitly references the 'archived post' context and the specific performance metrics (105 T/s on M3 Max with AFQ4) and features (128k context, hybrid reasoning, multimodal, OpenAI server) from the facts, demonstrating higher specificity and usefulness. Post A is more generic in its questions, asking about 'main challenges or benefits' without as direct a link to the provided facts or the audience's likely practical concerns."
+    },
+    "usage": {
+      "run_id": "v002-r0106",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:01.498133+00:00",
+      "tag": "judge_calibration:CP14:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "949e3ffa96ec8e2764bc2f256cc2e738332aded1388c8d29d390eede678b88b7",
+      "actual_cost_usd": 0.0002823,
+      "budget_charge_usd": 0.0002823,
+      "reserved_upper_usd": 0.0011292,
+      "input_tokens": 1995,
+      "output_tokens": 207,
+      "latency_seconds": 1.4143654000072274,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109679-IWzrfNUUHWtO50rTHJD6",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

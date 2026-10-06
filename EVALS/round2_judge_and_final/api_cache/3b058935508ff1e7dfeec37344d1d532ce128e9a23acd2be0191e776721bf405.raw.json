@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112832-eSQpMov7WveJZhqpIivm",
+  "object": "chat.completion",
+  "created": 1791112832,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly embodies the brief's core motivation: a user with the exact hardware (F1) seeking targeted data on backends (F3), quantization methods (F6), and multi-GPU strategies for specific models (F2). It acknowledges prior inconclusive results (F4) and explicitly invites community response with relevant constraints (missing ROCm/driver details). Draft B reports the same hardware and models but frames them as 'a user' from 'a 2025 Reddit post'—creating distance and ambiguity about speaker relationship. The brief specifies the persona as 'reader of archived source; no claim of personally running reported tests,' yet B's phrasing ('I came across') and vague framing ('hints at notable speed differences') obscures whether B is the original poster or a community reader, violating credibility. B also omits F6 (quantization inquiry) and F4 (prior inconclusive experiments), reducing specificity and information value. A preserves all actionable facts, maintains clear speaker relationship (community reader seeking help), and structures the post as a genuine question the audience can respond to. B reads as a secondhand report rather than a motivated inquiry, weakening community fit and usefulness.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2462,
+    "completion_tokens": 345,
+    "total_tokens": 2807,
+    "cost": 0.004187,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004187,
+      "upstream_inference_prompt_cost": 0.002462,
+      "upstream_inference_completions_cost": 0.001725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

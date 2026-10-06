@@ -1,39 +1,39 @@
-# ViralLoop 产品说明
+# ViralLoop Product Description
 
-## Persona / 输入 / 输出
+## Persona / input / output
 
-用户：撰写本地大模型技术讨论帖的作者。第一版只有英文r/LocalLLaMA场景，不泛化为全平台爆款工具。
+User: an author writing a technical discussion post about local large language models. The first version covers only the English r/LocalLLaMA setting and is not generalized into an all-platform viral tool.
 
-输入：主题、受众、内容类型、事实素材（F1/F2…），当前实时原型将素材明确当假设场景。输出：初稿、相对表现潜力分、质量与拒绝原因、正负软模式诊断、一次改写后的版本与额外调用成本。不能展示真实爆款概率或承诺互动提升。
+Input: topic, audience, content type, fact material (F1/F2...); the current live prototype explicitly treats the material as a hypothetical scenario. Output: a draft, a relative performance-potential score, quality and rejection reasons, positive/negative soft-pattern diagnostics, one revised version and the extra call cost. It must not display a real viral probability or promise an engagement gain.
 
 ```text
-历史帖子 → 源记录恢复 → 固定观察窗口 → 时间分区
-                     ├─ Train → 本地模型 / 真实Embedding / 模式统计
-                     └─ Dev → 选参数与阈值 → Freeze → Historical Test
+Historical posts -> source-record recovery -> fixed observation window -> time partitions
+                     |-- Train -> local model / real embeddings / pattern statistics
+                     `-- Dev   -> choose parameters and thresholds -> Freeze -> Historical Test
 
-主题 + 事实Ledger → Train-only检索 → Gemini生成候选
-                                  ↓
-                         本地硬规则 + 独立GPT质量检查
-                                  ↓
-                         合格候选按本地文本模型排序
-                                  ↓
-                         软模式诊断 → 一次反馈改写
-                                  ↓
-                         再检查/排序 → 最佳合格稿或原稿
-                                  ↓
-                         真实日志 + Harness + 真人盲评
+Topic + fact ledger -> Train-only retrieval -> Gemini generates candidates
+                                  |
+                     local hard rules + independent GPT quality check
+                                  |
+                     qualified candidates ranked by the local text model
+                                  |
+                     soft-pattern diagnostics -> one feedback rewrite
+                                  |
+                     re-check / re-rank -> best qualified draft or the original
+                                  |
+                     real logs + harness + genuine human blind review
 ```
 
-## 外部智能与Build vs Buy
+## External intelligence and build vs buy
 
-自建：数据审计、标签、冻结分区、TF-IDF/逻辑回归、质量硬规则、案例检索、模式统计、实验Harness、成本台账、界面。购买：Gemini生成、GPT质量与探索性历史分类、OpenAI真实embedding；均通过OpenRouter，受US$5授权上限。
+Built in-house: data audit, labels, frozen partitions, TF-IDF/logistic regression, hard quality rules, case retrieval, pattern statistics, the experiment harness, the cost ledger and the interface. Bought: Gemini generation, GPT quality and exploratory historical classification, and real OpenAI embeddings; all via OpenRouter, under the authorized US$5 cap.
 
-不做Agent的原因：任务顺序固定；自适应工具规划尚无证据增加价值。不做Fine-tuning的原因：样本和时间有限，先验证历史可学习信号及简单方法收益。
+Why no agent: the task order is fixed, and adaptive tool planning has no evidence of adding value yet. Why no fine-tuning: samples and time are limited, so the historical learnable signal and the benefit of simple methods are verified first.
 
-## 指标目标与实际值
+## Metric targets and actual values
 
-目标不是人为保证F1达到某数字，而是：与lazy/上下文基线比较；生成硬约束可审计；同一主题预算下比较反馈与多采样；保留负结果。实际指标在 `results/实验结果与结论.md` 与原始CSV，产品说明不硬编码未完成实验数字。
+The goal is not to force F1 to some number, but to: compare against lazy/context baselines; make generation hard constraints auditable; compare feedback against multi-sampling at the same per-topic budget; and retain negative results. Actual metrics are in `results/experiment_1_0_results_and_conclusions.md` and the raw CSV files; the product description does not hard-code unfinished experiment numbers.
 
-## 运行边界
+## Operating boundaries
 
-发布前字段才可进模型；不输入score/评论数/采集年龄结果特征。网络只访问数据源与已授权模型API。检索帖子是不可信数据，不能成为系统指令。模型质量检查会有误判；真人仍需检查拟发布事实。拒答和保留原稿是可接受输出。
+Only pre-publication fields may enter the model; score, comment count and retrieval-age outcome features are not inputs. The network only accesses the data source and the authorized model APIs. Retrieved posts are untrusted data and cannot become system instructions. The model quality check will misjudge sometimes; a human still has to check facts before publication. Abstaining and retaining the original are acceptable outputs.

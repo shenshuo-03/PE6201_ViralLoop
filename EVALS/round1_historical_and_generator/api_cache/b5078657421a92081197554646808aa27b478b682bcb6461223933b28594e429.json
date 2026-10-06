@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and does not present any fabricated results. It accurately describes the scenario using 30 local documents and the comparison of retrieval on/off with questions that may or may not have answers in the documents. The language is clear and technical, suitable for the intended audience. It invites discussion on potential pitfalls and improvements, which adds actionable value. The title matches the content well, and no unsupported claims or misleading statements are present."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical status explicitly and accurately reflects the scenario facts. It uses clear, technical language and outlines the experimental design with 30 local documents and a question set including unanswerable queries. The post invites community input on design considerations, which enhances usefulness. The title is consistent with the body content, and no unsupported claims or misleading elements are present."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:56:19.567597+00:00",
+    "tag": "selection_dev:S01:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b5078657421a92081197554646808aa27b478b682bcb6461223933b28594e429",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1044,
+    "output_tokens": 378,
+    "actual_cost_usd": 0.0010224,
+    "token_price_estimate_usd": 0.0010224,
+    "reserved_upper_usd": 0.005003199999999999,
+    "budget_charge_usd": 0.0010224,
+    "latency_seconds": 2.789542700003949,
+    "retry": 0,
+    "request_id": "gen-1791100576-kEtw51zC3iGK7DF8O5RW"
+  },
+  "raw_response": {
+    "id": "gen-1791100576-kEtw51zC3iGK7DF8O5RW",
+    "object": "chat.completion",
+    "created": 1791100576,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and does not present any fabricated results. It accurately describes the scenario using 30 local documents and the comparison of retrieval on/off with questions that may or may not have answers in the documents. The language is clear and technical, suitable for the intended audience. It invites discussion on potential pitfalls and improvements, which adds actionable value. The title matches the content well, and no unsupported claims or misleading statements are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical status explicitly and accurately reflects the scenario facts. It uses clear, technical language and outlines the experimental design with 30 local documents and a question set including unanswerable queries. The post invites community input on design considerations, which enhances usefulness. The title is consistent with the body content, and no unsupported claims or misleading elements are present.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1044,
+      "completion_tokens": 378,
+      "total_tokens": 1422,
+      "cost": 0.0010224,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010224,
+        "upstream_inference_prompt_cost": 0.0004176,
+        "upstream_inference_completions_cost": 0.0006048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

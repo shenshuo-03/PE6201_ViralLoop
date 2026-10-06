@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101526-vLcnSLt91G07fPW35Z06",
+  "object": "chat.completion",
+  "created": 1791101526,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Prompt Regression Testing: Design Considerations\",\n    \"body\": \"This post outlines a hypothetical framework for designing a prompt regression test suite for local LLMs. The objective is to establish a repeatable method for evaluating prompt efficacy without relying on pre-existing results. We propose using a fixed set of 12 test prompts, covering both directly answerable questions and cases where information is insufficient. The core idea is to compare the output of an old prompt against a new variant using identical model settings and parameters on the same hardware. This controlled comparison is crucial for isolating the impact of prompt changes. It's important to note that this is a conceptual design, and no actual performance improvements or measurements have been conducted or are available at this stage. The goal is to solicit feedback on the proposed testing methodology itself, before any implementation or data collection occurs. What are your thoughts on structuring such a test?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Explain the hypothetical nature of the test design. Detail the proposed structure using the fixed prompt set and controlled comparison. Emphasize the lack of current results. Invite discussion on the methodology.\"\n  },\n  {\n    \"title\": \"Structuring a Hypothetical Prompt Regression Test Suite for Local LLMs\",\n    \"body\": \"We are exploring a hypothetical approach to building a prompt regression test suite for local LLM deployments. The proposed method involves a controlled experiment using 12 predefined test prompts (F1). These prompts are designed to include scenarios with sufficient information for a direct answer, as well as cases where the provided context is insufficient to formulate a response. The core experimental procedure involves running both an existing prompt and a newly developed variant against the same LLM, using identical model settings and parameters. This ensures that any observed differences in output can be attributed to the prompt itself, rather than environmental factors. It must be stressed that this is a purely hypothetical exercise; no actual tests have been run, and no performance data or improvement metrics are currently available (F4). We aim to refine the testing strategy itself. Does this foundational structure for comparing prompt versions seem sound?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Introduce the topic as a hypothetical design. Describe the test suite structure, including the prompt types and the comparison method. Clearly state the experimental status and lack of results. Ask for feedback on the structural soundness.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3412,
+    "completion_tokens": 536,
+    "total_tokens": 3948,
+    "cost": 0.0005556,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005556,
+      "upstream_inference_prompt_cost": 0.0003412,
+      "upstream_inference_completions_cost": 0.0002144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

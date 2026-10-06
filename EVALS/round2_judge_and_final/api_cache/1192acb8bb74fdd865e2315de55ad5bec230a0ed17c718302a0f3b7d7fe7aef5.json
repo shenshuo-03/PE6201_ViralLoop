@@ -1,0 +1,42 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Short Perplexity Test Shows DeepSeek R1 Outperforms Distills Until 2 Experts, But Results Are Limited",
+        "body": "A perplexity test on DeepSeek R1 models with varying expert counts suggests the full model—even with aggressive quantization—beats normal distills, except when limited to 2 experts. The Virtuoso Medium V2 distill fell between the 3- and 4-expert DeepSeek configurations. However, this test only covered 8 blocks out of about 560, so the results are far from conclusive and should be taken cautiously.\n\nGiven the test’s narrow scope and the known limitations of perplexity for chain-of-thought models, how reliable do you think such short perplexity runs are for evaluating MoE models? Are there practical ways to extend these tests without excessive compute, or alternative metrics that might better reflect real-world performance?",
+        "fact_refs": [
+          "F1",
+          "F4",
+          "F5"
+        ]
+      },
+      {
+        "title": "DeepSeek R1 Perplexity Test Fails at High Expert Counts; How to Interpret NaNs and Limited Data?",
+        "body": "In a brief perplexity test from early 2025, DeepSeek R1 models with 10 and 12 experts produced NaN errors, preventing perplexity calculation. Meanwhile, models with fewer experts showed better performance than normal distills, with Virtuoso Medium V2 distill positioned between 3- and 4-expert DeepSeek results. The test was run on only 8 blocks out of roughly 560, so it’s a very limited snapshot.\n\nHas anyone encountered similar NaN failures when scaling expert counts in MoE models? What might be causing these errors, and do they reflect fundamental issues with model stability or just quirks of the test setup? Understanding this could help decide whether pushing expert counts higher is practical or if alternative approaches are needed.",
+        "fact_refs": [
+          "F1",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0213",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:06.990290+00:00",
+    "tag": "V2:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1192acb8bb74fdd865e2315de55ad5bec230a0ed17c718302a0f3b7d7fe7aef5",
+    "actual_cost_usd": 0.0014248,
+    "budget_charge_usd": 0.0014248,
+    "reserved_upper_usd": 0.007082799999999999,
+    "input_tokens": 1982,
+    "output_tokens": 395,
+    "latency_seconds": 3.2149661000003107,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111963-LVontS3kkDGbz11M1WvJ",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  }
+}

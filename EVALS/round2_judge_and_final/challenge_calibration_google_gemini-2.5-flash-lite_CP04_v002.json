@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "Tie",
+    "usefulness": "B",
+    "credibility": "Tie",
+    "overall": "B"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": true,
+    "usefulness": true,
+    "credibility": true,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it more directly asks a technical question about internal approaches and potential improvements, aligning better with the 'desired_response' and 'audience relevance' of the brief. Post A is good but slightly more general in its call for 'thoughts' and 'insights' without as strong a technical focus. Both posts accurately reflect the facts and limitations, but B's framing is more conducive to a technical discussion among LLM enthusiasts."
+    },
+    "usage": {
+      "run_id": "v002-r0085",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:32.886740+00:00",
+      "tag": "judge_calibration:CP04:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "3180e35eae1b618d304b12bb72f1003a716e950092c905887c11b892c658391b",
+      "actual_cost_usd": 0.0003048,
+      "budget_charge_usd": 0.0003048,
+      "reserved_upper_usd": 0.0013782,
+      "input_tokens": 2404,
+      "output_tokens": 161,
+      "latency_seconds": 1.2892738000082318,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109651-xK88ygPOiQywnc2uFYVZ",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Post A is better because it directly asks a follow-up question about technical approaches and architectures to improve spatial reasoning, which is more aligned with the brief's goal of exploring technical aspects and informing future development. Post B is more of a general inquiry. Both posts accurately reflect the facts and limitations mentioned in the brief, but A's framing is more conducive to a technical discussion."
+    },
+    "usage": {
+      "run_id": "v002-r0086",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:34.067810+00:00",
+      "tag": "judge_calibration:CP04:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "3d89d9fef8f766026fffa4fa684cbeed3a7fbb02e383a6133cb406d9da21f693",
+      "actual_cost_usd": 0.0003,
+      "budget_charge_usd": 0.0003,
+      "reserved_upper_usd": 0.0013782,
+      "input_tokens": 2404,
+      "output_tokens": 149,
+      "latency_seconds": 1.15672599998652,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109652-b1oo5exirKKovyEAeRBU",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

@@ -1,0 +1,320 @@
+{
+  "at": "2026-10-04T08:02:51.075333+00:00",
+  "topic": {
+    "id": "S01",
+    "split": "selection_dev",
+    "topic": "Designing a hypothetical RAG sanity check",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario uses 30 local documents.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Compare retrieval on and retrieval off using the same questions.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Some questions have no answer in the documents.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No actual accuracy results are available.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G4_both",
+  "generation_usage": {
+    "at": "2026-10-04T07:56:30.879873+00:00",
+    "tag": "selection_dev:S01:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "d13a2ba7a28b56dede27d5df7aa0b1e7c38a46759c4c7ef5f77f3875d01c314d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3303,
+    "output_tokens": 590,
+    "actual_cost_usd": 0.0005663,
+    "token_price_estimate_usd": 0.0005663,
+    "reserved_upper_usd": 0.0018835,
+    "budget_charge_usd": 0.0005663,
+    "latency_seconds": 3.33818859999883,
+    "retry": 0,
+    "request_id": "gen-1791100587-XfvxafudoDzl2yyvMvtx"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:56:33.853869+00:00",
+    "tag": "selection_dev:S01:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "00f59f8773fb39e2992348a58ca3d18f99990e0aa2cf1ec6cb4c4a5ddee3b0c0",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1016,
+    "output_tokens": 387,
+    "actual_cost_usd": 0.0010256,
+    "token_price_estimate_usd": 0.0010256,
+    "reserved_upper_usd": 0.0049172,
+    "budget_charge_usd": 0.0010256,
+    "latency_seconds": 2.9265088999964064,
+    "retry": 0,
+    "request_id": "gen-1791100591-djZWHhqaMma1xl02Zsi4"
+  },
+  "retrieved_ids": [
+    "1ixj21d",
+    "1l4c4hh",
+    "1ilkamr",
+    "1iyj7v1",
+    "1izii4y"
+  ],
+  "pattern_ids": [
+    "concrete_title__Tutorial / Guide",
+    "question_title__Tutorial / Guide",
+    "personal_early__Tutorial / Guide",
+    "link_present__Tutorial / Guide"
+  ],
+  "prompt_sha256": "8576041f0bb3bfb9fe58078c8e77f0cc9180fddedad912072d9ad9ec23e25016",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical RAG Sanity Check: Retrieval On vs. Off with Varied Questions",
+        "body": "This post outlines a hypothetical experiment to sanity-check a Retrieval Augmented Generation (RAG) setup. The core idea is to compare model responses to the same set of questions under two conditions: with the retrieval system active and with it deactivated. We'll use a collection of 30 local documents as the knowledge base. The questions posed will intentionally include some that have no direct answer within the provided documents, to test how the system handles unanswerable queries. \n\nIt is crucial to emphasize that this is a hypothetical scenario for discussion purposes. No actual measurements or results have been generated. The objective is to design a rigorous, yet simple, sanity check to understand the impact of retrieval on the model's output, particularly when faced with questions outside the document scope. \n\nHow would you structure such a comparison to gain meaningful insights into the RAG system's effectiveness and failure modes? What potential pitfalls should be considered in this hypothetical design?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Compare retrieval on/off. Use 30 local documents. Include questions with no answers. State hypothetical nature. Ask for discussion on structure and pitfalls."
+      },
+      "performance_score": 0.23737425735207046,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and aligns well with the provided facts (30 documents, retrieval on/off, unanswerable questions, no actual results). The language is clear and technical, suitable for the target audience. It invites discussion on experimental design and pitfalls, which is useful and relevant. The title accurately reflects the content. The caveats about no real measurements are explicit, preserving scenario integrity. The post is credible and restrained, with no exaggeration or clickbait.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 157,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness",
+        "body": "We are exploring a hypothetical RAG sanity check designed to evaluate retrieval effectiveness. The proposed method involves presenting a specific question set against a corpus of 30 local documents. The critical comparison point is running these same questions with retrieval enabled versus disabled. This allows for a direct assessment of whether the retrieved context improves or alters the model's response, or if the model relies solely on its internal knowledge.\n\nThis experimental setup is purely hypothetical and serves as a thought exercise. No actual performance metrics or accuracy data are available. A key aspect of the question set is the inclusion of queries for which no answer exists within the 30 documents. This is intended to probe the system's behavior when faced with information gaps.\n\nWhat are the primary considerations when designing such a hypothetical RAG evaluation? How can we best interpret the differences in output between the retrieval-on and retrieval-off conditions, especially when some questions are unanswerable?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Propose hypothetical RAG evaluation. Use 30 documents. Compare retrieval on/off. Include unanswerable questions. Emphasize hypothetical nature. Solicit discussion on design considerations and interpretation."
+      },
+      "performance_score": 0.237814435313586,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully represents the hypothetical scenario and includes all key facts. The writing is clear and technical, appropriate for the audience. It emphasizes the hypothetical nature and lack of actual metrics, preserving necessary caveats. The title matches the body content well. The post is relevant and useful for readers interested in RAG evaluation design. It is credible and avoids clickbait or unsupported claims.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 158,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Designing a Hypothetical RAG Evaluation: Comparing Retrieval Effectiveness",
+      "body": "We are exploring a hypothetical RAG sanity check designed to evaluate retrieval effectiveness. The proposed method involves presenting a specific question set against a corpus of 30 local documents. The critical comparison point is running these same questions with retrieval enabled versus disabled. This allows for a direct assessment of whether the retrieved context improves or alters the model's response, or if the model relies solely on its internal knowledge.\n\nThis experimental setup is purely hypothetical and serves as a thought exercise. No actual performance metrics or accuracy data are available. A key aspect of the question set is the inclusion of queries for which no answer exists within the 30 documents. This is intended to probe the system's behavior when faced with information gaps.\n\nWhat are the primary considerations when designing such a hypothetical RAG evaluation? How can we best interpret the differences in output between the retrieval-on and retrieval-off conditions, especially when some questions are unanswerable?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Propose hypothetical RAG evaluation. Use 30 documents. Compare retrieval on/off. Include unanswerable questions. Emphasize hypothetical nature. Solicit discussion on design considerations and interpretation."
+    },
+    "performance_score": 0.237814435313586,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also faithfully represents the hypothetical scenario and includes all key facts. The writing is clear and technical, appropriate for the audience. It emphasizes the hypothetical nature and lack of actual metrics, preserving necessary caveats. The title matches the body content well. The post is relevant and useful for readers interested in RAG evaluation design. It is credible and avoids clickbait or unsupported claims.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 158,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

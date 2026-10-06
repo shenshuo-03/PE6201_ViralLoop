@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the test and aligns well with the provided facts. It explicitly mentions the two key checks (generation and network requests) and emphasizes no actual tests have been run. The language is clear and technical, suitable for the target audience. The title accurately reflects the content without exaggeration. The usefulness is moderate since it provides a structured checklist but no real data or results. Credibility is high due to explicit caveats and no unsupported claims."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft maintains a clear and direct statement of the hypothetical protocol and the two main verification steps, consistent with the facts. The title emphasizes the protocol aspect, which matches the body content. The hypothetical status is clearly stated. The language is precise and technical, appropriate for the audience. Usefulness is moderate as it outlines a verification process but lacks empirical data. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly presents a hypothetical framework with two verification points aligned with the facts. The title includes 'Integrity' to highlight network checks, consistent with the body. The hypothetical nature is explicitly stated, preserving necessary caveats. The language is clear and technical, suitable for the audience. Usefulness is moderate due to the conceptual nature without actual results. No unsupported claims or misleading elements are found."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:11:31.107175+00:00",
+    "tag": "final_test:T05:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "272ef3f896d17725116b6f7fa8b86026cc8fbd816e0a724bfdace543f8fad374",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1174,
+    "output_tokens": 566,
+    "actual_cost_usd": 0.0013752,
+    "token_price_estimate_usd": 0.0013752,
+    "reserved_upper_usd": 0.0053159999999999995,
+    "budget_charge_usd": 0.0013752,
+    "latency_seconds": 4.058522799998173,
+    "retry": 0,
+    "request_id": "gen-1791101487-narnPfExciF7sApRQlUE"
+  },
+  "raw_response": {
+    "id": "gen-1791101487-narnPfExciF7sApRQlUE",
+    "object": "chat.completion",
+    "created": 1791101487,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the test and aligns well with the provided facts. It explicitly mentions the two key checks (generation and network requests) and emphasizes no actual tests have been run. The language is clear and technical, suitable for the target audience. The title accurately reflects the content without exaggeration. The usefulness is moderate since it provides a structured checklist but no real data or results. Credibility is high due to explicit caveats and no unsupported claims.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft maintains a clear and direct statement of the hypothetical protocol and the two main verification steps, consistent with the facts. The title emphasizes the protocol aspect, which matches the body content. The hypothetical status is clearly stated. The language is precise and technical, appropriate for the audience. Usefulness is moderate as it outlines a verification process but lacks empirical data. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly presents a hypothetical framework with two verification points aligned with the facts. The title includes 'Integrity' to highlight network checks, consistent with the body. The hypothetical nature is explicitly stated, preserving necessary caveats. The language is clear and technical, suitable for the audience. Usefulness is moderate due to the conceptual nature without actual results. No unsupported claims or misleading elements are found.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1174,
+      "completion_tokens": 566,
+      "total_tokens": 1740,
+      "cost": 0.0013752,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013752,
+        "upstream_inference_prompt_cost": 0.0004696,
+        "upstream_inference_completions_cost": 0.0009056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

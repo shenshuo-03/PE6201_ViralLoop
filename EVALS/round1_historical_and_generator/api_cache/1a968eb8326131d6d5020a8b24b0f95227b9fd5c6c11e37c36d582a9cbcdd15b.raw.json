@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101214-toEUpLnGzxDNMKc9lOPo",
+  "object": "chat.completion",
+  "created": 1791101214,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and includes all necessary caveats about the lack of real testing and statistical significance. It accurately references the synthetic facts without adding unsupported claims. The title matches the content well, focusing on the memory versus accuracy trade-off. The language is clear and technical, suitable for the target audience. The post is relevant to readers interested in local LLM quantization trade-offs. Usefulness is moderate since it is a theoretical discussion without actionable measured data, but it invites thoughtful consideration. Credibility is high given the explicit disclaimers and careful framing. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully preserves the hypothetical scenario and includes all required caveats about the lack of real benchmarks or tests. The title accurately reflects the content, emphasizing the theoretical nature and the memory versus accuracy comparison. The writing is clear and technical, appropriate for the audience. It is relevant and moderately useful for readers considering quantization trade-offs conceptually. Credibility is maintained by explicit disclaimers. The clickbait score is low due to the restrained and factual title.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1016,
+    "completion_tokens": 435,
+    "total_tokens": 1451,
+    "cost": 0.0011024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011024,
+      "upstream_inference_prompt_cost": 0.0004064,
+      "upstream_inference_completions_cost": 0.000696
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

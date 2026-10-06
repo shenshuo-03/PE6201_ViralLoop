@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the lack of measured data and statistical uncertainty. It accurately references the synthetic inputs and does not introduce unsupported claims. The title matches the body content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in discussing potential causes of TTFT differences under controlled conditions. The credibility is strong given the explicit disclaimers and restrained tone. There is no clickbait or exaggeration."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains a clear and consistent presentation of the hypothetical scenario, explicitly stating the synthetic nature of the data and the absence of throughput, accuracy, or statistical measurements. The title accurately reflects the content. The language is clear and technical, appropriate for the intended audience. The post is relevant and useful for stimulating technical discussion on possible causes of TTFT differences. The credibility is preserved by the explicit caveats and lack of unsupported claims. No clickbait elements are present."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:47:49.152072+00:00",
+    "tag": "tune_dev:D02:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "a6736762b69a635b97a8214735ed5f9bf2e596b4979bae522354340cd26501d5",
+    "status": "success",
+    "input_tokens": 939,
+    "output_tokens": 410,
+    "actual_cost_usd": 0.0010316,
+    "token_price_estimate_usd": 0.0010316,
+    "reserved_upper_usd": 0.004748799999999999,
+    "budget_charge_usd": 0.0010316,
+    "latency_seconds": 2.9358863000088604,
+    "retry": 0,
+    "request_id": "gen-1791100066-GzE7BibdujRWq507HtFI"
+  },
+  "raw_response": {
+    "id": "gen-1791100066-GzE7BibdujRWq507HtFI",
+    "object": "chat.completion",
+    "created": 1791100066,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about the lack of measured data and statistical uncertainty. It accurately references the synthetic inputs and does not introduce unsupported claims. The title matches the body content well. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers interested in discussing potential causes of TTFT differences under controlled conditions. The credibility is strong given the explicit disclaimers and restrained tone. There is no clickbait or exaggeration.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains a clear and consistent presentation of the hypothetical scenario, explicitly stating the synthetic nature of the data and the absence of throughput, accuracy, or statistical measurements. The title accurately reflects the content. The language is clear and technical, appropriate for the intended audience. The post is relevant and useful for stimulating technical discussion on possible causes of TTFT differences. The credibility is preserved by the explicit caveats and lack of unsupported claims. No clickbait elements are present.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 939,
+      "completion_tokens": 410,
+      "total_tokens": 1349,
+      "cost": 0.0010316,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010316,
+        "upstream_inference_prompt_cost": 0.0003756,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

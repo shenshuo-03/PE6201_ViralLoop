@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature and the specific slowdown when increasing context length on a 16 GB GPU. It accurately references the lack of model/runtime details and absence of evidence for driver or memory issues. The technical terms are used appropriately, and the question invites relevant technical discussion. The writing is mostly clear and concise, with minor room for tightening phrasing. The post is highly relevant to the target audience and credible given the explicit caveats. The title matches the body content well and is not clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft maintains clear and direct language, emphasizing the troubleshooting focus and hypothetical status. It correctly includes all necessary caveats and fact references. The title is concise and descriptive, matching the body content. The technical question is well posed and relevant. The post is credible and useful for the intended audience. No unsupported claims or exaggerations are present."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft is well organized and clearly states the hypothetical scenario and observed slowdown. It preserves all necessary caveats and fact references. The technical question is focused and invites discussion on relevant LLM performance factors. The title accurately reflects the content without exaggeration. The language is clear and appropriate for the technical audience, making it credible and useful."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:16:29.301344+00:00",
+    "tag": "final_test:T10:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "bd1f98e8e0fc4286f44898281a746f12eb17b57d514815963a51b8037a1b742d",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1251,
+    "output_tokens": 551,
+    "actual_cost_usd": 0.001382,
+    "token_price_estimate_usd": 0.001382,
+    "reserved_upper_usd": 0.005330399999999999,
+    "budget_charge_usd": 0.001382,
+    "latency_seconds": 3.9161266000010073,
+    "retry": 0,
+    "request_id": "gen-1791101785-DtIJ1jo9au1h9hs8XOin"
+  },
+  "raw_response": {
+    "id": "gen-1791101785-DtIJ1jo9au1h9hs8XOin",
+    "object": "chat.completion",
+    "created": 1791101785,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and the specific slowdown when increasing context length on a 16 GB GPU. It accurately references the lack of model/runtime details and absence of evidence for driver or memory issues. The technical terms are used appropriately, and the question invites relevant technical discussion. The writing is mostly clear and concise, with minor room for tightening phrasing. The post is highly relevant to the target audience and credible given the explicit caveats. The title matches the body content well and is not clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft maintains clear and direct language, emphasizing the troubleshooting focus and hypothetical status. It correctly includes all necessary caveats and fact references. The title is concise and descriptive, matching the body content. The technical question is well posed and relevant. The post is credible and useful for the intended audience. No unsupported claims or exaggerations are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft is well organized and clearly states the hypothetical scenario and observed slowdown. It preserves all necessary caveats and fact references. The technical question is focused and invites discussion on relevant LLM performance factors. The title accurately reflects the content without exaggeration. The language is clear and appropriate for the technical audience, making it credible and useful.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1251,
+      "completion_tokens": 551,
+      "total_tokens": 1802,
+      "cost": 0.001382,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001382,
+        "upstream_inference_prompt_cost": 0.0005004,
+        "upstream_inference_completions_cost": 0.0008816
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

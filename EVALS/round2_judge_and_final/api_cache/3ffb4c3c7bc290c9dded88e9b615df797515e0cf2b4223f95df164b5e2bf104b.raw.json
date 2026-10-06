@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109861-fI6kF54t7D7dv57mtoS1",
+  "object": "chat.completion",
+  "created": 1791109861,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly addresses the brief's core motivation by naming LettuceDetect, specifying its technical foundation (ModernBERT, 4K tokens, 79.22% F1), and explicitly inviting community feedback on applications and real-time detection—actionable for local LLM enthusiasts. It preserves all allowed claims with proper source attribution (F1–F7) and respects limitations by reporting benchmark results as source-author claims without personal verification. Draft B strips away concrete details (no model name, no token limit, no benchmark score, no license type), reducing it to generic recap language ('known issue,' 'some detection methods,' 'can process long inputs'). This vagueness eliminates specificity and usefulness—readers cannot assess whether LettuceDetect fits their constraints or contribute informed feedback. Both avoid forbidden claims, but A's precision and direct community engagement versus B's abstraction creates a clear gap in information value and community fit for the stated audience.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2237,
+    "completion_tokens": 292,
+    "total_tokens": 2529,
+    "cost": 0.003697,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003697,
+      "upstream_inference_prompt_cost": 0.002237,
+      "upstream_inference_completions_cost": 0.00146
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

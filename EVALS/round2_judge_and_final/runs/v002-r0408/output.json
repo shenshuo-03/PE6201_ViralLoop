@@ -1,0 +1,67 @@
+{
+  "topic": "Performance of Merged LLMs",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Discuss the observed performance differences between a merged LLM (FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview) and its constituent models, specifically DeepSeek-R1-Distill-Qwen-32B, based on user-reported tests.",
+  "context": "A user on r/LocalLLaMA shared their experience with a new merged model, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, highlighting its performance on specific tasks compared to DeepSeek-R1-Distill-Qwen-32B. The user's tests involved a file-packing problem, a date difference calculation, and a river crossing riddle.",
+  "motivation": "Understanding how model merging impacts performance on specific tasks is crucial for users looking to optimize their local LLM setups. This discussion aims to explore the user's findings and encourage further investigation into the effectiveness of merged models.",
+  "desired_response": "A discussion about the user's observations regarding the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model, comparing its performance on the presented tasks to DeepSeek-R1-Distill-Qwen-32B, and considering the implications of model merging.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model reportedly provided four correct combinations for a file-packing problem, unlike the DeepSeek-R1-Distill-Qwen-32B model.",
+      "evidence_quote": "This is first time I saw a local model give me 4 correct answers for this question, it's amazing",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "For a date difference calculation (12-12-1971 to 18-4-2024), the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model reported 19,121 days, which the source author states is correct.",
+      "evidence_quote": "The number of days between December 12, 1971, and April 18, 2024, is 19,121 days",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "The DeepSeek-R1-Distill-Qwen-32B model provided an incorrect answer of 19,486 days for the same date difference calculation.",
+      "evidence_quote": "19,486",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "Regarding a river crossing riddle, the FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model offered a solution that the source author found to be correct, involving a single trip.",
+      "evidence_quote": "which is the correct answer, they only need to cross the river once",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "The DeepSeek-R1-Distill-Qwen-32B model reportedly entered an infinite loop when attempting the river crossing riddle.",
+      "evidence_quote": "fell into an infinite loop, I had to terminate it",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F6",
+      "text": "The FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model is described as a fusion or merge of DeepSeekR1, QwQ, and SkyT1 32B models.",
+      "evidence_quote": "This model is a Fusion(merge?) of DeepSeekR1 & QwQ & SkyT1 32B models.",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "The user reported FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview performed well on specific tasks.",
+    "The user observed differences in output quality between FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview and DeepSeek-R1-Distill-Qwen-32B.",
+    "The user's tests included a file packing problem, a date calculation, and a logic riddle."
+  ],
+  "forbidden_claims": [
+    "The FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview model is definitively superior to all other models.",
+    "The specific hardware or software versions used by the source author are known.",
+    "The source author's motivations for testing were explicitly stated beyond sharing observations."
+  ],
+  "essential_limitations": [
+    "The specific test environment (hardware, exact software versions) beyond 'ollama + IQ4_XS + 32k context + Q8_0 KV Cache' is not fully detailed.",
+    "The source author's personal experience and subjective evaluation are the primary basis for the claims.",
+    "The tests were conducted by the source author and are not independently verified."
+  ],
+  "missing_information": [
+    "Detailed specifications of the 'IQ4_XS' quantization or 'Q8_0 KV Cache'.",
+    "The exact prompts used for each test case, beyond the problem descriptions.",
+    "Information on whether the source author has tested other merged models extensively."
+  ]
+}

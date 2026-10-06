@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112862-GjaMJ90ry8TJyWzOT2ud",
+  "object": "chat.completion",
+  "created": 1791112862,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Draft A frames the post as a yes/no viability question but underutilizes the source material—it mentions only llama.cpp and Open WebUI (F1, F2) while omitting the concrete workflow details (llama-swap, config.yaml, model organization benefits from F3–F5) that make the alternative setup actionable and discussable. Draft B incorporates all five facts, explicitly naming the model management layer (llama-swap + config.yaml) and the specific pain point addressed (model location/naming), which gives the community concrete details to evaluate and respond to. Both correctly attribute claims to the source author without overstating generalizability, and both acknowledge the mid-2025 date and missing hardware/performance data. However, B's inclusion of the full workflow—inference engine, model loader, frontend, and file organization—creates a more complete picture of what the alternative entails, making it more useful for enthusiasts considering the transition. A's narrower scope (just inference + frontend) loses the distinguishing feature (llama-swap's centralized config) that explains why the author found the switch easier. Both avoid forbidden claims, but B's specificity about the config.yaml and model sourcing workflow better serves the stated goal of understanding 'concrete issues and benefits observed.'\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2121,
+    "completion_tokens": 358,
+    "total_tokens": 2479,
+    "cost": 0.003911,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003911,
+      "upstream_inference_prompt_cost": 0.002121,
+      "upstream_inference_completions_cost": 0.00179
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

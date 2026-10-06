@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100644-Oo0xvejkWOnM7yx17LMM",
+  "object": "chat.completion",
+  "created": 1791100644,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly references the key facts (F1, F2, F3). It carefully avoids making unsupported claims or implying actual measured results. The title matches the body content well. The discussion is clear and technical, suitable for the intended audience, and invites constructive input on what would constitute evidence for privacy improvements. The caveats about lack of audits and the need to check logs and network connections are preserved. The post is relevant and credible for readers interested in local LLM privacy, with no exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and references the provided facts (F1, F2, F3). It maintains the necessary caveats about the lack of audits and the synthetic nature of the input. The title aligns well with the body content, which is clearly written and focused on a technical audience. It emphasizes key points such as prompt isolation, log verification, and network activity checks, and invites further discussion on verification steps. The post is relevant and credible without overstating claims or using clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1033,
+    "completion_tokens": 429,
+    "total_tokens": 1462,
+    "cost": 0.0010996,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010996,
+      "upstream_inference_prompt_cost": 0.0004132,
+      "upstream_inference_completions_cost": 0.0006864
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Round 1 Explainer — Historical Signal Is Real, Generation Gain Is Not
 
-Working directory: `实验1.0版` → packaged as `CODE/round1_generation_pipeline`, `DATA/round1_dataset`, `EVALS/round1_historical_and_generator`.
+Round 1 workspace → packaged as `CODE/round1_generation_pipeline`, `DATA/round1_dataset`, `EVALS/round1_historical_and_generator`.
 
 ## What Round 1 asked
 

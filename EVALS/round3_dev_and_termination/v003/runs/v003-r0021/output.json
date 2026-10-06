@@ -1,0 +1,17 @@
+{
+  "drafts": [
+    {
+      "title": "Considering Nvidia M60 vs M40 for budget local LLM inference: Is M60’s 8x2GB memory a real bottleneck?",
+      "body": "I’m hypothetically looking at Nvidia GPUs for running local LLMs on a budget around $100. The M40 is often recommended as the go-to for low-budget rigs, but I’m seeing M60s at similar or sometimes lower prices. Theoretically, the M60 offers almost twice the performance of the M40, which sounds promising. However, the M60’s memory is split as 8x2GB across two GPUs, which many dismiss as unusable for LLM inference. \n\nGiven that modern tools like Kobold and Ollama support multi-GPU inference, I’m wondering if this memory configuration really matters in practice. Even if some performance is lost to PCIe overhead, the M60 might still be good value. With 16GB total, I’d hope to run half-decent models at okay speeds. \n\nHas anyone here worked with M60 setups or similar multi-GPU configurations for LLMs? Does the 8x2GB split significantly limit inference capabilities, or could the M60 be a viable alternative to the M40 for budget-conscious local inference?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    }
+  ]
+}

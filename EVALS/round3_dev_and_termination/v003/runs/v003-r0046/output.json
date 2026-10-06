@@ -1,0 +1,13 @@
+{
+  "drafts": [
+    {
+      "title": "Pros and cons of tabbed chats vs single-chat with persistent history for local LLM UIs?",
+      "body": "I'm designing a local LLM app and trying to decide between two UI approaches: one with tabbed chats where each tab independently remembers its system prompt and sampling settings, and another with a single chat interface that saves all conversations persistently in a sidebar. The tabbed approach, as seen in Sigil, offers isolated sessions which might help users experiment with different models or prompts without confusion. On the other hand, a single-chat view with persistent storage could simplify navigation by consolidating history, letting users revisit or delete chats non-destructively. Sigil also emphasizes a fast, minimal, and easy-to-run design, which might influence how complex the UI should be. Given these points, which interface do you think would be more intuitive and efficient for users exploring various prompts and models locally? Are there trade-offs in feature management or ease of use that stand out in either approach?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    }
+  ]
+}

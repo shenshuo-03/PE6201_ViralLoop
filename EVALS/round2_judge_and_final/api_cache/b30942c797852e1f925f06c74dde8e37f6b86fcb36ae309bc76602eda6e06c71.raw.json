@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112631-duzqyLLTmEMLRAvZeWQ1",
+  "object": "chat.completion",
+  "created": 1791112631,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Exploring KokoroSharp: A New Local, Cross-Platform TTS Engine in C#\",\"body\":\"I came across a post from early 2025 about KokoroSharp, a local text-to-speech engine written in C# that's cross-platform and available via NuGet. The author was motivated by a new high-performance audio model called Kokoro and developed this TTS engine, describing it as beginner-friendly yet flexible. The source code is open on GitHub, and example usage includes loading a model and selecting a voice named \\\"af_heart.\\\" While the original poster was also working on an offline AI voice chat app nearing release, detailed performance metrics or hardware requirements for KokoroSharp weren't provided. For those interested in offline speech synthesis or integrating TTS with local LLMs, what do you think are the practical challenges or opportunities with this engine? Has anyone explored KokoroSharp or similar local TTS solutions in C# or other languages?\",\"fact_refs\":[\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},{\"title\":\"KokoroSharp TTS Engine in C#: Potential and Questions for Local LLM Use\",\"body\":\"A community member shared about KokoroSharp, a local, cross-platform TTS engine built in C# and released as a NuGet package. The project was inspired by a new audio model named Kokoro, and the author aimed to create something both beginner-friendly and flexible. The code is open source on GitHub, with example code showing how to load the model and obtain a voice called \\\"af_heart.\\\" Although the author mentioned working on an offline AI voice chat app that was nearly ready, specifics about KokoroSharp’s performance, supported audio models, and hardware needs remain unclear. For those experimenting with local LLMs and offline voice applications, what features or improvements would you want from a local TTS engine like KokoroSharp? Are there known limitations or integration challenges you’ve encountered with similar tools?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1446,
+    "completion_tokens": 430,
+    "total_tokens": 1876,
+    "cost": 0.0012664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012664,
+      "upstream_inference_prompt_cost": 0.0005784,
+      "upstream_inference_completions_cost": 0.000688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

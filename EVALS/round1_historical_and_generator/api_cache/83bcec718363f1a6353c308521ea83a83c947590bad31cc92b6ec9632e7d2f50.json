@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and includes all relevant caveats about lack of throughput, accuracy, and statistical data. The title matches the content well. The explanation is clear and technical, suitable for the target audience. It avoids unsupported claims and does not overstate the findings. The post is relevant to readers interested in local LLaMA performance comparisons. The usefulness is moderate since it is a hypothetical scenario without actionable measured data, but it invites further discussion. Credibility is high due to explicit caveats and restrained language. Clickbait is minimal."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly communicates the hypothetical setup and includes all necessary caveats about the lack of real measurements and additional metrics. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It avoids unsupported claims and maintains scenario status. The post is relevant and moderately useful for readers interested in theoretical latency differences. Credibility is maintained by explicit disclaimers. Clickbait is low."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:52:51.946970+00:00",
+    "tag": "tune_dev:D02:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "83bcec718363f1a6353c308521ea83a83c947590bad31cc92b6ec9632e7d2f50",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 989,
+    "output_tokens": 407,
+    "actual_cost_usd": 0.0010468,
+    "token_price_estimate_usd": 0.0010468,
+    "reserved_upper_usd": 0.0049072,
+    "budget_charge_usd": 0.0010468,
+    "latency_seconds": 2.991454100003466,
+    "retry": 0,
+    "request_id": "gen-1791100369-45uow74Cn80BTZRi6mlA"
+  },
+  "raw_response": {
+    "id": "gen-1791100369-45uow74Cn80BTZRi6mlA",
+    "object": "chat.completion",
+    "created": 1791100369,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and includes all relevant caveats about lack of throughput, accuracy, and statistical data. The title matches the content well. The explanation is clear and technical, suitable for the target audience. It avoids unsupported claims and does not overstate the findings. The post is relevant to readers interested in local LLaMA performance comparisons. The usefulness is moderate since it is a hypothetical scenario without actionable measured data, but it invites further discussion. Credibility is high due to explicit caveats and restrained language. Clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical setup and includes all necessary caveats about the lack of real measurements and additional metrics. The title accurately reflects the content. The language is clear and technical, appropriate for the audience. It avoids unsupported claims and maintains scenario status. The post is relevant and moderately useful for readers interested in theoretical latency differences. Credibility is maintained by explicit disclaimers. Clickbait is low.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 989,
+      "completion_tokens": 407,
+      "total_tokens": 1396,
+      "cost": 0.0010468,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010468,
+        "upstream_inference_prompt_cost": 0.0003956,
+        "upstream_inference_completions_cost": 0.0006512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

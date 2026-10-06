@@ -1,0 +1,16 @@
+{
+  "drafts": [
+    {
+      "title": "How does llama.cpp's HTTP server file-upload button handle file content with prompts?",
+      "body": "I've been looking into the file-upload feature of llama.cpp's HTTP server and trying to understand its exact behavior. According to a user report, the file-upload button might concatenate the uploaded file's content with the direct prompt, treating the combined text as a single prompt. The user wanted to ask questions about the file's contents and, over about 15 experiments, sometimes got correct answers, but other times the model seemed to interpret the file contents instead of the query. They also hoped for reproducible results—getting the same answers with the same prompts in new conversations—but this wasn't achieved. The exact mechanics of how the server processes the uploaded file alongside user prompts remain unclear, as do the reasons for the inconsistent responses. Has anyone else experimented with this feature in llama.cpp's HTTP server? How does your experience compare regarding the handling of file content and prompt interaction, and do you know if the file content is actually concatenated or integrated differently? Any insights into improving consistency or reproducibility when querying uploaded files would be very helpful.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/"
+    }
+  ]
+}

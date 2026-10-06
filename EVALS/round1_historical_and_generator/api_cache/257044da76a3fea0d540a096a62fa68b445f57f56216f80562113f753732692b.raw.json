@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101495-9m6ssYGYRWsBWPmAlHvW",
+  "object": "chat.completion",
+  "created": 1791101495,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly and accurately describes the hypothetical prompt regression testing framework, referencing all provided facts (F1-F4). It maintains the hypothetical status and does not claim any measured results. The language is technical yet accessible, suitable for the target audience. The content is relevant and useful for readers interested in designing prompt regression tests for local LLMs. The title matches the body content well, and there is no exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully follows the provided facts and clearly states the hypothetical nature of the experiment. It explains the test setup and rationale in a straightforward manner, making it useful and relevant for the intended audience. The title accurately reflects the content, and the tone is restrained and technical without any misleading claims.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1008,
+    "completion_tokens": 359,
+    "total_tokens": 1367,
+    "cost": 0.0009776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009776,
+      "upstream_inference_prompt_cost": 0.0004032,
+      "upstream_inference_completions_cost": 0.0005744
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

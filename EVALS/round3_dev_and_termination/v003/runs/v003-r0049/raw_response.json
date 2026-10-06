@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118695-HMq9V6EdFqiZuZ49ujpl",
+  "object": "chat.completion",
+  "created": 1791118695,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"Draft 0 accurately reflects the source material and adheres to the brief's constraints. It correctly identifies SOCAMM's advantages (bandwidth, latency, power, form factor) and limitations (not full-scale adoption) as described in the source. The speaker's role as a community member seeking input on a hypothetical product is maintained, and the discussion of LLW and LPCAMM is also aligned with the source. No unsupported or unverified claims are made, and the title and body are consistent.\"}, {\"index\": 1, \"factual_pass\": true, \"speaker_pass\": true, \"essential_context_pass\": true, \"title_body_pass\": true, \"unsupported_claims\": [], \"unverified_claims\": [], \"reason\": \"Draft 1 also accurately reflects the source material and adheres to the brief. It correctly summarizes SOCAMM's benefits and limitations, and mentions LLW and LPCAMM as other considered options. The speaker's hypothetical scenario and request for community input are clear. The title and body are consistent and do not introduce unsupported or unverified claims.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3595,
+    "completion_tokens": 286,
+    "total_tokens": 3881,
+    "cost": 0.0004739,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004739,
+      "upstream_inference_prompt_cost": 0.0003595,
+      "upstream_inference_completions_cost": 0.0001144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

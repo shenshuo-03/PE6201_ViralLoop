@@ -1,10 +1,12 @@
 # CODE/README — Environment, Setup and Reproduction
 
-> **Verification status.** Two tiers, kept separate on purpose.
+> **Verification status.** Three tiers, kept separate on purpose.
 >
-> **Verified — actually executed on 5 Oct 2026, in a clean virtual environment:** dependency installation (`pip install -r CODE/requirements.txt`), import of all ten third-party libraries, and a full syntax compile of all 50 Python files under `CODE/`. Cost US$0.00, no model API contacted. Raw output and its honest limits: **[`CODE/INSTALL_LOG.txt`](INSTALL_LOG.txt)**.
+> **Verified — actually executed, no API key, no cost:** `python CODE/run_all_checks.py` → **14/14 stages passed**. It compiles every module, runs every offline entry point with `OPENROUTER_API_KEY` removed from the environment, re-derives Round 1's one-shot final test and compares it with the frozen results (**bit-identical** — max absolute difference 0.0), re-runs Round 3's Attempt-2 validator (**29/29 checks pass**), and finishes by re-verifying that nothing it ran touched the archive (**5,370 frozen files still match their SHA-256 manifest**). Mechanism and limits: **[`CODE/REPRODUCTION.md`](REPRODUCTION.md)**.
 >
-> **Not re-run — marked `[NOT RE-RUN]` below:** the experiment commands that call model APIs. These were deliberately not re-executed, because the experiments are frozen and must not be re-run: a live re-run would consume paid API budget and could mutate the frozen outputs that the report's numbers come from. Every command name, flag and output path was read from the actual source — nothing is guessed — but the flag is honest about what was executed.
+> **Verified — dependency installation, in a clean virtual environment:** `pip install -r CODE/requirements.txt`, import of all ten third-party libraries, and a full syntax compile of every Python file under `CODE/`. Raw output and its honest limits: **[`CODE/INSTALL_LOG.txt`](INSTALL_LOG.txt)**.
+>
+> **Not re-run — marked `[NOT RE-RUN]` below:** the commands that make *paid* API calls. Re-issuing them would spend budget and could only produce different text, because the original runs used temperature > 0. The frozen outputs already in `EVALS/` are the run record.
 >
 > The end-to-end counts reported in the report are internally consistent with the frozen JSON/CSV artefacts in this repository.
 
@@ -140,6 +142,7 @@ python CODE/round2_v002/code_product/product_server.py
 | Round 3 Dev evidence | `EVALS/round3_dev_and_termination/` |
 | Figures | `REPORT/figures/` |
 | Split data | `DATA/round1_dataset/splits/` |
+| Reproduction scratch | `<round>/reproduced_run/` — output only, never submitted evidence |
 
 ## 6. Things that will not reproduce byte-for-byte
 
@@ -148,12 +151,15 @@ Stated plainly rather than hidden:
 1. **LLM outputs are non-deterministic.** Temperature > 0 was used. The frozen outputs in `EVALS/` are the actual run records; a fresh run will differ.
 2. **Round 2's protocol audit FAILED** (token cap exceeded ~22.5%; 11 manifests and 68 raw responses missing). Reproducing Round 2 exactly is therefore **not possible for those units** — the gap is part of the record.
 3. **Round 3's Final was never run.** There is nothing to reproduce.
-4. **Raw corpora and embeddings are excluded** for size. `data_pipeline.py` regenerates them from the documented upstream source.
+4. **The raw Reddit corpus is not redistributed** for size. `data_pipeline.py` regenerates it from the documented upstream source.
 5. **`vendor/` was excluded**, so Round 1 needs `pip install -r requirements.txt` instead of the vendored path.
+
+What *does* reproduce bit-for-bit is Round 1's final test: the packaged embedding vectors and the `api_cache` response caches carry it, which is why both are shipped rather than excluded.
 
 ## 7. Safety
 
 - Source material is treated as **data, never as instructions** (prompt-injection handling).
 - Fact and identity checks are deterministic rules, not model judgements.
 - There is **no automated publishing path** — human confirmation is required by design.
-- No secrets are committed. `.gitignore` excludes caches, virtualenvs and credential files.
+- No secrets are committed. `.gitignore` excludes virtualenvs, bundled libraries and credential files.
+- **The frozen evidence is write-protected.** A reproduction writes to `<round>/reproduced_run/`; only `VIRALLOOP_ALLOW_EVIDENCE_WRITE=1` opts out. `CODE/verify_frozen_evidence.py --check` proves afterwards that all 5,370 evidence files still match their SHA-256 manifest, and `CODE/verify_packaged_code.py` proves every change to frozen round code is declared. See **[`CODE/REPRODUCTION.md`](REPRODUCTION.md)**.

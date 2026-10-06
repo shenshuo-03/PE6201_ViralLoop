@@ -1,0 +1,454 @@
+{
+  "at": "2026-10-04T07:45:24.501637+00:00",
+  "topic": {
+    "id": "D01",
+    "split": "tune_dev",
+    "topic": "A hypothetical VRAM planning checklist",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has a 12 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The draft should separate model weights, KV cache, and other runtime allocations.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No actual model or runtime was tested.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "O1_resample",
+  "generation_usage": {
+    "at": "2026-10-04T07:45:20.168647+00:00",
+    "tag": "tune_dev:D01:O1_resample",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "8e8b281ac2a00f7aa4c233f18f18573ae94506fb3c1d42b9dd25c4cd89975397",
+    "status": "success",
+    "input_tokens": 1717,
+    "output_tokens": 1142,
+    "actual_cost_usd": 0.0006285,
+    "token_price_estimate_usd": 0.0006284999999999999,
+    "reserved_upper_usd": 0.0017383,
+    "budget_charge_usd": 0.0006285,
+    "latency_seconds": 4.345722000012756,
+    "retry": 0,
+    "request_id": "gen-1791099916-7lyDy3DVva93izOZ34VT"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:45:24.494846+00:00",
+    "tag": "tune_dev:D01:O1_resample:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c571551bb898b13b6a9e3c00c3711a6b40db5274e0d5273ac1ab26fa3c9a427b",
+    "status": "success",
+    "input_tokens": 1506,
+    "output_tokens": 592,
+    "actual_cost_usd": 0.0015496,
+    "token_price_estimate_usd": 0.0015496,
+    "reserved_upper_usd": 0.0058579999999999995,
+    "budget_charge_usd": 0.0015496,
+    "latency_seconds": 4.2859008999948855,
+    "retry": 0,
+    "request_id": "gen-1791099920-juINx5U7zkuAwqUoBFT5"
+  },
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical VRAM Budgeting: Separating Model Weights, KV Cache, and Runtime Needs",
+        "body": "When planning to run LLMs locally, especially on hardware with limited VRAM, a systematic approach to VRAM allocation is key. This guide outlines a hypothetical checklist, explicitly noting that no specific models or hardware were tested; this is a conceptual framework for planning.\n\nWe can divide VRAM usage into three primary categories: \n1.  **Model Weights:** The fundamental parameters of the LLM. Larger models require more VRAM.\n2.  **KV Cache:** Essential for inference, its size scales with context length and batch size. Longer contexts mean a larger KV cache.\n3.  **Other Runtime Allocations:** This includes intermediate activations, framework overhead (like PyTorch or TensorFlow), and any other dynamic memory needs during operation.\n\nFor a hypothetical 12 GB GPU, understanding these distinct allocations can help prevent Out-Of-Memory (OOM) errors. For example, a model with fewer parameters but a very long context might still exceed VRAM due to a large KV cache. This hypothetical breakdown aims to facilitate more informed VRAM budgeting before attempting to load a model.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+      },
+      "performance_score": 0.24555815558059593,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and avoids presenting any measured results or personal experience, preserving necessary caveats. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations as per the input facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is relevant and useful for readers planning local LLM deployment, providing a conceptual framework to avoid OOM errors. There is no exaggeration or misleading phrasing, so clickbait is minimal.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 164,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Conceptual VRAM Checklist for Local LLMs: A Hypothetical Planning Exercise",
+        "body": "Running LLMs locally often involves careful VRAM management. This post presents a hypothetical checklist for planning VRAM usage, emphasizing that this is a conceptual exercise and no actual hardware or models were tested.\n\nThe key is to segregate VRAM allocations. Consider these hypothetical categories for a system with a 12 GB GPU:\n\n*   **Model Weights:** The base memory footprint of the LLM's parameters.\n*   **KV Cache:** Memory used for key-value pairs during inference, which grows with context length and batch size. This can become a significant factor for longer conversations or processing.\n*   **Runtime Overhead:** This encompasses memory for activations, the inference engine itself (e.g., llama.cpp, TGI), and any temporary buffers needed during processing.\n\nBy conceptually separating these components, users can better estimate whether a particular LLM configuration might fit within their available VRAM. For instance, a smaller model might seem feasible, but a large KV cache required for extended context could push it over the limit. This hypothetical approach encourages proactive planning.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+      },
+      "performance_score": 0.24584711235494897,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also explicitly states the hypothetical nature and does not claim any real tests or results. It correctly divides VRAM into model weights, KV cache, and runtime overhead, consistent with the facts. The title matches the content well. The writing is clear and accessible for the intended technical audience. The post is relevant and useful for planning VRAM usage in local LLMs. There is no clickbait or misleading language.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 160,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Pre-computation VRAM Strategy: Hypothetical Breakdown for Local LLM Deployment",
+        "body": "Effective VRAM planning is crucial for successful local LLM deployment. This guide outlines a hypothetical strategy for budgeting VRAM, explicitly stating that it's a conceptual exercise and no actual tests were performed.\n\nTo manage VRAM efficiently on a hypothetical 12 GB GPU, we propose separating allocations into three key areas:\n\n1.  **Model Weights:** The static size of the LLM's parameters. This is often the largest single component.\n2.  **KV Cache:** Dynamic memory required for attention mechanisms during inference. Its size is directly influenced by the context window length and batch size.\n3.  **Other Runtime Allocations:** This umbrella term covers memory for intermediate computations (activations), the inference framework's own memory footprint, and any other transient memory needs.\n\nThis hypothetical separation helps in anticipating potential VRAM bottlenecks. For example, while a model's weights might fit, the demands of a large KV cache for long contexts could lead to Out-Of-Memory errors. Understanding these distinct components allows for more informed decisions about model selection and configuration prior to runtime.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+      },
+      "performance_score": 0.24613942791991358,
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft maintains the hypothetical framing and does not present any measured data, preserving necessary caveats. It correctly separates VRAM into model weights, KV cache, and other runtime allocations, consistent with the input facts. The title is consistent with the body content. The language is clear and technical, appropriate for the audience. The post is relevant and useful for readers planning local LLM deployment. No clickbait or deceptive language is present.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 165,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical VRAM Planning for Local LLMs: Separating Allocations",
+      "body": "This post outlines a hypothetical checklist for VRAM planning when running LLMs locally. It's crucial to understand that no specific models or hardware were tested; this is purely a conceptual guide based on common allocation needs.\n\nThe core idea is to break down VRAM usage into distinct categories: model weights, KV cache, and other runtime overhead. For a hypothetical 12 GB GPU, this separation is vital for preventing Out-Of-Memory (OOM) errors.\n\nModel weights are typically the largest consumer. The KV cache size scales with context length and batch size, becoming significant for longer sequences. Other allocations include activations, optimizer states (during training/finetuning, though less relevant for inference-focused planning), and framework overhead. \n\nUnderstanding these components allows for more informed decisions about which models or configurations might fit within available VRAM. For instance, a smaller model with a large KV cache might consume more VRAM than a larger model with a small cache. This framework is intended to facilitate discussion on pre-computation VRAM budgeting.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+    },
+    "performance_score": 0.25135498300973425,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any measured results or personal experience, preserving necessary caveats. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations, consistent with the provided facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers planning VRAM allocation conceptually, relevant to local LLM deployment, and credible due to explicit disclaimers and no unsupported claims. The clickbait score is low as the title is restrained and informative.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 162,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical VRAM Planning for Local LLMs: Separating Allocations",
+      "body": "This post outlines a hypothetical checklist for VRAM planning when running LLMs locally. It's crucial to understand that no specific models or hardware were tested; this is purely a conceptual guide based on common allocation needs.\n\nThe core idea is to break down VRAM usage into distinct categories: model weights, KV cache, and other runtime overhead. For a hypothetical 12 GB GPU, this separation is vital for preventing Out-Of-Memory (OOM) errors.\n\nModel weights are typically the largest consumer. The KV cache size scales with context length and batch size, becoming significant for longer sequences. Other allocations include activations, optimizer states (during training/finetuning, though less relevant for inference-focused planning), and framework overhead. \n\nUnderstanding these components allows for more informed decisions about which models or configurations might fit within available VRAM. For instance, a smaller model with a large KV cache might consume more VRAM than a larger model with a small cache. This framework is intended to facilitate discussion on pre-computation VRAM budgeting.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "The plan is to present a conceptual VRAM allocation strategy. The post will explicitly state its hypothetical nature and avoid any claims of measured results. It will focus on separating model weights, KV cache, and other runtime needs to aid users in their own planning. The target audience is technically informed readers interested in local LLM deployment. The goal is to initiate a discussion on planning methodologies rather than present definitive solutions."
+    },
+    "performance_score": 0.25135498300973425,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any measured results or personal experience, preserving necessary caveats. It correctly separates VRAM usage into model weights, KV cache, and other runtime allocations, consistent with the provided facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful for readers planning VRAM allocation conceptually, relevant to local LLM deployment, and credible due to explicit disclaimers and no unsupported claims. The clickbait score is low as the title is restrained and informative.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 162,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "question_title__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Tutorial / Guide",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Tutorial / Guide",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "parent_variant": "G4_both",
+  "abstention": false,
+  "original_retained": true,
+  "prompt_sha256": "e92b800932c5c4bb427a5e3b44424673b9f51b5ae99bf7c1a4ec5ee04a0f49ec",
+  "feedback_sent": null
+}

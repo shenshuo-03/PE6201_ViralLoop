@@ -1,0 +1,238 @@
+{
+  "at": "2026-10-04T11:05:49.228028+00:00",
+  "loop_version": "v002",
+  "brief_id": "D01",
+  "phase": "tune",
+  "variant": "O1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "How exactly does llama.cpp HTTP server's file upload affect prompt handling and answer consistency?",
+        "body": "A user running llama 3.2 3B Q4_K_S reported inconsistent results when using the HTTP server's file upload button to ask questions about a file's contents. Sometimes the model answered the query correctly, but other times it seemed to respond as if interpreting the file content itself rather than the user's question. There's speculation that the file upload might concatenate the file content with the prompt, but this isn't confirmed. Given this, how does the file upload feature actually interact with the prompt behind the scenes? Also, what strategies or settings might help achieve reproducible answers when querying uploaded files, so that repeated prompts yield consistent responses across new conversations?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source and brief, posing clear questions about the file upload functionality and reproducibility. It correctly attributes observations to the source author and avoids making definitive claims about the model's behavior. The specificity is good, referencing the model and observed issues. Community fit is strong as it directly addresses a technical question relevant to local LLM users.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 109,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Seeking clarity on llama.cpp HTTP server file upload: prompt integration and reproducibility of answers",
+        "body": "According to a May 2025 user report, the llama.cpp HTTP server includes a file upload button intended to facilitate querying file contents. However, the user observed mixed behavior: sometimes the model answered questions about the file correctly, other times it seemed to focus on the file content itself instead of the query. The exact mechanism—whether the file content is concatenated with the prompt or handled differently—is unclear. Has anyone determined how the file upload modifies the prompt or input to the model? Additionally, what approaches could help ensure that asking the same question about an uploaded file produces reproducible answers when starting a new conversation?",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 3,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 is factually sound and adheres to the brief's constraints. It frames the questions well, focusing on prompt integration and reproducibility. The specificity is adequate, mentioning the date of the report and the general problem. Community fit is good, as it targets a specific technical aspect of llama.cpp.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 105,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 2,
+      "draft": {
+        "title": "Understanding llama.cpp HTTP server's file upload: prompt behavior and reproducible querying of files",
+        "body": "A user working with llama 3.2 3B Q4_K_S shared that using the HTTP server's file upload to ask about file contents yields inconsistent results—sometimes the model answers the question, other times it seems to interpret the file content itself rather than the prompt. There's speculation that the file content might simply be concatenated with the prompt, but this isn't confirmed. Given these observations, what is the known or best-guess behavior of the file upload feature in terms of prompt construction? Also, are there recommended methods or configurations to improve reproducibility so that the same prompt about a file leads to stable answers across sessions?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 effectively captures the essence of the source and brief. It clearly articulates the user's observations and questions regarding prompt construction and reproducibility. The specificity is good, including the model version and the core problem. Community fit is strong, addressing a practical concern for users of llama.cpp's HTTP server.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 104,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Clarifying the purpose and behavior of llama.cpp HTTP server's file upload button",
+      "body": "I've been looking into the file upload feature in llama.cpp's HTTP server and found some mixed behavior reported by a user from May 2025. The user wanted to ask questions about a file's contents by uploading it, but sometimes the model answered the question correctly and other times it seemed to interpret the file contents themselves rather than the query. There's speculation that the upload might concatenate the file content with the direct prompt, but this isn't confirmed.\n\nGiven this variability, has anyone figured out how exactly the file upload interacts with the prompt? More importantly, are there known ways to get reproducible answers when querying uploaded file contents, so that the same prompt yields consistent responses across sessions?",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source and brief, preserving uncertainty and avoiding unsupported claims. It clearly states the user's goal and observed issues, and asks relevant follow-up questions about the file upload functionality and reproducibility. The community fit is good as it directly addresses a technical aspect of llama.cpp relevant to local LLM enthusiasts. Specificity is good by mentioning the file upload feature and the problem of inconsistent responses. Information value is good by organizing the user's concerns and posing clear questions. Clarity and usefulness are high. Credibility is good as it relies on reported observations without making definitive claims. Clickbait is minimal.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 119,
+      "unknown_refs": []
+    }
+  },
+  "parent": {
+    "index": 0,
+    "draft": {
+      "title": "Clarifying the purpose and behavior of llama.cpp HTTP server's file upload button",
+      "body": "I've been looking into the file upload feature in llama.cpp's HTTP server and found some mixed behavior reported by a user from May 2025. The user wanted to ask questions about a file's contents by uploading it, but sometimes the model answered the question correctly and other times it seemed to interpret the file contents themselves rather than the query. There's speculation that the upload might concatenate the file content with the direct prompt, but this isn't confirmed.\n\nGiven this variability, has anyone figured out how exactly the file upload interacts with the prompt? More importantly, are there known ways to get reproducible answers when querying uploaded file contents, so that the same prompt yields consistent responses across sessions?",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source and brief, preserving uncertainty and avoiding unsupported claims. It clearly states the user's goal and observed issues, and asks relevant follow-up questions about the file upload functionality and reproducibility. The community fit is good as it directly addresses a technical aspect of llama.cpp relevant to local LLM enthusiasts. Specificity is good by mentioning the file upload feature and the problem of inconsistent responses. Information value is good by organizing the user's concerns and posing clear questions. Clarity and usefulness are high. Credibility is good as it relies on reported observations without making definitive claims. Clickbait is minimal.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 119,
+      "unknown_refs": []
+    }
+  },
+  "original_retained": true,
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0206",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:05:46.922671+00:00",
+    "tag": "O1:D01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "bdec5f4f61ad20da7b8370704c08da62820b80766949d793256086879a6e7edb",
+    "actual_cost_usd": 0.0015868,
+    "budget_charge_usd": 0.0015868,
+    "reserved_upper_usd": 0.0086192,
+    "input_tokens": 1927,
+    "output_tokens": 510,
+    "latency_seconds": 3.7779432000243105,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111942-rMRpqkNROQwboTWHrJKx",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0207",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:05:49.201850+00:00",
+    "tag": "quality:D01:O1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "8dd3e5f1c6aef350538d0ae86b31d8db64621040d8a9c3566a002c8d1626895e",
+    "actual_cost_usd": 0.0005095,
+    "budget_charge_usd": 0.0005095,
+    "reserved_upper_usd": 0.0017926,
+    "input_tokens": 2563,
+    "output_tokens": 633,
+    "latency_seconds": 2.243625500006601,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111946-IZTmK9QXr7TLlLX7WIa9",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "diagnosis": null,
+  "external_judge_used": false
+}

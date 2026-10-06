@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Detailed release notes with multiple features and bug fixes; moderate similarity to a high-class example; discussion type post."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Research-oriented post seeking community input; question type; similar examples include high-class posts about tools and usage."
+      },
+      {
+        "index": 2,
+        "probability": 0.25,
+        "reason": "Basic question about model reasoning; discussion type; similar examples lean slightly towards high but overall uncertain."
+      },
+      {
+        "index": 3,
+        "probability": 0.5,
+        "reason": "Comprehensive benchmark summary with detailed data; experience/benchmark type; similar examples are high-class."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Community resource sharing post; discussion/opinion type; similar examples mostly not high."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Experience sharing with setup and tips; experience/benchmark type; similar examples mixed but some high."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Detailed hardware cooling experience; experience/benchmark type; similar examples include high-class posts."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "Question about hardware needs; question/troubleshooting type; similar examples mostly not high."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:03:41.170711+00:00",
+    "tag": "final_test:classifier:E5c_retrieval:56",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ab1ab1c7c106ccf6b525cc438addd1147956a62bc4a6d98c71fc3da513cba555",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6649,
+    "output_tokens": 369,
+    "actual_cost_usd": 0.00325,
+    "token_price_estimate_usd": 0.00325,
+    "reserved_upper_usd": 0.012212399999999998,
+    "budget_charge_usd": 0.00325,
+    "latency_seconds": 3.202540800004499,
+    "retry": 0,
+    "request_id": "gen-1791101018-Vb3SzHJegThSk1aJmDgf"
+  },
+  "raw_response": {
+    "id": "gen-1791101018-Vb3SzHJegThSk1aJmDgf",
+    "object": "chat.completion",
+    "created": 1791101018,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Detailed release notes with multiple features and bug fixes; moderate similarity to a high-class example; discussion type post.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.35,\n      \"reason\": \"Research-oriented post seeking community input; question type; similar examples include high-class posts about tools and usage.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.25,\n      \"reason\": \"Basic question about model reasoning; discussion type; similar examples lean slightly towards high but overall uncertain.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.5,\n      \"reason\": \"Comprehensive benchmark summary with detailed data; experience/benchmark type; similar examples are high-class.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.25,\n      \"reason\": \"Community resource sharing post; discussion/opinion type; similar examples mostly not high.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Experience sharing with setup and tips; experience/benchmark type; similar examples mixed but some high.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.3,\n      \"reason\": \"Detailed hardware cooling experience; experience/benchmark type; similar examples include high-class posts.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.25,\n      \"reason\": \"Question about hardware needs; question/troubleshooting type; similar examples mostly not high.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6649,
+      "completion_tokens": 369,
+      "total_tokens": 7018,
+      "cost": 0.00325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00325,
+        "upstream_inference_prompt_cost": 0.0026596,
+        "upstream_inference_completions_cost": 0.0005904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

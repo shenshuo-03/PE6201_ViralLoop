@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101239-0b3JVLfQnSFYAtZfIQkD",
+  "object": "chat.completion",
+  "created": 1791101239,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature and includes all relevant synthetic facts without unsupported claims. The title matches the body content well. The disclaimer about the lack of real benchmarks is explicit and well placed. The language is clear and technical, suitable for the target audience. The post is relevant and credible given the scenario, and it avoids clickbait by being restrained and factual.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and synthetic data with no unsupported claims. The title is neutral and consistent with the body. The hypothetical status is emphasized early, and the disclaimer is clear and concise. The writing is clear and appropriate for the audience. The post is relevant and credible, with no clickbait elements.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft includes specific hypothetical numbers in the title, which accurately reflect the body content. The hypothetical nature and synthetic data status are clearly stated. The structure presents memory and accuracy data distinctly before the disclaimer. The language is clear and technical, suitable for the audience. The post is relevant and credible, with no unsupported claims or clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1365,
+    "completion_tokens": 518,
+    "total_tokens": 1883,
+    "cost": 0.0013748,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013748,
+      "upstream_inference_prompt_cost": 0.000546,
+      "upstream_inference_completions_cost": 0.0008288
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

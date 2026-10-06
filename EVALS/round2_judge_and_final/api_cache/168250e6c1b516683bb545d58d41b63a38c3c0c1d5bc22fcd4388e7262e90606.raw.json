@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112991-oH2MONeCuVDIJfXDtWey",
+  "object": "chat.completion",
+  "created": 1791112991,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"Tie\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts accurately ground the problem in F2–F3 and appropriately frame it as a community question rather than a definitive diagnosis. A uses \\\"raises the question of whether\\\" and speculates about \\\"resource constraints,\\\" introducing unsupported external reasoning. B stays closer to the facts: \\\"suggests a possible interaction problem\\\" without adding speculative mechanisms, and directly asks for workarounds or version/settings guidance. B's phrasing (\\\"often freeze mid-generation\\\" vs. A's \\\"freeze mid-generation\\\") is slightly more cautious given the single-user report. Both avoid forbidden claims and cite the source date correctly. A's mention of \\\"incremental generation\\\" as a potential factor is plausible but not grounded in the brief; B avoids this and focuses on what the community can actually help diagnose (versions, settings). B's closing question is more actionable for readers—it invites both workarounds and configuration advice rather than abstract speculation. Neither post references F1, F4, or F5, which are relevant context (8.0 quant, works without thinking, works on other frontends), but both maintain credibility by not overstating the evidence. B edges ahead on information value and usefulness by staying factual and directing the community toward practical troubleshooting rather than theoretical causes.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2024,
+    "completion_tokens": 365,
+    "total_tokens": 2389,
+    "cost": 0.003849,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003849,
+      "upstream_inference_prompt_cost": 0.002024,
+      "upstream_inference_completions_cost": 0.001825
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

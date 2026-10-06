@@ -1,0 +1,88 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical VRAM Planning Checklist for 12GB GPUs in Local LLM Setups",
+        "body": "This post outlines a hypothetical VRAM planning checklist for local LLM enthusiasts with a 12GB GPU, based on a synthetic experimental brief. The goal is to provide a structured approach to managing memory, acknowledging that no actual models or runtimes were tested.\n\nWe propose separating VRAM allocations into three key areas: model weights, the KV cache, and other runtime overheads. Model weights are the largest component, and their size will dictate the feasibility of running larger models. The KV cache size is crucial for context length and inference speed, and it scales with batch size and sequence length. Other runtime allocations include the operating system, the inference framework itself, and any additional libraries or processes consuming VRAM.\n\nFor a 12GB GPU, understanding these divisions is vital. For instance, a 7B parameter model might require X GB for weights, leaving Y GB for the KV cache and overhead. This is a hypothetical framework to guide planning and discussion, not a set of measured results. What are your thoughts on refining such a checklist?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to create a hypothetical VRAM planning checklist for users with 12GB GPUs, emphasizing the separation of model weights, KV cache, and other runtime allocations. The post will explicitly state the hypothetical nature of the scenario and that no actual testing was performed. It aims to initiate a discussion on how to best approach VRAM management in this context."
+      },
+      {
+        "title": "Framework for Hypothetical VRAM Allocation on a 12GB GPU for Local LLMs",
+        "body": "This tutorial proposes a hypothetical framework for VRAM allocation on a 12GB GPU when running local LLMs. It's important to stress that this is based on a synthetic brief and no actual models or specific runtimes were evaluated. The objective is to offer a methodical way to think about memory usage.\n\nOur approach segments VRAM into three primary categories: model weights, the KV cache, and miscellaneous runtime allocations. Model weights are typically the most VRAM-intensive. The KV cache, however, is dynamic and directly impacts context window capabilities and inference performance, scaling with factors like batch size and sequence length. Finally, other runtime allocations encompass the memory footprint of the OS, the inference engine, and any background processes.\n\nWith a 12GB GPU, understanding these distinct memory demands is critical. For example, a hypothetical 7B model might consume Z GB for its weights, leaving the remainder for the KV cache and other needs. This framework is presented for discussion and hypothetical planning purposes only, not as empirical data. How would you adapt this framework for different hypothetical model sizes or use cases?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "The plan is to develop a hypothetical framework for VRAM allocation on a 12GB GPU for local LLMs. This framework will distinguish between model weights, KV cache, and other runtime memory needs. The hypothetical nature of the scenario and the lack of actual testing will be clearly stated. The post will invite discussion on adapting this framework for various hypothetical scenarios."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:44:39.823508+00:00",
+    "tag": "tune_dev:D01:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "683da93bf957becdf2c81bae5dd949818113fbabc0f40b48f57b8f19f58db9d4",
+    "status": "success",
+    "input_tokens": 422,
+    "output_tokens": 718,
+    "actual_cost_usd": 0.0003294,
+    "token_price_estimate_usd": 0.0003294,
+    "reserved_upper_usd": 0.0010187999999999998,
+    "budget_charge_usd": 0.0003294,
+    "latency_seconds": 3.135149299996556,
+    "retry": 0,
+    "request_id": "gen-1791099876-4sh6WLr3S7EFcsvC9yje"
+  },
+  "raw_response": {
+    "id": "gen-1791099876-4sh6WLr3S7EFcsvC9yje",
+    "object": "chat.completion",
+    "created": 1791099876,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical VRAM Planning Checklist for 12GB GPUs in Local LLM Setups\",\n    \"body\": \"This post outlines a hypothetical VRAM planning checklist for local LLM enthusiasts with a 12GB GPU, based on a synthetic experimental brief. The goal is to provide a structured approach to managing memory, acknowledging that no actual models or runtimes were tested.\\n\\nWe propose separating VRAM allocations into three key areas: model weights, the KV cache, and other runtime overheads. Model weights are the largest component, and their size will dictate the feasibility of running larger models. The KV cache size is crucial for context length and inference speed, and it scales with batch size and sequence length. Other runtime allocations include the operating system, the inference framework itself, and any additional libraries or processes consuming VRAM.\\n\\nFor a 12GB GPU, understanding these divisions is vital. For instance, a 7B parameter model might require X GB for weights, leaving Y GB for the KV cache and overhead. This is a hypothetical framework to guide planning and discussion, not a set of measured results. What are your thoughts on refining such a checklist?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\"],\n    \"plan\": \"The plan is to create a hypothetical VRAM planning checklist for users with 12GB GPUs, emphasizing the separation of model weights, KV cache, and other runtime allocations. The post will explicitly state the hypothetical nature of the scenario and that no actual testing was performed. It aims to initiate a discussion on how to best approach VRAM management in this context.\"\n  },\n  {\n    \"title\": \"Framework for Hypothetical VRAM Allocation on a 12GB GPU for Local LLMs\",\n    \"body\": \"This tutorial proposes a hypothetical framework for VRAM allocation on a 12GB GPU when running local LLMs. It's important to stress that this is based on a synthetic brief and no actual models or specific runtimes were evaluated. The objective is to offer a methodical way to think about memory usage.\\n\\nOur approach segments VRAM into three primary categories: model weights, the KV cache, and miscellaneous runtime allocations. Model weights are typically the most VRAM-intensive. The KV cache, however, is dynamic and directly impacts context window capabilities and inference performance, scaling with factors like batch size and sequence length. Finally, other runtime allocations encompass the memory footprint of the OS, the inference engine, and any background processes.\\n\\nWith a 12GB GPU, understanding these distinct memory demands is critical. For example, a hypothetical 7B model might consume Z GB for its weights, leaving the remainder for the KV cache and other needs. This framework is presented for discussion and hypothetical planning purposes only, not as empirical data. How would you adapt this framework for different hypothetical model sizes or use cases?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\"],\n    \"plan\": \"The plan is to develop a hypothetical framework for VRAM allocation on a 12GB GPU for local LLMs. This framework will distinguish between model weights, KV cache, and other runtime memory needs. The hypothetical nature of the scenario and the lack of actual testing will be clearly stated. The post will invite discussion on adapting this framework for various hypothetical scenarios.\"\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 422,
+      "completion_tokens": 718,
+      "total_tokens": 1140,
+      "cost": 0.0003294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003294,
+        "upstream_inference_prompt_cost": 4.22e-05,
+        "upstream_inference_completions_cost": 0.0002872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

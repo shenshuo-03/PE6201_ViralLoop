@@ -1,0 +1,6082 @@
+[
+  {
+    "topic_id": "T01",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1143248113571869,
+    "reconstructed_score": 0.24706548950970103,
+    "positive_terms": [
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.005921063766549586
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.005909665679577991
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.0055105553500042785
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004252510144260119
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.004248252150639227
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004222595119243531
+      },
+      {
+        "term": "benchmarking",
+        "logit_contribution": 0.0037917960340515685
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.003269310881000898
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005631613542163119
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004458694776010009
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003430238871539551
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0032554965597288224
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.002563099509541117
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.002448514943648361
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0024203158733535238
+      },
+      {
+        "term": "actual",
+        "logit_contribution": -0.0022476583266025398
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.109998074036556,
+    "reconstructed_score": 0.2478712476197239,
+    "positive_terms": [
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.0072366100844574715
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.005827212393021524
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.005433670560915563
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.005333098968651949
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.004949479097000582
+      },
+      {
+        "term": "to the",
+        "logit_contribution": 0.004410302179351883
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004193177949086939
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.0041889793641682
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005941030877040663
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0037031894757847566
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0033823792321001195
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003210074973250502
+      },
+      {
+        "term": "data",
+        "logit_contribution": -0.0025925205773488958
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.0024143525873945894
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0023865469583111017
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.002254672530214296
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.0998906535162354,
+    "reconstructed_score": 0.24976038320303112,
+    "positive_terms": [
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.007344492637877292
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.006467112672854073
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.006030355060799539
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004255689365179782
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.0041255438946029765
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.0034300254931021366
+      },
+      {
+        "term": "entire",
+        "logit_contribution": 0.003068137756111408
+      },
+      {
+        "term": "answered",
+        "logit_contribution": 0.0030122181406479695
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "do",
+        "logit_contribution": -0.003758396199897628
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.003659435088427065
+      },
+      {
+        "term": "considered",
+        "logit_contribution": -0.0034982865726144907
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003432803353882894
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003257930402898028
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.0024503454789479564
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.002288284929783463
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.0022862780867665797
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1109378287400855,
+    "reconstructed_score": 0.24769608963860235,
+    "positive_terms": [
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.007521415377771292
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.005542989345266378
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.005326395918161131
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.004966676816337224
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.004950675092406385
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.0043582053945025335
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.00432754683779575
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.004233454981219582
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.00595225339575371
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005278034531761118
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0038489328490684364
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003336411245848572
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0025528215579772745
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.0025093722704769682
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.0024359217766406864
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.002341352630811226
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.126574996458989,
+    "reconstructed_score": 0.24479372689589188,
+    "positive_terms": [
+      {
+        "term": "q4",
+        "logit_contribution": 0.00585790770001068
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.005744961403387528
+      },
+      {
+        "term": "correctly",
+        "logit_contribution": 0.004422866025302594
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004133991323859947
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.00398445393916244
+      },
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.003399611025025722
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.003331938591458647
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.003163806085352222
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "would",
+        "logit_contribution": -0.007338827127647336
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005474658668141781
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005358412644670976
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003334637014999731
+      },
+      {
+        "term": "be",
+        "logit_contribution": -0.0029722355794278947
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0028758576031361134
+      },
+      {
+        "term": "need",
+        "logit_contribution": -0.0027057472070857575
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0024916651048874096
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1016146385907666,
+    "reconstructed_score": 0.2494374820309966,
+    "positive_terms": [
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.007579681723654587
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.0061034676125638
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.0056912688347529414
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004391967218599766
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.004387569588079072
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004361071158447203
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0033612389393936144
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0030790386707320043
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005318922020374026
+      },
+      {
+        "term": "around",
+        "logit_contribution": -0.003547188798579021
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003542730332131768
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003362257510400595
+      },
+      {
+        "term": "that",
+        "logit_contribution": -0.0028130482975367863
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.0025288116904953967
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.002361561555844495
+      },
+      {
+        "term": "actual",
+        "logit_contribution": -0.002321368169427071
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1054365377543693,
+    "reconstructed_score": 0.24872263751353865,
+    "positive_terms": [
+      {
+        "term": "q8",
+        "logit_contribution": 0.006433827585085988
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.005999317887392314
+      },
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.0058949929619711685
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.005384746477891019
+      },
+      {
+        "term": "achieves",
+        "logit_contribution": 0.004959435384369764
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.0045631352572263395
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.0042337860829579806
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004204002775619485
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.005782326739572574
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005487764996219578
+      },
+      {
+        "term": "actual",
+        "logit_contribution": -0.0037888599978180733
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0037390523978473042
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0029452809507490556
+      },
+      {
+        "term": "what",
+        "logit_contribution": -0.002765009873585274
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.002739980078322644
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.002479942867785143
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T01",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1116189138751007,
+    "reconstructed_score": 0.24756919618087195,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.012416195763186777
+      },
+      {
+        "term": "q8",
+        "logit_contribution": 0.006913548917448176
+      },
+      {
+        "term": "q4",
+        "logit_contribution": 0.006446641153697357
+      },
+      {
+        "term": "accuracy",
+        "logit_contribution": 0.006334537516217213
+      },
+      {
+        "term": "correctly",
+        "logit_contribution": 0.004867374427212906
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004549467141207219
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.00446274746159073
+      },
+      {
+        "term": "quantization",
+        "logit_contribution": 0.0036668062293386
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "setup",
+        "logit_contribution": -0.005129226507322732
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004141860092184557
+      },
+      {
+        "term": "ram",
+        "logit_contribution": -0.0037760688214384104
+      },
+      {
+        "term": "around",
+        "logit_contribution": -0.0036743942018625953
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0036697758507701615
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0034828311101833495
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0031648880327214625
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0026648532467131937
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1238506019346124,
+    "reconstructed_score": 0.24529773516919484,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0070220202929258966
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.00508976989288229
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.004540533310640015
+      },
+      {
+        "term": "models in",
+        "logit_contribution": 0.00445763856051096
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0033340266690988453
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003054111066932697
+      },
+      {
+        "term": "was",
+        "logit_contribution": 0.002916833902699195
+      },
+      {
+        "term": "part",
+        "logit_contribution": 0.002895513842417033
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005275860534325273
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004567632540679616
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004004838572988137
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.003962621747850573
+      },
+      {
+        "term": "ram",
+        "logit_contribution": -0.0036158311478288003
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003514048724808475
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003335036993851972
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.002508338671918875
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1456680683851805,
+    "reconstructed_score": 0.24128121731744318,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007812219127230262
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.0061642104777910435
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.0056625295928627644
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.0050514865661870564
+      },
+      {
+        "term": "models in",
+        "logit_contribution": 0.0049592635412610865
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.0048466438745909095
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004812549312123944
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.00470791227025827
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "ram",
+        "logit_contribution": -0.010497054348524094
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.006866724251084819
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006619342102814217
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005869561302802992
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.005081635314612331
+      },
+      {
+        "term": "around",
+        "logit_contribution": -0.003914410105303925
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0037103338792168084
+      },
+      {
+        "term": "context length",
+        "logit_contribution": -0.0030075295900561403
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1037638342305403,
+    "reconstructed_score": 0.24903532972616266,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.012874064872305014
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.006831161447048551
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005446735389525865
+      },
+      {
+        "term": "architecture",
+        "logit_contribution": 0.004759847828905805
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004717236762968773
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004627319142275456
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.00449617094110104
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0036101726412896156
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.006114405942922342
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005712841932793798
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005375036482436554
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004464142304435141
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0041660100638501955
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003805105305258763
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0027631244084502763
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.002716095744638382
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1732469328730493,
+    "reconstructed_score": 0.2362685874344542,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.00593271849456667
+      },
+      {
+        "term": "of this",
+        "logit_contribution": 0.005458463776959694
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.005077902601622769
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.004839934747050729
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.004397118576436563
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0037546721455909726
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003559921488118912
+      },
+      {
+        "term": "related",
+        "logit_contribution": 0.003394282397379447
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "ram",
+        "logit_contribution": -0.010057446935160353
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.008915835463722661
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006149628770156626
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005785995723649997
+      },
+      {
+        "term": "around",
+        "logit_contribution": -0.004101187083653638
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.004096032296004979
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0038873733135084986
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.003754225829497283
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1659239423574246,
+    "reconstructed_score": 0.23759254093022575,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.007770417659512763
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.006114777970130393
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.005262048021115974
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.003627910344266464
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0033082760261590846
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.0026768823959042445
+      },
+      {
+        "term": "inference speed",
+        "logit_contribution": 0.0025916587081764413
+      },
+      {
+        "term": "data on",
+        "logit_contribution": 0.0025036395348587413
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.0061166309581704575
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005714920820019998
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005376992443202692
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.004057792286058677
+      },
+      {
+        "term": "run",
+        "logit_contribution": -0.0038845270348473104
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0038064899724535683
+      },
+      {
+        "term": "to use",
+        "logit_contribution": -0.0036708854314797296
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.002844237077020258
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1531016150525573,
+    "reconstructed_score": 0.2399230164770542,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.00706943196235558
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005124135285969746
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005064071335329465
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.004890579633798197
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.004727000444559246
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0033565375368706614
+      },
+      {
+        "term": "token",
+        "logit_contribution": 0.002805456824689791
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0024966389993682594
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.006213978243626974
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005682464841862095
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.00438960401080391
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0038733242278682334
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.003771336983764979
+      },
+      {
+        "term": "around",
+        "logit_contribution": -0.0035422273059069046
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.00353777507556657
+      },
+      {
+        "term": "to use",
+        "logit_contribution": -0.0034117433853053008
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1659239423574246,
+    "reconstructed_score": 0.23759254093022575,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.007770417659512763
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.006114777970130393
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.005262048021115974
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.003627910344266464
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0033082760261590846
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.0026768823959042445
+      },
+      {
+        "term": "inference speed",
+        "logit_contribution": 0.0025916587081764413
+      },
+      {
+        "term": "data on",
+        "logit_contribution": 0.0025036395348587413
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.0061166309581704575
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005714920820019998
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005376992443202692
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.004057792286058677
+      },
+      {
+        "term": "run",
+        "logit_contribution": -0.0038845270348473104
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0038064899724535683
+      },
+      {
+        "term": "to use",
+        "logit_contribution": -0.0036708854314797296
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.002844237077020258
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T02",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1596770185894294,
+    "reconstructed_score": 0.23872597751627286,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.007056526655836511
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004838582991173097
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.004644503038174428
+      },
+      {
+        "term": "part",
+        "logit_contribution": 0.003238776530990148
+      },
+      {
+        "term": "of this",
+        "logit_contribution": 0.003093680541541749
+      },
+      {
+        "term": "from",
+        "logit_contribution": 0.003066120978725576
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.002795610426174466
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0027738862606415736
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.006453147585424232
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.004877061624971471
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004479611525452315
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003930638621697994
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003730405079554098
+      },
+      {
+        "term": "gb",
+        "logit_contribution": -0.0028057018078713023
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.0026178408785407755
+      },
+      {
+        "term": "to this",
+        "logit_contribution": -0.00259735710989151
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.0873965746846437,
+    "reconstructed_score": 0.2521088372946492,
+    "positive_terms": [
+      {
+        "term": "than",
+        "logit_contribution": 0.011026749226400866
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.007584488403980892
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.006898767477142957
+      },
+      {
+        "term": "18",
+        "logit_contribution": 0.006787184616161571
+      },
+      {
+        "term": "better than",
+        "logit_contribution": 0.006512624365471942
+      },
+      {
+        "term": "why",
+        "logit_contribution": 0.004923341083729361
+      },
+      {
+        "term": "model with",
+        "logit_contribution": 0.0047133122983805545
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00470536139173715
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "does",
+        "logit_contribution": -0.005156952573443837
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005011476690144596
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004879507071200521
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004467703157575937
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004452904083892105
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004283787081616467
+      },
+      {
+        "term": "run",
+        "logit_contribution": -0.003873338465233945
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.003795526172315916
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1295774498367932,
+    "reconstructed_score": 0.24423908947080297,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.00783478830688741
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.006976010259480491
+      },
+      {
+        "term": "token",
+        "logit_contribution": 0.006387239144920674
+      },
+      {
+        "term": "18",
+        "logit_contribution": 0.005537168835972803
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00475804547001716
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.004011206331629338
+      },
+      {
+        "term": "faster",
+        "logit_contribution": 0.0038432087355950426
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003441249306821114
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.008054522618105905
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0042020501213666855
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.004091407302369373
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004088498268456737
+      },
+      {
+        "term": "but",
+        "logit_contribution": -0.0037923804618652805
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0036425076327170516
+      },
+      {
+        "term": "need",
+        "logit_contribution": -0.003114198176319667
+      },
+      {
+        "term": "what",
+        "logit_contribution": -0.003107394291015649
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.14169271307678,
+    "reconstructed_score": 0.2420097124101349,
+    "positive_terms": [
+      {
+        "term": "open",
+        "logit_contribution": 0.006105237821891781
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005489497178372482
+      },
+      {
+        "term": "local inference",
+        "logit_contribution": 0.00500661359542836
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004698542839878078
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.004528584135777912
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.004068618802733331
+      },
+      {
+        "term": "faster",
+        "logit_contribution": 0.003795146767843276
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.0037855346423400944
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.009044117827699184
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.007553517297939836
+      },
+      {
+        "term": "does",
+        "logit_contribution": -0.005149479619587721
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005004214545782574
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0042775794342250215
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.004215151647389505
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.004040241440883743
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0035969555702548223
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1407094741109984,
+    "reconstructed_score": 0.24219012451047314,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.0059863368686918685
+      },
+      {
+        "term": "18",
+        "logit_contribution": 0.005962809777420419
+      },
+      {
+        "term": "token",
+        "logit_contribution": 0.0055493084619538955
+      },
+      {
+        "term": "full",
+        "logit_contribution": 0.005053575977568792
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003592095137076148
+      },
+      {
+        "term": "the full",
+        "logit_contribution": 0.0035392114988098177
+      },
+      {
+        "term": "was",
+        "logit_contribution": 0.0034306364922305935
+      },
+      {
+        "term": "local inference",
+        "logit_contribution": 0.0032246155847321326
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.006641380630395131
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.006574397705633616
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005457132604473609
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.005372224610614525
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.00486500288752493
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.004596653736030555
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0045250607830696465
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.00413305117567662
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.154319288832003,
+    "reconstructed_score": 0.2397010318596229,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005328481095820602
+      },
+      {
+        "term": "local inference",
+        "logit_contribution": 0.004859761291511907
+      },
+      {
+        "term": "model with",
+        "logit_contribution": 0.004568433273212386
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004560726763615214
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.00439575323098715
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.003949279446190066
+      },
+      {
+        "term": "they",
+        "logit_contribution": 0.003755011988810162
+      },
+      {
+        "term": "quality",
+        "logit_contribution": 0.003612404895665854
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007720497230222393
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.007331960072335664
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.00591154021489984
+      },
+      {
+        "term": "does",
+        "logit_contribution": -0.004998436817563258
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.00485743260998241
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.004650051106781777
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004152110914809988
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.004091514238794282
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.131253153896917,
+    "reconstructed_score": 0.2439299099439134,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007094924815800998
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.006374136591291196
+      },
+      {
+        "term": "18",
+        "logit_contribution": 0.005122402120483421
+      },
+      {
+        "term": "token",
+        "logit_contribution": 0.0047671803216614685
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004401639705589816
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.004242420772024172
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0037107432385570065
+      },
+      {
+        "term": "inference",
+        "logit_contribution": 0.0034282549628495895
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007451191206312354
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004687995872477403
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.004365379123839174
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.0041793218360885835
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004165478013072758
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004007277175744098
+      },
+      {
+        "term": "like",
+        "logit_contribution": -0.0037393958626420363
+      },
+      {
+        "term": "what",
+        "logit_contribution": -0.0028746320686608043
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.130814176008112,
+    "reconstructed_score": 0.24401087890617768,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0075899885309381725
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.006903770332306285
+      },
+      {
+        "term": "token",
+        "logit_contribution": 0.006321096224610853
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005501450223806505
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.005075072417556669
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.0047087736304612365
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004619017329789985
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.00453844485164457
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007971114178939089
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.007565051810836443
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.005788323419047367
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005523262298783155
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.004800997552976509
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004470943051061859
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004046159910831217
+      },
+      {
+        "term": "be",
+        "logit_contribution": -0.0033854895725472724
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T03",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1261998687984336,
+    "reconstructed_score": 0.24486308329479786,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.01202302789649487
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.007316819252636445
+      },
+      {
+        "term": "18",
+        "logit_contribution": 0.005126783925733095
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004405404956250635
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.003814781316141208
+      },
+      {
+        "term": "they",
+        "logit_contribution": 0.0036271299035621225
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.003039908414573089
+      },
+      {
+        "term": "critical",
+        "logit_contribution": 0.0029595509369580186
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.007082260112442126
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005710214602102375
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004692006077932054
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.004491687236355457
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0035535697301512597
+      },
+      {
+        "term": "but",
+        "logit_contribution": -0.003511309798943373
+      },
+      {
+        "term": "or if",
+        "logit_contribution": -0.0026537678011156677
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.0025882884933194233
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1308405618168706,
+    "reconstructed_score": 0.2440060115602617,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.012272174170847043
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005253670930575506
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0043340382657516075
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.004023664349517262
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.0038938328296673434
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.0038416257122985626
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.0036229098332545362
+      },
+      {
+        "term": "real",
+        "logit_contribution": 0.002887523905623007
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.004789235814369356
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004255433884081843
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004093816609534787
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0039712399780627685
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.00362720830660137
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0029101272911807963
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.002717004887557948
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0026339422965909933
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1179462276852192,
+    "reconstructed_score": 0.24639243591557536,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.011974803327201149
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.007376819643252028
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005126367607210489
+      },
+      {
+        "term": "status",
+        "logit_contribution": 0.004767062925458031
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.004729059754649336
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004387734802075784
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.004214234418389368
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.003926165695610749
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.005992583417079503
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005687310834255227
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004951226140305065
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.004473671002488239
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.003770297331914634
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.0030145958857613116
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.002993372854506987
+      },
+      {
+        "term": "non",
+        "logit_contribution": -0.0026965737142834153
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1327263112598627,
+    "reconstructed_score": 0.2436583208183378,
+    "positive_terms": [
+      {
+        "term": "throughput",
+        "logit_contribution": 0.004787134335810243
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.003515638727920916
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0034997230233258033
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0032058960163109614
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.0031554989631628026
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.0031519363328342295
+      },
+      {
+        "term": "real",
+        "logit_contribution": 0.0029364693704262155
+      },
+      {
+        "term": "to the",
+        "logit_contribution": 0.002840689200616636
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.005927341813980797
+      },
+      {
+        "term": "tps",
+        "logit_contribution": -0.00581424346290093
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005538063252752799
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.005160190921013399
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0040385551563692935
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0036886919175799456
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.003141825858770289
+      },
+      {
+        "term": "batch size",
+        "logit_contribution": -0.0029466143482812933
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.0868047951378252,
+    "reconstructed_score": 0.2522204336788971,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007376576671566719
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.006334048073323643
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005346762938481065
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.004932373830245144
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.003909697096270898
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003858051032021155
+      },
+      {
+        "term": "they",
+        "logit_contribution": 0.0037678953109301235
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.0036871056984496015
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "not",
+        "logit_contribution": -0.00516409170301914
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004874098300844888
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.004041608051799772
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.003144200882865843
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.0031220654205565777
+      },
+      {
+        "term": "batch size",
+        "logit_contribution": -0.0029488418046687754
+      },
+      {
+        "term": "actual",
+        "logit_contribution": -0.0024188363640246604
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.002101409758929158
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1500459538770145,
+    "reconstructed_score": 0.24048068948767648,
+    "positive_terms": [
+      {
+        "term": "in this",
+        "logit_contribution": 0.007166985803514874
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005213548423230664
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.00443096295859865
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.004334883174576338
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.0039929354545122225
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.0035952415174587216
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.00329952703171764
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0031283842437838326
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.0060944954047479506
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0050354284387522305
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004752660217671836
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004236969734516584
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.00394091145020225
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.0035867966110886495
+      },
+      {
+        "term": "batch size",
+        "logit_contribution": -0.0028753714570811067
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0026138267677469963
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1193705784476504,
+    "reconstructed_score": 0.2461280534497381,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.011644913889782336
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.00498514319794581
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004266858715358622
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004185525976978508
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.004175028737597347
+      },
+      {
+        "term": "they",
+        "logit_contribution": 0.0035130597514748474
+      },
+      {
+        "term": "numbers",
+        "logit_contribution": 0.003459074019543362
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.003280341998629734
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "not",
+        "logit_contribution": -0.004814826638674142
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.0045444464753993455
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.003768260369874636
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.002910909530477693
+      },
+      {
+        "term": "what",
+        "logit_contribution": -0.0027866090175527325
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.0025781322456203577
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.00256943255793211
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0024284823616654966
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1394025379439825,
+    "reconstructed_score": 0.242430072636172,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005000223602910766
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.0041876584899641885
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.004157511047331144
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.003448133600075409
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.003275369848620296
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0031645189807622703
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0030003789098881823
+      },
+      {
+        "term": "was",
+        "logit_contribution": 0.0028655169158909835
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007244881192699444
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.00482939182419924
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.004244509667999442
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004063603970176659
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004050143457592116
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0037796596196322998
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.0036775220104220204
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.0034400342372752375
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T04",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1290457077818539,
+    "reconstructed_score": 0.24433725514750365,
+    "positive_terms": [
+      {
+        "term": "tokens",
+        "logit_contribution": 0.005892759593235223
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005823686002943365
+      },
+      {
+        "term": "throughput",
+        "logit_contribution": 0.004935152245104464
+      },
+      {
+        "term": "per",
+        "logit_contribution": 0.0043089445587500145
+      },
+      {
+        "term": "tokens per",
+        "logit_contribution": 0.004063622742545516
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0038600207969929647
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003535944191434142
+      },
+      {
+        "term": "benefits",
+        "logit_contribution": 0.003457688599110831
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "not",
+        "logit_contribution": -0.0056914344760453095
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005371827749078149
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004788954090858601
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004773090887337811
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.004068444108479078
+      },
+      {
+        "term": "batch",
+        "logit_contribution": -0.0037893178248513243
+      },
+      {
+        "term": "batch size",
+        "logit_contribution": -0.0035538756044471587
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.0029633039088391173
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1447352407823805,
+    "reconstructed_score": 0.24145202623211895,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007742492753364363
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00480338613984347
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.00430598536378333
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.004049430174388654
+      },
+      {
+        "term": "you",
+        "logit_contribution": 0.0039294313203198
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0036761040623916274
+      },
+      {
+        "term": "phase",
+        "logit_contribution": 0.0035980966573989762
+      },
+      {
+        "term": "the internet",
+        "logit_contribution": 0.0034464148885108314
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "any",
+        "logit_contribution": -0.008433836536739429
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.007181373513196739
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.005774699944809674
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004545669498665907
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0038745967188685278
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.0033790015243259103
+      },
+      {
+        "term": "this is",
+        "logit_contribution": -0.003091737356044542
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.00289512693480275
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1713604453649333,
+    "reconstructed_score": 0.23660916541808127,
+    "positive_terms": [
+      {
+        "term": "llms",
+        "logit_contribution": 0.007694279982559846
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.007376876243151201
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.006532513509721444
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005284303990213
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.004102647835175207
+      },
+      {
+        "term": "entire",
+        "logit_contribution": 0.003299469557469754
+      },
+      {
+        "term": "of this",
+        "logit_contribution": 0.002905564663037106
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.002596108254527197
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "network",
+        "logit_contribution": -0.007754439579472783
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006250473355686949
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005542474760013317
+      },
+      {
+        "term": "create",
+        "logit_contribution": -0.004794547229915894
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004745939063330145
+      },
+      {
+        "term": "to create",
+        "logit_contribution": -0.004322448113838463
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003503572211940436
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.0033835704041772258
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1705647612970582,
+    "reconstructed_score": 0.23675291618540098,
+    "positive_terms": [
+      {
+        "term": "design",
+        "logit_contribution": 0.005332884197417637
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0049993599834761175
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.004863089328301132
+      },
+      {
+        "term": "ensure",
+        "logit_contribution": 0.00479773390511695
+      },
+      {
+        "term": "models in",
+        "logit_contribution": 0.004309627390442718
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00421176027849228
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004182131915520582
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003775623609461212
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "network",
+        "logit_contribution": -0.007803650725588603
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0071297591918628184
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005967358925624556
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004415969136926604
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.00436763775407213
+      },
+      {
+        "term": "the llm",
+        "logit_contribution": -0.003632332045155343
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0032243006205502477
+      },
+      {
+        "term": "be",
+        "logit_contribution": -0.0030281494979209097
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1807307262534021,
+    "reconstructed_score": 0.2349208351491244,
+    "positive_terms": [
+      {
+        "term": "framework",
+        "logit_contribution": 0.01096031689464126
+      },
+      {
+        "term": "tasks",
+        "logit_contribution": 0.004307905388197522
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0038131923311221032
+      },
+      {
+        "term": "tasks and",
+        "logit_contribution": 0.00366397761379698
+      },
+      {
+        "term": "during",
+        "logit_contribution": 0.0027573499727993156
+      },
+      {
+        "term": "steps",
+        "logit_contribution": 0.002658136441217986
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0025748197690858357
+      },
+      {
+        "term": "to perform",
+        "logit_contribution": 0.0023845534050659155
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "would",
+        "logit_contribution": -0.011316931752884047
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.006740028285944292
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006408565287335718
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006177546375009574
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004690566136085751
+      },
+      {
+        "term": "locally",
+        "logit_contribution": -0.003041868964661362
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.002981160505155771
+      },
+      {
+        "term": "need",
+        "logit_contribution": -0.0029604651622877234
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.153876926470129,
+    "reconstructed_score": 0.23978165922635966,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006728652089997278
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.005958485574558895
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.004874402676218289
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.004819959277605962
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004174406772919161
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004145041179703624
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0037421381382537915
+      },
+      {
+        "term": "phase",
+        "logit_contribution": 0.0031269439139351685
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "any",
+        "logit_contribution": -0.009084686499727842
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.007073038012752209
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.005701228978493689
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005055443950594195
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.003950436835648897
+      },
+      {
+        "term": "the llm",
+        "logit_contribution": -0.0036001174065433132
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.003160583317710842
+      },
+      {
+        "term": "locally",
+        "logit_contribution": -0.002807326798915545
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1514527190760935,
+    "reconstructed_score": 0.2402238380218431,
+    "positive_terms": [
+      {
+        "term": "framework",
+        "logit_contribution": 0.004643158934793634
+      },
+      {
+        "term": "ensure",
+        "logit_contribution": 0.004580759172706421
+      },
+      {
+        "term": "language",
+        "logit_contribution": 0.003757753742748923
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0036048732221852526
+      },
+      {
+        "term": "step",
+        "logit_contribution": 0.0031559391580781517
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.002973394963482858
+      },
+      {
+        "term": "traffic",
+        "logit_contribution": 0.0029289061011979435
+      },
+      {
+        "term": "runs",
+        "logit_contribution": 0.0029112084251789808
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "any",
+        "logit_contribution": -0.007060616542566912
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006012082923915854
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.005992173359844133
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.005492102888459601
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004216259494673228
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0030784834955928067
+      },
+      {
+        "term": "locally",
+        "logit_contribution": -0.0027043515844276268
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0026503791679430844
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.153876926470129,
+    "reconstructed_score": 0.23978165922635966,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006728652089997278
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.005958485574558895
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.004874402676218289
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.004819959277605962
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004174406772919161
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004145041179703624
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0037421381382537915
+      },
+      {
+        "term": "phase",
+        "logit_contribution": 0.0031269439139351685
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "any",
+        "logit_contribution": -0.009084686499727842
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.007073038012752209
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.005701228978493689
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005055443950594195
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.003950436835648897
+      },
+      {
+        "term": "the llm",
+        "logit_contribution": -0.0036001174065433132
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.003160583317710842
+      },
+      {
+        "term": "locally",
+        "logit_contribution": -0.002807326798915545
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T05",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1431491227457384,
+    "reconstructed_score": 0.24174264754132926,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.015285452542834917
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005217487113595839
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004486904908285774
+      },
+      {
+        "term": "tasks",
+        "logit_contribution": 0.004303647004528407
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.0039550692757007785
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003809422973513987
+      },
+      {
+        "term": "phase",
+        "logit_contribution": 0.0033848397125871795
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0032681375833560106
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "network",
+        "logit_contribution": -0.00673336573795499
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006402230391997298
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006171439842895239
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004685929490562491
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.00427625050253743
+      },
+      {
+        "term": "can",
+        "logit_contribution": -0.004024869471439741
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.0033407871716758207
+      },
+      {
+        "term": "locally",
+        "logit_contribution": -0.0030388620636374467
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.150047315272517,
+    "reconstructed_score": 0.24048044082924686,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.015125819889525828
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.005278002691369241
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.004557957363011731
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.0045572213319386755
+      },
+      {
+        "term": "our",
+        "logit_contribution": 0.004504060605726218
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004440046201705249
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.00429468905372852
+      },
+      {
+        "term": "by",
+        "logit_contribution": 0.004274170419524388
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.01107877390718835
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.00610698880265956
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.005164979037519965
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004762402923391459
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004688304288177369
+      },
+      {
+        "term": "create",
+        "logit_contribution": -0.004684484611118029
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004636992283391059
+      },
+      {
+        "term": "to create",
+        "logit_contribution": -0.004223222903153596
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1599198047152754,
+    "reconstructed_score": 0.23868185736370554,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.011968532063613927
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.0055527916412183255
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005063624255288476
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.004469506614253872
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004354586802057355
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.004251323574932921
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.004212027403031042
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003931315671387514
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.01086553617858556
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.00655651235416929
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0059894450715760284
+      },
+      {
+        "term": "create",
+        "logit_contribution": -0.0045943204046347275
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004547742181318174
+      },
+      {
+        "term": "to create",
+        "logit_contribution": -0.004141936790918067
+      },
+      {
+        "term": "using",
+        "logit_contribution": -0.004093831154746164
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.004018707483328378
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1611458459026336,
+    "reconstructed_score": 0.23845914133507817,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.011055004732545662
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.008663828385662034
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.005128961308390637
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.004515134783506186
+      },
+      {
+        "term": "old",
+        "logit_contribution": 0.004177587545279461
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0039041829811001616
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0028397948522475083
+      },
+      {
+        "term": "we will",
+        "logit_contribution": 0.0025298230023846242
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.010036197692203817
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.007190978841888631
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005739174508538645
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.004678924863969397
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004200624693960104
+      },
+      {
+        "term": "would be",
+        "logit_contribution": -0.0038405404288571646
+      },
+      {
+        "term": "using",
+        "logit_contribution": -0.003781359530927818
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.003633966562413775
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.186780107835195,
+    "reconstructed_score": 0.23383530545716905,
+    "positive_terms": [
+      {
+        "term": "framework",
+        "logit_contribution": 0.008237592754237752
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.007084118188837336
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.004973626914240499
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.004294412109289973
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.0040847764678271165
+      },
+      {
+        "term": "over",
+        "logit_contribution": 0.003976052349490983
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0037773049872678907
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.0031510899482454905
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "would",
+        "logit_contribution": -0.01054249499215436
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.009547119172420664
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.007132934248518922
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005970016336929245
+      },
+      {
+        "term": "would be",
+        "logit_contribution": -0.0056305099943471755
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004369582770299093
+      },
+      {
+        "term": "be",
+        "logit_contribution": -0.004269725688669658
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.004217267365560257
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1692242181020684,
+    "reconstructed_score": 0.2369952391229434,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006990859262745013
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.0054915603535570295
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005007787074025854
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.004420220838218272
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004306568260330773
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003887964590288912
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.003206896225869732
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003040558094545486
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.010745720630959642
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0069678909670756505
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005252448290771112
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004497593692466788
+      },
+      {
+        "term": "using",
+        "logit_contribution": -0.004048687996264884
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.003974392722422944
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.0038908748770743293
+      },
+      {
+        "term": "on the",
+        "logit_contribution": -0.0035815055790776916
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.134715042734933,
+    "reconstructed_score": 0.24329200646173768,
+    "positive_terms": [
+      {
+        "term": "new",
+        "logit_contribution": 0.0072965745211402665
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.006815706840346104
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.00499107155628266
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.004882319516475686
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.0047132166177207
+      },
+      {
+        "term": "old",
+        "logit_contribution": 0.00436086096750011
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004198669383429765
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.0032507865692392936
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.011827376371027404
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005120850870900821
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.004884192273171131
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.003793390986416941
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0034108027222756673
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003237050521586134
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0031462496919070614
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.0029745308825611253
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1692242181020684,
+    "reconstructed_score": 0.2369952391229434,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006990859262745013
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.0054915603535570295
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005007787074025854
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.004420220838218272
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004306568260330773
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003887964590288912
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.003206896225869732
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003040558094545486
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.010745720630959642
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0069678909670756505
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005252448290771112
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004497593692466788
+      },
+      {
+        "term": "using",
+        "logit_contribution": -0.004048687996264884
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.003974392722422944
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.0038908748770743293
+      },
+      {
+        "term": "on the",
+        "logit_contribution": -0.0035815055790776916
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T06",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1692242181020684,
+    "reconstructed_score": 0.2369952391229434,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006990859262745013
+      },
+      {
+        "term": "design",
+        "logit_contribution": 0.0054915603535570295
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005007787074025854
+      },
+      {
+        "term": "new",
+        "logit_contribution": 0.004420220838218272
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004306568260330773
+      },
+      {
+        "term": "test",
+        "logit_contribution": 0.003887964590288912
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.003206896225869732
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.003040558094545486
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "prompt",
+        "logit_contribution": -0.010745720630959642
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0069678909670756505
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005252448290771112
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004497593692466788
+      },
+      {
+        "term": "using",
+        "logit_contribution": -0.004048687996264884
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.003974392722422944
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.0038908748770743293
+      },
+      {
+        "term": "on the",
+        "logit_contribution": -0.0035815055790776916
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1184572177802323,
+    "reconstructed_score": 0.2462975659341633,
+    "positive_terms": [
+      {
+        "term": "llms",
+        "logit_contribution": 0.007824808994309106
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.007502020683956275
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.006766275571973421
+      },
+      {
+        "term": "augmented",
+        "logit_contribution": 0.004607338255506932
+      },
+      {
+        "term": "augmented generation",
+        "logit_contribution": 0.004607338255506932
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.004520976006244079
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.0044701620719851355
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.004030220066947885
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.006356509022693112
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0060326974389322925
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.004658210201156751
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004237208573630828
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.0031751583972495353
+      },
+      {
+        "term": "documents",
+        "logit_contribution": -0.002991835318046567
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.0028300514599114085
+      },
+      {
+        "term": "it be",
+        "logit_contribution": -0.00278275403807276
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1093939370559587,
+    "reconstructed_score": 0.24798389469187915,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007129777226829274
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.006313697630322559
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.004562659727594786
+      },
+      {
+        "term": "steps",
+        "logit_contribution": 0.00440121249930591
+      },
+      {
+        "term": "augmented",
+        "logit_contribution": 0.004378726313120373
+      },
+      {
+        "term": "augmented generation",
+        "logit_contribution": 0.004378726313120373
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.0043389478698192055
+      },
+      {
+        "term": "rag",
+        "logit_contribution": 0.0036347532313644234
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.007106352519615499
+      },
+      {
+        "term": "know",
+        "logit_contribution": -0.005428437299606251
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.004026962130110664
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0030770919273344377
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.003017609919511309
+      },
+      {
+        "term": "issue",
+        "logit_contribution": -0.002809247617131641
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.002689626875167504
+      },
+      {
+        "term": "if",
+        "logit_contribution": -0.002663615991204942
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1525751837098106,
+    "reconstructed_score": 0.2400190296202498,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0069357630325171645
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.005575655695367982
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.005501408161863334
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.005472645155010632
+      },
+      {
+        "term": "steps",
+        "logit_contribution": 0.0042814475094776145
+      },
+      {
+        "term": "augmented",
+        "logit_contribution": 0.004259573213279261
+      },
+      {
+        "term": "augmented generation",
+        "logit_contribution": 0.004259573213279261
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003627499437320124
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "would",
+        "logit_contribution": -0.007638675066949016
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.005876715374797766
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005577345310815918
+      },
+      {
+        "term": "know",
+        "logit_contribution": -0.005280719656326493
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.004462147340560947
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.00426744975261978
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004072033061082043
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.003697397725807538
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1571743904143206,
+    "reconstructed_score": 0.23918109221203654,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0058508215131167175
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.005770470521534405
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.005023927274471938
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.004703471865928402
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.0042844960205947824
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.0035259065246495565
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.0031431662566222293
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0030600601040126213
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.007251074930588664
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005426796767291819
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.004631963585693574
+      },
+      {
+        "term": "something",
+        "logit_contribution": -0.004072769218352676
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0036329353924381314
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0033045964710787697
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.002927942532145964
+      },
+      {
+        "term": "embeddings",
+        "logit_contribution": -0.002666665854832971
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1280329811769172,
+    "reconstructed_score": 0.24452428991536068,
+    "positive_terms": [
+      {
+        "term": "source",
+        "logit_contribution": 0.005361981646080754
+      },
+      {
+        "term": "vector search",
+        "logit_contribution": 0.004777775813097205
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.004494478228742164
+      },
+      {
+        "term": "vector",
+        "logit_contribution": 0.0041015868370651
+      },
+      {
+        "term": "rag",
+        "logit_contribution": 0.003580437779836225
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.0034147082604456917
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.0030440386622299503
+      },
+      {
+        "term": "small",
+        "logit_contribution": 0.002942686741975827
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005493875782601531
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.004556516501976656
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.0044858830509477395
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.004186990274525534
+      },
+      {
+        "term": "does",
+        "logit_contribution": -0.0038527116479576463
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0035183617057054526
+      },
+      {
+        "term": "embeddings",
+        "logit_contribution": -0.002582565890129961
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0024454803119832056
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1256800740113717,
+    "reconstructed_score": 0.24495920877569513,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.011768020468982
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.006268738123798031
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.005968087718875674
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0055874082456886355
+      },
+      {
+        "term": "rag",
+        "logit_contribution": 0.004391826492892491
+      },
+      {
+        "term": "augmented",
+        "logit_contribution": 0.004268551681690638
+      },
+      {
+        "term": "augmented generation",
+        "logit_contribution": 0.004268551681690638
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003635145599853199
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005222036821159753
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.0039221955434518545
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.0038643009945424508
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0034781988100157702
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003301013335837205
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.002941682803517628
+      },
+      {
+        "term": "issue",
+        "logit_contribution": -0.0027385631763423325
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.002533391108399026
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1280329811769172,
+    "reconstructed_score": 0.24452428991536068,
+    "positive_terms": [
+      {
+        "term": "source",
+        "logit_contribution": 0.005361981646080754
+      },
+      {
+        "term": "vector search",
+        "logit_contribution": 0.004777775813097205
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.004494478228742164
+      },
+      {
+        "term": "vector",
+        "logit_contribution": 0.0041015868370651
+      },
+      {
+        "term": "rag",
+        "logit_contribution": 0.003580437779836225
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.0034147082604456917
+      },
+      {
+        "term": "did",
+        "logit_contribution": 0.0030440386622299503
+      },
+      {
+        "term": "small",
+        "logit_contribution": 0.002942686741975827
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.005493875782601531
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.004556516501976656
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.0044858830509477395
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.004186990274525534
+      },
+      {
+        "term": "does",
+        "logit_contribution": -0.0038527116479576463
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0035183617057054526
+      },
+      {
+        "term": "embeddings",
+        "logit_contribution": -0.002582565890129961
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.0024454803119832056
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T07",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1275775620207524,
+    "reconstructed_score": 0.24460843026864568,
+    "positive_terms": [
+      {
+        "term": "did",
+        "logit_contribution": 0.007308563231086076
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.0064826010198762215
+      },
+      {
+        "term": "retrieval",
+        "logit_contribution": 0.0058468333761653645
+      },
+      {
+        "term": "rag",
+        "logit_contribution": 0.004096243488540152
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.003945097720618204
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.003906638611593119
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0033904894734325193
+      },
+      {
+        "term": "they",
+        "logit_contribution": 0.0033112598259260875
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.006461302594126971
+      },
+      {
+        "term": "embedding",
+        "logit_contribution": -0.005132129188581466
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004216755026535492
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0040252245992064735
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.003661431203407699
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.002829155857877961
+      },
+      {
+        "term": "that",
+        "logit_contribution": -0.002078244238453936
+      },
+      {
+        "term": "the",
+        "logit_contribution": -0.0018928389992170815
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1145404208008232,
+    "reconstructed_score": 0.24702538313715428,
+    "positive_terms": [
+      {
+        "term": "score",
+        "logit_contribution": 0.007387528362346312
+      },
+      {
+        "term": "model with",
+        "logit_contribution": 0.00722960746503274
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.005445895973922547
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.005102286356836403
+      },
+      {
+        "term": "why",
+        "logit_contribution": 0.0044601936358223924
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.0042627196809556026
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.00410852585159035
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0032623238440098183
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007216024374138287
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.0042276035183866694
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004034011480849671
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003263312440340756
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.003026732115094837
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0030166728957916325
+      },
+      {
+        "term": "online",
+        "logit_contribution": -0.002875184870358509
+      },
+      {
+        "term": "need",
+        "logit_contribution": -0.002790001470193183
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1438523266385308,
+    "reconstructed_score": 0.24161377146997143,
+    "positive_terms": [
+      {
+        "term": "better than",
+        "logit_contribution": 0.0057367211957238765
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.0057366783499018985
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.0045261535467865065
+      },
+      {
+        "term": "general",
+        "logit_contribution": 0.00451557056915993
+      },
+      {
+        "term": "why",
+        "logit_contribution": 0.0043367824649229066
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.004144772508703289
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.004002591361506767
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.00390471945280811
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007978177961806903
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006196703459946647
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.0060344756390458
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005372387041969701
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.004110627991559192
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.003922392542094375
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0037734238564972847
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0036604403915398366
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1017965811663402,
+    "reconstructed_score": 0.24940342058151901,
+    "positive_terms": [
+      {
+        "term": "team",
+        "logit_contribution": 0.00509491864571352
+      },
+      {
+        "term": "benchmarks",
+        "logit_contribution": 0.00437568417441721
+      },
+      {
+        "term": "why",
+        "logit_contribution": 0.004350043746547428
+      },
+      {
+        "term": "score",
+        "logit_contribution": 0.004255438910267872
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00415744665040905
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004128200366136222
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0040070608246011
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.003993052350949445
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007037815903673479
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005388815059315682
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.00442791642223951
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.0035749569212572756
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.003276652850259084
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.002942172501283768
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.0028362671193135854
+      },
+      {
+        "term": "need",
+        "logit_contribution": -0.0027210990013518043
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1068180711115223,
+    "reconstructed_score": 0.2484645742499068,
+    "positive_terms": [
+      {
+        "term": "their",
+        "logit_contribution": 0.009079258994753881
+      },
+      {
+        "term": "team",
+        "logit_contribution": 0.005166898284245585
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.004604133710172143
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.004544161672531172
+      },
+      {
+        "term": "why",
+        "logit_contribution": 0.004411499993103706
+      },
+      {
+        "term": "score",
+        "logit_contribution": 0.004315558605174887
+      },
+      {
+        "term": "while",
+        "logit_contribution": 0.00421618193705873
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.00418652246915791
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007137244271431192
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.00546494678723091
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.0044904728329863515
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.0037235053620153337
+      },
+      {
+        "term": "but",
+        "logit_contribution": -0.0033604903741521358
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.0033229445193037185
+      },
+      {
+        "term": "network",
+        "logit_contribution": -0.00299368812098797
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.002728587200148192
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.120018826874574,
+    "reconstructed_score": 0.24600779137583337,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006358032022542238
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.00501678805640223
+      },
+      {
+        "term": "reasoning",
+        "logit_contribution": 0.00484052237600705
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.0047213637235317815
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.004605916295216566
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.0043074276177202594
+      },
+      {
+        "term": "general",
+        "logit_contribution": 0.004297356061456156
+      },
+      {
+        "term": "score",
+        "logit_contribution": 0.004037449277537514
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.007205851393514152
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006677295887661998
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.005742860191859958
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005223683919338191
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0039478762955194435
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0035910735163593344
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.0035349636661200605
+      },
+      {
+        "term": "like",
+        "logit_contribution": -0.0033510148813262466
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1205329907641222,
+    "reconstructed_score": 0.2459124326212512,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.010733836475408457
+      },
+      {
+        "term": "score",
+        "logit_contribution": 0.008448446203266251
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.0050022259617141344
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.004707659149045866
+      },
+      {
+        "term": "benchmark",
+        "logit_contribution": 0.004238980190475119
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.0039053596884580525
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.0038580578461710974
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.0037771456935477236
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.0066579138819078424
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0063187482123639145
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004188897041221029
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.0037220080816775165
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.00358064980461604
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0027733267978438452
+      },
+      {
+        "term": "should",
+        "logit_contribution": -0.002736054686487172
+      },
+      {
+        "term": "where",
+        "logit_contribution": -0.002683165130338254
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.120018826874574,
+    "reconstructed_score": 0.24600779137583337,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.006358032022542238
+      },
+      {
+        "term": "their",
+        "logit_contribution": 0.00501678805640223
+      },
+      {
+        "term": "reasoning",
+        "logit_contribution": 0.00484052237600705
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.0047213637235317815
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.004605916295216566
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.0043074276177202594
+      },
+      {
+        "term": "general",
+        "logit_contribution": 0.004297356061456156
+      },
+      {
+        "term": "score",
+        "logit_contribution": 0.004037449277537514
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.007205851393514152
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.006677295887661998
+      },
+      {
+        "term": "use",
+        "logit_contribution": -0.005742860191859958
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005223683919338191
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0039478762955194435
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0035910735163593344
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.0035349636661200605
+      },
+      {
+        "term": "like",
+        "logit_contribution": -0.0033510148813262466
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T08",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1196194635614205,
+    "reconstructed_score": 0.24608187597507294,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007043733194986468
+      },
+      {
+        "term": "low latency",
+        "logit_contribution": 0.005230553458544616
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.005202180409056116
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.005102655253531399
+      },
+      {
+        "term": "leaderboard",
+        "logit_contribution": 0.0033858590223656104
+      },
+      {
+        "term": "team",
+        "logit_contribution": 0.0031628998984312854
+      },
+      {
+        "term": "real time",
+        "logit_contribution": 0.003088074469570002
+      },
+      {
+        "term": "deployment",
+        "logit_contribution": 0.00290105575115395
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.008411483765342058
+      },
+      {
+        "term": "not",
+        "logit_contribution": -0.0039783636891314485
+      },
+      {
+        "term": "but",
+        "logit_contribution": -0.0034829954145108193
+      },
+      {
+        "term": "how can",
+        "logit_contribution": -0.003357103004829759
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.003345349315462441
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.003308583254523615
+      },
+      {
+        "term": "specific",
+        "logit_contribution": -0.0027786627390855266
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.002559660432179421
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1640281335377778,
+    "reconstructed_score": 0.2379361229687315,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007768395409057313
+      },
+      {
+        "term": "designed",
+        "logit_contribution": 0.00568871553198052
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005564762306504172
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004785552654540081
+      },
+      {
+        "term": "for local",
+        "logit_contribution": 0.004628884400707665
+      },
+      {
+        "term": "tested",
+        "logit_contribution": 0.004141238842314585
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0040629776194946576
+      },
+      {
+        "term": "comparisons",
+        "logit_contribution": 0.0036528472481405167
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.008158479626198855
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.007742872537558153
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.00638242179867595
+      },
+      {
+        "term": "any",
+        "logit_contribution": -0.00499782428442781
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004576035040165276
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.0035631494859949494
+      },
+      {
+        "term": "recommendations",
+        "logit_contribution": -0.003414696086641771
+      },
+      {
+        "term": "have",
+        "logit_contribution": -0.0033903060377247158
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1848286160447814,
+    "reconstructed_score": 0.23418510919731245,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.01572440598824946
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004615755680823921
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.0039188184483669114
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.003557533726332678
+      },
+      {
+        "term": "includes",
+        "logit_contribution": 0.0034508297197838765
+      },
+      {
+        "term": "critical",
+        "logit_contribution": 0.0031228326598801205
+      },
+      {
+        "term": "detailed",
+        "logit_contribution": 0.00263077120009059
+      },
+      {
+        "term": "by",
+        "logit_contribution": 0.002624293750374921
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.008947706922008131
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.005714177228674064
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005452511439123233
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.004413671995073288
+      },
+      {
+        "term": "can",
+        "logit_contribution": -0.004140451938944796
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0035586117814115745
+      },
+      {
+        "term": "recommendations",
+        "logit_contribution": -0.003293538698242309
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.003289653658326417
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.2127393509780158,
+    "reconstructed_score": 0.22921671328788756,
+    "positive_terms": [
+      {
+        "term": "build",
+        "logit_contribution": 0.006389811932778817
+      },
+      {
+        "term": "top",
+        "logit_contribution": 0.005511631359321156
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.003889273377972023
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003480372654074293
+      },
+      {
+        "term": "you",
+        "logit_contribution": 0.0033772369751674343
+      },
+      {
+        "term": "comparisons",
+        "logit_contribution": 0.0031290523509012167
+      },
+      {
+        "term": "ensure",
+        "logit_contribution": 0.002777519614710667
+      },
+      {
+        "term": "were",
+        "logit_contribution": 0.0023684917357164968
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.007946618323440293
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.007328860079991883
+      },
+      {
+        "term": "prompt",
+        "logit_contribution": -0.006636901476713975
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005849218565728514
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.004094367395030221
+      },
+      {
+        "term": "outputs",
+        "logit_contribution": -0.003985750293339495
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.0039068765570219694
+      },
+      {
+        "term": "my",
+        "logit_contribution": -0.00378038042635041
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.158761464945141,
+    "reconstructed_score": 0.23889240626810287,
+    "positive_terms": [
+      {
+        "term": "designed",
+        "logit_contribution": 0.00554577947373808
+      },
+      {
+        "term": "llms",
+        "logit_contribution": 0.004665309687721619
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.004426245845698004
+      },
+      {
+        "term": "top",
+        "logit_contribution": 0.003704695450124642
+      },
+      {
+        "term": "includes",
+        "logit_contribution": 0.0034878772698627037
+      },
+      {
+        "term": "study",
+        "logit_contribution": 0.003259410105556773
+      },
+      {
+        "term": "critical",
+        "logit_contribution": 0.0031563588865413275
+      },
+      {
+        "term": "designed to",
+        "logit_contribution": 0.0030777674598346074
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "to",
+        "logit_contribution": -0.007024354317410982
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.00641682377379605
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004926163021956923
+      },
+      {
+        "term": "ram",
+        "logit_contribution": -0.0038996511946698823
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0035968164622821232
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.0034736209202592357
+      },
+      {
+        "term": "cpu",
+        "logit_contribution": -0.0034209200909781
+      },
+      {
+        "term": "be",
+        "logit_contribution": -0.003378003246643464
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1694435591748882,
+    "reconstructed_score": 0.23695557829479066,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0066340673958606424
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.0056964773333163955
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.0039898619056442
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.0038773562851508606
+      },
+      {
+        "term": "benchmarking",
+        "logit_contribution": 0.0036698319888684404
+      },
+      {
+        "term": "tested",
+        "logit_contribution": 0.0035365421217152895
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003469708470834886
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.0031641526983277567
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.00926837454775635
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.005752853996226753
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005489417105340777
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005450471317649426
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005334738875660767
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.003743694640989158
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.003692296639545951
+      },
+      {
+        "term": "recommendations",
+        "logit_contribution": -0.00291608791549812
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1779239609241088,
+    "reconstructed_score": 0.23542567888400298,
+    "positive_terms": [
+      {
+        "term": "framework",
+        "logit_contribution": 0.008939615490523611
+      },
+      {
+        "term": "we",
+        "logit_contribution": 0.007370701644921015
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.005339519318738335
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003854978312299964
+      },
+      {
+        "term": "you",
+        "logit_contribution": 0.0037407417506073993
+      },
+      {
+        "term": "comparisons",
+        "logit_contribution": 0.0034658440775457025
+      },
+      {
+        "term": "critical",
+        "logit_contribution": 0.003071959657073844
+      },
+      {
+        "term": "explore",
+        "logit_contribution": 0.0028999638213215912
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "any",
+        "logit_contribution": -0.009951549408636885
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.008801942877331293
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.007346485386474306
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005537835593824811
+      },
+      {
+        "term": "do",
+        "logit_contribution": -0.004038389139280726
+      },
+      {
+        "term": "how can",
+        "logit_contribution": -0.003512938942304093
+      },
+      {
+        "term": "for",
+        "logit_contribution": -0.0034621669165199247
+      },
+      {
+        "term": "is to",
+        "logit_contribution": -0.003380738285657041
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1694435591748882,
+    "reconstructed_score": 0.23695557829479066,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0066340673958606424
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.0056964773333163955
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.0039898619056442
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.0038773562851508606
+      },
+      {
+        "term": "benchmarking",
+        "logit_contribution": 0.0036698319888684404
+      },
+      {
+        "term": "tested",
+        "logit_contribution": 0.0035365421217152895
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003469708470834886
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.0031641526983277567
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.00926837454775635
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.005752853996226753
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005489417105340777
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005450471317649426
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005334738875660767
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.003743694640989158
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.003692296639545951
+      },
+      {
+        "term": "recommendations",
+        "logit_contribution": -0.00291608791549812
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T09",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1694435591748882,
+    "reconstructed_score": 0.23695557829479066,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0066340673958606424
+      },
+      {
+        "term": "than",
+        "logit_contribution": 0.0056964773333163955
+      },
+      {
+        "term": "including",
+        "logit_contribution": 0.0039898619056442
+      },
+      {
+        "term": "models",
+        "logit_contribution": 0.0038773562851508606
+      },
+      {
+        "term": "benchmarking",
+        "logit_contribution": 0.0036698319888684404
+      },
+      {
+        "term": "tested",
+        "logit_contribution": 0.0035365421217152895
+      },
+      {
+        "term": "generation",
+        "logit_contribution": 0.003469708470834886
+      },
+      {
+        "term": "across",
+        "logit_contribution": 0.0031641526983277567
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "local",
+        "logit_contribution": -0.00926837454775635
+      },
+      {
+        "term": "local llm",
+        "logit_contribution": -0.005752853996226753
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005489417105340777
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005450471317649426
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.005334738875660767
+      },
+      {
+        "term": "setup",
+        "logit_contribution": -0.003743694640989158
+      },
+      {
+        "term": "same",
+        "logit_contribution": -0.003692296639545951
+      },
+      {
+        "term": "recommendations",
+        "logit_contribution": -0.00291608791549812
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G0_generic",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.18676489933415,
+    "reconstructed_score": 0.2338380301678165,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.01308281214296893
+      },
+      {
+        "term": "framework",
+        "logit_contribution": 0.005535051796027591
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004702349076567526
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004512735255312635
+      },
+      {
+        "term": "kv",
+        "logit_contribution": 0.004237563295033067
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.0040182450945956995
+      },
+      {
+        "term": "cache",
+        "logit_contribution": 0.0036920217830826137
+      },
+      {
+        "term": "tokens",
+        "logit_contribution": 0.0033078647959624823
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.0077015330008492686
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.006348345768241752
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.005462190322855777
+      },
+      {
+        "term": "something",
+        "logit_contribution": -0.005378725064132381
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0047978561033183735
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004536526398437249
+      },
+      {
+        "term": "advice",
+        "logit_contribution": -0.0041184453093402055
+      },
+      {
+        "term": "ram",
+        "logit_contribution": -0.003978803167414079
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G1_prompt",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1719932721019588,
+    "reconstructed_score": 0.2364948799719444,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.0076276905288855034
+      },
+      {
+        "term": "architecture",
+        "logit_contribution": 0.004774909577102754
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.0045609888169988394
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.0045103983275637015
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.00445478272425051
+      },
+      {
+        "term": "16",
+        "logit_contribution": 0.004203404779091015
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0036215964332311163
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0034990279520489653
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.007602629939799484
+      },
+      {
+        "term": "something",
+        "logit_contribution": -0.005309651494840498
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.0050400226421445414
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.0047362420512793504
+      },
+      {
+        "term": "gpu",
+        "logit_contribution": -0.004532397169241173
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004350267868589215
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0038171459292515387
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.003336828219374146
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G2_fewshot_planning",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1697868051862887,
+    "reconstructed_score": 0.23689352239977474,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007033310755760108
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.006466399372474429
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.00454783387663851
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004280241549013068
+      },
+      {
+        "term": "performance",
+        "logit_contribution": 0.004205578553825598
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004107648459306776
+      },
+      {
+        "term": "kv",
+        "logit_contribution": 0.003857177378080344
+      },
+      {
+        "term": "cache",
+        "logit_contribution": 0.0033606065348399687
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.008716564534706626
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.007394270654385762
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005284343407458136
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004971875457950953
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004129303984586243
+      },
+      {
+        "term": "gpu",
+        "logit_contribution": -0.0036753855045924726
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0035196988418502934
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.003246699471785551
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G3_rag",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1538808175426367,
+    "reconstructed_score": 0.23978094993741944,
+    "positive_terms": [
+      {
+        "term": "performance",
+        "logit_contribution": 0.00443679249064751
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004333478403796303
+      },
+      {
+        "term": "increased",
+        "logit_contribution": 0.0042842581597089605
+      },
+      {
+        "term": "llm performance",
+        "logit_contribution": 0.004263244654882826
+      },
+      {
+        "term": "16",
+        "logit_contribution": 0.004088945513200019
+      },
+      {
+        "term": "kv",
+        "logit_contribution": 0.00406923694496089
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.0038586305983918288
+      },
+      {
+        "term": "an llm",
+        "logit_contribution": 0.0036417919297733843
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "or",
+        "logit_contribution": -0.008409414604361603
+      },
+      {
+        "term": "there",
+        "logit_contribution": -0.007800792231868145
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.0055748655858266485
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.005399551937320039
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.0045792191115488524
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004231809501423447
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0037132045427273946
+      },
+      {
+        "term": "gpu",
+        "logit_contribution": -0.003128302675976214
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G4_both",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1788895826883645,
+    "reconstructed_score": 0.23525191096007506,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.00759247920078166
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004620533069520414
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004434218332506914
+      },
+      {
+        "term": "16",
+        "logit_contribution": 0.004184000810842782
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.004122793819259595
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.003948331788793987
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0034828755634855398
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0033022226916552557
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "there",
+        "logit_contribution": -0.007982136450091604
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0061054390222698525
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005016756636499542
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.004685671749329065
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004457595534364759
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004330185943571356
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0037995250285049577
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0033214245853628276
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "G4_positive",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1788895826883645,
+    "reconstructed_score": 0.23525191096007506,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.00759247920078166
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004620533069520414
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004434218332506914
+      },
+      {
+        "term": "16",
+        "logit_contribution": 0.004184000810842782
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.004122793819259595
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.003948331788793987
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0034828755634855398
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0033022226916552557
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "there",
+        "logit_contribution": -0.007982136450091604
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0061054390222698525
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005016756636499542
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.004685671749329065
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004457595534364759
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004330185943571356
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0037995250285049577
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0033214245853628276
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "O1_resample",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.159734836531215,
+    "reconstructed_score": 0.2387154700801751,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.007543402810474199
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004405556360068162
+      },
+      {
+        "term": "kv",
+        "logit_contribution": 0.004136919821220705
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.004096144837644955
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.00392281049768393
+      },
+      {
+        "term": "such as",
+        "logit_contribution": 0.003866865641537706
+      },
+      {
+        "term": "cache",
+        "logit_contribution": 0.0036043350934051098
+      },
+      {
+        "term": "in this",
+        "logit_contribution": 0.0035815769674167144
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "there",
+        "logit_contribution": -0.00793054138693071
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.006065974586407523
+      },
+      {
+        "term": "would",
+        "logit_contribution": -0.004906777637667477
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004428782455989153
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.004021325449778978
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0037749655969476505
+      },
+      {
+        "term": "16gb",
+        "logit_contribution": -0.0034400420932890136
+      },
+      {
+        "term": "gpu",
+        "logit_contribution": -0.0031803351640778328
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  },
+  {
+    "topic_id": "T10",
+    "variant": "O2_feedback",
+    "intercept": -1.1426185519495087,
+    "summed_logit": -1.1788895826883645,
+    "reconstructed_score": 0.23525191096007506,
+    "positive_terms": [
+      {
+        "term": "we",
+        "logit_contribution": 0.00759247920078166
+      },
+      {
+        "term": "re",
+        "logit_contribution": 0.004620533069520414
+      },
+      {
+        "term": "attention",
+        "logit_contribution": 0.004434218332506914
+      },
+      {
+        "term": "16",
+        "logit_contribution": 0.004184000810842782
+      },
+      {
+        "term": "weights",
+        "logit_contribution": 0.004122793819259595
+      },
+      {
+        "term": "context",
+        "logit_contribution": 0.003948331788793987
+      },
+      {
+        "term": "core",
+        "logit_contribution": 0.0034828755634855398
+      },
+      {
+        "term": "post",
+        "logit_contribution": 0.0033022226916552557
+      }
+    ],
+    "negative_terms": [
+      {
+        "term": "there",
+        "logit_contribution": -0.007982136450091604
+      },
+      {
+        "term": "or",
+        "logit_contribution": -0.0061054390222698525
+      },
+      {
+        "term": "to",
+        "logit_contribution": -0.005016756636499542
+      },
+      {
+        "term": "system",
+        "logit_contribution": -0.004685671749329065
+      },
+      {
+        "term": "llm",
+        "logit_contribution": -0.004457595534364759
+      },
+      {
+        "term": "length",
+        "logit_contribution": -0.004330185943571356
+      },
+      {
+        "term": "local",
+        "logit_contribution": -0.0037995250285049577
+      },
+      {
+        "term": "is",
+        "logit_contribution": -0.0033214245853628276
+      }
+    ],
+    "boundary": "exact linear model contributions; often topics/entities, not proven causal editing effects"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791111951-otQNoXwSCCS9QGniuP8l",
+  "object": "chat.completion",
+  "created": 1791111951,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Insights and Questions on DeepSeek R1 Perplexity Tests with Varying Experts\",\"body\":\"A community member shared a brief perplexity test of DeepSeek R1 models with different numbers of experts, plus some distilled models and Virtuoso-Medium-v2 for comparison. The test ran on only 8 blocks out of about 560, so the results are very preliminary. Interestingly, the full DeepSeek model appears to outperform normal distills unless limited to just 2 experts. Virtuoso-Medium-v2 sits roughly between DeepSeek with 3 and 4 experts. However, attempts to test 10 and 12 experts resulted in NaNs, which raises questions about stability or compatibility at higher expert counts. Given the test used block size 512 and perplexity may not fairly represent chain-of-thought models, how much weight should we give these numbers? What might cause NaNs at higher expert counts, and could that be fixed? Also, how might these early results guide further evaluation or tuning of expert counts in MoE models? Any thoughts on better metrics or test setups to get a clearer picture would be valuable.\",\"fact_refs\":[\"F1\",\"F3\",\"F4\",\"F5\",\"F6\",\"F2\"]},{\"title\":\"Evaluating DeepSeek R1 Experts: Perplexity Test Limitations and Next Steps\",\"body\":\"A short perplexity test shared on r/LocalLLaMA looked at DeepSeek R1 models with varying expert counts alongside distilled models and Virtuoso-Medium-v2. The test only covered 8 blocks out of roughly 560, so conclusions are tentative. Results suggest that the full DeepSeek model, even with aggressive quantization, generally outperforms standard distills except when restricted to 2 experts. Virtuoso-Medium-v2 distill performed comparably to DeepSeek with 3-4 experts. Notably, testing with 10 and 12 experts failed due to NaNs, which might indicate issues with scaling or model configuration. Since perplexity might not suit chain-of-thought models well, what alternative evaluation methods could better capture their strengths? Also, how critical is expert count tuning for practical performance versus model size or quantization? It would be great to discuss how to build on these preliminary findings with more comprehensive tests or different metrics.\",\"fact_refs\":[\"F1\",\"F4\",\"F5\",\"F6\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1589,
+    "completion_tokens": 492,
+    "total_tokens": 2081,
+    "cost": 0.0014228,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014228,
+      "upstream_inference_prompt_cost": 0.0006356,
+      "upstream_inference_completions_cost": 0.0007872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

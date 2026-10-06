@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Draft A is overly vague ('exploring options,' 'would like to hear experiences') and reads as a generic recap of the brief rather than a genuine community question. It omits concrete friction points (login/cost/performance concerns from F3, app size concerns from F4) that would resonate with the audience and invite targeted responses. Draft B preserves all six facts and articulates specific trade-offs the developer actually faces: setup complexity vs. local deployment, user friction vs. app bloat, and content control methods. It names the APIs under consideration (F2) and frames distinct sub-questions (fine-tuning necessity, content filtering feasibility) that community members can address with concrete advice. Both cite the same facts accurately, but B's specificity—naming OpenAI/Claude/Gemini, mentioning login/cost/performance explicitly, asking about fine-tuning and filtering—creates actionable community fit. A's restraint becomes evasiveness; B's detail becomes clarity without inventing unsupported claims. Neither violates forbidden claims or essential limitations."
+  },
+  "usage": {
+    "run_id": "v002-r0170",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:30:05.474430+00:00",
+    "tag": "judge_validation:HP04:AB",
+    "phase": "validation",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "a5c2bab0efb678099355bfa46c029f3a77474b3bb6015395836be2b44689d986",
+    "actual_cost_usd": 0.003716,
+    "budget_charge_usd": 0.003716,
+    "reserved_upper_usd": 0.012511999999999999,
+    "input_tokens": 2176,
+    "output_tokens": 308,
+    "latency_seconds": 4.742642299999716,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109800-2sVsFn8l72BgxZ7SxyyT",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

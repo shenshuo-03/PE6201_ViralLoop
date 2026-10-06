@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Clarifying How llama.cpp's HTTP Server Combines Uploaded Files with Prompts?",
+        "body": "I've been looking into how the file upload button in llama.cpp's HTTP server actually combines the uploaded file content with the prompt I type. One user speculated that the server might just concatenate the file content and the prompt into a single input string, but this hasn't been confirmed. \n\nThis user was running llama 3.2 3B Q4_K_S and noticed that answers to questions about the uploaded file were inconsistent, which makes me wonder if the way the file and prompt are combined could be causing this variability. Does anyone here know more about the exact mechanism behind this or have insights into why the responses might be unreliable when querying the uploaded file?\n\nUnderstanding this could help clarify whether the issue lies in how the input is constructed or elsewhere in the pipeline. Any practical experience or pointers would be appreciated!",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Why Are Answers Inconsistent When Asking About Uploaded Files in llama.cpp's HTTP Server?",
+        "body": "A reader recently questioned how the file upload button in llama.cpp's HTTP server merges the uploaded file with their prompt. They wondered if the file content is simply concatenated with the prompt text, which might explain why their questions about the uploaded file produce inconsistent answers. This was reported with llama 3.2 3B Q4_K_S in May 2025, but the exact input processing method remains unclear.\n\nCould the inconsistency stem from how the server forms the combined prompt, or might it relate to token limits or model context handling? Has anyone seen similar behavior or found ways to reliably query uploaded files through this interface?\n\nGetting a clearer picture of the input construction could help diagnose these erratic responses and improve usage of the file upload feature.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0236",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:07:42.398519+00:00",
+    "tag": "V1:D01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "998f1cb15e521ee082d794c7b9afd14f735f580b961cebd5570b85a9370553de",
+    "actual_cost_usd": 0.0010064,
+    "budget_charge_usd": 0.0010064,
+    "reserved_upper_usd": 0.005246,
+    "input_tokens": 956,
+    "output_tokens": 390,
+    "latency_seconds": 3.2671750000154134,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112058-EYivK8konU2DArca9fPz",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

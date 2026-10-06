@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Enthusiastic, detailed user experience with a popular model; likely to engage community and get upvotes."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "Technical hardware question with moderate interest but less broad appeal."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Reveals a significant issue in a popular benchmark, likely to attract attention and discussion."
+      },
+      {
+        "index": 3,
+        "probability": 0.2,
+        "reason": "Niche technical discussion with limited audience and engagement."
+      },
+      {
+        "index": 4,
+        "probability": 0.35,
+        "reason": "Detailed OSS security tool post with practical relevance; appeals to specialized audience."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Question about replicating a popular system locally; useful but somewhat common topic."
+      },
+      {
+        "index": 6,
+        "probability": 0.2,
+        "reason": "Specific hardware inquiry with limited general interest."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "Beginner question about running a model; helpful but less likely to be highly upvoted."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:58:27.085708+00:00",
+    "tag": "tune_dev:classifier:E5a_zero_shot:16",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "790d7456dfc21d6944010c3ec0e31dd27f01d960454ece01fd2621a08c8f4aff",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1952,
+    "output_tokens": 236,
+    "actual_cost_usd": 0.0011584,
+    "token_price_estimate_usd": 0.0011584,
+    "reserved_upper_usd": 0.0057196,
+    "budget_charge_usd": 0.0011584,
+    "latency_seconds": 2.0793087000056403,
+    "retry": 0,
+    "request_id": "gen-1791100705-dVjgLMmQEnWyEIePf8fS"
+  },
+  "raw_response": {
+    "id": "gen-1791100705-dVjgLMmQEnWyEIePf8fS",
+    "object": "chat.completion",
+    "created": 1791100705,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Enthusiastic, detailed user experience with a popular model; likely to engage community and get upvotes.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"Technical hardware question with moderate interest but less broad appeal.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Reveals a significant issue in a popular benchmark, likely to attract attention and discussion.\"},{\"index\":3,\"probability\":0.2,\"reason\":\"Niche technical discussion with limited audience and engagement.\"},{\"index\":4,\"probability\":0.35,\"reason\":\"Detailed OSS security tool post with practical relevance; appeals to specialized audience.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Question about replicating a popular system locally; useful but somewhat common topic.\"},{\"index\":6,\"probability\":0.2,\"reason\":\"Specific hardware inquiry with limited general interest.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"Beginner question about running a model; helpful but less likely to be highly upvoted.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1952,
+      "completion_tokens": 236,
+      "total_tokens": 2188,
+      "cost": 0.0011584,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011584,
+        "upstream_inference_prompt_cost": 0.0007808,
+        "upstream_inference_completions_cost": 0.0003776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

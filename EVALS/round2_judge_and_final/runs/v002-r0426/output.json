@@ -1,0 +1,20 @@
+{
+  "drafts": [
+    {
+      "title": "Qwen3 30B A3B stalls mid-sentence with 'thinking' enabled in Open WebUI—any workarounds?",
+      "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send prompts, seeing the usual “thinking” progress indicator. However, when the 'thinking' feature was enabled, the model would often freeze mid-generation, leaving the progress stuck indefinitely. Without 'thinking', the model responded normally.\n\nThis suggests a possible interaction problem between the model and the 'thinking' mechanism in Open WebUI, though the exact cause isn’t clear. Has anyone else experienced this behavior or found a way to avoid the stall while keeping 'thinking' enabled? Are there particular Open WebUI versions or settings that might help mitigate this?",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    },
+    {
+      "title": "Anyone else see Qwen3 30B A3B hang during generation with Open WebUI's thinking mode?",
+      "body": "An archived user report from May 2025 notes that while the Qwen3 30B A3B model connects fine to Open WebUI and responds without issues when 'thinking' is off, enabling 'thinking' causes the model to get stuck mid-sentence. The progress indicator stays active but the output halts indefinitely.\n\nThis points to a potential compatibility or timing issue between the model and the 'thinking' feature in Open WebUI, but no definitive cause or fix was identified. Has anyone encountered this? If so, did you find any practical tweaks—like adjusting timeout settings or alternative UI options—that prevent the generation from freezing?",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    }
+  ]
+}

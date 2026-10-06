@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.4,
+        "reason": "Enthusiastic, detailed user experience with a popular model and comparison to others suggests higher engagement and interest, increasing chance of high score."
+      },
+      {
+        "index": 1,
+        "probability": 0.3,
+        "reason": "Technical benchmarking discussion with some detailed specs and comparisons, but somewhat niche and less broadly engaging."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Discussion of a known benchmark issue with links and relevance to popular benchmarks, likely to attract attention but somewhat technical."
+      },
+      {
+        "index": 3,
+        "probability": 0.25,
+        "reason": "Technical discussion about distributed inference on Raspberry Pi cluster, interesting but likely niche audience and moderate engagement."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Presentation of an open-source security tool for AI agents with practical use case, likely to interest specialized audience."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Question about replicating a popular AI tool locally with privacy focus, relevant but typical troubleshooting post."
+      },
+      {
+        "index": 6,
+        "probability": 0.25,
+        "reason": "Question about hardware options for a specific AI system, likely niche and less broadly engaging."
+      },
+      {
+        "index": 7,
+        "probability": 0.25,
+        "reason": "New user question about running a quantized model in WebUI, typical beginner troubleshooting with limited broad appeal."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:15.336537+00:00",
+    "tag": "tune_dev:classifier:E5c_retrieval:16",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "9bfe24b9934c1e65fc7e5f954e827de6e9969a59e1a49f11192e55e3159aec58",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5812,
+    "output_tokens": 284,
+    "actual_cost_usd": 0.0027792,
+    "token_price_estimate_usd": 0.0027792,
+    "reserved_upper_usd": 0.01134,
+    "budget_charge_usd": 0.0027792,
+    "latency_seconds": 2.412803300001542,
+    "retry": 0,
+    "request_id": "gen-1791100753-A7I22UXTdEj7Eqk3Gj2w"
+  },
+  "raw_response": {
+    "id": "gen-1791100753-A7I22UXTdEj7Eqk3Gj2w",
+    "object": "chat.completion",
+    "created": 1791100753,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.4,\"reason\":\"Enthusiastic, detailed user experience with a popular model and comparison to others suggests higher engagement and interest, increasing chance of high score.\"},{\"index\":1,\"probability\":0.3,\"reason\":\"Technical benchmarking discussion with some detailed specs and comparisons, but somewhat niche and less broadly engaging.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Discussion of a known benchmark issue with links and relevance to popular benchmarks, likely to attract attention but somewhat technical.\"},{\"index\":3,\"probability\":0.25,\"reason\":\"Technical discussion about distributed inference on Raspberry Pi cluster, interesting but likely niche audience and moderate engagement.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Presentation of an open-source security tool for AI agents with practical use case, likely to interest specialized audience.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Question about replicating a popular AI tool locally with privacy focus, relevant but typical troubleshooting post.\"},{\"index\":6,\"probability\":0.25,\"reason\":\"Question about hardware options for a specific AI system, likely niche and less broadly engaging.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"New user question about running a quantized model in WebUI, typical beginner troubleshooting with limited broad appeal.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5812,
+      "completion_tokens": 284,
+      "total_tokens": 6096,
+      "cost": 0.0027792,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027792,
+        "upstream_inference_prompt_cost": 0.0023248,
+        "upstream_inference_completions_cost": 0.0004544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112430-Y1n0cqHUuv57VX8qXIdf",
+  "object": "chat.completion",
+  "created": 1791112430,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 3,\n    \"specificity\": 3,\n    \"information_value\": 3,\n    \"clarity\": 3,\n    \"usefulness\": 3,\n    \"credibility\": 3,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 0 accurately reflects the source and brief, adhering to all constraints. It correctly states the user's exploration of in-browser LLMs for JSON to Chart.js conversion, mentions the preference for small models (<100MB) and WebGPU/WASM support, and notes the user's initial look into MLC.ai without claiming personal experience. The draft avoids unsupported claims and essential caveats are implicitly covered by the nature of the question. Community fit is adequate as it directly asks for community input on tools and models for the specified task. Specificity is good, mentioning Chart.js and JSON transformation. Information value is adequate, posing clear questions for the community. Clarity and usefulness are good, directly addressing the problem. Credibility is good, as it frames the request as an exploration. Clickbait is minimal.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 3,\n    \"specificity\": 3,\n    \"information_value\": 3,\n    \"clarity\": 3,\n    \"usefulness\": 3,\n    \"credibility\": 3,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 aligns well with the source and brief. It correctly captures the user's intent to run small LLMs client-side for Chart.js generation and data summaries, emphasizing the need for <100MB models and WebGPU/WASM support. It also accurately states that MLC.ai has been investigated but not personally tested. No unsupported claims or missing essential caveats are present. Community fit is adequate, posing relevant questions about frameworks, models, and prompting. Specificity is good, detailing the use case. Information value is adequate, seeking practical advice. Clarity and usefulness are good. Credibility is good, framing the request as an inquiry. Clickbait is minimal.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 3,\n    \"specificity\": 3,\n    \"information_value\": 3,\n    \"clarity\": 3,\n    \"usefulness\": 3,\n    \"credibility\": 3,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 is a faithful representation of the source and brief. It accurately conveys the user's goal of using in-browser LLMs for JSON to Chart.js conversion with small models (<100MB) and the requirement for WebGPU/WASM. It correctly notes that MLC.ai is being considered but not personally tested. All factual claims are supported, and no unsupported claims or missing essential caveats are introduced. Community fit is adequate, as it directly asks for community recommendations on tools, models, and prompting for the specific task. Specificity is good, mentioning Chart.js and JSON transformation. Information value is adequate, posing clear questions. Clarity and usefulness are good. Credibility is good, framing the request as an exploration. Clickbait is minimal.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2935,
+    "completion_tokens": 896,
+    "total_tokens": 3831,
+    "cost": 0.0006519,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006519,
+      "upstream_inference_prompt_cost": 0.0002935,
+      "upstream_inference_completions_cost": 0.0003584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109668-wuYIqD3v3jjLh3g2nr0H",
+  "object": "chat.completion",
+  "created": 1791109668,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is better because it more directly addresses the audience's likely context (local LLMs) and asks more specific, actionable questions about feasibility and practical challenges, aligning better with the goal of eliciting detailed feedback. Post A's questions are more general. Both posts accurately reflect the provided facts and their limitations.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1737,
+    "completion_tokens": 136,
+    "total_tokens": 1873,
+    "cost": 0.0002281,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002281,
+      "upstream_inference_prompt_cost": 0.0001737,
+      "upstream_inference_completions_cost": 5.44e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

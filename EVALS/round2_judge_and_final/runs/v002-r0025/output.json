@@ -1,0 +1,69 @@
+{
+  "topic": "Audiobook Creation with New TTS Support",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Discussing the capabilities and potential of the recently updated Audiobook Creator application, specifically its integration with Orpheus TTS.",
+  "context": "A community member is sharing information about version 1.4 of an open-source audiobook creator application, highlighting new features like Orpheus TTS support and automatic emotion tag addition.",
+  "motivation": "This question is worth discussing to understand the practical implications and user experiences with the new Orpheus TTS integration and LLM-driven emotion tagging in audiobook creation.",
+  "desired_response": "Community members are invited to share their thoughts on the new features, discuss potential use cases, and provide feedback on the audiobook samples.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The Audiobook Creator application has been updated to version 1.4, introducing support for Orpheus TTS alongside Kokoro.",
+      "evidence_quote": "I'm releasing a new version of my [audiobook creator app](https://github.com/prakharsr/audiobook-creator) which now supports Kokoro and Orpheus.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "Orpheus TTS is noted for supporting high-quality audio and more expressive speech.",
+      "evidence_quote": "This release adds support for [Orpheus TTS](https://github.com/canopyai/Orpheus-TTS) which supports high-quality audio and more expressive speech.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "The new version can automatically add emotion tags to text using an LLM, which Orpheus TTS supports.",
+      "evidence_quote": "This version also adds support for adding emotion tags automatically using an LLM.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "Audio generation with Orpheus TTS is facilitated through a dedicated FastAPI Server.",
+      "evidence_quote": "Audio generation using Orpheus is done using my dedicated [Orpheus TTS FastAPI Server](https://github.com/prakharsr/Orpheus-TTS-FastAPI) repository.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "The application can create M4B audiobooks with features like covers, metadata, and chapter timestamps.",
+      "evidence_quote": "Creates compatible audiobooks with covers, metadata, chapter timestamps etc. in M4B format.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F6",
+      "text": "The Audiobook Creator supports multiple input formats (EPUB, PDF) and various output audio formats.",
+      "evidence_quote": "Multi-Format Input Support: Converts books from various formats (EPUB, PDF, etc.) into plain text.",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "The Audiobook Creator application supports Orpheus TTS.",
+    "The application can add emotion tags using an LLM.",
+    "The application generates M4B audiobooks.",
+    "The application supports multiple input and output formats."
+  ],
+  "forbidden_claims": [
+    "The user has personally tested and verified the performance of Orpheus TTS.",
+    "The specific LLM used for emotion tagging is identified.",
+    "The exact performance improvements from async parallel processing are quantified.",
+    "User satisfaction with the generated audiobooks is universally high."
+  ],
+  "essential_limitations": [
+    "The specific LLM model used for emotion tag addition is not explicitly stated.",
+    "Details on the hardware or specific configurations used for testing are not provided.",
+    "The exact nature of the 'advanced NLP techniques' for character identification is not elaborated upon."
+  ],
+  "missing_information": [
+    "Specific examples of emotion tags and their impact on speech.",
+    "Details on the character identification accuracy.",
+    "User feedback on the quality of audiobooks generated with Orpheus TTS."
+  ]
+}

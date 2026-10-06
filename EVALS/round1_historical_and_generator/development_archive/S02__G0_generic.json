@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T07:56:58.438561+00:00",
+  "topic": {
+    "id": "S02",
+    "split": "selection_dev",
+    "topic": "What would count as evidence that local deployment improves privacy?",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario keeps prompts on a local machine.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "Logs and optional network connections must also be checked.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No security audit or compliance certification was performed.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T07:56:55.463523+00:00",
+    "tag": "selection_dev:S02:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "d5eb2121161d45d907206ac5bc86cd933c0621a95365c710645c2b328b564fbd",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 356,
+    "output_tokens": 496,
+    "actual_cost_usd": 0.000234,
+    "token_price_estimate_usd": 0.000234,
+    "reserved_upper_usd": 0.0009895,
+    "budget_charge_usd": 0.000234,
+    "latency_seconds": 2.600483100002748,
+    "retry": 0,
+    "request_id": "gen-1791100613-rb7B12lIdE9MehymSStW"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:56:58.428020+00:00",
+    "tag": "selection_dev:S02:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "502e7ee708584a9e96f89c52a0abb379dca3101f3f2883ca7aff28dd4ab21095",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 910,
+    "output_tokens": 381,
+    "actual_cost_usd": 0.0009736,
+    "token_price_estimate_usd": 0.0009735999999999999,
+    "reserved_upper_usd": 0.0048012,
+    "budget_charge_usd": 0.0009736,
+    "latency_seconds": 2.9126038000104018,
+    "retry": 0,
+    "request_id": "gen-1791100615-J0KhJoVNP0SRPfuySvQR"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "13b5ff7a3c8b2d92e0b0a3de399ef8e5557a0197cf2bbf5beca479dfbf961d4a",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Evidence for Local LLM Privacy Gains: Prompt Isolation",
+        "body": "Considering a hypothetical scenario, evidence for improved privacy with local LLM deployments would hinge on demonstrating that sensitive prompts and their generated responses remain exclusively on the user's machine. This isolation is a primary theoretical benefit. To support this, one would need to rigorously verify that no data, including the prompts themselves, is transmitted externally. This would involve examining all network traffic originating from the LLM process and its associated applications. Furthermore, any logging mechanisms, whether standard or optional, must be scrutinized to ensure they do not inadvertently capture or store sensitive information locally or transmit it elsewhere. It is crucial to remember that this remains a hypothetical exploration, and no actual security audits or compliance certifications have been performed in this imagined experiment. The focus is solely on the *potential* for privacy enhancement through local execution.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Focus on prompt isolation as the primary privacy benefit and outline the technical steps to verify this in a hypothetical setting."
+      },
+      "performance_score": 0.22788481378336092,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly references the key facts about prompt isolation, network traffic, and logging. It preserves necessary caveats about the lack of audits or certifications. The language is clear and technical, suitable for the intended audience. It is relevant and useful by outlining concrete verification steps for privacy in local LLM deployment. The title accurately reflects the content without exaggeration or clickbait.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 137,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Assessing Local LLM Privacy: Beyond Just Keeping Prompts Local (Hypothetical)",
+        "body": "In a hypothetical exploration of local LLM deployment privacy, the core evidence would stem from confirming that prompts and outputs are contained within the local environment. However, a comprehensive assessment requires looking beyond just prompt containment. It's essential to hypothetically examine all potential data exfiltration vectors. This includes meticulously analyzing any network connections the LLM might establish, even if labeled 'optional,' to ensure they are not used for unintended data transfer. Furthermore, the internal logging practices of the deployed model and its surrounding software must be thoroughly reviewed. The absence of sensitive data in these logs, and confirmation that they are strictly local, would constitute supporting evidence. It's vital to reiterate that this discussion is purely hypothetical, based on synthetic inputs, and no actual security audits or compliance certifications have been conducted. The goal is to outline the *type* of evidence one might seek.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Expand on the hypothetical privacy assessment by including checks for network connections and logs beyond just prompt handling."
+      },
+      "performance_score": 0.2286675555378164,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and references all key facts. It expands the scope to include all potential data exfiltration vectors, which aligns with the facts about network connections and logging. The caveats about no audits or certifications are preserved. The writing is clear and technical, appropriate for the audience. The title matches the content and is not misleading. The draft is relevant and useful by suggesting a broader privacy assessment approach.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 144,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Assessing Local LLM Privacy: Beyond Just Keeping Prompts Local (Hypothetical)",
+      "body": "In a hypothetical exploration of local LLM deployment privacy, the core evidence would stem from confirming that prompts and outputs are contained within the local environment. However, a comprehensive assessment requires looking beyond just prompt containment. It's essential to hypothetically examine all potential data exfiltration vectors. This includes meticulously analyzing any network connections the LLM might establish, even if labeled 'optional,' to ensure they are not used for unintended data transfer. Furthermore, the internal logging practices of the deployed model and its surrounding software must be thoroughly reviewed. The absence of sensitive data in these logs, and confirmation that they are strictly local, would constitute supporting evidence. It's vital to reiterate that this discussion is purely hypothetical, based on synthetic inputs, and no actual security audits or compliance certifications have been conducted. The goal is to outline the *type* of evidence one might seek.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "Expand on the hypothetical privacy assessment by including checks for network connections and logs beyond just prompt handling."
+    },
+    "performance_score": 0.2286675555378164,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also maintains the hypothetical framing and references all key facts. It expands the scope to include all potential data exfiltration vectors, which aligns with the facts about network connections and logging. The caveats about no audits or certifications are preserved. The writing is clear and technical, appropriate for the audience. The title matches the content and is not misleading. The draft is relevant and useful by suggesting a broader privacy assessment approach.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 144,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

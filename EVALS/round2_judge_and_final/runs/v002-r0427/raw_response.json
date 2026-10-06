@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112716-KcdlNV7WX732c6YXTWez",
+  "object": "chat.completion",
+  "created": 1791112716,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\":[{\"index\":0,\"factual_pass\":true,\"unsupported_claims\":[],\"speaker_pass\":true,\"copy_pass\":true,\"essential_caveats_pass\":true,\"title_body_pass\":true,\"community_fit\":4,\"specificity\":4,\"information_value\":4,\"clarity\":4,\"usefulness\":4,\"credibility\":4,\"clickbait\":1,\"reason\":\"The draft accurately summarizes the source, correctly identifies the problem, and poses relevant questions to the community. It adheres to the persona and avoids making unsupported claims or personal experiences. The specificity is good, referencing the model and the UI feature. The community fit is strong as it directly asks for solutions to a shared technical problem.\"},{\"index\":1,\"factual_pass\":true,\"unsupported_claims\":[],\"speaker_pass\":true,\"copy_pass\":true,\"essential_caveats_pass\":true,\"title_body_pass\":true,\"community_fit\":4,\"specificity\":4,\"information_value\":4,\"clarity\":4,\"usefulness\":4,\"credibility\":4,\"clickbait\":1,\"reason\":\"This draft also accurately reflects the source material, focusing on the core issue of the model stalling in Open WebUI with 'thinking' enabled. It maintains the correct persona and avoids personal claims. The questions posed are specific and relevant to troubleshooting, making it a good fit for the community. The information value is high due to its clear problem statement and call for practical solutions.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2547,
+    "completion_tokens": 310,
+    "total_tokens": 2857,
+    "cost": 0.0003787,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003787,
+      "upstream_inference_prompt_cost": 0.0002547,
+      "upstream_inference_completions_cost": 0.000124
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

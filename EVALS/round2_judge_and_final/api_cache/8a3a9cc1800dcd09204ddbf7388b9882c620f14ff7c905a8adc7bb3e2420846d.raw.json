@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109743-aHxZ64o3R7PDaUNBOm2p",
+  "object": "chat.completion",
+  "created": 1791109743,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Post A is superior because it retains more specific details from the brief, such as the explicit mention of API providers (OpenAI, Claude, Gemini) and the author's concerns about user friction (setup, login, performance, costs) with API-based solutions, as well as the specific concerns about local models (app size, performance). Post B is more generic and omits these crucial details, making it less specific and less useful for community members trying to provide targeted advice. Both posts reference the core facts about generating character information and considering API vs. local LLMs, but A's greater detail aligns better with the brief's emphasis on specificity and information value.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2045,
+    "completion_tokens": 208,
+    "total_tokens": 2253,
+    "cost": 0.0002877,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002877,
+      "upstream_inference_prompt_cost": 0.0002045,
+      "upstream_inference_completions_cost": 8.32e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

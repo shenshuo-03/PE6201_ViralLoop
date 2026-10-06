@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112459-7IGCxObS2bc7uGcCzU4F",
+  "object": "chat.completion",
+  "created": 1791112459,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Performance trade-offs between VLLM and llama.cpp for Gemma3:27b and Qwen3 32B on AMD 7900 XTX/7800 XT GPUs?\",\"body\":\"A Reddit user with a setup of two AMD Radeon RX 7900 XTX and one RX 7800 XT (totaling 64GB VRAM) shared dated performance observations comparing VLLM and llama.cpp backends for running Gemma3:27b and Qwen3 32B models. Their report suggests differing inference speeds depending on the backend, but with limited and specific hardware conditions from mid-2025.\\n\\nGiven the aged and narrowly scoped data, is there a consensus or updated experience on which backend tends to offer better inference speed or efficiency on similar AMD GPU configurations? Also, are there particular optimizations or quantization methods that meaningfully shift the balance between VLLM and llama.cpp for these large models on AMD hardware?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Choosing between VLLM and llama.cpp for large AMD GPU setups: any recent insights for Gemma3:27b and Qwen3 32B?\",\"body\":\"A user running Gemma3:27b and Qwen3 32B models on a multi-GPU AMD setup (2x RX 7900 XTX + 1x RX 7800 XT, 64GB VRAM total) reported some performance differences between VLLM and llama.cpp backends as of May 2025. However, the data is limited and specific to their environment.\\n\\nFor those working with similar AMD GPU arrays, how do VLLM and llama.cpp compare in terms of inference speed and resource management for these models? Are there known backend-specific bottlenecks or advantages that should guide the choice, especially considering the dated nature of the original report?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1311,
+    "completion_tokens": 400,
+    "total_tokens": 1711,
+    "cost": 0.0011644,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011644,
+      "upstream_inference_prompt_cost": 0.0005244,
+      "upstream_inference_completions_cost": 0.00064
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

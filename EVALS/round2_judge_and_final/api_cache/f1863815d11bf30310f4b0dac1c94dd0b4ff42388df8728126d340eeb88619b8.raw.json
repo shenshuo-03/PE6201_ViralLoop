@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109432-a09UIGyDWxGeOa1kn9vs",
+  "object": "chat.completion",
+  "created": 1791109432,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"baseline\":{\"title\":\"How effective is tensor splitting and row split mode for multi-GPU llama.cpp setups with mixed 3090 and 3060 cards?\",\"body\":\"An archived 2025 Reddit post reports experiments running llama.cpp on a system with a 3090 and two 3060 GPUs. For smaller models like Qwen3 8B and 14B, disabling the 3060s actually improved token generation speed (e.g., from 48 to 82 tokens/sec). For larger models, adjusting tensor split parameters improved performance: Qwen3 32B went from 13.0 to 15.6 tokens/sec, further rising to 16.4 with \\\"row\\\" split mode. Other models like Nemotron 49B (Q6) and DeepSeek-R1-Distill-Llama-70B (Q4) also saw modest gains from tuning. Interestingly, for Gemma3 27B and Mistral Small 24B, optimized tensor splits increased speed, but using the `sm` row mode slightly reduced it. Given these mixed results, what practical advice or heuristics have you found for configuring tensor splits and split modes in llama.cpp on heterogeneous multi-GPU rigs? Are there patterns in when \\\"row\\\" or other modes help or hurt performance? Any insights on balancing VRAM and compute across GPUs with different capabilities would be especially useful. The original post is here: https://www.reddit.com/r/LocalLLaMA/comments/1kgs1z7/309030603060_llamacpp_benchmarks_tips/\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},\"alternatives\":[{\"dimension\":\"community_fit\",\"draft\":{\"title\":\"Multi-GPU llama.cpp performance tuning with tensor splits and row modes\",\"body\":\"A user from 2025 shared their experience running llama.cpp on a system with a 3090 and two 3060 GPUs. They found that disabling the 3060s improved speed for smaller models, while adjusting tensor splits and using \\\"row\\\" split mode helped larger models like Qwen3 32B and Nemotron 49B. However, for some models, certain row modes slightly decreased performance. What are your experiences or recommendations for tuning tensor splits and split modes in multi-GPU setups? How do you decide when to disable weaker GPUs or try different split modes?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},\"design_reason\":\"This version removes the focused question about practical heuristics and patterns, making it more of a general community prompt rather than a targeted technical inquiry.\"},{\"dimension\":\"specificity\",\"draft\":{\"title\":\"Optimizing token generation speed in multi-GPU LLM setups with tensor splitting and split modes\",\"body\":\"An archived report from 2025 describes experiments using a system with one high-end GPU and two mid-tier GPUs running a local LLM inference engine. For smaller models, disabling the mid-tier GPUs improved token throughput, while for larger models, tuning tensor split parameters and applying different split modes like \\\"row\\\" yielded performance gains. Some modes improved speed, others slightly reduced it depending on the model. Given mixed GPU capabilities, what strategies have you found effective for balancing VRAM and compute when configuring tensor splits and split modes? Any guidance on when to enable or disable certain GPUs would be helpful.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},\"design_reason\":\"This draft replaces specific GPU and model names with generic terms while preserving the core factual propositions, maintaining relevance but reducing specificity.\"},{\"dimension\":\"information_value\",\"draft\":{\"title\":\"Reported token generation speeds and tuning effects for llama.cpp on a multi-GPU system\",\"body\":\"A 2025 user report details token generation speeds on a system with a 3090 and two 3060 GPUs running llama.cpp. For smaller models, disabling the 3060s increased speed from 48 to 82 tokens/sec. For larger models, adjusting tensor split parameters improved speeds from 13.0 to 15.6 tokens/sec, with further gains to 16.4 tokens/sec using \\\"row\\\" split mode. Other models showed similar tuning benefits, though some row modes slightly decreased performance. These results illustrate how tensor splitting and split modes can affect multi-GPU performance in llama.cpp.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F5\",\"F6\"]},\"design_reason\":\"This alternative restates the facts without posing a focused question or inviting specific community discussion, reducing its practical engagement value.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1919,
+    "completion_tokens": 946,
+    "total_tokens": 2865,
+    "cost": 0.0022812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022812,
+      "upstream_inference_prompt_cost": 0.0007676,
+      "upstream_inference_completions_cost": 0.0015136
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical question about hardware for OCR AI with some model suggestions; moderate interest expected."
+      },
+      {
+        "index": 1,
+        "probability": 0.5,
+        "reason": "Announces a novel open-source AI-native workflow tool with practical benefits; likely higher engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Discussion on local LLMs for creative writing; niche but relevant topic with moderate appeal."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "New user seeking advice on local LLMs and server setup; typical troubleshooting interest level."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Technical quantization question on specific model; likely lower broad appeal."
+      },
+      {
+        "index": 5,
+        "probability": 0.45,
+        "reason": "Guide on running LLMs everywhere with zero conversion; practical and broadly useful content."
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Insightful experience post on voice AI evaluation challenges; specialized but valuable."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Technical guide request on configuring workstation for specific LLM performance; moderate interest."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:44.446618+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3619f249fd72f544496f8ff079e59a24a7dea79823da77ea6200b1188cba8c00",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6015,
+    "output_tokens": 248,
+    "actual_cost_usd": 0.0028028,
+    "token_price_estimate_usd": 0.0028028,
+    "reserved_upper_usd": 0.011781199999999999,
+    "budget_charge_usd": 0.0028028,
+    "latency_seconds": 2.3627078000135953,
+    "retry": 0,
+    "request_id": "gen-1791100902-Q6ZYKUOL1geceXvDLYBf"
+  },
+  "raw_response": {
+    "id": "gen-1791100902-Q6ZYKUOL1geceXvDLYBf",
+    "object": "chat.completion",
+    "created": 1791100902,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical question about hardware for OCR AI with some model suggestions; moderate interest expected.\"},{\"index\":1,\"probability\":0.5,\"reason\":\"Announces a novel open-source AI-native workflow tool with practical benefits; likely higher engagement.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Discussion on local LLMs for creative writing; niche but relevant topic with moderate appeal.\"},{\"index\":3,\"probability\":0.3,\"reason\":\"New user seeking advice on local LLMs and server setup; typical troubleshooting interest level.\"},{\"index\":4,\"probability\":0.25,\"reason\":\"Technical quantization question on specific model; likely lower broad appeal.\"},{\"index\":5,\"probability\":0.45,\"reason\":\"Guide on running LLMs everywhere with zero conversion; practical and broadly useful content.\"},{\"index\":6,\"probability\":0.4,\"reason\":\"Insightful experience post on voice AI evaluation challenges; specialized but valuable.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Technical guide request on configuring workstation for specific LLM performance; moderate interest.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6015,
+      "completion_tokens": 248,
+      "total_tokens": 6263,
+      "cost": 0.0028028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028028,
+        "upstream_inference_prompt_cost": 0.002406,
+        "upstream_inference_completions_cost": 0.0003968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "value": {
+    "title_zh": "预测下一个词能多少地反映推理能力？",
+    "body_zh": "我看到一份2025年1月的用户报告，其中包含一个非常小的DeepSeek R1测试。该测试衡量了困惑度（perplexity）：大致来说，就是模型预测后续文本的能力。但该测试没有给模型一个逐步推导答案的机会。\n\n这让我不禁思考，这类分数在解决实际问题方面能告诉我们多少信息。样本量很小，所以我不会仅凭此来选择模型。\n\n有什么简单的后续测试可以用来检查推理能力，而不是仅仅检查文本预测能力？",
+    "fact_refs": [
+      "F1",
+      "F2",
+      "F5"
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0198",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:02:41.820683+00:00",
+    "tag": "translate:naturalness:D03:human_revision_02",
+    "phase": "naturalness",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "adc4a8519b6f09110380feec2a565e7fc39bb210936a4f000fe443c1d027a65b",
+    "actual_cost_usd": 8.1e-05,
+    "budget_charge_usd": 8.1e-05,
+    "reserved_upper_usd": 0.0007195,
+    "input_tokens": 214,
+    "output_tokens": 149,
+    "latency_seconds": 1.2223265999928117,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111760-S5s0Y0v7trscaZDGr8Lb",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:08:28.344069+00:00",
+  "loop_version": "v002",
+  "brief_id": "D04",
+  "phase": "tune",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Newer Small LLMs Seem Better at Coding but Weaker on World Knowledge—Anyone Else Seen This?",
+        "body": "I've been reading a 2025 report where the author tested various LLMs on coding, engineering problem solving, and also on world knowledge questions like local history and technical standards. Interestingly, despite newer small models often scoring higher on benchmarks and being promoted as equivalent to older, larger models, their world knowledge appeared worse than that of their bigger predecessors and sometimes even worse than lower-benchmarking models of similar size.\n\nThis suggests a tradeoff where newer small models might optimize problem-solving skills at the expense of general knowledge depth. Given these observations rely on a private test set and specific models, has anyone else noticed this pattern in their own experience? How do you balance the choice of models if you need both solid coding help and accurate factual knowledge locally?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source's core observation about the trade-off between problem-solving and world knowledge in newer small LLMs, citing the author's private test set. It correctly frames the information as a user report from 2025 and avoids claiming personal testing. The question posed to the community is specific and relevant to the brief's goal. The use of fact references is appropriate. The title and body are clear and informative, fitting the community's interest in LLM capabilities.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 130,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Tradeoff Between Coding Skills and World Knowledge in Newer Small LLMs—What’s Your Take?",
+        "body": "A 2025 user-shared test set covering coding, engineering, and detailed world knowledge (like radio protocols and local landmarks) revealed that newer small language models, despite higher benchmark claims, tend to have weaker world knowledge than older larger models. Sometimes, they even perform worse than lower-benchmarking models of similar sizes.\n\nThis raises a practical question for those running models locally: if you rely on smaller models for efficiency but need reliable knowledge on technical standards or geography, how do you handle this apparent tradeoff? Are there particular models or configurations that strike a better balance, or is it necessary to accept weaker knowledge for better coding performance?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 effectively summarizes the source's findings regarding the knowledge vs. problem-solving trade-off in newer small LLMs, referencing the author's 2025 tests and private dataset. It adheres to the speaker's role by not claiming personal testing and correctly attributes the observations. The question about handling this tradeoff locally is specific and directly addresses the brief's motivation. Fact references are correctly used. The title and body are clear, concise, and relevant to the target audience.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 106,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Newer Small LLMs Seem Better at Coding but Weaker on World Knowledge—Anyone Else Seen This?",
+      "body": "I've been reading a 2025 report where the author tested various LLMs on coding, engineering problem solving, and also on world knowledge questions like local history and technical standards. Interestingly, despite newer small models often scoring higher on benchmarks and being promoted as equivalent to older, larger models, their world knowledge appeared worse than that of their bigger predecessors and sometimes even worse than lower-benchmarking models of similar size.\n\nThis suggests a tradeoff where newer small models might optimize problem-solving skills at the expense of general knowledge depth. Given these observations rely on a private test set and specific models, has anyone else noticed this pattern in their own experience? How do you balance the choice of models if you need both solid coding help and accurate factual knowledge locally?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source's core observation about the trade-off between problem-solving and world knowledge in newer small LLMs, citing the author's private test set. It correctly frames the information as a user report from 2025 and avoids claiming personal testing. The question posed to the community is specific and relevant to the brief's goal. The use of fact references is appropriate. The title and body are clear and informative, fitting the community's interest in LLM capabilities.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 130,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0252",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:26.202958+00:00",
+    "tag": "V2:D04",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "57d95c2c3976fb8c91980e4b5e625829d5471517486d6a0818d83fe5882c4e27",
+    "actual_cost_usd": 0.0011064,
+    "budget_charge_usd": 0.0011064,
+    "reserved_upper_usd": 0.0061584,
+    "input_tokens": 1306,
+    "output_tokens": 365,
+    "latency_seconds": 2.96425150000141,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112103-wrbnD1TD1SePIWA2wAj1",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0253",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:28.317430+00:00",
+    "tag": "quality:D04:V2",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "c057fdc1f26909ce1d9e6d8350995018e96ecdcf9b008d9fb9d53a62a5d9779a",
+    "actual_cost_usd": 0.0005161,
+    "budget_charge_usd": 0.0005161,
+    "reserved_upper_usd": 0.0022105,
+    "input_tokens": 3465,
+    "output_tokens": 424,
+    "latency_seconds": 2.084471100009978,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112106-Ad01cWSAe6oa1WhfARqB",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1j4p3xw",
+    "1j49sbd",
+    "1kscb9d"
+  ],
+  "external_judge_used": false
+}

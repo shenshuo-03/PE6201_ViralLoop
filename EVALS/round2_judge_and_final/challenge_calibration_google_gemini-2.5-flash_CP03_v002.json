@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Uncertain",
+    "specificity": "Uncertain",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "swap_consistent": {
+    "community_fit": false,
+    "specificity": false,
+    "information_value": false,
+    "usefulness": false,
+    "credibility": false,
+    "overall": false
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "Tie",
+        "specificity": "Tie",
+        "information_value": "A",
+        "usefulness": "Tie",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A is a concise summary of the problem, directly stating the facts and the user's questions without adopting the user's persona. Draft B, while also factual, adopts the user's persona and phrasing ('I'm working on...', 'This is puzzling...'), which, while engaging, is less direct in presenting the core information for community discussion. Both drafts accurately reflect the facts and pose the central questions. Draft A's more objective tone makes it slightly better for information value and credibility, as it presents the problem as a community-wide issue rather than a personal one, aligning with the 'community reader' persona."
+    },
+    "usage": {
+      "run_id": "v002-r0111",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:09.590498+00:00",
+      "tag": "judge_calibration:CP03:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "c8f41c3f3dbe41e2da5e9a1851405bc6cbee48ebf92676b681c18a3bd334c7b1",
+      "actual_cost_usd": 0.0012239,
+      "budget_charge_usd": 0.0012239,
+      "reserved_upper_usd": 0.0046029999999999995,
+      "input_tokens": 2413,
+      "output_tokens": 200,
+      "latency_seconds": 1.9412071999977343,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109687-loz58ts5gBdMprvESkEZ",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A directly adopts the persona of the user, asking questions that the community can directly answer, and clearly states the motivation for the questions. Draft B is a report-like summary of the user's situation, which is less engaging for a community discussion. Draft A's phrasing 'Does anyone know why...?' and 'are there any known workarounds?' directly solicits community input, aligning with the 'concrete motivation and question/value the community can respond to' criterion. Draft B, while factual, reads more like an observation than a call to action for the community."
+    },
+    "usage": {
+      "run_id": "v002-r0112",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:11.561465+00:00",
+      "tag": "judge_calibration:CP03:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "2dca85f739c2b355394e4dde759a711d914b9cc041df06cf6de0ce4138fa3f6d",
+      "actual_cost_usd": 0.0011964,
+      "budget_charge_usd": 0.0011964,
+      "reserved_upper_usd": 0.0046029999999999995,
+      "input_tokens": 2413,
+      "output_tokens": 189,
+      "latency_seconds": 1.9454561999882571,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109689-fThnZKIcqekfn6z9SoI0",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash"
+}

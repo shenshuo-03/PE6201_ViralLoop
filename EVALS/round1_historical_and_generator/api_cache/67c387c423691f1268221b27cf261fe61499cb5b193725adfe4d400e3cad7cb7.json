@@ -1,0 +1,91 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical RAG Sanity Check: Comparing Retrieval On vs. Off",
+        "body": "I'm exploring a hypothetical scenario for evaluating Retrieval-Augmented Generation (RAG) systems locally. The core idea is to establish a basic sanity check by comparing model responses with and without retrieval enabled, using the same set of questions.\n\nThis hypothetical experiment involves a collection of 30 local documents. The plan is to query the system with questions, some of which are designed to have answers within these documents, and others that deliberately do not. We would then compare the output generated when the RAG system attempts to retrieve information against its output when retrieval is disabled.\n\nCrucially, this is a purely hypothetical setup. No actual measurements or accuracy results have been obtained. The objective is to outline a methodology for comparison. Does anyone have thoughts on potential pitfalls or improvements to this basic sanity check design, considering the hypothetical nature and the inclusion of unanswerable questions?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Outline a hypothetical RAG sanity check methodology comparing retrieval on/off. Discuss the use of 30 local documents and questions with and without answers. Explicitly state the hypothetical nature and lack of measured results. Invite discussion on potential issues and improvements to the hypothetical design."
+      },
+      {
+        "title": "Designing a Hypothetical RAG Evaluation: Retrieval On/Off Comparison",
+        "body": "This post outlines a hypothetical approach to a RAG sanity check, focusing on a direct comparison between retrieval-enabled and retrieval-disabled modes. The scenario is purely conceptual, with no actual performance data generated.\n\nThe proposed method uses a corpus of 30 local documents. The core of the hypothetical test involves posing a set of questions to the RAG system. This question set is designed to include queries that can be answered from the provided documents, as well as queries that intentionally have no corresponding information within the corpus.\n\nBy running the same questions through the system twice – once with the retrieval component active and once with it deactivated – we can hypothetically observe differences in output. This comparison serves as a baseline sanity check. It's important to reiterate that no actual accuracy metrics or benchmarks are available for this hypothetical experiment. What are the key considerations for such a comparative setup, especially when dealing with documents that may not contain answers?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Describe a hypothetical RAG sanity check comparing retrieval on/off. Detail the use of 30 local documents and questions with/without answers. Emphasize the hypothetical status and absence of real results. Seek community input on the design considerations for this comparative approach, particularly regarding unanswerable questions."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:56:16.729688+00:00",
+    "tag": "selection_dev:S01:G3_rag",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "67c387c423691f1268221b27cf261fe61499cb5b193725adfe4d400e3cad7cb7",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1695,
+    "output_tokens": 644,
+    "actual_cost_usd": 0.0004271,
+    "token_price_estimate_usd": 0.0004271,
+    "reserved_upper_usd": 0.0014843999999999999,
+    "budget_charge_usd": 0.0004271,
+    "latency_seconds": 2.9168211000069277,
+    "retry": 0,
+    "request_id": "gen-1791100574-OAyqwFKUpkQk13ds0vkI"
+  },
+  "raw_response": {
+    "id": "gen-1791100574-OAyqwFKUpkQk13ds0vkI",
+    "object": "chat.completion",
+    "created": 1791100574,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical RAG Sanity Check: Comparing Retrieval On vs. Off\",\n      \"body\": \"I'm exploring a hypothetical scenario for evaluating Retrieval-Augmented Generation (RAG) systems locally. The core idea is to establish a basic sanity check by comparing model responses with and without retrieval enabled, using the same set of questions.\\n\\nThis hypothetical experiment involves a collection of 30 local documents. The plan is to query the system with questions, some of which are designed to have answers within these documents, and others that deliberately do not. We would then compare the output generated when the RAG system attempts to retrieve information against its output when retrieval is disabled.\\n\\nCrucially, this is a purely hypothetical setup. No actual measurements or accuracy results have been obtained. The objective is to outline a methodology for comparison. Does anyone have thoughts on potential pitfalls or improvements to this basic sanity check design, considering the hypothetical nature and the inclusion of unanswerable questions?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Outline a hypothetical RAG sanity check methodology comparing retrieval on/off. Discuss the use of 30 local documents and questions with and without answers. Explicitly state the hypothetical nature and lack of measured results. Invite discussion on potential issues and improvements to the hypothetical design.\"\n    },\n    {\n      \"title\": \"Designing a Hypothetical RAG Evaluation: Retrieval On/Off Comparison\",\n      \"body\": \"This post outlines a hypothetical approach to a RAG sanity check, focusing on a direct comparison between retrieval-enabled and retrieval-disabled modes. The scenario is purely conceptual, with no actual performance data generated.\\n\\nThe proposed method uses a corpus of 30 local documents. The core of the hypothetical test involves posing a set of questions to the RAG system. This question set is designed to include queries that can be answered from the provided documents, as well as queries that intentionally have no corresponding information within the corpus.\\n\\nBy running the same questions through the system twice – once with the retrieval component active and once with it deactivated – we can hypothetically observe differences in output. This comparison serves as a baseline sanity check. It's important to reiterate that no actual accuracy metrics or benchmarks are available for this hypothetical experiment. What are the key considerations for such a comparative setup, especially when dealing with documents that may not contain answers?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Describe a hypothetical RAG sanity check comparing retrieval on/off. Detail the use of 30 local documents and questions with/without answers. Emphasize the hypothetical status and absence of real results. Seek community input on the design considerations for this comparative approach, particularly regarding unanswerable questions.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1695,
+      "completion_tokens": 644,
+      "total_tokens": 2339,
+      "cost": 0.0004271,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004271,
+        "upstream_inference_prompt_cost": 0.0001695,
+        "upstream_inference_completions_cost": 0.0002576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

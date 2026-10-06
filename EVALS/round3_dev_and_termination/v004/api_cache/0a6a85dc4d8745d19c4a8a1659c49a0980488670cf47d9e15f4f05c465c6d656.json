@@ -1,0 +1,23 @@
+{
+  "value": {
+    "content_archetype": "A",
+    "primary_value": "utility",
+    "strongest_grounded_hook": "Encountering gibberish output after LoRA fine-tuning? This guide details a specific user's problem and configuration, offering a starting point for diagnosis.",
+    "why_readers_should_care": "Machine learning engineers and researchers working with LoRA fine-tuning on large language models may face similar unpredictable output issues; understanding a concrete reported case with detailed configuration helps target troubleshooting efforts.",
+    "recommended_angle": "Focus on identifying which aspects of the documented LoRA and training configuration or missing diagnostic details could be first inspected to isolate causes of gibberish output in classification tasks.",
+    "essential_context": "A user fine-tuned Qwen2.5-7B-Instruct-bnb-4bit with LoRA on a ~3,000 sample classification dataset, using a specific LoRA setup (r=16, lora_alpha=16, no dropout, bias='none', gradient checkpointing='unsloth') and training arguments (batch size 2, gradient accumulation 16, 3 epochs, learning rate 2e-4, conditional fp16/bf16, adamw_8bit optimizer). Post-tuning, the model outputs gibberish about 40% of the time on test predictions.",
+    "facts_to_emphasize": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05"
+    ],
+    "facts_optional": [],
+    "natural_opening_strategy": "Introduce the reported problem and configuration succinctly to frame the troubleshooting context.",
+    "natural_ending_strategy": "Summarize the need for targeted diagnostics to distinguish possible causes, noting the absence of confirmed solutions in the source.",
+    "engagement_risk": "The content may appear overly technical or narrowly focused, potentially limiting engagement to specialists; lack of resolution might frustrate readers seeking definitive answers.",
+    "safety_constraints": "Avoid implying causality or solution effectiveness; do not speculate beyond the reported facts; respect the user's original report without judgment."
+  },
+  "run_id": "v004-r0022"
+}

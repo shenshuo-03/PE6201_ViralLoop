@@ -1,0 +1,170 @@
+{
+  "at": "2026-10-04T11:06:38.424616+00:00",
+  "loop_version": "v002",
+  "brief_id": "D04",
+  "phase": "tune",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Noticing a Trade-off Between World Knowledge and Problem-Solving in Newer Small LLMs—Anyone Else Seen This?",
+        "body": "I came across an archived Reddit post from May 2025 discussing an interesting pattern in smaller local LLMs. The author noticed that newer models like Qwen 3 and GLM-4-0414 tend to outperform older ones in coding and problem-solving tasks but show worse world knowledge, sometimes even lagging behind older, lower-benchmarking models.\n\nThis seems to suggest a trade-off where training data might be more focused on problem-solving content, reducing knowledge density. For example, Qwen 3 8B reportedly has poorer world knowledge than Llama 3.1 8B, despite better coding skills. Has anyone else observed this kind of trade-off in their experience? How do you balance choosing models for tasks that require both strong knowledge recall and problem-solving abilities?",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F8"
+        ],
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source's observations and hypotheses, framing them as a question to the community. It correctly attributes the findings to the source author's private tests and avoids claiming personal experience. The community fit is good as it directly asks for shared experiences on the observed trade-off. Specificity is good by mentioning model names and the core issue. Information value is good by posing a relevant question for users. Clarity and usefulness are high. Credibility is good as it adheres to the persona and limitations. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 116,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "World Knowledge vs. Problem Solving in Local LLMs: Are Training Data Shifts the Cause?",
+        "body": "An archived discussion from May 2025 raised a point about a potential trade-off in some newer smaller LLMs: improved coding and problem-solving but degraded world knowledge. The source author’s private tests showed models like Qwen 3 14B having much worse world knowledge than older models like Phi 4 or Gemma 3 12B, despite benchmark claims.\n\nOne hypothesis is that newer models’ training data emphasize problem-solving content over knowledge-dense material. Given this, how might we effectively evaluate or select models when both knowledge retention and problem-solving are important? Are there known strategies or benchmarks that can help clarify these trade-offs beyond what the author’s private tests reveal?",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F5",
+          "F8"
+        ],
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 also accurately summarizes the source's points, including the hypothesis about training data. It correctly attributes the findings to the source author's private tests and poses a relevant question about evaluation strategies. The community fit is good as it seeks community input on practical approaches. Specificity is good by naming models and the core problem. Information value is high by asking for practical strategies. Clarity and usefulness are high. Credibility is good due to adherence to persona and limitations. Clickbait is minimal.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 106,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Noticing a Trade-off Between World Knowledge and Problem-Solving in Newer Small LLMs—Anyone Else Seen This?",
+      "body": "I came across an archived Reddit post from May 2025 discussing an interesting pattern in smaller local LLMs. The author noticed that newer models like Qwen 3 and GLM-4-0414 tend to outperform older ones in coding and problem-solving tasks but show worse world knowledge, sometimes even lagging behind older, lower-benchmarking models.\n\nThis seems to suggest a trade-off where training data might be more focused on problem-solving content, reducing knowledge density. For example, Qwen 3 8B reportedly has poorer world knowledge than Llama 3.1 8B, despite better coding skills. Has anyone else observed this kind of trade-off in their experience? How do you balance choosing models for tasks that require both strong knowledge recall and problem-solving abilities?",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F8"
+      ],
+      "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/"
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source's observations and hypotheses, framing them as a question to the community. It correctly attributes the findings to the source author's private tests and avoids claiming personal experience. The community fit is good as it directly asks for shared experiences on the observed trade-off. Specificity is good by mentioning model names and the core issue. Information value is good by posing a relevant question for users. Clarity and usefulness are high. Credibility is good as it adheres to the persona and limitations. Clickbait is minimal.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 116,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0222",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:36.351362+00:00",
+    "tag": "V2:D04",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "0baffbb2eb9734773a9f3cfc3b6facb3d2d3b31070555395bcefec300afa09c7",
+    "actual_cost_usd": 0.001716,
+    "budget_charge_usd": 0.001716,
+    "reserved_upper_usd": 0.008076799999999999,
+    "input_tokens": 2430,
+    "output_tokens": 465,
+    "latency_seconds": 3.7066582999832463,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111992-PCf7oj4Kx6ls3yb1RQrr",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0223",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:38.398884+00:00",
+    "tag": "quality:D04:V2",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "eb4ae650a94f5741cdc07b4c987003ed83843e588d1ef0ceb18055ce892f3580",
+    "actual_cost_usd": 0.0005307,
+    "budget_charge_usd": 0.0005307,
+    "reserved_upper_usd": 0.0022281,
+    "input_tokens": 3595,
+    "output_tokens": 428,
+    "latency_seconds": 2.0179051000159234,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111996-Xg0FmGj2Du3X17OTmgqu",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [
+    "1j4p3xw",
+    "1j49sbd",
+    "1kscb9d"
+  ],
+  "external_judge_used": false
+}

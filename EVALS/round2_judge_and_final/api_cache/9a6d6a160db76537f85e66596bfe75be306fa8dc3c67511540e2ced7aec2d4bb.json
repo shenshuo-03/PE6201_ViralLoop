@@ -1,0 +1,61 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Optimizing LLM Inference on Multi-GPU AMD Setup: Best Backends and Quantization for Gemma3:27b & Qwen3 32B?",
+        "body": "A user with 2x AMD Radeon RX 7900 XTX and 1x RX 7800 XT (64GB VRAM total) is exploring the best VRAM backends and configurations to maximize inference speed and throughput for Gemma3:27b and Qwen3 32B. They’ve tried VLLM and llama.cpp but found only small speed differences (~1-2 tokens/sec) on older models, which was inconclusive. Vulkan with llama.cpp showed better speeds on some Qwen3 variants, but details remain sparse. \n\nGiven this, what are the current experiences on AMD multi-GPU setups regarding backend choice? Are there quantization methods (e.g., GPTQ, AWQ, GGUF) and bit depths that consistently improve performance? Also, what strategies effectively leverage multiple GPUs for these large models? Insights on inference frameworks and specific configuration tweaks that enhance throughput would be highly valuable.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Seeking Advice on Multi-GPU AMD LLM Inference: VLLM vs llama.cpp and Quantization for Gemma3 and Qwen3 Models",
+        "body": "On a system with dual AMD Radeon RX 7900 XTX plus an RX 7800 XT (64GB VRAM combined), a user is targeting efficient inference for Gemma3:27b and Qwen3 32B models. Previous tests with VLLM and llama.cpp backends on older models showed marginal speed differences, leaving no clear winner. Vulkan plus llama.cpp gave better token rates on some Qwen3 variants but without comprehensive benchmarks.\n\nHas anyone with similar AMD multi-GPU setups found a preferred backend or quantization approach (like GPTQ, AWQ, or GGUF at 4- or 8-bit) that meaningfully boosts throughput? Additionally, what are the best practices for distributing workloads across these GPUs and which inference frameworks integrate smoothly for optimal speed? Sharing detailed configs or experiences would help clarify the tradeoffs here.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      },
+      {
+        "title": "Best Practices for Large Model Inference on AMD Multi-GPU (7900 XTX + 7800 XT): Backend and Quantization Insights?",
+        "body": "A Reddit report from mid-2025 describes a setup with 2x AMD Radeon RX 7900 XTX and 1x RX 7800 XT totaling 64GB VRAM, running Gemma3:27b and Qwen3 32B models. The user tested VLLM and llama.cpp backends, noting only minor speed differences on older models and some gains with Vulkan and llama.cpp on Qwen3 variants. They’re now seeking guidance on the most efficient backend, optimal quantization methods (e.g., GPTQ, AWQ, GGUF), and bit depths to maximize throughput.\n\nGiven the dated and limited data, what configurations or frameworks currently deliver the best inference performance on similar AMD multi-GPU rigs? How do you handle multi-GPU scaling for these large models? Any practical tips on balancing VRAM use, token speed, and backend choice would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0346",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:14:31.266792+00:00",
+    "tag": "O1:F05",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "9a6d6a160db76537f85e66596bfe75be306fa8dc3c67511540e2ced7aec2d4bb",
+    "actual_cost_usd": 0.0020312,
+    "budget_charge_usd": 0.0020312,
+    "reserved_upper_usd": 0.0087732,
+    "input_tokens": 2182,
+    "output_tokens": 724,
+    "latency_seconds": 5.695021799998358,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112465-HTJApvVTMVCo254nwc8o",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

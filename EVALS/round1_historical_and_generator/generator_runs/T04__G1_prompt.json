@@ -1,0 +1,309 @@
+{
+  "at": "2026-10-04T08:09:41.957818+00:00",
+  "topic": {
+    "id": "T04",
+    "split": "final_test",
+    "topic": "A hypothetical batching tradeoff",
+    "content_type": "Experience / Benchmark",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "Hypothetical batch size 1 produces 22 tokens per second in total; batch size 4 produces 55 in total.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "These are aggregate rates, not per-user rates.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Per-request latency was not measured.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "The values are illustrative, not real test results.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T08:09:37.972346+00:00",
+    "tag": "final_test:T04:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "27514d73b1432715e3a365d9dc5e2f2499c721b0b466261089f293db70db560e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 464,
+    "output_tokens": 604,
+    "actual_cost_usd": 0.000288,
+    "token_price_estimate_usd": 0.000288,
+    "reserved_upper_usd": 0.0010344,
+    "budget_charge_usd": 0.000288,
+    "latency_seconds": 2.770926799988956,
+    "retry": 0,
+    "request_id": "gen-1791101375-idtgkADNLuMRk6F2TrbP"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:09:41.948316+00:00",
+    "tag": "final_test:T04:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "9cfcf55fda4b6ea806fed17214a7059f980aa81f95dd8528954ac4394102478c",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1039,
+    "output_tokens": 382,
+    "actual_cost_usd": 0.0010268,
+    "token_price_estimate_usd": 0.0010268,
+    "reserved_upper_usd": 0.0049268,
+    "budget_charge_usd": 0.0010268,
+    "latency_seconds": 3.932257100008428,
+    "retry": 0,
+    "request_id": "gen-1791101378-GujlMGtLlrcX8bF1MBNG"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "bc39a70542a0ab1281b62c5f5b0762280f6ece8624fb5a01f2e73a52d714e6d4",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Batching: Aggregate Throughput vs. Latency Trade-off for Local LLMs",
+        "body": "This post explores a hypothetical scenario regarding batching strategies for local LLMs. We are examining an illustrative case where increasing the batch size from 1 to 4 significantly impacts aggregate throughput. Specifically, a batch size of 1 yielded a hypothetical aggregate throughput of 22 tokens/sec, while a batch size of 4 hypothetically reached 55 tokens/sec. It's crucial to understand these figures represent *aggregate* rates (F2), not per-user or per-request performance. The experiment brief explicitly states that per-request latency was not measured (F3) and these numbers are purely illustrative, not actual benchmark results (F4). The core question is how such a throughput increase might affect user experience if latency isn't a primary concern, or if the model is used in a non-interactive, batch processing context. We are preserving the hypothetical status throughout (F4).",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Discuss the implications of aggregate throughput gains from batching in a hypothetical LLM setup, emphasizing the lack of latency data and the illustrative nature of the numbers. Invite discussion on scenarios where aggregate throughput is prioritized over individual request latency."
+      },
+      "performance_score": 0.24639243591557536,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and preserves all necessary caveats about the illustrative data and lack of latency measurements. It correctly distinguishes aggregate throughput from per-user performance. The title matches the content well. The writing is clear and technical, suitable for the intended audience. The post is useful for readers considering batching tradeoffs in local LLMs, especially in non-interactive contexts. No unsupported claims or exaggerations are present.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 132,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Illustrative Throughput Gains with Hypothetical Batching in Local LLM Inference",
+        "body": "This is a discussion of a hypothetical experiment brief concerning batching in local LLM inference. The brief outlines potential throughput differences: a batch size of 1 hypothetically results in 22 tokens/sec total, whereas a batch size of 4 hypothetically yields 55 tokens/sec total (F1). These figures are presented as synthetic, illustrative data points, not measured results (F4). It's important to note that these are aggregate throughput figures (F2), meaning they reflect the total output of the system, not the performance experienced by any single request. Per-request latency was explicitly not measured in this hypothetical scenario (F3). The objective is to consider the trade-offs presented by these hypothetical aggregate gains. If a system requires high throughput for non-interactive tasks, would such a hypothetical increase be beneficial, even without latency data? We are maintaining the hypothetical nature of this exploration (F4).",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Present a hypothetical scenario illustrating batching's impact on aggregate LLM throughput. Highlight that the figures are illustrative, aggregate, and lack latency measurements. Pose a question about the utility of such hypothetical aggregate gains in specific non-interactive use cases."
+      },
+      "performance_score": 0.24036919961852973,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately preserves the hypothetical status and caveats, clearly explains the synthetic nature of the data, and distinguishes aggregate throughput from per-request latency. The title reflects the content well. The language is clear and restrained, appropriate for the technical audience. The post invites thoughtful consideration of the tradeoffs without making unsupported claims. It is relevant and useful for readers interested in batching effects on local LLM inference.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 139,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "numbers_early__Experience / Benchmark",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Experience / Benchmark",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Experience / Benchmark",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Hypothetical Batching: Aggregate Throughput vs. Latency Trade-off for Local LLMs",
+      "body": "This post explores a hypothetical scenario regarding batching strategies for local LLMs. We are examining an illustrative case where increasing the batch size from 1 to 4 significantly impacts aggregate throughput. Specifically, a batch size of 1 yielded a hypothetical aggregate throughput of 22 tokens/sec, while a batch size of 4 hypothetically reached 55 tokens/sec. It's crucial to understand these figures represent *aggregate* rates (F2), not per-user or per-request performance. The experiment brief explicitly states that per-request latency was not measured (F3) and these numbers are purely illustrative, not actual benchmark results (F4). The core question is how such a throughput increase might affect user experience if latency isn't a primary concern, or if the model is used in a non-interactive, batch processing context. We are preserving the hypothetical status throughout (F4).",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Discuss the implications of aggregate throughput gains from batching in a hypothetical LLM setup, emphasizing the lack of latency data and the illustrative nature of the numbers. Invite discussion on scenarios where aggregate throughput is prioritized over individual request latency."
+    },
+    "performance_score": 0.24639243591557536,
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "The draft clearly states the hypothetical nature of the experiment and preserves all necessary caveats about the illustrative data and lack of latency measurements. It correctly distinguishes aggregate throughput from per-user performance. The title matches the content well. The writing is clear and technical, suitable for the intended audience. The post is useful for readers considering batching tradeoffs in local LLMs, especially in non-interactive contexts. No unsupported claims or exaggerations are present.",
+      "quality_mean": 4.0,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 132,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "numbers_early__Experience / Benchmark",
+        "direction": "positive",
+        "present": true,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Put an existing quantitative detail early, preserving its caveats.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Experience / Benchmark",
+        "direction": "negative",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Experience / Benchmark",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

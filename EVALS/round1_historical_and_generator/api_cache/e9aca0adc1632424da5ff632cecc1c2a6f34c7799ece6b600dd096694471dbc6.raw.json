@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101463-xr9Str2kMWZEbaDlbUSx",
+  "object": "chat.completion",
+  "created": 1791101463,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the checklist and explicitly references the scenario facts. It provides a logical, stepwise approach to offline testing, including model loading, generation, and network monitoring, which aligns well with the input facts. The language is clear and technical, suitable for the target audience. The post avoids unsupported claims and maintains necessary caveats about the lack of actual testing. The title accurately reflects the content without exaggeration or clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical nature of the test and follows the scenario facts closely. It presents a structured, step-by-step guide that includes preparation, disconnection, and verification steps, covering generation and network monitoring as required. The language is clear and appropriate for the audience. The title matches the content well and is not misleading. No unsupported claims or removal of caveats are present.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1046,
+    "completion_tokens": 381,
+    "total_tokens": 1427,
+    "cost": 0.001028,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001028,
+      "upstream_inference_prompt_cost": 0.0004184,
+      "upstream_inference_completions_cost": 0.0006096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

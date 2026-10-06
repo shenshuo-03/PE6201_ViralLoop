@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.35,
+        "reason": "Open-source AI memory engine with demo apps and practical use cases; moderate similarity to a high-class example about AI model support."
+      },
+      {
+        "index": 1,
+        "probability": 0.3,
+        "reason": "Controversial question about OpenAI model sabotage; similar posts have mixed historical class but question format lowers probability."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Announcement of working quantized model for Ollama; similar to a high-class example about reverse-engineering and model releases."
+      },
+      {
+        "index": 3,
+        "probability": 0.2,
+        "reason": "General question about best transcription model; similar examples mostly not high class and question format reduces score."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Experience post about testing a GGUF model; similar examples split between high and not high, no strong signal."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Detailed fine-tuning issue post; similar examples include high and not high classes, technical depth suggests moderate interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.3,
+        "reason": "Open source cluster compute offer with free hours; similar examples include high and not high, but practical offer may boost interest."
+      },
+      {
+        "index": 7,
+        "probability": 0.35,
+        "reason": "Research report on in-context learning effects; similar to a high-class example about reasoning and reinforcement learning."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:03.992006+00:00",
+    "tag": "tune_dev:classifier:E5c_retrieval:8",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d84b51a7a25cecbbe21ed31ac349bd3099f09b5019af879e04b07f0e57742ebd",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5230,
+    "output_tokens": 397,
+    "actual_cost_usd": 0.0027272,
+    "token_price_estimate_usd": 0.0027272,
+    "reserved_upper_usd": 0.010681199999999998,
+    "budget_charge_usd": 0.0027272,
+    "latency_seconds": 3.0907432999956654,
+    "retry": 0,
+    "request_id": "gen-1791100741-z1ijkP74OhSJL0vxKyUS"
+  },
+  "raw_response": {
+    "id": "gen-1791100741-z1ijkP74OhSJL0vxKyUS",
+    "object": "chat.completion",
+    "created": 1791100741,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.35,\n      \"reason\": \"Open-source AI memory engine with demo apps and practical use cases; moderate similarity to a high-class example about AI model support.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.3,\n      \"reason\": \"Controversial question about OpenAI model sabotage; similar posts have mixed historical class but question format lowers probability.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.4,\n      \"reason\": \"Announcement of working quantized model for Ollama; similar to a high-class example about reverse-engineering and model releases.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.2,\n      \"reason\": \"General question about best transcription model; similar examples mostly not high class and question format reduces score.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.25,\n      \"reason\": \"Experience post about testing a GGUF model; similar examples split between high and not high, no strong signal.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Detailed fine-tuning issue post; similar examples include high and not high classes, technical depth suggests moderate interest.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.3,\n      \"reason\": \"Open source cluster compute offer with free hours; similar examples include high and not high, but practical offer may boost interest.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.35,\n      \"reason\": \"Research report on in-context learning effects; similar to a high-class example about reasoning and reinforcement learning.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5230,
+      "completion_tokens": 397,
+      "total_tokens": 5627,
+      "cost": 0.0027272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027272,
+        "upstream_inference_prompt_cost": 0.002092,
+        "upstream_inference_completions_cost": 0.0006352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

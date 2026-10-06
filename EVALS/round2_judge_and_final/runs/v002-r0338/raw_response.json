@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112443-HV9hErQhoiSYcwOmDMDW",
+  "object": "chat.completion",
+  "created": 1791112443,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"opening_strategy\": \"Introduce the topic of advanced model architectures and performance.\",\n  \"information_order\": [\n    \"Describe a new model's architectural innovations and its claimed performance advantages.\",\n    \"Detail a specific inference engine's performance with various model configurations and optimizations.\",\n    \"Discuss hardware considerations for running models locally, focusing on agentic capabilities and context handling.\"\n  ],\n  \"evidence_style\": \"Present benchmark results and technical specifications to support claims.\",\n  \"question_or_cta\": \"Seek recommendations for models that meet specific functional and hardware requirements.\",\n  \"useful_details_to_include_when_in_brief\": [\n    \"Model architecture type (e.g., MoE).\",\n    \"Performance leverage through parameter efficiency.\",\n    \"Inference engine and optimization techniques.\",\n    \"Hardware configurations for local execution.\",\n    \"Desired model capabilities (e.g., reasoning, agentic behavior).\"\n  ],\n  \"common_weaknesses\": [\n    \"Lack of specific model names or performance figures.\",\n    \"Focus on hardware setup rather than model capabilities.\",\n    \"General descriptions of desired model behavior without concrete examples.\"\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1535,
+    "completion_tokens": 257,
+    "total_tokens": 1792,
+    "cost": 0.0002563,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002563,
+      "upstream_inference_prompt_cost": 0.0001535,
+      "upstream_inference_completions_cost": 0.0001028
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

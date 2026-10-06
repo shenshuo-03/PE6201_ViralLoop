@@ -1,0 +1,91 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical Local Inference Speed: Beyond Raw Tokens/Second",
+        "body": "This post discusses a hypothetical local inference scenario involving two configurations, achieving 18 and 24 tokens per second (t/s) respectively on the same machine with a single prompt. While these numbers offer a basic performance indicator, they represent only one facet of practical usability. Crucially, this hypothetical test did not measure time to first token (TTFT) or the quality of the generated answers. A model with higher t/s might still feel sluggish if TTFT is high, or if the output requires significant revision due to poor quality. Furthermore, the observed difference does not establish a universal winner; performance can vary greatly with different prompts, system loads, and model architectures. These synthetic figures are intended to highlight the limitations of raw t/s metrics and prompt a discussion on what other factors users consider essential for a responsive local LLM experience.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Discuss hypothetical inference speeds, emphasizing limitations beyond raw t/s. Highlight that TTFT and answer quality were not measured in this hypothetical scenario. Conclude by noting this doesn't establish a universal winner and invite discussion on other important performance factors."
+      },
+      {
+        "title": "Interpreting Hypothetical Local LLM Speeds: What 18 vs. 24 Tokens/Second Might Mean (and Not Mean)",
+        "body": "We're examining a hypothetical local inference test that yielded 18 tokens per second (t/s) on one setup and 24 t/s on another, using identical hardware and a single prompt. While a 33% increase in t/s is notable, it's vital to understand the constraints of this hypothetical data. This specific test did not capture the time until the first token was generated, nor did it assess the semantic quality or coherence of the responses. A faster generation rate doesn't automatically equate to a better user experience if the initial wait is long or the output is unsatisfactory. Moreover, this isolated test cannot be generalized; different prompts, system configurations, and model types could yield different results. The aim here is not to declare a winner but to underscore that raw throughput figures, especially from a limited hypothetical test, don't tell the whole story. What other metrics or qualitative aspects are crucial for assessing local LLM performance in your experience?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Present hypothetical token/second figures (18 and 24 t/s) from a single-prompt test on the same machine. Explicitly state that time-to-first-token and answer quality were not measured. Emphasize that this hypothetical scenario does not determine a universal winner. Pose a question to the community about other critical performance factors beyond raw speed."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:09:04.662635+00:00",
+    "tag": "final_test:T03:G4_both",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "eaf708a4cf341923c6bcc87d97367c9e0efc0ba81b58df7180a42a7045af8655",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 3710,
+    "output_tokens": 636,
+    "actual_cost_usd": 0.0006254,
+    "token_price_estimate_usd": 0.0006253999999999999,
+    "reserved_upper_usd": 0.0019401999999999998,
+    "budget_charge_usd": 0.0006254,
+    "latency_seconds": 3.496691099993768,
+    "retry": 0,
+    "request_id": "gen-1791101341-mcHIbdvBjhkGNNCeDOsE"
+  },
+  "raw_response": {
+    "id": "gen-1791101341-mcHIbdvBjhkGNNCeDOsE",
+    "object": "chat.completion",
+    "created": 1791101341,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Local Inference Speed: Beyond Raw Tokens/Second\",\n    \"body\": \"This post discusses a hypothetical local inference scenario involving two configurations, achieving 18 and 24 tokens per second (t/s) respectively on the same machine with a single prompt. While these numbers offer a basic performance indicator, they represent only one facet of practical usability. Crucially, this hypothetical test did not measure time to first token (TTFT) or the quality of the generated answers. A model with higher t/s might still feel sluggish if TTFT is high, or if the output requires significant revision due to poor quality. Furthermore, the observed difference does not establish a universal winner; performance can vary greatly with different prompts, system loads, and model architectures. These synthetic figures are intended to highlight the limitations of raw t/s metrics and prompt a discussion on what other factors users consider essential for a responsive local LLM experience.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Discuss hypothetical inference speeds, emphasizing limitations beyond raw t/s. Highlight that TTFT and answer quality were not measured in this hypothetical scenario. Conclude by noting this doesn't establish a universal winner and invite discussion on other important performance factors.\"\n  },\n  {\n    \"title\": \"Interpreting Hypothetical Local LLM Speeds: What 18 vs. 24 Tokens/Second Might Mean (and Not Mean)\",\n    \"body\": \"We're examining a hypothetical local inference test that yielded 18 tokens per second (t/s) on one setup and 24 t/s on another, using identical hardware and a single prompt. While a 33% increase in t/s is notable, it's vital to understand the constraints of this hypothetical data. This specific test did not capture the time until the first token was generated, nor did it assess the semantic quality or coherence of the responses. A faster generation rate doesn't automatically equate to a better user experience if the initial wait is long or the output is unsatisfactory. Moreover, this isolated test cannot be generalized; different prompts, system configurations, and model types could yield different results. The aim here is not to declare a winner but to underscore that raw throughput figures, especially from a limited hypothetical test, don't tell the whole story. What other metrics or qualitative aspects are crucial for assessing local LLM performance in your experience?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Present hypothetical token/second figures (18 and 24 t/s) from a single-prompt test on the same machine. Explicitly state that time-to-first-token and answer quality were not measured. Emphasize that this hypothetical scenario does not determine a universal winner. Pose a question to the community about other critical performance factors beyond raw speed.\"\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3710,
+      "completion_tokens": 636,
+      "total_tokens": 4346,
+      "cost": 0.0006254,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006254,
+        "upstream_inference_prompt_cost": 0.000371,
+        "upstream_inference_completions_cost": 0.0002544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

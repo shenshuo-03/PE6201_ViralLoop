@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "B",
+      "overall": "A"
+    },
+    "evidence": "Draft A frames a concrete, answerable question grounded in the stated motivation: whether KokoroSharp is mature enough for offline voice chat, directly inviting community testing feedback on real-world trade-offs (latency, quality, compatibility). This aligns with the brief's desired response about technical aspects and use cases. Draft B recaps the facts more comprehensively (F2–F6 vs. F1–F2) but dilutes focus by listing features (NuGet availability, GitHub link, example code) without organizing them into a specific problem or distinction the community can act on. Both stay within allowed claims and avoid forbidden ones. A's credibility is slightly stronger because it explicitly flags missing performance data as a gap motivating the question, whereas B mentions missing metrics parenthetically without centering them. A's narrower scope (offline voice chat readiness) creates higher community_fit and usefulness for the stated audience; B's broader \"what do you think\" invitation is less actionable. Equal specificity in naming KokoroSharp, C#, cross-platform, and Kokoro model, but A's focus on the 90% app context (F1) creates tighter narrative coherence with the motivation."
+  },
+  "usage": {
+    "run_id": "v002-r0469",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:22:26.617548+00:00",
+    "tag": "judge_final:F10:V1_vs_V0:BA",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "d18be727239093d34178965f0879ba3ac1c3523df4877657a797eec993bea175",
+    "actual_cost_usd": 0.003933,
+    "budget_charge_usd": 0.003933,
+    "reserved_upper_usd": 0.011914999999999999,
+    "input_tokens": 2218,
+    "output_tokens": 343,
+    "latency_seconds": 5.454787900001975,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112941-MZPPODOJN2EattxqLbMf",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

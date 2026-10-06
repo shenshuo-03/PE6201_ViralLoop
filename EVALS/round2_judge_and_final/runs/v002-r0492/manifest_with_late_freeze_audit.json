@@ -1,0 +1,45 @@
+{
+  "run_id": "v002-r0492",
+  "cycle_id": "v002",
+  "loop_version": "v002",
+  "contract_id": "ViralLoop-v002-posthoc-E4-audit",
+  "contract_sha256": "cd7aa84fa4e4da461860d2cee96587a12a2b9747a9c17557f9654fa4fe4e918d",
+  "phase": "final",
+  "variant_id": "semantic_embeddings",
+  "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "579006fdbbe3010bdd873b6019f06d0850e3b6c51cb58461c7568df0339ac37a",
+  "config_hash": "7b6b1336028c144aef4b6e8561c233b3e41527925cb1124009144eb0b3b38596",
+  "code_hash": "2051ff7143e504ef1705f776e7b1025fb8c3178b13eadf8480ea5b4f01c4ff31",
+  "input_hash": "65ed43eadda8bd7442e1949ef8790d240c68902e4eecaaf9dc30fe3a383d8a3a",
+  "output_hash": "de6a70a1e4bacf06b1b7f6c0b70659b6c98bd789d72d456eff8c85f6739d9363",
+  "scores_hash": "de6a70a1e4bacf06b1b7f6c0b70659b6c98bd789d72d456eff8c85f6739d9363",
+  "primary_metric_hash": "e66572f0e06f824a569f9d0dca1cc7534e38d4620f5447e8377308f87903c229",
+  "evaluator_hash": "3d0b02d049d370f4fc2f06174a3dcce1a101b1fbaf8c50c8678cb9669b220ea6",
+  "candidate_count": 0,
+  "tokens": 6916,
+  "api_calls": 1,
+  "cost": 0.00013832,
+  "currency": "USD",
+  "latency_seconds": 1.6366182999918237,
+  "retry_count": 0,
+  "access_events": [
+    {
+      "split": "final_generated_outputs",
+      "purpose": "posthoc_historical_association_audit",
+      "time": "2026-10-04T11:26:37.301347+00:00",
+      "evidence": "C:\\Users\\19139\\Documents\\Codex\\2026-10-04\\zhe-g\\experiment_1_1\\loops\\v002\\runs\\v002-r0492\\input.json"
+    }
+  ],
+  "integrity_checks": {
+    "artifact_hashes_verified": true,
+    "split_integrity": true,
+    "billing_ledger_complete": true,
+    "project_budget_verified": true
+  },
+  "not_used_for_generator_selection_or_tuning": true,
+  "freeze_verified": true,
+  "final_unexposed_before_run": true,
+  "late_audit_at": "2026-10-04T11:38:02.990686+00:00",
+  "original_manifest_sha256": "08cdb8a10043b8d23b9330134a8ea80945be771224fa80632dd0b98ad54309aa",
+  "annotation_note": "Freeze evidence verified after run from immutable freeze/code hashes and actual source access log; not contemporaneous original fields"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112856-jb15bI8Yd90fihYgQWwF",
+  "object": "chat.completion",
+  "created": 1791112856,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"B\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly engages the community with concrete, answerable questions grounded in the source author's specific setup details: llama-swap's model management workflow, the config.yaml maintenance burden, and the interaction between llama-swap auto-discovery and Open WebUI workspace configuration. It references all five facts and preserves the author's key distinction (direct wget downloads, no Ollama-imposed naming). Draft B reduces the source to a binary viability claim (\\\"viable replacement\\\") using only F1 and F2, omitting the llama-swap and config.yaml details that constitute the actual technical substance of the transition. B's framing as \\\"unclear if this approach suits all users\\\" introduces appropriate caution but then asks generic comparison questions (stability, speed) that don't leverage the specific architectural details the source provided. A's questions are actionable for readers familiar with these tools; B's are generic troubleshooting prompts. A also better respects the limitation that this is one user's report by positioning it as a detailed account to learn from rather than a viability test. B's credibility is slightly lower because it frames the report as evidence of a \\\"possible practical alternative\\\" without acknowledging the source author made no comparative performance claims—only ease-of-transition subjective experience.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2121,
+    "completion_tokens": 352,
+    "total_tokens": 2473,
+    "cost": 0.003881,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003881,
+      "upstream_inference_prompt_cost": 0.002121,
+      "upstream_inference_completions_cost": 0.00176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

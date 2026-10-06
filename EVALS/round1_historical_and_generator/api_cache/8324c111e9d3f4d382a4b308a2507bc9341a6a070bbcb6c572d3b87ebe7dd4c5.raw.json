@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101292-i9TfCyAFEzKKiy2wSZOo",
+  "object": "chat.completion",
+  "created": 1791101292,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly references the fixed variables and lack of performance data, preserving necessary caveats. The title matches the content well. The language is clear and technical, suitable for the target audience. It invites discussion on implications, which adds usefulness, though no actionable steps are provided. The credibility is strong due to explicit caveats and no unsupported claims. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also clearly communicates the hypothetical scenario and includes all necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It frames the data as a theoretical exercise and invites discussion on trade-offs, which adds moderate usefulness. No unsupported claims or misleading statements are present, supporting credibility. The clickbait score is low due to restrained, factual titling.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft maintains clear and consistent communication of the hypothetical nature and includes all required caveats. The title accurately reflects the content. The language is clear and technical, fitting the audience. It poses a relevant question about practical challenges, which adds to usefulness. There are no unsupported claims, preserving credibility. The clickbait score is low as the title is straightforward and non-sensational.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1179,
+    "completion_tokens": 564,
+    "total_tokens": 1743,
+    "cost": 0.001374,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001374,
+      "upstream_inference_prompt_cost": 0.0004716,
+      "upstream_inference_completions_cost": 0.0009024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

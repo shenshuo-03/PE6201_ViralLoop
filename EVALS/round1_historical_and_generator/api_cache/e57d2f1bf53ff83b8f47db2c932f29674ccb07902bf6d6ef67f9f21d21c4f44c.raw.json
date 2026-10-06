@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101654-pGcCnrZ492tu7MbUAPOJ",
+  "object": "chat.completion",
+  "created": 1791101654,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not claim any specific model superiority, aligning well with the facts. It explains why leaderboard scores may not reflect low-latency and offline requirements, which is relevant and useful for the target audience. The language is clear and technical without being overly complex. It invites discussion on alternative evaluation strategies, adding actionable value. There is no exaggeration or misleading phrasing, so clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical framing and avoids unsupported claims. It clearly discusses the limitations of leaderboard scores for local deployment needs, emphasizing key factors like inference speed and memory efficiency. The writing is clear and accessible to the intended technical audience. It encourages thoughtful consideration of alternative evaluation methods, making it useful and relevant. The title accurately reflects the content without exaggeration.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1046,
+    "completion_tokens": 375,
+    "total_tokens": 1421,
+    "cost": 0.0010184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010184,
+      "upstream_inference_prompt_cost": 0.0004184,
+      "upstream_inference_completions_cost": 0.0006
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

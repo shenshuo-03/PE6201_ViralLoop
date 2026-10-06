@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112219-CCfbYKn5E0wk8WjejS5Z",
+  "object": "chat.completion",
+  "created": 1791112219,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 1 accurately reflects the source and brief, posing a clear question about local TTS for dialogues with specific requirements (gender, accent, ease of use). It correctly attributes the user's experience with Coqui TTS and their desire for alternatives. The specificity is good, mentioning the core problem and desired features. Community fit is strong as it directly asks for suggestions relevant to the local LLM community.\"\n  },\n  {\n    \"index\": 1,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 2 is a good summary of the source and brief. It highlights the user's problem with Coqui TTS, their search for local/free alternatives, and their technical limitations. The question is well-posed for the target audience, asking for accessible local TTS projects. Specificity is high, covering the key requirements. Community fit is excellent as it directly solicits recommendations from enthusiasts.\"\n  },\n  {\n    \"index\": 2,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"Draft 3 effectively captures the essence of the source and brief. It clearly states the user's need for a local TTS with specific features (dialogues, American English, gender control) and their negative experience with Coqui TTS. The question is direct and relevant to the community, asking for alternatives and comparisons. Specificity is high, covering all key aspects. Community fit is strong, as it seeks practical advice from experienced users.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2784,
+    "completion_tokens": 678,
+    "total_tokens": 3462,
+    "cost": 0.0005496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005496,
+      "upstream_inference_prompt_cost": 0.0002784,
+      "upstream_inference_completions_cost": 0.0002712
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

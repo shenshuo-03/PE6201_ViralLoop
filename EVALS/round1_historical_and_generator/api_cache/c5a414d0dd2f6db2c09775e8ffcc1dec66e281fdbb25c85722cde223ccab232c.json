@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the data and explicitly notes that latency was not measured, preserving all necessary caveats. It accurately reflects the supplied facts about aggregate throughput and batch sizes without unsupported claims. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is useful for readers to understand the trade-offs in batching strategies and invites thoughtful discussion, making it relevant and credible. The tone is restrained and non-clickbait."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully represents the hypothetical scenario and includes all necessary caveats about the illustrative nature of the data and the lack of latency measurements. The title accurately reflects the content. The writing is clear and accessible for the intended technical audience. It provides actionable value by framing the trade-off question and relevance to interactive applications. The post is credible and avoids exaggeration or clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:10:02.812332+00:00",
+    "tag": "final_test:T04:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "c5a414d0dd2f6db2c09775e8ffcc1dec66e281fdbb25c85722cde223ccab232c",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1042,
+    "output_tokens": 383,
+    "actual_cost_usd": 0.0010296,
+    "token_price_estimate_usd": 0.0010295999999999999,
+    "reserved_upper_usd": 0.0050144,
+    "budget_charge_usd": 0.0010296,
+    "latency_seconds": 3.075592499997583,
+    "retry": 0,
+    "request_id": "gen-1791101399-lPqiARyme3fkhvn6rSvl"
+  },
+  "raw_response": {
+    "id": "gen-1791101399-lPqiARyme3fkhvn6rSvl",
+    "object": "chat.completion",
+    "created": 1791101399,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the data and explicitly notes that latency was not measured, preserving all necessary caveats. It accurately reflects the supplied facts about aggregate throughput and batch sizes without unsupported claims. The title matches the content well. The language is clear and technical, suitable for the target audience. The post is useful for readers to understand the trade-offs in batching strategies and invites thoughtful discussion, making it relevant and credible. The tone is restrained and non-clickbait.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully represents the hypothetical scenario and includes all necessary caveats about the illustrative nature of the data and the lack of latency measurements. The title accurately reflects the content. The writing is clear and accessible for the intended technical audience. It provides actionable value by framing the trade-off question and relevance to interactive applications. The post is credible and avoids exaggeration or clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1042,
+      "completion_tokens": 383,
+      "total_tokens": 1425,
+      "cost": 0.0010296,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010296,
+        "upstream_inference_prompt_cost": 0.0004168,
+        "upstream_inference_completions_cost": 0.0006128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

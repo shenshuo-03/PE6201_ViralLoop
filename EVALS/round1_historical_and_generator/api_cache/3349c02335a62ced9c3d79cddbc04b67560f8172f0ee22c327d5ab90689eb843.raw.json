@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100898-AfpCENSrfPwn9O6nZHkq",
+  "object": "chat.completion",
+  "created": 1791100898,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Question about best LLM for large context with technical details; moderate interest but niche troubleshooting limits high score likelihood\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.6,\n      \"reason\": \"Detailed tutorial with clear results and accessible setup; tutorials tend to get higher engagement and shares\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.25,\n      \"reason\": \"Discussion/opinion post with literary style; less likely to be high scoring in technical subreddit\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.5,\n      \"reason\": \"Technical comparison with practical insights; moderate engagement expected from users interested in Llama.cpp and Ollama\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.35,\n      \"reason\": \"Request for recommendations on STT models in German; useful but somewhat niche and less likely viral\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Short discussion/opinion on service choice for Linux distro; limited detail reduces high score chance\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.4,\n      \"reason\": \"Question about GUI tools for story writing with LLMs; moderate interest but less technical depth\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.45,\n      \"reason\": \"Detailed performance analysis with benchmarks and troubleshooting; appeals to technical audience\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6935,
+    "completion_tokens": 366,
+    "total_tokens": 7301,
+    "cost": 0.0033596,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0033596,
+      "upstream_inference_prompt_cost": 0.002774,
+      "upstream_inference_completions_cost": 0.0005856
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

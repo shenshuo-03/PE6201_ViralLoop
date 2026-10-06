@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112496-IwZOLxCNDTErPzFG4V61",
+  "object": "chat.completion",
+  "created": 1791112496,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Switching from Ollama to llama.cpp with Open WebUI: Practical for local LLM management?\",\"body\":\"A Reddit user shared their experience from mid-2025 about moving away from Ollama while still using Open WebUI as a frontend for local LLMs. Their setup relies on llama.cpp or ik_llama.cpp for inference on both Linux and Windows, which they found easier and faster to configure than expected. \\n\\nGiven this, the main tradeoff seems to be between Ollama’s integrated environment and the modular approach of llama.cpp plus Open WebUI. However, the original report doesn’t detail hardware or performance metrics, leaving open questions about efficiency or ease of use across different systems. \\n\\nHas anyone else tried replacing Ollama with llama.cpp and Open WebUI? What practical challenges or benefits did you encounter, especially regarding setup complexity and model compatibility?\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Is llama.cpp with Open WebUI a viable Ollama alternative for local LLMs?\",\"body\":\"In a 2025 Reddit post, a user described their transition from Ollama to using llama.cpp (or ik_llama.cpp) for inference combined with Open WebUI as a frontend on Linux and Windows. They reported the switch was quicker and simpler than anticipated. \\n\\nThis suggests a potentially flexible alternative to Ollama’s all-in-one solution, but the post lacks detailed info about hardware used or inference speed, making it hard to assess tradeoffs fully. \\n\\nFor those who have experimented with this setup, how does it compare in terms of resource use, stability, and overall user experience? Are there specific limitations or advantages that would help others considering this switch?\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1148,
+    "completion_tokens": 367,
+    "total_tokens": 1515,
+    "cost": 0.0010464,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010464,
+      "upstream_inference_prompt_cost": 0.0004592,
+      "upstream_inference_completions_cost": 0.0005872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

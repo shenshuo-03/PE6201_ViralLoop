@@ -1,0 +1,241 @@
+{
+  "at": "2026-10-04T07:44:50.785761+00:00",
+  "topic": {
+    "id": "D01",
+    "split": "tune_dev",
+    "topic": "A hypothetical VRAM planning checklist",
+    "content_type": "Tutorial / Guide",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario has a 12 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The draft should separate model weights, KV cache, and other runtime allocations.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No actual model or runtime was tested.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G2_fewshot_planning",
+  "generation_usage": {
+    "at": "2026-10-04T07:44:47.539758+00:00",
+    "tag": "tune_dev:D01:G2_fewshot_planning",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "a356bf4843d36689c517b9af74c901151d677aa66aa996b8bef0b200b2fadab0",
+    "status": "success",
+    "input_tokens": 804,
+    "output_tokens": 831,
+    "actual_cost_usd": 0.0004128,
+    "token_price_estimate_usd": 0.0004128,
+    "reserved_upper_usd": 0.0011646,
+    "budget_charge_usd": 0.0004128,
+    "latency_seconds": 3.4290053000004264,
+    "retry": 0,
+    "request_id": "gen-1791099884-yfXl6mEIZhTkKgkzLNdZ"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T07:44:50.781935+00:00",
+    "tag": "tune_dev:D01:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "bc4f355c1036dfc0a1a90c9fd6381ec9ae6a1539ca861031ce6d577a69be61fa",
+    "status": "success",
+    "input_tokens": 1209,
+    "output_tokens": 425,
+    "actual_cost_usd": 0.0011636,
+    "token_price_estimate_usd": 0.0011635999999999999,
+    "reserved_upper_usd": 0.0051568,
+    "budget_charge_usd": 0.0011636,
+    "latency_seconds": 3.2016569999977946,
+    "retry": 0,
+    "request_id": "gen-1791099887-TwM39V8YLuI1Q9MlXTkm"
+  },
+  "retrieved_ids": [
+    "1jijqaa",
+    "1i4qrcx"
+  ],
+  "pattern_ids": [],
+  "prompt_sha256": "6c15cd2edcfd127f828979910d8307c15be71223a8483e86c1087574f02deba2",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical VRAM Planning Checklist for 12GB GPUs: Model Weights, KV Cache, and Runtime",
+        "body": "This post outlines a hypothetical checklist for VRAM planning on a 12 GB GPU for running local LLMs. The scenario is purely hypothetical and has not been tested with actual models or runtimes. The goal is to provide a structured approach to estimating VRAM needs.\n\nWe'll separate allocations into three key areas:\n\n1.  **Model Weights:** This is the primary consumer, varying significantly by model size (e.g., 7B, 13B) and quantization level (e.g., FP16, 4-bit). For a 12 GB card, larger models will likely require aggressive quantization.\n2.  **KV Cache:** This scales with context length and batch size. Longer contexts and larger batches demand more VRAM. Planning for a reasonable context window is crucial.\n3.  **Other Runtime Allocations:** This includes the operating system, the LLM inference framework itself (e.g., llama.cpp, vLLM), and any intermediate activations or buffers. These are generally smaller but can add up.\n\nThis framework aims to help users anticipate potential VRAM bottlenecks before attempting to load a model. Remember, no specific model or runtime was tested; this is a conceptual guide.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Create a technical Reddit post outlining a hypothetical VRAM planning checklist for a 12GB GPU. Explicitly state the hypothetical nature of the scenario and that no actual testing was performed. Structure the body to separate allocations for model weights, KV cache, and other runtime needs. Keep the title restrained and the body within the word count. Ensure fact references are correctly cited."
+      },
+      "performance_score": 0.23885272422983633,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly mentions no actual testing was done, preserving necessary caveats. It correctly separates VRAM allocations into model weights, KV cache, and other runtime needs, aligning with the facts. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. The post is useful as a conceptual planning guide, relevant to users running local LLMs on 12GB GPUs. There are no unsupported claims or exaggerations, and the tone is restrained, avoiding clickbait.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": false,
+        "hard_rule_failures": [
+          "new_numbers:13,16,4,7"
+        ],
+        "body_words": 173,
+        "novel_numbers": [
+          "13",
+          "16",
+          "4",
+          "7"
+        ],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": false,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Structuring VRAM Usage: A Hypothetical Guide for 12GB Local LLM Setups",
+        "body": "This guide presents a hypothetical framework for VRAM management on a 12 GB GPU when running local LLMs. It's crucial to understand that this is a conceptual exercise; no specific models or runtimes were evaluated, and these are not measured results. The objective is to offer a structured way to think about VRAM allocation.\n\nWe propose categorizing VRAM usage into three distinct components:\n\n*   **Model Weights:** The size of the model's parameters is the largest factor, heavily influenced by the parameter count (e.g., 7B, 13B) and the precision used (e.g., FP16, INT8, 4-bit quantization). A 12 GB card will necessitate careful consideration of quantization for larger models.\n*   **KV Cache:** This dynamic allocation grows with the sequence length of the input and the batch size. Longer conversations or processing multiple requests concurrently will increase KV cache requirements.\n*   **Runtime Overhead:** This encompasses the VRAM consumed by the operating system, the inference engine (like Transformers, llama.cpp), and any temporary buffers or activations generated during processing.\n\nBy considering these categories hypothetically, users can better anticipate potential VRAM constraints before deploying models. This is a planning aid, not a performance benchmark.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Develop a second, distinct technical Reddit post on the same hypothetical VRAM planning topic. Maintain the hypothetical status and avoid any measured results. Focus on separating the three VRAM allocation types: model weights, KV cache, and runtime. Ensure the title is concise and the body adheres to the word count. Use the specified fact references."
+      },
+      "performance_score": 0.24147871510251206,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly states the hypothetical and conceptual nature of the guide, preserving all necessary caveats. It separates VRAM usage into model weights, KV cache, and runtime overhead, consistent with the facts. The title is concise and matches the body content. The language is clear and technical, appropriate for the intended audience. The post is relevant and useful as a planning aid for VRAM management on 12GB GPUs. There are no unsupported claims or misleading statements, and the tone is restrained without clickbait.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": false,
+        "hard_rule_failures": [
+          "new_numbers:13,16,4,7,8"
+        ],
+        "body_words": 185,
+        "novel_numbers": [
+          "13",
+          "16",
+          "4",
+          "7",
+          "8"
+        ],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": false,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Tutorial / Guide",
+          "direction": "positive",
+          "present": true,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "question_title__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. Consider a precise question when the content type is a discussion/question.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Tutorial / Guide",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Tutorial / Guide",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": null,
+  "abstention": true
+}

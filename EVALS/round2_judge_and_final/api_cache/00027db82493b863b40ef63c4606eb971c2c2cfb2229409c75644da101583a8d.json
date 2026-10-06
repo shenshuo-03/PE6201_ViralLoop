@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Tips for improving binary prompt classification with LLaMA 3.1 8B locally?",
+        "body": "I came across a post from May 2025 where someone used LLaMA 3.1 8B locally to classify prompts as related or unrelated to a topic. They didn’t share specific prompt engineering strategies or system prompt setups, but the task was strictly binary classification on semantic relatedness. \n\nSince the exact prompt tweaks or system prompts they tried weren’t detailed, I’m curious if anyone here has experience optimizing prompt phrasing or system instructions to boost classification accuracy and consistency with this model locally. Are there particular prompt structures or system prompt styles that help LLaMA 3.1 8B better distinguish subtle semantic differences in a binary setup?\n\nAny practical advice or examples for refining prompts or system messages that improved classification reliability would be appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Seeking effective prompt engineering for binary related/unrelated classification on LLaMA 3.1 8B",
+        "body": "A user reported using LLaMA 3.1 8B locally for a binary classification task—deciding if a prompt is related or unrelated to a category—but didn’t specify their prompt engineering methods or system prompt configurations. This leaves a gap in understanding what kinds of prompt tweaks might improve classification consistency.\n\nGiven the lack of detailed examples, I’m wondering if anyone has found system prompt adjustments or prompt engineering tricks that reliably enhance binary semantic classification accuracy on this model? For instance, does explicitly instructing the model to reason step-by-step or to output a strict yes/no label help? Or are there known prompt patterns that reduce ambiguity in local runs of LLaMA 3.1 8B?\n\nInsights from those who have experimented with classification prompts on this or similar models would be really useful.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0269",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:09:32.914904+00:00",
+    "tag": "V1:S03",
+    "phase": "selection",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "00027db82493b863b40ef63c4606eb971c2c2cfb2229409c75644da101583a8d",
+    "actual_cost_usd": 0.0010188,
+    "budget_charge_usd": 0.0010188,
+    "reserved_upper_usd": 0.0052724,
+    "input_tokens": 959,
+    "output_tokens": 397,
+    "latency_seconds": 2.9397328999766614,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112169-igcoQvcXzpXcYujYOQfE",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

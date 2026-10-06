@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and explicitly notes the absence of experimental results, preserving necessary caveats. It accurately references the need to record model version, prompt, generation settings, and hardware, consistent with the provided facts. The title matches the body content well, focusing on reproducibility and recording requirements. The language is clear and technical, suitable for the target audience. The post invites discussion on additional parameters, adding usefulness and relevance. There are no unsupported claims or exaggerations, and the clickbait score is low due to restrained, factual titling."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and explicitly states no actual results exist, preserving necessary caveats. It correctly identifies key parameters to record, including model identifier, prompt, generation parameters, and environment details, consistent with the facts. The title accurately reflects the content, focusing on reproducibility factors. The language is clear and technical, appropriate for the audience. The post encourages community input on additional factors, enhancing usefulness and relevance. There are no unsupported claims or misleading elements, and the clickbait score is minimal."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:14:53.532632+00:00",
+    "tag": "final_test:T09:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3910af1ac38a6cdbf478e94fff35a3084c9ec83fdcccc637e726d97887d299ab",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1082,
+    "output_tokens": 429,
+    "actual_cost_usd": 0.0011192,
+    "token_price_estimate_usd": 0.0011191999999999999,
+    "reserved_upper_usd": 0.0050788,
+    "budget_charge_usd": 0.0011192,
+    "latency_seconds": 3.5811433999915607,
+    "retry": 0,
+    "request_id": "gen-1791101690-IbTKgYfsrb7zgHe7mh0N"
+  },
+  "raw_response": {
+    "id": "gen-1791101690-IbTKgYfsrb7zgHe7mh0N",
+    "object": "chat.completion",
+    "created": 1791101690,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and explicitly notes the absence of experimental results, preserving necessary caveats. It accurately references the need to record model version, prompt, generation settings, and hardware, consistent with the provided facts. The title matches the body content well, focusing on reproducibility and recording requirements. The language is clear and technical, suitable for the target audience. The post invites discussion on additional parameters, adding usefulness and relevance. There are no unsupported claims or exaggerations, and the clickbait score is low due to restrained, factual titling.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical framing and explicitly states no actual results exist, preserving necessary caveats. It correctly identifies key parameters to record, including model identifier, prompt, generation parameters, and environment details, consistent with the facts. The title accurately reflects the content, focusing on reproducibility factors. The language is clear and technical, appropriate for the audience. The post encourages community input on additional factors, enhancing usefulness and relevance. There are no unsupported claims or misleading elements, and the clickbait score is minimal.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1082,
+      "completion_tokens": 429,
+      "total_tokens": 1511,
+      "cost": 0.0011192,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011192,
+        "upstream_inference_prompt_cost": 0.0004328,
+        "upstream_inference_completions_cost": 0.0006864
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

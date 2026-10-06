@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about illustrative data, aggregate rates, and unmeasured latency. The title matches the content well. The language is clear and technical, suitable for the target audience. It provides a useful starting point for discussion about batching tradeoffs without overclaiming or fabricating results."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains clear and explicit statements about the hypothetical and illustrative nature of the data, preserving all necessary caveats. The title accurately reflects the content. The writing is clear and appropriate for the audience. It frames the data as a thought exercise without implying real measurements or causal conclusions."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:10:09.403507+00:00",
+    "tag": "final_test:T04:G4_both:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "9ba8cc8310983365a2609162e18d0723333d278ce724c9582e26e5eee5e60b30",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1045,
+    "output_tokens": 340,
+    "actual_cost_usd": 0.000962,
+    "token_price_estimate_usd": 0.000962,
+    "reserved_upper_usd": 0.004955599999999999,
+    "budget_charge_usd": 0.000962,
+    "latency_seconds": 2.5852595000033034,
+    "retry": 0,
+    "request_id": "gen-1791101407-FQ261V9vRZ0nYsR0NFja"
+  },
+  "raw_response": {
+    "id": "gen-1791101407-FQ261V9vRZ0nYsR0NFja",
+    "object": "chat.completion",
+    "created": 1791101407,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and includes all necessary caveats about illustrative data, aggregate rates, and unmeasured latency. The title matches the content well. The language is clear and technical, suitable for the target audience. It provides a useful starting point for discussion about batching tradeoffs without overclaiming or fabricating results.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains clear and explicit statements about the hypothetical and illustrative nature of the data, preserving all necessary caveats. The title accurately reflects the content. The writing is clear and appropriate for the audience. It frames the data as a thought exercise without implying real measurements or causal conclusions.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 340,
+      "total_tokens": 1385,
+      "cost": 0.000962,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000962,
+        "upstream_inference_prompt_cost": 0.000418,
+        "upstream_inference_completions_cost": 0.000544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

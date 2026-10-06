@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118955-nnmvIFTrVcTdi3a4aqoe",
+  "object": "chat.completion",
+  "created": 1791118955,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A flows more naturally as a cohesive narrative without explicit fact citations, making it feel like authentic community advice-seeking. Draft B's inline fact references (F1, F2, etc.) disrupt readability and are inappropriate for Reddit posts, which should cite sources conversationally or not at all. Both convey the core problem and desired help adequately, but A's presentation is more suitable for the r/LocalLLaMA audience.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2677,
+    "completion_tokens": 169,
+    "total_tokens": 2846,
+    "cost": 0.003522,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003522,
+      "upstream_inference_prompt_cost": 0.002677,
+      "upstream_inference_completions_cost": 0.000845
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

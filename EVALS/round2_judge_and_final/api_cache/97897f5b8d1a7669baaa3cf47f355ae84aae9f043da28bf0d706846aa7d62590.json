@@ -1,0 +1,46 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How exactly does llama.cpp's HTTP server handle file-upload prompts? Seeking clarity on concatenation and query reliability",
+        "body": "I came across an archived Reddit post from May 2025 where a user experimented with llama.cpp's HTTP server file-upload button using the llama 3.2 3B Q4_K_S model. They suspected that the server might simply concatenate the uploaded file content with the direct prompt, treating both as a single prompt input. This led to inconsistent results: sometimes the model answered questions about the file correctly, but other times it seemed to interpret the entire file content as the query itself. The user also expressed a desire for reproducible answers when reopening conversations with the same prompts, which apparently wasn’t reliably achieved. Given these observations, does anyone have insights into how the file-upload button actually processes and integrates file data with user prompts? Are there known ways to structure or delimit inputs to improve consistency and reproducibility? Understanding this could help users reliably query file contents through llama.cpp's HTTP server interface.",
+        "fact_refs": [
+          "F1",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      {
+        "title": "Inconsistent query results with llama.cpp's file-upload button—How to get reproducible answers?",
+        "body": "An archived report from May 2025 described using the file-upload button in llama.cpp's HTTP server with the llama 3.2 3B Q4_K_S model. The author suspected that the file content and their prompt were concatenated into a single input, which sometimes caused the model to either answer questions about the file or misinterpret the file as the query itself. They noted that no model reliably handled this concatenation, resulting in unpredictable outputs. The user also wanted reproducible results when restarting conversations with the same prompts but found this difficult. Does anyone know how the file-upload button merges file data and prompts under the hood? Are there strategies or prompt formats that help ensure the model distinguishes between file content and queries, leading to stable, repeatable responses? Any practical tips or explanations would be appreciated to improve usability of this feature.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0498",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:33:37.221322+00:00",
+    "tag": "V0:L1791113608698225700",
+    "phase": "preflight",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "97897f5b8d1a7669baaa3cf47f355ae84aae9f043da28bf0d706846aa7d62590",
+    "actual_cost_usd": 0.0010876,
+    "budget_charge_usd": 0.0010876,
+    "reserved_upper_usd": 0.005350799999999999,
+    "input_tokens": 955,
+    "output_tokens": 441,
+    "latency_seconds": 3.2300355000188574,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791113613-Gbu6RYAxXArVPhh8Kto6",
+    "contract_sha256": "92da471fe324e4a7fd3a582013a0cc97aa7ba2a1d12697bf447d63e1e3624d91"
+  }
+}

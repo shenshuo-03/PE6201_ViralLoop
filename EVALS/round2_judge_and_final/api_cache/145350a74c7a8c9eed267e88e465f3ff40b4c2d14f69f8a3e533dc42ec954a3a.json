@@ -1,0 +1,58 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Experiences managing local LLMs with llama.cpp and Open WebUI instead of Ollama?",
+        "body": "A user reported moving away from Ollama about a month ago while continuing to use Open WebUI as their frontend. Their inference runs on llama.cpp or ik_llama.cpp across Linux and Windows, with llama-swap handling model loading/unloading via a large config.yaml. This approach reportedly avoids Ollama’s model location and naming constraints, allowing direct downloads from Hugging Face into arbitrary folders. However, the original post doesn’t specify hardware or performance details, nor does it explain the config.yaml setup or challenges faced during transition. Has anyone else adopted a similar modular stack replacing Ollama? What practical tradeoffs did you find in terms of setup complexity, model management flexibility, or inference reliability? Any insights on configuring llama-swap effectively or integrating with Open WebUI would be helpful.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      {
+        "title": "Replacing Ollama with llama.cpp + Open WebUI: What are the real setup and management challenges?",
+        "body": "One Reddit user shared that switching from Ollama to a setup using llama.cpp or ik_llama.cpp for inference, combined with llama-swap for model management and Open WebUI as frontend, was faster and easier than expected. They highlighted benefits like avoiding Ollama’s fixed model paths and naming conventions, and the ability to download models directly from Hugging Face to any folder. Still, the report lacks details on the llama-swap config.yaml and doesn’t clarify if any difficulties arose during the switch. For those who have tried this or similar alternatives, what were the main hurdles in configuring the components or maintaining smooth inference workflows? How does this modular approach compare to Ollama in day-to-day usability and model handling?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      },
+      {
+        "title": "Using llama-swap and Open WebUI for local LLMs after leaving Ollama: What’s the community experience?",
+        "body": "According to a mid-2025 Reddit post, a user moved away from Ollama while keeping Open WebUI as their frontend, running inference via llama.cpp or ik_llama.cpp on Linux and Windows. They manage models with llama-swap, which uses a large config.yaml for parameters and automates loading/unloading. This setup reportedly removes Ollama’s constraints on model locations and names, allowing flexible downloads from Hugging Face. However, specifics about the config file, hardware, or performance weren’t shared. For those who’ve tried managing local LLMs this way, what practical benefits or issues have you encountered? How complex is maintaining llama-swap configurations, and does Open WebUI integrate smoothly in this context?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0358",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:15:06.455919+00:00",
+    "tag": "O1:F06",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "145350a74c7a8c9eed267e88e465f3ff40b4c2d14f69f8a3e533dc42ec954a3a",
+    "actual_cost_usd": 0.0016904,
+    "budget_charge_usd": 0.0016904,
+    "reserved_upper_usd": 0.008327600000000001,
+    "input_tokens": 1878,
+    "output_tokens": 587,
+    "latency_seconds": 4.363965700002154,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112501-tyiP9zYKzb6JGTqeh6NQ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

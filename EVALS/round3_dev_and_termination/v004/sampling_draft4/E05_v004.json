@@ -1,0 +1,15 @@
+{
+  "brief_id": "E05",
+  "id": "1hy8wa0",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "46",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-01-10",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1hy8wa0/q_on_inference_speed_int4_vs_fp8_ada_fp8_support/",
+  "source_hash": "77187467e12887039523ea18998324b2a5471a5ad227c51b05439ece919c99a5",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "Q on inference speed: int4 vs fp8; ada fp8 support",
+  "source_text": "I run a lot of text through 70B models in awq int4 on vLLM (that fits on 2x3090).\n\nI understand that the more compression of the parameters, the smaller and thus the faster they'll load from VRAM, but I also expect there must be overhead in converting the quantized representations back to native datatypes the GPU can actually perform operations on.\n\nI'm trying to understand how much additional speed I'd gain by using an fp8 quantized model on Ada chips that natively support fp8 (so no conversion needed?).  This of course assumes I double the VRAM available.  Practically, this would mean moving to 4x4090 or 2x6000 (ada), which I know means throwing in additional speed factors."
+}

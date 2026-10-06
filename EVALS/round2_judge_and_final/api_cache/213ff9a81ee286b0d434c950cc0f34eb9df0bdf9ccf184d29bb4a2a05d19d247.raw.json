@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112946-zZiWK5c4KaOUsNCqa2Wp",
+  "object": "chat.completion",
+  "created": 1791112946,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A directly frames the core tension for the audience: KokoroSharp exists and is accessible (NuGet, open-source), but the brief explicitly notes 'exact performance characteristics are not detailed' and 'no information on stability.' Draft A asks whether it's 'mature enough' and immediately acknowledges 'the source doesn't provide detailed performance metrics or stability info'—this is honest uncertainty that invites community testing and real-world reports. Draft B uses softer language ('not fully documented,' 'I'm curious') and adds an unsupported comparative claim ('alternative offline TTS solutions should be prioritized'), which goes beyond the brief's facts. Both preserve F1 and F2 correctly and avoid forbidden claims. Draft A's phrasing 'given its development context and near-completion status' more directly connects the author's pivot (F2) to the readiness question, making the motivation concrete. Draft B's 'today' and 'viable foundation' introduce temporal and evaluative framing not grounded in the source. Draft A's closing is tighter: it names three specific friction points (latency, voice quality, platform compatibility) that are plausible for offline TTS but not invented; Draft B's 'audio quality or processing reliability' is similar but less precise. Both avoid the forbidden performance-benchmark and production-use claims. Draft A edges ahead by being more direct about what the brief *doesn't* say, which builds credibility with a skeptical technical audience.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2202,
+    "completion_tokens": 400,
+    "total_tokens": 2602,
+    "cost": 0.004202,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004202,
+      "upstream_inference_prompt_cost": 0.002202,
+      "upstream_inference_completions_cost": 0.002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

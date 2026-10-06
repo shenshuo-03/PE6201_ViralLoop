@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "Tie",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts accurately preserve F1 and F2 without inventing claims or testing experiences. However, B better serves community_fit by framing the question around *practical tradeoffs* and *effective frameworks* that the audience can directly address, rather than A's vaguer appeal for \"insights on tradeoffs.\" B also has stronger information_value: it explicitly names the constraint (unknown hardware/browser environments) as a *reason* tool selection matters, turning a limitation into a concrete discussion anchor. A mentions this constraint but treats it as background context rather than a driver of the question. Both omit F4 (quantized models <100MB) and F5 (WebGPU/WASM support)—critical specificity details from the brief—making them equal on specificity despite this gap. Neither makes forbidden claims. B's phrasing (\"Has anyone found effective frameworks,\" \"practical tradeoffs\") invites concrete community experience more directly than A's softer \"Are there any tools\" and \"Any insights.\" Credibility is tied: both correctly attribute exploration to the speaker without claiming personal testing or MLC.ai experience."
+  },
+  "usage": {
+    "run_id": "v002-r0447",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:20:32.838713+00:00",
+    "tag": "judge_final:F04:V2_vs_V1:BA",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "ff5f147d8979a810f1405fb25e2d25ef11c3301e3837c1581548afe8389ed11c",
+    "actual_cost_usd": 0.00371,
+    "budget_charge_usd": 0.00371,
+    "reserved_upper_usd": 0.012223000000000001,
+    "input_tokens": 2070,
+    "output_tokens": 328,
+    "latency_seconds": 5.895182800013572,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112826-aW3niKUS6CS9xcUnSBAD",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

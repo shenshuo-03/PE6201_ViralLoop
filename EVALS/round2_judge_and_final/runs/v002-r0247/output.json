@@ -1,0 +1,40 @@
+{
+  "drafts": [
+    {
+      "title": "What can we realistically infer from DeepSeek R1 perplexity tested on just 8 blocks?",
+      "body": "A 2025 test of DeepSeek R1 models with varying expert counts showed the full model (except when limited to 2 experts) generally outperforming normal distills under aggressive quantization, with Virtuoso Medium V2 distill sitting between 3 and 4 expert versions. However, this test ran on only 8 blocks out of about 560, using block size 512, so the results come with major caveats. Perplexity may also unfairly penalize chain-of-thought models since they can't leverage their reasoning steps during evaluation. The test also encountered NaNs at 10 and 12 experts, leaving some gaps. Given these constraints, what are practical approaches to better benchmark DeepSeek R1 variants locally without resorting to full-scale perplexity runs? Are there alternative metrics or smaller-scale tests that can more reliably reflect real-world performance?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "title": "Considering the limited 8-block perplexity test, how should we weigh expert count effects in DeepSeek R1?",
+      "body": "An archived perplexity test from early 2025 compared DeepSeek R1 models with different numbers of experts, alongside distilled models and Virtuoso-Medium-v2. The test was run with block size 512 but only covered 8 blocks out of roughly 560, so its conclusions are tentative. It suggested that full DeepSeek R1 models outperform normal distills except when limited to 2 experts, and Virtuoso Medium V2 distill performed comparably to 3-4 expert versions. However, perplexity might not fairly evaluate chain-of-thought models, and attempts at 10 and 12 experts failed with NaNs. How do others interpret the tradeoffs between expert count and model quality here? Are there known workarounds or alternative evaluation techniques that can better capture performance differences without the risk of NaNs or unfair scoring?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "title": "Is perplexity a useful metric for DeepSeek R1 MoE models given this small-sample test?",
+      "body": "A brief perplexity test from 2025 on DeepSeek R1 models with varying expert counts showed some interesting trends: full models generally beat normal distills unless restricted to 2 experts, and Virtuoso Medium V2 distill ranked between 3 and 4 expert versions. But the test only ran on 8 blocks out of about 560, used block size 512, and encountered NaNs at higher expert counts (10 and 12). Also, perplexity may not be suitable for chain-of-thought models since they can’t perform intermediate reasoning in this setup. Given these limitations, is perplexity a meaningful metric for evaluating MoE models like DeepSeek R1? What alternative benchmarks or evaluation methods could better reflect their real-world capabilities, especially for locally running setups?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    }
+  ]
+}

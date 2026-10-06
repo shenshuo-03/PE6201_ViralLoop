@@ -1,0 +1,40 @@
+{
+  "run_id": "v002-r0215",
+  "loop_version": "v002",
+  "cycle_id": "v002",
+  "phase": "tune",
+  "variant_id": "O1",
+  "contract_id": "ViralLoop-v002-generation-after-instrument-validation",
+  "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438",
+  "dataset_hash": "47212453e015ab690161b488517e562d1569485a2deec7ef2e09cd9d90aff422",
+  "split_hash": "579006fdbbe3010bdd873b6019f06d0850e3b6c51cb58461c7568df0339ac37a",
+  "config_hash": "ab66cef6bc4ab7ae6066fa47e0e0327aa1da570333aee1763cd24b4d61aee797",
+  "code_hash": "0e29118459cccf19663fa7ae9528858f84e803c588d885ff9eb9b0058d2630e4",
+  "input_hash": "02f7df3cc34e2748e7cef3113db3a512e18dff201552ccd6aa9726fb68c08d5a",
+  "output_hash": "11752f77e85e187bf822d5c1e40226dec63a3ac56998dd8d7693828141fa7452",
+  "scores_hash": "11752f77e85e187bf822d5c1e40226dec63a3ac56998dd8d7693828141fa7452",
+  "primary_metric_hash": "e66572f0e06f824a569f9d0dca1cc7534e38d4620f5447e8377308f87903c229",
+  "evaluator_hash": "ebd5240e5f2075069ff5c5813e039396e5d258be200e063c272fb274377dd221",
+  "candidate_count": 3,
+  "tokens": 2652,
+  "api_calls": 1,
+  "cost": 0.001758,
+  "currency": "USD",
+  "latency_seconds": 4.738071600004332,
+  "retry_count": 0,
+  "access_events": [
+    {
+      "split": "tune",
+      "purpose": "generate_or_judge",
+      "time": "2026-10-04T11:06:13.686925+00:00",
+      "evidence": "C:\\Users\\19139\\Documents\\Codex\\2026-10-04\\zhe-g\\experiment_1_1\\loops\\v002\\runs\\v002-r0215\\prompt.txt"
+    }
+  ],
+  "integrity_checks": {
+    "artifact_hashes_verified": true,
+    "split_integrity": true,
+    "billing_ledger_complete": true,
+    "project_budget_verified": true
+  },
+  "model": "openai/gpt-4.1-mini"
+}

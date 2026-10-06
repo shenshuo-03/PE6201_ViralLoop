@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109744-5esi5FmjUI2JaH3X1ry3",
+  "object": "chat.completion",
+  "created": 1791109744,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"B\",\n    \"information_value\": \"Tie\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Post B is slightly better because it more directly asks for advice on model selection, deployment strategies, and content filtering, aligning more closely with the 'desired_response' in the brief. Post A is good but less explicit in its requests for specific guidance. Both posts accurately reflect the facts provided.\"\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2066,
+    "completion_tokens": 131,
+    "total_tokens": 2197,
+    "cost": 0.000259,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000259,
+      "upstream_inference_prompt_cost": 0.0002066,
+      "upstream_inference_completions_cost": 5.24e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

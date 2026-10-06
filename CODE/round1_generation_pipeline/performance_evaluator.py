@@ -14,7 +14,34 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import precision_recall_fscore_support,average_precision_score,roc_auc_score,brier_score_loss,log_loss,accuracy_score
 from sklearn.decomposition import TruncatedSVD
 from scipy import sparse
-MODEL_DIR=ROOT/'results/models';MODEL_DIR.mkdir(exist_ok=True)
+# Reproducing the ladder must not overwrite the frozen artefacts the report
+# cites, so newly fitted models and prediction tables are written under
+# <round>/reproduced_run/ instead.  Reading still uses the frozen files.
+OUT=ROOT.out;OUT.mkdir(parents=True,exist_ok=True)
+MODEL_DIR=ROOT/'results/models';MODEL_DIR.mkdir(parents=True,exist_ok=True)
+MODEL_OUT=(OUT/'models');MODEL_OUT.mkdir(parents=True,exist_ok=True)
+_ALLOW_EVIDENCE_WRITE=OUT == ROOT.workdir
+
+
+def model_path(name,fmode='r'):
+    """Where a fitted model lives.
+
+    Writes always go to the scratch output folder unless
+    VIRALLOOP_ALLOW_EVIDENCE_WRITE=1 was set.  Reads prefer a model produced by
+    the current run, then fall back to the frozen evidence, so downstream
+    scripts (attribution, semantic audit) can consume either.
+    """
+    scratch=MODEL_OUT/f'{name}.pkl'
+    if fmode.startswith('w'):
+        return scratch
+    if _ALLOW_EVIDENCE_WRITE:
+        return MODEL_DIR/f'{name}.pkl'
+    return scratch if scratch.exists() else MODEL_DIR/f'{name}.pkl'
+
+
+if not _ALLOW_EVIDENCE_WRITE:
+    print('NOTE: outputs are written to %s; frozen evidence is read-only. '
+          'Set VIRALLOOP_ALLOW_EVIDENCE_WRITE=1 to write into the archived results folder.'%OUT,flush=True)
 
 def inputs(df):
     x=pd.DataFrame(index=df.index)
@@ -66,8 +93,9 @@ def train():
         start=time.perf_counter();p=model.predict_proba(inputs(select))[:,1];lat=(time.perf_counter()-start)/len(select)
         m=metric(select.label,p,t);rows.append({'model':kind,'C':C,'partition':'selection_dev','training_seconds':elapsed,'inference_seconds_per_post':lat,**m})
         frozen[kind]={'threshold':t,'C':C,'selection_average_precision':m['average_precision'],'selection_f1':m['f1']}
-        with (MODEL_DIR/f'{kind}.pkl').open('wb') as f:pickle.dump(model,f)
-        pd.DataFrame({'id':select.id,'label':select.label,'probability':p}).to_csv(ROOT/'results'/f'{kind}_selection_predictions.csv',index=False)
+        OUT.mkdir(parents=True,exist_ok=True)
+        with model_path(kind,'w').open('wb') as f:pickle.dump(model,f)
+        pd.DataFrame({'id':select.id,'label':select.label,'probability':p}).to_csv(OUT/f'{kind}_selection_predictions.csv',index=False)
         print('EVALUATOR',kind,'selection AP',round(m['average_precision'],4),'F1',round(m['f1'],4),flush=True)
     for split,df in [('tune_dev',tune),('selection_dev',select)]:
         rows.append({'model':'E0_lazy','partition':split,**metric(df.label,np.zeros(len(df)),.5)})
@@ -77,16 +105,32 @@ def train():
     frozen['created_at']=now();frozen['final_test_run']=False
     frozen['optimization_signal_gate']=frozen['E2_tfidf']['selection_average_precision']>float(select.label.mean())+.02
     frozen['output_interpretation']='model-relative potential score; not real viral probability'
-    write_json(ROOT/'configs/evaluator_freeze.json',frozen)
-    pd.DataFrame(rows).to_csv(ROOT/'results/evaluator_dev_results.csv',index=False)
+    write_json(OUT/'evaluator_freeze.json',frozen)
+    pd.DataFrame(rows).to_csv(OUT/'evaluator_dev_results.csv',index=False)
 
 def score_posts(posts):
-    with (MODEL_DIR/'E2_tfidf.pkl').open('rb') as f:model=pickle.load(f)
+    with model_path('E2_tfidf').open('rb') as f:model=pickle.load(f)
     return model.predict_proba(pd.DataFrame({'text':[p.get('title','')+'\n'+p.get('body','') for p in posts]}))[:,1].tolist()
 
+def load_freeze():
+    """Thresholds used by the one-shot final test.
+
+    ``configs/evaluator_freeze.json`` is authoritative and complete: it is the
+    file the report cites, and it is the only place the E4_semantic threshold
+    exists (that model is fitted by ``semantic_evaluator.py``, which writes its
+    threshold back into the same file).  A ladder re-trained into ``ROOT.out`` by
+    this folder overrides the five models it covers, so a full re-run stays
+    self-consistent while E4_semantic keeps its archived threshold.
+    """
+    merged=json.loads((ROOT/'configs/evaluator_freeze.json').read_text(encoding='utf-8'))
+    local=OUT/'evaluator_freeze.json'
+    if local.exists():
+        for k,v in json.loads(local.read_text(encoding='utf-8')).items():merged[k]=v
+    return merged
+
 def final_test():
-    freeze=json.loads((ROOT/'configs/evaluator_freeze.json').read_text(encoding='utf-8'))
-    marker=ROOT/'results/FINAL_TEST_STARTED.json'
+    freeze=load_freeze()
+    marker=OUT/'FINAL_TEST_STARTED.json'
     if marker.exists():raise RuntimeError('Final test already started; no silent repeat allowed')
     write_json(marker,{'at':now(),'models_config_sha256':digest(json.dumps(freeze))})
     df=pd.read_parquet(ROOT/'data/splits/final_test.parquet');train=pd.read_parquet(ROOT/'data/splits/train.parquet');rows=[];allpred={}
@@ -94,7 +138,7 @@ def final_test():
         start=time.perf_counter()
         if kind.startswith('E0'):p=np.zeros(len(df)) if kind=='E0_lazy' else np.repeat(train.label.mean(),len(df));t=.5
         else:
-            with (MODEL_DIR/f'{kind}.pkl').open('rb') as f:model=pickle.load(f)
+            with model_path(kind).open('rb') as f:model=pickle.load(f)
             if kind=='E4_semantic':
                 from semantic_evaluator import embeddings
                 p=model.predict_proba(embeddings(df))[:,1]
@@ -102,7 +146,7 @@ def final_test():
             t=freeze[kind]['threshold']
         m=metric(df.label,p,t);allpred[kind]=p
         rows.append({'model':kind,'partition':'final_test','inference_seconds_per_post':(time.perf_counter()-start)/len(df),'api_cost_usd':0.,**m})
-        pd.DataFrame({'id':df.id,'author':df.author,'month':df.month,'type':df.content_type,'label':df.label,'probability':p,'prediction':p>=t}).to_csv(ROOT/'results'/f'{kind}_final_predictions.csv',index=False)
+        pd.DataFrame({'id':df.id,'author':df.author,'month':df.month,'type':df.content_type,'label':df.label,'probability':p,'prediction':p>=t}).to_csv(OUT/f'{kind}_final_predictions.csv',index=False)
     # Author cluster resampling; conditions on two held-out months, not broad future uncertainty.
     rng=np.random.default_rng(SEED);groups=df.groupby('author',dropna=False).indices;keys=list(groups);boot=[]
     for _ in range(500):
@@ -111,9 +155,9 @@ def final_test():
         d={k:average_precision_score(y,p[ix]) for k,p in allpred.items() if not k.startswith('E0')}
         d['E3_minus_E1']=d['E3_text_context']-d['E1_context_only'];d['E2_minus_prior']=d['E2_tfidf']-y.mean();boot.append(d)
     b=pd.DataFrame(boot)
-    write_json(ROOT/'results/evaluator_bootstrap.json',{'method':'500 author-cluster bootstrap draws; conditional on heldout months','ci95':{c:[float(b[c].quantile(.025)),float(b[c].quantile(.975))] for c in b}})
-    pd.DataFrame(rows).to_csv(ROOT/'results/evaluator_results.csv',index=False)
-    write_json(ROOT/'results/FINAL_TEST_COMPLETED.json',{'at':now(),'rows':len(df),'no_tuning_after_test':True})
+    write_json(OUT/'evaluator_bootstrap.json',{'method':'500 author-cluster bootstrap draws; conditional on heldout months','ci95':{c:[float(b[c].quantile(.025)),float(b[c].quantile(.975))] for c in b}})
+    pd.DataFrame(rows).to_csv(OUT/'evaluator_results.csv',index=False)
+    write_json(OUT/'FINAL_TEST_COMPLETED.json',{'at':now(),'rows':len(df),'no_tuning_after_test':True})
     print('FINAL TEST',pd.DataFrame(rows)[['model','average_precision','f1','brier']].to_string(index=False),flush=True)
 
 if __name__=='__main__':

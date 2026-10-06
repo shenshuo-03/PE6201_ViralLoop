@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100660-1cyPA4tUIqtXJ0pZTPwn",
+  "object": "chat.completion",
+  "created": 1791100660,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and references all key facts (F1, F2, F3). It focuses on prompt isolation as the primary evidence for privacy gains, while acknowledging the need to check logs and network connections. The lack of formal audits is explicitly mentioned, preserving necessary caveats. The language is clear and technical, suitable for the target audience. The post invites further discussion on strengthening evidence, making it useful and relevant. There is no exaggeration or misleading phrasing, so clickbait is minimal.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft broadens the discussion beyond prompt isolation, emphasizing the importance of log auditing and network connection analysis, consistent with facts F1 and F2. It clearly states the hypothetical nature and lack of audits (F3). The language is clear and technical, appropriate for the audience. The post asks for specific verifiable actions, enhancing usefulness. The title matches the body content well, and no unsupported claims or clickbait are present.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft focuses on logs and network traffic as key evidence areas, aligning with facts F1 and F2. It explicitly states the hypothetical context and absence of audits (F3). The language is clear and technical, suitable for the audience. The post invites discussion on what evidence would be convincing, increasing usefulness. The title accurately reflects the content. No unsupported claims or clickbait detected.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1316,
+    "completion_tokens": 584,
+    "total_tokens": 1900,
+    "cost": 0.0014608,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014608,
+      "upstream_inference_prompt_cost": 0.0005264,
+      "upstream_inference_completions_cost": 0.0009344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

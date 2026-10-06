@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112781-rZ1AOebGF3UIYQLrK3Xb",
+  "object": "chat.completion",
+  "created": 1791112781,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"B\",\n    \"specificity\": \"Tie\",\n    \"information_value\": \"B\",\n    \"usefulness\": \"B\",\n    \"credibility\": \"Tie\",\n    \"overall\": \"B\"\n  },\n  \"evidence\": \"Both posts accurately ground themselves in F1–F2 and acknowledge the core tension: vector DBs prioritize semantics over order/exact matching. Draft B more directly frames the actionable question for the community—'is there a known approach or best practice'—and avoids the softer framing in A ('I'm wondering if anyone has experience'). A introduces 'reverse keyword search' terminology and mentions 'hybrid approaches' without grounding these in the brief's facts, diluting focus. B stays tighter to the stated problem: short phrases + order preservation + vector DB limitations. Both cite the 2025 Reddit source appropriately and avoid forbidden claims. Neither leverages F3–F6 (the specific AND/OR edge cases), which represent the most concrete troubleshooting detail available; this is a missed opportunity in both, but B's sharper question structure makes it more likely to elicit targeted community responses. A's 'fidelity' language and broader 'workarounds' framing are less precise than B's direct 'known approach or best practice' ask.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2090,
+    "completion_tokens": 315,
+    "total_tokens": 2405,
+    "cost": 0.003665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003665,
+      "upstream_inference_prompt_cost": 0.00209,
+      "upstream_inference_completions_cost": 0.001575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

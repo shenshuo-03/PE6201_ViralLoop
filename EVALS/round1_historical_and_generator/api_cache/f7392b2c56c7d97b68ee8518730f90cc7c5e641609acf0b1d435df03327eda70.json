@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and correctly identifies the key parameters to record for reproducibility. It avoids making any unsupported claims or presenting results. The title matches the content well. The language is clear and technical, suitable for the intended audience. It provides actionable advice on documentation best practices, making it useful and relevant. The scenario status and necessary caveats are explicitly preserved, maintaining credibility. The clickbait score is low as the title is restrained and descriptive."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also accurately reflects the hypothetical scenario and emphasizes the importance of controlling and documenting variables for reproducibility. It explicitly states no data or outcomes exist, preserving necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It offers useful methodological guidance without unsupported claims, maintaining credibility. The clickbait score is low due to the straightforward and factual title."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:15:00.426293+00:00",
+    "tag": "final_test:T09:G3_rag:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f7392b2c56c7d97b68ee8518730f90cc7c5e641609acf0b1d435df03327eda70",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 978,
+    "output_tokens": 390,
+    "actual_cost_usd": 0.0010152,
+    "token_price_estimate_usd": 0.0010152,
+    "reserved_upper_usd": 0.0049023999999999995,
+    "budget_charge_usd": 0.0010152,
+    "latency_seconds": 2.7858807000156958,
+    "retry": 0,
+    "request_id": "gen-1791101697-aB9aGLCwMuk5j3pTEjGx"
+  },
+  "raw_response": {
+    "id": "gen-1791101697-aB9aGLCwMuk5j3pTEjGx",
+    "object": "chat.completion",
+    "created": 1791101697,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and correctly identifies the key parameters to record for reproducibility. It avoids making any unsupported claims or presenting results. The title matches the content well. The language is clear and technical, suitable for the intended audience. It provides actionable advice on documentation best practices, making it useful and relevant. The scenario status and necessary caveats are explicitly preserved, maintaining credibility. The clickbait score is low as the title is restrained and descriptive.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also accurately reflects the hypothetical scenario and emphasizes the importance of controlling and documenting variables for reproducibility. It explicitly states no data or outcomes exist, preserving necessary caveats. The title aligns well with the body content. The writing is clear and technical, appropriate for the audience. It offers useful methodological guidance without unsupported claims, maintaining credibility. The clickbait score is low due to the straightforward and factual title.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 978,
+      "completion_tokens": 390,
+      "total_tokens": 1368,
+      "cost": 0.0010152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010152,
+        "upstream_inference_prompt_cost": 0.0003912,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

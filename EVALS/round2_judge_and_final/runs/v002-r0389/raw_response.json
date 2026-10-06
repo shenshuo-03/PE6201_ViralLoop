@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112601-B30hAdDj7dRwy1SrIsgD",
+  "object": "chat.completion",
+  "created": 1791112601,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"focus\": \"Can an AI like Deepseek R1 meaningfully interpret complex song lyrics such as Queen's 'Bohemian Rhapsody' by identifying themes that resonate with human listeners?\",\n  \"fact_ids\": [\"F1\", \"F2\"],\n  \"limitation_indices\": [0]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1500,
+    "completion_tokens": 64,
+    "total_tokens": 1564,
+    "cost": 0.0007024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007024,
+      "upstream_inference_prompt_cost": 0.0006,
+      "upstream_inference_completions_cost": 0.0001024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

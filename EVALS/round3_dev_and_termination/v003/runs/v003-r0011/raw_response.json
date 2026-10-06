@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118660-XOyQx5uvkquTFhU2SBKl",
+  "object": "chat.completion",
+  "created": 1791118660,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Seeking reliable, multi-language open-source TTS models for local Anki addon with voice cloning/legal concerns\",\"body\":\"I'm developing an Anki addon to generate audio from flashcard content for language learning, requiring a local, open-source TTS model without paid APIs. Currently, I'm evaluating XTTS2 because of its broad language support and leaderboard performance, but it sometimes feels glitchy and focuses on voice cloning. I'm concerned if this focus might introduce legal or ethical issues, especially regarding distributing voice samples for cloning. Also, asking users to provide their own 10-second voice clips seems impractical. Does anyone have experience with more stable, consistent open-source TTS models that support multiple languages well? Additionally, any insights on legal considerations around voice cloning models and what voice samples can be shared safely would be appreciated. I'm aiming for a solution that balances quality, reliability, and compliance while running fully locally for language learners.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F5\",\"F6\",\"F7\",\"F8\",\"F9\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2128,
+    "completion_tokens": 220,
+    "total_tokens": 2348,
+    "cost": 0.0012032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012032,
+      "upstream_inference_prompt_cost": 0.0008512,
+      "upstream_inference_completions_cost": 0.000352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

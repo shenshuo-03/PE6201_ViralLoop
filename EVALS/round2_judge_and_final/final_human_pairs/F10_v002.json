@@ -1,26 +1,5 @@
 {
-  "task_zh": "讨论一个新的、本地的、跨平台的 TTS 引擎的开发和潜力。",
   "A": {
-    "title": "探索 KokoroSharp：一款新的本地、跨平台 C# TTS 引擎",
-    "body": "我偶然看到一篇 2025 年初的帖子，内容是关于 KokoroSharp，一个用 C# 编写的本地文本转语音引擎，它是跨平台的，并且可以通过 NuGet 获得。作者受到一个名为 Kokoro 的新的高性能音频模型的启发，开发了这个 TTS 引擎，并将其描述为对初学者友好但又灵活。源代码在 GitHub 上是开源的，示例用法包括加载模型和选择一个名为“af_heart”的声音。虽然原帖作者也在开发一个即将发布的离线 AI 语音聊天应用程序，但 KokoroSharp 的详细性能指标或硬件要求并未提供。对于那些对离线语音合成或将 TTS 与本地 LLM 集成感兴趣的人来说，您认为这款引擎有哪些实际的挑战或机遇？有人在 C# 或其他语言中探索过 KokoroSharp 或类似的本地 TTS 解决方案吗？",
-    "fact_refs": [
-      "F2",
-      "F3",
-      "F4",
-      "F5",
-      "F6"
-    ]
-  },
-  "B": {
-    "title": "KokoroSharp TTS 是否已准备好用于完全离线的 AI 语音聊天项目？",
-    "body": "我偶然看到一篇 2025 年初的帖子，其中作者几乎完成了（约 90%）一个完全离线的 AI 语音聊天应用程序。在名为 Kokoro 的新的高性能音频模型发布后，他们转向构建 KokoroSharp，一个本地、跨平台的 TTS 引擎。\n\n由此想到的问题是，考虑到 KokoroSharp 的开发背景和接近完成的状态，它是否足够成熟，可以用于离线 AI 语音聊天项目。源代码没有提供详细的性能指标或稳定性信息，因此不清楚它在实际离线场景中的集成或运行效果如何。\n\n有人在离线语音聊天设置中试验过 KokoroSharp 吗？您遇到了哪些实际的权衡或限制，尤其是在延迟、语音质量或平台兼容性方面？",
-    "fact_refs": [
-      "F1",
-      "F2"
-    ]
-  },
-  "pair_id": "F10",
-  "english_A": {
     "title": "Exploring KokoroSharp: A New Local, Cross-Platform TTS Engine in C#",
     "body": "I came across a post from early 2025 about KokoroSharp, a local text-to-speech engine written in C# that's cross-platform and available via NuGet. The author was motivated by a new high-performance audio model called Kokoro and developed this TTS engine, describing it as beginner-friendly yet flexible. The source code is open on GitHub, and example usage includes loading a model and selecting a voice named \"af_heart.\" While the original poster was also working on an offline AI voice chat app nearing release, detailed performance metrics or hardware requirements for KokoroSharp weren't provided. For those interested in offline speech synthesis or integrating TTS with local LLMs, what do you think are the practical challenges or opportunities with this engine? Has anyone explored KokoroSharp or similar local TTS solutions in C# or other languages?",
     "fact_refs": [
@@ -31,7 +10,7 @@
       "F6"
     ]
   },
-  "english_B": {
+  "B": {
     "title": "Is KokoroSharp TTS Ready for Fully Offline AI Voice Chat Projects?",
     "body": "I came across a post from early 2025 where the author was nearly finished (about 90%) with a fully offline AI voice chat app. They pivoted to build KokoroSharp, a local, cross-platform TTS engine, after a new high-performance audio model called Kokoro was released. \n\nThe question that comes to mind is whether KokoroSharp, given its development context and near-completion status, is mature enough for offline AI voice chat projects. The source doesn’t provide detailed performance metrics or stability info, so it’s unclear how well it integrates or runs in real-world offline scenarios.\n\nHas anyone experimented with KokoroSharp in offline voice chat setups? What are the practical trade-offs or limitations you encountered, especially regarding latency, voice quality, or platform compatibility?",
     "fact_refs": [
@@ -39,6 +18,7 @@
       "F2"
     ]
   },
+  "pair_id": "F10",
   "translation_numeric_checks": {
     "A": true,
     "B": true
@@ -47,5 +27,7 @@
     "A": true,
     "B": true
   },
-  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  "numeric_check_note": "Equivalent May 2025 dates normalized to the same date before checking numbers; draft text unchanged",
+  "task_en": "Discuss the development and potential of a new, local, cross-platform TTS engine.",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

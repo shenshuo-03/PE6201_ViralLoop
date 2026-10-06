@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts accurately ground claims in provided facts and avoid forbidden claims. A is more concise and directly frames the core problem (stall with thinking enabled) as a focused question for community troubleshooting. B includes all five facts, providing fuller context: the 8.0 gguf quant detail (F1), the docker setup, and crucially the cross-frontend success (F5), which strengthens the diagnostic framing by narrowing the issue to Open WebUI specifically rather than the model itself. B also explicitly acknowledges missing information (Open WebUI version, server specs, config), which increases credibility and guides potential responders. A omits F1, F4, and F5, losing the comparative evidence that the model works elsewhere—a key diagnostic signal for the local LLM community. B's longer form better serves the audience's need to understand scope and constraints before offering solutions. A's brevity sacrifices diagnostic power; B's completeness and transparent limitation-flagging make it more actionable for troubleshooting-focused readers."
+  },
+  "usage": {
+    "run_id": "v002-r0477",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:23:07.206813+00:00",
+    "tag": "judge_final:F12:V1_vs_V0:BA",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "b86f38b2d03412ac31d7479d5bf41ccf33afdc1a0140b13c48ec26614d591f23",
+    "actual_cost_usd": 0.003617,
+    "budget_charge_usd": 0.003617,
+    "reserved_upper_usd": 0.011685000000000001,
+    "input_tokens": 2097,
+    "output_tokens": 304,
+    "latency_seconds": 4.838288999977522,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112982-VL9MBU9wS692GLrpv30k",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

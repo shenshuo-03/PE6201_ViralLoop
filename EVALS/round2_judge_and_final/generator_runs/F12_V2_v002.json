@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:18:43.343645+00:00",
+  "loop_version": "v002",
+  "brief_id": "F12",
+  "phase": "final",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Qwen3 30B A3B model stalls with 'thinking' enabled in Open WebUI—any workarounds?",
+        "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send requests normally. However, enabling the 'thinking' feature caused the model to freeze mid-generation, with the progress indicator stuck indefinitely. Without 'thinking' enabled, the model worked fine.\n\nThis raises the question of whether the 'thinking' feature's implementation might be incompatible or unstable with this model version, or if resource constraints during incremental generation could be a factor. Has anyone else experienced this kind of hang when using 'thinking' with large models like Qwen3 30B A3B in Open WebUI? Are there known tweaks or config changes that help avoid these stalls?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source, posing relevant questions about potential incompatibilities and resource constraints. It correctly avoids claiming personal experience and adheres to the persona. The community fit is good due to the specific technical problem and the request for workarounds. Specificity is high, referencing the model, UI, and the exact feature causing issues. Information value is good as it organizes the problem and asks targeted questions. Clarity and usefulness are high. Credibility is good as it relies on the source and asks for community input. Clickbait is low.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 114,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Why does Qwen3 30B A3B freeze mid-sentence with 'thinking' on in Open WebUI?",
+        "body": "A user report from May 2025 describes that while the Qwen3 30B A3B model connects and responds fine in Open WebUI, enabling the 'thinking' progress feature causes generation to halt mid-sentence indefinitely. The model otherwise runs normally without this feature.\n\nThis suggests a possible interaction issue between the model's generation process and the 'thinking' mechanism in Open WebUI. Since the exact Open WebUI version isn't specified, it's unclear if this is a compatibility problem or a resource bottleneck during streaming output.\n\nHas anyone found reliable ways to diagnose or prevent this kind of generation freeze when using 'thinking' with large models? Would disabling partial output buffering or adjusting timeouts help?",
+        "fact_refs": [
+          "F2",
+          "F3"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 accurately summarizes the source, focusing on the 'thinking' feature causing generation stalls in Open WebUI with the Qwen3 30B A3B model. It correctly maintains the persona and avoids unsupported claims. Community fit is good as it addresses a specific technical issue and seeks solutions. Specificity is high, detailing the model, UI, and the problematic feature. Information value is good, organizing the problem and asking for diagnostic/preventative measures. Clarity and usefulness are high. Credibility is good, relying on the source and seeking community input. Clickbait is low.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 110,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Qwen3 30B A3B model stalls with 'thinking' enabled in Open WebUI—any workarounds?",
+      "body": "I came across a report from May 2025 where a user connected the Qwen3 30B A3B model to Open WebUI without issues and could send requests normally. However, enabling the 'thinking' feature caused the model to freeze mid-generation, with the progress indicator stuck indefinitely. Without 'thinking' enabled, the model worked fine.\n\nThis raises the question of whether the 'thinking' feature's implementation might be incompatible or unstable with this model version, or if resource constraints during incremental generation could be a factor. Has anyone else experienced this kind of hang when using 'thinking' with large models like Qwen3 30B A3B in Open WebUI? Are there known tweaks or config changes that help avoid these stalls?",
+      "fact_refs": [
+        "F2",
+        "F3"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source, posing relevant questions about potential incompatibilities and resource constraints. It correctly avoids claiming personal experience and adheres to the persona. The community fit is good due to the specific technical problem and the request for workarounds. Specificity is high, referencing the model, UI, and the exact feature causing issues. Information value is good as it organizes the problem and asks targeted questions. Clarity and usefulness are high. Credibility is good as it relies on the source and asks for community input. Clickbait is low.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 114,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0428",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:41.155276+00:00",
+    "tag": "V2:F12",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1c1eb5a3a0c911676d2232cdb1b45377ec53e1d2b44b2471590d0be85027298c",
+    "actual_cost_usd": 0.0011224,
+    "budget_charge_usd": 0.0011224,
+    "reserved_upper_usd": 0.0058972,
+    "input_tokens": 1262,
+    "output_tokens": 386,
+    "latency_seconds": 2.892844599991804,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112718-zm4U0jjLfRBmg1Bu94cA",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0429",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:18:43.320172+00:00",
+    "tag": "quality:F12:V2",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "845af17cd86c1af4b1c69f051267da373f03da48847d55279169e7cf8b7d0c60",
+    "actual_cost_usd": 0.0004636,
+    "budget_charge_usd": 0.0004636,
+    "reserved_upper_usd": 0.0017074,
+    "input_tokens": 2572,
+    "output_tokens": 516,
+    "latency_seconds": 2.1316427999990992,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112721-GZvneW2DGjunHhcVlruJ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1kcp34g",
+    "1kldquv",
+    "1kvvnuh"
+  ],
+  "external_judge_used": false
+}

@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "A",
+    "usefulness": "A",
+    "credibility": "A",
+    "overall": "A"
+  },
+  "evidence": "Draft A grounds the post in concrete facts from the brief: specific model counts (7 models, 6 open-weight + 1 closed), exact tree parameters (400 people, 10 generations, ~18k tokens), test volume (200 questions), testing conditions (OpenRouter, 8k max tokens, temperature 0.3), and actual results (Gemini 2.5 Pro 81.48%, GLM 4.5 64.02%). It explicitly flags limitations (new benchmark, potentially suboptimal parameters, no-response rate as token-limit indicator) and closes with actionable community questions about improving performance and benchmark evolution. Draft B uses only F1 and F2, omitting all quantitative results, testing parameters, and performance data. It pivots to speculative questions about synthetic vs. real-world data and generalization—topics not grounded in the provided facts and outside the brief's scope (which centers on FamilyBench's methodology and initial findings, not philosophical debates about synthetic benchmarks). Draft B's framing as 'how effective do you think' invites opinion rather than discussion of documented results. For a local LLM enthusiast audience seeking to understand FamilyBench's actual performance and design, Draft A preserves the evidence needed for informed discussion; Draft B discards it in favor of untethered speculation."
+}

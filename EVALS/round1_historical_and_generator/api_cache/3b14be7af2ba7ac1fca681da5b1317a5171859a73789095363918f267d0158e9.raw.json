@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100972-Q0HeziYVf28cqqvhJYyd",
+  "object": "chat.completion",
+  "created": 1791100972,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.6,\"reason\":\"Open-sourcing a framework with strong benchmark improvements and practical success likely attracts high engagement in discussion posts.\"},{\"index\":1,\"probability\":0.3,\"reason\":\"A common technical question about TTS speed with moderate similarity to a high-class example, but tutorial posts generally have lower engagement.\"},{\"index\":2,\"probability\":0.5,\"reason\":\"Introducing a new devtool for on-device AI with free access and community focus may generate moderate interest and upvotes.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"User seeking hands-on control with local LLMs is a niche but relevant topic, likely moderate engagement.\"},{\"index\":4,\"probability\":0.35,\"reason\":\"Request for model recommendations for specific hardware and use case is practical but less likely to be high scoring.\"},{\"index\":5,\"probability\":0.55,\"reason\":\"Sharing personal experience with a novel memory system and quantitative results can attract good engagement in experience posts.\"},{\"index\":6,\"probability\":0.45,\"reason\":\"Building a workflow orchestrator addressing context limits is technical and useful, likely moderate interest.\"},{\"index\":7,\"probability\":0.25,\"reason\":\"A straightforward tutorial question about logging input in llama-cli, likely lower engagement.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6737,
+    "completion_tokens": 279,
+    "total_tokens": 7016,
+    "cost": 0.0031412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0031412,
+      "upstream_inference_prompt_cost": 0.0026948,
+      "upstream_inference_completions_cost": 0.0004464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

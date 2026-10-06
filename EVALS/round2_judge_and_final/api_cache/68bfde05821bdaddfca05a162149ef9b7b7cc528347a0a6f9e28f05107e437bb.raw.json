@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791108952-bxOrVPiQcIswDufjFFdm",
+  "object": "chat.completion",
+  "created": 1791108952,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "[\n  {\n    \"index\": 0,\n    \"factual_pass\": true,\n    \"unsupported_claims\": [],\n    \"speaker_pass\": true,\n    \"copy_pass\": true,\n    \"essential_caveats_pass\": true,\n    \"title_body_pass\": true,\n    \"community_fit\": 4,\n    \"specificity\": 4,\n    \"information_value\": 4,\n    \"clarity\": 4,\n    \"usefulness\": 4,\n    \"credibility\": 4,\n    \"clickbait\": 1,\n    \"reason\": \"The draft accurately summarizes the source, highlighting the observed trade-off between world knowledge and problem-solving in smaller LLMs, citing specific model examples and the author's hypothesis. It correctly attributes the observations to the source author and avoids making personal claims. The draft also poses relevant questions to the community, encouraging discussion and sharing of experiences, which aligns well with the brief's goals. Specificity is good, referencing model names and the core dilemma. The inclusion of the source URL is helpful. The draft adheres to all constraints.\"\n  }\n]",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3433,
+    "completion_tokens": 253,
+    "total_tokens": 3686,
+    "cost": 0.0004445,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004445,
+      "upstream_inference_prompt_cost": 0.0003433,
+      "upstream_inference_completions_cost": 0.0001012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "Tie",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "B",
+      "overall": "A"
+    },
+    "evidence": "Both drafts preserve the core facts (F1, F2) and frame a legitimate community question. Draft A better serves community_fit by opening with concrete motivation (\"I've come across a plan\") and posing a direct actionable question about practical tradeoffs—exactly what local LLM enthusiasts can debate. Draft B weakens this by inserting \"mid-2025\" (the brief specifies source_date as 2025-07-19, making \"mid-2025\" temporally vague and potentially confusing) and framing the post as reporting on archived content rather than engaging the problem directly. Both are equally specific to the facts provided. Draft A's information_value is stronger: it organizes the tension (narrow training vs. broad + prompting) into a clear distinction readers can reason about. Draft B repeats the setup without advancing the distinction as crisply. On credibility, Draft B is more cautious (\"source doesn't provide details\") and explicitly signals the layperson status implied by F6, whereas Draft A omits this context, risking unstated assumptions. Both avoid forbidden claims. Draft A's framing as a genuine inquiry from a community member is more authentic to the audience and purpose than Draft B's archival-report tone."
+  },
+  "usage": {
+    "run_id": "v002-r0443",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:20:11.608392+00:00",
+    "tag": "judge_final:F03:V2_vs_V1:BA",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "f1838b3a8c2414919706195df0de6d08e1e5b8ed9c1ed11833fc28787f7a6f40",
+    "actual_cost_usd": 0.003912,
+    "budget_charge_usd": 0.003912,
+    "reserved_upper_usd": 0.012538,
+    "input_tokens": 2147,
+    "output_tokens": 353,
+    "latency_seconds": 5.579238600010285,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112805-zrrNC9V6SjYIMJJtlnf4",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Post A is better because it directly asks for practical advice and heuristics based on the provided mixed results, making it more community-fit and useful. It also maintains specificity by referencing the exact hardware (3090, 3060s) and the observed performance variations across different models and split modes. Post B is more of a summary and asks a broader question without as much specific grounding in the nuances presented in the facts. Both posts accurately reflect the facts and their limitations, but A's framing is more conducive to a targeted discussion."
+    },
+    "usage": {
+      "run_id": "v002-r0091",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:41.448370+00:00",
+      "tag": "judge_calibration:CP07:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "54375bff32652d5331dae235bdbe74d84c10727bf0545ebb632e42924ddd7c46",
+      "actual_cost_usd": 0.0003102,
+      "budget_charge_usd": 0.0003102,
+      "reserved_upper_usd": 0.0012125,
+      "input_tokens": 2370,
+      "output_tokens": 183,
+      "latency_seconds": 1.4743475999857765,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109659-zYZXRJu8Nf5YHkmlu1Rf",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "Tie",
+        "usefulness": "B",
+        "credibility": "Tie",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it directly asks a question that invites discussion based on the provided facts, whereas Post A asks a more general question. Post B also includes more specific details from the facts, such as the token-per-second improvements for different models, making it more specific and useful. Both posts have similar credibility and information value as they both accurately reflect the source facts and limitations."
+    },
+    "usage": {
+      "run_id": "v002-r0092",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:42.694573+00:00",
+      "tag": "judge_calibration:CP07:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "35575127c6a4c9833ed8a10d6bc2c6d96dc487d7924ebae43bf47316ac3e8859",
+      "actual_cost_usd": 0.000297,
+      "budget_charge_usd": 0.000297,
+      "reserved_upper_usd": 0.0012125,
+      "input_tokens": 2370,
+      "output_tokens": 150,
+      "latency_seconds": 1.2189369999978226,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109661-d0CuA6Cdr93F5doe1Mss",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

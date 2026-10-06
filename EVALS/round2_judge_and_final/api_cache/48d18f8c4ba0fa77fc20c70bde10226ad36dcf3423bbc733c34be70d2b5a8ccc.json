@@ -1,0 +1,95 @@
+{
+  "value": {
+    "topic": "Evaluating LLM performance on complex family tree relationships",
+    "audience": "local LLM enthusiasts",
+    "problem_or_goal": "To discuss the effectiveness of the FamilyBench benchmark in testing LLM capabilities with complex, tree-like relationships and massive context, and to understand the implications of the initial benchmark results.",
+    "context": "A new open-source benchmark called FamilyBench has been developed to test a model's ability to understand complex tree-like relationships within a family tree across a massive context. The benchmark involves generating a family tree and then posing questions based on a textual description of that tree, designed to be challenging for LLMs. Initial results from testing seven models are available.",
+    "motivation": "The FamilyBench benchmark presents a novel approach to evaluating LLMs on a specific type of complex reasoning. Discussing its methodology and initial findings can help the community understand the current state of LLM performance in handling intricate relational data and large contexts.",
+    "desired_response": "A discussion about the FamilyBench benchmark, its design, the initial results presented, and potential future directions or improvements for evaluating LLMs on similar tasks.",
+    "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "FamilyBench is a new open-source project designed to test a model's ability to understand complex tree-like relationships within a family tree across a massive context.",
+        "evidence_quote": "This is a new opensource project, a benchmark that test model ability to understand complex tree-like relationship in a family tree across a massive context.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F2",
+        "text": "The benchmark uses a Python program to generate a family tree and create questions based on its structure and a textual description.",
+        "evidence_quote": "The idea is to have a python program that generate a tree and can use the tree structure to generate question about it.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F3",
+        "text": "Initial testing involved a complex tree with 400 people across 10 generations, approximately 18,000 tokens, and 200 questions.",
+        "evidence_quote": "I test 7 models (6 open weight and 1 closed) on a complex tree with 400 people generated across 10 generations (which represent ~18k tokens). 200 questions are then asked to the models.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F4",
+        "text": "Models were initially tested via OpenRouter with low reasoning effort, a maximum of 8k tokens, and a temperature of 0.3.",
+        "evidence_quote": "All models are for now tested via OpenRouter, with low reasoning effort or 8k max token, and a temperature of 0.3.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F5",
+        "text": "The 'no response rate' can indicate a model is unable to find an answer and is stuck in a reasoning loop, potentially due to exceeding token limits.",
+        "evidence_quote": "The no response rate is when the model overthinks and is then unable to produce an answer because he used his 16k max tokens.",
+        "status": "source-author report, not independently verified measurement"
+      },
+      {
+        "id": "F6",
+        "text": "Gemini 2.5 Pro achieved the highest accuracy at 81.48% with a 0% no response rate in the initial tests.",
+        "evidence_quote": "Model | Accuracy | Total tokens | No response rate\n-----|--------|------------|----------------\nGemini 2.5 Pro | 81.48% | 271,500 \t| 0%",
+        "status": "source-author report, not independently verified measurement"
+      }
+    ],
+    "allowed_claims": [
+      "FamilyBench is an open-source benchmark.",
+      "The benchmark tests LLMs on complex family tree relationships.",
+      "The benchmark uses a massive context.",
+      "Initial results show varying accuracy among tested models.",
+      "Gemini 2.5 Pro had the highest accuracy in initial tests."
+    ],
+    "forbidden_claims": [
+      "The benchmark is a definitive measure of all LLM capabilities.",
+      "The results represent optimal performance for each model.",
+      "The benchmark is immune to all forms of data contamination.",
+      "The tested models are the best available for this task.",
+      "The source author claims personal experience running these tests."
+    ],
+    "essential_limitations": [
+      "Initial tests were conducted with specific, potentially suboptimal, parameters (e.g., 8k max token, temperature 0.3).",
+      "The benchmark is new and may evolve.",
+      "The 'no response rate' is an indicator, not a definitive measure of failure.",
+      "The leaderboard is not exhaustive and more models are planned."
+    ],
+    "missing_information": [
+      "Optimal parameters for each model tested.",
+      "Details on the specific hardware used for testing.",
+      "Information on the exact methodology for generating the family trees and questions.",
+      "The full list of models planned for future inclusion.",
+      "The specific definition of 'low reasoning effort'."
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0360",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:15:13.079124+00:00",
+    "tag": "brief_builder:F07",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "48d18f8c4ba0fa77fc20c70bde10226ad36dcf3423bbc733c34be70d2b5a8ccc",
+    "actual_cost_usd": 0.0006429,
+    "budget_charge_usd": 0.0006429,
+    "reserved_upper_usd": 0.0018105999999999999,
+    "input_tokens": 1357,
+    "output_tokens": 1268,
+    "latency_seconds": 4.402189999993425,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112508-PC68AoxnrFqN15i1iy1T",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

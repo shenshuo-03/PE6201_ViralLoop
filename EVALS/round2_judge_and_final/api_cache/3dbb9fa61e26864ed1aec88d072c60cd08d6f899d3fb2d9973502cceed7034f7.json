@@ -1,0 +1,37 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "What do DeepSeek R1 perplexity results tell us about expert count and distilled model comparisons?",
+        "body": "A recent short perplexity test on DeepSeek R1 models with varying expert counts provides some intriguing but very limited insights. The test ran on only 8 blocks out of roughly 560, used a block size of 512, and included distilled models plus Virtuoso-Medium-v2 for comparison. According to the source, the full DeepSeek R1 model with aggressive quantization generally outperformed the distilled variants until the expert count was reduced to 2. The Virtuoso Medium V2 distill fell between the DeepSeek configurations with 3 and 4 experts. However, attempts to test with 10 and 12 experts failed due to NaN errors. Additionally, perplexity may not fairly represent chain-of-thought models since it doesn't allow them to \"think.\" Given these constraints and missing details like hardware and dataset specifics, how useful do you find perplexity as a metric for evaluating MoE models like DeepSeek? Would exploring other benchmarks or test setups help clarify the impact of expert count on performance?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0014",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:07:47.808882+00:00",
+    "tag": "naturalness:D03",
+    "phase": "naturalness",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "3dbb9fa61e26864ed1aec88d072c60cd08d6f899d3fb2d9973502cceed7034f7",
+    "actual_cost_usd": 0.001104,
+    "budget_charge_usd": 0.001104,
+    "reserved_upper_usd": 0.0053568,
+    "input_tokens": 1732,
+    "output_tokens": 257,
+    "latency_seconds": 2.1787992999888957,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791108465-p24K9Rwr9be456ubZbk0",
+    "contract_sha256": "a6be47199f2d194a8924c42b8fc5295a3b36d054a7497d119f4883096ece4304"
+  }
+}

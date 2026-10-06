@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "B",
+      "overall": "A"
+    },
+    "evidence": "Draft A grounds the post in concrete observed symptoms (14+ second latency, unsolicited math solving, comparative speed with Mistral Nemo) and frames them as a diagnostic puzzle for the community to help troubleshoot. It preserves all six facts and invites targeted responses about quantization, configuration, and hardware interaction. Draft B reduces specificity by omitting the unusual math behavior (F4) and the critical performance comparison (F6), instead introducing unsupported speculation ('12GB VRAM is somewhat limited for larger quantized models') that exceeds the brief's allowed claims and essential limitations. Draft B's framing shifts toward generic VRAM constraint theory rather than the user's actual reported anomalies. Both stay within credibility bounds by attributing claims to the source report, but A's richer factual grounding makes it more actionable for community diagnosis, while B's omissions and added inference reduce information value despite a cleaner structure."
+  },
+  "usage": {
+    "run_id": "v002-r0460",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:21:40.547434+00:00",
+    "tag": "judge_final:F08:V1_vs_V0:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "eddef11ed6e5c58c93376da36f611f2c4053d1dcafd793d0173d46ce807d4c02",
+    "actual_cost_usd": 0.003811,
+    "budget_charge_usd": 0.003811,
+    "reserved_upper_usd": 0.012229999999999998,
+    "input_tokens": 2401,
+    "output_tokens": 282,
+    "latency_seconds": 4.350459700013744,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112896-FinWS6KcNCbpnbAz7srP",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

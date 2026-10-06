@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and emphasizes the need for detailed logging of model versions, prompts, generation settings, and hardware, consistent with the provided facts. The language is clear and technical, suitable for the target audience. It invites discussion without making unsupported claims or presenting fabricated results. The title accurately reflects the content. The post is relevant and credible for readers interested in reproducibility of local models. The clickbait score is low due to restrained and factual presentation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also faithfully preserves the hypothetical scenario and necessary caveats, emphasizing the importance of detailed documentation for reproducibility. The writing is clear and technical, appropriate for the audience. The title matches the content well. It avoids unsupported claims and does not present any fabricated results. The post is relevant and credible, encouraging community input on reproducibility factors. The clickbait score is low due to the restrained and factual tone."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:15:07.998962+00:00",
+    "tag": "final_test:T09:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "88c62a35ce75b3f4898e7a0c1658178e9649a8e1770cb63a19c98403ca756f78",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 994,
+    "output_tokens": 392,
+    "actual_cost_usd": 0.0010248,
+    "token_price_estimate_usd": 0.0010248,
+    "reserved_upper_usd": 0.004984799999999999,
+    "budget_charge_usd": 0.0010248,
+    "latency_seconds": 3.5321813999908045,
+    "retry": 0,
+    "request_id": "gen-1791101704-K8fBptNRqKJUs9I1ry8p"
+  },
+  "raw_response": {
+    "id": "gen-1791101704-K8fBptNRqKJUs9I1ry8p",
+    "object": "chat.completion",
+    "created": 1791101704,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and emphasizes the need for detailed logging of model versions, prompts, generation settings, and hardware, consistent with the provided facts. The language is clear and technical, suitable for the target audience. It invites discussion without making unsupported claims or presenting fabricated results. The title accurately reflects the content. The post is relevant and credible for readers interested in reproducibility of local models. The clickbait score is low due to restrained and factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully preserves the hypothetical scenario and necessary caveats, emphasizing the importance of detailed documentation for reproducibility. The writing is clear and technical, appropriate for the audience. The title matches the content well. It avoids unsupported claims and does not present any fabricated results. The post is relevant and credible, encouraging community input on reproducibility factors. The clickbait score is low due to the restrained and factual tone.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 994,
+      "completion_tokens": 392,
+      "total_tokens": 1386,
+      "cost": 0.0010248,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010248,
+        "upstream_inference_prompt_cost": 0.0003976,
+        "upstream_inference_completions_cost": 0.0006272
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

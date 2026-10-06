@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-04T08:14:45.859973+00:00",
+  "topic": {
+    "id": "T09",
+    "split": "final_test",
+    "topic": "A hypothetical comparison: reproducibility before model recommendations",
+    "content_type": "Discussion / Opinion",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The scenario compares two local models.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The model versions, prompt, generation settings and hardware need to be recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "No experimental outcome has been provided.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G1_prompt",
+  "generation_usage": {
+    "at": "2026-10-04T08:14:42.853448+00:00",
+    "tag": "final_test:T09:G1_prompt",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "b5f7f444910005ecc3ad133f7e1f92f9e1732905ff2f058dae8984f4aa4ff10f",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 420,
+    "output_tokens": 507,
+    "actual_cost_usd": 0.0002448,
+    "token_price_estimate_usd": 0.0002448,
+    "reserved_upper_usd": 0.0010241,
+    "budget_charge_usd": 0.0002448,
+    "latency_seconds": 2.5790826000156812,
+    "retry": 0,
+    "request_id": "gen-1791101680-H4bi4GXiELBNWH0pGr64"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:14:45.829090+00:00",
+    "tag": "final_test:T09:G1_prompt:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "77dbdcec405a8a965bf607e73403ae3ecde7af9a945faf278751d3e8a916ac86",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 933,
+    "output_tokens": 431,
+    "actual_cost_usd": 0.0010628,
+    "token_price_estimate_usd": 0.0010628,
+    "reserved_upper_usd": 0.004841999999999999,
+    "budget_charge_usd": 0.0010628,
+    "latency_seconds": 2.934739999996964,
+    "retry": 0,
+    "request_id": "gen-1791101683-n2Ybyb5lqj9mwRKgjmcj"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "e1b051a24095ae9df8838c67b50f3c9bf1206657fd0be7c92794af6dee1fe05c",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical: Reproducibility vs. Model Recommendations - A Local LLM Setup",
+        "body": "Considering a hypothetical scenario for local LLM users: how crucial is strict reproducibility for model recommendations? We're exploring a setup where two distinct local models are compared. The core question is whether the value of a recommendation hinges on precisely replicating the generation environment (model versions, prompt, settings, hardware) or if a more generalized recommendation is sufficient. This is purely a hypothetical exploration, not based on measured results. The intention is to foster discussion on the practicalities of local LLM experimentation. If we aim for reliable recommendations, what level of environmental detail is truly necessary to capture? What are the trade-offs between exhaustive recording and practical usability for the average local LLM enthusiast?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft aims to frame the hypothetical scenario and pose a clear question about the importance of reproducibility in local LLM recommendations. It explicitly states the hypothetical nature and avoids any claims of measured outcomes. The plan is to invite discussion on the practical implications of reproducibility for users."
+      },
+      "performance_score": 0.23080832558744374,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and avoids presenting any measured results or personal experience. It accurately references the need to record model versions, prompts, settings, and hardware as per the facts. The title matches the content well, focusing on reproducibility versus model recommendations. The language is clear and technical, suitable for the target audience. It poses relevant questions that encourage thoughtful discussion, making it useful and relevant. The draft maintains credibility by explicitly stating the scenario is hypothetical and does not overstate claims. The clickbait score is low due to restrained and factual presentation.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 113,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Hypothetical Discussion: Ensuring Reproducible Local LLM Recommendations",
+        "body": "Let's consider a hypothetical experiment comparing two local LLMs. A key aspect of generating useful recommendations is reproducibility. In this thought experiment, we must consider what elements are essential for ensuring that a recommendation made for one local LLM setup can be reliably reproduced by another user. This includes meticulously recording model versions, the exact prompt used, all generation settings, and the underlying hardware. However, we must remember this is a hypothetical scenario with no actual experimental outcomes. The challenge lies in balancing the need for granular detail to achieve reproducibility against the practical burden of such detailed recording for every potential recommendation. What are the essential components for reproducibility in a local LLM context, and where can we potentially abstract or generalize without losing critical information?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "This draft focuses on the practical aspects of reproducibility in the hypothetical scenario. It highlights the need for detailed recording as a prerequisite for reproducible recommendations and frames it as a discussion point regarding the balance between detail and practicality. The hypothetical status is clearly maintained."
+      },
+      "performance_score": 0.23418510919731245,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and includes all necessary caveats. It emphasizes the importance of detailed recording for reproducibility, consistent with the provided facts. The title accurately reflects the content, focusing on reproducible recommendations. The language is clear and technical, appropriate for the audience. It raises practical questions about balancing detail and usability, which is useful and relevant. The draft maintains credibility by avoiding unsupported claims and clearly stating the scenario is hypothetical. The clickbait score is low due to the restrained and factual tone.",
+        "quality_mean": 4.5,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 127,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": [
+        {
+          "id": "concrete_title__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Mention an existing concrete result in the title; never invent one.",
+          "causal": false
+        },
+        {
+          "id": "personal_early__Discussion / Opinion",
+          "direction": "negative",
+          "present": true,
+          "action": "revise",
+          "severity": "soft",
+          "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+          "causal": false
+        },
+        {
+          "id": "link_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Provide an available source link when relevant.",
+          "causal": false
+        },
+        {
+          "id": "bullet_present__Discussion / Opinion",
+          "direction": "positive",
+          "present": false,
+          "action": "keep",
+          "severity": "soft",
+          "suggestion": "Use a concise list for comparable facts.",
+          "causal": false
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Hypothetical Discussion: Ensuring Reproducible Local LLM Recommendations",
+      "body": "Let's consider a hypothetical experiment comparing two local LLMs. A key aspect of generating useful recommendations is reproducibility. In this thought experiment, we must consider what elements are essential for ensuring that a recommendation made for one local LLM setup can be reliably reproduced by another user. This includes meticulously recording model versions, the exact prompt used, all generation settings, and the underlying hardware. However, we must remember this is a hypothetical scenario with no actual experimental outcomes. The challenge lies in balancing the need for granular detail to achieve reproducibility against the practical burden of such detailed recording for every potential recommendation. What are the essential components for reproducibility in a local LLM context, and where can we potentially abstract or generalize without losing critical information?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "plan": "This draft focuses on the practical aspects of reproducibility in the hypothetical scenario. It highlights the need for detailed recording as a prerequisite for reproducible recommendations and frames it as a discussion point regarding the balance between detail and practicality. The hypothetical status is clearly maintained."
+    },
+    "performance_score": 0.23418510919731245,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 5,
+      "clickbait": 1,
+      "reasons": "This draft also clearly preserves the hypothetical status and includes all necessary caveats. It emphasizes the importance of detailed recording for reproducibility, consistent with the provided facts. The title accurately reflects the content, focusing on reproducible recommendations. The language is clear and technical, appropriate for the audience. It raises practical questions about balancing detail and usability, which is useful and relevant. The draft maintains credibility by avoiding unsupported claims and clearly stating the scenario is hypothetical. The clickbait score is low due to the restrained and factual tone.",
+      "quality_mean": 4.5,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 127,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": [
+      {
+        "id": "concrete_title__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Mention an existing concrete result in the title; never invent one.",
+        "causal": false
+      },
+      {
+        "id": "personal_early__Discussion / Opinion",
+        "direction": "negative",
+        "present": true,
+        "action": "revise",
+        "severity": "soft",
+        "suggestion": "Do not force this feature. State the source of experience only when facts establish it.",
+        "causal": false
+      },
+      {
+        "id": "link_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Provide an available source link when relevant.",
+        "causal": false
+      },
+      {
+        "id": "bullet_present__Discussion / Opinion",
+        "direction": "positive",
+        "present": false,
+        "action": "keep",
+        "severity": "soft",
+        "suggestion": "Use a concise list for comparable facts.",
+        "causal": false
+      }
+    ]
+  },
+  "abstention": false
+}

@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:12:37.265106+00:00",
+  "loop_version": "v002",
+  "brief_id": "F02",
+  "phase": "final",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Can Weaviate or Milvus reliably detect short keyword phrases while preserving word order?",
+        "body": "I'm exploring whether vector databases like Weaviate or Milvus can be used to identify very short keywords—like 1-2 word phrases such as \"hugging face\" or \"meta\"—within user input, while also preserving the order of those words. The challenge is that these databases are primarily designed for semantic similarity searches, not reverse keyword matching that respects word sequence.\n\nA user in a 2025 Reddit post mentioned trying these DBs for matching short keywords alongside semantically close sentences but didn't provide detailed configuration or results. Given that these tools focus on semantic embeddings, is there a known approach or best practice to reliably detect exact or near-exact short keyword matches without losing the original word order? Has anyone successfully adapted vector DBs for this kind of reverse keyword search?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 0 accurately reflects the source's problem and context. It correctly states the user's goal and the limitations of vector databases for reverse keyword search. The draft avoids making claims about personal experience or successful solutions, adhering to the persona. It asks a relevant, specific question about adapting vector DBs for ordered keyword matching. The use of '2025 Reddit post' is a minor inaccuracy as the source date is 2025-07-04, but the intent is clear. The phrase 'I'm exploring whether vector databases like Weaviate or Milvus can be used to identify very short keywords—like 1-2 word phrases such as \"hugging face\" or \"meta\"—within user input, while also preserving the order of those words' is a direct copy of 18+ contiguous words from the source text, failing the copy check.",
+        "model_copy_pass": false,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 127,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Using vector DBs like Weaviate/Milvus for precise short keyword matching—any practical strategies?",
+        "body": "I read about someone attempting to use Weaviate and Milvus databases to match 1-2 word keywords from user input against a sentence database, alongside semantic matching. The main issue seems to be that these vector DBs aren't originally designed to preserve word order or perform reverse keyword searches effectively.\n\nSince the source didn't detail specific setups or success, I'm curious if there are known methods to configure or augment these vector databases to better handle short, ordered keyword matching? For example, would combining vector search with additional token-level indexing or filtering steps help overcome this limitation? Any insights or experiences with this kind of hybrid approach would be valuable.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 effectively captures the essence of the source material, focusing on the user's challenge with vector databases for reverse keyword search and order preservation. It correctly notes the source author's attempts and the inherent limitations without claiming personal success. The question posed is specific and relevant to the community, asking about practical strategies and hybrid approaches. It adheres to the persona and avoids unsupported claims or direct copying.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 109,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Can Weaviate or Milvus reliably detect short keyword phrases while preserving word order?",
+      "body": "I'm exploring whether vector databases like Weaviate or Milvus can be used to identify very short keywords—like 1-2 word phrases such as \"hugging face\" or \"meta\"—within user input, while also preserving the order of those words. The challenge is that these databases are primarily designed for semantic similarity searches, not reverse keyword matching that respects word sequence.\n\nA user in a 2025 Reddit post mentioned trying these DBs for matching short keywords alongside semantically close sentences but didn't provide detailed configuration or results. Given that these tools focus on semantic embeddings, is there a known approach or best practice to reliably detect exact or near-exact short keyword matches without losing the original word order? Has anyone successfully adapted vector DBs for this kind of reverse keyword search?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 0 accurately reflects the source's problem and context. It correctly states the user's goal and the limitations of vector databases for reverse keyword search. The draft avoids making claims about personal experience or successful solutions, adhering to the persona. It asks a relevant, specific question about adapting vector DBs for ordered keyword matching. The use of '2025 Reddit post' is a minor inaccuracy as the source date is 2025-07-04, but the intent is clear. The phrase 'I'm exploring whether vector databases like Weaviate or Milvus can be used to identify very short keywords—like 1-2 word phrases such as \"hugging face\" or \"meta\"—within user input, while also preserving the order of those words' is a direct copy of 18+ contiguous words from the source text, failing the copy check.",
+      "model_copy_pass": false,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 127,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0307",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:12:34.749818+00:00",
+    "tag": "V2:F02",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ce0797e96cc8905fcc14ef997f3a98a082825bdbf9278e0410936f1d66004ec7",
+    "actual_cost_usd": 0.0010316,
+    "budget_charge_usd": 0.0010316,
+    "reserved_upper_usd": 0.005620399999999999,
+    "input_tokens": 1127,
+    "output_tokens": 363,
+    "latency_seconds": 3.1180718999821693,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112351-GJsVE3t7Ikz2KWVaQ6vF",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0308",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:12:37.241873+00:00",
+    "tag": "quality:F02:V2",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "ffec0eba023d433ce8051d1d281f28283312cad04cd99a761ede120588d3f344",
+    "actual_cost_usd": 0.0004717,
+    "budget_charge_usd": 0.0004717,
+    "reserved_upper_usd": 0.001755,
+    "input_tokens": 2509,
+    "output_tokens": 552,
+    "latency_seconds": 2.4620300999959,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112354-2TyhYawHRkqKf3mcEL21",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1jw6cdk",
+    "1ik1pbd",
+    "1kl5fza"
+  ],
+  "external_judge_used": false
+}

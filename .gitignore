@@ -11,12 +11,18 @@ __pycache__/
 vendor/
 vendor_runtime/
 
-# Large regenerable corpora and caches
+# Large regenerable corpora and caches.
+# The submitted evidence lives under DATA/ and EVALS/, which the root-relative
+# rules below do not match.  Two small caches are deliberately SHIPPED, because
+# they belong to the frozen call record and they let a marker reproduce results
+# without paying for the same calls again:
+#   DATA/round1_dataset/embeddings/   final-test E4_semantic input vectors (15 MB)
+#   EVALS/**/api_cache/               cached provider responses (5 MB)
+# Only caches that are large and cheap to regenerate are excluded.
 data/raw/
 data/embeddings/
 data/recovery_cache/
 candidate_pool.parquet
-**/api_cache/
 **/*.parquet.tmp
 
 # Credentials - never commit
@@ -32,3 +38,10 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+# Stage logs are execution evidence, not clutter - keep them.
+!EVALS/**/execution_logs/*.log
+
+# Reproduction scratch.  Re-running a round writes here instead of into the
+# frozen evidence, so this folder is output, never submitted evidence.
+# See CODE/REPRODUCTION.md.
+**/reproduced_run/

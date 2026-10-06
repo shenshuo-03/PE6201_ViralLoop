@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791102704-IHXmnGUjrgC7VeCngAN6",
+  "object": "chat.completion",
+  "created": 1791102704,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"id\": \"H03\", \"topic_id\": \"T03\", \"topic\": \"假设的本地推理速度：数字未显示的内容\", \"facts\": [{\"id\": \"F1\", \"text\": \"两个假设的运行时分别达到每秒 18 和 24 个 token。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"假设的测试在同一台机器上使用一个提示。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"未测量首个 token 的时间和答案质量。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F4\", \"text\": \"该样本并未确立普适的获胜者。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设的 LLM 推理：为什么 24 t/s 不总是优于 18 t/s\", \"body\": \"我们正在审视一个假设的本地 LLM 推理场景，以突出潜在的性能细微差别。该实验涉及在相同的硬件上运行单个提示，产生两个假设结果：每秒 18 个 token (t/s) 和 24 t/s (F1, F2)。虽然 24 t/s 的数字看起来更优越，但这些假设数据是不完整的。至关重要的是，该实验没有量化生成*首个* token 所需的时间，也没有评估响应的语义质量或事实准确性 (F3)。对于许多应用程序，特别是聊天界面，初始延迟 (TTFT) 是用户体验的主要贡献者。一个生成 18 t/s 且 TTFT 接近即时的模型，可能感觉比一个 TTFT 有明显延迟才出现任何输出的 24 t/s 模型更快。此外，原始速度而没有质量是无效的。因此，这个假设的比较并未宣布明确的获胜者 (F4)，并强调了全面基准测试的必要性。\"}, \"B\": {\"title\": \"假设的本地推理速度：超越每秒原始 token 数\", \"body\": \"本文讨论了一个假设的本地推理场景，涉及两种配置，在同一台机器上使用单个提示，分别达到每秒 18 和 24 个 token (t/s)。虽然这些数字提供了基本的性能指标，但它们只代表了实际可用性的一小部分。至关重要的是，这个假设的测试没有测量首个 token 的时间 (TTFT) 或生成答案的质量。如果 TTFT 很高，或者由于质量差而需要大量修改输出，那么具有更高 t/s 的模型仍然可能感觉迟钝。此外，观察到的差异并未确立普适的获胜者；性能可能因不同的提示、系统负载和模型架构而有很大差异。这些合成数字旨在强调原始 t/s 指标的局限性，并促使用户讨论他们认为对响应式本地 LLM 体验至关重要的其他因素。\"}}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 747,
+    "completion_tokens": 630,
+    "total_tokens": 1377,
+    "cost": 0.0003267,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003267,
+      "upstream_inference_prompt_cost": 7.47e-05,
+      "upstream_inference_completions_cost": 0.000252
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

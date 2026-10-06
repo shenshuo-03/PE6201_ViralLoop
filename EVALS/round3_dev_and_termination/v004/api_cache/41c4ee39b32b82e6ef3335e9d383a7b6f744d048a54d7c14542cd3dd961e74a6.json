@@ -1,0 +1,17 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Benchmarking 10 LLMs on a MacBook Air M1 (8GB RAM) Reveals Huge Speed Differences and Self-Evaluation Biases",
+        "body": "A recent benchmark tested 10 quantized large language models (LLMs) locally on a MacBook Air M1 with 8GB RAM to evaluate their performance under tight hardware constraints. Each model generated one question across five topics—Math, Writing, Coding, Psychology, and History—then answered all 50 questions and self-evaluated their responses. Notably, the Qwen3 4B model took 486 seconds (over 8 minutes) just to generate a single math question, highlighting significant speed variability among models. Several models, including Mistral, Qwen3, and LLaMA 3.1 8B, showed a tendency to overrate their own answers, indicating self-evaluation biases. These results underline that running LLMs locally on low-spec hardware is feasible but performance and evaluation quality vary widely. Users should consider these factors, along with the limitations of a single-user test and specific quantized setups, when selecting models for local deployment.",
+        "fact_refs": [
+          "f1",
+          "f3",
+          "f4",
+          "f6"
+        ]
+      }
+    ]
+  },
+  "run_id": "v004-r0026"
+}

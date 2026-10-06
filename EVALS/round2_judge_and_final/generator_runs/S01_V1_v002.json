@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-04T11:08:44.190044+00:00",
+  "loop_version": "v002",
+  "brief_id": "S01",
+  "phase": "tune",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "How effective are local LLMs with BeautifulSoup for offline HTML to Markdown conversion on text-heavy sites?",
+        "body": "A 2025 project explored using local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools on complex, text-focused websites. The script first uses BeautifulSoup to identify candidate content areas, main titles, and headings, distinguishing text-centric sites from media-heavy ones.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this approach handles modern web apps or sites with dynamic content. Has anyone seen local LLM pipelines effectively manage the tradeoff between offline processing and the quality of Markdown output on such tricky sites? What strategies might improve content extraction when JavaScript-heavy frameworks limit static HTML analysis?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's core idea of using local LLMs and BeautifulSoup for HTML to Markdown conversion, focusing on text-heavy sites and the challenges of offline processing. It poses relevant questions about handling modern web apps and dynamic content, directly engaging with the source's problem statement and seeking community input. The specificity is good, mentioning the tools and the goal. The information value is high as it distills the key technical aspects and poses actionable questions for discussion. The speaker correctly avoids claiming personal experience and adheres to the persona of a reader of the archived account. The draft is clear, useful, and credible, with no clickbait elements.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 107,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Can offline local LLMs plus BeautifulSoup reliably extract Markdown from modern text-focused websites?",
+        "body": "There’s an interesting 2025 attempt to convert HTML to Markdown fully offline using local LLMs combined with BeautifulSoup for content area detection. The script distinguishes between text-focused and media-centric pages by analyzing HTML structure and framework fingerprints.\n\nSince it doesn’t rely on browser rendering, I’m curious about the practical limitations this imposes. For text-heavy sites with complex layouts or SPA frameworks, does anyone know if local LLMs can still produce high-quality Markdown? What are effective heuristics or preprocessing steps to enhance content extraction in such offline setups?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately summarizes the source's project, highlighting the use of local LLMs and BeautifulSoup for offline HTML to Markdown conversion. It specifically questions the practical limitations of not using browser rendering for complex sites and SPAs, and asks about effective heuristics for offline content extraction. This aligns well with the source's 'Issues & Open Questions' section and the brief's goal of seeking advice. The specificity is good, mentioning the tools and the context. The information value is high due to the focused questions. The speaker maintains the correct persona and avoids personal claims. The draft is clear, useful, and credible, with no clickbait.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 87,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "How effective are local LLMs with BeautifulSoup for offline HTML to Markdown conversion on text-heavy sites?",
+      "body": "A 2025 project explored using local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools on complex, text-focused websites. The script first uses BeautifulSoup to identify candidate content areas, main titles, and headings, distinguishing text-centric sites from media-heavy ones.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this approach handles modern web apps or sites with dynamic content. Has anyone seen local LLM pipelines effectively manage the tradeoff between offline processing and the quality of Markdown output on such tricky sites? What strategies might improve content extraction when JavaScript-heavy frameworks limit static HTML analysis?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's core idea of using local LLMs and BeautifulSoup for HTML to Markdown conversion, focusing on text-heavy sites and the challenges of offline processing. It poses relevant questions about handling modern web apps and dynamic content, directly engaging with the source's problem statement and seeking community input. The specificity is good, mentioning the tools and the goal. The information value is high as it distills the key technical aspects and poses actionable questions for discussion. The speaker correctly avoids claiming personal experience and adheres to the persona of a reader of the archived account. The draft is clear, useful, and credible, with no clickbait elements.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 107,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0257",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:41.762845+00:00",
+    "tag": "V1:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "7d5da4fccc650763eeb176b952f8e1de9d28fcf22d78bda2f7f3a809d82af278",
+    "actual_cost_usd": 0.000958,
+    "budget_charge_usd": 0.000958,
+    "reserved_upper_usd": 0.0055236,
+    "input_tokens": 1103,
+    "output_tokens": 323,
+    "latency_seconds": 2.5843212999752723,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112119-0XQkwfHxeEyCPUuvJEaZ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0258",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:44.165256+00:00",
+    "tag": "quality:S01:V1",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "49cc21f8209276531ff32e124db01af646708245b9bcdb202028e5090fafa662",
+    "actual_cost_usd": 0.0005357,
+    "budget_charge_usd": 0.0005357,
+    "reserved_upper_usd": 0.0021238,
+    "input_tokens": 3441,
+    "output_tokens": 479,
+    "latency_seconds": 2.3729985999816563,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112121-TCtXZsAeFdDPlLPPPD6r",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

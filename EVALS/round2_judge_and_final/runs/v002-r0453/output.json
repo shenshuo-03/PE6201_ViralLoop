@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "community_fit": "B",
+    "specificity": "B",
+    "information_value": "B",
+    "usefulness": "B",
+    "credibility": "Tie",
+    "overall": "B"
+  },
+  "evidence": "Draft A frames the post as a yes/no viability question but underutilizes the source material—it mentions only llama.cpp and Open WebUI (F1, F2) while omitting the concrete workflow details (llama-swap, config.yaml, model organization benefits from F3–F5) that make the alternative setup actionable and discussable. Draft B incorporates all five facts, explicitly naming the model management layer (llama-swap + config.yaml) and the specific pain point addressed (model location/naming), which gives the community concrete details to evaluate and respond to. Both correctly attribute claims to the source author without overstating generalizability, and both acknowledge the mid-2025 date and missing hardware/performance data. However, B's inclusion of the full workflow—inference engine, model loader, frontend, and file organization—creates a more complete picture of what the alternative entails, making it more useful for enthusiasts considering the transition. A's narrower scope (just inference + frontend) loses the distinguishing feature (llama-swap's centralized config) that explains why the author found the switch easier. Both avoid forbidden claims, but B's specificity about the config.yaml and model sourcing workflow better serves the stated goal of understanding 'concrete issues and benefits observed.'"
+}

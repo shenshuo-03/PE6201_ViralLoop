@@ -1,0 +1,91 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical Prompt Regression Test Design: Comparing Prompt Versions",
+        "body": "This post outlines a hypothetical approach for designing a prompt regression test for local LLMs. The objective is to compare the performance of an old prompt set against a new one using a consistent model configuration.\n\nWe start with a fixed set of 12 test prompts (F1). This set is designed to cover both scenarios where answers are expected and cases where the provided information is insufficient for a definitive response (F3). The core of the test involves running both the old and new prompt versions through the same model, ensuring all other model settings remain identical (F2). This controlled comparison aims to isolate the impact of prompt changes.\n\nIt is crucial to note that this is a hypothetical experiment brief. No actual results or measurements have been obtained yet (F4). The focus is purely on the methodology for setting up such a test. Further discussion is invited on refining this testing framework, particularly regarding the systematic evaluation of prompt effectiveness across diverse query types.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Outline a hypothetical prompt regression test methodology, emphasizing controlled comparison and acknowledging the absence of current results. Invite discussion on test framework refinement."
+      },
+      {
+        "title": "Setting Up a Hypothetical Prompt Regression Test Framework for Local LLMs",
+        "body": "Developing a robust regression testing strategy for local LLMs is essential for tracking prompt efficacy. This post details a hypothetical framework for such testing. The primary goal is to establish a repeatable method for evaluating prompt changes.\n\nThe proposed test involves a curated suite of 12 fixed prompts (F1). This suite includes a mix of questions designed to elicit direct answers and others that should result in responses indicating insufficient information (F3). The testing procedure mandates running both the existing and proposed prompt versions against the identical local LLM setup, maintaining all parameters and configurations (F2). This controlled environment is key to isolating the effects of prompt modifications.\n\nThis framework is currently hypothetical; no performance data or comparative results have been generated or measured (F4). The intention is to solicit feedback on the proposed testing structure itself. We aim to discuss potential metrics and evaluation strategies that could be applied once actual tests are conducted, focusing on systematic comparison of prompt performance.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Describe a hypothetical prompt regression test setup, highlighting the use of fixed prompts and identical model settings for comparison. Explicitly state that results are not yet available and invite discussion on evaluation strategies."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:12:02.570112+00:00",
+    "tag": "final_test:T06:G4_positive",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "619db68075eb0dc8e92d10bac6264436f966b70183c8f1312b800e5aa6b1f053",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2622,
+    "output_tokens": 576,
+    "actual_cost_usd": 0.0004926,
+    "token_price_estimate_usd": 0.0004925999999999999,
+    "reserved_upper_usd": 0.0017265,
+    "budget_charge_usd": 0.0004926,
+    "latency_seconds": 3.0783992999931797,
+    "retry": 0,
+    "request_id": "gen-1791101519-cxngmMOoviCgEjJw7Y8z"
+  },
+  "raw_response": {
+    "id": "gen-1791101519-cxngmMOoviCgEjJw7Y8z",
+    "object": "chat.completion",
+    "created": 1791101519,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Prompt Regression Test Design: Comparing Prompt Versions\",\n    \"body\": \"This post outlines a hypothetical approach for designing a prompt regression test for local LLMs. The objective is to compare the performance of an old prompt set against a new one using a consistent model configuration.\\n\\nWe start with a fixed set of 12 test prompts (F1). This set is designed to cover both scenarios where answers are expected and cases where the provided information is insufficient for a definitive response (F3). The core of the test involves running both the old and new prompt versions through the same model, ensuring all other model settings remain identical (F2). This controlled comparison aims to isolate the impact of prompt changes.\\n\\nIt is crucial to note that this is a hypothetical experiment brief. No actual results or measurements have been obtained yet (F4). The focus is purely on the methodology for setting up such a test. Further discussion is invited on refining this testing framework, particularly regarding the systematic evaluation of prompt effectiveness across diverse query types.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Outline a hypothetical prompt regression test methodology, emphasizing controlled comparison and acknowledging the absence of current results. Invite discussion on test framework refinement.\"\n  },\n  {\n    \"title\": \"Setting Up a Hypothetical Prompt Regression Test Framework for Local LLMs\",\n    \"body\": \"Developing a robust regression testing strategy for local LLMs is essential for tracking prompt efficacy. This post details a hypothetical framework for such testing. The primary goal is to establish a repeatable method for evaluating prompt changes.\\n\\nThe proposed test involves a curated suite of 12 fixed prompts (F1). This suite includes a mix of questions designed to elicit direct answers and others that should result in responses indicating insufficient information (F3). The testing procedure mandates running both the existing and proposed prompt versions against the identical local LLM setup, maintaining all parameters and configurations (F2). This controlled environment is key to isolating the effects of prompt modifications.\\n\\nThis framework is currently hypothetical; no performance data or comparative results have been generated or measured (F4). The intention is to solicit feedback on the proposed testing structure itself. We aim to discuss potential metrics and evaluation strategies that could be applied once actual tests are conducted, focusing on systematic comparison of prompt performance.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Describe a hypothetical prompt regression test setup, highlighting the use of fixed prompts and identical model settings for comparison. Explicitly state that results are not yet available and invite discussion on evaluation strategies.\"\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2622,
+      "completion_tokens": 576,
+      "total_tokens": 3198,
+      "cost": 0.0004926,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004926,
+        "upstream_inference_prompt_cost": 0.0002622,
+        "upstream_inference_completions_cost": 0.0002304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

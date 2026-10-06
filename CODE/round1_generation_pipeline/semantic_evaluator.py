@@ -5,17 +5,26 @@ vectors may be cached in advance; labels are used only in the one-shot test.
 """
 from common import *
 from model_api import entries,spent,LIMIT,LEDGER
-from performance_evaluator import metric,choose_threshold,MODEL_DIR
+from performance_evaluator import metric,choose_threshold,MODEL_DIR,model_path
 import pandas as pd,numpy as np,urllib.request,os,time,pickle
 from sklearn.linear_model import LogisticRegression
 EMBED_MODEL='openai/text-embedding-3-small'
 def embeddings(df):
-    directory=ROOT/'data/embeddings';directory.mkdir(exist_ok=True)
+    # Vectors are cached so that reproducing E4_semantic costs nothing.  The
+    # cache is not frozen evidence, so new batches are written to ROOT.out.  A
+    # cache that a marker places in the packaged data folder
+    # (DATA/round1_dataset/embeddings/) is read but never written to, which makes
+    # an offline, key-free E4_semantic re-run possible.
+    directory=ROOT.out/'data/embeddings';directory.mkdir(parents=True,exist_ok=True)
+    read_only=ROOT/'data/embeddings'
     outputs=[]
     text=(df.title.fillna('')+'\n'+df.selftext.fillna('')).str.slice(0,4000).tolist()
     for start in range(0,len(df),64):
         batch=text[start:start+64];key=digest(json.dumps([EMBED_MODEL,batch]));p=directory/f'{key}.json'
-        if p.exists():j=json.loads(p.read_text(encoding='utf-8'))
+        j=None
+        for base in dict.fromkeys([directory,read_only]):
+            if (base/f'{key}.json').exists():j=json.loads((base/f'{key}.json').read_text(encoding='utf-8'));break
+        if j is not None:pass
         else:
             price=2e-8;upper=(sum(len(x.encode()) for x in batch)+2000)*price
             if spent()+upper>LIMIT:raise RuntimeError('US$5 embedding budget guard')
@@ -43,7 +52,7 @@ def train():
         p=m.predict_proba(matrices['tune_dev'])[:,1];t=choose_threshold(frames['tune_dev'].label,p);result=metric(frames['tune_dev'].label,p,t);rows.append({'model':'E4_semantic','C':C,'partition':'tune_dev','training_seconds':elapsed,**result})
         if best is None or result['average_precision']>best[0]:best=(result['average_precision'],m,t,C)
     _,m,t,C=best;p=m.predict_proba(matrices['selection_dev'])[:,1];result=metric(frames['selection_dev'].label,p,t);rows.append({'model':'E4_semantic','C':C,'partition':'selection_dev',**result})
-    with (MODEL_DIR/'E4_semantic.pkl').open('wb') as f:pickle.dump(m,f)
+    with model_path('E4_semantic','w').open('wb') as f:pickle.dump(m,f)
     freeze=json.loads((ROOT/'configs/evaluator_freeze.json').read_text(encoding='utf-8'));freeze['E4_semantic']={'threshold':t,'C':C,'selection_average_precision':result['average_precision'],'selection_f1':result['f1'],'embedding_model':EMBED_MODEL,'max_chars':4000}
     freeze['best_selection_model']=max([k for k in freeze if k.startswith('E')],key=lambda k:freeze[k]['selection_average_precision'])
     write_json(ROOT/'configs/evaluator_freeze.json',freeze)

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Topic about GPU upgrade for LLM tinkering; niche but relevant, moderate similarity to high and not_high examples."
+      },
+      {
+        "index": 1,
+        "probability": 0.4,
+        "reason": "Detailed model release post with benchmarks and improvements; likely to attract interest but somewhat technical and promotional."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Technical troubleshooting post about finetuning and conversion issues; useful but limited audience, moderate similarity to high examples."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "Beginners' guide style post about hardware choices for LLM projects; practical but common topic, moderate engagement expected."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Benchmark summary with detailed scores and analysis; technical but less broad appeal, moderate chance of high score."
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Experience sharing on coding models tested on specific hardware; technical and detailed, moderate interest expected."
+      },
+      {
+        "index": 6,
+        "probability": 0.25,
+        "reason": "Request for LLM recommendations on low-end laptop; common question with limited novelty, lower engagement likely."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Discussion of advanced hardware solution for VRAM extension; niche but intriguing topic, moderate interest expected."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:03:17.439860+00:00",
+    "tag": "final_test:classifier:E5c_retrieval:40",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "20ee3738e7a4a2f1ca8adfd701d46542a26421ca34680e9b4f5bdddfbc737cbd",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5754,
+    "output_tokens": 283,
+    "actual_cost_usd": 0.0027544,
+    "token_price_estimate_usd": 0.0027544,
+    "reserved_upper_usd": 0.011042,
+    "budget_charge_usd": 0.0027544,
+    "latency_seconds": 2.6362614999961806,
+    "retry": 0,
+    "request_id": "gen-1791100995-QjrhOu0DCCWqReZ9ESIV"
+  },
+  "raw_response": {
+    "id": "gen-1791100995-QjrhOu0DCCWqReZ9ESIV",
+    "object": "chat.completion",
+    "created": 1791100995,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Topic about GPU upgrade for LLM tinkering; niche but relevant, moderate similarity to high and not_high examples.\"},{\"index\":1,\"probability\":0.4,\"reason\":\"Detailed model release post with benchmarks and improvements; likely to attract interest but somewhat technical and promotional.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Technical troubleshooting post about finetuning and conversion issues; useful but limited audience, moderate similarity to high examples.\"},{\"index\":3,\"probability\":0.3,\"reason\":\"Beginners' guide style post about hardware choices for LLM projects; practical but common topic, moderate engagement expected.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Benchmark summary with detailed scores and analysis; technical but less broad appeal, moderate chance of high score.\"},{\"index\":5,\"probability\":0.35,\"reason\":\"Experience sharing on coding models tested on specific hardware; technical and detailed, moderate interest expected.\"},{\"index\":6,\"probability\":0.25,\"reason\":\"Request for LLM recommendations on low-end laptop; common question with limited novelty, lower engagement likely.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Discussion of advanced hardware solution for VRAM extension; niche but intriguing topic, moderate interest expected.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5754,
+      "completion_tokens": 283,
+      "total_tokens": 6037,
+      "cost": 0.0027544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027544,
+        "upstream_inference_prompt_cost": 0.0023016,
+        "upstream_inference_completions_cost": 0.0004528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "B",
+      "specificity": "B",
+      "information_value": "B",
+      "usefulness": "B",
+      "credibility": "Tie",
+      "overall": "B"
+    },
+    "evidence": "Both posts correctly ground themselves in F1–F2 and avoid forbidden claims. Draft A frames the question narrowly around \"reliably detect\" and \"best practice,\" which presumes solutions exist without acknowledging the core tension. Draft B explicitly names the design mismatch (\"not originally designed for reverse keyword search\") and directly invokes the order-preservation problem as a stated constraint, then asks for \"workarounds or hybrid approaches\"—a more honest framing that acknowledges vector DBs may be the wrong tool. Draft B also references the Reddit source date (\"mid-2025\") and lack of \"clear success metrics,\" preserving epistemic humility. Draft A's phrasing \"known approach or best practice\" risks inviting generic advice rather than genuine troubleshooting. Draft B's closing question (\"Are there known workarounds or hybrid approaches?\") is more actionable for a local LLM community—it signals openness to alternatives rather than assuming vector DBs are the solution. Neither post exploits F3–F6 (the AND/OR edge cases), which is appropriate given the brief's focus on the core use case, but Draft B's acknowledgment of design mismatch makes it more credible and community-fit for a group likely to explore unconventional solutions."
+  },
+  "usage": {
+    "run_id": "v002-r0439",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:19:51.794897+00:00",
+    "tag": "judge_final:F02:V2_vs_V1:BA",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "8af0ca90d3198c1d702b6f9899399c994c5f836aab6f0b8f096d32dbc4c2eb1e",
+    "actual_cost_usd": 0.00389,
+    "budget_charge_usd": 0.00389,
+    "reserved_upper_usd": 0.012212,
+    "input_tokens": 2090,
+    "output_tokens": 360,
+    "latency_seconds": 5.195774799998617,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112786-K8cNWoAz1H1fSsMmSjew",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

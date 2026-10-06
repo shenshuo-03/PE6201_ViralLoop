@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.6,
+        "reason": "Detailed technical guide on a large model quantization with hardware and community support; likely to attract high engagement."
+      },
+      {
+        "index": 1,
+        "probability": 0.3,
+        "reason": "Question about odd LLM behavior is niche and somewhat speculative; moderate interest expected."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Technical discussion on debugging llama.cpp server; useful but somewhat narrow audience."
+      },
+      {
+        "index": 3,
+        "probability": 0.55,
+        "reason": "In-depth experience/opinion post on PaddleOCR-VL with detailed analysis; likely valued by practitioners."
+      },
+      {
+        "index": 4,
+        "probability": 0.35,
+        "reason": "Tutorial-style question about embedding dimension customization; somewhat technical but limited scope."
+      },
+      {
+        "index": 5,
+        "probability": 0.25,
+        "reason": "Opinion post with strong language and controversial stance; may have limited broad appeal."
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Experience/benchmark request about ByteDance model; relevant but less detailed and more speculative."
+      },
+      {
+        "index": 7,
+        "probability": 0.6,
+        "reason": "Detailed experience/benchmark post with quantitative results and workflow; likely to engage technical readers."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:50.254640+00:00",
+    "tag": "selection_dev:classifier:E5b_few_shot:24",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "6815c3b01a355dcd0cf1dc0075564a6c9f5dc87b280b34176fc12e6bdb9cbfc7",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6106,
+    "output_tokens": 353,
+    "actual_cost_usd": 0.0030072,
+    "token_price_estimate_usd": 0.0030072,
+    "reserved_upper_usd": 0.012081999999999999,
+    "budget_charge_usd": 0.0030072,
+    "latency_seconds": 2.8729751000064425,
+    "retry": 0,
+    "request_id": "gen-1791100787-GiUCpdO53Xfk2feCXORj"
+  },
+  "raw_response": {
+    "id": "gen-1791100787-GiUCpdO53Xfk2feCXORj",
+    "object": "chat.completion",
+    "created": 1791100787,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.6,\n      \"reason\": \"Detailed technical guide on a large model quantization with hardware and community support; likely to attract high engagement.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.3,\n      \"reason\": \"Question about odd LLM behavior is niche and somewhat speculative; moderate interest expected.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.4,\n      \"reason\": \"Technical discussion on debugging llama.cpp server; useful but somewhat narrow audience.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.55,\n      \"reason\": \"In-depth experience/opinion post on PaddleOCR-VL with detailed analysis; likely valued by practitioners.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.35,\n      \"reason\": \"Tutorial-style question about embedding dimension customization; somewhat technical but limited scope.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.25,\n      \"reason\": \"Opinion post with strong language and controversial stance; may have limited broad appeal.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.4,\n      \"reason\": \"Experience/benchmark request about ByteDance model; relevant but less detailed and more speculative.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.6,\n      \"reason\": \"Detailed experience/benchmark post with quantitative results and workflow; likely to engage technical readers.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6106,
+      "completion_tokens": 353,
+      "total_tokens": 6459,
+      "cost": 0.0030072,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030072,
+        "upstream_inference_prompt_cost": 0.0024424,
+        "upstream_inference_completions_cost": 0.0005648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

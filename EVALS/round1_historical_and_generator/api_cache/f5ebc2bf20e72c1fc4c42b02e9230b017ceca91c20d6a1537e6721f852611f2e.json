@@ -1,0 +1,89 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical Memory Usage for LLM Context Lengths: 2048 vs 8192 (Fixed Hardware)",
+        "body": "This post discusses a hypothetical experiment exploring the memory footprint of different context lengths in local language models. In this theoretical scenario, we consider a fixed model, runtime, and hardware setup. The primary focus is on the RAM consumption associated with scaling context. \n\nFor a hypothetical context length of 2048 tokens, the estimated memory usage was 7 GB. When scaling this up to a context length of 8192 tokens, the hypothetical memory usage increased to 11 GB. It's important to reiterate that these are hypothetical figures from a planned experiment, not measured results. No output quality or throughput benchmarks were collected as part of this hypothetical setup. The goal was solely to observe the direct memory overhead introduced by longer contexts under controlled, theoretical conditions. Further investigation into performance implications would require actual testing.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Discuss hypothetical memory usage based on provided facts, emphasizing the hypothetical nature and lack of performance data."
+      },
+      {
+        "title": "Hypothetical RAM Overhead: Investigating LLM Context Length Scaling (2048 vs 8192)",
+        "body": "We are exploring a hypothetical scenario to understand the memory demands of increasing context lengths for local LLMs. The setup assumes a constant model architecture, runtime environment, and underlying hardware to isolate the variable of context size. The objective is to quantify the theoretical RAM increase when dealing with larger input sequences.\n\nAccording to the hypothetical test parameters, a context length of 2048 tokens was associated with approximately 7 GB of RAM usage. In contrast, extending the context to 8192 tokens hypothetically required around 11 GB of RAM. These figures represent projections within a controlled, hypothetical experiment and should not be interpreted as actual measured outcomes. The experiment's scope explicitly excluded the collection of any data related to output quality or processing speed. This hypothetical analysis is purely focused on the memory consumption aspect of context length scaling.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Present hypothetical memory usage figures for different context lengths, clearly stating the experimental context and limitations."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:07:28.170370+00:00",
+    "tag": "final_test:T02:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "f5ebc2bf20e72c1fc4c42b02e9230b017ceca91c20d6a1537e6721f852611f2e",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 370,
+    "output_tokens": 518,
+    "actual_cost_usd": 0.0002442,
+    "token_price_estimate_usd": 0.00024419999999999997,
+    "reserved_upper_usd": 0.0009878999999999999,
+    "budget_charge_usd": 0.0002442,
+    "latency_seconds": 2.7433043000055477,
+    "retry": 0,
+    "request_id": "gen-1791101245-WLFxc7fTniUSZXCQkmrb"
+  },
+  "raw_response": {
+    "id": "gen-1791101245-WLFxc7fTniUSZXCQkmrb",
+    "object": "chat.completion",
+    "created": 1791101245,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Memory Usage for LLM Context Lengths: 2048 vs 8192 (Fixed Hardware)\",\n    \"body\": \"This post discusses a hypothetical experiment exploring the memory footprint of different context lengths in local language models. In this theoretical scenario, we consider a fixed model, runtime, and hardware setup. The primary focus is on the RAM consumption associated with scaling context. \\n\\nFor a hypothetical context length of 2048 tokens, the estimated memory usage was 7 GB. When scaling this up to a context length of 8192 tokens, the hypothetical memory usage increased to 11 GB. It's important to reiterate that these are hypothetical figures from a planned experiment, not measured results. No output quality or throughput benchmarks were collected as part of this hypothetical setup. The goal was solely to observe the direct memory overhead introduced by longer contexts under controlled, theoretical conditions. Further investigation into performance implications would require actual testing.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\"],\n    \"plan\": \"Discuss hypothetical memory usage based on provided facts, emphasizing the hypothetical nature and lack of performance data.\"\n  },\n  {\n    \"title\": \"Hypothetical RAM Overhead: Investigating LLM Context Length Scaling (2048 vs 8192)\",\n    \"body\": \"We are exploring a hypothetical scenario to understand the memory demands of increasing context lengths for local LLMs. The setup assumes a constant model architecture, runtime environment, and underlying hardware to isolate the variable of context size. The objective is to quantify the theoretical RAM increase when dealing with larger input sequences.\\n\\nAccording to the hypothetical test parameters, a context length of 2048 tokens was associated with approximately 7 GB of RAM usage. In contrast, extending the context to 8192 tokens hypothetically required around 11 GB of RAM. These figures represent projections within a controlled, hypothetical experiment and should not be interpreted as actual measured outcomes. The experiment's scope explicitly excluded the collection of any data related to output quality or processing speed. This hypothetical analysis is purely focused on the memory consumption aspect of context length scaling.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\"],\n    \"plan\": \"Present hypothetical memory usage figures for different context lengths, clearly stating the experimental context and limitations.\"\n  }\n]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 518,
+      "total_tokens": 888,
+      "cost": 0.0002442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002442,
+        "upstream_inference_prompt_cost": 3.7e-05,
+        "upstream_inference_completions_cost": 0.0002072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

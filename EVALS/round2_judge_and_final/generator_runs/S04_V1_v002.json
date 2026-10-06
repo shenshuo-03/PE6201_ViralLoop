@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-04T11:10:10.463074+00:00",
+  "loop_version": "v002",
+  "brief_id": "S04",
+  "phase": "selection",
+  "variant": "V1",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Local TTS Options for Natural American English Dialogues with Gender Voice Switching?",
+        "body": "I've come across a 2025 Reddit post where the user needed a local TTS system capable of producing short dialogues between two speakers with flexible gender voice options (male/male, male/female, female/female). They found Coqui TTS (XTTS v2) output to be lacking in quality for this use case. \n\nGiven the importance of natural-sounding American English for dialogues and the ability to switch speaker genders, I'm curious if anyone here has experience with local or free TTS tools that better handle these requirements. The challenge seems to be balancing naturalness and clear distinction between speakers without relying on online services. \n\nHas anyone found a local TTS solution that can reliably generate short, natural-sounding conversations with easy voice gender toggling?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source and brief, focusing on the user's need for local TTS with gender-switching capabilities for dialogues. It correctly identifies Coqui TTS as a point of comparison and poses a relevant question to the community. Specificity is good, mentioning the core requirements. Information value is high as it directly addresses the problem. Community fit is strong due to the direct question about local solutions.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 117,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Seeking Local TTS Capable of Natural Short Dialogues with Multiple Gender Voices",
+        "body": "A 2025 Reddit thread highlights a need for a local TTS system to create short dialogues featuring two speakers with interchangeable gender voices (male/male, male/female, female/female). The author reported that Coqui TTS (XTTS v2) produced poor quality output in their experience.\n\nThis raises a practical question for local LLaMA enthusiasts: are there any free or offline TTS tools that can generate natural American English dialogues with distinct, switchable male and female voices? The ability to handle quick speaker changes in short exchanges seems to be the sticking point.\n\nIf you’ve experimented with local TTS models for this kind of dialogue generation, what tradeoffs did you encounter in voice quality or flexibility?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 also accurately summarizes the source and brief, highlighting the user's need for local TTS with gender-flexible voices for dialogues and their dissatisfaction with Coqui TTS. It poses a clear question to the community about free/offline tools and potential tradeoffs. Specificity is good, and information value is high. Community fit is strong as it directly asks for community experience with local TTS for this specific use case.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 111,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Local TTS Options for Natural American English Dialogues with Gender Voice Switching?",
+      "body": "I've come across a 2025 Reddit post where the user needed a local TTS system capable of producing short dialogues between two speakers with flexible gender voice options (male/male, male/female, female/female). They found Coqui TTS (XTTS v2) output to be lacking in quality for this use case. \n\nGiven the importance of natural-sounding American English for dialogues and the ability to switch speaker genders, I'm curious if anyone here has experience with local or free TTS tools that better handle these requirements. The challenge seems to be balancing naturalness and clear distinction between speakers without relying on online services. \n\nHas anyone found a local TTS solution that can reliably generate short, natural-sounding conversations with easy voice gender toggling?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source and brief, focusing on the user's need for local TTS with gender-switching capabilities for dialogues. It correctly identifies Coqui TTS as a point of comparison and poses a relevant question to the community. Specificity is good, mentioning the core requirements. Information value is high as it directly addresses the problem. Community fit is strong due to the direct question about local solutions.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 117,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0281",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:10:08.444028+00:00",
+    "tag": "V1:S04",
+    "phase": "selection",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "2ad41f2ce1dbca64f46754ffeaf1fdfeda0ad909b18663dbb0527c243048eea6",
+    "actual_cost_usd": 0.0009824,
+    "budget_charge_usd": 0.0009824,
+    "reserved_upper_usd": 0.0052423999999999995,
+    "input_tokens": 964,
+    "output_tokens": 373,
+    "latency_seconds": 3.0497709999908693,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112205-DpcJWGNAyVJX9TOyf0BN",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0282",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:10:10.440764+00:00",
+    "tag": "quality:S04:V1",
+    "phase": "selection",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "b054f56632ee38d5bc1141a3e9046baaf4b80e5a4efff3ae14e30b2a62d65e05",
+    "actual_cost_usd": 0.0004436,
+    "budget_charge_usd": 0.0004436,
+    "reserved_upper_usd": 0.0017735,
+    "input_tokens": 2620,
+    "output_tokens": 454,
+    "latency_seconds": 1.9647065000026487,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112208-6CWKAwBzU7lxGlyMtcPS",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

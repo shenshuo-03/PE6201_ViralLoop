@@ -1,0 +1,163 @@
+{
+  "at": "2026-10-04T11:06:08.930640+00:00",
+  "loop_version": "v002",
+  "brief_id": "D03",
+  "phase": "tune",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Short Perplexity Test Shows DeepSeek R1 Outperforms Distills Until 2 Experts, But Results Are Limited",
+        "body": "A perplexity test on DeepSeek R1 models with varying expert counts suggests the full model—even with aggressive quantization—beats normal distills, except when limited to 2 experts. The Virtuoso Medium V2 distill fell between the 3- and 4-expert DeepSeek configurations. However, this test only covered 8 blocks out of about 560, so the results are far from conclusive and should be taken cautiously.\n\nGiven the test’s narrow scope and the known limitations of perplexity for chain-of-thought models, how reliable do you think such short perplexity runs are for evaluating MoE models? Are there practical ways to extend these tests without excessive compute, or alternative metrics that might better reflect real-world performance?",
+        "fact_refs": [
+          "F1",
+          "F4",
+          "F5"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 1 accurately reflects the source's findings and limitations. It correctly states that the full DeepSeek R1 model outperforms distilled models except when limited to 2 experts, and that Virtuoso Medium V2 falls between 3- and 4-expert DeepSeek configurations. Crucially, it emphasizes the severe limitations of the test (8 blocks out of 560) and the potential unsuitability of perplexity for CoT models. The questions posed are relevant to the community and directly address the implications of the limited data and testing methodology, encouraging further discussion and investigation into practical evaluation methods.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 110,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "DeepSeek R1 Perplexity Test Fails at High Expert Counts; How to Interpret NaNs and Limited Data?",
+        "body": "In a brief perplexity test from early 2025, DeepSeek R1 models with 10 and 12 experts produced NaN errors, preventing perplexity calculation. Meanwhile, models with fewer experts showed better performance than normal distills, with Virtuoso Medium V2 distill positioned between 3- and 4-expert DeepSeek results. The test was run on only 8 blocks out of roughly 560, so it’s a very limited snapshot.\n\nHas anyone encountered similar NaN failures when scaling expert counts in MoE models? What might be causing these errors, and do they reflect fundamental issues with model stability or just quirks of the test setup? Understanding this could help decide whether pushing expert counts higher is practical or if alternative approaches are needed.",
+        "fact_refs": [
+          "F1",
+          "F6"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "Draft 2 accurately reports the source's findings regarding NaN errors with 10-12 experts and the relative performance of other configurations. It correctly highlights the limited scope of the test (8 blocks out of 560). The questions posed are highly relevant to the community, focusing on the practical implications of NaN errors in MoE models, potential causes, and whether they indicate fundamental issues or test setup quirks. This encourages discussion on model stability and practical scaling.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 116,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Short Perplexity Test Shows DeepSeek R1 Outperforms Distills Until 2 Experts, But Results Are Limited",
+      "body": "A perplexity test on DeepSeek R1 models with varying expert counts suggests the full model—even with aggressive quantization—beats normal distills, except when limited to 2 experts. The Virtuoso Medium V2 distill fell between the 3- and 4-expert DeepSeek configurations. However, this test only covered 8 blocks out of about 560, so the results are far from conclusive and should be taken cautiously.\n\nGiven the test’s narrow scope and the known limitations of perplexity for chain-of-thought models, how reliable do you think such short perplexity runs are for evaluating MoE models? Are there practical ways to extend these tests without excessive compute, or alternative metrics that might better reflect real-world performance?",
+      "fact_refs": [
+        "F1",
+        "F4",
+        "F5"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "Draft 1 accurately reflects the source's findings and limitations. It correctly states that the full DeepSeek R1 model outperforms distilled models except when limited to 2 experts, and that Virtuoso Medium V2 falls between 3- and 4-expert DeepSeek configurations. Crucially, it emphasizes the severe limitations of the test (8 blocks out of 560) and the potential unsuitability of perplexity for CoT models. The questions posed are relevant to the community and directly address the implications of the limited data and testing methodology, encouraging further discussion and investigation into practical evaluation methods.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 110,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0213",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:06.990290+00:00",
+    "tag": "V2:D03",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "1192acb8bb74fdd865e2315de55ad5bec230a0ed17c718302a0f3b7d7fe7aef5",
+    "actual_cost_usd": 0.0014248,
+    "budget_charge_usd": 0.0014248,
+    "reserved_upper_usd": 0.007082799999999999,
+    "input_tokens": 1982,
+    "output_tokens": 395,
+    "latency_seconds": 3.2149661000003107,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111963-LVontS3kkDGbz11M1WvJ",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0214",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:06:08.909432+00:00",
+    "tag": "quality:D03:V2",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "553abf45fe1c30f8f6c4f358378a5f1ebd87e473f57641bca54c6e6639a07ff1",
+    "actual_cost_usd": 0.0005357,
+    "budget_charge_usd": 0.0005357,
+    "reserved_upper_usd": 0.0019684999999999998,
+    "input_tokens": 3613,
+    "output_tokens": 436,
+    "latency_seconds": 1.888603500003228,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791111966-sZit95OCq4pgKvOfh4wb",
+    "contract_sha256": "9bca4348541352f099faa6668aa5e3ae26f7f27d30528aab88edcd3ead556438"
+  },
+  "retrieved_ids": [
+    "1j49sbd",
+    "1i8w7ra",
+    "1ll62i4"
+  ],
+  "external_judge_used": false
+}

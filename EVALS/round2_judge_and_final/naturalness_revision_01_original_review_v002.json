@@ -2,37 +2,34 @@
   {
     "id": "D01",
     "type": "Question / Troubleshooting",
-    "brief_goal_zh": "理解 llama.cpp HTTP 服务器中文件上传按钮的功能，并在查询文件内容时实现可复现的结果。",
     "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1kmd9f9/what_does_llamacpps_http_servers_fileupload/",
     "source_date": "2025-05-14",
-    "title_zh": "澄清 llama.cpp HTTP 服务器文件上传按钮以及查询文件内容时的可复现性",
-    "body_zh": "我一直在阅读 llama.cpp 的 HTTP 服务器中的文件上传功能，以及在使用它来询问上传文件内容时的行为。原始发帖人使用 llama 3.2 3B Q4_K_S，注意到模型有时能正确回答关于文件内容的问题，但有时它似乎在解释文件内容本身而不是查询。他们推测文件上传可能会将文件与提示连接起来，但这并未得到证实。他们的目标是获得可复现的答案——这意味着在新的对话中相同的提示会产生一致的结果——但这在他们的测试中尚未可靠实现。考虑到这种可变性和上传按钮背后不明确的机制，是否有人弄清楚了文件上传究竟是如何与提示交互的？此外，在使用此界面查询上传文件内容时，是否有已知的策略或设置可以提高可复现性？任何见解或经验分享都有助于理解此功能的预期用途和局限性。",
     "title_en": "Clarifying the llama.cpp HTTP server file upload button and reproducibility when querying file contents",
     "body_en": "I've been reading about the file upload feature in llama.cpp's HTTP server and its behavior when used to ask questions about uploaded files. The original poster, using llama 3.2 3B Q4_K_S, noted that sometimes the model answers questions about the file content correctly, but other times it seems to interpret the file content itself rather than the query. They speculate the file upload might concatenate the file with the prompt, but this isn't confirmed. Their goal is to get reproducible answers—meaning the same prompts in a new conversation produce consistent results—but this hasn't been reliably achieved in their tests. Given this variability and the unclear mechanism behind the upload button, has anyone figured out how exactly the file upload interacts with the prompt? Also, are there known strategies or settings to improve reproducibility when querying uploaded file contents through this interface? Any insights or shared experiences would be helpful to understand this feature's intended use and limitations.",
-    "numeric_check": true
+    "numeric_check": true,
+    "brief_goal": "Understand what the file upload button in the llama.cpp HTTP server does, and achieve reproducible results when querying uploaded file content.",
+    "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
   },
   {
     "id": "D03",
     "type": "Experience / Benchmark",
-    "brief_goal_zh": "基于有限的困惑度测试，了解具有不同专家数量的 DeepSeek R1 模型的性能，并将其与蒸馏模型进行比较。",
     "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1idi5cr/i_did_a_very_short_perplexity_test_with_deepseek/",
     "source_date": "2025-01-30",
-    "title_zh": "DeepSeek R1 的困惑度结果对专家数量和蒸馏模型比较有何启示？",
-    "body_zh": "对不同专家数量的 DeepSeek R1 模型进行的简短困惑度测试提供了一些初步见解，但存在重大限制。测试仅涵盖了约 560 个块中的 8 个块，块大小为 512，并包括蒸馏模型以及 Virtuoso-Medium-v2 作为比较对象。来源指出，即使经过积极量化，完整的 DeepSeek R1 模型通常也优于蒸馏版本，除非限制为 2 个专家。Virtuoso Medium V2 的蒸馏性能介于具有 3 个和 4 个专家的 DeepSeek R1 之间。由于 NaN 错误，尝试使用 10 个和 12 个专家进行测试失败。此外，困惑度可能不是链式思考模型的公平指标，因为它们无法“思考”。考虑到这些限制以及硬件和数据集细节等缺失信息，您认为困惑度作为评估 DeepSeek 等 MoE 模型指标的有用性如何？其他基准测试或测试设置能否更好地阐明专家数量对性能的影响？",
     "title_en": "What do DeepSeek R1 perplexity results tell us about expert count and distilled model comparisons?",
     "body_en": "A short perplexity test on DeepSeek R1 models with different numbers of experts offers some tentative insights but comes with major caveats. The test covered only 8 blocks out of about 560, used a block size of 512, and included distilled models plus Virtuoso-Medium-v2 for comparison. The source notes that the full DeepSeek R1 model, even with aggressive quantization, generally outperformed the distilled versions unless limited to 2 experts. Virtuoso Medium V2’s distill performance fell between DeepSeek R1 with 3 and 4 experts. Attempts to test with 10 and 12 experts failed due to NaN errors. Also, perplexity may not be a fair metric for chain-of-thought models since they don’t get to \"think.\" Given these limitations and missing details like hardware and dataset specifics, how useful do you find perplexity as a metric for evaluating MoE models like DeepSeek? Would other benchmarks or test setups better clarify the impact of expert count on performance?",
-    "numeric_check": true
+    "numeric_check": true,
+    "brief_goal": "Understand the performance of DeepSeek R1 models with different expert counts from a limited perplexity test, and compare them against distilled models.",
+    "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
   },
   {
     "id": "S01",
     "type": "Discussion / Opinion",
-    "brief_goal_zh": "讨论使用本地大语言模型增强 HTML 到 Markdown 转换的方法和挑战，目标是在复杂网站上超越传统工具。",
     "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lftz5s/open_discussion_improving_htmltomarkdown/",
     "source_date": "2025-06-20",
-    "title_zh": "使用本地大语言模型改进 HTML 到 Markdown 的转换：媒体密集型和纯 JavaScript 网站的挑战",
-    "body_zh": "r/LocalLLaMA 上分享的一个项目描述了如何使用本地大语言模型（如 Qwen2.5-7B/8B）结合 llama.cpp 在消费级 GPU（例如 4070/4080/4090）上，完全离线地将 HTML 网页转换为高质量的 Markdown。该项目结合了使用 BeautifulSoup 进行启发式 HTML 分析以检测内容焦点和框架指纹，以及大语言模型生成的 JSON 提取策略和基于 AI 的质量评分。虽然在标准文章或博客页面上的结果通常获得良好到优秀的评分，但该工具在处理媒体密集型或纯 JavaScript 网站时遇到困难，因为没有浏览器渲染。在 4070 GPU 上处理单个页面大约需要 10-20 秒，但批量处理数百个页面可能需要优化。鉴于这些限制，其他人是如何在不使用浏览器引擎的情况下，仅依靠本地大语言模型来处理动态或富媒体网站的？是否存在可以提高提取质量或速度的实用方法，例如预渲染、混合启发式方法或模型微调？此外，除了 AI 评分之外，您还发现了哪些有效的评估方法来对 Markdown 提取质量进行基准测试？",
     "title_en": "Using Local LLMs to Improve HTML-to-Markdown Conversion: Challenges with Media-Heavy and JS-Only Sites",
     "body_en": "A project shared on r/LocalLLaMA describes converting HTML web pages to high-quality Markdown using local LLMs like Qwen2.5-7B/8B with llama.cpp on consumer GPUs (e.g., 4070/4080/4090), running fully offline. It combines heuristic HTML analysis via BeautifulSoup to detect content focus and framework fingerprints with LLM-generated JSON extraction strategies and AI-based quality scoring. While results on standard article or blog pages often score good to excellent, the tool struggles with media-heavy or JavaScript-only sites without browser rendering. Processing a single page takes about 10–20 seconds on a 4070 GPU, but batch processing hundreds of pages may require optimization. Given these constraints, how do others handle dynamic or media-rich sites relying solely on local LLMs without browser engines? Are there practical methods to improve extraction quality or speed, such as pre-rendering, hybrid heuristics, or model fine-tuning? Also, what evaluation approaches beyond AI scoring have you found effective for benchmarking Markdown extraction quality?",
-    "numeric_check": true
+    "numeric_check": true,
+    "brief_goal": "Discuss the approaches and challenges of using a local large language model to improve HTML-to-Markdown conversion, aiming to beat conventional tools on complex websites.",
+    "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
   }
 ]

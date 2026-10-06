@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "A",
+    "specificity": "A",
+    "information_value": "Uncertain",
+    "usefulness": "A",
+    "credibility": "Uncertain",
+    "overall": "A"
+  },
+  "swap_consistent": {
+    "community_fit": true,
+    "specificity": true,
+    "information_value": false,
+    "usefulness": true,
+    "credibility": false,
+    "overall": true
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "Tie",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Post A is better because it asks more specific questions relevant to the local LLM community (e.g., \"Has anyone explored or prototyped similar provider-agnostic context persistence approaches in local LLM setups?\") and highlights the lack of detail more directly. Post B is good but its questions are more general. Both posts accurately reflect the provided facts and the author's intent."
+    },
+    "usage": {
+      "run_id": "v002-r0099",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:51.854257+00:00",
+      "tag": "judge_calibration:CP11:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "91d16f49c82a6bb2dacf797234fd06695fa8e592f54ffbd66efb1612bfa69a76",
+      "actual_cost_usd": 0.0002345,
+      "budget_charge_usd": 0.0002345,
+      "reserved_upper_usd": 0.0011237999999999999,
+      "input_tokens": 1745,
+      "output_tokens": 150,
+      "latency_seconds": 1.1172491000033915,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109670-YfHy0Z9JdZkcg5hvTL3F",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "B",
+        "specificity": "B",
+        "information_value": "B",
+        "usefulness": "B",
+        "credibility": "B",
+        "overall": "B"
+      },
+      "evidence": "Post B is better because it more directly addresses the \"local LLM enthusiasts\" audience by posing questions relevant to their practical experience and potential challenges in implementing such a standard in a local setup. It also more clearly highlights the missing information and limitations of the original proposal, making it more specific and valuable for discussion. Post A is good but more general in its questions and doesn't emphasize the 'local' aspect as much."
+    },
+    "usage": {
+      "run_id": "v002-r0100",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:27:53.157603+00:00",
+      "tag": "judge_calibration:CP11:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash-lite",
+      "cache_key": "55ae6ff858a1edb7de1b1d9d4f23dc5cc4d39efa651d91e6890860affaed9d35",
+      "actual_cost_usd": 0.0002373,
+      "budget_charge_usd": 0.0002373,
+      "reserved_upper_usd": 0.0011237999999999999,
+      "input_tokens": 1745,
+      "output_tokens": 157,
+      "latency_seconds": 1.2804236999945715,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109671-Z6IL6p9Mrd7PUQFUZZmr",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash-lite"
+}

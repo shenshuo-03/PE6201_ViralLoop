@@ -1,26 +1,5 @@
 {
-  "task_zh": "探索 Ollama 的替代方案，用于管理本地 LLM 模型和推理。",
   "A": {
-    "title": "探索 llama-swap 和 Open WebUI 作为 Ollama 本地 LLM 管理的替代方案",
-    "body": "我偶然发现了一位用户详细介绍了他们在一个月前从 Ollama 迁移出来的经历，但仍然保留了 Open WebUI 作为前端。他们现在依赖 llama.cpp 或 ik_llama.cpp 进行推理，并使用 llama-swap 来处理模型的加载、卸载和自动卸载。作者提到通过一个大型的 config.yaml 文件来管理模型和参数，这似乎是该设置的核心。有趣的是，他们强调了模型文件组织的改进，注意到不再有“奇怪的位置/名称”，并且能够直接通过 wget 从 Hugging Face 下载模型。鉴于这些要点，我很好奇实际的权衡是什么：与 Ollama 相比，llama-swap 的模型管理在易用性和灵活性方面如何？另外，维护那个大的 config.yaml 文件有多复杂，尤其是在 Open WebUI 中同时处理多个模型和系统提示时？任何尝试过类似设置或有模型加载策略经验的人的见解都将是有价值的。",
-    "fact_refs": [
-      "F1",
-      "F2",
-      "F3",
-      "F4",
-      "F5"
-    ]
-  },
-  "B": {
-    "title": "使用 Open WebUI 的 llama.cpp 是否是本地 LLM 的可行 Ollama 替代品？",
-    "body": "一位 Reddit 用户报告称，他们已从 Ollama 切换到使用 llama.cpp（或 ik_llama.cpp）进行推理的设置，同时仍然保留 Open WebUI 作为前端。他们发现这个过渡比预期的更快更容易，并且在 Linux 和 Windows 上都完成了。这表明对于那些不使用 Ollama 来管理本地 LLM 模型的人来说，可能存在一个实际的替代方案。\n\n然而，该报告来自 2025 年中期，并未详细说明硬件或性能的权衡，因此尚不清楚这种方法是否适合所有用户或工作负载。对于那些考虑放弃 Ollama 的人来说，有人对 llama.cpp 加上 Open WebUI 在稳定性、模型管理易用性或推理速度方面有何见解吗？与 Ollama 相比，您在使用这种组合时遇到的主要痛点或好处是什么？",
-    "fact_refs": [
-      "F1",
-      "F2"
-    ]
-  },
-  "pair_id": "F06",
-  "english_A": {
     "title": "Exploring llama-swap and Open WebUI as an Alternative to Ollama for Local LLM Management",
     "body": "I came across a detailed account from a user who transitioned away from Ollama about a month ago, yet kept Open WebUI as their frontend. They now rely on llama.cpp or ik_llama.cpp for inference and use llama-swap to handle loading, unloading, and auto-unloading of models. The author mentions managing models and parameters through a large config.yaml file, which seems central to this setup. Interestingly, they highlight an improvement in model file organization, noting no more \"weird location/names\" and the ability to directly download models via wget from Hugging Face. Given these points, I'm curious about the practical trade-offs: How does llama-swap's model management compare to Ollama's in terms of ease and flexibility? Also, how complex is maintaining that big config.yaml, especially when juggling multiple models and system prompts in Open WebUI? Any insights from those who have tried similar setups or who have experience with model loading strategies would be valuable.",
     "fact_refs": [
@@ -31,7 +10,7 @@
       "F5"
     ]
   },
-  "english_B": {
+  "B": {
     "title": "Is llama.cpp with Open WebUI a viable Ollama replacement for local LLMs?",
     "body": "A Reddit user reported switching from Ollama to a setup using llama.cpp (or ik_llama.cpp) for inference while still keeping Open WebUI as the frontend. They found the transition quicker and easier than expected, doing this on both Linux and Windows. This suggests a possible practical alternative for managing local LLM models without Ollama.\n\nHowever, the report is from mid-2025 and doesn’t detail hardware or performance tradeoffs, so it’s unclear if this approach suits all users or workloads. For those considering leaving Ollama, does anyone have insights on how llama.cpp plus Open WebUI compares in stability, ease of model management, or inference speed? What are the main pain points or benefits you’ve encountered with this combo versus Ollama?",
     "fact_refs": [
@@ -39,6 +18,7 @@
       "F2"
     ]
   },
+  "pair_id": "F06",
   "translation_numeric_checks": {
     "A": true,
     "B": true
@@ -47,5 +27,7 @@
     "A": true,
     "B": true
   },
-  "numeric_check_note": "Equivalent May 2025 / 2025年5月 normalized to same date before checking numbers; draft text unchanged"
+  "numeric_check_note": "Equivalent May 2025 dates normalized to the same date before checking numbers; draft text unchanged",
+  "task_en": "Explore alternatives to Ollama for managing local LLM models and inference.",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

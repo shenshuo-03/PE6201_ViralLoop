@@ -1,0 +1,23 @@
+{
+  "value": {
+    "task_zh": {
+      "content_archetype": "A",
+      "posting_intent": "寻求帮助",
+      "current_context": "调查历史手机速度报告是否足以诊断GPU利用率；不声称所有权或复制测量数据。",
+      "core_value": "理解并优化边缘设备上的大型语言模型推理性能。",
+      "source_date": "2025-01-13",
+      "scenario_note": "受控产品输入，非第三方存档证据"
+    },
+    "drafts": [
+      {
+        "title": "评估llama.cpp在三星Galaxy S22 Ultra上的性能：Adreno GPU是否被利用？",
+        "body": "一位用户在三星Galaxy S22 Ultra上编译并运行了llama.cpp，报告使用Mistral-NeMo-Minitron-8B-Instruct-Q4_0模型的推理速度低于每秒2个token（f1，f2）。作为对比，同一模型在无GPU的AMD机器上运行速度约为每秒6个token（f3，f6）。这一差异引发了对手机Adreno GPU在推理过程中是否有效参与的疑问（f4）。\n\n该用户引用了高通博客文章，描述了针对Adreno GPU的llama.cpp OpenCL GPU后端（f5），但不清楚该后端是否在其环境中启用或正确配置。缺乏详细的诊断信息——如GPU利用率指标、确认OpenCL执行的日志或性能分析数据——使得难以判断速度缓慢是由于缺乏GPU加速还是其他瓶颈。\n\n哪些具体的诊断工具或方法最能验证llama.cpp运行时Adreno GPU是否处于活跃状态？识别这一点有助于区分配置问题与设备固有性能限制。"
+      },
+      {
+        "title": "诊断llama.cpp在Galaxy S22 Ultra上的性能：如何验证Adreno GPU利用率？",
+        "body": "一位用户在三星Galaxy S22 Ultra上编译并运行了llama.cpp，报告使用Mistral-NeMo-Minitron-8B-Instruct-Q4_0模型的推理速度低于每秒2个token（f1，f2）。有趣的是，同一模型在无GPU的AMD机器上运行速度约为每秒6个token（f3）。这一差异引发了对手机Adreno GPU是否真正被用于推理的疑问（f4）。该用户引用了高通博客文章，描述了针对Adreno GPU的llama.cpp OpenCL GPU后端（f5），但未提供手机配置或运行时诊断的详细信息。鉴于这是单一用户报告且缺乏独立验证，目前尚不清楚低速是由于未使用GPU加速、CPU瓶颈还是其他因素。哪些具体的诊断或性能分析工具有助于确认该设备上llama.cpp推理时Adreno GPU是否处于活跃状态？在得出性能限制结论前，识别GPU利用率指标与CPU负载或内存阻塞的区别似乎至关重要。"
+      }
+    ]
+  },
+  "run_id": "v004-r0039"
+}

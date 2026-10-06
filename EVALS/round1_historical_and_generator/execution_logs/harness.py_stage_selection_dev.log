@@ -1,0 +1,16 @@
+GEN S01 G0_generic qualified 2 score 0.242 budget 0.039
+GEN S01 G1_prompt qualified 0 score ABSTAIN budget 0.0404
+GEN S01 G2_fewshot_planning qualified 2 score 0.238 budget 0.0419
+GEN S01 G3_rag qualified 2 score 0.243 budget 0.0433
+GEN S01 G4_positive qualified 0 score ABSTAIN budget 0.0449
+GEN S01 G4_both qualified 2 score 0.238 budget 0.0465
+OPT S01 O1_resample score 0.24 budget 0.0485
+OPT S01 O2_feedback score 0.244 budget 0.0505
+GEN S02 G0_generic qualified 2 score 0.229 budget 0.0518
+GEN S02 G1_prompt qualified 0 score ABSTAIN budget 0.053
+GEN S02 G2_fewshot_planning qualified 1 score 0.234 budget 0.0544
+GEN S02 G3_rag qualified 0 score ABSTAIN budget 0.0558
+GEN S02 G4_positive qualified 0 score ABSTAIN budget 0.0574
+GEN S02 G4_both qualified 1 score 0.234 budget 0.0591
+OPT S02 O1_resample score 0.234 budget 0.0612
+OPT S02 O2_feedback score 0.234 budget 0.0632

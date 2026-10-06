@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100707-iaQpWsm8kqwwlj24PDBk",
+  "object": "chat.completion",
+  "created": 1791100707,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Technical troubleshooting with detailed context and code, likely to engage niche audience but limited broad appeal.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.25,\n      \"reason\": \"Common beginner question with some spelling errors and informal style, typical of average engagement.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"In-depth hardware discussion with practical cost considerations, likely to attract specialized interest.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.2,\n      \"reason\": \"Strong opinion on UI design but short and somewhat negative tone, may limit wider engagement.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.3,\n      \"reason\": \"Practical hardware setup question with some technical detail, moderate interest expected.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.3,\n      \"reason\": \"Request for benchmarks on GPU PCIe speeds, relevant to enthusiasts but somewhat niche.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.25,\n      \"reason\": \"User frustration post about delayed hardware order, likely average engagement due to specificity.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.4,\n      \"reason\": \"Announcement of a large language model with unique features, likely to attract higher interest.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2370,
+    "completion_tokens": 346,
+    "total_tokens": 2716,
+    "cost": 0.0015016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015016,
+      "upstream_inference_prompt_cost": 0.000948,
+      "upstream_inference_completions_cost": 0.0005536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "value": {
+    "preferences": {
+      "community_fit": "A",
+      "specificity": "A",
+      "information_value": "A",
+      "usefulness": "A",
+      "credibility": "B",
+      "overall": "A"
+    },
+    "evidence": "Draft A directly grounds the community question in the concrete problem: multi-word keyword matching failures (F5, F6 show AND/OR logic producing false positives). It names the specific edge case ('face hugging aliens' vs 'hugging face') and asks for actionable hybrid strategies, making it immediately relevant to local LLM enthusiasts troubleshooting similar constraints. Draft B mentions the same databases and general challenge but omits the specific failure modes (F5, F6) that would help readers recognize their own problems and contribute solutions. A preserves all six facts with precision; B references only F1 and F2, losing the diagnostic detail that makes the post answerable. A's credibility is slightly lower because it attributes the Reddit source to 'mid-2025' (source_date is 2025-07-04, a minor dating imprecision), while B correctly avoids over-specifying the date. However, A's superior community fit, specificity to the actual edge cases, and information value (organizing evidence into concrete failure patterns rather than generic limitations) outweigh this minor credibility gap. A treats the post as a troubleshooting question with learnable distinctions; B frames it as a general capability inquiry."
+  },
+  "usage": {
+    "run_id": "v002-r0436",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:19:36.918194+00:00",
+    "tag": "judge_final:F02:V1_vs_V0:AB",
+    "phase": "final",
+    "model": "anthropic/claude-haiku-4.5",
+    "cache_key": "927f0a02843e6aa3adb246833f53ac82f72e63f0cfa3dfdb32e6b020a2c399ad",
+    "actual_cost_usd": 0.003873,
+    "budget_charge_usd": 0.003873,
+    "reserved_upper_usd": 0.012471,
+    "input_tokens": 2148,
+    "output_tokens": 345,
+    "latency_seconds": 4.9461042000039015,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112771-ajufPe46JCNn1ZSKPTbZ",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

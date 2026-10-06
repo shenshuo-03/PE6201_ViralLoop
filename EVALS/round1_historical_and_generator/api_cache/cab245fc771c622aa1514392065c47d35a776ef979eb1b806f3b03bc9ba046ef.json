@@ -1,0 +1,97 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not claim any specific model superiority, aligning well with the facts. It emphasizes the limitations of leaderboard scores for local deployment needs such as low latency and offline use, which matches the scenario. The language is clear and technical, suitable for the target audience. It invites discussion on evaluation strategies, providing actionable value. There is no exaggeration or misleading phrasing, so clickbait is low."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and explicitly states no measured results or personal experience are involved, preserving necessary caveats. It questions the adequacy of leaderboard scores for offline, low-latency local LLM deployment, consistent with the facts. The writing is clear and technical, appropriate for the audience. It encourages discussion on alternative evaluation factors, which is useful. The title matches the body content well, and there is no clickbait."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:14:09.404978+00:00",
+    "tag": "final_test:T08:G4_positive:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "cab245fc771c622aa1514392065c47d35a776ef979eb1b806f3b03bc9ba046ef",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1045,
+    "output_tokens": 390,
+    "actual_cost_usd": 0.001042,
+    "token_price_estimate_usd": 0.001042,
+    "reserved_upper_usd": 0.005076,
+    "budget_charge_usd": 0.001042,
+    "latency_seconds": 3.2421554000175092,
+    "retry": 0,
+    "request_id": "gen-1791101646-2794zSr8ENrHJv7kaMZD"
+  },
+  "raw_response": {
+    "id": "gen-1791101646-2794zSr8ENrHJv7kaMZD",
+    "object": "chat.completion",
+    "created": 1791101646,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not claim any specific model superiority, aligning well with the facts. It emphasizes the limitations of leaderboard scores for local deployment needs such as low latency and offline use, which matches the scenario. The language is clear and technical, suitable for the target audience. It invites discussion on evaluation strategies, providing actionable value. There is no exaggeration or misleading phrasing, so clickbait is low.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical framing and explicitly states no measured results or personal experience are involved, preserving necessary caveats. It questions the adequacy of leaderboard scores for offline, low-latency local LLM deployment, consistent with the facts. The writing is clear and technical, appropriate for the audience. It encourages discussion on alternative evaluation factors, which is useful. The title matches the body content well, and there is no clickbait.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 390,
+      "total_tokens": 1435,
+      "cost": 0.001042,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001042,
+        "upstream_inference_prompt_cost": 0.000418,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

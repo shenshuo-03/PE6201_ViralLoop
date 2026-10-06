@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101567-I7uy8x3awWgH6pjJaETg",
+  "object": "chat.completion",
+  "created": 1791101567,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and accurately cites all provided facts (F1, F2, F3). It maintains a restrained, technical tone appropriate for the audience and invites focused discussion on initial debugging steps without making unsupported claims or removing caveats. The title matches the content and is concise and restrained. The post is well-structured and readable, providing actionable value by prompting logical diagnostic approaches. No clickbait elements are present.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also faithfully preserves the hypothetical scenario and cites all facts correctly. It uses clear, technical language and explicitly states the scenario is not based on real measurements or personal experience. The title accurately reflects the content and is concise. The post invites readers to consider logical first steps in debugging without unsupported claims or removing necessary caveats. It is well-written and relevant to the target audience, with no clickbait.\"\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1153,
+    "completion_tokens": 384,
+    "total_tokens": 1537,
+    "cost": 0.0010756,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010756,
+      "upstream_inference_prompt_cost": 0.0004612,
+      "upstream_inference_completions_cost": 0.0006144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791113045-3L6LXqLW6kpfoCOGp3Il",
+  "object": "chat.completion",
+  "created": 1791113045,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"task_zh\": \"寻找一种执行反向关键词搜索的方法，该方法能够识别较大文本输入中的特定关键词，同时考虑语义相似性和顺序保留。\",\n  \"A\": {\n    \"title\": \"使用 Weaviate 或 Milvus 查找带有顺序保留的特定 1-2 词关键词？\",\n    \"body\": \"我正在研究一个用例，目标是匹配非常短的关键词——例如“hugging face”或“meta”——并根据用户输入从数据库中查找语义上相近的句子。挑战在于，像 Weaviate 和 Milvus 这样的向量数据库最初并非为反向关键词搜索或在这些短语中保留词序而设计。\\n\\n一位来自 2025 年中期 Reddit 用户报告说尝试了这些数据库来实现此目的，但没有详细说明确切的配置或分享明确的成功指标。考虑到向量相似性更侧重于语义接近性而非精确的标记顺序，我想知道这里是否有人有实际经验或策略，可以在使用 Weaviate 或 Milvus 的情况下可靠地检测这些 1-2 词关键词，同时保持它们的顺序？\\n\\n是否存在已知的变通方法或混合方法可以提高此上下文中的关键词检测保真度？\",\n    \"fact_refs\": [\n      \"F1\",\n      \"F2\"\n    ]\n  },\n  \"B\": {\n    \"title\": \"如何处理向量数据库中的多词关键词匹配以进行反向搜索？\",\n    \"body\": \"我正在探索一种反向关键词搜索场景，目标是在较大的用户输入中查找特定的 1-2 词关键词（例如“hugging face”或“meta”），同时从数据库中检索语义上最接近的句子。一篇来自 2025 年的 Reddit 帖子讨论了使用 Weaviate 和 Milvus 向量数据库进行的尝试，但强调向量数据库并非为这种反向关键词搜索而设计。作者指出，在使用简单的 AND/OR 逻辑进行多词关键词匹配时，在保留关键词顺序和避免误报方面存在挑战——例如，“hugging face”可能会错误地匹配到短语“face hugging aliens”或“hugging people”。考虑到这些限制以及数据库大小或配置缺乏细节，本地 LLM 爱好者可以考虑哪些实际策略或混合方法来更好地处理此上下文中的顺序保留和准确的多词关键词检测？是否存在将语义相似性与向量数据库中的精确短语匹配相结合的已知技术，还是应该探索替代的索引方法？\",\n    \"fact_refs\": [\n      \"F1\",\n      \"F2\",\n      \"F3\",\n      \"F4\",\n      \"F5\",\n      \"F6\"\n    ]\n  }\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 618,
+    "completion_tokens": 592,
+    "total_tokens": 1210,
+    "cost": 0.0002986,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002986,
+      "upstream_inference_prompt_cost": 6.18e-05,
+      "upstream_inference_completions_cost": 0.0002368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

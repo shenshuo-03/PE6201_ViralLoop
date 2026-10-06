@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.5,
+        "reason": "Detailed release post with technical depth and multiple features; likely to attract interest from niche audience but moderate general appeal."
+      },
+      {
+        "index": 1,
+        "probability": 0.3,
+        "reason": "Research survey post with limited direct engagement potential; useful but less likely to be highly upvoted."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Basic conceptual question from a new user; may get some engagement but less likely to be top-scoring."
+      },
+      {
+        "index": 3,
+        "probability": 0.7,
+        "reason": "Comprehensive benchmark summary with broad appeal to technical audience; likely to be highly upvoted."
+      },
+      {
+        "index": 4,
+        "probability": 0.4,
+        "reason": "Community resource announcement with moderate engagement potential; niche but useful."
+      },
+      {
+        "index": 5,
+        "probability": 0.6,
+        "reason": "Personal experience and practical advice on local LLMs; combines technical and opinion content, likely to attract good engagement."
+      },
+      {
+        "index": 6,
+        "probability": 0.45,
+        "reason": "Detailed hardware cooling experience; useful for specific audience but limited broad appeal."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Question about UPS necessity for high-end build; practical but less likely to be highly upvoted."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:02:02.608085+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:56",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b3db1c2b3f7679557d17493891d38ff376490fa7038644ea44b7fbccc37897f6",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 7394,
+    "output_tokens": 270,
+    "actual_cost_usd": 0.0033896,
+    "token_price_estimate_usd": 0.0033896,
+    "reserved_upper_usd": 0.013169999999999998,
+    "budget_charge_usd": 0.0033896,
+    "latency_seconds": 2.5246124000113923,
+    "retry": 0,
+    "request_id": "gen-1791100920-3FMk8fdrQuR4cbJQ4Qew"
+  },
+  "raw_response": {
+    "id": "gen-1791100920-3FMk8fdrQuR4cbJQ4Qew",
+    "object": "chat.completion",
+    "created": 1791100920,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.5,\"reason\":\"Detailed release post with technical depth and multiple features; likely to attract interest from niche audience but moderate general appeal.\"},{\"index\":1,\"probability\":0.3,\"reason\":\"Research survey post with limited direct engagement potential; useful but less likely to be highly upvoted.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Basic conceptual question from a new user; may get some engagement but less likely to be top-scoring.\"},{\"index\":3,\"probability\":0.7,\"reason\":\"Comprehensive benchmark summary with broad appeal to technical audience; likely to be highly upvoted.\"},{\"index\":4,\"probability\":0.4,\"reason\":\"Community resource announcement with moderate engagement potential; niche but useful.\"},{\"index\":5,\"probability\":0.6,\"reason\":\"Personal experience and practical advice on local LLMs; combines technical and opinion content, likely to attract good engagement.\"},{\"index\":6,\"probability\":0.45,\"reason\":\"Detailed hardware cooling experience; useful for specific audience but limited broad appeal.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Question about UPS necessity for high-end build; practical but less likely to be highly upvoted.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 7394,
+      "completion_tokens": 270,
+      "total_tokens": 7664,
+      "cost": 0.0033896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0033896,
+        "upstream_inference_prompt_cost": 0.0029576,
+        "upstream_inference_completions_cost": 0.000432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

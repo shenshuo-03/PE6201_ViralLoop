@@ -1,0 +1,15 @@
+{
+  "brief_id": "E06",
+  "id": "1l0843f",
+  "phase": "dev",
+  "content_archetype": "C",
+  "source_group_id": "996",
+  "original_content_type": "Discussion / Opinion",
+  "source_date": "2025-05-31",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1l0843f/the_quest_for_100k_llamacpp_setting_for_a_noobie/",
+  "source_hash": "6957090887c90396b43f89f6f73330e17870318d446fab4544ae70f6b93c3fd8",
+  "historical_split": "train",
+  "rule_classification": "PENDING_MANUAL_SOURCE_SHAPE_CHECK",
+  "source_title": "The Quest for 100k - LLAMA.CPP Setting for a Noobie",
+  "source_text": "SO there was a post about eeking 100k context out of gemma3 27b on a 3090 and I really wanted to try it... but never setup llama.cpp before and being a glutton for punishment decided I wanted a GUI too in the form of open-webui. I think I got most of it working with an assortment of help from various AI's but the post suggested about 35t/s and I'm only managing about 10t/s. This is my startup file for llama.cpp, mostly settings copied from the other post [https://www.reddit.com/r/LocalLLaMA/comments/1kzcalh/llamaserver\\_is\\_cooking\\_gemma3\\_27b\\_100k\\_context/](https://www.reddit.com/r/LocalLLaMA/comments/1kzcalh/llamaserver_is_cooking_gemma3_27b_100k_context/) \n\n\"@echo off\"  \nset SERVER\\_PATH=X:\\\\llama-cpp\\\\llama-server.exe  \nset MODEL\\_PATH=X:\\\\llama-cpp\\\\models\\\\gemma-3-27b-it-q4\\_0.gguf  \nset MMPROJ\\_PATH=X:\\\\llama-cpp\\\\models\\\\mmproj-model-f16-27B.gguf\n\n\"%SERVER\\_PATH%\" \\^  \n  \\--host [127.0.0.1](http://127.0.0.1) \\--port 8080 \\^  \n  \\--model \"%MODEL\\_PATH%\" \\^  \n  \\--ctx-size 102400 \\^  \n  \\--cache-type-k q8\\_0 --cache-type-v q8\\_0 \\^  \n  \\--flash-attn \\^  \n  \\-ngl 999 -ngld 999 \\^  \n  \\--no-mmap \\^  \n  \\--mmproj \"%MMPROJ\\_PATH%\" \\^  \n  \\--temp 1.0 \\^  \n  \\--repeat-penalty 1.0 \\^  \n  \\--min-p 0.01 \\^  \n  \\--top-k 64 \\^  \n  \\--top-p 0.95\n\nAnything obvious jump out to you wise folks that already have this working well or any ideas for what I could try? 100k at 35t/s sounds magical so would love to get there is I could. \n\n"
+}

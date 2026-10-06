@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791101542-CFvqSWccgk4TW3DW7Tdz",
+  "object": "chat.completion",
+  "created": 1791101542,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\": [\n  {\n    \"title\": \"Hypothetical Prompt Regression Test Design: Fixed Prompts & Controlled Comparison\",\n    \"body\": \"I'm outlining a hypothetical approach for a prompt regression test suite. The core idea is to evaluate prompt changes systematically. We'd use a fixed set of 12 test prompts [F1], designed to include both answerable questions and cases with insufficient information [F3]. The proposed method involves comparing an 'old' prompt against a 'new' one using the exact same model settings and parameters on identical hardware [F2]. This controlled comparison aims to isolate the impact of prompt modifications. It is crucial to understand that this is a conceptual design; no actual results or improvements have been measured or are available at this stage [F4]. The goal is to discuss the methodology itself. What are your thoughts on this structured approach to prompt testing?\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Revise title for clarity and conciseness. Refine the opening to clearly state the hypothetical nature and the core proposal. Ensure all facts are referenced and limitations are explicit.\"\n  },\n  {\n    \"title\": \"Designing a Hypothetical Prompt Regression Test Suite: Methodology Discussion\",\n    \"body\": \"This post details a hypothetical design for a prompt regression test. The objective is to establish a repeatable method for assessing prompt effectiveness. We propose using a fixed suite of 12 test prompts [F1], encompassing both scenarios requiring specific answers and those with insufficient data [F3]. The intended evaluation involves comparing the outputs of an older prompt version against a newer one, ensuring identical model configurations and parameters are used throughout the test on the same setup [F2]. This controlled comparison is key to isolating the effects of prompt changes. Please note, this is a purely hypothetical experimental brief; no performance data or measured results currently exist [F4]. We are seeking community input on the proposed testing framework.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Adjust title to emphasize the 'design' aspect and 'discussion'. Modify the opening to further clarify the hypothetical status and the intent behind the post. Ensure specificity regarding the comparison method.\"\n  },\n  {\n    \"title\": \"Hypothetical Prompt Regression Testing Framework: Input and Comparison Strategy\",\n    \"body\": \"I'm proposing a hypothetical framework for designing prompt regression tests for local LLMs. The methodology centers on a controlled comparison using a predefined set of 12 test prompts [F1]. This set is designed to include questions with clear answers and others where the provided information is insufficient [F3]. The core of the test would be to run both an existing prompt and a modified version against the same model, under identical settings and parameters [F2]. This controlled environment is intended to allow for a direct comparison of prompt performance. It is vital to reiterate that this is a hypothetical experimental design; no actual measurements or results are available at this time [F4]. The aim is to gather feedback on the proposed testing structure.\",\n    \"fact_refs\": [\"F1\", \"F2\", \"F3\", \"F4\"],\n    \"plan\": \"Rephrase the title to highlight the 'framework' and 'strategy'. Update the opening sentence to clearly state the hypothetical nature and the focus on the framework. Ensure conciseness and maintain the technical tone.\"\n  }\n]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2352,
+    "completion_tokens": 735,
+    "total_tokens": 3087,
+    "cost": 0.0005292,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005292,
+      "upstream_inference_prompt_cost": 0.0002352,
+      "upstream_inference_completions_cost": 0.000294
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

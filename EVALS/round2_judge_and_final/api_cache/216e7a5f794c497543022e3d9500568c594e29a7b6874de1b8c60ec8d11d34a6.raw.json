@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112377-RrHcmaDMSd2hnp950Efa",
+  "object": "chat.completion",
+  "created": 1791112377,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"The draft accurately reflects the source's question about training a local LLM on a specific document (2018 IBC) for specialized analysis and compares it to cloud models. It correctly notes the source author's layperson status and lack of personal testing. The draft asks relevant community questions about feasibility, challenges with inputs like floor plans, and comparison to prompt engineering on cloud models, fitting the community and providing good information value. Specificity is good by mentioning the IBC and floor plans. Clarity and usefulness are high. Credibility is good as it relies on the source and asks for community experience. Clickbait is minimal.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"This draft also accurately captures the essence of the source, focusing on the user's goal of training a local LLM on the 2018 IBC for building code analysis and comparing it to cloud models. It correctly identifies the source author as a non-expert without personal test results. The draft poses pertinent questions to the community regarding practical considerations, limitations of single-document training, and the effectiveness of prompt engineering on cloud models for this specific task. This leads to good community fit, specificity (mentioning IBC and floor plans), information value, clarity, usefulness, and credibility. Clickbait is minimal.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2604,
+    "completion_tokens": 468,
+    "total_tokens": 3072,
+    "cost": 0.0004476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004476,
+      "upstream_inference_prompt_cost": 0.0002604,
+      "upstream_inference_completions_cost": 0.0001872
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

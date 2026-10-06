@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical troubleshooting post with specific hardware/software details; niche but relevant audience."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "Common question about cost justification; likely average engagement."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Addresses a common scaling problem with practical solutions and community engagement."
+      },
+      {
+        "index": 3,
+        "probability": 0.5,
+        "reason": "Announcement of a significant model merge with links; likely to attract interest and discussion."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Question about model support; somewhat niche and speculative."
+      },
+      {
+        "index": 5,
+        "probability": 0.6,
+        "reason": "Detailed tutorial with recent research and practical examples; high value content."
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Personal project inquiry combining hardware and AI; may attract helpful responses."
+      },
+      {
+        "index": 7,
+        "probability": 0.45,
+        "reason": "Discussion of custom GPT-1 model with examples; appeals to enthusiasts and researchers."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:29.185578+00:00",
+    "tag": "selection_dev:classifier:E5a_zero_shot:0",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e51ba6ee82dbb91cb64abb6590b1024872da83173cb79803e4586f97e1eb6297",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2298,
+    "output_tokens": 323,
+    "actual_cost_usd": 0.001436,
+    "token_price_estimate_usd": 0.001436,
+    "reserved_upper_usd": 0.0061264,
+    "budget_charge_usd": 0.001436,
+    "latency_seconds": 2.4892704999947455,
+    "retry": 0,
+    "request_id": "gen-1791100766-lotZGnP3fGV7yVQFrjH5"
+  },
+  "raw_response": {
+    "id": "gen-1791100766-lotZGnP3fGV7yVQFrjH5",
+    "object": "chat.completion",
+    "created": 1791100766,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Technical troubleshooting post with specific hardware/software details; niche but relevant audience.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.25,\n      \"reason\": \"Common question about cost justification; likely average engagement.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"Addresses a common scaling problem with practical solutions and community engagement.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.5,\n      \"reason\": \"Announcement of a significant model merge with links; likely to attract interest and discussion.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.3,\n      \"reason\": \"Question about model support; somewhat niche and speculative.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.6,\n      \"reason\": \"Detailed tutorial with recent research and practical examples; high value content.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.4,\n      \"reason\": \"Personal project inquiry combining hardware and AI; may attract helpful responses.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.45,\n      \"reason\": \"Discussion of custom GPT-1 model with examples; appeals to enthusiasts and researchers.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2298,
+      "completion_tokens": 323,
+      "total_tokens": 2621,
+      "cost": 0.001436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001436,
+        "upstream_inference_prompt_cost": 0.0009192,
+        "upstream_inference_completions_cost": 0.0005168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

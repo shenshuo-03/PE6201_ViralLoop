@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791121682-SkKq7DOqUx9jc6RAanLa",
+  "object": "chat.completion",
+  "created": 1791121682,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Set up a fully local AI coding assistant in VS Code using Continue and MCP integration\",\"body\":\"For developers interested in a local AI coding assistant without relying on remote APIs, there is a useful archived resource outlining how to configure VS Code with the Continue extension and MCP integration. This setup allows you to serve a local language model through an OpenAI-compatible server like Llama.cpp or LmStudio, enabling a coding copilot experience entirely on your machine. To connect Continue to your local Ollama model, you need to create a `.continue/models/llama-max.yaml` configuration file in your project. Additionally, tools such as the Playwright browser automation can be integrated by adding a `.continue/mcpServers/playwright-mcp.yaml` file. While the tutorial assumes some technical background and does not guarantee specific performance, it provides a step-by-step guide to get started. The full tutorial is hosted on Hugging Face and can be found here: https://huggingface.co/learn/mcp-course/unit2/continue-client. This approach offers a promising route for developers seeking to maintain control over their coding copilot environment locally.\",\"fact_refs\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1598,
+    "completion_tokens": 257,
+    "total_tokens": 1855,
+    "cost": 0.0010504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010504,
+      "upstream_inference_prompt_cost": 0.0006392,
+      "upstream_inference_completions_cost": 0.0004112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

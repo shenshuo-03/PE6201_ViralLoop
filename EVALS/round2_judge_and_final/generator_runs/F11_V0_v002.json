@@ -1,0 +1,174 @@
+{
+  "at": "2026-10-04T11:17:54.011453+00:00",
+  "loop_version": "v002",
+  "brief_id": "F11",
+  "phase": "final",
+  "variant": "V0",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Observations on FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview vs DeepSeek-R1-Distill-Qwen-32B for Task Accuracy",
+        "body": "A recent post on r/LocalLLaMA shared user tests comparing a merged model, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, against DeepSeek-R1-Distill-Qwen-32B. The merged model, which combines DeepSeekR1, QwQ, and SkyT1 32B models, reportedly solved a file-packing problem with four correct answers, something the user found notable. It also correctly calculated the number of days between December 12, 1971, and April 18, 2024, as 19,121 days, whereas DeepSeek-R1-Distill-Qwen-32B gave an incorrect 19,486. For a river crossing riddle, the merged model provided a single-trip solution, while the other model fell into an infinite loop. The user’s setup involved ollama with IQ4_XS quantization and a 32k context window using Q8_0 KV Cache. Given these observations, how consistent might merged models like FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview be across diverse tasks? Are there known trade-offs in merging that could explain such improvements or failures? It’d be useful to hear if others have tested similar merges and what their experience has been regarding stability and accuracy.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": false,
+        "unsupported_claims": [
+          "An archived 2025 account must not be described as recent in this 2026 review"
+        ],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately summarizes the source, adheres to the persona, and poses relevant community questions about merged models. It correctly attributes observations to the original poster and avoids making definitive claims about model superiority. Specificity is good, referencing the models, tasks, and setup. Information value is high due to the well-structured summary and insightful questions.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": false,
+        "quality_pass": false,
+        "body_words": 151,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Insights and Questions on Merged LLM Performance from a 2025 User Report",
+        "body": "A user shared a comparison between a merged LLM, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, and DeepSeek-R1-Distill-Qwen-32B on r/LocalLLaMA. The merged model reportedly excelled at a file-packing problem and correctly computed a date difference of 19,121 days, while the other model gave a wrong result. Additionally, the merged model solved a river crossing riddle with a single crossing, but DeepSeek-R1-Distill-Qwen-32B got stuck in an infinite loop. The test environment used ollama with IQ4_XS quantization and a 32k context window with Q8_0 KV Cache. Since the source is a single user’s report from early 2025, it raises questions about how merging models affects reasoning and stability. Does merging generally improve logical consistency, or might it introduce unexpected behaviors? What are the best practices to evaluate such merges beyond anecdotal tests? Sharing experiences or benchmarks on merged models could help clarify their practical benefits and limitations.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately reflects the source material and maintains the persona. It effectively frames the user's observations as a basis for broader community discussion on merged models, their consistency, and evaluation methods. Specificity is maintained by referencing the models, tasks, and setup. The information value is high, providing a concise summary and prompting further community engagement.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 139,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Insights and Questions on Merged LLM Performance from a 2025 User Report",
+      "body": "A user shared a comparison between a merged LLM, FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview, and DeepSeek-R1-Distill-Qwen-32B on r/LocalLLaMA. The merged model reportedly excelled at a file-packing problem and correctly computed a date difference of 19,121 days, while the other model gave a wrong result. Additionally, the merged model solved a river crossing riddle with a single crossing, but DeepSeek-R1-Distill-Qwen-32B got stuck in an infinite loop. The test environment used ollama with IQ4_XS quantization and a 32k context window with Q8_0 KV Cache. Since the source is a single user’s report from early 2025, it raises questions about how merging models affects reasoning and stability. Does merging generally improve logical consistency, or might it introduce unexpected behaviors? What are the best practices to evaluate such merges beyond anecdotal tests? Sharing experiences or benchmarks on merged models could help clarify their practical benefits and limitations.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7"
+      ]
+    },
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "This draft also accurately reflects the source material and maintains the persona. It effectively frames the user's observations as a basis for broader community discussion on merged models, their consistency, and evaluation methods. Specificity is maintained by referencing the models, tasks, and setup. The information value is high, providing a concise summary and prompting further community engagement.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 139,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0411",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:51.915206+00:00",
+    "tag": "V0:F11",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "47600e8cb414b03a0ac8f77ccb904fda08ec81a65b41fe851e15f775c412c15d",
+    "actual_cost_usd": 0.0016736,
+    "budget_charge_usd": 0.0016736,
+    "reserved_upper_usd": 0.0060696,
+    "input_tokens": 1700,
+    "output_tokens": 621,
+    "latency_seconds": 4.357243999984348,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112667-QdkZdv07azGeNeuZCNfj",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0412",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:17:53.987342+00:00",
+    "tag": "quality:F11:V0",
+    "phase": "final",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "367ac931dccca3f0d08bd0bf9bc409ec395899a0936a19795b365c33c05f5456",
+    "actual_cost_usd": 0.0006172,
+    "budget_charge_usd": 0.0006172,
+    "reserved_upper_usd": 0.0021501,
+    "input_tokens": 4472,
+    "output_tokens": 425,
+    "latency_seconds": 2.033835599984741,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112671-3fuhLT8nH4ECMe8JIcoC",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [],
+  "external_judge_used": false
+}

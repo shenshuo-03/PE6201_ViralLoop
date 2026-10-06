@@ -174,25 +174,6 @@
       }
     ]
   },
-  "translation": {
-    "task_zh": {
-      "goal": "了解为什么 llama.cpp 在长上下文任务中的性能明显低于 EXL2，并探索在 llama.cpp 中可能的配置选项以提升其性能。",
-      "decision": "评估是继续排查 llama.cpp 的问题，还是切换到 EXL2 以处理长上下文任务。",
-      "desired_help": "希望获得关于 llama.cpp 的具体设置或技巧指导，以提升其在长上下文下的性能，可能避免层卸载，或确认 EXL2 是否是该特定用例的更优选择。",
-      "source_date": "2025-01-16",
-      "scenario_note": "受控假设用户场景；历史资料不代表本人亲测"
-    },
-    "drafts": [
-      {
-        "title": "llama.cpp 与 ExLlamav2 在 Phi-3-medium 50k 上下文下的性能差距：寻求 llama.cpp 配置建议",
-        "body": "我正在尝试 Langchain 的 RAPTOR 示例，修改为使用 Langchain 的 LlamaCpp，运行 Phi-3-medium-128k-instruct Q4_K_M 模型，使用 50k 上下文窗口（F1，F2）。在我的环境中，llama.cpp 需要卸载 41 层中的 5 层，完成任务大约需要 20 小时（F3）。相比之下，ExLlamav2 在相同任务下使用 19GB VRAM，50k 上下文仅需 20 分钟完成（F4，F5）。鉴于这一显著的性能差异，我正在评估是继续排查 llama.cpp 还是切换到 ExLlamav2 以处理长上下文任务。\n\n我的主要问题是：是否有 llama.cpp 的具体设置或 Langchain 的 LlamaCpp 接口中的技巧，可以减少或避免层卸载并改善运行时间？还是说在如此长的上下文下，llama.cpp 的这部分开销是固有的？任何关于调优的见解，或确认 ExLlamav2 更适合此用例的建议，都将不胜感激（F6）。谢谢！"
-      },
-      {
-        "title": "寻求关于使用 Phi-3-medium 50k 上下文时优化 llama.cpp 与 ExLlamav2 性能差距的建议",
-        "body": "我正在尝试 Langchain 的 RAPTOR 示例，修改为使用 Langchain 的 LlamaCpp，运行 Phi-3-medium-128k-instruct 模型，使用 50k 上下文窗口（Q4_K_M）。在我的 3090 GPU 环境中，llama.cpp 需要卸载 41 层中的 5 层，完成任务大约需要 20 小时。相比之下，使用 Langchain 的 ExLlamav2 在相同模型和上下文长度下，运行时间约为 20 分钟，使用约 19GB VRAM。鉴于这一显著的性能差异，我想了解是否有 llama.cpp 的具体配置选项或技巧，可以提升其长上下文处理能力，并可能避免层卸载。有人在 llama.cpp（通过 Langchain 的 LlamaCpp 接口）中找到过能缩小这一差距的设置吗？还是我应该认为 ExLlamav2 是该特定用例的更优选择？任何关于调优 llama.cpp 以适应如此长上下文的见解都将非常感谢。"
-      }
-    ]
-  },
   "numeric_translation_checks": [
     {
       "english": [
@@ -282,5 +263,6 @@
       "Any personal history or claims about ownership or expertise."
     ]
   },
-  "source_hash": "5b1631712aa7110f8105acd63a1821f920b5ab49bc540e199a96d931f0980457"
+  "source_hash": "5b1631712aa7110f8105acd63a1821f920b5ab49bc540e199a96d931f0980457",
+  "translation_note": "The human reviewer was shown a Chinese translation of this material during the run. This submission package is English-only, so the Chinese rendering has been replaced by the English source, which is the authoritative record."
 }

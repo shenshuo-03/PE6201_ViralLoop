@@ -1,0 +1,99 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Hypothetical Checklist for Offline Local LLM Testing: Generation & Network Isolation",
+        "body": "This post outlines a hypothetical framework for testing local LLMs offline. The scenario permits downloading models beforehand. The core of this hypothetical test involves two checks: first, verifying that the model can generate text without any network connection (F1). This implies ensuring all necessary model files and runtime components are locally available. Second, the test must include a mechanism to actively confirm that no network requests are initiated by the model or its environment during the offline period (F2). It is crucial to reiterate that this is a hypothetical experimental brief; no actual offline tests have been performed (F3). The objective is to define a procedure for assessing offline functionality and network isolation. We welcome discussion on the completeness and practicality of this proposed hypothetical testing methodology.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Outline a hypothetical offline LLM test. Detail the two main checks: generation and network request monitoring. Explicitly state the hypothetical nature and lack of actual testing. Invite discussion on the proposed methodology."
+      },
+      {
+        "title": "Designing a Hypothetical Offline Test for Local Models: Ensuring True Disconnection",
+        "body": "We are considering a hypothetical scenario for testing local LLMs offline. The premise is that models can be downloaded while still connected to a network, prior to the offline test phase (F1). The proposed test would need to verify two key aspects. The first is the model's ability to perform inference and generate text content solely using local resources, without any external network access. The second, and equally important, is to confirm the complete absence of network activity. This would involve actively monitoring and logging any attempted network requests to ensure the system is genuinely isolated (F2). It must be stressed that this is a hypothetical experimental design; no actual offline tests have been conducted to validate these steps (F3). This is intended as a discussion starter on establishing a robust, albeit theoretical, protocol for offline LLM evaluation.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Propose a hypothetical offline LLM test design. Cover pre-downloading models and the two critical checks: local generation and network request verification. Emphasize the hypothetical nature and lack of real-world testing. Seek community input on the design."
+      },
+      {
+        "title": "Hypothetical Framework: Verifying Offline LLM Operation and Network Egress",
+        "body": "This post presents a hypothetical approach for evaluating local language models in a strictly offline configuration. The scenario assumes that model files can be acquired while the system has network access, before transitioning to an offline state (F1). The proposed validation process focuses on two essential components. Firstly, it must confirm that the LLM can successfully generate outputs using only locally stored data and computational resources. Secondly, a critical part of the hypothetical test involves actively detecting and preventing any network communication originating from the model or its supporting software (F2). It is vital to understand that this is purely a hypothetical experimental brief; no actual offline testing has been performed to date (F3). The aim is to stimulate a conversation about the necessary steps and considerations for such an offline validation process, acknowledging its theoretical nature.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "plan": "Detail a hypothetical procedure for testing offline local LLMs. Include the ability to download models beforehand and the two main verification points: text generation and network request monitoring. Clearly state that this is a hypothetical scenario without actual test data. Encourage focused discussion on the proposed steps."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:11:18.400388+00:00",
+    "tag": "final_test:T05:O1_resample",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "234e89c4dfc4b0cdea0f43ba74d8233599109e76e1b47a67d559126c515d75f8",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1925,
+    "output_tokens": 826,
+    "actual_cost_usd": 0.0005229,
+    "token_price_estimate_usd": 0.0005229,
+    "reserved_upper_usd": 0.0022873999999999998,
+    "budget_charge_usd": 0.0005229,
+    "latency_seconds": 3.852512800003751,
+    "retry": 0,
+    "request_id": "gen-1791101474-GU31JF67TWXEC4tfdEBV"
+  },
+  "raw_response": {
+    "id": "gen-1791101474-GU31JF67TWXEC4tfdEBV",
+    "object": "chat.completion",
+    "created": 1791101474,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Hypothetical Checklist for Offline Local LLM Testing: Generation & Network Isolation\",\n      \"body\": \"This post outlines a hypothetical framework for testing local LLMs offline. The scenario permits downloading models beforehand. The core of this hypothetical test involves two checks: first, verifying that the model can generate text without any network connection (F1). This implies ensuring all necessary model files and runtime components are locally available. Second, the test must include a mechanism to actively confirm that no network requests are initiated by the model or its environment during the offline period (F2). It is crucial to reiterate that this is a hypothetical experimental brief; no actual offline tests have been performed (F3). The objective is to define a procedure for assessing offline functionality and network isolation. We welcome discussion on the completeness and practicality of this proposed hypothetical testing methodology.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"Outline a hypothetical offline LLM test. Detail the two main checks: generation and network request monitoring. Explicitly state the hypothetical nature and lack of actual testing. Invite discussion on the proposed methodology.\"\n    },\n    {\n      \"title\": \"Designing a Hypothetical Offline Test for Local Models: Ensuring True Disconnection\",\n      \"body\": \"We are considering a hypothetical scenario for testing local LLMs offline. The premise is that models can be downloaded while still connected to a network, prior to the offline test phase (F1). The proposed test would need to verify two key aspects. The first is the model's ability to perform inference and generate text content solely using local resources, without any external network access. The second, and equally important, is to confirm the complete absence of network activity. This would involve actively monitoring and logging any attempted network requests to ensure the system is genuinely isolated (F2). It must be stressed that this is a hypothetical experimental design; no actual offline tests have been conducted to validate these steps (F3). This is intended as a discussion starter on establishing a robust, albeit theoretical, protocol for offline LLM evaluation.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"Propose a hypothetical offline LLM test design. Cover pre-downloading models and the two critical checks: local generation and network request verification. Emphasize the hypothetical nature and lack of real-world testing. Seek community input on the design.\"\n    },\n    {\n      \"title\": \"Hypothetical Framework: Verifying Offline LLM Operation and Network Egress\",\n      \"body\": \"This post presents a hypothetical approach for evaluating local language models in a strictly offline configuration. The scenario assumes that model files can be acquired while the system has network access, before transitioning to an offline state (F1). The proposed validation process focuses on two essential components. Firstly, it must confirm that the LLM can successfully generate outputs using only locally stored data and computational resources. Secondly, a critical part of the hypothetical test involves actively detecting and preventing any network communication originating from the model or its supporting software (F2). It is vital to understand that this is purely a hypothetical experimental brief; no actual offline testing has been performed to date (F3). The aim is to stimulate a conversation about the necessary steps and considerations for such an offline validation process, acknowledging its theoretical nature.\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ],\n      \"plan\": \"Detail a hypothetical procedure for testing offline local LLMs. Include the ability to download models beforehand and the two main verification points: text generation and network request monitoring. Clearly state that this is a hypothetical scenario without actual test data. Encourage focused discussion on the proposed steps.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1925,
+      "completion_tokens": 826,
+      "total_tokens": 2751,
+      "cost": 0.0005229,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005229,
+        "upstream_inference_prompt_cost": 0.0001925,
+        "upstream_inference_completions_cost": 0.0003304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

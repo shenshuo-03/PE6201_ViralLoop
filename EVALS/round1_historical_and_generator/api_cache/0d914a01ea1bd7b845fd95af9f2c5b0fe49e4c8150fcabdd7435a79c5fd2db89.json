@@ -1,0 +1,102 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "Designing a Hypothetical Prompt Regression Test Suite for Local LLMs",
+        "body": "I'm exploring a structured approach for prompt regression testing in local LLM development. The goal is to create a consistent evaluation method. This is a hypothetical experiment design, and no actual results are available. The plan involves using a fixed set of 12 test prompts (F1) that include both questions with clear answers and scenarios where information is insufficient (F3). The core of the testing would be to compare an older prompt version against a newer one using the exact same model settings and parameters on identical hardware (F2). This controlled comparison aims to isolate the effect of prompt modifications. It's crucial to reiterate that this is a conceptual framework, and no performance improvements have been measured or are currently available (F4). I'm seeking community input on this testing methodology before any implementation. What are your thoughts on this structure for evaluating prompt changes?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Introduce the hypothetical prompt regression test design. Detail the use of a fixed prompt set and controlled comparisons. Explicitly state the absence of results. Invite discussion on the methodology."
+      },
+      {
+        "title": "Hypothetical Framework for Local LLM Prompt Regression Testing",
+        "body": "Considering a hypothetical scenario for evaluating prompt changes in local LLMs. The objective is to establish a repeatable testing process. This is purely a design concept, and no actual measurements or results exist. The proposed method utilizes a fixed set of 12 test prompts (F1), designed to cover cases with sufficient information for an answer and those lacking it (F3). The evaluation would involve running both an old and a new prompt variant against the same LLM, using identical settings and parameters (F2). This controlled comparison is intended to isolate the impact of prompt adjustments. Importantly, this is a conceptual outline, and no performance improvements or data have been collected or are available at this stage (F4). I'm interested in feedback on the design itself. Would this approach be effective for systematically testing prompt modifications?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Present the hypothetical testing framework. Describe the use of fixed prompts and controlled comparisons. Clearly state the lack of empirical data. Ask for feedback on the proposed design."
+      },
+      {
+        "title": "Designing a Hypothetical Prompt Regression Test Suite: Methodology Discussion",
+        "body": "I'm outlining a hypothetical methodology for prompt regression testing for local LLMs. The aim is to create a consistent evaluation process without relying on prior results. This is a conceptual design, and no actual performance data is available. The proposed approach uses a fixed set of 12 test prompts (F1), encompassing both answerable questions and scenarios with insufficient information (F3). The core test involves comparing an old prompt against a new one using the exact same model configuration and parameters (F2). This controlled comparison is intended to isolate the impact of prompt changes. It is critical to emphasize that this is a hypothetical framework, and no improvements have been measured or are currently available (F4). I'm looking to discuss the merits of this testing approach. Does this structured comparison method seem suitable for rigorously evaluating prompt modifications?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Introduce the hypothetical prompt regression test design. Explain the methodology involving fixed prompts and controlled comparisons. Explicitly mention the absence of results. Solicit discussion on the suitability of the approach."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:12:16.877901+00:00",
+    "tag": "final_test:T06:O1_resample",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "0d914a01ea1bd7b845fd95af9f2c5b0fe49e4c8150fcabdd7435a79c5fd2db89",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 2040,
+    "output_tokens": 830,
+    "actual_cost_usd": 0.000536,
+    "token_price_estimate_usd": 0.000536,
+    "reserved_upper_usd": 0.0023648999999999996,
+    "budget_charge_usd": 0.000536,
+    "latency_seconds": 3.204333800007589,
+    "retry": 0,
+    "request_id": "gen-1791101533-Pco5cNbrT01hjOROF4Lk"
+  },
+  "raw_response": {
+    "id": "gen-1791101533-Pco5cNbrT01hjOROF4Lk",
+    "object": "chat.completion",
+    "created": 1791101533,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"drafts\": [\n    {\n      \"title\": \"Designing a Hypothetical Prompt Regression Test Suite for Local LLMs\",\n      \"body\": \"I'm exploring a structured approach for prompt regression testing in local LLM development. The goal is to create a consistent evaluation method. This is a hypothetical experiment design, and no actual results are available. The plan involves using a fixed set of 12 test prompts (F1) that include both questions with clear answers and scenarios where information is insufficient (F3). The core of the testing would be to compare an older prompt version against a newer one using the exact same model settings and parameters on identical hardware (F2). This controlled comparison aims to isolate the effect of prompt modifications. It's crucial to reiterate that this is a conceptual framework, and no performance improvements have been measured or are currently available (F4). I'm seeking community input on this testing methodology before any implementation. What are your thoughts on this structure for evaluating prompt changes?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Introduce the hypothetical prompt regression test design. Detail the use of a fixed prompt set and controlled comparisons. Explicitly state the absence of results. Invite discussion on the methodology.\"\n    },\n    {\n      \"title\": \"Hypothetical Framework for Local LLM Prompt Regression Testing\",\n      \"body\": \"Considering a hypothetical scenario for evaluating prompt changes in local LLMs. The objective is to establish a repeatable testing process. This is purely a design concept, and no actual measurements or results exist. The proposed method utilizes a fixed set of 12 test prompts (F1), designed to cover cases with sufficient information for an answer and those lacking it (F3). The evaluation would involve running both an old and a new prompt variant against the same LLM, using identical settings and parameters (F2). This controlled comparison is intended to isolate the impact of prompt adjustments. Importantly, this is a conceptual outline, and no performance improvements or data have been collected or are available at this stage (F4). I'm interested in feedback on the design itself. Would this approach be effective for systematically testing prompt modifications?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Present the hypothetical testing framework. Describe the use of fixed prompts and controlled comparisons. Clearly state the lack of empirical data. Ask for feedback on the proposed design.\"\n    },\n    {\n      \"title\": \"Designing a Hypothetical Prompt Regression Test Suite: Methodology Discussion\",\n      \"body\": \"I'm outlining a hypothetical methodology for prompt regression testing for local LLMs. The aim is to create a consistent evaluation process without relying on prior results. This is a conceptual design, and no actual performance data is available. The proposed approach uses a fixed set of 12 test prompts (F1), encompassing both answerable questions and scenarios with insufficient information (F3). The core test involves comparing an old prompt against a new one using the exact same model configuration and parameters (F2). This controlled comparison is intended to isolate the impact of prompt changes. It is critical to emphasize that this is a hypothetical framework, and no improvements have been measured or are currently available (F4). I'm looking to discuss the merits of this testing approach. Does this structured comparison method seem suitable for rigorously evaluating prompt modifications?\",\n      \"fact_refs\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\"\n      ],\n      \"plan\": \"Introduce the hypothetical prompt regression test design. Explain the methodology involving fixed prompts and controlled comparisons. Explicitly mention the absence of results. Solicit discussion on the suitability of the approach.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2040,
+      "completion_tokens": 830,
+      "total_tokens": 2870,
+      "cost": 0.000536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000536,
+        "upstream_inference_prompt_cost": 0.000204,
+        "upstream_inference_completions_cost": 0.000332
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

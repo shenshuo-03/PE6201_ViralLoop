@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Experience post with some technical detail but somewhat confused and new user; moderate interest expected."
+      },
+      {
+        "index": 1,
+        "probability": 0.25,
+        "reason": "Tutorial/Guide with basic conversion question; likely average interest."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Tutorial/Guide showing practical usage and remote access; somewhat engaging."
+      },
+      {
+        "index": 3,
+        "probability": 0.4,
+        "reason": "Question with technical comparison and some testing results; likely above average interest."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Experience post about reserved tokens research; niche topic with moderate interest."
+      },
+      {
+        "index": 5,
+        "probability": 0.4,
+        "reason": "Question about automation in AI deployment; relevant and thought-provoking."
+      },
+      {
+        "index": 6,
+        "probability": 0.35,
+        "reason": "Technical question about vLLM internals; likely moderate interest."
+      },
+      {
+        "index": 7,
+        "probability": 0.45,
+        "reason": "Detailed question about complex AI infrastructure; likely high interest among professionals."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:59:52.407398+00:00",
+    "tag": "selection_dev:classifier:E5b_few_shot:32",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "28e010969ad826d53e35e8fbf1c5ff6067a7c7ca9fa3b1d0e70cb45365418211",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5936,
+    "output_tokens": 226,
+    "actual_cost_usd": 0.002736,
+    "token_price_estimate_usd": 0.002736,
+    "reserved_upper_usd": 0.0116056,
+    "budget_charge_usd": 0.002736,
+    "latency_seconds": 1.9806918000103906,
+    "retry": 0,
+    "request_id": "gen-1791100790-Ct1gvkaH33FdnkfITdu0"
+  },
+  "raw_response": {
+    "id": "gen-1791100790-Ct1gvkaH33FdnkfITdu0",
+    "object": "chat.completion",
+    "created": 1791100790,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Experience post with some technical detail but somewhat confused and new user; moderate interest expected.\"},{\"index\":1,\"probability\":0.25,\"reason\":\"Tutorial/Guide with basic conversion question; likely average interest.\"},{\"index\":2,\"probability\":0.35,\"reason\":\"Tutorial/Guide showing practical usage and remote access; somewhat engaging.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"Question with technical comparison and some testing results; likely above average interest.\"},{\"index\":4,\"probability\":0.3,\"reason\":\"Experience post about reserved tokens research; niche topic with moderate interest.\"},{\"index\":5,\"probability\":0.4,\"reason\":\"Question about automation in AI deployment; relevant and thought-provoking.\"},{\"index\":6,\"probability\":0.35,\"reason\":\"Technical question about vLLM internals; likely moderate interest.\"},{\"index\":7,\"probability\":0.45,\"reason\":\"Detailed question about complex AI infrastructure; likely high interest among professionals.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5936,
+      "completion_tokens": 226,
+      "total_tokens": 6162,
+      "cost": 0.002736,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002736,
+        "upstream_inference_prompt_cost": 0.0023744,
+        "upstream_inference_completions_cost": 0.0003616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

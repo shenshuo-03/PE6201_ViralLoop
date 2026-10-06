@@ -1,0 +1,161 @@
+{
+  "at": "2026-10-04T11:08:51.227229+00:00",
+  "loop_version": "v002",
+  "brief_id": "S01",
+  "phase": "tune",
+  "variant": "V2",
+  "candidates": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Can local LLMs reliably convert HTML to Markdown offline using BeautifulSoup for content extraction?",
+        "body": "A user in a 2025 Reddit thread described a project that uses local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools especially on complex, text-heavy sites. The approach involves first analyzing whether a site is text-focused or media-centric and then using BeautifulSoup to extract key content areas like titles and headings before feeding that to the model.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this method handles modern web apps with dynamic or JavaScript-heavy content. Does the BeautifulSoup-based extraction limit the quality of Markdown output when the actual main content is loaded asynchronously? Has anyone experimented with combining offline LLMs and static HTML parsing to improve Markdown accuracy on such tricky sites?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "The draft accurately reflects the source's core idea and technical approach, focusing on the use of local LLMs and BeautifulSoup for HTML-to-Markdown conversion. It correctly identifies the limitations regarding dynamic content and browser rendering, posing relevant questions to the community. The specificity is good, mentioning the tools and the problem. The community fit is strong as it directly asks for advice on a technical challenge within the scope of the subreddit.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 127,
+        "unknown_refs": []
+      }
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "How effective is offline HTML-to-Markdown conversion using local LLMs and BeautifulSoup heuristics?",
+        "body": "A 2025 post shared a script that tries to convert HTML web pages to Markdown offline using local LLMs, with a preliminary step that classifies sites as text- or media-focused. It uses BeautifulSoup to identify candidate content areas and headings before passing them to the model, aiming to outperform traditional tools on complex sites.\n\nSince this relies on static HTML analysis without browser rendering, it seems limited on sites that load content dynamically or emphasize media. For those interested in offline workflows, is this approach practical for reliably extracting main text content? How do others handle the challenge of sites where the HTML source alone doesn’t reflect the fully rendered content?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "speaker_pass": true,
+        "copy_pass": true,
+        "essential_caveats_pass": true,
+        "title_body_pass": true,
+        "community_fit": 4,
+        "specificity": 4,
+        "information_value": 4,
+        "clarity": 4,
+        "usefulness": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reason": "This draft also accurately summarizes the source's project, highlighting the offline LLM approach and the use of BeautifulSoup for initial content extraction. It correctly points out the limitations related to dynamic content and the lack of browser rendering, posing pertinent questions about the practicality and alternative solutions for such scenarios. The specificity is good, and the community fit is strong as it seeks practical advice on a technical challenge relevant to the subreddit's focus.",
+        "model_copy_pass": true,
+        "copy_spans": [],
+        "hard_pass": true,
+        "quality_pass": true,
+        "body_words": 111,
+        "unknown_refs": []
+      }
+    }
+  ],
+  "selected": {
+    "index": 0,
+    "draft": {
+      "title": "Can local LLMs reliably convert HTML to Markdown offline using BeautifulSoup for content extraction?",
+      "body": "A user in a 2025 Reddit thread described a project that uses local LLMs running fully offline to convert HTML pages into high-quality Markdown, aiming to beat traditional tools especially on complex, text-heavy sites. The approach involves first analyzing whether a site is text-focused or media-centric and then using BeautifulSoup to extract key content areas like titles and headings before feeding that to the model.\n\nGiven the reliance on static HTML parsing without browser rendering, I wonder how well this method handles modern web apps with dynamic or JavaScript-heavy content. Does the BeautifulSoup-based extraction limit the quality of Markdown output when the actual main content is loaded asynchronously? Has anyone experimented with combining offline LLMs and static HTML parsing to improve Markdown accuracy on such tricky sites?",
+      "fact_refs": [
+        "F1",
+        "F2"
+      ]
+    },
+    "quality": {
+      "index": 0,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "speaker_pass": true,
+      "copy_pass": true,
+      "essential_caveats_pass": true,
+      "title_body_pass": true,
+      "community_fit": 4,
+      "specificity": 4,
+      "information_value": 4,
+      "clarity": 4,
+      "usefulness": 4,
+      "credibility": 4,
+      "clickbait": 1,
+      "reason": "The draft accurately reflects the source's core idea and technical approach, focusing on the use of local LLMs and BeautifulSoup for HTML-to-Markdown conversion. It correctly identifies the limitations regarding dynamic content and browser rendering, posing relevant questions to the community. The specificity is good, mentioning the tools and the problem. The community fit is strong as it directly asks for advice on a technical challenge within the scope of the subreddit.",
+      "model_copy_pass": true,
+      "copy_spans": [],
+      "hard_pass": true,
+      "quality_pass": true,
+      "body_words": 127,
+      "unknown_refs": []
+    }
+  },
+  "selection_path": [
+    {
+      "result": "not_judged",
+      "reason": "Internal evaluator failed admission; first qualified candidate retained deterministically"
+    }
+  ],
+  "generation_usage": {
+    "run_id": "v002-r0259",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:49.160680+00:00",
+    "tag": "V2:S01",
+    "phase": "tune",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d653912e10ae1ffe1987b017c80ead7122d06471543e45f3a30c3a7a13b27d6d",
+    "actual_cost_usd": 0.0010948,
+    "budget_charge_usd": 0.0010948,
+    "reserved_upper_usd": 0.0059592,
+    "input_tokens": 1297,
+    "output_tokens": 360,
+    "latency_seconds": 4.95760560000781,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112124-qBVgdr1CgD9JVj25nd8z",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "quality_usage": {
+    "run_id": "v002-r0260",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:08:51.202165+00:00",
+    "tag": "quality:S01:V2",
+    "phase": "tune",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "9643c8f9320716f35c0e5a8209d6593b0966ffb0871dc71b670ddf5442ac1a0a",
+    "actual_cost_usd": 0.0005309,
+    "budget_charge_usd": 0.0005309,
+    "reserved_upper_usd": 0.0021405,
+    "input_tokens": 3473,
+    "output_tokens": 459,
+    "latency_seconds": 2.0134092000080273,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112129-cNg6OiBKsqOVeibogggU",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  },
+  "retrieved_ids": [
+    "1i0hqic",
+    "1k9qg8o",
+    "1iijsoj"
+  ],
+  "external_judge_used": false
+}

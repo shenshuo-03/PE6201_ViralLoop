@@ -1,0 +1,68 @@
+{
+ "why": "Declared packaging changes to the frozen round code. See CODE/_packaged_code.py.",
+ "how_to_verify": "python CODE/verify_packaged_code.py",
+ "rule": "a packaged module matches the freeze when its hash equals the frozen hash, or when it is declared here AND its preserved original still hashes to the frozen value; anything else is an undeclared change",
+ "rounds": {
+  "round2_v002": {
+   "code_dir": "CODE/round2_v002",
+   "frozen_code_dir": "CODE/_frozen_code/round2_v002",
+   "freeze_file": "CODE/round2_v002/configs/generator_freeze_v002.json",
+   "freeze_key": "code_hashes",
+   "files": {
+    "preparation_checks.py": {
+     "frozen_sha256": "238683805e26dae7de9f6701be3a468df55389048f30be6a8664222c9d7f1301",
+     "packaged_sha256": "f107ccecb8283bfaf20847cf3f1966e2af22cf32aef8a2105238ec7c1ce55bbb",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    },
+    "preview.py": {
+     "frozen_sha256": "08193c71347aef0a6f4b1e330789895cc47ce80d0c582d7d286624f6eb03e4fd",
+     "packaged_sha256": "fe5340cbe1793fa9ad40bf4923b91e2ee10340b157a3b2434035206a808fbe4c",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    },
+    "product_server.py": {
+     "frozen_sha256": "c4ee24c526a506094bc7773cd217237b8bd824fed70e6824e11978c04ee2c299",
+     "packaged_sha256": "c3d7ff2541605a8d938e2d4aa260677cf11a59deb9c7765d07406d650830057f",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    },
+    "review_server.py": {
+     "frozen_sha256": "e0e9b0cf693b932413a5f957c0b9fd5e3d8a07932c0fe6fd5b348c78167db4e4",
+     "packaged_sha256": "387940f796cddaf3d30a2f6ecffbebbea7dd9f1c69c74c34bc01dabcbe02e4a2",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    },
+    "revise_naturalness.py": {
+     "frozen_sha256": "7cd9a3610ebfe844cd3350aaa5329584484f450f1284720c6330dfeb1836d582",
+     "packaged_sha256": "37a0c76d8ca29521354ce3c58d3582011750cb71621277e94978ff38ad90e3a9",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    },
+    "runtime.py": {
+     "frozen_sha256": "0e29118459cccf19663fa7ae9528858f84e803c588d885ff9eb9b0058d2630e4",
+     "packaged_sha256": "559b73d80ece1379e1d04ae11415b692cf93ed652b0d5b2c935191a01c86614c",
+     "reason": "path resolution through _packaged_paths; write protection in runtime.py; review-page labels and one prompt argument Englishized"
+    }
+   }
+  },
+  "round3_v004": {
+   "code_dir": "CODE/round3_v004",
+   "frozen_code_dir": "CODE/_frozen_code/round3_v004",
+   "freeze_file": "CODE/round3_v004/configs/dev_execution_freeze_v004.json",
+   "freeze_key": "code_hashes",
+   "files": {
+    "human_review.py": {
+     "frozen_sha256": "406aaedde63db6aa535b8426083d8c7b9767b30fe16d66b8ef3ab43657bace4e",
+     "packaged_sha256": "3dbc236fa71dc0ff216a4fb095e43fb7252fef7116c059bdc3e0ed9713e4470a",
+     "reason": "path resolution through _packaged_paths; write protection in round3_runner.py; blind-review labels and status document Englishized"
+    },
+    "offline_validate_v004.py": {
+     "frozen_sha256": "3b07014af24b8b8e0ee8f41c21911347f0b163a822c6929d1fab74ae64a30727",
+     "packaged_sha256": "4b255d1e5b1b5f4a3b38105e6c71364395ee9cfb212b9fc3a50aa22bab67bd3f",
+     "reason": "path resolution through _packaged_paths; write protection in round3_runner.py; blind-review labels and status document Englishized"
+    },
+    "round3_runner.py": {
+     "frozen_sha256": "402f5607c4e879296c1b62713280b281176b46a27f0c09295040fb400bde10ac",
+     "packaged_sha256": "0377fbcc5086438473bf73d6dc9158c66362ffeb578d8a92468f427f2417c3db",
+     "reason": "path resolution through _packaged_paths; write protection in round3_runner.py; blind-review labels and status document Englishized"
+    }
+   }
+  }
+ }
+}

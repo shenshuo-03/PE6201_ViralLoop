@@ -1,0 +1,15 @@
+{
+  "brief_id": "E08",
+  "id": "1lcud8j",
+  "phase": "dev",
+  "content_archetype": "D",
+  "source_group_id": "1094",
+  "original_content_type": "Tutorial / Guide",
+  "source_date": "2025-06-16",
+  "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1lcud8j/local_open_source_vscode_copilot_model_with_mcp/",
+  "source_hash": "8382fac127320a95e1ce9968f7ae62819d332b40d89242bcd0af3feed0f63bb4",
+  "historical_split": "train",
+  "rule_classification": "PROVISIONAL_REQUIRES_SOURCE_SHAPE_CHECK",
+  "source_title": "Local Open Source VScode Copilot model with MCP",
+  "source_text": "You don't need remote APIs for a coding copliot, or the MCP Course! Set up a fully local IDE with MCP integration using Continue. In this tutorial Continue guides you through setting it up.  \n  \nThis is what you need to do to take control of your copilot:  \n**-** Get the Continue extension from the VS Code marketplace to serve as the AI coding assistant.  \n\\- Serve the model with an OpenAI compatible server in Llama.cpp / LmStudio/ etc.  \n**-** Create a `.continue/models/llama-max.yaml` file in your project to tell Continue how to use the local Ollama model.  \n**-**  Create a `.continue/mcpServers/playwright-mcp.yaml` file to integrate a tool, like the Playwright browser automation tool, with your assistant.\n\nCheck out the full tutorial here: [https://huggingface.co/learn/mcp-course/unit2/continue-client](https://huggingface.co/learn/mcp-course/unit2/continue-client)"
+}

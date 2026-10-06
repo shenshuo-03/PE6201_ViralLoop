@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112131-jRpbWpJS3Z2pKPjKvR3i",
+  "object": "chat.completion",
+  "created": 1791112131,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Challenges and Strategies for Offline HTML-to-Markdown Conversion Using Local LLMs and BeautifulSoup\",\"body\":\"A 2025 project shared on r/LocalLLaMA explores converting HTML pages to Markdown offline with local LLMs (Qwen2.5-7B/8B via llama.cpp) running on consumer GPUs. The method first classifies sites as text- or media-focused and uses BeautifulSoup to extract candidate content like titles and headings before the LLM generates extraction strategies and scores output quality. While this approach reportedly yields good results on standard articles, it struggles with media-heavy or JavaScript-rendered content due to lack of browser rendering. Performance per page is reasonable, but batch processing speed might need improvement. Given these constraints, how have others handled dynamic or SPA sites offline? Are there practical ways to enhance static HTML parsing or combine it with local LLMs to better capture asynchronously loaded content without sacrificing offline operation? Insights on balancing extraction accuracy, speed, and complexity would be valuable.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F6\",\"F7\"]},{\"title\":\"Improving Content Extraction for Media-Rich and SPA Websites with Local LLMs: Offline Approaches?\",\"body\":\"The described project uses local LLMs with BeautifulSoup-based HTML analysis to convert web pages to Markdown offline, aiming to outperform classic tools on tricky sites like SPAs or noisy blogs. It detects if a site is text- or media-centric and extracts structural elements before the LLM refines extraction and rates quality. However, without browser rendering, media-heavy and JavaScript-only sites remain challenging. The process runs on GPUs like the 4070 and yields decent per-page speed but may slow with large batches. For those working fully offline, what methods or heuristics have you found effective to better handle dynamic content or media-heavy pages? Could integrating partial rendering, caching strategies, or enhanced static heuristics improve extraction quality without cloud dependencies? What are the tradeoffs you've encountered between complexity, speed, and Markdown fidelity?\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F4\",\"F6\",\"F7\"]},{\"title\":\"Seeking Advice on Offline HTML-to-Markdown Extraction Quality and Evaluation Using Local LLMs\",\"body\":\"A community member’s 2025 effort uses local LLMs (Qwen2.5-7B/8B) with BeautifulSoup to convert HTML to high-quality Markdown offline, scoring extracted content for completeness and readability. While the approach reportedly achieves good to excellent quality on typical articles, it faces difficulties with media-heavy or JavaScript-dependent sites and could benefit from faster batch processing. Evaluation relies on AI scoring and manual review but lacks established benchmarks. How do others evaluate extraction quality effectively in offline setups? Are there recommended strategies or tools to benchmark Markdown output from local LLMs, especially on complex or dynamic web content? Additionally, any tips on optimizing extraction rules or improving handling of framework fingerprints without cloud APIs would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\",\"F3\",\"F5\",\"F6\",\"F7\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2332,
+    "completion_tokens": 633,
+    "total_tokens": 2965,
+    "cost": 0.0019456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019456,
+      "upstream_inference_prompt_cost": 0.0009328,
+      "upstream_inference_completions_cost": 0.0010128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

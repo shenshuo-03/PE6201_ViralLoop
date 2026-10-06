@@ -1,0 +1,24 @@
+{
+  "drafts": [
+    {
+      "title": "Clarifying the purpose and behavior of llama.cpp HTTP server's file upload button",
+      "body": "I've been looking into the file upload feature in llama.cpp's HTTP server and found some mixed behavior reported by a user from May 2025. The user wanted to ask questions about a file's contents by uploading it, but sometimes the model answered the question correctly and other times it seemed to interpret the file contents themselves rather than the query. There's speculation that the upload might concatenate the file content with the direct prompt, but this isn't confirmed.\n\nGiven this variability, has anyone figured out how exactly the file upload interacts with the prompt? More importantly, are there known ways to get reproducible answers when querying uploaded file contents, so that the same prompt yields consistent responses across sessions?",
+      "fact_refs": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "Seeking strategies for reproducible querying of file contents via llama.cpp HTTP server upload",
+      "body": "A user running llama.cpp 3.2 3B Q4_K_S shared that when using the HTTP server's file upload button to query a file, the model sometimes answers about the file content correctly, but other times it seems to misinterpret the query and focuses on the file itself. The exact mechanism behind this upload feature—whether it simply concatenates the file content with the prompt or something else—is unclear.\n\nSince reproducibility is important for consistent outputs, has anyone found approaches or settings that improve reliability when asking questions about uploaded files? What strategies might help ensure that opening a new conversation and providing the same inputs results in the same answers?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

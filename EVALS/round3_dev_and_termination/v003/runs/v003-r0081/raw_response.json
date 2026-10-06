@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791118961-dCwvfqWnomvZB3JBKDV1",
+  "object": "chat.completion",
+  "created": 1791118961,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"overall\": \"A\",\n  \"naturalness\": \"A\",\n  \"motivation\": \"A\",\n  \"worth_replying\": \"A\",\n  \"publishable_A\": \"Yes\",\n  \"publishable_B\": \"Yes\",\n  \"evidence\": \"Draft A is more concise and direct while maintaining all essential context. It uses clearer language ('drawing attention due to its potential') and better structures the problem statement. Both are publishable, but A's tighter framing makes it more likely to elicit focused community responses on the specific trade-offs requested.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3218,
+    "completion_tokens": 139,
+    "total_tokens": 3357,
+    "cost": 0.003913,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003913,
+      "upstream_inference_prompt_cost": 0.003218,
+      "upstream_inference_completions_cost": 0.000695
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

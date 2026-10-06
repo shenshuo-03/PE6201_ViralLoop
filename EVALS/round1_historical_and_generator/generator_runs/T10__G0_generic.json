@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-04T08:15:40.722453+00:00",
+  "topic": {
+    "id": "T10",
+    "split": "final_test",
+    "topic": "A precise troubleshooting question for a hypothetical slowdown",
+    "content_type": "Question / Troubleshooting",
+    "audience": "r/LocalLLaMA readers running local language models",
+    "style": "clear, restrained, technical English",
+    "scenario_status": "Hypothetical experiment brief; not measured results or personal experience. State that status explicitly. Do not invent external facts or benchmarks.",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "The hypothetical setup uses a 16 GB GPU.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "The slowdown begins when context length changes from 2048 to 8192.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "Model and runtime versions are not yet recorded.",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F4",
+        "text": "No evidence proves a driver, memory or model issue.",
+        "status": "synthetic experimental input"
+      }
+    ]
+  },
+  "variant": "G0_generic",
+  "generation_usage": {
+    "at": "2026-10-04T08:15:37.631790+00:00",
+    "tag": "final_test:T10:G0_generic",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "49c62d5369da0bfc52c35b4f2b459cce09239c5893dcc9a92ac69b6ec02d4757",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 396,
+    "output_tokens": 542,
+    "actual_cost_usd": 0.0002564,
+    "token_price_estimate_usd": 0.0002564,
+    "reserved_upper_usd": 0.001,
+    "budget_charge_usd": 0.0002564,
+    "latency_seconds": 2.5692299000220373,
+    "retry": 0,
+    "request_id": "gen-1791101735-TRzOoKvYs2RmU2wsRvCR"
+  },
+  "judge_usage": {
+    "at": "2026-10-04T08:15:40.718037+00:00",
+    "tag": "final_test:T10:G0_generic:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "ab033a30ae962c07f83181c1377ff86ef7d5796028095d61d70fbc9660f8e092",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 971,
+    "output_tokens": 424,
+    "actual_cost_usd": 0.0010668,
+    "token_price_estimate_usd": 0.0010668000000000001,
+    "reserved_upper_usd": 0.0047688,
+    "budget_charge_usd": 0.0010668,
+    "latency_seconds": 3.03985339999781,
+    "retry": 0,
+    "request_id": "gen-1791101737-sbnx3SA1oH5B6DLe9zAk"
+  },
+  "retrieved_ids": [],
+  "pattern_ids": [],
+  "prompt_sha256": "49c69a0525d4a22bbd7670de90f75a1f9f8b57a6275610a511f620b0756599d4",
+  "results": [
+    {
+      "index": 0,
+      "draft": {
+        "title": "Hypothetical Context Length Increase Causes Slowdown on 16GB GPU - Troubleshooting?",
+        "body": "I'm investigating a hypothetical slowdown scenario with a local LLM setup. The experiment involves a 16 GB GPU (F1). The issue appears when the context length is increased from 2048 to 8192 tokens (F2). Prior to this change, performance was nominal. Currently, model and runtime versions have not been recorded (F3). We're in the early stages of this hypothetical experiment, so there's no confirmed evidence pointing to driver, system memory, or the model itself being the root cause (F4). Could this be related to how the runtime handles larger contexts, or perhaps an artifact of the hypothetical memory management under these specific conditions? Any pointers on diagnostic steps for this hypothetical scenario would be greatly appreciated.",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Ask for diagnostic steps for a hypothetical slowdown related to context length increase on a local LLM setup with a 16GB GPU. Explicitly state the hypothetical nature of the scenario and preserved limitations."
+      },
+      "performance_score": 0.22845047863874193,
+      "quality": {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and references all provided facts (F1-F4). It avoids unsupported claims and maintains appropriate caveats about the lack of evidence for driver or memory issues. The title matches the body content well. The language is clear and technical, suitable for the target audience. It asks for diagnostic steps, which is useful but somewhat general, limiting actionable value. The relevance to the audience is high given the topic. The credibility is good due to explicit caveats and no fabrication. The clickbait score is low as the title is restrained and descriptive.",
+        "quality_mean": 4.0,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 116,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    },
+    {
+      "index": 1,
+      "draft": {
+        "title": "Troubleshooting Hypothetical LLM Slowdown: Context Length Jump on 16GB GPU",
+        "body": "This is a hypothetical troubleshooting question regarding a local LLM experiment. We're observing a significant slowdown when the context length is increased from 2048 to 8192 tokens (F2). The setup utilizes a 16 GB GPU (F1). It's important to note that this is a hypothetical scenario, and we haven't yet documented the specific model or runtime versions being used (F3). Furthermore, there is currently no evidence to suggest that the issue stems from drivers, system RAM, or a corrupted model file (F4). The slowdown specifically correlates with the context length increase. I'm seeking advice on potential areas to investigate within this hypothetical framework. Could this be related to attention mechanisms, KV cache management, or something else entirely within the inference process when dealing with larger contexts on limited VRAM?",
+        "fact_refs": [
+          "F1",
+          "F2",
+          "F3",
+          "F4"
+        ],
+        "plan": "Request technical advice on troubleshooting a hypothetical LLM slowdown. Focus on the correlation between context length increase and performance degradation on a 16GB GPU. Maintain the hypothetical status and specified limitations."
+      },
+      "performance_score": 0.2338380301678165,
+      "quality": {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also clearly preserves the hypothetical status and references all facts. It explicitly notes the lack of evidence for driver or memory issues and does not invent external facts. The title accurately reflects the content. The body is clear and slightly more focused on potential technical causes (attention mechanisms, KV cache), which increases usefulness for the audience. The relevance and credibility remain high due to proper caveats and factual consistency. The clickbait score is low as the title is straightforward and technical.",
+        "quality_mean": 4.25,
+        "judge_hard_pass": true,
+        "quality_constraint_pass": true
+      },
+      "rules": {
+        "hard_rule_pass": true,
+        "hard_rule_failures": [],
+        "body_words": 129,
+        "novel_numbers": [],
+        "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+      },
+      "constraint_pass": true,
+      "diagnostics": []
+    }
+  ],
+  "selected": {
+    "index": 1,
+    "draft": {
+      "title": "Troubleshooting Hypothetical LLM Slowdown: Context Length Jump on 16GB GPU",
+      "body": "This is a hypothetical troubleshooting question regarding a local LLM experiment. We're observing a significant slowdown when the context length is increased from 2048 to 8192 tokens (F2). The setup utilizes a 16 GB GPU (F1). It's important to note that this is a hypothetical scenario, and we haven't yet documented the specific model or runtime versions being used (F3). Furthermore, there is currently no evidence to suggest that the issue stems from drivers, system RAM, or a corrupted model file (F4). The slowdown specifically correlates with the context length increase. I'm seeking advice on potential areas to investigate within this hypothetical framework. Could this be related to attention mechanisms, KV cache management, or something else entirely within the inference process when dealing with larger contexts on limited VRAM?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "plan": "Request technical advice on troubleshooting a hypothetical LLM slowdown. Focus on the correlation between context length increase and performance degradation on a 16GB GPU. Maintain the hypothetical status and specified limitations."
+    },
+    "performance_score": 0.2338380301678165,
+    "quality": {
+      "index": 1,
+      "factual_pass": true,
+      "unsupported_claims": [],
+      "title_body_consistent": true,
+      "scenario_status_preserved": true,
+      "necessary_caveats_preserved": true,
+      "clarity": 4,
+      "usefulness": 4,
+      "relevance": 5,
+      "credibility": 4,
+      "clickbait": 1,
+      "reasons": "This draft also clearly preserves the hypothetical status and references all facts. It explicitly notes the lack of evidence for driver or memory issues and does not invent external facts. The title accurately reflects the content. The body is clear and slightly more focused on potential technical causes (attention mechanisms, KV cache), which increases usefulness for the audience. The relevance and credibility remain high due to proper caveats and factual consistency. The clickbait score is low as the title is straightforward and technical.",
+      "quality_mean": 4.25,
+      "judge_hard_pass": true,
+      "quality_constraint_pass": true
+    },
+    "rules": {
+      "hard_rule_pass": true,
+      "hard_rule_failures": [],
+      "body_words": 129,
+      "novel_numbers": [],
+      "copy_check": "18-token contiguous heuristic against retrieved snippets only"
+    },
+    "constraint_pass": true,
+    "diagnostics": []
+  },
+  "abstention": false
+}

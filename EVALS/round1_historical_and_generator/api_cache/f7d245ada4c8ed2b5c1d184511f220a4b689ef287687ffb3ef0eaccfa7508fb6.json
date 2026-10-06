@@ -1,0 +1,111 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the scenario and does not present any unsupported claims. It explicitly references the three main areas for debugging (chunking, embedding/indexing, query) and invites discussion without asserting causal conclusions. The title matches the body content well. The language is clear and technical, suitable for the target audience. The caveats about the synthetic nature and lack of error data are preserved. The draft is relevant and credible for readers interested in local LLaMA retrieval debugging. The clickbait score is low due to restrained, factual presentation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 5,
+        "usefulness": 5,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "This draft is very clear and well-structured, using a numbered list to improve readability. It explicitly states the hypothetical nature and does not overstate any claims. The title accurately reflects the content and highlights the three key areas for investigation. The caveats about the synthetic setup and lack of error data are maintained. The draft is highly relevant and credible for the intended audience. The restrained tone avoids clickbait."
+      },
+      {
+        "index": 2,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 4,
+        "relevance": 5,
+        "credibility": 5,
+        "clickbait": 1,
+        "reasons": "The draft preserves the hypothetical scenario status and clearly outlines the three main debugging areas. It uses bullet points for clarity and maintains a technical, restrained tone. The title is concise and consistent with the body. No unsupported claims are made. The caveats about synthetic data and lack of error logs are present. The draft is relevant and credible for the audience. Clickbait is minimal."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:13:33.743674+00:00",
+    "tag": "final_test:T07:O2_feedback:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "f7d245ada4c8ed2b5c1d184511f220a4b689ef287687ffb3ef0eaccfa7508fb6",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 1469,
+    "output_tokens": 581,
+    "actual_cost_usd": 0.0015172,
+    "token_price_estimate_usd": 0.0015171999999999998,
+    "reserved_upper_usd": 0.005808799999999999,
+    "budget_charge_usd": 0.0015172,
+    "latency_seconds": 4.3448141000117175,
+    "retry": 0,
+    "request_id": "gen-1791101609-OQwkl0VQESi7V3xeGZWt"
+  },
+  "raw_response": {
+    "id": "gen-1791101609-OQwkl0VQESi7V3xeGZWt",
+    "object": "chat.completion",
+    "created": 1791101609,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the scenario and does not present any unsupported claims. It explicitly references the three main areas for debugging (chunking, embedding/indexing, query) and invites discussion without asserting causal conclusions. The title matches the body content well. The language is clear and technical, suitable for the target audience. The caveats about the synthetic nature and lack of error data are preserved. The draft is relevant and credible for readers interested in local LLaMA retrieval debugging. The clickbait score is low due to restrained, factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 5,\n      \"usefulness\": 5,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft is very clear and well-structured, using a numbered list to improve readability. It explicitly states the hypothetical nature and does not overstate any claims. The title accurately reflects the content and highlights the three key areas for investigation. The caveats about the synthetic setup and lack of error data are maintained. The draft is highly relevant and credible for the intended audience. The restrained tone avoids clickbait.\"\n    },\n    {\n      \"index\": 2,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 4,\n      \"relevance\": 5,\n      \"credibility\": 5,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft preserves the hypothetical scenario status and clearly outlines the three main debugging areas. It uses bullet points for clarity and maintains a technical, restrained tone. The title is concise and consistent with the body. No unsupported claims are made. The caveats about synthetic data and lack of error logs are present. The draft is relevant and credible for the audience. Clickbait is minimal.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1469,
+      "completion_tokens": 581,
+      "total_tokens": 2050,
+      "cost": 0.0015172,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015172,
+        "upstream_inference_prompt_cost": 0.0005876,
+        "upstream_inference_completions_cost": 0.0009296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "combined": {
+    "community_fit": "Uncertain",
+    "specificity": "Uncertain",
+    "information_value": "Uncertain",
+    "usefulness": "Uncertain",
+    "credibility": "Uncertain",
+    "overall": "Uncertain"
+  },
+  "swap_consistent": {
+    "community_fit": false,
+    "specificity": false,
+    "information_value": false,
+    "usefulness": false,
+    "credibility": false,
+    "overall": false
+  },
+  "raw_AB": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "Tie",
+        "overall": "A"
+      },
+      "evidence": "Draft A directly asks questions relevant to the local LLM community about feasibility and practical challenges, inviting specific discussion. Draft B is a recap of the brief without a clear call to action or specific questions for the community. Both drafts use the exact facts provided."
+    },
+    "usage": {
+      "run_id": "v002-r0129",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:41.761675+00:00",
+      "tag": "judge_calibration:CP12:AB",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "61cac88ec6be112d61c9cb3696ad7416594d7b109816dbf17c565b2c4916c8c6",
+      "actual_cost_usd": 0.0008316,
+      "budget_charge_usd": 0.0008316,
+      "reserved_upper_usd": 0.003927399999999999,
+      "input_tokens": 1747,
+      "output_tokens": 123,
+      "latency_seconds": 1.3989923000044655,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109720-sqqlcqCjHtdiGUj1pdws",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "raw_BA": {
+    "value": {
+      "preferences": {
+        "community_fit": "A",
+        "specificity": "A",
+        "information_value": "A",
+        "usefulness": "A",
+        "credibility": "A",
+        "overall": "A"
+      },
+      "evidence": "Draft A is a concise summary of the brief's core facts, directly addressing the topic without adding external questions or interpretations. Draft B introduces questions about practicality and feasibility that, while relevant, are not directly supported by the brief's facts as a primary purpose of the post, making it less focused on simply presenting the concept for feedback as requested in the brief's 'desired_response'."
+    },
+    "usage": {
+      "run_id": "v002-r0130",
+      "loop_version": "v002",
+      "at": "2026-10-04T10:28:43.533540+00:00",
+      "tag": "judge_calibration:CP12:BA",
+      "phase": "calibration",
+      "model": "google/gemini-2.5-flash",
+      "cache_key": "bc9e4d6dba79ce7b613d392dfbcd9c55b10abbaf0d200242fc57adc214b0f51f",
+      "actual_cost_usd": 0.0009041,
+      "budget_charge_usd": 0.0009041,
+      "reserved_upper_usd": 0.003927399999999999,
+      "input_tokens": 1747,
+      "output_tokens": 152,
+      "latency_seconds": 1.747297099995194,
+      "retry": 0,
+      "finish_reason": "stop",
+      "request_id": "gen-1791109721-af2ti94aKr2Q4zysX9yg",
+      "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+    }
+  },
+  "model": "google/gemini-2.5-flash"
+}

@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Niche anime dataset question; moderate interest but limited broad appeal"
+      },
+      {
+        "index": 1,
+        "probability": 0.4,
+        "reason": "Tutorial on training LLMs from social media comments; relevant and practical, likely moderate engagement"
+      },
+      {
+        "index": 2,
+        "probability": 0.5,
+        "reason": "Benchmarking multi-turn instruction following is a technical topic with broader appeal to model developers"
+      },
+      {
+        "index": 3,
+        "probability": 0.45,
+        "reason": "Discussion on Nvidia DGX Spark vs dual RTX 3090 for professional work; relevant to hardware enthusiasts and professionals"
+      },
+      {
+        "index": 4,
+        "probability": 0.55,
+        "reason": "Real-world benchmark with OpenAI API showing cost and token savings; practical and data-driven content tends to attract attention"
+      },
+      {
+        "index": 5,
+        "probability": 0.35,
+        "reason": "Conceptual discussion on structural intelligence and AI paradigm shifts; interesting but more speculative and less actionable"
+      },
+      {
+        "index": 6,
+        "probability": 0.4,
+        "reason": "Performance question on running a large model on specific hardware; technical troubleshooting with some niche appeal"
+      },
+      {
+        "index": 7,
+        "probability": 0.5,
+        "reason": "Detailed pattern for packaging local agent tools across Node and Python; practical and useful for developers"
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:47.706779+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:16",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "b833c6b4436a306fdc26a45b07e00b9649e6b554ce868d855750e9cd52080cf4",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6587,
+    "output_tokens": 369,
+    "actual_cost_usd": 0.0032252,
+    "token_price_estimate_usd": 0.0032252,
+    "reserved_upper_usd": 0.012604399999999998,
+    "budget_charge_usd": 0.0032252,
+    "latency_seconds": 3.064161200003582,
+    "retry": 0,
+    "request_id": "gen-1791100904-7XhBnmPyCClMc3OFF7WQ"
+  },
+  "raw_response": {
+    "id": "gen-1791100904-7XhBnmPyCClMc3OFF7WQ",
+    "object": "chat.completion",
+    "created": 1791100904,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.3,\n      \"reason\": \"Niche anime dataset question; moderate interest but limited broad appeal\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.4,\n      \"reason\": \"Tutorial on training LLMs from social media comments; relevant and practical, likely moderate engagement\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.5,\n      \"reason\": \"Benchmarking multi-turn instruction following is a technical topic with broader appeal to model developers\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.45,\n      \"reason\": \"Discussion on Nvidia DGX Spark vs dual RTX 3090 for professional work; relevant to hardware enthusiasts and professionals\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.55,\n      \"reason\": \"Real-world benchmark with OpenAI API showing cost and token savings; practical and data-driven content tends to attract attention\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.35,\n      \"reason\": \"Conceptual discussion on structural intelligence and AI paradigm shifts; interesting but more speculative and less actionable\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.4,\n      \"reason\": \"Performance question on running a large model on specific hardware; technical troubleshooting with some niche appeal\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.5,\n      \"reason\": \"Detailed pattern for packaging local agent tools across Node and Python; practical and useful for developers\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6587,
+      "completion_tokens": 369,
+      "total_tokens": 6956,
+      "cost": 0.0032252,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032252,
+        "upstream_inference_prompt_cost": 0.0026348,
+        "upstream_inference_completions_cost": 0.0005904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

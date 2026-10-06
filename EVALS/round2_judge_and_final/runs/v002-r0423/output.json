@@ -1,0 +1,26 @@
+{
+  "drafts": [
+    {
+      "title": "Issues with Qwen3 30B A3B model getting stuck in Open WebUI when ‘thinking’ is enabled",
+      "body": "I came across a report from May 2025 where a user updated their Open WebUI docker setup and loaded the 8.0 gguf quant of the Qwen3 30B A3B model. They noted that Open WebUI connected fine and requests could be sent, with the “thinking” progress showing. However, when the thinking feature was active, the model would eventually stop generating mid-sentence and get stuck indefinitely, with the progress indicator never completing. Interestingly, sending requests without thinking enabled worked normally, and the model also worked fine on other front ends like SillyTavern and VS Code extensions. Since the exact Open WebUI version, server specs, and config details weren’t provided, it’s unclear if this is a compatibility issue, a bug, or a resource limitation. Has anyone else encountered this stuck generation problem with Qwen3 30B A3B in Open WebUI? Are there known workarounds or config tweaks that might help the thinking feature operate smoothly? Any insights on debugging this or similar front-end integration quirks would be appreciated.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "Qwen3 30B A3B stalls mid-generation in Open WebUI ‘thinking’ mode—any fixes?",
+      "body": "A user reported that after updating their local Open WebUI docker and loading the Qwen3 30B A3B model (8.0 gguf quant), the model connects and responds normally without the thinking feature. But enabling thinking causes it to freeze mid-sentence indefinitely, with the progress stuck. The same model works fine on other front ends like SillyTavern and VS Code extensions. The report doesn’t specify Open WebUI version or hardware details, so it’s tough to pinpoint the cause. Given this, does anyone know if there are compatibility issues between Qwen3 30B A3B and Open WebUI’s thinking feature? Could certain Open WebUI versions or settings trigger this? Or might it be related to resource limits or the quantization format? Any practical advice on troubleshooting or config adjustments to get thinking mode stable would be valuable to the community.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

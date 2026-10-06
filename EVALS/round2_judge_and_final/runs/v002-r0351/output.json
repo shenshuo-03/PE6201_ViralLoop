@@ -1,0 +1,26 @@
+{
+  "drafts": [
+    {
+      "title": "Exploring llama-swap and Open WebUI as an Alternative to Ollama for Local LLM Management",
+      "body": "I came across a detailed account from a user who transitioned away from Ollama about a month ago, yet kept Open WebUI as their frontend. They now rely on llama.cpp or ik_llama.cpp for inference and use llama-swap to handle loading, unloading, and auto-unloading of models. The author mentions managing models and parameters through a large config.yaml file, which seems central to this setup. Interestingly, they highlight an improvement in model file organization, noting no more \"weird location/names\" and the ability to directly download models via wget from Hugging Face. Given these points, I'm curious about the practical trade-offs: How does llama-swap's model management compare to Ollama's in terms of ease and flexibility? Also, how complex is maintaining that big config.yaml, especially when juggling multiple models and system prompts in Open WebUI? Any insights from those who have tried similar setups or who have experience with model loading strategies would be valuable.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "title": "What Are the Real Benefits and Challenges of Moving Away from Ollama for Local LLM Inference?",
+      "body": "A user shared their experience moving off Ollama roughly a month ago, switching to a setup involving llama.cpp or ik_llama.cpp for inference, llama-swap for model management, and Open WebUI as the frontend. They emphasize that this transition was faster and easier than expected and mention improved control over model locations and naming conventions. However, some details are missing, like the specifics of their large config.yaml file for llama-swap and the exact reasons Ollama's model management was limiting beyond \"weird location/names.\" For those who have switched from Ollama or use llama-swap, what challenges did you face during the transition? Did you find managing model loading/unloading and system prompts easier or more cumbersome? Also, how does this alternative approach impact your workflow or troubleshooting? Understanding these aspects could help others considering a similar move.",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    }
+  ]
+}

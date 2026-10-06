@@ -1,0 +1,30 @@
+{
+  "drafts": [
+    {
+      "title": "Has anyone else noticed smaller new LLMs trading world knowledge for problem-solving skills?",
+      "body": "I came across an archived 2025 post where the author tested various smaller LLMs using private questions spanning coding, engineering, threat modeling, and specific world knowledge topics like local geography and technical standards. They observed that newer small models like Qwen 3 and GLM-4-0414 perform much better on coding and problem-solving but often have worse world knowledge than older, larger models or even some older smaller models. For example, Qwen 3 8B reportedly has poorer knowledge than Llama 3.1 8B and Gemma 2 9B, and Qwen 3 14B fares worse than Phi 4 and Gemma 3 12B in knowledge despite better problem-solving. Llama 4 Maverick bucks this trend with strong knowledge but mediocre problem-solving. The author suspects this trade-off might be due to newer training data focusing more on problem-solving content at the expense of knowledge density. Given the lack of detailed test prompts and metrics, I'm curious if others have noticed similar patterns or have strategies to evaluate and balance these trade-offs when choosing models for mixed tasks? Also, could differences in training data or fine-tuning approaches explain this? Thoughts? (Source: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/)",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7",
+        "F8"
+      ]
+    },
+    {
+      "title": "Exploring the reported knowledge vs. problem-solving trade-off in recent small LLMs",
+      "body": "An archived Reddit post from May 2025 shares an interesting observation: newer smaller LLMs, despite scoring higher on coding and problem-solving benchmarks, seem to exhibit weaker world knowledge compared to older larger or similarly sized models. The author tested models like Qwen 3 and GLM-4-0414 using private questions covering technical and geographic knowledge as well as problem-solving. They found that Qwen 3 8B and 14B had notably worse knowledge than older models such as Llama 3.1 8B, Gemma 2 9B, Phi 4, and Gemma 3 12B, even though their coding skills were better. Conversely, Llama 4 Maverick showed strong world knowledge but only mediocre problem-solving. The author hypothesizes that this might reflect a shift in training data composition favoring problem-solving content over knowledge density. Given these findings, how should we approach model selection when both knowledge and problem-solving are important? Has anyone else seen similar trade-offs or tried to quantify them? Any insights on training data effects or evaluation methods would be valuable. (Link: https://www.reddit.com/r/LocalLLaMA/comments/1kde9mn/trade_off_between_knowledge_and_problem_solving/)",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F7",
+        "F8"
+      ]
+    }
+  ]
+}

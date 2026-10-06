@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.4,
+        "reason": "Detailed specs and practical usage questions in Experience / Benchmark posts often attract engaged responses; moderate probability."
+      },
+      {
+        "index": 1,
+        "probability": 0.6,
+        "reason": "Comprehensive tutorial with benchmarks and migration examples likely to attract high engagement and upvotes."
+      },
+      {
+        "index": 2,
+        "probability": 0.35,
+        "reason": "Experience post with technical details and hopeful tone; somewhat niche but informative, moderate interest."
+      },
+      {
+        "index": 3,
+        "probability": 0.3,
+        "reason": "Question about video-capable frontends is specific and technical; moderate interest but narrower audience."
+      },
+      {
+        "index": 4,
+        "probability": 0.3,
+        "reason": "Troubleshooting question about open source reverse image solutions; niche and somewhat technical, moderate engagement."
+      },
+      {
+        "index": 5,
+        "probability": 0.5,
+        "reason": "Request for complex tutorials on agentic AI with multiple agents and MCP servers; likely to attract expert interest."
+      },
+      {
+        "index": 6,
+        "probability": 0.35,
+        "reason": "Experience post about using LLMs for game design; niche but detailed, moderate engagement expected."
+      },
+      {
+        "index": 7,
+        "probability": 0.45,
+        "reason": "Detailed experience post with hardware, software, and multiple questions; likely to attract helpful responses."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:01:53.955687+00:00",
+    "tag": "final_test:classifier:E5b_few_shot:32",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "bd3783f9ea8caad760e975bc22ea25f07c5074ff0517387040997bfd3fac0965",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 6634,
+    "output_tokens": 367,
+    "actual_cost_usd": 0.0032408,
+    "token_price_estimate_usd": 0.0032408,
+    "reserved_upper_usd": 0.012740399999999999,
+    "budget_charge_usd": 0.0032408,
+    "latency_seconds": 3.2908147999987705,
+    "retry": 0,
+    "request_id": "gen-1791100910-F3Zd9Fy75eSGy7ZArqlE"
+  },
+  "raw_response": {
+    "id": "gen-1791100910-F3Zd9Fy75eSGy7ZArqlE",
+    "object": "chat.completion",
+    "created": 1791100910,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"predictions\": [\n    {\n      \"index\": 0,\n      \"probability\": 0.4,\n      \"reason\": \"Detailed specs and practical usage questions in Experience / Benchmark posts often attract engaged responses; moderate probability.\"\n    },\n    {\n      \"index\": 1,\n      \"probability\": 0.6,\n      \"reason\": \"Comprehensive tutorial with benchmarks and migration examples likely to attract high engagement and upvotes.\"\n    },\n    {\n      \"index\": 2,\n      \"probability\": 0.35,\n      \"reason\": \"Experience post with technical details and hopeful tone; somewhat niche but informative, moderate interest.\"\n    },\n    {\n      \"index\": 3,\n      \"probability\": 0.3,\n      \"reason\": \"Question about video-capable frontends is specific and technical; moderate interest but narrower audience.\"\n    },\n    {\n      \"index\": 4,\n      \"probability\": 0.3,\n      \"reason\": \"Troubleshooting question about open source reverse image solutions; niche and somewhat technical, moderate engagement.\"\n    },\n    {\n      \"index\": 5,\n      \"probability\": 0.5,\n      \"reason\": \"Request for complex tutorials on agentic AI with multiple agents and MCP servers; likely to attract expert interest.\"\n    },\n    {\n      \"index\": 6,\n      \"probability\": 0.35,\n      \"reason\": \"Experience post about using LLMs for game design; niche but detailed, moderate engagement expected.\"\n    },\n    {\n      \"index\": 7,\n      \"probability\": 0.45,\n      \"reason\": \"Detailed experience post with hardware, software, and multiple questions; likely to attract helpful responses.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6634,
+      "completion_tokens": 367,
+      "total_tokens": 7001,
+      "cost": 0.0032408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032408,
+        "upstream_inference_prompt_cost": 0.0026536,
+        "upstream_inference_completions_cost": 0.0005872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

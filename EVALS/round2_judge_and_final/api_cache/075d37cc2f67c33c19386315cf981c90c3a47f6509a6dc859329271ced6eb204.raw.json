@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791109834-gF4rXKRvIPCryHFQ1kCl",
+  "object": "chat.completion",
+  "created": 1791109834,
+  "model": "anthropic/claude-haiku-4.5",
+  "provider": "Amazon Bedrock",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "end_turn",
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"preferences\": {\n    \"community_fit\": \"A\",\n    \"specificity\": \"A\",\n    \"information_value\": \"A\",\n    \"usefulness\": \"A\",\n    \"credibility\": \"A\",\n    \"overall\": \"A\"\n  },\n  \"evidence\": \"Draft A preserves concrete failure modes (Gemma missing 2/4 list items, Qwen confusing 10^9 vs 109) and explicitly flags missing context (hardware, document quality, model versions, source date May 2025). It frames the question as actionable for the community (\\\"what tradeoffs have you encountered\\\") while maintaining epistemic humility about unknowns. Draft B abstracts the same facts into vague language (\\\"trouble,\\\" \\\"missing parts,\\\" \\\"confusing similar numbers\\\") and omits the source date and acknowledged gaps entirely. This makes B appear more confident than warranted and less useful for readers trying to assess relevance to their own setups. A's specificity (exact model names, concrete examples, explicit uncertainty markers) directly serves the brief's goal of identifying \\\"smallest, most effective\\\" models—readers can calibrate their own tests against stated limitations. B's generalization (\\\"some popular OCR models\\\") weakens community_fit by obscuring which models actually failed and why, reducing the signal value of the post.\"\n}\n```",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2034,
+    "completion_tokens": 311,
+    "total_tokens": 2345,
+    "cost": 0.003589,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003589,
+      "upstream_inference_prompt_cost": 0.002034,
+      "upstream_inference_completions_cost": 0.001555
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

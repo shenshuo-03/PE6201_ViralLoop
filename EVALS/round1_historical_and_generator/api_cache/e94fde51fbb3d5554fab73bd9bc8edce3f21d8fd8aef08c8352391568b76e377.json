@@ -1,0 +1,96 @@
+{
+  "value": {
+    "judgments": [
+      {
+        "index": 0,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of throughput, accuracy, or uncertainty data, preserving necessary caveats. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. It invites discussion on potential contributing factors without making unsupported claims. The post is relevant and credible given the scenario, and it avoids clickbait by restrained titling and factual presentation."
+      },
+      {
+        "index": 1,
+        "factual_pass": true,
+        "unsupported_claims": [],
+        "title_body_consistent": true,
+        "scenario_status_preserved": true,
+        "necessary_caveats_preserved": true,
+        "clarity": 4,
+        "usefulness": 3,
+        "relevance": 4,
+        "credibility": 4,
+        "clickbait": 1,
+        "reasons": "This draft also maintains the hypothetical framing and caveats well, with clear, technical language. The title matches the body content and is appropriately restrained. It focuses on inviting theoretical speculation about causes for the TTFT difference, which is useful for the intended audience. No unsupported claims are made, and the scenario status is preserved. The post is credible and relevant, with no clickbait elements."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T07:47:56.114355+00:00",
+    "tag": "tune_dev:D02:G2_fewshot_planning:quality",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "e94fde51fbb3d5554fab73bd9bc8edce3f21d8fd8aef08c8352391568b76e377",
+    "status": "success",
+    "input_tokens": 1028,
+    "output_tokens": 374,
+    "actual_cost_usd": 0.0010096,
+    "token_price_estimate_usd": 0.0010096,
+    "reserved_upper_usd": 0.0049228,
+    "budget_charge_usd": 0.0010096,
+    "latency_seconds": 2.8421052000048803,
+    "retry": 0,
+    "request_id": "gen-1791100073-wn6Cx9aTmYwVhceiNZRf"
+  },
+  "raw_response": {
+    "id": "gen-1791100073-wn6Cx9aTmYwVhceiNZRf",
+    "object": "chat.completion",
+    "created": 1791100073,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"index\": 0,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"The draft clearly states the hypothetical nature of the experiment and explicitly notes the lack of throughput, accuracy, or uncertainty data, preserving necessary caveats. The title accurately reflects the content. The language is clear and technical, suitable for the target audience. It invites discussion on potential contributing factors without making unsupported claims. The post is relevant and credible given the scenario, and it avoids clickbait by restrained titling and factual presentation.\"\n    },\n    {\n      \"index\": 1,\n      \"factual_pass\": true,\n      \"unsupported_claims\": [],\n      \"title_body_consistent\": true,\n      \"scenario_status_preserved\": true,\n      \"necessary_caveats_preserved\": true,\n      \"clarity\": 4,\n      \"usefulness\": 3,\n      \"relevance\": 4,\n      \"credibility\": 4,\n      \"clickbait\": 1,\n      \"reasons\": \"This draft also maintains the hypothetical framing and caveats well, with clear, technical language. The title matches the body content and is appropriately restrained. It focuses on inviting theoretical speculation about causes for the TTFT difference, which is useful for the intended audience. No unsupported claims are made, and the scenario status is preserved. The post is credible and relevant, with no clickbait elements.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1028,
+      "completion_tokens": 374,
+      "total_tokens": 1402,
+      "cost": 0.0010096,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010096,
+        "upstream_inference_prompt_cost": 0.0004112,
+        "upstream_inference_completions_cost": 0.0005984
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

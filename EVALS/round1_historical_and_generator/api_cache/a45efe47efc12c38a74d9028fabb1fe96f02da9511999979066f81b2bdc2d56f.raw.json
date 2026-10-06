@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791100936-JtJ5Bfl1JgQqZOZl4y9n",
+  "object": "chat.completion",
+  "created": 1791100936,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical question about LLMs with some similarity to a high-score example; moderate interest expected.\"},{\"index\":1,\"probability\":0.6,\"reason\":\"Detailed tutorial with clear results and practical utility, similar to a high-score tutorial example.\"},{\"index\":2,\"probability\":0.25,\"reason\":\"Philosophical/discussion style post with literary content; less likely to be high-score.\"},{\"index\":3,\"probability\":0.4,\"reason\":\"Technical comparison with some frustration; mixed signals but some similarity to high-score examples.\"},{\"index\":4,\"probability\":0.35,\"reason\":\"Request for recommendations on STT models; discussion type with moderate engagement potential.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Short opinion/discussion post with limited detail; lower engagement expected.\"},{\"index\":6,\"probability\":0.45,\"reason\":\"Question about GUI tools for LLM story writing; niche but practical, some similarity to high-score examples.\"},{\"index\":7,\"probability\":0.5,\"reason\":\"Detailed performance analysis with data and troubleshooting; likely to attract technical interest.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6053,
+    "completion_tokens": 253,
+    "total_tokens": 6306,
+    "cost": 0.002826,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002826,
+      "upstream_inference_prompt_cost": 0.0024212,
+      "upstream_inference_completions_cost": 0.0004048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

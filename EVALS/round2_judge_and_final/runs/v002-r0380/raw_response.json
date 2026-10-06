@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112571-xM8haMEC11ySS7XIJDGx",
+  "object": "chat.completion",
+  "created": 1791112571,
+  "model": "openai/gpt-4.1-mini",
+  "provider": "OpenAI",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "message": {
+        "role": "assistant",
+        "content": "{\"drafts\":[{\"title\":\"Why might Qwen3-8B Q6_K_L run slowly on a TitanXP with LM Studio?\",\"body\":\"A user reported that running Qwen3-8B Q6_K_L in LM Studio on a system with a TitanXP GPU (12GB VRAM) and 32GB RAM resulted in very slow and odd behavior. Given this hardware, which is somewhat dated but still capable, it raises questions about how well LM Studio handles this quantized model variant. \\n\\nIs the slowdown primarily due to LM Studio’s compatibility or optimization with Q6_K_L quantization, or could it be related to GPU memory management on a TitanXP? Has anyone else experienced similar performance quirks with Qwen3-8B Q6_K_L on comparable setups? Understanding this might help clarify whether the bottleneck is software-related or hardware-limited in practice.\\n\\nAny insights on tuning LM Studio or alternative approaches to improve responsiveness with this model on older GPUs would be appreciated.\",\"fact_refs\":[\"F1\",\"F2\"]},{\"title\":\"Qwen3-8B Q6_K_L's odd behavior in LM Studio on TitanXP: software or hardware issue?\",\"body\":\"An archived user report from May 2025 notes that running Qwen3-8B Q6_K_L in LM Studio on a system equipped with a TitanXP GPU and 32GB RAM led to very slow and unusual model behavior. Since the TitanXP has 12GB VRAM, it’s unclear if the hardware is sufficient or if LM Studio’s handling of this quantization format is suboptimal.\\n\\nDoes anyone have experience with Q6_K_L quantized Qwen3-8B on similar or newer hardware that might shed light on whether this is a limitation of LM Studio’s processing or inherent to the model’s requirements? Also, are there known workarounds or settings tweaks that can mitigate these performance issues without upgrading hardware?\\n\\nUnderstanding this could guide users with mid-range GPUs on whether to invest time in configuration or consider alternative models or software.\",\"fact_refs\":[\"F1\",\"F2\"]}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1140,
+    "completion_tokens": 434,
+    "total_tokens": 1574,
+    "cost": 0.0011504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011504,
+      "upstream_inference_prompt_cost": 0.000456,
+      "upstream_inference_completions_cost": 0.0006944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "value": {
+    "drafts": [
+      {
+        "title": "How well does FamilyBench gauge LLMs’ grasp of complex family tree relationships?",
+        "body": "FamilyBench is an open-source benchmark designed to test how well language models understand complex, tree-like family relationships within a large context. It generates synthetic family trees and then crafts questions based on those structures. The goal is to measure a model’s ability to navigate and reason about multi-generational connections, which is a nontrivial challenge for many LLMs.\n\nGiven that the benchmark uses generated data and scripted question sets, how effective do you think this approach is at capturing real-world family relationship complexities? Are there pitfalls in relying on synthetic trees for testing relational understanding? I’m curious if anyone has insights on whether FamilyBench’s method can generalize beyond its generated scenarios or if it risks oversimplifying the nuances found in actual genealogical data.",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      },
+      {
+        "title": "Is FamilyBench’s synthetic tree generation a robust test for LLM family relationship reasoning?",
+        "body": "FamilyBench proposes a novel way to test LLMs by generating family trees with a Python program and then querying the model about relationships within those trees. This method aims to push models to understand complex, hierarchical family structures over a large context window.\n\nHowever, since the benchmark relies on generated trees and scripted questions, I wonder how well it reflects the challenges of real family trees, which can be irregular and contain ambiguous or incomplete data. Does this synthetic approach risk missing key difficulties that arise in natural genealogical contexts? What are your thoughts on the tradeoffs between controlled generation for benchmarking and the messiness of real-world family data?",
+        "fact_refs": [
+          "F1",
+          "F2"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0366",
+    "loop_version": "v002",
+    "at": "2026-10-04T11:15:31.604068+00:00",
+    "tag": "V1:F07",
+    "phase": "final",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "eb71b798b7d4c5d6c0615c3367a3ffb7b6c14b62b3ef502b27b40a0fc3fef73d",
+    "actual_cost_usd": 0.000952,
+    "budget_charge_usd": 0.000952,
+    "reserved_upper_usd": 0.0053495999999999995,
+    "input_tokens": 980,
+    "output_tokens": 350,
+    "latency_seconds": 2.91424189999816,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791112528-qKgZ66jhVZ5Qz8pRxNvo",
+    "contract_sha256": "fb26a1dcf3de017dc68897a65973bf2922aaec6310409d85fdbbe96fb583cc2e"
+  }
+}

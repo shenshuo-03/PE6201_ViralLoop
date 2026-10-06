@@ -1,0 +1,109 @@
+{
+  "value": {
+    "predictions": [
+      {
+        "index": 0,
+        "probability": 0.3,
+        "reason": "Technical question about small models for tag generation; moderate interest and niche but with some relevant examples labeled high."
+      },
+      {
+        "index": 1,
+        "probability": 0.35,
+        "reason": "Discussion about AI co-author tool with community engagement; examples show mixed high and not_high but leaning towards interest in new tools."
+      },
+      {
+        "index": 2,
+        "probability": 0.4,
+        "reason": "Tutorial on privacy-preserving anonymization with code; practical and useful, similar examples include high scoring guides."
+      },
+      {
+        "index": 3,
+        "probability": 0.45,
+        "reason": "Experience/benchmark post on Llama 3.2 fMRI findings; technical and detailed, similar posts have high scores."
+      },
+      {
+        "index": 4,
+        "probability": 0.25,
+        "reason": "Opinion/discussion on AGI and context engineering; somewhat speculative and reflective, examples mixed but mostly not_high."
+      },
+      {
+        "index": 5,
+        "probability": 0.3,
+        "reason": "Question about SOTA models for semantic search; technical and practical, examples show some high interest but also not_high."
+      },
+      {
+        "index": 6,
+        "probability": 0.2,
+        "reason": "Help request from a noob struggling with setup; likely lower engagement and less technical depth, examples mostly not_high."
+      },
+      {
+        "index": 7,
+        "probability": 0.3,
+        "reason": "Discussion about challenges with AI tools and hardware; mixed results and troubleshooting, examples show some high interest but also not_high."
+      }
+    ]
+  },
+  "usage": {
+    "at": "2026-10-04T08:04:02.777299+00:00",
+    "tag": "final_test:classifier:E5c_retrieval:72",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "840235f7b82aff56a2303035e8d3c03555e984176eed971a27b47204b2e649e3",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 5625,
+    "output_tokens": 303,
+    "actual_cost_usd": 0.0027348,
+    "token_price_estimate_usd": 0.0027348,
+    "reserved_upper_usd": 0.010962799999999998,
+    "budget_charge_usd": 0.0027348,
+    "latency_seconds": 2.7943940999975894,
+    "retry": 0,
+    "request_id": "gen-1791101040-RbwhTbG3pm7x0xnYZn0m"
+  },
+  "raw_response": {
+    "id": "gen-1791101040-RbwhTbG3pm7x0xnYZn0m",
+    "object": "chat.completion",
+    "created": 1791101040,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\"predictions\":[{\"index\":0,\"probability\":0.3,\"reason\":\"Technical question about small models for tag generation; moderate interest and niche but with some relevant examples labeled high.\"},{\"index\":1,\"probability\":0.35,\"reason\":\"Discussion about AI co-author tool with community engagement; examples show mixed high and not_high but leaning towards interest in new tools.\"},{\"index\":2,\"probability\":0.4,\"reason\":\"Tutorial on privacy-preserving anonymization with code; practical and useful, similar examples include high scoring guides.\"},{\"index\":3,\"probability\":0.45,\"reason\":\"Experience/benchmark post on Llama 3.2 fMRI findings; technical and detailed, similar posts have high scores.\"},{\"index\":4,\"probability\":0.25,\"reason\":\"Opinion/discussion on AGI and context engineering; somewhat speculative and reflective, examples mixed but mostly not_high.\"},{\"index\":5,\"probability\":0.3,\"reason\":\"Question about SOTA models for semantic search; technical and practical, examples show some high interest but also not_high.\"},{\"index\":6,\"probability\":0.2,\"reason\":\"Help request from a noob struggling with setup; likely lower engagement and less technical depth, examples mostly not_high.\"},{\"index\":7,\"probability\":0.3,\"reason\":\"Discussion about challenges with AI tools and hardware; mixed results and troubleshooting, examples show some high interest but also not_high.\"}]}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 5625,
+      "completion_tokens": 303,
+      "total_tokens": 5928,
+      "cost": 0.0027348,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027348,
+        "upstream_inference_prompt_cost": 0.00225,
+        "upstream_inference_completions_cost": 0.0004848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

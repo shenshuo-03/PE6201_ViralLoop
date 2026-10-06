@@ -1,0 +1,46 @@
+{
+  "id": "gen-1791112183-UeYEan887laruA20EZt1",
+  "object": "chat.completion",
+  "created": 1791112183,
+  "model": "google/gemini-2.5-flash-lite",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"judgments\": [{\"index\": 0, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 1 accurately reflects the source and brief, posing a clear question about prompt engineering for local LLM classification. It correctly identifies the model, task, and constraints. The community fit is good as it directly asks for advice relevant to the subreddit. Specificity is high, mentioning the model and task. Information value is good, as it asks for actionable strategies. Clarity and usefulness are high. Credibility is good, as it adheres to the persona and avoids making claims. Clickbait is low.\"}, {\"index\": 1, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 2 is factually accurate and adheres to the brief and persona. It clearly states the problem, model, and constraints, seeking practical advice on prompt engineering for local LLMs. Community fit is good, directly addressing the subreddit's focus. Specificity is high, mentioning the model and task. Information value is good, asking for actionable techniques. Clarity, usefulness, and credibility are all high.\"}, {\"index\": 2, \"factual_pass\": true, \"unsupported_claims\": [], \"speaker_pass\": true, \"copy_pass\": true, \"essential_caveats_pass\": true, \"title_body_pass\": true, \"community_fit\": 4, \"specificity\": 4, \"information_value\": 4, \"clarity\": 4, \"usefulness\": 4, \"credibility\": 4, \"clickbait\": 1, \"reason\": \"Draft 3 accurately summarizes the source and brief, posing a relevant question for the community. It correctly identifies the model, task, and limitations. Community fit is good, as it's a direct request for advice on local LLM prompt engineering. Specificity is high, mentioning the model and task. Information value is good, seeking practical solutions. Clarity, usefulness, and credibility are all high.\"}]}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2508,
+    "completion_tokens": 587,
+    "total_tokens": 3095,
+    "cost": 0.0004856,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004856,
+      "upstream_inference_prompt_cost": 0.0002508,
+      "upstream_inference_completions_cost": 0.0002348
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "value": {
+    "id": "H10",
+    "topic_id": "T08",
+    "topic": "为什么假设的排行榜分数不能决定本地部署",
+    "facts": [
+      {
+        "id": "F1",
+        "text": "在此场景中，团队需要低延迟和离线使用。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F2",
+        "text": "单独的排行榜分数无法衡量这些要求。",
+        "status": "synthetic experimental input"
+      },
+      {
+        "id": "F3",
+        "text": "没有声称某个特定模型优于另一个模型。",
+        "status": "synthetic experimental input"
+      }
+    ],
+    "A": {
+      "title": "假设：本地 LLM 部署（延迟和离线需求）超越排行榜",
+      "body": "在一个假设的场景中，一个团队正在评估用于本地部署的模型，优先考虑低延迟和离线功能。本次讨论的重点是标准排行榜分数是否充分满足这些特定要求。排行榜通常反映广泛的基准测试，这可能与实时、断开连接条件下的性能不直接相关。\n\n本地部署的关键考虑因素包括量化、目标硬件上的推理速度和内存占用。这些因素对于实现低延迟和离线功能至关重要，但并非总是总体分数中的主要指标。该场景明确指出这是一个假设的实验，并且没有声称任何特定模型优于其他模型。\n\n在假设的背景下，我们如何才能最好地评估这些特定需求的模型，超越一般的排行榜排名？哪些评估策略或指标最能指示低延迟、离线的本地部署？"
+    },
+    "B": {
+      "title": "假设场景：排行榜分数与本地部署需求（延迟、离线使用）",
+      "body": "考虑到一个假设的场景，一个团队正在评估用于本地部署的模型。他们的主要要求是低延迟和完全离线运行的能力。\n\n我们需要讨论标准的排行榜分数（通常源自广泛的基准测试）是否能够充分代表模型对这些特定、严格要求的适用性。重要的是要记住，这是一个假设的情况，没有对特定模型进行比较或声称其更优越。\n\n排行榜指标通常侧重于推理或知识回忆等通用功能。然而，它们可能无法直接转化为实时、断开连接条件下的性能。模型量化、特定硬件上的推理速度和内存占用等因素对于低延迟、离线使用至关重要，但并不总是通过总体分数突出显示或直接可衡量的。\n\n在超越一般排行榜排名方面，您对如何最好地评估这些特定需求的模型有何看法？在假设的情况下，您认为哪些特定的评估策略或指标更能指示低延迟、离线的本地部署？"
+    }
+  },
+  "usage": {
+    "at": "2026-10-04T08:32:10.232202+00:00",
+    "tag": "human_blind_translation:H10",
+    "model": "google/gemini-2.5-flash-lite",
+    "cache_key": "914f0bc738bf92a79dc607fe61d6652599c3a8b7e99c0be36225c9c388543907",
+    "status": "response_received",
+    "finish_reason": "stop",
+    "input_tokens": 697,
+    "output_tokens": 553,
+    "actual_cost_usd": 0.0002909,
+    "token_price_estimate_usd": 0.00029089999999999997,
+    "reserved_upper_usd": 0.0016726999999999998,
+    "budget_charge_usd": 0.0002909,
+    "latency_seconds": 2.6257348000071943,
+    "retry": 0,
+    "request_id": "gen-1791102727-kFqj1jZv0CNjLnaTvo3F"
+  },
+  "raw_response": {
+    "id": "gen-1791102727-kFqj1jZv0CNjLnaTvo3F",
+    "object": "chat.completion",
+    "created": 1791102727,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\"id\": \"H10\", \"topic_id\": \"T08\", \"topic\": \"为什么假设的排行榜分数不能决定本地部署\", \"facts\": [{\"id\": \"F1\", \"text\": \"在此场景中，团队需要低延迟和离线使用。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F2\", \"text\": \"单独的排行榜分数无法衡量这些要求。\", \"status\": \"synthetic experimental input\"}, {\"id\": \"F3\", \"text\": \"没有声称某个特定模型优于另一个模型。\", \"status\": \"synthetic experimental input\"}], \"A\": {\"title\": \"假设：本地 LLM 部署（延迟和离线需求）超越排行榜\", \"body\": \"在一个假设的场景中，一个团队正在评估用于本地部署的模型，优先考虑低延迟和离线功能。本次讨论的重点是标准排行榜分数是否充分满足这些特定要求。排行榜通常反映广泛的基准测试，这可能与实时、断开连接条件下的性能不直接相关。\\n\\n本地部署的关键考虑因素包括量化、目标硬件上的推理速度和内存占用。这些因素对于实现低延迟和离线功能至关重要，但并非总是总体分数中的主要指标。该场景明确指出这是一个假设的实验，并且没有声称任何特定模型优于其他模型。\\n\\n在假设的背景下，我们如何才能最好地评估这些特定需求的模型，超越一般的排行榜排名？哪些评估策略或指标最能指示低延迟、离线的本地部署？\"}, \"B\": {\"title\": \"假设场景：排行榜分数与本地部署需求（延迟、离线使用）\", \"body\": \"考虑到一个假设的场景，一个团队正在评估用于本地部署的模型。他们的主要要求是低延迟和完全离线运行的能力。\\n\\n我们需要讨论标准的排行榜分数（通常源自广泛的基准测试）是否能够充分代表模型对这些特定、严格要求的适用性。重要的是要记住，这是一个假设的情况，没有对特定模型进行比较或声称其更优越。\\n\\n排行榜指标通常侧重于推理或知识回忆等通用功能。然而，它们可能无法直接转化为实时、断开连接条件下的性能。模型量化、特定硬件上的推理速度和内存占用等因素对于低延迟、离线使用至关重要，但并不总是通过总体分数突出显示或直接可衡量的。\\n\\n在超越一般排行榜排名方面，您对如何最好地评估这些特定需求的模型有何看法？在假设的情况下，您认为哪些特定的评估策略或指标更能指示低延迟、离线的本地部署？\"}}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 697,
+      "completion_tokens": 553,
+      "total_tokens": 1250,
+      "cost": 0.0002909,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002909,
+        "upstream_inference_prompt_cost": 6.97e-05,
+        "upstream_inference_completions_cost": 0.0002212
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

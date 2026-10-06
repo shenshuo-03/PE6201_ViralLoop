@@ -1,0 +1,93 @@
+{
+  "value": {
+    "baseline": {
+      "title": "Why does vLLM require a Hugging Face token and contact info for Mistral models while Ollama does not?",
+      "body": "I'm working on a local AI project using Ollama and exploring vLLM as a performance-focused alternative. However, I noticed that vLLM requires me to share contact information on Hugging Face and set an HF token in the environment to use certain Mistral models. This is puzzling because Mistral 7B is released under an Apache 2.0 license and supposedly can be used without restrictions. Ollama, on the other hand, seems to provide direct access to these models without needing this extra step. Since my project aims for easy user installation without requiring account creation or token setup, this requirement is a significant barrier. Does anyone know why vLLM enforces this Hugging Face authentication for these models despite their open license? Also, are there any known workarounds to avoid sharing personal info or requiring users to get tokens when using vLLM with Mistral models?",
+      "fact_refs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ]
+    },
+    "alternatives": [
+      {
+        "dimension": "community_fit",
+        "draft": {
+          "title": "Why do some local LLM tools ask for Hugging Face tokens and others don’t?",
+          "body": "I've been comparing local LLM deployment tools and noticed that some require Hugging Face tokens and contact info to access certain models, while others don’t. For example, one tool needs an HF token to use Mistral models, even though these models are under an Apache 2.0 license and supposedly free to use without restrictions. Another tool provides direct access without this step. What causes these differences in access requirements? Are there ways to avoid account creation or token setup for local use?",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This version removes the specific project context and focused question about vLLM and Ollama, making it a broader community discussion about access requirements for local LLM tools."
+      },
+      {
+        "dimension": "specificity",
+        "draft": {
+          "title": "Why does a local LLM runtime require authentication for some Apache 2.0 licensed models while another doesn’t?",
+          "body": "In my exploration of local LLM runtimes, I found that one performance-focused runtime requires sharing contact info and setting an authentication token to use certain 7B parameter models released under Apache 2.0. Another runtime offers direct access to these models without such requirements. Given the license allows unrestricted use, what technical or policy reasons might explain this discrepancy? Are there known methods to bypass the authentication step while maintaining ease of installation?",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This draft replaces specific product names with generic terms while preserving the core issue about authentication requirements and licensing, maintaining factual accuracy without naming particular tools or models."
+      },
+      {
+        "dimension": "information_value",
+        "draft": {
+          "title": "Access requirements for Mistral 7B models via Hugging Face and local LLM tools",
+          "body": "A user working with a local AI project using Ollama and vLLM reports that vLLM requires sharing contact information on Hugging Face and setting an HF token to use certain Mistral models. Ollama appears to provide direct access without this step. The Mistral 7B model is licensed under Apache 2.0 and stated to be usable without restrictions. The user seeks clarification on why Hugging Face requests contact info despite the license and whether alternative access methods exist.",
+          "fact_refs": [
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8"
+          ]
+        },
+        "design_reason": "This version focuses on restating the facts without posing a direct question or comparison, reducing actionable discussion but preserving the key information from the source."
+      }
+    ]
+  },
+  "usage": {
+    "run_id": "v002-r0050",
+    "loop_version": "v002",
+    "at": "2026-10-04T10:23:27.284041+00:00",
+    "tag": "pair_builder:calibration:C01",
+    "phase": "calibration",
+    "model": "openai/gpt-4.1-mini",
+    "cache_key": "d40102b4be6c65f74f7f1dc531496fdae48afc56388517d21ea22ec9bb0774ae",
+    "actual_cost_usd": 0.0021696,
+    "budget_charge_usd": 0.0021696,
+    "reserved_upper_usd": 0.0086632,
+    "input_tokens": 2156,
+    "output_tokens": 817,
+    "latency_seconds": 5.291720999986865,
+    "retry": 0,
+    "finish_reason": "stop",
+    "request_id": "gen-1791109401-bEl5m4jv2LLOeX2yfDVU",
+    "contract_sha256": "2a9a34bdd16425193a6400d604704ee533c9cf86bb8d14ae52a6573eb53f68b9"
+  }
+}

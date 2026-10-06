@@ -1,0 +1,62 @@
+{
+  "topic": "Qwen3 30B A3B model with Open WebUI",
+  "audience": "local LLM enthusiasts",
+  "problem_or_goal": "Troubleshooting Open WebUI integration with the Qwen3 30B A3B model when 'thinking' is enabled.",
+  "context": "A user is attempting to use the Qwen3 30B A3B model with Open WebUI, specifically encountering issues when the 'thinking' feature is active.",
+  "motivation": "Understanding potential compatibility issues between specific models and front-end interfaces is valuable for the local LLM community to ensure smooth operation and effective use of new models.",
+  "desired_response": "Guidance or suggestions on how to resolve the 'stuck' generation issue in Open WebUI when using the Qwen3 30B A3B model with 'thinking' enabled.",
+  "speaker_relationship_to_source": "reader of archived source; no claim of personally running reported tests",
+  "facts": [
+    {
+      "id": "F1",
+      "text": "The user attempted to use the Qwen3 30B A3B model, specifically an 8.0 gguf quant, with Open WebUI.",
+      "evidence_quote": "I updated my local Open WebUi docker setup and downloaded the 8.0 gguf quant of the model to my server.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F2",
+      "text": "Open WebUI connected to the model, and requests were initiated, showing a 'thinking' progress element.",
+      "evidence_quote": "Open WebUi connected without issues and I could send requests and it would attempt to respond as I could see the “thinking” progress element.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F3",
+      "text": "When 'thinking' was enabled, the model would stop generating mid-sentence and the progress indicator would remain indefinitely.",
+      "evidence_quote": "However, it would eventually stop generating all together and get “stuck” it would stop in the middle of a sentence usually and the thinking progress would say it’s on progress and would stay like that forever.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F4",
+      "text": "Requests without 'thinking' enabled in Open WebUI functioned normally, with the model responding as expected.",
+      "evidence_quote": "Sending a request without thinking enabled has no issues and it replies as normal.",
+      "status": "source-author report, not independently verified measurement"
+    },
+    {
+      "id": "F5",
+      "text": "The Qwen3 30B A3B model reportedly works correctly with other front-end applications like SillyTavern and VS Code extensions (Continue, Clide).",
+      "evidence_quote": "it works on any other front end such as SillyTavern, and both the Continue and Clide extensions for VS Code.",
+      "status": "source-author report, not independently verified measurement"
+    }
+  ],
+  "allowed_claims": [
+    "The Qwen3 30B A3B model has an 8.0 gguf quant available.",
+    "Open WebUI has a 'thinking' feature that can be enabled.",
+    "Other front-ends like SillyTavern and VS Code extensions are compatible with the Qwen3 30B A3B model."
+  ],
+  "forbidden_claims": [
+    "The Qwen3 30B A3B model is universally compatible with all front-ends.",
+    "The issue is definitively a bug in Open WebUI.",
+    "The issue is definitively a bug in the Qwen3 30B A3B model.",
+    "A specific fix has been found and verified."
+  ],
+  "essential_limitations": [
+    "The specific version of Open WebUI used is not detailed.",
+    "The hardware specifications of the server running the model are not provided.",
+    "The exact nature of the 'stuck' state beyond stopping generation is not specified."
+  ],
+  "missing_information": [
+    "Specific Open WebUI version.",
+    "Server hardware details.",
+    "Any custom configurations within Open WebUI."
+  ]
+}
